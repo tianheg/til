@@ -16,7 +16,8 @@ _2 TILs and counting..._
 
 ### Categories <!-- omit in toc -->
 
-- [- [Introduction To VuePress]](#--introduction-to-vuepress)
+- [VSCode](#vscode)
+- [VuePress](#vuepress)
 
 ---
 
