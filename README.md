@@ -1,6 +1,14 @@
 # TIL <!-- omit in toc -->
 
 > Today I Learned
+>
+> 今天我学了……
+
+A collection of concise write-ups on small things I learn day to day across a
+variety of languages and technologies. These are things that don't really
+warrant a full blog post. These are things I've picked up by [Learning In Public™](https://dev.to/jbranchaud/how-i-built-a-learning-machine-45k9).
+
+这是一组关于我每天学习的各种语言和技术的小事物的简明评论。这些还不足以构成一篇完整的博客。这些是我从公开学习中获得的东西。
 
 _1 TILs and counting..._
 
@@ -15,3 +23,15 @@ _1 TILs and counting..._
 ### VSCode
 
 - [Use Project Manager](vscode/use-project-manager.md)
+
+---
+
+## References <!-- omit in toc -->
+
+- [jbranchaud/til](https://github.com/jbranchaud/til)
+- [daryllxd/til](https://github.com/daryllxd/til)
+- [daryllxd/lifelong-learning](https://github.com/daryllxd/lifelong-learning)
+- [jwworth/til](https://github.com/jwworth/til)
+- [TODAY I LEARNED](https://til.hashrocket.com)
+- [simonw/til](https://github.com/simonw/til)
+- [thoughtbot/til](https://github.com/thoughtbot/til)
