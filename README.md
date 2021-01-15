@@ -10,7 +10,7 @@ warrant a full blog post. These are things I've picked up by [Learning In Public
 
 这是一组关于我每天学习的各种语言和技术的小事物的简明评论。这些还不足以构成一篇完整的博客。这些是我从公开学习中获得的东西。
 
-_9 TILs and counting..._
+_10 TILs and counting..._
 
 ---
 
@@ -32,6 +32,7 @@ _9 TILs and counting..._
 
 ### Git
 
+- [Delete A Git Branch Both Locally And Remotely](git/delete-a-git-branch-both-locally-and-remotely.md)
 - [Remove Tracking Branches No Longer On Remote](git/remove-tracking-branches-no-longer-on-remote.md)
 
 ### Linux
