@@ -10,7 +10,7 @@ warrant a full blog post. These are things I've picked up by [Learning In Public
 
 这是一组关于我每天学习的各种语言和技术的小事物的简明评论。这些还不足以构成一篇完整的博客。这些是我从公开学习中获得的东西。
 
-_5 TILs and counting..._
+_7 TILs and counting..._
 
 ---
 
@@ -35,6 +35,8 @@ _5 TILs and counting..._
 ### VMware
 
 - [Compare Workstation Player With Workstation Pro](vmware/compare-workstation-player-with-workstation-pro.md)
+- [VMware Workstation/Player Does Not Support Nested Virtualization On This Host](vmware/workstation-player-does-not-support-nested-virtualization-on-this-host.md)
+- [Player Does Not Support Virtualized Performance Counters On This Host](vmware/player-does-not-support-virtualized-performance-counters-on-this-host.md)
 
 ### VSCode
 
