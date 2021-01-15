@@ -10,13 +10,15 @@ warrant a full blog post. These are things I've picked up by [Learning In Public
 
 这是一组关于我每天学习的各种语言和技术的小事物的简明评论。这些还不足以构成一篇完整的博客。这些是我从公开学习中获得的东西。
 
-_3 TILs and counting..._
+_5 TILs and counting..._
 
 ---
 
 ### Categories <!-- omit in toc -->
 
 - [CSS](#css)
+- [Linux](#linux)
+- [VMware](#vmware)
 - [VSCode](#vscode)
 - [VuePress](#vuepress)
 
@@ -25,6 +27,14 @@ _3 TILs and counting..._
 ### CSS
 
 - [Create Shadow Card](css/create-shadow-card.md)
+
+### Linux
+
+- [Install `.bundle` Packages In Linux](linux/install-bundle-packages-in-linux.md)
+
+### VMware
+
+- [Compare Workstation Player With Workstation Pro](vmware/compare-workstation-player-with-workstation-pro.md)
 
 ### VSCode
 
