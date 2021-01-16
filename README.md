@@ -21,7 +21,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_12 TILs and counting..._
+_13 TILs and counting..._
 
 ---
 
@@ -58,6 +58,7 @@ _12 TILs and counting..._
 
 ### Vim
 
+- [Generate .vimrc](vim/generate-vimrc.md)
 - [Learn Vim By Vimtutor](vim/learn-vim-by-vimtutor.md)
 
 ### VMware
