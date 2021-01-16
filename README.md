@@ -6,7 +6,22 @@ A collection of concise write-ups on small things I learn day to day across a
 variety of languages and technologies. These are things that don't really
 warrant a full blog post. These are things I've picked up by [Learning In Public™](https://dev.to/jbranchaud/how-i-built-a-learning-machine-45k9).
 
-_11 TILs and counting..._
+Understanding about TIL:
+
+- must be short
+- only one concept or problem
+- add source when meeting other places
+- use `>` before the command, maybe not
+  
+  example:
+
+  ```bash
+  > git checkout qa
+  > git checkout -b new-branch
+  fatal: A branch named 'new-branch' already exists.
+  ```
+
+_12 TILs and counting..._
 
 ---
 
@@ -16,6 +31,7 @@ _11 TILs and counting..._
 - [Git](#git)
 - [JavaScript](#javascript)
 - [Linux](#linux)
+- [Vim](#vim)
 - [VMware](#vmware)
 - [VSCode](#vscode)
 - [VuePress](#vuepress)
@@ -39,6 +55,10 @@ _11 TILs and counting..._
 ### Linux
 
 - [Install `.bundle` Packages In Linux](linux/install-bundle-packages-in-linux.md)
+
+### Vim
+
+- [Learn Vim By Vimtutor](vim/learn-vim-by-vimtutor.md)
 
 ### VMware
 
