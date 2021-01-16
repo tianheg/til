@@ -18,6 +18,6 @@ Module 'HV' power on failed.
 Failed to start the virtual machine.
 ```
 
-关闭了两个选项：
+Closed two options:
 
-在 Virtual Machine Settings 中，找到 Hardware 的 Processors，在右侧的 Virtualization engine 中，取消勾选：`Virtualize Intel VT-x/EPT or AMD-V/RVI`，`Virtualize CPU performance counters`。
+In Virtual Machine Settings, found Hardware's Processors, on the right of Virtualization engine, uncheck `Virtualize Intel VT-x/EPT or AMD-V/RVI`, `Virtualize CPU performance counters`.
