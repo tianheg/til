@@ -21,7 +21,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_13 TILs and counting..._
+_14 TILs and counting..._
 
 ---
 
@@ -29,6 +29,7 @@ _13 TILs and counting..._
 
 - [CSS](#css)
 - [Git](#git)
+- [GPG](#gpg)
 - [JavaScript](#javascript)
 - [Linux](#linux)
 - [Vim](#vim)
@@ -47,6 +48,10 @@ _13 TILs and counting..._
 
 - [Delete A Git Branch Both Locally And Remotely](git/delete-a-git-branch-both-locally-and-remotely.md)
 - [Remove Tracking Branches No Longer On Remote](git/remove-tracking-branches-no-longer-on-remote.md)
+
+### GPG
+
+- [Can Not Change Name Or Comment Without Losing Signatures](gpg/can-not-change-name-or-comment-without-losing-signatures.md)
 
 ### JavaScript
 
