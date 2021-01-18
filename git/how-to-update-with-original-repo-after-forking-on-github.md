@@ -62,6 +62,12 @@ git merge upstream/main
 git push origin main
 ```
 
+## Way Two
+
+Use GitHub's Compare, set your forked repo left(base repo), set your original repo right(compare with).
+
+Then create a merge for your forked repo, and merge it.
+
 ## Last Way
 
 1. delete your forked repo
