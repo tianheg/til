@@ -66,7 +66,7 @@ git push origin main
 
 Use GitHub's Compare, set your forked repo left(base repo), set your original repo right(compare with).
 
-Then create a merge for your forked repo, and merge it.
+Then create a merge for your forked repo, and merge it. [exercise](https://github.com/tianheg/git-exercise/pull/1)
 
 ## Last Way
 
