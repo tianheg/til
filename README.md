@@ -21,7 +21,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_14 TILs and counting..._
+_15 TILs and counting..._
 
 ---
 
@@ -47,6 +47,7 @@ _14 TILs and counting..._
 ### Git
 
 - [Delete A Git Branch Both Locally And Remotely](git/delete-a-git-branch-both-locally-and-remotely.md)
+- [How To Update With Original Repo After Forking on GitHub](git/how-to-update-with-original-repo-after-forking-on-github.md)
 - [Remove Tracking Branches No Longer On Remote](git/remove-tracking-branches-no-longer-on-remote.md)
 
 ### GPG
