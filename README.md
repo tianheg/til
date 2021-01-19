@@ -46,7 +46,7 @@ _18 TILs and counting..._
 
 ### Git
 
-- [Branch Name Contain The 'space' Char?](git/branch-name-contain-the-space-char.md)
+- [Branch Name Contain The 'space' Char](git/branch-name-contain-the-space-char.md)
 - [Delete A Git Branch Both Locally And Remotely](git/delete-a-git-branch-both-locally-and-remotely.md)
 - [Delete Remote Branch In Local Git Env](git/delete-remote-branch-in-local-git-env.md)
 - [How To Update With Original Repo After Forking on GitHub](git/how-to-update-with-original-repo-after-forking-on-github.md)
