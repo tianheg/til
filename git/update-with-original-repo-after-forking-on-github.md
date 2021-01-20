@@ -1,4 +1,4 @@
-# How To Update With Original Repo After Forking on GitHub
+# Update With Original Repo After Forking on GitHub
 
 ## Way one
 
