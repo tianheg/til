@@ -21,7 +21,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_20 TILs and counting..._
+_21 TILs and counting..._
 
 ---
 
@@ -30,6 +30,7 @@ _20 TILs and counting..._
 - [CSS](#css)
 - [Git](#git)
 - [GPG](#gpg)
+- [HTML](#html)
 - [JavaScript](#javascript)
 - [Linux](#linux)
 - [Vim](#vim)
@@ -58,6 +59,10 @@ _20 TILs and counting..._
 ### GPG
 
 - [Can Not Change Name Or Comment Without Losing Signatures](gpg/can-not-change-name-or-comment-without-losing-signatures.md)
+
+### HTML
+
+- [Canonical](html/canonical.md)
 
 ### JavaScript
 
