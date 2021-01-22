@@ -21,7 +21,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_21 TILs and counting..._
+_22 TILs and counting..._
 
 ---
 
@@ -80,8 +80,9 @@ _21 TILs and counting..._
 ### VMware
 
 - [Compare Workstation Player With Workstation Pro](vmware/compare-workstation-player-with-workstation-pro.md)
-- [VMware Workstation/Player Does Not Support Nested Virtualization On This Host](vmware/workstation-player-does-not-support-nested-virtualization-on-this-host.md)
+- [Open And Use BIOS In VMware Workstation](vmware/open-and-use-bios-in-vmware-workstation.md)
 - [Player Does Not Support Virtualized Performance Counters On This Host](vmware/player-does-not-support-virtualized-performance-counters-on-this-host.md)
+- [VMware Workstation/Player Does Not Support Nested Virtualization On This Host](vmware/workstation-player-does-not-support-nested-virtualization-on-this-host.md)
 
 ### VSCode
 
