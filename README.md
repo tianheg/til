@@ -21,7 +21,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_24 TILs and counting..._
+_25 TILs and counting..._
 
 ---
 
@@ -31,6 +31,7 @@ _24 TILs and counting..._
 - [Git](#git)
 - [GPG](#gpg)
 - [HTML](#html)
+- [Hugo](#hugo)
 - [JavaScript](#javascript)
 - [Linux](#linux)
 - [SSH](#ssh)
@@ -65,6 +66,10 @@ _24 TILs and counting..._
 ### HTML
 
 - [Canonical](html/canonical.md)
+
+### Hugo
+
+- [Use New Archetype Create Post In Posts Folder](hugo/use-new-archetype-create-post-in-posts-folder.md)
 
 ### JavaScript
 
