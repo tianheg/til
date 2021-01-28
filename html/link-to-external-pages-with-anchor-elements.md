@@ -4,4 +4,6 @@
 
 `<a href="https://freecodecamp.org">this links to freecodecamp.org</a>`
 
+`target="_blank"` open in a new window tab
+
 [source](https://www.freecodecamp.org/learn/responsive-web-design/basic-html-and-html5/link-to-external-pages-with-anchor-elements)
