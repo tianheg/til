@@ -47,6 +47,10 @@ Its goals were to improve the language with support for the latest multimedia an
 
 HTML5 introduces more descriptive HTML tags. These include `main`, `header`, `footer`, `nav`, `video`, `article`, `section` and others.
 
+These tags give a descriptive structure to your HTML, make your HTML easier to read, and help with Search Engine Optimization (SEO) and accessibility. The `main` HTML5 tag helps search engines and other developers find the main content of your page.
+
+Many of the new HTML5 tags and their benefits are covered in the `freecodecamp` Applied Accessibility section.
+
 **source**:
 
 1. <https://www.freecodecamp.org/learn/responsive-web-design/basic-html-and-html5/>
