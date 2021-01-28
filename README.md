@@ -21,7 +21,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_32 TILs and counting..._
+_33 TILs and counting..._
 
 ---
 
@@ -69,6 +69,7 @@ _32 TILs and counting..._
 ### HTML
 
 - [Canonical](html/canonical.md)
+- [How To Uncomment HTML?](html/how-to-uncomment-html.md)
 - [Something About Placeholder Text](html/something-about-placeholder-text.md)
 - [Use Hx Tag Write Helloworld](html/use-hx-tag-write-helloworld.md)
 - [Use P Tag Add Paragraph](html/use-p-tag-add-paragraph.md)
