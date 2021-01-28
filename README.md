@@ -69,7 +69,7 @@ _30 TILs and counting..._
 ### HTML
 
 - [Canonical](html/canonical.md)
-- [Use H1 Tag Write Helloworld](html/use-h1-tag-write-helloworld.md)
+- [Use Hx Tag Write Helloworld](html/use-hx-tag-write-helloworld.md)
 - [What Is HTML And HTML5?](html/what-is-html-and-html5.md)
 
 ### Hugo
