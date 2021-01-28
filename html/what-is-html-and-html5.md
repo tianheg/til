@@ -45,6 +45,8 @@ Its goals were to improve the language with support for the latest multimedia an
 - Popularity
 - Differences from HTML 4.01 and XHTML 1.x
 
+HTML5 introduces more descriptive HTML tags. These include `main`, `header`, `footer`, `nav`, `video`, `article`, `section` and others.
+
 **source**:
 
 1. <https://www.freecodecamp.org/learn/responsive-web-design/basic-html-and-html5/>
