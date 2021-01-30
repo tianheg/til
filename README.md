@@ -68,23 +68,26 @@ _44 TILs and counting..._
 
 ### HTML
 
+- [What Is HTML And HTML5?](html/what-is-html-and-html5.md)
+- [Use Hx Tag Write Helloworld](html/use-hx-tag-write-helloworld.md)
+- [Use P Tag Add Paragraph](html/use-p-tag-add-paragraph.md)
+- [Something About Placeholder Text](html/something-about-placeholder-text.md)
+- [How To Uncomment HTML?](html/how-to-uncomment-html.md)
 - [Add Images To Website](html/add-images-to-website.md)
-- [Canonical](html/canonical.md)
+- [Link to External Pages with Anchor Elements](html/link-to-external-pages-with-anchor-elements.md)
+- [Link To Internal Sections Of A Page With Anchor Elements](html/link-to-internal-sections-of-a-page-with-anchor-elements.md)
+- [Nest an Anchor Element within a Paragraph](html/nest-an-anchor-element-within-a-paragraph.md)
+- [Make Dead Links Using the Hash Symbol](html/make-dead-links-using-the-hash-symbol.md)
+- [Turn an Image into a Link](html/turn-an-image-into-a-link.md)
 - [Create a Bulleted Unordered List](html/create-a-bulleted-unordered-list.md)
 - [Create an Ordered List](html/create-an-ordered-list.md)
 - [Create a Text Field](html/create-a-text-field.md)
-- [Create a Form Element](html/create-a-form-element.md)
-- [How To Uncomment HTML?](html/how-to-uncomment-html.md)
-- [Link to External Pages with Anchor Elements](html/link-to-external-pages-with-anchor-elements.md)
-- [Link To Internal Sections Of A Page With Anchor Elements](html/link-to-internal-sections-of-a-page-with-anchor-elements.md)
-- [Make Dead Links Using the Hash Symbol](html/make-dead-links-using-the-hash-symbol.md)
-- [Nest an Anchor Element within a Paragraph](html/nest-an-anchor-element-within-a-paragraph.md)
 - [Add Placeholder Text to a Text Field](html/add-placeholder-text-to-a-text-field.md)
-- [Something About Placeholder Text](html/something-about-placeholder-text.md)
-- [Turn an Image into a Link](html/turn-an-image-into-a-link.md)
-- [Use Hx Tag Write Helloworld](html/use-hx-tag-write-helloworld.md)
-- [Use P Tag Add Paragraph](html/use-p-tag-add-paragraph.md)
-- [What Is HTML And HTML5?](html/what-is-html-and-html5.md)
+- [Create a Form Element](html/create-a-form-element.md)
+
+**Others**:
+
+- [Canonical](html/canonical.md)
 
 ### Hugo
 
