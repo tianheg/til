@@ -21,7 +21,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_54 TILs and counting..._
+_55 TILs and counting..._
 
 ---
 
@@ -47,6 +47,7 @@ _54 TILs and counting..._
 ### CSS
 
 - [What is CSS?](css/what-is-css.md)
+- [Change the Color of Text](css/change-the-color-of-text.md)
 
 **Others**:
 
