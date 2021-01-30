@@ -21,7 +21,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_51 TILs and counting..._
+_52 TILs and counting..._
 
 ---
 
@@ -91,6 +91,7 @@ _51 TILs and counting..._
 - [Use the value attribute with Radio Buttons and Checkboxes](html/use-the-value-attribute-with-radio-buttons-and-checkboxes.md)
 - [Check Radio Buttons and Checkboxes by Default](html/check-radio-buttons-and-checkboxes-by-default.md)
 - [Nest Many Elements within a Single div Element](html/nest-many-elements-within-a-single-div-element.md)
+- [Declare the Doctype of an HTML Document](html/declare-the-doctype-of-an-html-document.md)
 
 **Others**:
 
