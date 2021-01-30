@@ -21,7 +21,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_48 TILs and counting..._
+_49 TILs and counting..._
 
 ---
 
@@ -88,6 +88,7 @@ _48 TILs and counting..._
 - [Use HTML5 to Require a Field](html/use-html5-to-require-a-field.md)
 - [Create a Set of Radio Buttons](html/create-a-set-of-radio-buttons.md)
 - [Create a Set of Checkboxes](html/create-a-set-of-checkboxes.md)
+- [Use the value attribute with Radio Buttons and Checkboxes](html/use-the-value-attribute-with-radio-buttons-and-checkboxes.md)
 
 **Others**:
 
