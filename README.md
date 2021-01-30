@@ -21,7 +21,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_38 TILs and counting..._
+_39 TILs and counting..._
 
 ---
 
@@ -76,6 +76,7 @@ _38 TILs and counting..._
 - [Make Dead Links Using the Hash Symbol](html/make-dead-links-using-the-hash-symbol.md)
 - [Nest an Anchor Element within a Paragraph](html/nest-an-anchor-element-within-a-paragraph.md)
 - [Something About Placeholder Text](html/something-about-placeholder-text.md)
+- [Turn an Image into a Link](html/turn-an-image-into-a-link.md)
 - [Use Hx Tag Write Helloworld](html/use-hx-tag-write-helloworld.md)
 - [Use P Tag Add Paragraph](html/use-p-tag-add-paragraph.md)
 - [What Is HTML And HTML5?](html/what-is-html-and-html5.md)
