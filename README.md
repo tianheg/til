@@ -21,7 +21,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_57 TILs and counting..._
+_58 TILs and counting..._
 
 ---
 
@@ -50,6 +50,7 @@ _57 TILs and counting..._
 - [Change the Color of Text](css/change-the-color-of-text.md)
 - [Use CSS Selectors to Style Elements](css/use-css-selectors-to-style-elements.md)
 - [Use a CSS Class to Style an Element](css/use-a-css-class-to-style-an-element.md)
+- [Style Multiple Elements with a CSS Class](css/style-multiple-elements-with-a-css-class.md)
 
 **Others**:
 
