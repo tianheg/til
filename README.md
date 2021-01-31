@@ -51,6 +51,7 @@ _58 TILs and counting..._
 - [Use CSS Selectors to Style Elements](css/use-css-selectors-to-style-elements.md)
 - [Use a CSS Class to Style an Element](css/use-a-css-class-to-style-an-element.md)
 - [Style Multiple Elements with a CSS Class](css/style-multiple-elements-with-a-css-class.md)
+- [Change the Font Size of an Element](css/change-the-font-size-of-an-element.md)
 
 **Others**:
 
