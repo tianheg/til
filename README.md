@@ -21,7 +21,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_59 TILs and counting..._
+_60 TILs and counting..._
 
 ---
 
@@ -53,6 +53,7 @@ _59 TILs and counting..._
 - [Style Multiple Elements with a CSS Class](css/style-multiple-elements-with-a-css-class.md)
 - [Change the Font Size of an Element](css/change-the-font-size-of-an-element.md)
 - [Set the Font Family of an Element](css/set-the-font-family-of-an-element.md)
+- [Import a Google Font](css/import-a-google-font.md)
 
 **Others**:
 
