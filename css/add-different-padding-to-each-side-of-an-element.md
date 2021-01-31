@@ -38,4 +38,6 @@
 
 CSS allows you to control the `padding` of all four individual sides of an element with the `padding-top`, `padding-right`, `padding-bottom`, and `padding-left` properties.
 
+Use Clockwise Notation to Specify the Padding of an Element
+
 [source](https://www.freecodecamp.org/learn/responsive-web-design/basic-css/add-different-padding-to-each-side-of-an-element)
