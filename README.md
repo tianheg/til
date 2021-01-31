@@ -21,7 +21,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_65 TILs and counting..._
+_66 TILs and counting..._
 
 ---
 
@@ -59,6 +59,7 @@ _65 TILs and counting..._
 - [Add Borders Around Your Elements](css/add-borders-around-your-elements.md)
 - [Add Rounded Corners with border-radius](css/add-rounded-corners-with-border-radius.md)
 - [Make Circular Images with a border-radius](css/make-circular-images-with-a-border-radius.md)
+- [Give a Background Color to a div Element](css/give-a-background-color-to-a-div-element.md)
 
 **Others**:
 
