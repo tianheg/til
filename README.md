@@ -21,7 +21,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_62 TILs and counting..._
+_63 TILs and counting..._
 
 ---
 
@@ -56,6 +56,7 @@ _62 TILs and counting..._
 - [Import a Google Font](css/import-a-google-font.md)
 - [Specify How Fonts Should Degrade](css/specify-how-fonts-should-degrade.md)
 - [Size Your Images](css/size-your-images.md)
+- [Add Borders Around Your Elements](css/add-borders-around-your-elements.md)
 
 **Others**:
 
