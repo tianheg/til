@@ -86,6 +86,7 @@ _84 TILs and counting..._
 
 - [Use Hex Code for Specific Colors](css/use-hex-code-for-specific-colors.md)
 - [Use Hex Code to Mix Colors](css/use-hex-code-to-mix-colors.md)
+- [Use Abbreviated Hex Code](css/use-abbreviated-hex-code.md)
 
 **Others**:
 
