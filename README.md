@@ -21,7 +21,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_78 TILs and counting..._
+_79 TILs and counting..._
 
 ---
 
@@ -72,6 +72,7 @@ _78 TILs and counting..._
 - [Style the HTML Body Element](css/style-the-html-body-element.md)
 - [Inherit Styles from the Body Element](css/inherit-styles-from-the-body-element.md)
 - [Prioritize One Style Over Another](css/prioritize-one-style-over-another.md)
+- [Override Styles in Subsequent CSS](css/override-styles-in-subsequent-css.md)
 
 **Others**:
 
