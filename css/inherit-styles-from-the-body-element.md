@@ -1,4 +1,4 @@
-# Inherit Styles from the Body Element
+# Inherit Styles From The Body Element
 
 Remember, you can style your `body` element just like any other HTML element, and all your other elements will inherit your `body` element's styles.
 

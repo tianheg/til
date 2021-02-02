@@ -1,4 +1,4 @@
-# Use a custom CSS Variable
+# Use A Custom CSS Variable
 
 ```css
 .penguin-top {

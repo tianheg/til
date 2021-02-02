@@ -1,4 +1,4 @@
-# Add a Submit Button to a Form
+# Add A Submit Button To A Form
 
 ```html
 <form action="https://freecatphotoapp.com/submit-cat-photo">

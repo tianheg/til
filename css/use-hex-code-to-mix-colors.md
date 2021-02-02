@@ -1,4 +1,4 @@
-# Use Hex Code to Mix Colors
+# Use Hex Code To Mix Colors
 
 ```html
 <style>

@@ -1,4 +1,4 @@
-# Use CSS Variables to change several elements at once
+# Use CSS Variables To Change Several Elements At Once
 
 ```html
 <style>

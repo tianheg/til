@@ -1,4 +1,4 @@
-# Nest Many Elements within a Single div Element
+# Nest Many Elements Within A Single Div Element
 
 ```html
 <div>

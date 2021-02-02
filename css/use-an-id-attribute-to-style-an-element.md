@@ -1,4 +1,4 @@
-# Use an id Attribute to Style an Element
+# Use An Id Attribute To Style An Element
 
 ```css
 #cat-photo-element {

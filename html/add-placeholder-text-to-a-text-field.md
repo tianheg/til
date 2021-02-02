@@ -1,4 +1,4 @@
-# Add Placeholder Text to a Text Field
+# Add Placeholder Text To A Text Field
 
 ```html
 <input type="text" placeholder="something">

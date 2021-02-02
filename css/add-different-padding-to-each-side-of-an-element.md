@@ -1,4 +1,4 @@
-# Add Different Padding to Each Side of an Element
+# Add Different Padding To Each Side Of An Element
 
 ```html
 <style>

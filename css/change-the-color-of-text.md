@@ -1,4 +1,4 @@
-# Change the Color of Text
+# Change The Color Of Text
 
 ```html
 <h2 style="color: blue;">CatPhotoApp</h2>

@@ -1,4 +1,4 @@
-# Define the Head and Body of an HTML Document
+# Define The Head And Body Of An HTML Document
 
 ```html
 <!DOCTYPE html>

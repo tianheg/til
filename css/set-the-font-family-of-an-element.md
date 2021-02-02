@@ -1,4 +1,4 @@
-# Set the Font Family of an Element
+# Set The Font Family Of An Element
 
 ```css
 h2 {

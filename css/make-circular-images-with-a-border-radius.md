@@ -1,4 +1,4 @@
-# Make Circular Images with a border-radius
+# Make Circular Images With A Border-radius
 
 ```css
 .create-border {

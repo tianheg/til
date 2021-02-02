@@ -1,4 +1,4 @@
-# Create an Ordered List
+# Create An Ordered List
 
 ```html
 <ol>

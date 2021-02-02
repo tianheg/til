@@ -1,4 +1,4 @@
-# Adjust the Margin of an Element
+# Adjust The Margin Of An Element
 
 ```css
 .red-box {

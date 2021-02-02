@@ -1,4 +1,4 @@
-# Override Styles in Subsequent CSS
+# Override Styles In Subsequent CSS
 
 It doesn't matter which order the classes are listed in the HTML element.
 

@@ -1,4 +1,4 @@
-# Turn an Image into a Link
+# Turn An Image Into A Link
 
 Just input:
 

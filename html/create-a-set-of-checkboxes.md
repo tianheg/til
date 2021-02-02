@@ -1,4 +1,4 @@
-# Create a Set of Checkboxes
+# Create A Set Of Checkboxes
 
 ```html
 <form action="https://freecatphotoapp.com/submit-cat-photo">

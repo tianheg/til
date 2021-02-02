@@ -1,4 +1,4 @@
-# Use RGB to Mix Colors
+# Use RGB To Mix Colors
 
 ```html
 <style>

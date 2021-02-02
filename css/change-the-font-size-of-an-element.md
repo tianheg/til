@@ -1,4 +1,4 @@
-# Change the Font Size of an Element
+# Change The Font Size Of An Element
 
 ```css
 h1 {

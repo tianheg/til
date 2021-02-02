@@ -1,4 +1,4 @@
-# What is CSS?
+# What Is CSS?
 
 Cascading Style Sheets (CSS) tell the browser how to display the text and other content that you write in HTML.
 

@@ -1,4 +1,4 @@
-# Attach a Fallback value to a CSS Variable
+# Attach A Fallback Value To A CSS Variable
 
 When using your variable as a CSS property value, you can attach a fallback value that your browser will revert to if the given variable is invalid.
 

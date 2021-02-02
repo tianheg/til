@@ -1,4 +1,4 @@
-# Style the HTML Body Element
+# Style The HTML Body Element
 
 CSS inheritance
 

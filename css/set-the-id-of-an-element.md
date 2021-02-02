@@ -1,4 +1,4 @@
-# Set the id of an Element
+# Set The Id Of An Element
 
 ```html
 <form id="id">

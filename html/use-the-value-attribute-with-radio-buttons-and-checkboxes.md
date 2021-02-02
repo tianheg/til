@@ -1,4 +1,4 @@
-# Use the value attribute with Radio Buttons and Checkboxes
+# Use The Value Attribute With Radio Buttons And Checkboxes
 
 ```html
 <form action="https://freecatphotoapp.com/submit-cat-photo">

@@ -1,4 +1,4 @@
-# Create a Set of Radio Buttons
+# Create A Set Of Radio Buttons
 
 ```html
 <form action="https://freecatphotoapp.com/submit-cat-photo">

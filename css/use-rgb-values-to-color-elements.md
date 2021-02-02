@@ -1,4 +1,4 @@
-# Use RGB values to Color Elements
+# Use RGB Values To Color Elements
 
 The RGB value for black looks like this:
 

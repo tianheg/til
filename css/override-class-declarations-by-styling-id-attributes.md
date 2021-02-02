@@ -1,4 +1,4 @@
-# Override Class Declarations by Styling ID Attributes
+# Override Class Declarations By Styling ID Attributes
 
 ```html
 <style>

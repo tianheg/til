@@ -1,4 +1,4 @@
-# Improve Compatibility with Browser Fallbacks
+# Improve Compatibility With Browser Fallbacks
 
 When working with CSS you will likely run into browser compatibility issues at some point. This is why it's important to provide browser fallbacks to avoid potential problems.
 

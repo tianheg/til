@@ -1,4 +1,4 @@
-# Adjust the Padding of an Element
+# Adjust The Padding Of An Element
 
 ```html
 <style>

@@ -1,4 +1,4 @@
-# Override Class Declarations with Inline Styles
+# Override Class Declarations With Inline Styles
 
 ```html
 <style>

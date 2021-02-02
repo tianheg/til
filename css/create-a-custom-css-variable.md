@@ -1,4 +1,4 @@
-# Create a custom CSS Variable
+# Create A Custom CSS Variable
 
 ```css
 .penguin {

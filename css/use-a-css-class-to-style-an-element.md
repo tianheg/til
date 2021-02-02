@@ -1,4 +1,4 @@
-# Use a CSS Class to Style an Element
+# Use A CSS Class To Style An Element
 
 ```html
 <head>

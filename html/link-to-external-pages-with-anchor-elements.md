@@ -1,4 +1,4 @@
-# Link to External Pages with Anchor Elements
+# Link To External Pages With Anchor Elements
 
 `a` elements need a destination web address called an `href` attribute. They also need anchor text. Here's an example:
 

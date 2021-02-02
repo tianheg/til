@@ -1,4 +1,4 @@
-# Use Hex Code for Specific Colors
+# Use Hex Code For Specific Colors
 
 hexadecimal code 十六进制代码
 

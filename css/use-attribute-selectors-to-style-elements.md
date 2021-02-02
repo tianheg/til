@@ -1,4 +1,4 @@
-# Use Attribute Selectors to Style Elements
+# Use Attribute Selectors To Style Elements
 
 There are other CSS Selectors you can use to select custom groups of elements to style.
 

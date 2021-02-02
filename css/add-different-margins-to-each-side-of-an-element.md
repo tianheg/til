@@ -1,4 +1,4 @@
-# Add Different Margins to Each Side of an Element
+# Add Different Margins To Each Side Of An Element
 
 ```html
 <style>

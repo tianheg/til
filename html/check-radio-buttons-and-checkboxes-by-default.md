@@ -1,4 +1,4 @@
-# Check Radio Buttons and Checkboxes by Default
+# Check Radio Buttons And Checkboxes By Default
 
 ```html
 <input type="radio" name="test-name" checked>

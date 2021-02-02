@@ -1,4 +1,4 @@
-# Make Dead Links Using the Hash Symbol
+# Make Dead Links Using The Hash Symbol
 
 Just input:
 

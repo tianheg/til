@@ -1,4 +1,4 @@
-# Use CSS Selectors to Style Elements
+# Use CSS Selectors To Style Elements
 
 ```html
 <head>

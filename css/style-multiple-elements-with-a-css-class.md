@@ -1,4 +1,4 @@
-# Style Multiple Elements with a CSS Class
+# Style Multiple Elements With A CSS Class
 
 ```html
 <head>

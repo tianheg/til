@@ -1,4 +1,4 @@
-# Declare the Doctype of an HTML Document
+# Declare The Doctype Of An HTML Document
 
 ```html
 <!DOCTYPE html>
