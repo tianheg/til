@@ -28,6 +28,7 @@ _79 TILs and counting..._
 ### Categories <!-- omit in toc -->
 
 - [CSS](#css)
+  - [CSS inheritance](#css-inheritance)
 - [Git](#git)
 - [GPG](#gpg)
 - [HTML](#html)
@@ -69,6 +70,9 @@ _79 TILs and counting..._
 - [Add Different Margins to Each Side of an Element](css/add-different-margins-to-each-side-of-an-element.md)
 - [Use Attribute Selectors to Style Elements](css/use-attribute-selectors-to-style-elements.md)
 - [Understand Absolute versus Relative Units](css/understand-absolute-versus-relative-units.md)
+
+#### CSS inheritance
+
 - [Style the HTML Body Element](css/style-the-html-body-element.md)
 - [Inherit Styles from the Body Element](css/inherit-styles-from-the-body-element.md)
 - [Prioritize One Style Over Another](css/prioritize-one-style-over-another.md)
