@@ -28,8 +28,6 @@ _85 TILs and counting..._
 ### Categories <!-- omit in toc -->
 
 - [CSS](#css)
-  - [CSS inheritance](#css-inheritance)
-  - [Color](#color)
 - [Git](#git)
 - [GPG](#gpg)
 - [HTML](#html)
@@ -47,6 +45,8 @@ _85 TILs and counting..._
 ---
 
 ### CSS
+
+**Basis**(freeCodeCamp):
 
 - [What is CSS?](css/what-is-css.md)
 - [Change the Color of Text](css/change-the-color-of-text.md)
@@ -72,7 +72,7 @@ _85 TILs and counting..._
 - [Use Attribute Selectors to Style Elements](css/use-attribute-selectors-to-style-elements.md)
 - [Understand Absolute versus Relative Units](css/understand-absolute-versus-relative-units.md)
 
-#### CSS inheritance
+**CSS inheritance**:
 
 - [Style the HTML Body Element](css/style-the-html-body-element.md)
 - [Inherit Styles from the Body Element](css/inherit-styles-from-the-body-element.md)
@@ -82,7 +82,7 @@ _85 TILs and counting..._
 - [Override Class Declarations with Inline Styles](css/override-class-declarations-with-inline-styles.md)
 - [Override All Other Styles by using Important](css/override-all-other-styles-by-using-important.md)
 
-#### Color
+**Color**:
 
 - [Use Hex Code for Specific Colors](css/use-hex-code-for-specific-colors.md)
 - [Use Hex Code to Mix Colors](css/use-hex-code-to-mix-colors.md)
@@ -112,6 +112,8 @@ _85 TILs and counting..._
 - [Can Not Change Name Or Comment Without Losing Signatures](gpg/can-not-change-name-or-comment-without-losing-signatures.md)
 
 ### HTML
+
+**Basis**(freeCodeCamp):
 
 - [What Is HTML And HTML5?](html/what-is-html-and-html5.md)
 - [Use Hx Tag Write Helloworld](html/use-hx-tag-write-helloworld.md)
