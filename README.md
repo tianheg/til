@@ -29,6 +29,7 @@ _84 TILs and counting..._
 
 - [CSS](#css)
   - [CSS inheritance](#css-inheritance)
+  - [Hex Code](#hex-code)
 - [Git](#git)
 - [GPG](#gpg)
 - [HTML](#html)
@@ -80,6 +81,8 @@ _84 TILs and counting..._
 - [Override Class Declarations by Styling ID Attributes](css/override-class-declarations-by-styling-id-attributes.md)
 - [Override Class Declarations with Inline Styles](css/override-class-declarations-with-inline-styles.md)
 - [Override All Other Styles by using Important](css/override-all-other-styles-by-using-important.md)
+
+#### Hex Code
 
 - [Use Hex Code for Specific Colors](css/use-hex-code-for-specific-colors.md)
 - [Use Hex Code to Mix Colors](css/use-hex-code-to-mix-colors.md)
