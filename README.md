@@ -21,7 +21,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_92 TILs and counting..._
+_93 TILs and counting..._
 
 ---
 
@@ -98,6 +98,7 @@ _92 TILs and counting..._
 - [Attach a Fallback value to a CSS Variable](css/attach-a-fallback-value-to-a-css-variable.md)
 - [Improve Compatibility with Browser Fallbacks](css/improve-compatibility-with-browser-fallbacks.md)
 - [Inherit CSS Variables](css/inherit-css-variables.md)
+- [Change A Variable For A Specific Area](css/change-a-variable-for-a-specific-area.md)
 
 **Others**:
 
