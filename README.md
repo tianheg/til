@@ -21,7 +21,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_82 TILs and counting..._
+_83 TILs and counting..._
 
 ---
 
@@ -80,6 +80,8 @@ _82 TILs and counting..._
 - [Override Class Declarations by Styling ID Attributes](css/override-class-declarations-by-styling-id-attributes.md)
 - [Override Class Declarations with Inline Styles](css/override-class-declarations-with-inline-styles.md)
 - [Override All Other Styles by using Important](css/override-all-other-styles-by-using-important.md)
+
+- [Use Hex Code for Specific Colors](css/use-hex-code-for-specific-colors.md)
 
 **Others**:
 
