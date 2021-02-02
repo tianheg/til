@@ -90,6 +90,8 @@ _86 TILs and counting..._
 - [Use RGB values to Color Elements](css/use-rgb-values-to-color-elements.md)
 - [Use RGB to Mix Colors](css/use-rgb-to-mix-colors.md)
 
+**CSS Variables**:
+
 **Others**:
 
 - [Create Shadow Card](css/create-shadow-card.md)
