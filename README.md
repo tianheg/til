@@ -21,7 +21,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_85 TILs and counting..._
+_86 TILs and counting..._
 
 ---
 
@@ -88,6 +88,7 @@ _85 TILs and counting..._
 - [Use Hex Code to Mix Colors](css/use-hex-code-to-mix-colors.md)
 - [Use Abbreviated Hex Code](css/use-abbreviated-hex-code.md)
 - [Use RGB values to Color Elements](css/use-rgb-values-to-color-elements.md)
+- [Use RGB to Mix Colors](css/use-rgb-to-mix-colors.md)
 
 **Others**:
 
