@@ -21,7 +21,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_83 TILs and counting..._
+_84 TILs and counting..._
 
 ---
 
@@ -82,6 +82,7 @@ _83 TILs and counting..._
 - [Override All Other Styles by using Important](css/override-all-other-styles-by-using-important.md)
 
 - [Use Hex Code for Specific Colors](css/use-hex-code-for-specific-colors.md)
+- [Use Hex Code to Mix Colors](css/use-hex-code-to-mix-colors.md)
 
 **Others**:
 
