@@ -21,7 +21,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_76 TILs and counting..._
+_77 TILs and counting..._
 
 ---
 
@@ -70,6 +70,7 @@ _76 TILs and counting..._
 - [Use Attribute Selectors to Style Elements](css/use-attribute-selectors-to-style-elements.md)
 - [Understand Absolute versus Relative Units](css/understand-absolute-versus-relative-units.md)
 - [Style the HTML Body Element](css/style-the-html-body-element.md)
+- [Inherit Styles from the Body Element](css/inherit-styles-from-the-body-element.md)
 
 **Others**:
 
