@@ -21,7 +21,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_87 TILs and counting..._
+_88 TILs and counting..._
 
 ---
 
@@ -93,6 +93,7 @@ _87 TILs and counting..._
 **CSS Variables**:
 
 - [Use CSS Variables to change several elements at once](css/use-css-variables-to-change-several-elements-at-once.md)
+- [Create a custom CSS Variable](css/create-a-custom-css-variable.md)
 
 **Others**:
 
