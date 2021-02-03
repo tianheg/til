@@ -21,7 +21,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_94 TILs and counting..._
+_95 TILs and counting..._
 
 ---
 
@@ -37,6 +37,7 @@ _94 TILs and counting..._
 - [SSH](#ssh)
 - [Trello](#trello)
 - [Vim](#vim)
+- [Visual Design](#visual-design)
 - [VMware](#vmware)
 - [VSCode](#vscode)
 - [VuePress](#vuepress)
@@ -181,6 +182,10 @@ _94 TILs and counting..._
 
 - [Generate .vimrc](vim/generate-vimrc.md)
 - [Learn Vim By Vimtutor](vim/learn-vim-by-vimtutor.md)
+
+### Visual Design
+
+- [Applied Visual Design](visual-design/applied-visual-design.md)
 
 ### VMware
 
