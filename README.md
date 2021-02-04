@@ -21,7 +21,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_96 TILs and counting..._
+_97 TILs and counting..._
 
 ---
 
@@ -187,6 +187,7 @@ _96 TILs and counting..._
 
 - [Applied Visual Design](visual-design/applied-visual-design.md)
 - [Create Visual Balance Using The Text-align Property](visual-design/create-visual-balance-using-text-align.md)
+- [Adjust The Width Of An Element Using The Width Property](visual-design/adjust-the-width-of-an-element-using-width.md)
 
 ### VMware
 
