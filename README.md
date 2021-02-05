@@ -21,7 +21,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_104 TILs and counting..._
+_105 TILs and counting..._
 
 ---
 
@@ -36,6 +36,7 @@ _104 TILs and counting..._
 - [Linux](#linux)
 - [SSH](#ssh)
 - [Trello](#trello)
+- [Ubuntu](#ubuntu)
 - [Vim](#vim)
 - [Visual Design](#visual-design)
 - [VMware](#vmware)
@@ -177,6 +178,10 @@ _104 TILs and counting..._
 ### Trello
 
 - [Viewing Trello Label Titles On Cards](trello/viewing-trello-label-titles-on-cards.md)
+
+### Ubuntu
+
+- [Error About Samba](ubuntu/error-about-samba.md)
 
 ### Vim
 
