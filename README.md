@@ -21,7 +21,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_106 TILs and counting..._
+_107 TILs and counting..._
 
 ---
 
@@ -181,6 +181,7 @@ _106 TILs and counting..._
 
 ### Ubuntu
 
+- [All My Home Disappeared](ubuntu/all-my-home-disappeared.md)
 - [Enable WSL2 Ubuntu GUI And Use Rdp To Remote](ubuntu/enable-wsl2-ubuntu-gui-and-use-rdp-to-remote.md)
 - [Error About Samba](ubuntu/error-about-samba.md)
 
