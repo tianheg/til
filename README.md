@@ -21,7 +21,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_102 TILs and counting..._
+_103 TILs and counting..._
 
 ---
 
@@ -193,6 +193,7 @@ _102 TILs and counting..._
 - [Use The U Tag To Underline Text](visual-design/use-the-u-tag-to-underline-text.md)
 - [Use The Em Tag To Italicize Text](visual-design/use-the-em-tag-to-italicize-text.md)
 - [Use The S Tag To Strikethrough Text](visual-design/use-the-s-tag-to-strikethrough-text.md)
+- [Create A Horizontal Line Using The Hr Element](visual-design/create-horizontal-line-using-hr.md)
 
 ### VMware
 
