@@ -21,7 +21,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_101 TILs and counting..._
+_102 TILs and counting..._
 
 ---
 
@@ -192,6 +192,7 @@ _101 TILs and counting..._
 - [Use The Strong Tag To Make Text Bold](visual-design/use-the-strong-tag-to-make-text-bold.md)
 - [Use The U Tag To Underline Text](visual-design/use-the-u-tag-to-underline-text.md)
 - [Use The Em Tag To Italicize Text](visual-design/use-the-em-tag-to-italicize-text.md)
+- [Use The S Tag To Strikethrough Text](visual-design/use-the-s-tag-to-strikethrough-text.md)
 
 ### VMware
 
