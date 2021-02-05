@@ -21,7 +21,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_99 TILs and counting..._
+_100 TILs and counting..._
 
 ---
 
@@ -190,6 +190,7 @@ _99 TILs and counting..._
 - [Adjust The Width Of An Element Using The Width Property](visual-design/adjust-the-width-of-an-element-using-width.md)
 - [Adjust The Height Of An Element Using The Height Property](visual-design/adjust-the-height-of-an-element-using-height.md)
 - [Use The Strong Tag To Make Text Bold](visual-design/use-the-strong-tag-to-make-text-bold.md)
+- [Use The U Tag To Underline Text](visual-design/use-the-u-tag-to-underline-text.md)
 
 ### VMware
 
