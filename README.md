@@ -21,7 +21,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_108 TILs and counting..._
+_109 TILs and counting..._
 
 ---
 
@@ -203,6 +203,7 @@ _108 TILs and counting..._
 - [Use The S Tag To Strikethrough Text](visual-design/use-the-s-tag-to-strikethrough-text.md)
 - [Create A Horizontal Line Using The Hr Element](visual-design/create-horizontal-line-using-hr.md)
 - [Adjust The Background-color Property Of Text](visual-design/adjust-the-background-color-property-of-text.md)
+- [Adjust The Size Of A Header Versus A Paragraph Tag](visual-design/adjust-the-size-of-a-header-versus-a-paragraph-tag.md)
 
 ### VMware
 
