@@ -21,7 +21,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_109 TILs and counting..._
+_110 TILs and counting..._
 
 ---
 
@@ -204,6 +204,7 @@ _109 TILs and counting..._
 - [Create A Horizontal Line Using The Hr Element](visual-design/create-horizontal-line-using-hr.md)
 - [Adjust The Background-color Property Of Text](visual-design/adjust-the-background-color-property-of-text.md)
 - [Adjust The Size Of A Header Versus A Paragraph Tag](visual-design/adjust-the-size-of-a-header-versus-a-paragraph-tag.md)
+- [Add A Box-shadow To A Card-like Element](visual-design/add-a-box-shadow-to-a-card-like-element.md)
 
 ### VMware
 
