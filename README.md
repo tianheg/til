@@ -113,7 +113,7 @@ _110 TILs and counting..._
 - [Create Empty Branch Locally And Remotely](git/create-empty-branch-locally-and-remotely.md)
 - [Delete A Git Branch Both Locally And Remotely](git/delete-a-git-branch-both-locally-and-remotely.md)
 - [Delete All Local And Remote Tags](git/delete-all-local-remote-tags.md)
-- [Delete Commit Before Push](git/delete-commit-before-push.md)
+- [Delete Commit](git/delete-commit.md)
 - [Delete Remote Branch In Local Git Env](git/delete-remote-branch-in-local-git-env.md)
 - [Update With Original Repo After Forking on GitHub](git/update-with-original-repo-after-forking-on-github.md)
 - [Merge Two Git Repo](git/merge-two-git-repo.md)
