@@ -21,7 +21,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_110 TILs and counting..._
+_111 TILs and counting..._
 
 ---
 
@@ -205,6 +205,7 @@ _110 TILs and counting..._
 - [Adjust The Background-color Property Of Text](visual-design/adjust-the-background-color-property-of-text.md)
 - [Adjust The Size Of A Header Versus A Paragraph Tag](visual-design/adjust-the-size-of-a-header-versus-a-paragraph-tag.md)
 - [Add A Box-shadow To A Card-like Element](visual-design/add-a-box-shadow-to-a-card-like-element.md)
+- [Decrease The Opacity Of An Element](visual-design/decrease-the-opacity-of-an-element.md)
 
 ### VMware
 
