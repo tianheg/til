@@ -21,7 +21,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_119 TILs and counting..._
+_120 TILs and counting..._
 
 ---
 
@@ -214,6 +214,7 @@ _119 TILs and counting..._
 - [Adjust The Hover State Of An Anchor Tag](visual-design/adjust-the-hover-state-of-an-anchor-tag.md)
 - [Change An Element's Relative Position](visual-design/change-an-elements-relative-position.md)
 - [Move A Relatively Positioned Element With CSS Offsets](visual-design/move-a-relatively-positioned-element-with-css-offsets.md)
+- [Lock An Element To Its Parent With Absolute Positioning](visual-design/lock-an-element-to-its-parent-with-absolute-positioning.md)
 
 ### VMware
 
