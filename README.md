@@ -21,7 +21,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_123 TILs and counting..._
+_124 TILs and counting..._
 
 ---
 
@@ -218,6 +218,7 @@ _123 TILs and counting..._
 - [Lock An Element To The Browser Window With Fixed Positioning](visual-design/lock-an-element-to-the-browser-window-with-fixed-positioning.md)
 - [Push Elements Left Or Right With The Float Property](visual-design/push-elements-left-or-right-with-the-float-property.md)
 - [Change The Position Of Overlapping Elements With The Z-index Property](visual-design/change-the-position-of-overlapping-elements-with-the-z-index-property.md)
+- [Center An Element Horizontally Using The Margin Property](visual-design/center-an-element-horizontally-using-the-margin-property.md)
 
 ### VMware
 
