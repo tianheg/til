@@ -21,7 +21,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_125 TILs and counting..._
+_126 TILs and counting..._
 
 ---
 
@@ -220,6 +220,7 @@ _125 TILs and counting..._
 - [Change The Position Of Overlapping Elements With The Z-index Property](visual-design/change-the-position-of-overlapping-elements-with-the-z-index-property.md)
 - [Center An Element Horizontally Using The Margin Property](visual-design/center-an-element-horizontally-using-the-margin-property.md)
 - [Learn About Complementary Colors](visual-design/learn-about-complementary-colors.md)
+- [Learn About Tertiary Colors](visual-design/learn-about-tertiary-colors.md)
 
 ### VMware
 
