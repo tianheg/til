@@ -21,7 +21,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_116 TILs and counting..._
+_117 TILs and counting..._
 
 ---
 
@@ -211,6 +211,7 @@ _116 TILs and counting..._
 - [Set The Font-weight For Multiple Heading Elements](visual-design/set-the-font-weight-for-multiple-heading-elements.md)
 - [Set The Font-size Of Paragraph Text](visual-design/set-the-font-size-of-paragraph-text.md)
 - [Set The Line-height Of Paragraphs](visual-design/set-the-line-height-of-paragraphs.md)
+- [Adjust The Hover State Of An Anchor Tag](visual-design/adjust-the-hover-state-of-an-anchor-tag.md)
 
 ### VMware
 
