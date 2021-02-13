@@ -21,7 +21,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_114 TILs and counting..._
+_115 TILs and counting..._
 
 ---
 
@@ -209,6 +209,7 @@ _114 TILs and counting..._
 - [Use The Text-transform Property To Make Text Uppercase](visual-design/use-the-text-transform-property-to-make-text-uppercase.md)
 - [Set The Font-size For Multiple Heading Elements](visual-design/set-the-font-size-for-multiple-heading-elements.md)
 - [Set The Font-weight For Multiple Heading Elements](visual-design/set-the-font-weight-for-multiple-heading-elements.md)
+- [Set The Font-size Of Paragraph Text](visual-design/set-the-font-size-of-paragraph-text.md)
 
 ### VMware
 
