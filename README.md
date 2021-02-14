@@ -21,7 +21,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_129 TILs and counting..._
+_130 TILs and counting..._
 
 ---
 
@@ -224,6 +224,7 @@ _129 TILs and counting..._
 - [Adjust The Color Of Various Elements To Complementary Colors](visual-design/adjust-the-color-of-various-elements-to-complementary-colors.md)
 - [Adjust The Hue Of A Color](visual-design/adjust-the-hue-of-a-color.md)
 - [Adjust The Tone Of A Color](visual-design/adjust-the-tone-of-a-color.md)
+- [Create A Gradual CSS Linear Gradient](visual-design/create-a-gradual-css-linear-gradient.md)
 
 ### VMware
 
