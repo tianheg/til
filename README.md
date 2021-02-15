@@ -21,7 +21,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_139 TILs and counting..._
+_140 TILs and counting..._
 
 ---
 
@@ -234,6 +234,7 @@ _139 TILs and counting..._
 - [Use The CSS Transform Property SkewY To Skew An Element Along The Y-Axis](visual-design/use-the-css-transform-property-skewy-to-skew-an-element-along-the-y-axis.md)
 - [Create A Graphic Using CSS](visual-design/create-a-graphic-using-css.md)
 - [Create A More Complex Shape Using CSS And HTML](visual-design/create-a-more-complex-shape-using-css-and-html.md)
+- [Learn How The CSS @keyframes And Animation Properties Work](visual-design/learn-how-the-css-keyframes-and-animation-properties-work.md)
 
 ### VMware
 
