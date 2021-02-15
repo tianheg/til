@@ -21,7 +21,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_132 TILs and counting..._
+_133 TILs and counting..._
 
 ---
 
@@ -227,6 +227,7 @@ _132 TILs and counting..._
 - [Create A Gradual CSS Linear Gradient](visual-design/create-a-gradual-css-linear-gradient.md)
 - [Use A CSS Linear Gradient To Create A Striped Element](visual-design/use-a-css-linear-gradient-to-create-a-striped-element.md)
 - [Create Texture By Adding A Subtle Pattern As A Background Image](visual-design/create-texture-by-adding-a-subtle-pattern-as-a-background-image.md)
+- [Use The CSS Transform Scale Property To Change The Size Of An Element](visual-design/use-the-css-transform-scale-property-to-change-the-size-of-an-element.md)
 
 ### VMware
 
