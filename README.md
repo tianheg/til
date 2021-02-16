@@ -21,7 +21,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_143 TILs and counting..._
+_144 TILs and counting..._
 
 ---
 
@@ -238,6 +238,7 @@ _143 TILs and counting..._
 - [Use CSS Animation To Change The Hover State Of A Button](visual-design/use-css-animation-to-change-the-hover-state-of-a-button.md)
 - [Modify Fill Mode Of An Animation](visual-design/modify-fill-mode-of-an-animation.md)
 - [Create Movement Using CSS Animation](visual-design/create-movement-using-css-animation.md)
+- [Create Visual Direction By Fading An Element From Left To Right](visual-design/create-visual-direction-by-fading-an-element-from-left-to-right.md)
 
 ### VMware
 
