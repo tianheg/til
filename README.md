@@ -21,7 +21,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_149 TILs and counting..._
+_150 TILs and counting..._
 
 ---
 
@@ -248,6 +248,7 @@ _149 TILs and counting..._
 - [Animate Elements Continually Using An Infinite Animation Count](visual-design/animate-elements-continually-using-an-infinite-animation-count.md)
 - [Make A CSS Heartbeat Using An Infinite Animation Count](visual-design/make-a-css-heartbeat-using-an-infinite-animation-count.md)
 - [Animate Elements At Variable Rates](visual-design/animate-elements-at-variable-rates.md)
+- [Animate Multiple Elements At Variable Rates](visual-design/animate-multiple-elements-at-variable-rates.md)
 
 ### VMware
 
