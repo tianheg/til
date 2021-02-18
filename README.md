@@ -21,12 +21,13 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_152 TILs and counting..._
+_153 TILs and counting..._
 
 ---
 
 ### Categories <!-- omit in toc -->
 
+- [Algolia](#algolia)
 - [CSS](#css)
 - [Docker](#docker)
 - [Git](#git)
@@ -48,6 +49,10 @@ _152 TILs and counting..._
 - [Yarn](#yarn)
 
 ---
+
+### Algolia
+
+- [What Is A Usage Unit?](algolia/what-is-a-usage-unit.md)
 
 ### CSS
 
