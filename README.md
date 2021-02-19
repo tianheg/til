@@ -21,7 +21,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_153 TILs and counting..._
+_154 TILs and counting..._
 
 ---
 
@@ -37,6 +37,7 @@ _153 TILs and counting..._
 - [Hugo](#hugo)
 - [JavaScript](#javascript)
 - [Linux](#linux)
+- [Notion](#notion)
 - [SSH](#ssh)
 - [Trello](#trello)
 - [Ubuntu](#ubuntu)
@@ -189,6 +190,10 @@ _153 TILs and counting..._
 ### Linux
 
 - [Install `.bundle` Packages In Linux](linux/install-bundle-packages-in-linux.md)
+
+### Notion
+
+- [Use Page Cover As Card Preview With Gallery](notion/use-page-cover-as-card-preview-with-gallery.md)
 
 ### SSH
 
