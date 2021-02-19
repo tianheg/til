@@ -23,7 +23,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_157 TILs and counting..._
+_158 TILs and counting..._
 
 ---
 
@@ -274,6 +274,7 @@ _157 TILs and counting..._
 - [Animate Multiple Elements At Variable Rates](visual-design/animate-multiple-elements-at-variable-rates.md)
 - [Change Animation Timing With Keywords](visual-design/change-animation-timing-with-keywords.md)
 - [Learn How Bezier Curves Work](visual-design/learn-how-bezier-curves-work.md)
+- [Use A Bezier Curve To Move A Graphic](visual-design/use-a-bezier-curve-to-move-a-graphic.md)
 
 ### VMware
 
