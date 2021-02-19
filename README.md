@@ -6,6 +6,8 @@ A collection of concise write-ups on small things I learn day to day across a
 variety of languages and technologies. These are things that don't really
 warrant a full blog post. These are things I've picked up by [Learning In Public™](https://dev.to/jbranchaud/how-i-built-a-learning-machine-45k9).
 
+These are my tech and life.
+
 Understanding about TIL:
 
 - must be short
@@ -21,7 +23,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_154 TILs and counting..._
+_155 TILs and counting..._
 
 ---
 
@@ -39,6 +41,7 @@ _154 TILs and counting..._
 - [Linux](#linux)
 - [Notion](#notion)
 - [SSH](#ssh)
+- [Traffic](#traffic)
 - [Trello](#trello)
 - [Ubuntu](#ubuntu)
 - [Vim](#vim)
@@ -198,6 +201,10 @@ _154 TILs and counting..._
 ### SSH
 
 - [Generate SSH Key](ssh/generate-ssh-key.md)
+
+### Traffic
+
+- [How To Buy Tickets](traffic/how-to-buy-tickets.md)
 
 ### Trello
 
