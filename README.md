@@ -23,12 +23,13 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_159 TILs and counting..._
+_160 TILs and counting..._
 
 ---
 
 ### Categories <!-- omit in toc -->
 
+- [Accessibility](#accessibility)
 - [Algolia](#algolia)
 - [CSS](#css)
 - [Docker](#docker)
@@ -53,6 +54,10 @@ _159 TILs and counting..._
 - [Yarn](#yarn)
 
 ---
+
+### Accessibility
+
+- [What Is Accessibility?](accessibility/what-is-accessibility.md)
 
 ### Algolia
 
