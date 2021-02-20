@@ -23,7 +23,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_163 TILs and counting..._
+_164 TILs and counting..._
 
 ---
 
@@ -59,6 +59,7 @@ _163 TILs and counting..._
 ### Accessibility
 
 - [Add A Text Alternative To Images For Visually Impaired Accessibility](accessibility/add-a-text-alternative-to-images-for-visually-impaired-accessibility.md)
+- [Know When Alt Text Should Be Left Blank](accessibility/know-when-alt-text-should-be-left-blank.md)
 - [What Is Accessibility?](accessibility/what-is-accessibility.md)
 
 ### Algolia
