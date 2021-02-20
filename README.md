@@ -23,7 +23,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_161 TILs and counting..._
+_162 TILs and counting..._
 
 ---
 
@@ -35,6 +35,7 @@ _161 TILs and counting..._
 - [Docker](#docker)
 - [Git](#git)
 - [GitHub](#github)
+- [Go](#go)
 - [GPG](#gpg)
 - [HTML](#html)
 - [Hugo](#hugo)
@@ -148,6 +149,10 @@ _161 TILs and counting..._
 ### GitHub
 
 - [Use GitHub CLI](github/use-github-cli.md)
+
+### Go
+
+- [Install Go On Ubuntu](go/install-go-on-ubuntu.md)
 
 ### GPG
 
