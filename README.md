@@ -222,7 +222,7 @@ _170 TILs and counting..._
 
 ### Traffic
 
-- [How To Buy Tickets](traffic/how-to-buy-tickets.md)
+- [如何买票](traffic/how-to-buy-tickets.md)
 
 ### Trello
 
