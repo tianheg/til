@@ -23,7 +23,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_167 TILs and counting..._
+_168 TILs and counting..._
 
 ---
 
@@ -131,6 +131,7 @@ _167 TILs and counting..._
 
 - [Add Registry Mirrors For Win10](docker/add-registry-mirrors-for-win10.md)
 - [Docker Pull EOF](docker/docker-pull-eof.md)
+- [Manage Docker As A Non-root User](docker/manage-docker-as-a-non-root-user.md)
 - [Install Docker Compose On Ubuntu](docker/install-docker-compose-on-ubuntu.md)
 - [Install Docker On Ubuntu](docker/install-docker-on-ubuntu.md)
 
