@@ -23,7 +23,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_166 TILs and counting..._
+_167 TILs and counting..._
 
 ---
 
@@ -207,6 +207,7 @@ _166 TILs and counting..._
 ### Linux
 
 - [Install `.bundle` Packages In Linux](linux/install-bundle-packages-in-linux.md)
+- [List Users](linux/list-users.md)
 
 ### Notion
 
