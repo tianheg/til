@@ -23,7 +23,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_171 TILs and counting..._
+_172 TILs and counting..._
 
 ---
 
@@ -212,6 +212,7 @@ _171 TILs and counting..._
 - [Difference Between `useradd` And `adduser`](linux/difference-between-useradd-and-adduser.md)
 - [Install `.bundle` Packages In Linux](linux/install-bundle-packages-in-linux.md)
 - [List Users](linux/list-users.md)
+- [Switch Users](linux/switch-users.md)
 
 ### Notion
 
