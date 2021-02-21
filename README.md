@@ -23,7 +23,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_170 TILs and counting..._
+_171 TILs and counting..._
 
 ---
 
@@ -42,6 +42,7 @@ _170 TILs and counting..._
 - [JavaScript](#javascript)
 - [Linux](#linux)
 - [Notion](#notion)
+- [Poems](#poems)
 - [SSH](#ssh)
 - [Traffic](#traffic)
 - [Trello](#trello)
@@ -215,6 +216,10 @@ _170 TILs and counting..._
 ### Notion
 
 - [Use Page Cover As Card Preview With Gallery](notion/use-page-cover-as-card-preview-with-gallery.md)
+
+### Poems
+
+- [如何读诗](poems/how-to-read-poetry.md)
 
 ### SSH
 
