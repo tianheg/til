@@ -23,7 +23,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_173 TILs and counting..._
+_174 TILs and counting..._
 
 ---
 
@@ -218,6 +218,7 @@ _173 TILs and counting..._
 - [Install `.bundle` Packages In Linux](linux/install-bundle-packages-in-linux.md)
 - [List Users](linux/list-users.md)
 - [Switch Users](linux/switch-users.md)
+- [Username Is Not In The Sudoers File](linux/username-is-not-in-the-sudoers-file.md)
 
 ### Notion
 
