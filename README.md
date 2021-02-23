@@ -23,7 +23,7 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
-_175 TILs and counting..._
+_176 TILs and counting..._
 
 ---
 
@@ -53,6 +53,7 @@ _175 TILs and counting..._
 - [VMware](#vmware)
 - [VSCode](#vscode)
 - [VuePress](#vuepress)
+- [Websockets](#websockets)
 - [Windows10](#windows10)
 - [Yarn](#yarn)
 
@@ -323,6 +324,10 @@ _175 TILs and counting..._
 ### VuePress
 
 - [Introduction To VuePress](vuepress/introduction-to-vuepress.md)
+
+### Websockets
+
+- [Websockets Closed With Close Code 1006](websockets/websockets-closed-with-close-code-1006.md)
 
 ### Windows10
 
