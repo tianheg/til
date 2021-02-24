@@ -23,6 +23,8 @@ Understanding about TIL:
   fatal: A branch named 'new-branch' already exists.
   ```
 
+- 分类名字使用英文，如果内容是中文，题目也要用中文，以暗示内容是中文；英文等同
+
 _176 TILs and counting..._
 
 ---
