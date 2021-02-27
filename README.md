@@ -26,7 +26,7 @@ Understanding about TIL:
 - 分类名字使用英文，~~如果内容是中文，题目也要用中文，以暗示内容是中文；英文等同~~ 「中文 + 英文」，两者哪一个适合用哪个
 - 把自己今天的收获，放到这儿，无论是否与技术相关
 
-_179 TILs and counting..._
+_180 TILs and counting..._
 
 ---
 
@@ -230,6 +230,7 @@ _179 TILs and counting..._
 ### Node.js
 
 - [Husky Error Command "husky-run" Not Found](nodejs/husky-command-husky-run-not-found.md)
+- [Package.json License Should Be A Valid SPDX License Expression](nodejs/package-license-should-be-a-valid-spdx-license-expression.md)
 - [Used Packages](nodejs/used-packages.md)
 
 ### Notion
