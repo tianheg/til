@@ -29,5 +29,10 @@
         "format": "lint-md *.md --fix",
         "test": "lint-staged",
         "postinstall": "husky install"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "yarn test"
+        }
     }
 }
