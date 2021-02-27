@@ -26,7 +26,7 @@ Understanding about TIL:
 - 分类名字使用英文，~~如果内容是中文，题目也要用中文，以暗示内容是中文；英文等同~~ 「中文 + 英文」，两者哪一个适合用哪个
 - 把自己今天的收获，放到这儿，无论是否与技术相关
 
-_177 TILs and counting..._
+_178 TILs and counting..._
 
 ---
 
@@ -45,6 +45,7 @@ _177 TILs and counting..._
 - [JavaScript](#javascript)
 - [Let's Encrypt](#lets-encrypt)
 - [Linux](#linux)
+- [Node.js](#nodejs)
 - [Notion](#notion)
 - [Poems](#poems)
 - [SSH](#ssh)
@@ -225,6 +226,10 @@ _177 TILs and counting..._
 - [List Users](linux/list-users.md)
 - [Switch Users](linux/switch-users.md)
 - [Username Is Not In The Sudoers File](linux/username-is-not-in-the-sudoers-file.md)
+
+### Node.js
+
+- [Used Packages](nodejs/used-packages.md)
 
 ### Notion
 
