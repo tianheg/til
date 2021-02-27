@@ -26,7 +26,7 @@ Understanding about TIL:
 - 分类名字使用英文，~~如果内容是中文，题目也要用中文，以暗示内容是中文；英文等同~~ 「中文 + 英文」，两者哪一个适合用哪个
 - 把自己今天的收获，放到这儿，无论是否与技术相关
 
-_176 TILs and counting..._
+_177 TILs and counting..._
 
 ---
 
@@ -59,6 +59,7 @@ _176 TILs and counting..._
 - [Websockets](#websockets)
 - [Windows10](#windows10)
 - [Yarn](#yarn)
+- [Zsh](#zsh)
 
 ---
 
@@ -339,6 +340,10 @@ _176 TILs and counting..._
 ### Yarn
 
 - [Yarn GPG Signatures Are Invalid](yarn/yarn-gpg-signatures-are-invalid.md)
+
+### Zsh
+
+- [Add Alias To Zshrc](zsh/add-alias-to-zshrc.md)
 
 ---
 
