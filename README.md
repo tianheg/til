@@ -26,7 +26,7 @@ Understanding about TIL:
 - 分类名字使用英文，~~如果内容是中文，题目也要用中文，以暗示内容是中文；英文等同~~ 「中文 + 英文」，两者哪一个适合用哪个
 - 把自己今天的收获，放到这儿，无论是否与技术相关
 
-_181 TILs and counting..._
+_182 TILs and counting..._
 
 ---
 
@@ -40,6 +40,7 @@ _181 TILs and counting..._
 - [GitHub](#github)
 - [Go](#go)
 - [GPG](#gpg)
+- [Gulp](#gulp)
 - [HTML](#html)
 - [Hugo](#hugo)
 - [JavaScript](#javascript)
@@ -171,6 +172,10 @@ _181 TILs and counting..._
 ### GPG
 
 - [Can Not Change Name Or Comment Without Losing Signatures](gpg/can-not-change-name-or-comment-without-losing-signatures.md)
+
+### Gulp
+
+- [Gulp Command Not Found](gulp/gulp-command-not-found.md)
 
 ### HTML
 
