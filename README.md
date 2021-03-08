@@ -288,7 +288,7 @@ _193 TILs and counting..._
 - [Enable WSL2 Ubuntu GUI And Use Rdp To Remote](ubuntu/enable-wsl2-ubuntu-gui-and-use-rdp-to-remote.md)
 - [Error About Samba](ubuntu/error-about-samba.md)
 - [Install Deb File](ubuntu/install-deb-file.md)
-- [Install F.lux On Ubuntu](ubuntu/install-flux-on-ubuntu.md)                                   
+- [Install F.lux On Ubuntu](ubuntu/install-flux-on-ubuntu.md)
 - [Resize Ubuntu Partitions](ubuntu/resize-ubuntu-partitions.md)
 
 ### Vim
