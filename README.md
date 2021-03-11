@@ -26,7 +26,7 @@ Understanding about TIL:
 - 分类名字使用英文，~~如果内容是中文，题目也要用中文，以暗示内容是中文；英文等同~~ 「中文 + 英文」，两者哪一个适合用哪个
 - 把自己今天的收获，放到这儿，无论是否与技术相关
 
-_196 TILs and counting..._
+_197 TILs and counting..._
 
 ---
 
@@ -291,6 +291,7 @@ _196 TILs and counting..._
 - [Error About Samba](ubuntu/error-about-samba.md)
 - [Install Deb File](ubuntu/install-deb-file.md)
 - [Install F.lux On Ubuntu](ubuntu/install-flux-on-ubuntu.md)
+- [Install VMware Workstation Player](ubuntu/install-vmware-workstation-player.md)
 - [Local Network Share](ubuntu/local-network-share.md)
 - [Resize Ubuntu Partitions](ubuntu/resize-ubuntu-partitions.md)
 
