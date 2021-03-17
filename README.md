@@ -26,7 +26,7 @@ Understanding about TIL:
 - 分类名字使用英文，~~如果内容是中文，题目也要用中文，以暗示内容是中文；英文等同~~ 「中文 + 英文」，两者哪一个适合用哪个
 - 把自己今天的收获，放到这儿，无论是否与技术相关
 
-_211 TILs and counting..._
+_212 TILs and counting..._
 
 ---
 
@@ -308,6 +308,7 @@ _211 TILs and counting..._
 - [Install Deb File](ubuntu/install-deb-file.md)
 - [Install F.lux On Ubuntu](ubuntu/install-flux-on-ubuntu.md)
 - [Install Spotify](ubuntu/install-spotify.md)
+- [Install VLC](ubuntu/install-vlc.md)
 - [Install VMware Workstation Player](ubuntu/install-vmware-workstation-player.md)
 - [Local Network Share](ubuntu/local-network-share.md)
 - [No Pip On Ubuntu20.04](ubuntu/no-pip-on-ubuntu20-04.md)
