@@ -26,7 +26,7 @@ Understanding about TIL:
 - 分类名字使用英文，~~如果内容是中文，题目也要用中文，以暗示内容是中文；英文等同~~ 「中文 + 英文」，两者哪一个适合用哪个
 - 把自己今天的收获，放到这儿，无论是否与技术相关
 
-_216 TILs and counting..._
+_217 TILs and counting..._
 
 ---
 
@@ -35,6 +35,7 @@ _216 TILs and counting..._
 - [Accessibility](#accessibility)
 - [Algolia](#algolia)
 - [Chrome](#chrome)
+- [Cloudflare](#cloudflare)
 - [CSS](#css)
 - [Curl](#curl)
 - [Docker](#docker)
@@ -91,6 +92,10 @@ _216 TILs and counting..._
 ### Chrome
 
 - [Hard Refresh](chrome/hard-refresh.md)
+
+### Cloudflare
+
+- [Login After Losing Recovery Codes](cloudflare/login-after-losing-recovery-codes.md)
 
 ### CSS
 
