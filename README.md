@@ -26,7 +26,7 @@ Understanding about TIL:
 - 分类名字使用英文，~~如果内容是中文，题目也要用中文，以暗示内容是中文；英文等同~~ 「中文 + 英文」，两者哪一个适合用哪个
 - 把自己今天的收获，放到这儿，无论是否与技术相关
 
-_231 TILs and counting..._
+_232 TILs and counting..._
 
 ---
 
@@ -88,6 +88,7 @@ _231 TILs and counting..._
 - [Make Screen Reader Navigation Easier With The Nav Landmark](accessibility/make-screen-reader-navigation-easier-with-the-nav-landmark.md)
 - [Make Screen Reader Navigation Easier With The Footer Landmark](accessibility/make-screen-reader-navigation-easier-with-the-footer-landmark.md)
 - [Improve Accessibility Of Audio Content With The Audio Element](accessibility/improve-accessibility-of-audio-content-with-the-audio-element.md)
+- [Improve Chart Accessibility With The Figure Element](accessibility/improve-chart-accessibility-with-the-figure-element.md)
 
 ### Algolia
 
