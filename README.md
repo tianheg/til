@@ -26,7 +26,7 @@ Understanding about TIL:
 - 分类名字使用英文，~~如果内容是中文，题目也要用中文，以暗示内容是中文；英文等同~~ 「中文 + 英文」，两者哪一个适合用哪个
 - 把自己今天的收获，放到这儿，无论是否与技术相关
 
-_241 TILs and counting..._
+_242 TILs and counting..._
 
 ---
 
@@ -95,6 +95,7 @@ _241 TILs and counting..._
 - [Standardize Times With The HTML5 Datetime Attribute](accessibility/standardize-times-with-the-html5-datetime-attribute.md)
 - [Make Elements Only Visible To A Screen Reader By Using Custom CSS](accessibility/make-elements-only-visible-to-a-screen-reader-by-using-custom-css.md)
 - [Improve Readability With High Contrast Text](accessibility/improve-readability-with-high-contrast-text.md)
+- [Avoid Colorblindness Issues By Using Sufficient Contrast](accessibility/avoid-colorblindness-issues-by-using-sufficient-contrast.md)
 
 ### Algolia
 
