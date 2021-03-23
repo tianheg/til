@@ -26,7 +26,7 @@ Understanding about TIL:
 - 分类名字使用英文，~~如果内容是中文，题目也要用中文，以暗示内容是中文；英文等同~~ 「中文 + 英文」，两者哪一个适合用哪个
 - 把自己今天的收获，放到这儿，无论是否与技术相关
 
-_240 TILs and counting..._
+_241 TILs and counting..._
 
 ---
 
@@ -291,6 +291,7 @@ _240 TILs and counting..._
 - [Extract File](linux/extract-file.md)
 - [Install `.bundle` Packages In Linux](linux/install-bundle-packages-in-linux.md)
 - [List Users](linux/list-users.md)
+- [Move File](linux/move-file.md)
 - [Orders](linux/orders.md)
 - [Switch Users](linux/switch-users.md)
 - [Username Is Not In The Sudoers File](linux/username-is-not-in-the-sudoers-file.md)
