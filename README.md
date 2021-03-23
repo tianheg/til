@@ -26,7 +26,7 @@ Understanding about TIL:
 - 分类名字使用英文，~~如果内容是中文，题目也要用中文，以暗示内容是中文；英文等同~~ 「中文 + 英文」，两者哪一个适合用哪个
 - 把自己今天的收获，放到这儿，无论是否与技术相关
 
-_239 TILs and counting..._
+_240 TILs and counting..._
 
 ---
 
@@ -288,6 +288,7 @@ _239 TILs and counting..._
 
 - [Create Users](linux/create-users.md)
 - [Difference Between `useradd` And `adduser`](linux/difference-between-useradd-and-adduser.md)
+- [Extract File](linux/extract-file.md)
 - [Install `.bundle` Packages In Linux](linux/install-bundle-packages-in-linux.md)
 - [List Users](linux/list-users.md)
 - [Orders](linux/orders.md)
