@@ -1,5 +1,5 @@
 {
-    "name": "TIL",
+    "name": "til",
     "version": "1.0.0",
     "license": "CC-BY-SA-4.0",
     "homepage": "https://github.com/tianheg/til#readme",
@@ -25,8 +25,8 @@
         "*.md": "lint-md --fix"
     },
     "scripts": {
-        "lint": "lint-md *.md",
-        "format": "lint-md *.md --fix",
+        "lint": "lint-md */*.md",
+        "format": "lint-md */*.md --fix",
         "test": "lint-staged",
         "postinstall": "husky install"
     },
