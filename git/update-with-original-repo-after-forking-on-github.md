@@ -75,4 +75,4 @@ Then create a merge for your forked repo, and merge it. [exercise](https://githu
 
 ## References
 
-- [Github进行fork后如何与原仓库同步：重新fork很省事，但不如反复练习版本合并](https://github.com/selfteaching/the-craft-of-selfteaching/issues/67)
+- [Github 进行 fork 后如何与原仓库同步：重新 fork 很省事，但不如反复练习版本合并](https://github.com/selfteaching/the-craft-of-selfteaching/issues/67)
