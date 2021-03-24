@@ -1,4 +1,4 @@
-# What Is A Usage Unit?
+# What Is A Usage Unit
 
 4,000 search requests / 1,000 search requests per unit = 4 units per month.
 
