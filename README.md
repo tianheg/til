@@ -52,7 +52,7 @@ _244 TILs and counting..._
 - [HTML](#html)
 - [Hugo](#hugo)
 - [JavaScript](#javascript)
-- [Law](#law)
+- [法律](#法律)
 - [Let's Encrypt](#lets-encrypt)
 - [Linux](#linux)
 - [Node.js](#nodejs)
@@ -61,7 +61,7 @@ _244 TILs and counting..._
 - [Python](#python)
 - [Security](#security)
 - [SSH](#ssh)
-- [Traffic](#traffic)
+- [交通](#交通)
 - [Translate](#translate)
 - [Trello](#trello)
 - [Ubuntu](#ubuntu)
@@ -282,9 +282,9 @@ _244 TILs and counting..._
 
 - [JavaScript Virtual Machine](javascript/javascript-virtual-machine.md)
 
-### Law
+### 法律
 
-- [Id Card](law/id-card.md)
+- [身份证](law/id-card.md)
 
 ### Let's Encrypt
 
@@ -293,7 +293,7 @@ _244 TILs and counting..._
 ### Linux
 
 - [Create Users](linux/create-users.md)
-- [Difference Between `useradd` And `adduser`](linux/difference-between-useradd-and-adduser.md)
+- [Difference Between Useradd And Adduser](linux/difference-between-useradd-and-adduser.md)
 - [Extract File](linux/extract-file.md)
 - [Install `.bundle` Packages In Linux](linux/install-bundle-packages-in-linux.md)
 - [List Users](linux/list-users.md)
@@ -335,7 +335,7 @@ _244 TILs and counting..._
 
 - [Generate SSH Key](ssh/generate-ssh-key.md)
 
-### Traffic
+### 交通
 
 - [如何买票](traffic/how-to-buy-tickets.md)
 
