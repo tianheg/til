@@ -27,7 +27,7 @@
 4. Select a disk which isn't a system disk
 5. Typical
 6. Then click `protel99seservicepack6.exe`
-7. Protel 99 SE在 windows7 下有一些功能使用不了
+7. Protel 99 SE 在 windows7 下有一些功能使用不了
 
    1. 进入 C:\Windows 下找到 AdvSch99SE.ini 和 ADVPCB99SE.INI 两个文件；
    2. 用写字板打开 AdvSch99SE.ini 文件,在 `[Change Library File List]` 下找到相应位置，更改程序如下：
@@ -41,7 +41,7 @@
    File3=D:\Design Explorer 99 SE\Library\Sch\sim.ddb
    ```
 
-   1. 同样对 ADVPCB99SE.INI 更改以配置PCB库
+   1. 同样对 ADVPCB99SE.INI 更改以配置 PCB 库
 
    进入 C:\Windows 下找到 ADVPCB99SE.INI 文件，如果没有，复制我上传的文件，做相应的路径修改。
 
