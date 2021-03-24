@@ -1,4 +1,4 @@
-# How To Uncomment HTML?
+# How To Uncomment HTML
 
 use `<!-- html code -->`
 
