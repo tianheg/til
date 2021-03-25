@@ -302,7 +302,7 @@ _250 TILs and counting..._
 ### Linux
 
 - [Create Users](linux/create-users.md)
-- [Difference Between Useradd And Adduser](linux/difference-between-useradd-and-adduser.md)
+- [Difference Between `useradd` And `adduser`](linux/difference-between-useradd-and-adduser.md)
 - [Extract File](linux/extract-file.md)
 - [Install `.bundle` Packages In Linux](linux/install-bundle-packages-in-linux.md)
 - [List Users](linux/list-users.md)
