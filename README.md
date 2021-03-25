@@ -26,7 +26,7 @@ Understanding about TIL:
 - 分类名字使用英文，~~如果内容是中文，题目也要用中文，以暗示内容是中文；英文等同~~ 「中文 + 英文」，两者哪一个适合用哪个
 - 把自己今天的收获，放到这儿，无论是否与技术相关
 
-_256 TILs and counting..._
+_257 TILs and counting..._
 
 ---
 
@@ -177,6 +177,10 @@ _256 TILs and counting..._
 - [Inherit CSS Variables](css/inherit-css-variables.md)
 - [Change A Variable For A Specific Area](css/change-a-variable-for-a-specific-area.md)
 - [Use A Media Query To Change A Variable](css/use-a-media-query-to-change-a-variable.md)
+
+**CSS Flexbox**:
+
+- [Use Display: Flex To Position Two Boxes](css/use-display-flex-to-position-two-boxes.md)
 
 **Others**:
 
