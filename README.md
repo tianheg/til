@@ -26,7 +26,7 @@ Understanding about TIL:
 - 分类名字使用英文，~~如果内容是中文，题目也要用中文，以暗示内容是中文；英文等同~~ 「中文 + 英文」，两者哪一个适合用哪个
 - 把自己今天的收获，放到这儿，无论是否与技术相关
 
-_279 TILs and counting..._
+_280 TILs and counting..._
 
 ---
 
@@ -403,6 +403,7 @@ _279 TILs and counting..._
 - [Enable WSL2 Ubuntu GUI And Use Rdp To Remote](ubuntu/enable-wsl2-ubuntu-gui-and-use-rdp-to-remote.md)
 - [Error About Samba](ubuntu/error-about-samba.md)
 - [H.264 Not Found](ubuntu/h.264-not-found.md)
+- [Install Albert](ubuntu/install-albert.md)
 - [Install Anki](ubuntu/install-anki.md)
 - [Install Deb File](ubuntu/install-deb-file.md)
 - [Install F.lux On Ubuntu](ubuntu/install-flux-on-ubuntu.md)
