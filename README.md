@@ -26,7 +26,7 @@ Understanding about TIL:
 - 分类名字使用英文，~~如果内容是中文，题目也要用中文，以暗示内容是中文；英文等同~~ 「中文 + 英文」，两者哪一个适合用哪个
 - 把自己今天的收获，放到这儿，无论是否与技术相关
 
-_266 TILs and counting..._
+_267 TILs and counting..._
 
 ---
 
@@ -189,6 +189,7 @@ _266 TILs and counting..._
 - [Align Elements Using The Justify-content Property](css/align-elements-using-the-justify-content-property.md)
 - [Use The Justify-content Property In The Tweet Embed](css/use-the-justify-content-property-in-the-tweet-embed.md)
 - [Align Elements Using The Align-items Property](css/align-elements-using-the-align-items-property.md)
+- [Use The Align-items Property In The Tweet Embed](css/use-the-align-items-property-in-the-tweet-embed.md)
 
 **Others**:
 
