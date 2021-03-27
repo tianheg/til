@@ -26,7 +26,7 @@ Understanding about TIL:
 - 分类名字使用英文，~~如果内容是中文，题目也要用中文，以暗示内容是中文；英文等同~~ 「中文 + 英文」，两者哪一个适合用哪个
 - 把自己今天的收获，放到这儿，无论是否与技术相关
 
-_271 TILs and counting..._
+_272 TILs and counting..._
 
 ---
 
@@ -194,6 +194,7 @@ _271 TILs and counting..._
 - [Use The Flex-shrink Property To Shrink Items](css/use-the-flex-shrink-property-to-shrink-items.md)
 - [Use The Flex-grow Property To Expand Items](css/use-the-flex-grow-property-to-expand-items.md)
 - [Use The Flex-basis Property To Set The Initial Size Of An Item](css/use-the-flex-basis-property-to-set-the-initial-size-of-an-item.md)
+- [Use The Flex Shorthand Property](css/use-the-flex-shorthand-property.md)
 
 **Others**:
 
