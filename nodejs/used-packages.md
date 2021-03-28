@@ -7,5 +7,5 @@
  gulp | <https://github.com/gulpjs/gulp> | <https://www.npmjs.com/package/gulp> | <https://yarn.pm/gulp>
  npx | <https://github.com/npm/npx> | <https://www.npmjs.com/package/npx> | <https://yarn.pm/npx>
  gatsby-cli| <https://github.com/gatsbyjs/gatsby> | <https://www.npmjs.com/package/gatsby-cli> | <https://yarn.pm/gatsby-cli>
-  | <https://github.com/> | <https://www.npmjs.com/package/> | <https://yarn.pm/>
+ jest | <https://github.com/facebook/jest> | <https://www.npmjs.com/package/jest> | <https://yarn.pm/jest>
   | <https://github.com/> | <https://www.npmjs.com/package/> | <https://yarn.pm/>
