@@ -26,7 +26,7 @@ Understanding about TIL:
 - 分类名字使用英文，~~如果内容是中文，题目也要用中文，以暗示内容是中文；英文等同~~ 「中文 + 英文」，两者哪一个适合用哪个
 - 把自己今天的收获，放到这儿，无论是否与技术相关
 
-_284 TILs and counting..._
+_285 TILs and counting..._
 
 ---
 
@@ -56,6 +56,7 @@ _284 TILs and counting..._
 - [JavaScript](#javascript)
 - [法律](#法律)
 - [Let's Encrypt](#lets-encrypt)
+- [LICENSE](#license)
 - [Linux](#linux)
 - [Node.js](#nodejs)
 - [Notion](#notion)
@@ -337,6 +338,10 @@ _284 TILs and counting..._
 ### Let's Encrypt
 
 - [[unsolved] Invalid Response From Domain](letsencrypt/invalid-response-from-domain.md)
+
+### LICENSE
+
+- [GNU General Public License](license/gpl.md)
 
 ### Linux
 
