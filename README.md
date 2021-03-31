@@ -26,7 +26,7 @@ Understanding about TIL:
 - 分类名字使用英文，~~如果内容是中文，题目也要用中文，以暗示内容是中文；英文等同~~ 「中文 + 英文」，两者哪一个适合用哪个
 - 把自己今天的收获，放到这儿，无论是否与技术相关
 
-_308 TILs and counting..._
+_309 TILs and counting..._
 
 ---
 
@@ -219,6 +219,7 @@ _308 TILs and counting..._
 - [Align All Items Vertically Using `align-items`](css/align-all-items-vertically-using-align-items.md)
 - [Divide The Grid Into An Area Template](css/divide-the-grid-into-an-area-template.md)
 - [Place Items In Grid Areas Using The `grid-area` Property](css/place-items-in-grid-areas-using-the-grid-area-property.md)
+- [Use `grid-area` Without Creating An Areas Template](css/use-grid-area-without-creating-an-areas-template.md)
 
 **Others**:
 
