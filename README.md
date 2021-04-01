@@ -560,7 +560,7 @@ _313 TILs and counting..._
 
 ---
 
-## References <!-- omit in toc -->
+**References**:
 
 - [jbranchaud/til](https://github.com/jbranchaud/til)
 - [daryllxd/til](https://github.com/daryllxd/til)
