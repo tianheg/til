@@ -26,7 +26,7 @@ Understanding about TIL:
 - 分类名字使用英文，~~如果内容是中文，题目也要用中文，以暗示内容是中文；英文等同~~ 「中文 + 英文」，两者哪一个适合用哪个
 - 把自己今天的收获，放到这儿，无论是否与技术相关
 
-_310 TILs and counting..._
+_311 TILs and counting..._
 
 ---
 
@@ -275,6 +275,7 @@ _310 TILs and counting..._
 ### Git
 
 - [Branch Name Contain The 'space' Char](git/branch-name-contain-the-space-char.md)
+- [Change The URL Of Your Origin](git/change-the-url-of-your-origin.md)
 - [Create Empty Branch Locally And Remotely](git/create-empty-branch-locally-and-remotely.md)
 - [Delete A Git Branch Both Locally And Remotely](git/delete-a-git-branch-both-locally-and-remotely.md)
 - [Delete All Local And Remote Tags](git/delete-all-local-remote-tags.md)
