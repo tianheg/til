@@ -136,6 +136,8 @@ export https_proxy_pass=pass
 
 It works!
 
-## References
+---
+
+**References**:
 
 - [Pip 20.3+ break proxy connection](https://github.com/pypa/pip/issues/9216)
