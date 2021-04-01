@@ -48,7 +48,9 @@ gh config set prompt disabled
 2. Make custom API queries using [`gh api`](https://cli.github.com/manual/gh_api)
 3. Use [environment variables](https://cli.github.com/manual/gh_help_environment)
 
-## References
+---
+
+**References**:
 
 - [source: cli/cli](https://github.com/cli/cli)
 - [manual](https://cli.github.com/manual/)
