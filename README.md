@@ -26,7 +26,7 @@ Understanding about TIL:
 - 分类名字使用英文，~~如果内容是中文，题目也要用中文，以暗示内容是中文；英文等同~~ 「中文 + 英文」，两者哪一个适合用哪个
 - 把自己今天的收获，放到这儿，无论是否与技术相关
 
-_325 TILs and counting..._
+_326 TILs and counting..._
 
 ---
 
@@ -54,6 +54,7 @@ _325 TILs and counting..._
 - [Gulp](#gulp)
 - [HTML](#html)
 - [Hugo](#hugo)
+- [Individual](#individual)
 - [JavaScript](#javascript)
 - [知识体系](#知识体系)
 - [法律](#法律)
@@ -357,6 +358,10 @@ _325 TILs and counting..._
 - [Hugo Server Bind IP](hugo/hugo-server-bind-ip.md)
 - [Install Hugo On Ubuntu](hugo/install-hugo-on-ubuntu.md)
 - [Use New Archetype Create Post In Posts Folder](hugo/use-new-archetype-create-post-in-posts-folder.md)
+
+### Individual
+
+- [Some Thought](individual/some-thought.md)
 
 ### JavaScript
 
