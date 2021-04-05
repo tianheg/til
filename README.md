@@ -26,7 +26,7 @@ Understanding about TIL:
 - 分类名字使用英文，~~如果内容是中文，题目也要用中文，以暗示内容是中文；英文等同~~ 「中文 + 英文」，两者哪一个适合用哪个
 - 把自己今天的收获，放到这儿，无论是否与技术相关
 
-_327 TILs and counting..._
+_328 TILs and counting..._
 
 ---
 
@@ -37,6 +37,7 @@ _327 TILs and counting..._
 - [Body](#body)
 - [Chrome](#chrome)
 - [Cloudflare](#cloudflare)
+- [Communication](#communication)
 - [CSS](#css)
 - [Curl](#curl)
 - [Design Principles](#design-principles)
@@ -127,6 +128,10 @@ _327 TILs and counting..._
 
 - [Error 525 SSL Handshake Failed](cloudflare/error-525-ssl-handshake-failed.md)
 - [Login After Losing Recovery Codes](cloudflare/login-after-losing-recovery-codes.md)
+
+### Communication
+
+- [朋友圈的用途](communication/moments.md)
 
 ### CSS
 
