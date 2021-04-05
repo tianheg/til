@@ -26,7 +26,7 @@ Understanding about TIL:
 - 分类名字使用英文，~~如果内容是中文，题目也要用中文，以暗示内容是中文；英文等同~~ 「中文 + 英文」，两者哪一个适合用哪个
 - 把自己今天的收获，放到这儿，无论是否与技术相关
 
-_328 TILs and counting..._
+_327 TILs and counting..._
 
 ---
 
@@ -57,7 +57,6 @@ _328 TILs and counting..._
 - [Hugo](#hugo)
 - [Individual](#individual)
 - [JavaScript](#javascript)
-- [Keil5](#keil5)
 - [知识体系](#知识体系)
 - [法律](#法律)
 - [Let's Encrypt](#lets-encrypt)
@@ -66,8 +65,8 @@ _328 TILs and counting..._
 - [Node.js](#nodejs)
 - [Notion](#notion)
 - [Poems](#poems)
-- [Proteus](#proteus)
 - [Python](#python)
+- [Single chip microcomputer](#single-chip-microcomputer)
 - [Security](#security)
 - [SSH](#ssh)
 - [交通](#交通)
@@ -375,10 +374,6 @@ _328 TILs and counting..._
 - [JavaScript Virtual Machine](javascript/javascript-virtual-machine.md)
 - [Use Same Between File Name And Variable](javascript/use-same-between-file-name-and-variable.md)
 
-### Keil5
-
-- [Install μVision5](keil5/install-μvision5.md)
-
 ### 知识体系
 
 - [一些概念](knowledge/some-concept.md)
@@ -426,10 +421,6 @@ _328 TILs and counting..._
 
 - [如何读诗](poems/how-to-read-poetry.md)
 
-### Proteus
-
-- [Install Proteus](proteus/install-proteus.md)
-
 ### Python
 
 - [Connection Broken By Proxy Error](python/connection-broken-by-proxy-error.md)
@@ -438,6 +429,10 @@ _328 TILs and counting..._
 - [Packages I Always Use](python/packages-i-always-use.md)
 - [TypeError: Cannot Unpack Non-iterable NoneType Object](python/typeerror-cannot-unpack-non-iterable-nonetype-object.md)
 - [Update Pipfile.lock](python/update-pipenv-lock-file.md)
+
+### Single chip microcomputer
+
+- [Install Software](scm/install-software.md)
 
 ### Security
 
