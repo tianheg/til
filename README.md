@@ -26,7 +26,7 @@ Understanding about TIL:
 - 分类名字使用英文，~~如果内容是中文，题目也要用中文，以暗示内容是中文；英文等同~~ 「中文 + 英文」，两者哪一个适合用哪个
 - 把自己今天的收获，放到这儿，无论是否与技术相关
 
-_333 TILs and counting..._
+_334 TILs and counting..._
 
 ---
 
@@ -468,6 +468,7 @@ _333 TILs and counting..._
 
 - [All My Home Disappeared](ubuntu/all-my-home-disappeared.md)
 - [Bluetooth Cannot Connect Airpods](ubuntu/bluetooth-cannot-connect-airpods.md)
+- [Cannot Connect Wi-Fi Ubuntu20.04](ubuntu/cannot-connect-wi-fi-ubuntu20.04.md)
 - [Connect Wifi](ubuntu/connect-wifi.md)
 - [Edit Sources.list](ubuntu/edit-sourceslist.md)
 - [Enable WSL2 Ubuntu GUI And Use Rdp To Remote](ubuntu/enable-wsl2-ubuntu-gui-and-use-rdp-to-remote.md)
