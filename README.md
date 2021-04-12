@@ -481,7 +481,7 @@ _354 TILs and counting..._
 
 ### Transportation
 
-- [如何买票](traffic/how-to-buy-tickets.md)
+- [如何买票](transportation/how-to-buy-tickets.md)
 
 ### Translate
 
