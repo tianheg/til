@@ -28,7 +28,7 @@ Understanding about TIL:
 - 把自己今天的收获，放到这儿，无论是否与技术相关
 - TIL 数目不对，暂时无法很快计数
 
-_358 TILs and counting..._
+_359 TILs and counting..._
 
 ---
 
@@ -462,6 +462,7 @@ _358 TILs and counting..._
 ### Project
 
 - [Project Guidelines](project/project-guidelines.md)
+- [极简项目管理](project/极简项目管理.md)
 
 ### Python
 
