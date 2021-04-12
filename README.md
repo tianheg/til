@@ -26,7 +26,7 @@ Understanding about TIL:
 - 分类名字使用英文，~~如果内容是中文，题目也要用中文，以暗示内容是中文；英文等同~~ 「中文 + 英文」，两者哪一个适合用哪个
 - 把自己今天的收获，放到这儿，无论是否与技术相关
 
-_349 TILs and counting..._
+_350 TILs and counting..._
 
 ---
 
@@ -391,6 +391,7 @@ _349 TILs and counting..._
 - [建立知识体系，这份指南就够了](knowledge/建立知识体系，这份指南就够了.md)
 - [Learn In Public](knowledge/learn-in-public.md)
 - [How I am so productive](knowledge/how-i-am-so-productive.md)
+- [How I Built a Learning Machine](knowledge/how-i-built-a-learning-machine.md)
 
 ### 法律
 
