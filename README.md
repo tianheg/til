@@ -374,7 +374,7 @@ _342 TILs and counting..._
 
 ### JavaScript
 
-- [12 JavaScript quirks](javascript/12quirks.md)
+- [12 JavaScript Quirks](javascript/12quirks.md)
 - [JavaScript Virtual Machine](javascript/javascript-virtual-machine.md)
 - [Use Same Between File Name And Variable](javascript/use-same-between-file-name-and-variable.md)
 
