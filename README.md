@@ -28,7 +28,7 @@ Understanding about TIL:
 - 把自己今天的收获，放到这儿，无论是否与技术相关
 - TIL 数目不对，暂时无法很快计数
 
-_355 TILs and counting..._
+_356 TILs and counting..._
 
 ---
 
@@ -455,6 +455,7 @@ _355 TILs and counting..._
 - [Breathe](poems/breathe.md)
 - [我想要的总统](poems/i-want-a-president.md)
 - [几句有灵性的句子，小学生写的](poems/几句有灵性的句子-小学生写的.md)
+- [去爱吧](poems/去爱吧.md)
 
 ### Python
 
