@@ -1,4 +1,4 @@
-# 12 JavaScript quirks
+# 12 JavaScript Quirks
 
 source: <https://2ality.com/2013/04/12quirks.html>
 
