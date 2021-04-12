@@ -26,7 +26,7 @@ Understanding about TIL:
 - 分类名字使用英文，~~如果内容是中文，题目也要用中文，以暗示内容是中文；英文等同~~ 「中文 + 英文」，两者哪一个适合用哪个
 - 把自己今天的收获，放到这儿，无论是否与技术相关
 
-_347 TILs and counting..._
+_348 TILs and counting..._
 
 ---
 
@@ -58,7 +58,7 @@ _347 TILs and counting..._
 - [Individual](#individual)
 - [JavaScript](#javascript)
 - [Jekyll](#jekyll)
-- [知识体系](#知识体系)
+- [Knowledge](#knowledge)
 - [法律](#法律)
 - [Let's Encrypt](#lets-encrypt)
 - [LICENSE](#license)
@@ -385,10 +385,11 @@ _347 TILs and counting..._
 - [Jekyll Error Building Page Related To Kramdown Parser](jekyll/jekyll-error-building-page-related-to-kramdown-parser.md)
 - [Use Bundler 2 Or Greater With This Lockfile](jekyll/use-bundler-2-or-greater-with-this-lockfile.md)
 
-### 知识体系
+### Knowledge
 
 - [一些概念](knowledge/some-concept.md)
 - [建立知识体系，这份指南就够了](knowledge/建立知识体系，这份指南就够了.md)
+- [Learn In Public](knowledge/learn-in-public.md)
 
 ### 法律
 
