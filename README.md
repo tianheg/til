@@ -13,17 +13,18 @@ Understanding about TIL:
 - must be short
 - only one concept or problem
 - add source when meeting other places
-- use `>` before the command, maybe not
+- always use `$` before the command, maybe not
 
   example:
 
   ```bash
-  > git checkout qa
-  > git checkout -b new-branch
+  $ git checkout qa
+  $ git checkout -b new-branch
   fatal: A branch named 'new-branch' already exists.
   ```
 
-- 分类名字使用英文，~~如果内容是中文，题目也要用中文，以暗示内容是中文；英文等同~~ 「中文 + 英文」，两者哪一个适合用哪个
+- 分类名字使用英文，~~如果内容是中文，题目也要用中文，以暗示内容是中文；英文等同~~ ~~「中文 + 英文」，两者哪一个适合用哪个~~
+- 分类下的条目 _尽量_ 按字母顺序排列
 - 把自己今天的收获，放到这儿，无论是否与技术相关
 
 _354 TILs and counting..._
@@ -59,7 +60,7 @@ _354 TILs and counting..._
 - [JavaScript](#javascript)
 - [Jekyll](#jekyll)
 - [Knowledge](#knowledge)
-- [法律](#法律)
+- [Law](#law)
 - [Let's Encrypt](#lets-encrypt)
 - [LICENSE](#license)
 - [Linux](#linux)
@@ -73,7 +74,7 @@ _354 TILs and counting..._
 - [Single chip microcomputer](#single-chip-microcomputer)
 - [Security](#security)
 - [SSH](#ssh)
-- [交通](#交通)
+- [Transportation](#transportation)
 - [Translate](#translate)
 - [Trello](#trello)
 - [Twitter](#twitter)
@@ -395,7 +396,7 @@ _354 TILs and counting..._
 - [How I am so productive](knowledge/how-i-am-so-productive.md)
 - [How I Built a Learning Machine](knowledge/how-i-built-a-learning-machine.md)
 
-### 法律
+### Law
 
 - [身份证](law/id-card.md)
 
@@ -452,6 +453,7 @@ _354 TILs and counting..._
 - [如何读诗](poems/how-to-read-poetry.md)
 - [Breathe](poems/breathe.md)
 - [我想要的总统](poems/i-want-a-president.md)
+- [几句有灵性的句子，小学生写的](poems/几句有灵性的句子-小学生写的.md)
 
 ### Python
 
@@ -477,7 +479,7 @@ _354 TILs and counting..._
 
 - [Generate SSH Key](ssh/generate-ssh-key.md)
 
-### 交通
+### Transportation
 
 - [如何买票](traffic/how-to-buy-tickets.md)
 
