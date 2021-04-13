@@ -28,7 +28,7 @@ Understanding about TIL:
 - 把自己今天的收获，放到这儿，无论是否与技术相关
 - TIL 数目不对，暂时无法很快计数
 
-_360 TILs and counting..._
+_361 TILs and counting..._
 
 ---
 
@@ -524,6 +524,7 @@ _360 TILs and counting..._
 - [Install Emacs](ubuntu/install-emacs.md)
 - [Install Exa](ubuntu/install-exa.md)
 - [Install F.lux On Ubuntu](ubuntu/install-flux-on-ubuntu.md)
+- [Install FreeCAD](ubuntu/install-freecad.md)
 - [Install Jianguoyun | Can't use](ubuntu/install-jianguoyun.md)
 - [Install Keepass](ubuntu/install-keepass.md)
 - [Install Package Manager](ubuntu/install-package-manager.md)
