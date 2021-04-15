@@ -28,61 +28,62 @@ Understanding about TIL:
 - ~~把自己今天的收获，放到这儿，无论是否与技术相关~~ 只有技术
 - TIL 数目不对，暂时无法很快计数
 
-_361 TILs and counting..._
+_365 TILs and counting..._
 
 ---
 
 ### Categories <!-- omit in toc -->
 
-- [Accessibility](#accessibility)
-- [Algolia](#algolia)
-- [Chrome](#chrome)
-- [Cloudflare](#cloudflare)
-- [CSS](#css)
-- [Curl](#curl)
-- [Design Principles](#design-principles)
-- [DNS](#dns)
-- [Docker](#docker)
-- [Emacs](#emacs)
-- [Emmet](#emmet)
-- [Firefox](#firefox)
-- [Gatsby](#gatsby)
-- [Git](#git)
-- [GitHub](#github)
-- [Go](#go)
-- [GPG](#gpg)
-- [Gulp](#gulp)
-- [HTML](#html)
-- [Hugo](#hugo)
-- [JavaScript](#javascript)
-- [Jekyll](#jekyll)
-- [Let's Encrypt](#lets-encrypt)
-- [LICENSE](#license)
-- [Linux](#linux)
-- [Node.js](#nodejs)
-- [Notion](#notion)
-- [Open Source](#open-source)
-- [OpenSSL](#openssl)
-- [Project](#project)
-- [Python](#python)
-- [Security](#security)
-- [SSH](#ssh)
-- [Trello](#trello)
-- [Twitter](#twitter)
-- [Ubuntu](#ubuntu)
-- [Vim](#vim)
-- [Visual Design](#visual-design)
-- [VMware](#vmware)
-- [VSCode](#vscode)
-- [VuePress](#vuepress)
-- [Websockets](#websockets)
-- [Windows10](#windows10)
-- [Yarn](#yarn)
-- [Zsh](#zsh)
+- [Accessibility(23)](#accessibility23)
+- [Algolia(1)](#algolia1)
+- [Chrome(1)](#chrome1)
+- [Cloudflare(2)](#cloudflare2)
+- [CSS(84)](#css84)
+- [Curl(1)](#curl1)
+- [Design Principles(5)](#design-principles5)
+- [DNS(1)](#dns1)
+- [Docker(7)](#docker7)
+- [Emacs(1)](#emacs1)
+- [Emmet(1)](#emmet1)
+- [Firefox(1)](#firefox1)
+- [Gatsby(2)](#gatsby2)
+- [Git(18)](#git18)
+- [GitHub(12)](#github12)
+- [Go(1)](#go1)
+- [GPG(1)](#gpg1)
+- [Gulp(2)](#gulp2)
+- [HTML(26)](#html26)
+- [Hugo(3)](#hugo3)
+- [JavaScript(3)](#javascript3)
+- [Jekyll(3)](#jekyll3)
+- [Let's Encrypt(1)](#lets-encrypt1)
+- [LICENSE(1)](#license1)
+- [Linux(10)](#linux10)
+- [Node.js(7)](#nodejs7)
+- [Notion(1)](#notion1)
+- [Open Source(1)](#open-source1)
+- [OpenSSL(2)](#openssl2)
+- [Org(1)](#org1)
+- [Project(2)](#project2)
+- [Python(6)](#python6)
+- [Security(3)](#security3)
+- [SSH(1)](#ssh1)
+- [Trello(1)](#trello1)
+- [Twitter(1)](#twitter1)
+- [Ubuntu(38)](#ubuntu38)
+- [Vim(2)](#vim2)
+- [Visual Design(53)](#visual-design53)
+- [VMware(4)](#vmware4)
+- [VSCode(1)](#vscode1)
+- [VuePress(1)](#vuepress1)
+- [Websockets(1)](#websockets1)
+- [Windows10(3)](#windows103)
+- [Yarn(6)](#yarn6)
+- [Zsh(1)](#zsh1)
 
 ---
 
-### Accessibility
+### Accessibility(23)
 
 - [What Is Accessibility?](accessibility/what-is-accessibility.md)
 - [Add A Text Alternative To Images For Visually Impaired Accessibility](accessibility/add-a-text-alternative-to-images-for-visually-impaired-accessibility.md)
@@ -108,20 +109,20 @@ _361 TILs and counting..._
 - [Use Tabindex To Add Keyboard Focus To An Element](accessibility/use-tabindex-to-add-keyboard-focus-to-an-element.md)
 - [Use Tabindex To Specify The Order Of Keyboard Focus For Several Elements](accessibility/use-tabindex-to-specify-the-order-of-keyboard-focus-for-several-elements.md)
 
-### Algolia
+### Algolia(1)
 
 - [What Is A Usage Unit?](algolia/what-is-a-usage-unit.md)
 
-### Chrome
+### Chrome(1)
 
 - [Hard Refresh](chrome/hard-refresh.md)
 
-### Cloudflare
+### Cloudflare(2)
 
 - [Error 525 SSL Handshake Failed](cloudflare/error-525-ssl-handshake-failed.md)
 - [Login After Losing Recovery Codes](cloudflare/login-after-losing-recovery-codes.md)
 
-### CSS
+### CSS(84)
 
 **Basis**(freeCodeCamp):
 
@@ -228,11 +229,11 @@ _361 TILs and counting..._
 
 - [Create Shadow Card](css/create-shadow-card.md)
 
-### Curl
+### Curl(1)
 
 - [Install Curl](curl/install-curl.md)
 
-### Design Principles
+### Design Principles(5)
 
 - [What Is Responsive Web Design](design-principles/what-is-responsive-web-design.md)
 - [Create A Media Query](design-principles/create-a-media-query.md)
@@ -240,11 +241,11 @@ _361 TILs and counting..._
 - [Use A Retina Image For Higher Resolution Displays](design-principles/use-a-retina-image-for-higher-resolution-displays.md)
 - [Make Typography Responsive](design-principles/make-typography-responsive.md)
 
-### DNS
+### DNS(1)
 
 - [DNS 解析平滑迁移](dns/dns-resolution-smooth-migration.md)
 
-### Docker
+### Docker(7)
 
 - [Add Registry Mirrors For Ubuntu](docker/add-registry-mirrors-for-ubuntu.md)
 - [Add Registry Mirrors For Win10](docker/add-registry-mirrors-for-win10.md)
@@ -254,24 +255,24 @@ _361 TILs and counting..._
 - [Install Docker On Ubuntu](docker/install-docker-on-ubuntu.md)
 - [Install Portainer.io On Ubuntu](docker/install-portainer-io-on-ubuntu.md)
 
-### Emacs
+### Emacs(1)
 
 - [Save File](emacs/save-file.md)
 
-### Emmet
+### Emmet(1)
 
 - [Intro](emmet/intro.md)
 
-### Firefox
+### Firefox(1)
 
 - [Secure Connection Failed](firefox/secure-connection-failed.md)
 
-### Gatsby
+### Gatsby(2)
 
 - [Change Default Package Manager](gatsby/change-default-package-manager.md)
 - [Set Up Development Environment](gatsby/set-up-development-environment.md)
 
-### Git
+### Git(18)
 
 - [Branch Name Contain The 'space' Char](git/branch-name-contain-the-space-char.md)
 - [Change The URL Of Your Origin](git/change-the-url-of-your-origin.md)
@@ -292,25 +293,25 @@ _361 TILs and counting..._
 - [What Is Credentials](git/what-is-credentials.md)
 - [What Will Be Done After Rename Branch On GitHub](git/what-will-be-done-after-rename-branch-on-github.md)
 
-### GitHub
+### GitHub(12)
 
 - [Show Diff](github/show-diff.md)
 - [Use GitHub CLI](github/use-github-cli.md)
 
-### Go
+### Go(1)
 
 - [Install Go On Ubuntu](go/install-go-on-ubuntu.md)
 
-### GPG
+### GPG(1)
 
 - [Can Not Change Name Or Comment Without Losing Signatures](gpg/can-not-change-name-or-comment-without-losing-signatures.md)
 
-### Gulp
+### Gulp(2)
 
 - [Cannot Find Module Gulp-util](gulp/cannot-find-module-gulp-util.md)
 - [Gulp Command Not Found](gulp/gulp-command-not-found.md)
 
-### HTML
+### HTML(26)
 
 **Basis**(freeCodeCamp):
 
@@ -344,33 +345,33 @@ _361 TILs and counting..._
 
 - [Canonical](html/canonical.md)
 
-### Hugo
+### Hugo(3)
 
 - [Hugo Server Bind IP](hugo/hugo-server-bind-ip.md)
 - [Install Hugo On Ubuntu](hugo/install-hugo-on-ubuntu.md)
 - [Use New Archetype Create Post In Posts Folder](hugo/use-new-archetype-create-post-in-posts-folder.md)
 
-### JavaScript
+### JavaScript(3)
 
 - [12 JavaScript Quirks](javascript/12quirks.md)
 - [JavaScript Virtual Machine](javascript/javascript-virtual-machine.md)
 - [Use Same Between File Name And Variable](javascript/use-same-between-file-name-and-variable.md)
 
-### Jekyll
+### Jekyll(3)
 
 - [Common Orders](jekyll/common-orders.md)
 - [Jekyll Error Building Page Related To Kramdown Parser](jekyll/jekyll-error-building-page-related-to-kramdown-parser.md)
 - [Use Bundler 2 Or Greater With This Lockfile](jekyll/use-bundler-2-or-greater-with-this-lockfile.md)
 
-### Let's Encrypt
+### Let's Encrypt(1)
 
 - [[unsolved] Invalid Response From Domain](letsencrypt/invalid-response-from-domain.md)
 
-### LICENSE
+### LICENSE(1)
 
 - [GNU General Public License](license/gpl.md)
 
-### Linux
+### Linux(10)
 
 - [Create Users](linux/create-users.md)
 - [Ctrl-L Or `clear`](linux/ctrl-l-or-clear.md)
@@ -383,7 +384,7 @@ _361 TILs and counting..._
 - [Switch Users](linux/switch-users.md)
 - [Username Is Not In The Sudoers File](linux/username-is-not-in-the-sudoers-file.md)
 
-### Node.js
+### Node.js(7)
 
 - [Husky Error Command "husky-run" Not Found](nodejs/husky-command-husky-run-not-found.md)
 - [Install Node.js And NPM](nodejs/install-nodejs-npm.md)
@@ -393,25 +394,29 @@ _361 TILs and counting..._
 - [Used Packages](nodejs/used-packages.md)
 - [Use Npx](nodejs/use-npx.md)
 
-### Notion
+### Notion(1)
 
 - [Use Page Cover As Card Preview With Gallery](notion/use-page-cover-as-card-preview-with-gallery.md)
 
-### Open Source
+### Open Source(1)
 
 - [Starting an Open Source Project](opensource/starting-an-open-source-project.md)
 
-### OpenSSL
+### OpenSSL(2)
 
 - [File Encryption Using OpenSSL](openssl/file-encryption-using-openssl.md)
 - [Use OpenSSL Backup My Keys](openssl/use-openssl-backup-my-keys.md)
 
-### Project
+### Org(1)
+
+- [Org-mode Syntax](org/syntax.md)
+
+### Project(2)
 
 - [Project Guidelines](project/project-guidelines.md)
 - [极简项目管理](project/极简项目管理.md)
 
-### Python
+### Python(6)
 
 - [Connection Broken By Proxy Error](python/connection-broken-by-proxy-error.md)
 - [Install IPython](python/install-ipython.md)
@@ -420,25 +425,25 @@ _361 TILs and counting..._
 - [TypeError: Cannot Unpack Non-iterable NoneType Object](python/typeerror-cannot-unpack-non-iterable-nonetype-object.md)
 - [Update Pipfile.lock](python/update-pipenv-lock-file.md)
 
-### Security
+### Security(3)
 
 - [Keepass2 Access Denied With Language Path](security/keepass2-access-denied-with-language-path.md)
 - [Keepass2 Error About Chinese Display](security/keepass2-error-about-chinese-display.md)
 - [Your Computer Isn't Yours](security/your-computer-isnt-yours.md)
 
-### SSH
+### SSH(1)
 
 - [Generate SSH Key](ssh/generate-ssh-key.md)
 
-### Trello
+### Trello(1)
 
 - [Viewing Trello Label Titles On Cards](trello/viewing-trello-label-titles-on-cards.md)
 
-### Twitter
+### Twitter(1)
 
 - [RSS Feed](twitter/rss-feed.md)
 
-### Ubuntu
+### Ubuntu(38)
 
 - [All My Home Disappeared](ubuntu/all-my-home-disappeared.md)
 - [Bluetooth Cannot Connect Airpods](ubuntu/bluetooth-cannot-connect-airpods.md)
@@ -479,12 +484,12 @@ _361 TILs and counting..._
 - [Unable To Acquire The Dpkg Frontend Lock](ubuntu/unable-to-acquire-the-dpkg-frontend-lock.md)
 - [Use Snibox](ubuntu/use-snibox.md)
 
-### Vim
+### Vim(2)
 
 - [Generate .vimrc](vim/generate-vimrc.md)
 - [Learn Vim By Vimtutor](vim/learn-vim-by-vimtutor.md)
 
-### Visual Design
+### Visual Design(53)
 
 - [Applied Visual Design](visual-design/applied-visual-design.md)
 - [Create Visual Balance Using The Text-align Property](visual-design/create-visual-balance-using-text-align.md)
@@ -540,32 +545,32 @@ _361 TILs and counting..._
 - [Use A Bezier Curve To Move A Graphic](visual-design/use-a-bezier-curve-to-move-a-graphic.md)
 - [Make Motion More Natural Using A Bezier Curve](visual-design/make-motion-more-natural-using-a-bezier-curve.md)
 
-### VMware
+### VMware(4)
 
 - [Compare Workstation Player With Workstation Pro](vmware/compare-workstation-player-with-workstation-pro.md)
 - [Open And Use BIOS In VMware Workstation](vmware/open-and-use-bios-in-vmware-workstation.md)
 - [Player Does Not Support Virtualized Performance Counters On This Host](vmware/player-does-not-support-virtualized-performance-counters-on-this-host.md)
 - [VMware Workstation/Player Does Not Support Nested Virtualization On This Host](vmware/workstation-player-does-not-support-nested-virtualization-on-this-host.md)
 
-### VSCode
+### VSCode(1)
 
 - [Use Project Manager](vscode/use-project-manager.md)
 
-### VuePress
+### VuePress(1)
 
 - [Introduction To VuePress](vuepress/introduction-to-vuepress.md)
 
-### Websockets
+### Websockets(1)
 
 - [Websockets Closed With Close Code 1006](websockets/websockets-closed-with-close-code-1006.md)
 
-### Windows10
+### Windows10(3)
 
 - [Disable Microsoft Defender Antivirus](windows10/disable-microsoft-defender-antivirus.md)
 - [Enter The Pinyin Symbol](windows10/enter-the-pinyin-symbol.md)
 - [Software May Use](windows10/software-may-use.md)
 
-### Yarn
+### Yarn(6)
 
 - [Disable Anonymous Telemetry](yarn/disable-anonymous-telemetry.md)
 - [Install Yarn](yarn/install-yarn.md)
@@ -574,7 +579,7 @@ _361 TILs and counting..._
 - [Yarn GPG Signatures Are Invalid](yarn/yarn-gpg-signatures-are-invalid.md)
 - [Yarn Upgrade](yarn/yarn-upgrade.md)
 
-### Zsh
+### Zsh(1)
 
 - [Add Alias To Zshrc](zsh/add-alias-to-zshrc.md)
 
