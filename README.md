@@ -36,10 +36,8 @@ _361 TILs and counting..._
 
 - [Accessibility](#accessibility)
 - [Algolia](#algolia)
-- [Body](#body)
 - [Chrome](#chrome)
 - [Cloudflare](#cloudflare)
-- [Communication](#communication)
 - [CSS](#css)
 - [Curl](#curl)
 - [Design Principles](#design-principles)
@@ -47,7 +45,6 @@ _361 TILs and counting..._
 - [Docker](#docker)
 - [Emacs](#emacs)
 - [Emmet](#emmet)
-- [English](#english)
 - [Firefox](#firefox)
 - [Gatsby](#gatsby)
 - [Git](#git)
@@ -57,11 +54,8 @@ _361 TILs and counting..._
 - [Gulp](#gulp)
 - [HTML](#html)
 - [Hugo](#hugo)
-- [Individual](#individual)
 - [JavaScript](#javascript)
 - [Jekyll](#jekyll)
-- [Knowledge](#knowledge)
-- [Law](#law)
 - [Let's Encrypt](#lets-encrypt)
 - [LICENSE](#license)
 - [Linux](#linux)
@@ -69,15 +63,10 @@ _361 TILs and counting..._
 - [Notion](#notion)
 - [Open Source](#open-source)
 - [OpenSSL](#openssl)
-- [Philosophy](#philosophy)
-- [Poems](#poems)
 - [Project](#project)
 - [Python](#python)
-- [Single chip microcomputer](#single-chip-microcomputer)
 - [Security](#security)
 - [SSH](#ssh)
-- [Transportation](#transportation)
-- [Translate](#translate)
 - [Trello](#trello)
 - [Twitter](#twitter)
 - [Ubuntu](#ubuntu)
@@ -87,7 +76,6 @@ _361 TILs and counting..._
 - [VSCode](#vscode)
 - [VuePress](#vuepress)
 - [Websockets](#websockets)
-- [Work](#work)
 - [Windows10](#windows10)
 - [Yarn](#yarn)
 - [Zsh](#zsh)
@@ -124,10 +112,6 @@ _361 TILs and counting..._
 
 - [What Is A Usage Unit?](algolia/what-is-a-usage-unit.md)
 
-### Body
-
-- [Ear](body/ear.md)
-
 ### Chrome
 
 - [Hard Refresh](chrome/hard-refresh.md)
@@ -136,10 +120,6 @@ _361 TILs and counting..._
 
 - [Error 525 SSL Handshake Failed](cloudflare/error-525-ssl-handshake-failed.md)
 - [Login After Losing Recovery Codes](cloudflare/login-after-losing-recovery-codes.md)
-
-### Communication
-
-- [朋友圈的用途](communication/moments.md)
 
 ### CSS
 
@@ -282,10 +262,6 @@ _361 TILs and counting..._
 
 - [Intro](emmet/intro.md)
 
-### English
-
-- [English](english/english.md)
-
 ### Firefox
 
 - [Secure Connection Failed](firefox/secure-connection-failed.md)
@@ -374,10 +350,6 @@ _361 TILs and counting..._
 - [Install Hugo On Ubuntu](hugo/install-hugo-on-ubuntu.md)
 - [Use New Archetype Create Post In Posts Folder](hugo/use-new-archetype-create-post-in-posts-folder.md)
 
-### Individual
-
-- [Some Thought](individual/some-thought.md)
-
 ### JavaScript
 
 - [12 JavaScript Quirks](javascript/12quirks.md)
@@ -389,19 +361,6 @@ _361 TILs and counting..._
 - [Common Orders](jekyll/common-orders.md)
 - [Jekyll Error Building Page Related To Kramdown Parser](jekyll/jekyll-error-building-page-related-to-kramdown-parser.md)
 - [Use Bundler 2 Or Greater With This Lockfile](jekyll/use-bundler-2-or-greater-with-this-lockfile.md)
-
-### Knowledge
-
-- [一些概念](knowledge/some-concept.md)
-- [建立知识体系，这份指南就够了](knowledge/建立知识体系，这份指南就够了.md)
-- [Learn In Public](knowledge/learn-in-public.md)
-- [How I am so productive](knowledge/how-i-am-so-productive.md)
-- [How I Built a Learning Machine](knowledge/how-i-built-a-learning-machine.md)
-
-### Law
-
-- [身份证](law/id-card.md)
-- [签合同时，盖章、签字、按手印的区别](law/签字、盖章、按手印的区别.md)
 
 ### Let's Encrypt
 
@@ -447,19 +406,6 @@ _361 TILs and counting..._
 - [File Encryption Using OpenSSL](openssl/file-encryption-using-openssl.md)
 - [Use OpenSSL Backup My Keys](openssl/use-openssl-backup-my-keys.md)
 
-### Philosophy
-
-- [浅谈存在主义(Existentialism)](philosophy/浅谈存在主义.md)
-
-### Poems
-
-- [如何读诗](poems/how-to-read-poetry.md)
-- [Breathe](poems/breathe.md)
-- [我想要的总统](poems/i-want-a-president.md)
-- [几句有灵性的句子，小学生写的](poems/几句有灵性的句子-小学生写的.md)
-- [去爱吧](poems/去爱吧.md)
-- [闹海](poems/闹海.md)
-
 ### Project
 
 - [Project Guidelines](project/project-guidelines.md)
@@ -474,11 +420,6 @@ _361 TILs and counting..._
 - [TypeError: Cannot Unpack Non-iterable NoneType Object](python/typeerror-cannot-unpack-non-iterable-nonetype-object.md)
 - [Update Pipfile.lock](python/update-pipenv-lock-file.md)
 
-### Single chip microcomputer
-
-- [Error](scm/error.md)
-- [Install Software](scm/install-software.md)
-
 ### Security
 
 - [Keepass2 Access Denied With Language Path](security/keepass2-access-denied-with-language-path.md)
@@ -488,16 +429,6 @@ _361 TILs and counting..._
 ### SSH
 
 - [Generate SSH Key](ssh/generate-ssh-key.md)
-
-### Transportation
-
-- [如何买票](transportation/how-to-buy-tickets.md)
-
-### Translate
-
-- [Best Practices With News Translation](translate/best-practices-with-news-translation.md)
-- [LORE - Portal Lore in a Minute](translate/lore-portal-lore-in-a-minute.md)
-- [Room 104: Invitation To The Set | HBO](translate/room-104-invitation-to-the-set-hbo.md)
 
 ### Trello
 
@@ -627,12 +558,6 @@ _361 TILs and counting..._
 ### Websockets
 
 - [Websockets Closed With Close Code 1006](websockets/websockets-closed-with-close-code-1006.md)
-
-### Work
-
-- [招聘](work/recruit.md)
-- [公司应该招聘什么样的人](work/公司应该招聘什么样的人.md)
-- [如何向前辈请教](work/如何向前辈请教.md)
 
 ### Windows10
 
