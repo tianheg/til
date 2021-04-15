@@ -6,7 +6,7 @@ A collection of concise write-ups on small things I learn day to day across a
 variety of languages and technologies. These are things that don't really
 warrant a full blog post. These are things I've picked up by [Learning In Public™](https://dev.to/jbranchaud/how-i-built-a-learning-machine-45k9).
 
-These are my tech and life.
+These are my tech.
 
 Understanding about TIL:
 
@@ -25,7 +25,7 @@ Understanding about TIL:
 
 - 分类名字使用英文，~~如果内容是中文，题目也要用中文，以暗示内容是中文；英文等同~~ ~~「中文 + 英文」，两者哪一个适合用哪个~~
 - 分类下的条目 _尽量_ 按字母顺序排列
-- 把自己今天的收获，放到这儿，无论是否与技术相关
+- ~~把自己今天的收获，放到这儿，无论是否与技术相关~~ 只有技术
 - TIL 数目不对，暂时无法很快计数
 
 _361 TILs and counting..._
