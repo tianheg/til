@@ -28,7 +28,7 @@ Understanding about TIL:
 - ~~把自己今天的收获，放到这儿，无论是否与技术相关~~ 只有技术
 - TIL 数目不对，暂时无法很快计数
 
-_365 TILs and counting..._
+_366 TILs and counting..._
 
 ---
 
@@ -47,7 +47,7 @@ _365 TILs and counting..._
 - [Emmet(1)](#emmet1)
 - [Firefox(1)](#firefox1)
 - [Gatsby(2)](#gatsby2)
-- [Git(18)](#git18)
+- [Git(19)](#git19)
 - [GitHub(12)](#github12)
 - [Go(1)](#go1)
 - [GPG(1)](#gpg1)
@@ -272,10 +272,11 @@ _365 TILs and counting..._
 - [Change Default Package Manager](gatsby/change-default-package-manager.md)
 - [Set Up Development Environment](gatsby/set-up-development-environment.md)
 
-### Git(18)
+### Git(19)
 
 - [Branch Name Contain The 'space' Char](git/branch-name-contain-the-space-char.md)
 - [Change The URL Of Your Origin](git/change-the-url-of-your-origin.md)
+- [Commit Messages Guide](git/commit-messages-guide.md)
 - [Create Empty Branch Locally And Remotely](git/create-empty-branch-locally-and-remotely.md)
 - [Delete A Git Branch Both Locally And Remotely](git/delete-a-git-branch-both-locally-and-remotely.md)
 - [Delete All Local And Remote Tags](git/delete-all-local-remote-tags.md)
