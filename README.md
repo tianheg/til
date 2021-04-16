@@ -28,7 +28,7 @@ Understanding about TIL:
 - ~~把自己今天的收获，放到这儿，无论是否与技术相关~~ 只有技术
 - TIL 数目不对，暂时无法很快计数
 
-_372 TILs and counting..._
+_373 TILs and counting..._
 
 ---
 
@@ -47,7 +47,7 @@ _372 TILs and counting..._
 - [Emmet(1)](#emmet1)
 - [Firefox(1)](#firefox1)
 - [Gatsby(2)](#gatsby2)
-- [Git(22)](#git22)
+- [Git(23)](#git23)
 - [GitHub(12)](#github12)
 - [Go(1)](#go1)
 - [GPG(1)](#gpg1)
@@ -272,7 +272,7 @@ _372 TILs and counting..._
 - [Change Default Package Manager](gatsby/change-default-package-manager.md)
 - [Set Up Development Environment](gatsby/set-up-development-environment.md)
 
-### Git(22)
+### Git(23)
 
 - [Learn Git](git/learn-git.md)
 - [Branch Name Contain The 'space' Char](git/branch-name-contain-the-space-char.md)
@@ -292,6 +292,7 @@ _372 TILs and counting..._
 - [Rename The `origin` Remote To `upstream`](git/rename-the-origin-remote-to-upstream.md)
 - [Reset](git/reset.md)
 - [See A File At A Specific Commit](git/see-a-file-at-a-specific-commit.md)
+- [Show Helpful Guides That Come With Git](git/show-helpful-guides-that-come-with-git.md)
 - [Show The Latest Commit](git/show-the-latest-commit.md)
 - [Use `format patch` To Suggest Code Changes](git/use-format-patch-to-suggest-code-changes.md)
 - [What Is Credentials](git/what-is-credentials.md)
