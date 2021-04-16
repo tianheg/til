@@ -28,7 +28,7 @@ Understanding about TIL:
 - ~~把自己今天的收获，放到这儿，无论是否与技术相关~~ 只有技术
 - TIL 数目不对，暂时无法很快计数
 
-_371 TILs and counting..._
+_372 TILs and counting..._
 
 ---
 
@@ -47,7 +47,7 @@ _371 TILs and counting..._
 - [Emmet(1)](#emmet1)
 - [Firefox(1)](#firefox1)
 - [Gatsby(2)](#gatsby2)
-- [Git(21)](#git21)
+- [Git(22)](#git22)
 - [GitHub(12)](#github12)
 - [Go(1)](#go1)
 - [GPG(1)](#gpg1)
@@ -272,7 +272,7 @@ _371 TILs and counting..._
 - [Change Default Package Manager](gatsby/change-default-package-manager.md)
 - [Set Up Development Environment](gatsby/set-up-development-environment.md)
 
-### Git(21)
+### Git(22)
 
 - [Learn Git](git/learn-git.md)
 - [Branch Name Contain The 'space' Char](git/branch-name-contain-the-space-char.md)
@@ -283,6 +283,7 @@ _371 TILs and counting..._
 - [Delete All Local And Remote Tags](git/delete-all-local-remote-tags.md)
 - [Delete Commit](git/delete-commit.md)
 - [Delete Remote Branch In Local Git Env](git/delete-remote-branch-in-local-git-env.md)
+- [Everyday Git In Twenty Commands](git/everyday-git-in-twenty-commands.md)
 - [Update With Original Repo After Forking on GitHub](git/update-with-original-repo-after-forking-on-github.md)
 - [Merge Two Git Repo](git/merge-two-git-repo.md)
 - [Rebase](git/rebase.md)
