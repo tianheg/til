@@ -28,7 +28,7 @@ Understanding about TIL:
 - ~~把自己今天的收获，放到这儿，无论是否与技术相关~~ 只有技术
 - TIL 数目不对，暂时无法很快计数
 
-_369 TILs and counting..._
+_370 TILs and counting..._
 
 ---
 
@@ -73,7 +73,7 @@ _369 TILs and counting..._
 - [Ubuntu(40)](#ubuntu40)
 - [Vim(2)](#vim2)
 - [Visual Design(53)](#visual-design53)
-- [VMware(4)](#vmware4)
+- [VMware(5)](#vmware5)
 - [VSCode(1)](#vscode1)
 - [VuePress(1)](#vuepress1)
 - [Websockets(1)](#websockets1)
@@ -549,9 +549,10 @@ _369 TILs and counting..._
 - [Use A Bezier Curve To Move A Graphic](visual-design/use-a-bezier-curve-to-move-a-graphic.md)
 - [Make Motion More Natural Using A Bezier Curve](visual-design/make-motion-more-natural-using-a-bezier-curve.md)
 
-### VMware(4)
+### VMware(5)
 
 - [Compare Workstation Player With Workstation Pro](vmware/compare-workstation-player-with-workstation-pro.md)
+- [Install FreeBSD12](vmware/install-freebsd12.md)
 - [Open And Use BIOS In VMware Workstation](vmware/open-and-use-bios-in-vmware-workstation.md)
 - [Player Does Not Support Virtualized Performance Counters On This Host](vmware/player-does-not-support-virtualized-performance-counters-on-this-host.md)
 - [VMware Workstation/Player Does Not Support Nested Virtualization On This Host](vmware/workstation-player-does-not-support-nested-virtualization-on-this-host.md)
