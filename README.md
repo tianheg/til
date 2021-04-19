@@ -28,7 +28,7 @@ Understanding about TIL:
 - ~~把自己今天的收获，放到这儿，无论是否与技术相关~~ 只有技术
 - TIL 数目不对，暂时无法很快计数
 
-_377 TILs and counting..._
+_378 TILs and counting..._
 
 ---
 
@@ -389,6 +389,7 @@ _377 TILs and counting..._
 - [Orders](linux/orders.md)
 - [Switch Users](linux/switch-users.md)
 - [Username Is Not In The Sudoers File](linux/username-is-not-in-the-sudoers-file.md)
+- [Linux Ate My Ram!](linux/linux-ate-my-ram.md)
 
 ### Node.js(7)
 
