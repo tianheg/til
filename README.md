@@ -28,7 +28,7 @@ Understanding about TIL:
 - ~~把自己今天的收获，放到这儿，无论是否与技术相关~~ 只有技术
 - TIL 数目不对，暂时无法很快计数
 
-_376 TILs and counting..._
+_377 TILs and counting..._
 
 ---
 
@@ -493,6 +493,7 @@ _376 TILs and counting..._
 - [Use Snibox](ubuntu/use-snibox.md)
 - [Used Apps](ubuntu/used-apps.md)
 - [Boot Slowly](ubuntu/boot-slowly.md)
+- [Install `apt-fast`](ubuntu/install-apt-fast.md)
 
 ### Vim(2)
 
