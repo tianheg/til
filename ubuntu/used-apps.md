@@ -1,3 +1,3 @@
 # Used Apps
 
-htop
+htop, preload, gparted, apt-fast

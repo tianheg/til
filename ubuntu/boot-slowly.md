@@ -183,6 +183,27 @@ Otherwise, desktop users can disable `NetworkManager-wait-online.service` and ne
 
 It is safe to disable in this case.
 
+Next time:
+
+```sh
+$ systemd-analyze
+Startup finished in 5.798s (firmware) + 3.640s (loader) + 4.111s (kernel) + 3min 8.299s (userspace) = 3min 21.849s 
+graphical.target reached after 1min 28.245s in userspace
+```
+
+From <https://itsfoss.com/speed-up-ubuntu-1310/>
+
+1. Reduce the default grub load time
+2. Manage startup applications
+3. Install preload to speed up application load time
+4. Choose the best mirror for software updates
+5. Use apt-fast instead of apt-get for a speedy update
+6. Remove language related ign from apt-get update
+7. Reduce overheating
+8. Tweak LibreOffice to make it faster
+9. Use a lightweight desktop environment
+10. Use lighter alternatives for different applications
+
 ---
 
 **References**:
@@ -192,3 +213,6 @@ It is safe to disable in this case.
 3. <https://askubuntu.com/a/1260993>
 4. <https://askubuntu.com/a/1168249>
 5. <https://askubuntu.com/a/1166492>
+6. <https://youtu.be/vwBoHZuauL8>
+7. <https://superuser.com/questions/1599715/getting-a-very-slow-startup-on-ubuntu-20-seems-to-be-stuck-around-the-stage-whe>
+8. [10 Killer Tips To Speed Up Ubuntu Linux](https://itsfoss.com/speed-up-ubuntu-1310/)
