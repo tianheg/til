@@ -28,7 +28,7 @@ Understanding about TIL:
 - ~~把自己今天的收获，放到这儿，无论是否与技术相关~~ 只有技术
 - TIL 数目不对，暂时无法很快计数
 
-_375 TILs and counting..._
+_376 TILs and counting..._
 
 ---
 
@@ -70,7 +70,7 @@ _375 TILs and counting..._
 - [SSH(1)](#ssh1)
 - [Trello(1)](#trello1)
 - [Twitter(1)](#twitter1)
-- [Ubuntu(41)](#ubuntu41)
+- [Ubuntu(42)](#ubuntu42)
 - [Vim(2)](#vim2)
 - [Visual Design(53)](#visual-design53)
 - [VMware(5)](#vmware5)
@@ -449,7 +449,7 @@ _375 TILs and counting..._
 
 - [RSS Feed](twitter/rss-feed.md)
 
-### Ubuntu(41)
+### Ubuntu(42)
 
 - [All My Home Disappeared](ubuntu/all-my-home-disappeared.md)
 - [Bluetooth Cannot Connect Airpods](ubuntu/bluetooth-cannot-connect-airpods.md)
@@ -492,6 +492,7 @@ _375 TILs and counting..._
 - [Unable To Acquire The Dpkg Frontend Lock](ubuntu/unable-to-acquire-the-dpkg-frontend-lock.md)
 - [Use Snibox](ubuntu/use-snibox.md)
 - [Used Apps](ubuntu/used-apps.md)
+- [Boot Slowly](ubuntu/boot-slowly.md)
 
 ### Vim(2)
 
