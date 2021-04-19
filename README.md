@@ -472,7 +472,7 @@ _374 TILs and counting..._
 - [Install Package Manager](ubuntu/install-package-manager.md)
 - [Install Phddns](ubuntu/install-phddns.md)
 - [Install Polar](ubuntu/install-polar.md)
-- [Install Resilio Sync](ubuntu/install-resilio-sync.md)
+- [Resilio Sync](ubuntu/resilio-sync.md)
 - [Install Skype](ubuntu/install-skype.md)
 - [Install Spotify](ubuntu/install-spotify.md)
 - [Install SQLite Database Browser](ubuntu/install-sqlite-database-browser.md)
