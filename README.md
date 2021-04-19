@@ -467,7 +467,7 @@ _374 TILs and counting..._
 - [Install Exa](ubuntu/install-exa.md)
 - [Install F.lux On Ubuntu](ubuntu/install-flux-on-ubuntu.md)
 - [Install FreeCAD](ubuntu/install-freecad.md)
-- [Install Jianguoyun | Can't use](ubuntu/install-jianguoyun.md)
+- [Install Jianguoyun(Can't use)](ubuntu/install-jianguoyun.md)
 - [Install Keepass](ubuntu/install-keepass.md)
 - [Install Package Manager](ubuntu/install-package-manager.md)
 - [Install Phddns](ubuntu/install-phddns.md)
