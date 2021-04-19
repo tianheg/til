@@ -130,3 +130,4 @@ Uninstalling on RPM-based OS. To delete resilio binary, perform this command:
 2. <https://help.resilio.com/hc/en-us/articles/204762449-Guide-to-Linux>
 3. <https://help.resilio.com/hc/en-us/articles/206178884-Running-Sync-in-configuration-mode>
 4. <https://help.resilio.com/hc/en-us/articles/207371636-Power-user-preferences>
+5. <https://help.resilio.com/hc/en-us/articles/204775029-How-to-uninstall-Sync->
