@@ -292,9 +292,9 @@ Pushing a [branch](#def_branch) means to get the branch’s [head ref](#def_head
 
 All of the ancestors of a given [commit](#def_commit) are said to be "reachable" from that commit. More generally, one [object](#def_object) is reachable from another if we can reach the one from the other by a [chain](#def_chain) that follows [tags](#def_tag) to whatever they tag, [commits](#def_commit_object) to their parents or trees, and [trees](#def_tree_object) to the trees or [blobs](#def_blob_object) that they contain.
 
-[](#Documentation/gitglossary.txt-aiddefrebasearebase)rebase
+**rebase**
 
-To reapply a series of changes from a [branch](#def_branch) to a different base, and reset the [head](#def_head) of that branch to the result.
+To reapply a series of changes from a branch to a different base, and reset the head of that branch to the result.
 
 [](#Documentation/gitglossary.txt-aiddefrefaref)ref
 
