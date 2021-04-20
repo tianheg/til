@@ -17,7 +17,7 @@ Understanding about TIL:
 
   example:
 
-  ```bash
+  ```sh
   $ git checkout qa
   $ git checkout -b new-branch
   fatal: A branch named 'new-branch' already exists.
