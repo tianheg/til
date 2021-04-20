@@ -1,6 +1,6 @@
 # Learn Git
 
-- [Git Reference Manual](http://book.git-scm.com/docs)
+- [Git Reference Manual](https://git-scm.com/docs)
 - [GitHub Cheat Sheet](https://training.github.com/downloads/github-git-cheat-sheet/)
 - [Visual Git Cheat Sheet](https://ndpsoftware.com/git-cheatsheet.html)
 - [git - the simple guide](https://rogerdudler.github.io/git-guide/index.html)
