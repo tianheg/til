@@ -28,7 +28,7 @@ Understanding about TIL:
 - ~~把自己今天的收获，放到这儿，无论是否与技术相关~~ 只有技术
 - TIL 数目不对，暂时无法很快计数
 
-_380 TILs and counting..._
+_381 TILs and counting..._
 
 ---
 
@@ -47,7 +47,7 @@ _380 TILs and counting..._
 - [Emmet(1)](#emmet1)
 - [Firefox(1)](#firefox1)
 - [Gatsby(2)](#gatsby2)
-- [Git(25)](#git25)
+- [Git(26)](#git26)
 - [GitHub(12)](#github12)
 - [Go(1)](#go1)
 - [GPG(1)](#gpg1)
@@ -273,7 +273,7 @@ _380 TILs and counting..._
 - [Change Default Package Manager](gatsby/change-default-package-manager.md)
 - [Set Up Development Environment](gatsby/set-up-development-environment.md)
 
-### Git(25)
+### Git(26)
 
 - [Learn Git](git/learn-git.md)
 - [Branch Name Contain The 'space' Char](git/branch-name-contain-the-space-char.md)
@@ -300,6 +300,7 @@ _380 TILs and counting..._
 - [What Will Be Done After Rename Branch On GitHub](git/what-will-be-done-after-rename-branch-on-github.md)
 - [Overcommit](git/overcommit.md)
 - [Gitglossary](git/gitglossary.md)
+- [LearnGitBranching](git/learngitbranching.md)
 
 ### GitHub(12)
 
