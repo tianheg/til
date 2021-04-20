@@ -28,7 +28,7 @@ Understanding about TIL:
 - ~~把自己今天的收获，放到这儿，无论是否与技术相关~~ 只有技术
 - TIL 数目不对，暂时无法很快计数
 
-_381 TILs and counting..._
+_382 TILs and counting..._
 
 ---
 
@@ -50,7 +50,7 @@ _381 TILs and counting..._
 - [Git(26)](#git26)
 - [GitHub(12)](#github12)
 - [Go(1)](#go1)
-- [GPG(1)](#gpg1)
+- [GPG(2)](#gpg2)
 - [Gulp(2)](#gulp2)
 - [HTML(26)](#html26)
 - [Hugo(3)](#hugo3)
@@ -311,9 +311,10 @@ _381 TILs and counting..._
 
 - [Install Go On Ubuntu](go/install-go-on-ubuntu.md)
 
-### GPG(1)
+### GPG(2)
 
 - [Can Not Change Name Or Comment Without Losing Signatures](gpg/can-not-change-name-or-comment-without-losing-signatures.md)
+- [Import GitHub Key](gpg/import-github-key.md)
 
 ### Gulp(2)
 
