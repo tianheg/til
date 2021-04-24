@@ -28,7 +28,7 @@ Understanding about TIL:
 - ~~把自己今天的收获，放到这儿，无论是否与技术相关~~ 只有技术
 - TIL 数目不对，暂时无法很快计数
 
-_384 TILs and counting..._
+_385 TILs and counting..._
 
 ---
 
@@ -70,7 +70,7 @@ _384 TILs and counting..._
 - [SSH(1)](#ssh1)
 - [Trello(1)](#trello1)
 - [Twitter(1)](#twitter1)
-- [Ubuntu(44)](#ubuntu44)
+- [Ubuntu(45)](#ubuntu45)
 - [Vim(2)](#vim2)
 - [Visual Design(53)](#visual-design53)
 - [VMware(5)](#vmware5)
@@ -454,7 +454,7 @@ _384 TILs and counting..._
 
 - [RSS Feed](twitter/rss-feed.md)
 
-### Ubuntu(44)
+### Ubuntu(45)
 
 - [All My Home Disappeared](ubuntu/all-my-home-disappeared.md)
 - [Bluetooth Cannot Connect Airpods](ubuntu/bluetooth-cannot-connect-airpods.md)
@@ -501,6 +501,7 @@ _384 TILs and counting..._
 - [Install `apt-fast`](ubuntu/install-apt-fast.md)
 - [Install MScorefonts](ubuntu/install-mscorefonts.md)
 - [Install Mailspring](ubuntu/install-mailspring.md)
+- [Package Manager](ubuntu/package-manager.md)
 
 ### Vim(2)
 
