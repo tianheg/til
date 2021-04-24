@@ -4,4 +4,5 @@
 
 ```sh
 $ sudo snap install mailspring
+$ sudo snap remove mailspring
 ```
