@@ -28,7 +28,7 @@ Understanding about TIL:
 - ~~把自己今天的收获，放到这儿，无论是否与技术相关~~ 只有技术
 - TIL 数目不对，暂时无法很快计数
 
-_385 TILs and counting..._
+_386 TILs and counting..._
 
 ---
 
@@ -70,7 +70,7 @@ _385 TILs and counting..._
 - [SSH(1)](#ssh1)
 - [Trello(1)](#trello1)
 - [Twitter(1)](#twitter1)
-- [Ubuntu(45)](#ubuntu45)
+- [Ubuntu(46)](#ubuntu46)
 - [Vim(2)](#vim2)
 - [Visual Design(53)](#visual-design53)
 - [VMware(5)](#vmware5)
@@ -454,8 +454,9 @@ _385 TILs and counting..._
 
 - [RSS Feed](twitter/rss-feed.md)
 
-### Ubuntu(45)
+### Ubuntu(46)
 
+- [Install Postman](ubuntu/install-postman.md)
 - [All My Home Disappeared](ubuntu/all-my-home-disappeared.md)
 - [Bluetooth Cannot Connect Airpods](ubuntu/bluetooth-cannot-connect-airpods.md)
 - [Cannot Connect Wi-Fi Ubuntu20.04](ubuntu/cannot-connect-wi-fi-ubuntu20.04.md)
