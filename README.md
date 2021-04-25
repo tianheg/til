@@ -28,7 +28,7 @@ Understanding about TIL:
 - ~~把自己今天的收获，放到这儿，无论是否与技术相关~~ 只有技术
 - TIL 数目不对，暂时无法很快计数
 
-_388 TILs and counting..._
+_389 TILs and counting..._
 
 ---
 
@@ -70,7 +70,7 @@ _388 TILs and counting..._
 - [SSH(1)](#ssh1)
 - [Trello(1)](#trello1)
 - [Twitter(1)](#twitter1)
-- [Ubuntu(46)](#ubuntu46)
+- [Ubuntu(47)](#ubuntu47)
 - [Vim(2)](#vim2)
 - [Visual Design(53)](#visual-design53)
 - [VMware(5)](#vmware5)
@@ -456,7 +456,7 @@ _388 TILs and counting..._
 
 - [RSS Feed](twitter/rss-feed.md)
 
-### Ubuntu(46)
+### Ubuntu(47)
 
 - [Install Postman](ubuntu/install-postman.md)
 - [All My Home Disappeared](ubuntu/all-my-home-disappeared.md)
@@ -505,6 +505,7 @@ _388 TILs and counting..._
 - [Install MScorefonts](ubuntu/install-mscorefonts.md)
 - [Install Mailspring](ubuntu/install-mailspring.md)
 - [Package Manager](ubuntu/package-manager.md)
+- [Install SwitchHosts](ubuntu/install-switchhosts.md)
 
 ### Vim(2)
 
