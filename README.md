@@ -28,7 +28,7 @@ Understanding about TIL:
 - ~~把自己今天的收获，放到这儿，无论是否与技术相关~~ 只有技术
 - TIL 数目不对，暂时无法很快计数
 
-_386 TILs and counting..._
+_387 TILs and counting..._
 
 ---
 
@@ -58,7 +58,7 @@ _386 TILs and counting..._
 - [Jekyll(3)](#jekyll3)
 - [Let's Encrypt(1)](#lets-encrypt1)
 - [LICENSE(1)](#license1)
-- [Linux(10)](#linux10)
+- [Linux(11)](#linux11)
 - [Node.js(7)](#nodejs7)
 - [Notion(1)](#notion1)
 - [Open Source(1)](#open-source1)
@@ -381,7 +381,7 @@ _386 TILs and counting..._
 
 - [GNU General Public License](license/gpl.md)
 
-### Linux(10)
+### Linux(11)
 
 - [Create Users](linux/create-users.md)
 - [Ctrl-L Or `clear`](linux/ctrl-l-or-clear.md)
@@ -394,6 +394,7 @@ _386 TILs and counting..._
 - [Switch Users](linux/switch-users.md)
 - [Username Is Not In The Sudoers File](linux/username-is-not-in-the-sudoers-file.md)
 - [Linux Ate My Ram!](linux/linux-ate-my-ram.md)
+- [Change Owner And Group](linux/change-owner-and-group.md)
 
 ### Node.js(7)
 
