@@ -8,6 +8,7 @@
 /opt/zotero $ ./zotero
 /opt/zotero $ sudo ./set_launcher_icon
 /opt/zotero $ ln -s /opt/zotero/zotero.desktop ~/.local/share/applications/zotero.desktop
+/opt $ sudo chown -R tianheg:tianheg zotero # give write permission to zotero folder and its files
 ```
 
 source:
