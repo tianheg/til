@@ -28,7 +28,7 @@ Understanding about TIL:
 - ~~把自己今天的收获，放到这儿，无论是否与技术相关~~ 只有技术
 - TIL 数目不对，暂时无法很快计数
 
-_394 TILs and counting..._
+_395 TILs and counting..._
 
 ---
 
@@ -68,6 +68,7 @@ _394 TILs and counting..._
 - [Python(6)](#python6)
 - [Security(3)](#security3)
 - [SSH(1)](#ssh1)
+- [Tech Translate(1)](#tech-translate1)
 - [Time(1)](#time1)
 - [Trello(1)](#trello1)
 - [Twitter(1)](#twitter1)
@@ -449,6 +450,10 @@ _394 TILs and counting..._
 ### SSH(1)
 
 - [Generate SSH Key](ssh/generate-ssh-key.md)
+
+### Tech Translate(1)
+
+- [Best Practices With News Translation](tech-translate/best-practices-with-news-translation.md)
 
 ### Time(1)
 
