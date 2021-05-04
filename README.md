@@ -30,7 +30,7 @@ Understanding about TIL:
 - TIL 数目不对，暂时无法很快计数
 - 传递极简思想
 
-_406 TILs and counting..._
+_405 TILs and counting..._
 
 ---
 
@@ -56,7 +56,7 @@ _406 TILs and counting..._
 - [Gulp(2)](#gulp2)
 - [HTML(32)](#html32)
 - [Hugo(3)](#hugo3)
-- [JavaScript(6)](#javascript6)
+- [JavaScript(5)](#javascript5)
 - [Jekyll(3)](#jekyll3)
 - [Let's Encrypt(1)](#lets-encrypt1)
 - [LICENSE(1)](#license1)
@@ -372,10 +372,9 @@ _406 TILs and counting..._
 - [Install Hugo On Ubuntu](hugo/install-hugo-on-ubuntu.md)
 - [Use New Archetype Create Post In Posts Folder](hugo/use-new-archetype-create-post-in-posts-folder.md)
 
-### JavaScript(6)
+### JavaScript(5)
 
-- [声明 JavaScript 变量](javascript/declare-javascript-variables.md)
-- [Comment JavaScript Code](javascript/comment-javascript-code.md)
+- [JavaScript 基础](javascript/basic-javascript.md)
 - [JavScript 是什么](javascript/what-is-javascript.md)
 - [12 JavaScript Quirks](javascript/12quirks.md)
 - [JavaScript Virtual Machine](javascript/javascript-virtual-machine.md)

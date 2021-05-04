@@ -1,4 +1,19 @@
-# 声明 JavaScript 变量
+# JavaScript 基础
+
+## Comment JavaScript Code
+
+JavaScript 会忽略被注释掉的代码。写注释能够帮你或别人弄清楚代码的意思。注释的两种方法：
+
+```javascript
+// This is an in-line comment.
+
+/* This is a
+multi-line comment */
+```
+
+好的注释能够帮助代码传达实现意图。
+
+## 声明 JavaScript 变量
 
 在计算机科学中，data 指代一切对计算机有意义的事物。JavaScript 提供了 8 种不同的数据类型，它们分别是 `undefined`，`null`，`boolean`，`string`，`symbol`，`bigint`，`number`，`object`。
 
