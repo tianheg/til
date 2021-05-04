@@ -29,7 +29,7 @@ Understanding about TIL:
 - TIL 数目不对，暂时无法很快计数
 - 传递极简思想
 
-_402 TILs and counting..._
+_403 TILs and counting..._
 
 ---
 
@@ -73,7 +73,7 @@ _402 TILs and counting..._
 - [Time(1)](#time1)
 - [Trello(1)](#trello1)
 - [Twitter(1)](#twitter1)
-- [Ubuntu(50)](#ubuntu50)
+- [Ubuntu(51)](#ubuntu51)
 - [Vim(2)](#vim2)
 - [Visual Design(53)](#visual-design53)
 - [VMware(5)](#vmware5)
@@ -475,8 +475,9 @@ _402 TILs and counting..._
 
 - [RSS Feed](twitter/rss-feed.md)
 
-### Ubuntu(50)
+### Ubuntu(51)
 
+- [Install Netease Music](ubuntu/install-netease-music.md)
 - [Use Apt-key](ubuntu/use-apt-key.md)
 - [Install Nnn](ubuntu/install-nnn.md)
 - [Install Typora](ubuntu/install-typora.md)
