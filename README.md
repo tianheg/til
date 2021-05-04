@@ -29,7 +29,7 @@ Understanding about TIL:
 - TIL 数目不对，暂时无法很快计数
 - 传递极简思想
 
-_397 TILs and counting..._
+_398 TILs and counting..._
 
 ---
 
@@ -356,6 +356,7 @@ _397 TILs and counting..._
 
 **Others**:
 
+- [`<input>` For](html/input-for.md)
 - [Create Links To Sections On The Same Page](html/create-links-to-sections-on-the-same-page.md)
 - [Checkbox](html/checkbox.md)
 - [Canonical](html/canonical.md)
