@@ -29,7 +29,7 @@ Understanding about TIL:
 - TIL 数目不对，暂时无法很快计数
 - 传递极简思想
 
-_401 TILs and counting..._
+_402 TILs and counting..._
 
 ---
 
@@ -53,7 +53,7 @@ _401 TILs and counting..._
 - [Go(1)](#go1)
 - [GPG(2)](#gpg2)
 - [Gulp(2)](#gulp2)
-- [HTML(31)](#html31)
+- [HTML(32)](#html32)
 - [Hugo(3)](#hugo3)
 - [JavaScript(3)](#javascript3)
 - [Jekyll(3)](#jekyll3)
@@ -324,7 +324,7 @@ _401 TILs and counting..._
 - [Cannot Find Module Gulp-util](gulp/cannot-find-module-gulp-util.md)
 - [Gulp Command Not Found](gulp/gulp-command-not-found.md)
 
-### HTML(31)
+### HTML(32)
 
 **Basis**(freeCodeCamp):
 
@@ -356,6 +356,7 @@ _401 TILs and counting..._
 
 **Others**:
 
+- [Use Radio](html/use-radio.md)
 - [Textarea](html/textarea.md)
 - [Select Option From Dropdown](html/select-option-from-dropdown.md)
 - [Input Min Attribute](html/input-min-attribute.md)
