@@ -33,3 +33,33 @@ var ourName;
 
 1. 变量不能含有空格；
 2. 首字母不能是数字。
+
+## 使用赋值操作符存储值
+
+```js
+myVariable = 5; // assigns the number value 5 to myVariable
+```
+
+如果 `=` 右侧有任何计算，在把值赋给操作符左边的变量之前，计算已经结束了。
+
+例子：
+
+```js
+var myVar;
+myVar = 5;
+```
+
+## 把一个变量的值赋给另一个变量
+
+```js
+var myVar;
+myVar = 5;
+var myNum;
+myNum = myVar;
+```
+
+## 使用赋值操作副初始化变量
+
+```js
+var myVar = 0;
+```
