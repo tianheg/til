@@ -24,12 +24,13 @@ Understanding about TIL:
   ```
 
 - 分类名字使用英文，~~如果内容是中文，题目也要用中文，以暗示内容是中文；英文等同~~ ~~「中文 + 英文」，两者哪一个适合用哪个~~
+- 内容的命名使用英文，标题中英文均可
 - 分类下的条目 _尽量_ 按字母顺序排列
 - ~~把自己今天的收获，放到这儿，无论是否与技术相关~~ 只有技术
 - TIL 数目不对，暂时无法很快计数
 - 传递极简思想
 
-_403 TILs and counting..._
+_404 TILs and counting..._
 
 ---
 
@@ -55,7 +56,7 @@ _403 TILs and counting..._
 - [Gulp(2)](#gulp2)
 - [HTML(32)](#html32)
 - [Hugo(3)](#hugo3)
-- [JavaScript(3)](#javascript3)
+- [JavaScript(4)](#javascript4)
 - [Jekyll(3)](#jekyll3)
 - [Let's Encrypt(1)](#lets-encrypt1)
 - [LICENSE(1)](#license1)
@@ -371,8 +372,9 @@ _403 TILs and counting..._
 - [Install Hugo On Ubuntu](hugo/install-hugo-on-ubuntu.md)
 - [Use New Archetype Create Post In Posts Folder](hugo/use-new-archetype-create-post-in-posts-folder.md)
 
-### JavaScript(3)
+### JavaScript(4)
 
+- [JavScript 是什么](javascript/what-is-javascript.md)
 - [12 JavaScript Quirks](javascript/12quirks.md)
 - [JavaScript Virtual Machine](javascript/javascript-virtual-machine.md)
 - [Use Same Between File Name And Variable](javascript/use-same-between-file-name-and-variable.md)
