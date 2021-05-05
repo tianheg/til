@@ -63,3 +63,85 @@ myNum = myVar;
 ```js
 var myVar = 0;
 ```
+
+## 理解未初始化变量
+
+在 JavaScript 中，刚声明的变量具有初始值：`undefined`。如果使用一个 `undefined` 变量执行数学操作，你的结果会是 `NaN`，意为“不是一个数字”。如果和 `undefined` 变量组成字符串，你会得到一个文字字符串 `undefined`。
+
+## 理解变量的大小写敏感
+
+在 JavaScript 中，所有变量和函数的名字是大小写敏感的。这意味着大写对它们的名字有影响。
+
+`MYVAR` 和 `MyVar` 或 `myvar` 都不一样。可能有多个这样的变量，它们名字相同，但具有不同的大小写。为了清晰强烈推荐不要使用这个语言特点。
+
+**最佳实践**：
+
+在 JavaScript 中使用驼峰命名法。该种方法中，多单词变量的第一个单词首字母小写，第二个单词和之后的单词的首字母大写。
+
+```js
+var someVariable;
+var anotherVariableName;
+var theVariableNameIsSoLong;
+```
+
+## 基本运算
+
+### 两数加法
+
+`Number` 是 JavaScript 中的一种数据类型，它可以表示数字数据。`+` 是 JavaScript 的加法操作运算符。
+
+```js
+myVar = 1 + 2;
+```
+
+### 两数相减
+
+```js
+myVar = 2 - 1;
+```
+
+### 两数相乘
+
+```js
+myVar = 2 * 3;
+```
+
+### 两数相除
+
+```js
+myVar = 4 / 2;
+```
+
+## 自增 1 再赋值
+
+```js
+i++;
+```
+
+## 自减 1 再赋值
+
+```js
+i--;
+```
+
+## 创建十进制数
+
+十进制数有时候也可看成 _floating point numbers_ 或 _floats_。
+
+**不过并非所有实数都能用浮点数准确表示。这样会导致化整误差**。
+
+```js
+var myDecimal = 2.3;
+```
+
+## 两浮点数相乘
+
+```js
+var product = 2.0 * 2.5;
+```
+
+## 两浮点数相除
+
+```js
+var quotient = 4.4 / 2.0;
+```
