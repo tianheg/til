@@ -5,22 +5,18 @@ sidebar: auto
 
 # Others
 
-
 ## Algolia(1)
 
 - [What Is A Usage Unit?](algolia/what-is-a-usage-unit.md)
-
 
 ## Cloudflare(2)
 
 - [Error 525 SSL Handshake Failed](cloudflare/error-525-ssl-handshake-failed.md)
 - [Login After Losing Recovery Codes](cloudflare/login-after-losing-recovery-codes.md)
 
-
 ## Curl(1)
 
 - [Install Curl](curl/install-curl.md)
-
 
 ## DNS(1)
 
@@ -44,7 +40,6 @@ sidebar: auto
 ## Emmet(1)
 
 - [Intro](emmet/intro.md)
-
 
 ## Gatsby(2)
 
