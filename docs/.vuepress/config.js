@@ -30,9 +30,9 @@ module.exports = {
           title: "Front-end",
           collapsable: false,
           children: [
-            ["/html/", "HTML"],
-            ["/css/", "CSS"],
-            ["/javascript/", "JavaScript"]
+            ["/html/what-is-html-and-html5", "HTML"],
+            ["/css/what-is-css", "CSS"],
+            ["/javascript/what-is-javascript", "JavaScript"]
           ]
         },
         {
