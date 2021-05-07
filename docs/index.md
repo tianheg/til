@@ -8,15 +8,12 @@ features:
   - title: 前端
     details: JavaScript、ES6、Vue框架等前端技术
     link: /front-end/
-    imgUrl: /front-end.png
   - title: 后端
     details: Python，C 等技术
     link: /back-end/
-    imgUrl: /back-end.png
   - title: 其他
     details: 技术文档、教程、技巧、总结等文章
     link: /others/
-    imgUrl: /others.png
 ---
 
 # TIL <!-- omit in toc -->
