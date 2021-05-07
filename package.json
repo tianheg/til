@@ -8,8 +8,8 @@
     "scripts": {
         "dev": "vuepress dev docs",
         "build": "vuepress build docs",
-        "lint": "lint-md */*.md",
-        "format": "lint-md */*.md --fix",
+        "lint": "lint-md */*/*.md",
+        "format": "lint-md */*/*.md --fix",
         "test": "lint-staged",
         "postinstall": "husky install"
     },
