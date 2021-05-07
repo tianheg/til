@@ -1,0 +1,18 @@
+---
+title: applied-visual-design
+date: 2021-05-01 10:19:14
+permalink: /pages/0eb998/
+categories:
+  - visual-design
+tags:
+  - 
+---
+# Applied Visual Design
+
+Visual Design in web development is a broad topic. It combines typography, color theory, graphics, animation, and page layout to help deliver a site's message. The definition of good design is a well-discussed subject, with many books on the theme.
+
+At a basic level, most web content provides a user with information. The visual design of the page can influence its presentation and a user's experience. In web development, HTML gives structure and semantics to a page's content, and CSS controls the layout and appearance of it.
+
+This section covers some of the basic tools developers use to create their own visual designs.
+
+[source](https://www.freecodecamp.org/learn/responsive-web-design/applied-visual-design/)

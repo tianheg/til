@@ -1,3 +1,0 @@
-# GNU General Public License
-
-

@@ -1,0 +1,12 @@
+---
+title: ctrl-l-or-clear
+date: 2021-05-01 10:19:14
+permalink: /pages/ba5014/
+categories:
+  - linux
+tags:
+  - 
+---
+# Ctrl-L Or `clear`
+
+如果在 x11 终端模拟器，clear 会把至少所有的输出清理掉。而 Ctrl-L 只会重新开启新的屏幕并不会清空之前的输出。换句话说，用它还能向上滑，看到之前的输出。当然，这是 bash 下的操作，sh 没用。

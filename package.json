@@ -2,10 +2,16 @@
     "name": "til",
     "version": "1.0.0",
     "license": "CC-BY-SA-4.0",
+    "author": "tianheg",
     "homepage": "https://github.com/tianheg/til#readme",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/tianheg/til.git"
+    "repository": "git+https://github.com/tianheg/til.git",
+    "scripts": {
+        "dev": "vuepress dev docs",
+        "build": "vuepress build docs",
+        "lint": "lint-md */*.md",
+        "format": "lint-md */*.md --fix",
+        "test": "lint-staged",
+        "postinstall": "husky install"
     },
     "bugs": {
         "url": "https://github.com/tianheg/til/issues"
@@ -14,7 +20,17 @@
         "husky": "^5.1.1",
         "lint-md-cli": "^0.1.2",
         "lint-staged": "^10.4.0",
-        "prettier": "^2.1.2"
+        "prettier": "^2.1.2",
+        "dayjs": "^1.9.7",
+        "inquirer": "^7.1.0",
+        "json2yaml": "^1.1.0",
+        "yamljs": "^0.3.0",
+        "vuepress": "^1.8.2",
+        "vuepress-theme-vdoing": "^1.8.3",
+        "vuepress-plugin-demo-block": "^0.7.2",
+        "vuepress-plugin-one-click-copy": "^1.0.2",
+        "vuepress-plugin-thirdparty-search": "^1.0.2",
+        "vuepress-plugin-zooming": "^1.1.7"
     },
     "prettier": {
         "singleQuote": true,
@@ -24,15 +40,12 @@
         "*.{json,yml}": "prettier --write",
         "*.md": "lint-md --fix"
     },
-    "scripts": {
-        "lint": "lint-md */*.md",
-        "format": "lint-md */*.md --fix",
-        "test": "lint-staged",
-        "postinstall": "husky install"
-    },
     "husky": {
         "hooks": {
             "pre-commit": "yarn test"
         }
+    },
+    "dependencies": {
+        "vuepress-plugin-comment": "^0.7.3"
     }
 }

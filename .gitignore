@@ -1,5 +1,15 @@
+#npm
 node_modules/
 package-lock.json
+
+# husky
+.husky
+
+# yarn
 yarn.lock
 
-.husky
+# vscode
+.vscode
+
+# vuepress
+docs/.vuepress/dist
