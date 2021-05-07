@@ -5,7 +5,6 @@ permalink: /pages/a86201/
 categories:
   - ubuntu
 tags:
-  - 
 ---
 # Install SQLite Database Browser
 

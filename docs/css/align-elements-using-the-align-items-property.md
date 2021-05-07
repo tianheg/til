@@ -5,7 +5,6 @@ permalink: /pages/838a12/
 categories:
   - css
 tags:
-  - 
 ---
 # Align Elements Using The Align-items Property
 

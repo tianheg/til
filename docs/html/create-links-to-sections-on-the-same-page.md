@@ -5,7 +5,6 @@ permalink: /pages/a51680/
 categories:
   - html
 tags:
-  - 
 ---
 # Create Links To Sections On The Same Page
 

@@ -5,7 +5,6 @@ permalink: /pages/3e3cb9/
 categories:
   - git
 tags:
-  - 
 ---
 # Gitglossary
 

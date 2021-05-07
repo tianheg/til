@@ -5,7 +5,6 @@ permalink: /pages/a706da/
 categories:
   - ubuntu
 tags:
-  - 
 ---
 # Remap Key Bug
 

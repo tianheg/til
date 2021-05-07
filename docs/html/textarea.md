@@ -5,7 +5,6 @@ permalink: /pages/39d20b/
 categories:
   - html
 tags:
-  - 
 ---
 # Textarea
 

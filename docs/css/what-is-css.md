@@ -5,7 +5,6 @@ permalink: /pages/b60f3e/
 categories:
   - css
 tags:
-  - 
 ---
 # What Is CSS
 

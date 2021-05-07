@@ -5,7 +5,6 @@ permalink: /pages/32ab39/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Create Visual Direction By Fading An Element From Left To Right
 

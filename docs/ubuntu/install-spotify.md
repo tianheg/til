@@ -5,7 +5,6 @@ permalink: /pages/9cc024/
 categories:
   - ubuntu
 tags:
-  - 
 ---
 # Install Spotify
 

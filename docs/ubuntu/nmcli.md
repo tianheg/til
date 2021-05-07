@@ -5,7 +5,6 @@ permalink: /pages/25bc83/
 categories:
   - ubuntu
 tags:
-  - 
 ---
 # Nmcli
 

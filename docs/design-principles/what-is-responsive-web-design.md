@@ -5,7 +5,6 @@ permalink: /pages/3868ab/
 categories:
   - design-principles
 tags:
-  - 
 ---
 # What Is Responsive Web Design
 

@@ -5,7 +5,6 @@ permalink: /pages/fdc0ca/
 categories:
   - git
 tags:
-  - 
 ---
 # See A File At A Specific Commit
 

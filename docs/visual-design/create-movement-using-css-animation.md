@@ -5,7 +5,6 @@ permalink: /pages/e2e53a/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Create Movement Using CSS Animation
 

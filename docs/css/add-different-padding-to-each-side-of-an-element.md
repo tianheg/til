@@ -5,7 +5,6 @@ permalink: /pages/c3b007/
 categories:
   - css
 tags:
-  - 
 ---
 # Add Different Padding To Each Side Of An Element
 

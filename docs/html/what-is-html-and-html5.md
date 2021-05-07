@@ -5,7 +5,6 @@ permalink: /pages/7561d5/
 categories:
   - html
 tags:
-  - 
 ---
 # What Is HTML And HTML5
 

@@ -5,7 +5,6 @@ permalink: /pages/13ccf6/
 categories:
   - ubuntu
 tags:
-  - 
 ---
 # Install Albert
 

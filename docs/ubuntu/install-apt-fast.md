@@ -5,7 +5,6 @@ permalink: /pages/a7610f/
 categories:
   - ubuntu
 tags:
-  - 
 ---
 # Install `apt-fast`
 

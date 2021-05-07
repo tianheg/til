@@ -5,7 +5,6 @@ permalink: /pages/2aeb46/
 categories:
   - github
 tags:
-  - 
 ---
 # Show Diff
 

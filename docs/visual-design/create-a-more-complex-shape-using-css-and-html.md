@@ -5,7 +5,6 @@ permalink: /pages/3f8124/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Create A More Complex Shape Using CSS And HTML
 

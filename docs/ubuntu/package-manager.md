@@ -5,7 +5,6 @@ permalink: /pages/209842/
 categories:
   - ubuntu
 tags:
-  - 
 ---
 # Package Manager
 

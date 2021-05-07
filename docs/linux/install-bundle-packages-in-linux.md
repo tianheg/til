@@ -5,7 +5,6 @@ permalink: /pages/10880a/
 categories:
   - linux
 tags:
-  - 
 ---
 # Install `.bundle` Packages In Linux
 

@@ -5,7 +5,6 @@ permalink: /pages/42f023/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Learn About Tertiary Colors
 

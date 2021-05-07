@@ -5,7 +5,6 @@ permalink: /pages/03c042/
 categories:
   - css
 tags:
-  - 
 ---
 # Inherit CSS Variables
 

@@ -5,7 +5,6 @@ permalink: /pages/275b18/
 categories:
   - css
 tags:
-  - 
 ---
 # Change A Variable For A Specific Area
 

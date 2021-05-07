@@ -5,7 +5,6 @@ permalink: /pages/39f813/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Add A Box-shadow To A Card-like Element
 

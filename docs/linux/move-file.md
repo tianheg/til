@@ -5,7 +5,6 @@ permalink: /pages/154f9d/
 categories:
   - linux
 tags:
-  - 
 ---
 # Move File
 

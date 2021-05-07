@@ -5,7 +5,6 @@ permalink: /pages/5760b9/
 categories:
   - html
 tags:
-  - 
 ---
 # Use HTML5 To Require A Field
 

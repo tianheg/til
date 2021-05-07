@@ -5,7 +5,6 @@ permalink: /pages/8a0968/
 categories:
   - css
 tags:
-  - 
 ---
 # Override All Other Styles By Using Important
 

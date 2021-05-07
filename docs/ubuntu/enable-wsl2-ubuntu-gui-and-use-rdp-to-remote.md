@@ -5,7 +5,6 @@ permalink: /pages/8ba891/
 categories:
   - ubuntu
 tags:
-  - 
 ---
 # Enable WSL2 Ubuntu GUI And Use Rdp To Remote
 

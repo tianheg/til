@@ -5,7 +5,6 @@ permalink: /pages/39c7cc/
 categories:
   - accessibility
 tags:
-  - 
 ---
 # Wrap Radio Buttons In A Fieldset Element For Better Accessibility
 

@@ -5,7 +5,6 @@ permalink: /pages/c061fd/
 categories:
   - ubuntu
 tags:
-  - 
 ---
 # No Pip On Ubuntu20.04
 

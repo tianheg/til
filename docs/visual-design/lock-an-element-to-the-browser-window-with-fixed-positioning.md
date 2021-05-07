@@ -5,7 +5,6 @@ permalink: /pages/800def/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Lock An Element To The Browser Window With Fixed Positioning
 

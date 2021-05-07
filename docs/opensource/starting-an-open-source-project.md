@@ -5,7 +5,6 @@ permalink: /pages/3ff0ac/
 categories:
   - opensource
 tags:
-  - 
 ---
 # Starting an Open Source Project
 

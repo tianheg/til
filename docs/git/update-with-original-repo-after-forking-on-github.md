@@ -5,7 +5,6 @@ permalink: /pages/d75e48/
 categories:
   - git
 tags:
-  - 
 ---
 # Update With Original Repo After Forking on GitHub
 

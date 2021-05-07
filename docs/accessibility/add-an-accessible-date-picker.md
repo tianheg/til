@@ -5,7 +5,6 @@ permalink: /pages/54a183/
 categories:
   - accessibility
 tags:
-  - 
 ---
 # Add An Accessible Date Picker
 

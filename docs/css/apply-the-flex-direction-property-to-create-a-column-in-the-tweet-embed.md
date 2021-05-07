@@ -5,7 +5,6 @@ permalink: /pages/ddd03f/
 categories:
   - css
 tags:
-  - 
 ---
 # Apply The Flex-direction Property To Create A Column In The Tweet Embed
 

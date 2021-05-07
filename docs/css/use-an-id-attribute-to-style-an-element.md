@@ -5,7 +5,6 @@ permalink: /pages/e80c95/
 categories:
   - css
 tags:
-  - 
 ---
 # Use An Id Attribute To Style An Element
 

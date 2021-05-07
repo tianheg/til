@@ -5,7 +5,6 @@ permalink: /pages/f12a5c/
 categories:
   - html
 tags:
-  - 
 ---
 # `<input>` For
 

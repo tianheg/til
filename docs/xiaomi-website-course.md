@@ -2,26 +2,21 @@
 
 1. `charset="UTF-8"` 设置字符集
 
-2.
 
 - p 段落文字；
 - div 块文字，标签；
 
-3.
 
 <img src="" />
 
-4.
 
 slash `/`; backslash `\`
 
-5.
 
 font-size(默认 16 px), color, background-color
 
 `#xxxxxx`, x<--(0, f)
 
-6.
 
 width, height, line-height, text-align
 
@@ -33,11 +28,9 @@ div {
 }
 ```
 
-7.
 
 class 的 name：首字母不是数字
 
-8.
 
 页面布局
 

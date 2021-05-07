@@ -5,7 +5,6 @@ permalink: /pages/37c80a/
 categories:
   - ubuntu
 tags:
-  - 
 ---
 # Install Skype
 

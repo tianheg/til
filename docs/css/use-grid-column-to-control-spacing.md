@@ -5,7 +5,6 @@ permalink: /pages/769310/
 categories:
   - css
 tags:
-  - 
 ---
 # Use `grid-column` To Control Spacing
 

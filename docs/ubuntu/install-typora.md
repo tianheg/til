@@ -5,7 +5,6 @@ permalink: /pages/3746b3/
 categories:
   - ubuntu
 tags:
-  - 
 ---
 # Install Typora
 

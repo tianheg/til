@@ -5,7 +5,6 @@ permalink: /pages/33eb02/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Use The Em Tag To Italicize Text
 

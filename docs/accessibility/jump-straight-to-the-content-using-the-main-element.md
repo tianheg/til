@@ -5,7 +5,6 @@ permalink: /pages/35b954/
 categories:
   - accessibility
 tags:
-  - 
 ---
 # Jump Straight To The Content Using The Main Element
 

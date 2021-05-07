@@ -5,7 +5,6 @@ permalink: /pages/030d16/
 categories:
   - html
 tags:
-  - 
 ---
 # Select Option From Dropdown
 

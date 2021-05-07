@@ -5,7 +5,6 @@ permalink: /pages/b5fdcd/
 categories:
   - ubuntu
 tags:
-  - 
 ---
 # Use Snibox
 

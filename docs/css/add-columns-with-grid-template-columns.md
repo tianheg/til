@@ -5,7 +5,6 @@ permalink: /pages/32e9f1/
 categories:
   - css
 tags:
-  - 
 ---
 # Add Columns With Grid-template-columns
 

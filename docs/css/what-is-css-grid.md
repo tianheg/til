@@ -5,7 +5,6 @@ permalink: /pages/016e74/
 categories:
   - css
 tags:
-  - 
 ---
 # What Is CSS Grid
 

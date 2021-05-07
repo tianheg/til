@@ -5,7 +5,6 @@ permalink: /pages/e0f0ad/
 categories:
   - git
 tags:
-  - 
 ---
 # Learn Git
 

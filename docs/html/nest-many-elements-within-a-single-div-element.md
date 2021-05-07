@@ -5,7 +5,6 @@ permalink: /pages/6696b2/
 categories:
   - html
 tags:
-  - 
 ---
 # Nest Many Elements Within A Single Div Element
 

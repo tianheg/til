@@ -5,7 +5,6 @@ permalink: /pages/9cb840/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Learn How The CSS @keyframes And Animation Properties Work
 

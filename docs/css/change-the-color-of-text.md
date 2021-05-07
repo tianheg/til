@@ -5,7 +5,6 @@ permalink: /pages/880a8e/
 categories:
   - css
 tags:
-  - 
 ---
 # Change The Color Of Text
 

@@ -1,3 +1,8 @@
+---
+sidebarDepth: 3
+sidebar: auto
+---
+
 # Front-end
 
 ## Accessibility(23)

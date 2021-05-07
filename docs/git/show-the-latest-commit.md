@@ -5,7 +5,6 @@ permalink: /pages/59179d/
 categories:
   - git
 tags:
-  - 
 ---
 # Show The Latest Commit
 

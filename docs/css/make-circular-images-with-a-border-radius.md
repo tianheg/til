@@ -5,7 +5,6 @@ permalink: /pages/33767a/
 categories:
   - css
 tags:
-  - 
 ---
 # Make Circular Images With A Border-radius
 

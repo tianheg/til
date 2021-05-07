@@ -5,7 +5,6 @@ permalink: /pages/f51f42/
 categories:
   - accessibility
 tags:
-  - 
 ---
 # Avoid Colorblindness Issues By Using Sufficient Contrast
 

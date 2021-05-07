@@ -5,7 +5,6 @@ permalink: /pages/6ab8b0/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Animate Elements Continually Using An Infinite Animation Count
 

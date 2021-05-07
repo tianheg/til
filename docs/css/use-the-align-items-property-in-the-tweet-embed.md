@@ -5,7 +5,6 @@ permalink: /pages/f5f27e/
 categories:
   - css
 tags:
-  - 
 ---
 # Use The Align-items Property In The Tweet Embed
 

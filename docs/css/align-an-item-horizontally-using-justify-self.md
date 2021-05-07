@@ -5,7 +5,6 @@ permalink: /pages/a192e7/
 categories:
   - css
 tags:
-  - 
 ---
 # Align An Item Horizontally Using `justify-self`
 

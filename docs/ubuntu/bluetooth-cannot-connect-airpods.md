@@ -5,7 +5,6 @@ permalink: /pages/bf0885/
 categories:
   - ubuntu
 tags:
-  - 
 ---
 # Bluetooth Cannot Connect Airpods
 

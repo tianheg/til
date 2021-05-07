@@ -5,7 +5,6 @@ permalink: /pages/8c642f/
 categories:
   - css
 tags:
-  - 
 ---
 # Override Styles In Subsequent CSS
 

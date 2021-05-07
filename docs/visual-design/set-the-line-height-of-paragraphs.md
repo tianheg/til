@@ -5,7 +5,6 @@ permalink: /pages/89a848/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Set The Line-height Of Paragraphs
 

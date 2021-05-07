@@ -5,7 +5,6 @@ permalink: /pages/fbff9a/
 categories:
   - hugo
 tags:
-  - 
 ---
 # Install Hugo On Ubuntu
 

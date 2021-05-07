@@ -5,7 +5,6 @@ permalink: /pages/46429d/
 categories:
   - html
 tags:
-  - 
 ---
 # Create An Ordered List
 

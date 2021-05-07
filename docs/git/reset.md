@@ -5,7 +5,6 @@ permalink: /pages/8a3ff2/
 categories:
   - git
 tags:
-  - 
 ---
 # Reset
 

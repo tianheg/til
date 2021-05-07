@@ -5,7 +5,6 @@ permalink: /pages/c8577f/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Create A Gradual CSS Linear Gradient
 

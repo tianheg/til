@@ -5,7 +5,6 @@ permalink: /pages/3127a0/
 categories:
   - html
 tags:
-  - 
 ---
 # Use The Value Attribute With Radio Buttons And Checkboxes
 

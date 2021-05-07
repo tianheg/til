@@ -5,7 +5,6 @@ permalink: /pages/c244fe/
 categories:
   - css
 tags:
-  - 
 ---
 # Use The Flex-direction Property To Make A Column
 

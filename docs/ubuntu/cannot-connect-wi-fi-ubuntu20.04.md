@@ -5,7 +5,6 @@ permalink: /pages/f7f2a9/
 categories:
   - ubuntu
 tags:
-  - 
 ---
 # Cannot Connect Wi-Fi Ubuntu20.04
 

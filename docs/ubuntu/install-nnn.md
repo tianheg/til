@@ -5,7 +5,6 @@ permalink: /pages/5f6879/
 categories:
   - ubuntu
 tags:
-  - 
 ---
 # Install Nnn
 

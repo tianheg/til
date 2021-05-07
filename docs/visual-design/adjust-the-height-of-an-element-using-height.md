@@ -5,7 +5,6 @@ permalink: /pages/2bd0f4/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Adjust The Height Of An Element Using The Height Property
 

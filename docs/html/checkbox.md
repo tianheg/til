@@ -5,7 +5,6 @@ permalink: /pages/72d403/
 categories:
   - html
 tags:
-  - 
 ---
 # Checkbox
 

@@ -5,7 +5,6 @@ permalink: /pages/b97532/
 categories:
   - accessibility
 tags:
-  - 
 ---
 # Give Links Meaning By Using Descriptive Link Text
 

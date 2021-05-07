@@ -5,7 +5,6 @@ permalink: /pages/32d822/
 categories:
   - accessibility
 tags:
-  - 
 ---
 # Use Headings to Show Hierarchical Relationships of Content
 

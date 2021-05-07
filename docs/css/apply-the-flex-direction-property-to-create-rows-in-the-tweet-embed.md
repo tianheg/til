@@ -5,7 +5,6 @@ permalink: /pages/a51f60/
 categories:
   - css
 tags:
-  - 
 ---
 # Apply The Flex-direction Property To Create Rows In The Tweet Embed
 

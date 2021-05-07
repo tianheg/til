@@ -5,7 +5,6 @@ permalink: /pages/0a9322/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Decrease The Opacity Of An Element
 

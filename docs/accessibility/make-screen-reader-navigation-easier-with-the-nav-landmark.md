@@ -5,7 +5,6 @@ permalink: /pages/f1085b/
 categories:
   - accessibility
 tags:
-  - 
 ---
 # Make Screen Reader Navigation Easier With The Nav Landmark
 

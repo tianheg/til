@@ -5,7 +5,6 @@ permalink: /pages/f6b461/
 categories:
   - css
 tags:
-  - 
 ---
 # Add Rounded Corners With Border-radius
 

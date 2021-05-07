@@ -5,7 +5,6 @@ permalink: /pages/6755db/
 categories:
   - ubuntu
 tags:
-  - 
 ---
 # Install Anki
 

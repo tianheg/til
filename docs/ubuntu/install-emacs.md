@@ -5,7 +5,6 @@ permalink: /pages/7111ee/
 categories:
   - ubuntu
 tags:
-  - 
 ---
 # Install Emacs
 

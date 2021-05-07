@@ -5,7 +5,6 @@ permalink: /pages/79de6f/
 categories:
   - css
 tags:
-  - 
 ---
 # Align All Items Horizontally Using `justify-items`
 

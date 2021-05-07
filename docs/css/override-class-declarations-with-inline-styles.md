@@ -5,7 +5,6 @@ permalink: /pages/e127db/
 categories:
   - css
 tags:
-  - 
 ---
 # Override Class Declarations With Inline Styles
 

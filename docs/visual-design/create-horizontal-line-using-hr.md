@@ -5,7 +5,6 @@ permalink: /pages/94bd2c/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Create A Horizontal Line Using The Hr Element
 

@@ -5,7 +5,6 @@ permalink: /pages/0e6619/
 categories:
   - css
 tags:
-  - 
 ---
 # Use The Flex-basis Property To Set The Initial Size Of An Item
 

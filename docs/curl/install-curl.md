@@ -5,7 +5,6 @@ permalink: /pages/5abc18/
 categories:
   - curl
 tags:
-  - 
 ---
 # Install Curl
 

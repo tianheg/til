@@ -5,7 +5,6 @@ permalink: /pages/b927d3/
 categories:
   - css
 tags:
-  - 
 ---
 # Add Gaps Faster With `grid-gap`
 

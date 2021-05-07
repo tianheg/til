@@ -5,7 +5,6 @@ permalink: /pages/e79bd8/
 categories:
   - git
 tags:
-  - 
 ---
 # LearnGitBranching
 

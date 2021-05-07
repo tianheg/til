@@ -5,7 +5,6 @@ permalink: /pages/da2e30/
 categories:
   - css
 tags:
-  - 
 ---
 # Use CSS Selectors To Style Elements
 

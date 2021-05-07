@@ -5,7 +5,6 @@ permalink: /pages/4b70d7/
 categories:
   - ubuntu
 tags:
-  - 
 ---
 # Install Package Manager
 

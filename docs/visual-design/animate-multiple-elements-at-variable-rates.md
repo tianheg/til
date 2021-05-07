@@ -5,7 +5,6 @@ permalink: /pages/4c7968/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Animate Multiple Elements At Variable Rates
 

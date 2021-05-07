@@ -5,7 +5,6 @@ permalink: /pages/1c778d/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Make A CSS Heartbeat Using An Infinite Animation Count
 

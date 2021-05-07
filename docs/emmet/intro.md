@@ -5,7 +5,6 @@ permalink: /pages/a73693/
 categories:
   - emmet
 tags:
-  - 
 ---
 # Intro
 

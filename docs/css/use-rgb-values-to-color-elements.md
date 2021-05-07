@@ -5,7 +5,6 @@ permalink: /pages/8f0d6d/
 categories:
   - css
 tags:
-  - 
 ---
 # Use RGB Values To Color Elements
 

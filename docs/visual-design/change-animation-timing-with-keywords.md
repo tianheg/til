@@ -5,7 +5,6 @@ permalink: /pages/4881f9/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Change Animation Timing With Keywords
 

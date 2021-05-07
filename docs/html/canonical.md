@@ -5,7 +5,6 @@ permalink: /pages/58634f/
 categories:
   - html
 tags:
-  - 
 ---
 # Canonical
 

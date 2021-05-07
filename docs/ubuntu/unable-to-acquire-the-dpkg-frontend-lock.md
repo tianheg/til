@@ -5,7 +5,6 @@ permalink: /pages/5494b8/
 categories:
   - ubuntu
 tags:
-  - 
 ---
 # Unable To Acquire The Dpkg Frontend Lock
 

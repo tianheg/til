@@ -5,7 +5,6 @@ permalink: /pages/c864f4/
 categories:
   - git
 tags:
-  - 
 ---
 # Branch Name Contain The 'space' Char
 

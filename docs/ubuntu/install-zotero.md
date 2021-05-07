@@ -5,7 +5,6 @@ permalink: /pages/741a94/
 categories:
   - ubuntu
 tags:
-  - 
 ---
 # Install Zotero
 

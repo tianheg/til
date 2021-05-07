@@ -5,7 +5,6 @@ permalink: /pages/d774f9/
 categories:
   - win10
 tags:
-  - 
 ---
 # Disable Microsoft Defender Antivirus
 

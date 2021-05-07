@@ -5,7 +5,6 @@ permalink: /pages/ce59de/
 categories:
   - html
 tags:
-  - 
 ---
 # Create A Set Of Radio Buttons
 

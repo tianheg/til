@@ -5,7 +5,6 @@ permalink: /pages/35be64/
 categories:
   - gatsby
 tags:
-  - 
 ---
 # Set Up Development Environment
 

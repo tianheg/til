@@ -5,7 +5,6 @@ permalink: /pages/a2983e/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Move A Relatively Positioned Element With CSS Offsets
 

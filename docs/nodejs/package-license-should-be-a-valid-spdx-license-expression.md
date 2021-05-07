@@ -5,7 +5,6 @@ permalink: /pages/c514f4/
 categories:
   - nodejs
 tags:
-  - 
 ---
 # Package.json License Should Be A Valid SPDX License Expression
 

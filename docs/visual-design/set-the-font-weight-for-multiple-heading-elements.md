@@ -5,7 +5,6 @@ permalink: /pages/3f607b/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Set The Font-weight For Multiple Heading Elements
 

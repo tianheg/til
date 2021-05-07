@@ -5,7 +5,6 @@ permalink: /pages/73bdc6/
 categories:
   - html
 tags:
-  - 
 ---
 # Link To External Pages With Anchor Elements
 

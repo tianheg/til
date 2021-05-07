@@ -5,7 +5,6 @@ permalink: /pages/9e03ce/
 categories:
   - css
 tags:
-  - 
 ---
 # Align Elements Using The Justify-content Property
 

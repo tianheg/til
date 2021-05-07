@@ -5,7 +5,6 @@ permalink: /pages/dcd985/
 categories:
   - github
 tags:
-  - 
 ---
 # Use GitHub CLI
 

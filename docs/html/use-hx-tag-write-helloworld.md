@@ -5,7 +5,6 @@ permalink: /pages/9cd49c/
 categories:
   - html
 tags:
-  - 
 ---
 # Use Hx Tag Write Helloworld
 

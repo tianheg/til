@@ -5,7 +5,6 @@ permalink: /pages/b964b1/
 categories:
   - git
 tags:
-  - 
 ---
 # Everyday Git In Twenty Commands
 

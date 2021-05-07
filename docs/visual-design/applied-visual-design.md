@@ -5,7 +5,6 @@ permalink: /pages/0eb998/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Applied Visual Design
 

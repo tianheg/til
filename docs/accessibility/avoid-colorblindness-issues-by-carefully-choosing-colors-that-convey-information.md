@@ -5,7 +5,6 @@ permalink: /pages/dbff59/
 categories:
   - accessibility
 tags:
-  - 
 ---
 # Avoid Colorblindness Issues By Carefully Choosing Colors That Convey Information
 

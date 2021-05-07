@@ -5,7 +5,6 @@ permalink: /pages/639b44/
 categories:
   - vim
 tags:
-  - 
 ---
 # Learn Vim By Vimtutor
 

@@ -5,7 +5,6 @@ permalink: /pages/2b785e/
 categories:
   - css
 tags:
-  - 
 ---
 # Use Media Queries To Create Responsive Layouts
 

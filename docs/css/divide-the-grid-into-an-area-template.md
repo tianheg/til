@@ -5,7 +5,6 @@ permalink: /pages/0db7a2/
 categories:
   - css
 tags:
-  - 
 ---
 # Divide The Grid Into An Area Template
 

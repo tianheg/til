@@ -5,7 +5,6 @@ permalink: /pages/63a3a8/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Adjust The Hue Of A Color
 

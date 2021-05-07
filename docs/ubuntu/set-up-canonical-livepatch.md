@@ -5,7 +5,6 @@ permalink: /pages/7d384f/
 categories:
   - ubuntu
 tags:
-  - 
 ---
 # Set Up Canonical Livepatch
 

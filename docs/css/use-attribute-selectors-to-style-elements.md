@@ -5,7 +5,6 @@ permalink: /pages/5bd3d4/
 categories:
   - css
 tags:
-  - 
 ---
 # Use Attribute Selectors To Style Elements
 

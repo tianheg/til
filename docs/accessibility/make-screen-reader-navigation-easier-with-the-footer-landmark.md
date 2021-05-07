@@ -5,7 +5,6 @@ permalink: /pages/dc78f6/
 categories:
   - accessibility
 tags:
-  - 
 ---
 # Make Screen Reader Navigation Easier With The Footer Landmark
 

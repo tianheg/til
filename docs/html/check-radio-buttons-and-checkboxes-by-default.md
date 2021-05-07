@@ -5,7 +5,6 @@ permalink: /pages/9697da/
 categories:
   - html
 tags:
-  - 
 ---
 # Check Radio Buttons And Checkboxes By Default
 

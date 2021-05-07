@@ -5,7 +5,6 @@ permalink: /pages/d5d85a/
 categories:
   - css
 tags:
-  - 
 ---
 # Align All Items Vertically Using `align-items`
 

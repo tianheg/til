@@ -5,7 +5,6 @@ permalink: /pages/d7cd98/
 categories:
   - docker
 tags:
-  - 
 ---
 # Docker Pull EOF
 

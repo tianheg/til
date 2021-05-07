@@ -5,7 +5,6 @@ permalink: /pages/9506fd/
 categories:
   - git
 tags:
-  - 
 ---
 # Use `format patch` To Suggest Code Changes
 

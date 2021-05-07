@@ -5,7 +5,6 @@ permalink: /pages/796ac8/
 categories:
   - html
 tags:
-  - 
 ---
 # Something About Placeholder Text[^1]
 

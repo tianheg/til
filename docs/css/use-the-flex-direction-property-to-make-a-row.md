@@ -5,7 +5,6 @@ permalink: /pages/d6af8c/
 categories:
   - css
 tags:
-  - 
 ---
 # Use The Flex-direction Property To Make A Row
 

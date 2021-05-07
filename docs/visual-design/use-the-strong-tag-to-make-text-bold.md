@@ -5,7 +5,6 @@ permalink: /pages/9491a6/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Use The Strong Tag To Make Text Bold
 

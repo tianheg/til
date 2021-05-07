@@ -5,7 +5,6 @@ permalink: /pages/37d498/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Center An Element Horizontally Using The Margin Property
 

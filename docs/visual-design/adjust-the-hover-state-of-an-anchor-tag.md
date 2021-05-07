@@ -5,7 +5,6 @@ permalink: /pages/46e9a5/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Adjust The Hover State Of An Anchor Tag
 

@@ -5,7 +5,6 @@ permalink: /pages/4445cb/
 categories:
   - yarn
 tags:
-  - 
 ---
 # Yarn Upgrade
 

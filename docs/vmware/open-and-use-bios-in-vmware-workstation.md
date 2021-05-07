@@ -5,7 +5,6 @@ permalink: /pages/69cc4f/
 categories:
   - vmware
 tags:
-  - 
 ---
 # Open And Use BIOS In VMware Workstation
 

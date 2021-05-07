@@ -5,7 +5,6 @@ permalink: /pages/240cf8/
 categories:
   - ubuntu
 tags:
-  - 
 ---
 # Install Postman
 

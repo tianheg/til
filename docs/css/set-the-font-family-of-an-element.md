@@ -5,7 +5,6 @@ permalink: /pages/01390e/
 categories:
   - css
 tags:
-  - 
 ---
 # Set The Font Family Of An Element
 

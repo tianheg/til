@@ -5,7 +5,6 @@ permalink: /pages/9d080a/
 categories:
   - css
 tags:
-  - 
 ---
 # Use A Custom CSS Variable
 

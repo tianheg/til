@@ -5,7 +5,6 @@ permalink: /pages/ab3855/
 categories:
   - css
 tags:
-  - 
 ---
 # Understand Absolute Versus Relative Units
 

@@ -5,7 +5,6 @@ permalink: /pages/91898b/
 categories:
   - ubuntu
 tags:
-  - 
 ---
 # All My Home Disappeared
 

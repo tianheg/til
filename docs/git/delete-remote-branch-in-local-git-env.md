@@ -5,7 +5,6 @@ permalink: /pages/12263a/
 categories:
   - git
 tags:
-  - 
 ---
 # Delete Remote Branch In Local Git Env
 

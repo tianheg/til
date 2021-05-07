@@ -5,7 +5,6 @@ permalink: /pages/5512c9/
 categories:
   - websockets
 tags:
-  - 
 ---
 # Websockets Closed With Close Code 1006
 

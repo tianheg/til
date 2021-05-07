@@ -5,7 +5,6 @@ permalink: /pages/63627c/
 categories:
   - linux
 tags:
-  - 
 ---
 # Create Users
 

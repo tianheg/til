@@ -5,7 +5,6 @@ permalink: /pages/3acaed/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Create A Graphic Using CSS
 

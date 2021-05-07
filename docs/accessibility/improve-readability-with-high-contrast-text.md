@@ -5,7 +5,6 @@ permalink: /pages/b3a084/
 categories:
   - accessibility
 tags:
-  - 
 ---
 # Improve Readability With High Contrast Text
 

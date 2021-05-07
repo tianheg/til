@@ -5,7 +5,6 @@ permalink: /pages/e1c4cf/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Adjust The Tone Of A Color
 

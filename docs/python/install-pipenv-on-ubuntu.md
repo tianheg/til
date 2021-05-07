@@ -5,7 +5,6 @@ permalink: /pages/defe2b/
 categories:
   - python
 tags:
-  - 
 ---
 # Install Pipenv On Ubuntu
 

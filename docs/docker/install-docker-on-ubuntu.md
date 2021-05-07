@@ -5,7 +5,6 @@ permalink: /pages/be2858/
 categories:
   - docker
 tags:
-  - 
 ---
 # Install Docker On Ubuntu
 

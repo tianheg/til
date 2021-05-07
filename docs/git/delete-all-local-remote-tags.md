@@ -5,7 +5,6 @@ permalink: /pages/d73d75/
 categories:
   - git
 tags:
-  - 
 ---
 # Delete All Local And Remote Tags
 

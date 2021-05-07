@@ -5,7 +5,6 @@ permalink: /pages/ba5014/
 categories:
   - linux
 tags:
-  - 
 ---
 # Ctrl-L Or `clear`
 

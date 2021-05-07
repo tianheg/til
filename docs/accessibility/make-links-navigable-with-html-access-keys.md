@@ -5,7 +5,6 @@ permalink: /pages/49a8a3/
 categories:
   - accessibility
 tags:
-  - 
 ---
 # Make Links Navigable With HTML Access Keys
 

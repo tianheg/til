@@ -5,7 +5,6 @@ permalink: /pages/16fed2/
 categories:
   - zsh
 tags:
-  - 
 ---
 # Add Alias To Zshrc
 

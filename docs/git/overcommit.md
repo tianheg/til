@@ -5,7 +5,6 @@ permalink: /pages/b9b67d/
 categories:
   - git
 tags:
-  - 
 ---
 # Overcommit
 

@@ -5,7 +5,6 @@ permalink: /pages/64be91/
 categories:
   - html
 tags:
-  - 
 ---
 # Create A Text Field
 

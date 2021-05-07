@@ -5,7 +5,6 @@ permalink: /pages/ca37ec/
 categories:
   - css
 tags:
-  - 
 ---
 # Create Your First CSS Grid
 

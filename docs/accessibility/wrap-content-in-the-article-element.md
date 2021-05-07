@@ -5,7 +5,6 @@ permalink: /pages/8b681f/
 categories:
   - accessibility
 tags:
-  - 
 ---
 # Wrap Content In The Article Element
 

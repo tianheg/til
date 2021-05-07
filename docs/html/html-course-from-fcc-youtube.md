@@ -5,7 +5,6 @@ permalink: /pages/eaf40c/
 categories:
   - html
 tags:
-  - 
 ---
 # HTML Course From Fcc YouTube
 

@@ -5,7 +5,6 @@ permalink: /pages/5d43b1/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Create Visual Balance Using The Text-align Property
 

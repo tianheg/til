@@ -5,7 +5,6 @@ permalink: /pages/e5b7e0/
 categories:
   - html
 tags:
-  - 
 ---
 # Declare The Doctype Of An HTML Document
 

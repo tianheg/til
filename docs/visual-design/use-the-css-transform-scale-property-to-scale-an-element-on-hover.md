@@ -5,7 +5,6 @@ permalink: /pages/d0d2e8/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Use The CSS Transform Scale Property To Scale An Element On Hover
 

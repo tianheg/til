@@ -5,7 +5,6 @@ permalink: /pages/66b6b5/
 categories:
   - jekyll
 tags:
-  - 
 ---
 # Common Orders
 

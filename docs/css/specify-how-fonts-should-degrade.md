@@ -5,7 +5,6 @@ permalink: /pages/bf90d7/
 categories:
   - css
 tags:
-  - 
 ---
 # Specify How Fonts Should Degrade
 

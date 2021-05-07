@@ -5,7 +5,6 @@ permalink: /pages/0bac40/
 categories:
   - linux
 tags:
-  - 
 ---
 # Extract File
 

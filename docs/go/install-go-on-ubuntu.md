@@ -5,7 +5,6 @@ permalink: /pages/0aa37f/
 categories:
   - go
 tags:
-  - 
 ---
 # Install Go On Ubuntu
 

@@ -5,7 +5,6 @@ permalink: /pages/459db3/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Lock An Element To Its Parent With Absolute Positioning
 

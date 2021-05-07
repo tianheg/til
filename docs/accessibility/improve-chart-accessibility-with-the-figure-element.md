@@ -5,7 +5,6 @@ permalink: /pages/d44843/
 categories:
   - accessibility
 tags:
-  - 
 ---
 # Improve Chart Accessibility With The Figure Element
 

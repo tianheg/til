@@ -5,7 +5,6 @@ permalink: /pages/bf6150/
 categories:
   - css
 tags:
-  - 
 ---
 # Use Hex Code For Specific Colors
 

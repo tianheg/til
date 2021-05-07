@@ -5,7 +5,6 @@ permalink: /pages/f85040/
 categories:
   - accessibility
 tags:
-  - 
 ---
 # Add A Text Alternative To Images For Visually Impaired Accessibility
 

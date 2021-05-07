@@ -5,7 +5,6 @@ permalink: /pages/3de564/
 categories:
   - ubuntu
 tags:
-  - 
 ---
 # Install SwitchHosts
 

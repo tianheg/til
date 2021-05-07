@@ -5,7 +5,6 @@ permalink: /pages/b866ac/
 categories:
   - git
 tags:
-  - 
 ---
 # Rebase
 

@@ -5,7 +5,6 @@ permalink: /pages/f60bf3/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Adjust The Width Of An Element Using The Width Property
 

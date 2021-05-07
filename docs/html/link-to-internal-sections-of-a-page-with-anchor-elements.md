@@ -5,7 +5,6 @@ permalink: /pages/7b14e7/
 categories:
   - html
 tags:
-  - 
 ---
 # Link To Internal Sections Of A Page With Anchor Elements
 

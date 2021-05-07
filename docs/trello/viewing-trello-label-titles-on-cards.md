@@ -5,7 +5,6 @@ permalink: /pages/e8f73b/
 categories:
   - trello
 tags:
-  - 
 ---
 # Viewing Trello Label Titles On Cards
 

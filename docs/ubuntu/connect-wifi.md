@@ -5,7 +5,6 @@ permalink: /pages/1589fa/
 categories:
   - ubuntu
 tags:
-  - 
 ---
 # Connect Wifi
 

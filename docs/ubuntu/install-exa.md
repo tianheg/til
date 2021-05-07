@@ -5,7 +5,6 @@ permalink: /pages/0fac56/
 categories:
   - ubuntu
 tags:
-  - 
 ---
 # Install Exa
 

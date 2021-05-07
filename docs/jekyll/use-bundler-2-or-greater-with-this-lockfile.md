@@ -5,7 +5,6 @@ permalink: /pages/aca7ed/
 categories:
   - jekyll
 tags:
-  - 
 ---
 # Use Bundler 2 Or Greater With This Lockfile
 

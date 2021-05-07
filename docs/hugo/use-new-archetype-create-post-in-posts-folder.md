@@ -5,7 +5,6 @@ permalink: /pages/65d38d/
 categories:
   - hugo
 tags:
-  - 
 ---
 # Use New Archetype Create Post In Posts Folder
 

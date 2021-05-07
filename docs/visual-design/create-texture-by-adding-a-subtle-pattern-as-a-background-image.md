@@ -5,7 +5,6 @@ permalink: /pages/066af0/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Create Texture By Adding A Subtle Pattern As A Background Image
 

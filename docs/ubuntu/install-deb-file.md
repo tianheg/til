@@ -5,7 +5,6 @@ permalink: /pages/0ff9bc/
 categories:
   - ubuntu
 tags:
-  - 
 ---
 # Install Deb File
 

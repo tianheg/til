@@ -5,7 +5,6 @@ permalink: /pages/46f2cc/
 categories:
   - css
 tags:
-  - 
 ---
 # Adjust The Padding Of An Element
 

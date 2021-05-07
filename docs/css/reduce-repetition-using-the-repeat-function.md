@@ -5,7 +5,6 @@ permalink: /pages/33b5c5/
 categories:
   - css
 tags:
-  - 
 ---
 # Reduce Repetition Using The `repeat` Function
 

@@ -5,7 +5,6 @@ permalink: /pages/7c00f5/
 categories:
   - ubuntu
 tags:
-  - 
 ---
 # Manage Fonts
 

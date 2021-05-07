@@ -5,7 +5,6 @@ permalink: /pages/f9f9bf/
 categories:
   - git
 tags:
-  - 
 ---
 # Create Empty Branch Locally And Remotely
 

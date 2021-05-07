@@ -5,7 +5,6 @@ permalink: /pages/36398a/
 categories:
   - hugo
 tags:
-  - 
 ---
 # Hugo Server Bind IP
 

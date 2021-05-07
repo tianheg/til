@@ -5,7 +5,6 @@ permalink: /pages/2a4a66/
 categories:
   - css
 tags:
-  - 
 ---
 # Create Flexible Layouts Using `auto-fit`
 

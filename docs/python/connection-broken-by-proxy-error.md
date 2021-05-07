@@ -5,7 +5,6 @@ permalink: /pages/b1c65c/
 categories:
   - python
 tags:
-  - 
 ---
 # Connection Broken By Proxy Error
 

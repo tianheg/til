@@ -5,7 +5,6 @@ permalink: /pages/1dd804/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Set The Font-size For Multiple Heading Elements
 

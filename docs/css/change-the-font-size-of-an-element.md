@@ -5,7 +5,6 @@ permalink: /pages/aabbb0/
 categories:
   - css
 tags:
-  - 
 ---
 # Change The Font Size Of An Element
 

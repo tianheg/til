@@ -5,7 +5,6 @@ permalink: /pages/4b5f55/
 categories:
   - html
 tags:
-  - 
 ---
 # Use P Tag Add Paragraph
 

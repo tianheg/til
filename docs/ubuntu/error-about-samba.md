@@ -5,7 +5,6 @@ permalink: /pages/543f29/
 categories:
   - ubuntu
 tags:
-  - 
 ---
 # Error About Samba
 

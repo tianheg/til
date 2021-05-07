@@ -5,7 +5,6 @@ permalink: /pages/4256ba/
 categories:
   - ubuntu
 tags:
-  - 
 ---
 # Netplan
 

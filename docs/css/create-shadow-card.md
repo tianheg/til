@@ -5,7 +5,6 @@ permalink: /pages/8752b1/
 categories:
   - css
 tags:
-  - 
 ---
 # Create Shadow Card
 

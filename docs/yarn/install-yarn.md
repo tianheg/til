@@ -5,7 +5,6 @@ permalink: /pages/b92ce7/
 categories:
   - yarn
 tags:
-  - 
 ---
 # Install Yarn
 

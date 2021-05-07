@@ -5,7 +5,6 @@ permalink: /pages/fc9b57/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Animate Elements At Variable Rates
 

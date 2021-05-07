@@ -5,7 +5,6 @@ permalink: /pages/7f377b/
 categories:
   - css
 tags:
-  - 
 ---
 # Create Flexible Layouts Using `auto-fill`
 

@@ -5,7 +5,6 @@ permalink: /pages/65eca4/
 categories:
   - ubuntu
 tags:
-  - 
 ---
 # Preview Files And Folders
 

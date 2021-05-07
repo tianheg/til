@@ -5,7 +5,6 @@ permalink: /pages/83a78b/
 categories:
   - ubuntu
 tags:
-  - 
 ---
 # Install F.lux On Ubuntu
 

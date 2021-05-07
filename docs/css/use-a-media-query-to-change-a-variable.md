@@ -5,7 +5,6 @@ permalink: /pages/9b8030/
 categories:
   - css
 tags:
-  - 
 ---
 # Use A Media Query To Change A Variable
 

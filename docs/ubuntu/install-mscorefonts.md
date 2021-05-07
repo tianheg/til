@@ -5,7 +5,6 @@ permalink: /pages/e40c6c/
 categories:
   - ubuntu
 tags:
-  - 
 ---
 # Install MScorefonts
 

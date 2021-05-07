@@ -5,7 +5,6 @@ permalink: /pages/02c31b/
 categories:
   - ubuntu
 tags:
-  - 
 ---
 # Install Zola
 

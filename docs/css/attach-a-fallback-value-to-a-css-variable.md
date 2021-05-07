@@ -5,7 +5,6 @@ permalink: /pages/5ac887/
 categories:
   - css
 tags:
-  - 
 ---
 # Attach A Fallback Value To A CSS Variable
 

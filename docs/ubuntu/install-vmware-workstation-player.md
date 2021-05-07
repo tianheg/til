@@ -5,7 +5,6 @@ permalink: /pages/68a703/
 categories:
   - ubuntu
 tags:
-  - 
 ---
 # Install VMware Workstation Player
 

@@ -5,7 +5,6 @@ permalink: /pages/e73235/
 categories:
   - css
 tags:
-  - 
 ---
 # Use CSS Variables To Change Several Elements At Once
 

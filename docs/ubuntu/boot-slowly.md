@@ -5,7 +5,6 @@ permalink: /pages/78a17f/
 categories:
   - ubuntu
 tags:
-  - 
 ---
 # Boot Slowly
 

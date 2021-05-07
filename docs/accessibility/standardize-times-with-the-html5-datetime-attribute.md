@@ -5,7 +5,6 @@ permalink: /pages/1a16e5/
 categories:
   - accessibility
 tags:
-  - 
 ---
 # Standardize Times With The HTML5 Datetime Attribute
 

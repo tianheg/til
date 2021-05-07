@@ -5,7 +5,6 @@ permalink: /pages/4ab72f/
 categories:
   - html
 tags:
-  - 
 ---
 # Add A Submit Button To A Form
 

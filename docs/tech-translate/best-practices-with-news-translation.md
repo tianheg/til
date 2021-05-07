@@ -5,7 +5,6 @@ permalink: /pages/871182/
 categories:
   - tech-translate
 tags:
-  - 
 ---
 # Best Practices With [News Translation][1]
 

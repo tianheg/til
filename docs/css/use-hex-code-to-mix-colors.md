@@ -5,7 +5,6 @@ permalink: /pages/06f4e9/
 categories:
   - css
 tags:
-  - 
 ---
 # Use Hex Code To Mix Colors
 

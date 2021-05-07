@@ -5,7 +5,6 @@ permalink: /pages/47a753/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Use The CSS Transform Property SkewY To Skew An Element Along The Y-Axis
 

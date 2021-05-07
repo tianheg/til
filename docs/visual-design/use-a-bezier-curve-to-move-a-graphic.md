@@ -5,7 +5,6 @@ permalink: /pages/3a165c/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Use A Bezier Curve To Move A Graphic
 

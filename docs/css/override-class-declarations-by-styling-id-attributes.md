@@ -5,7 +5,6 @@ permalink: /pages/984613/
 categories:
   - css
 tags:
-  - 
 ---
 # Override Class Declarations By Styling ID Attributes
 

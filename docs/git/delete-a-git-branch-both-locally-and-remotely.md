@@ -5,7 +5,6 @@ permalink: /pages/71f231/
 categories:
   - git
 tags:
-  - 
 ---
 # Delete A Git Branch Both Locally And Remotely
 

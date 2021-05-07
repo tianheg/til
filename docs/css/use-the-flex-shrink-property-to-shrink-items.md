@@ -5,7 +5,6 @@ permalink: /pages/f68d44/
 categories:
   - css
 tags:
-  - 
 ---
 # Use The Flex-shrink Property To Shrink Items
 

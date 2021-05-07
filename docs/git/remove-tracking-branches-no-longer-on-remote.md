@@ -5,7 +5,6 @@ permalink: /pages/0dc608/
 categories:
   - git
 tags:
-  - 
 ---
 # Remove Tracking Branches No Longer On Remote
 

@@ -5,7 +5,6 @@ permalink: /pages/916e9a/
 categories:
   - org
 tags:
-  - 
 ---
 # Syntax
 

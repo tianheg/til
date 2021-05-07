@@ -5,7 +5,6 @@ permalink: /pages/fb47e9/
 categories:
   - css
 tags:
-  - 
 ---
 # Place Items In Grid Areas Using The `grid-area` Property
 

@@ -5,7 +5,6 @@ permalink: /pages/0e0722/
 categories:
   - accessibility
 tags:
-  - 
 ---
 # Use Tabindex To Add Keyboard Focus To An Element
 

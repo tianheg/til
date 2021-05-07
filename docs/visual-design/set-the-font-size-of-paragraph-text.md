@@ -5,7 +5,6 @@ permalink: /pages/4ad394/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Set The Font-size Of Paragraph Text
 

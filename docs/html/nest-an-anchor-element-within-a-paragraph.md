@@ -5,7 +5,6 @@ permalink: /pages/f6591d/
 categories:
   - html
 tags:
-  - 
 ---
 # Nest An Anchor Element Within A Paragraph
 

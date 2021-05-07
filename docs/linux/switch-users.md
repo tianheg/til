@@ -5,7 +5,6 @@ permalink: /pages/42cb6a/
 categories:
   - linux
 tags:
-  - 
 ---
 # Switch Users
 

@@ -5,7 +5,6 @@ permalink: /pages/04de7e/
 categories:
   - css
 tags:
-  - 
 ---
 # Use The Align-self Property
 

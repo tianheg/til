@@ -5,7 +5,6 @@ permalink: /pages/de19d6/
 categories:
   - css
 tags:
-  - 
 ---
 # Set The Id Of An Element
 

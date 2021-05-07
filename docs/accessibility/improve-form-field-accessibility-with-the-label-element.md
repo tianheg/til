@@ -5,7 +5,6 @@ permalink: /pages/098ae4/
 categories:
   - accessibility
 tags:
-  - 
 ---
 # Improve Form Field Accessibility With The Label Element
 

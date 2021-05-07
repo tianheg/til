@@ -5,7 +5,6 @@ permalink: /pages/e9e55b/
 categories:
   - linux
 tags:
-  - 
 ---
 # Give Folder Write Permission
 

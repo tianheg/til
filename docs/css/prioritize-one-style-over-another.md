@@ -5,7 +5,6 @@ permalink: /pages/c5abec/
 categories:
   - css
 tags:
-  - 
 ---
 # Prioritize One Style Over Another
 

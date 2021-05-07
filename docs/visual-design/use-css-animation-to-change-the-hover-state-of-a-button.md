@@ -5,7 +5,6 @@ permalink: /pages/cc54e1/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Use CSS Animation To Change The Hover State Of A Button
 

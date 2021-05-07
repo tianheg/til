@@ -5,7 +5,6 @@ permalink: /pages/2fba24/
 categories:
   - git
 tags:
-  - 
 ---
 # Delete Commit
 

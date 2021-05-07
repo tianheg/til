@@ -5,7 +5,6 @@ permalink: /pages/11f327/
 categories:
   - design-principles
 tags:
-  - 
 ---
 # Make Typography Responsive
 

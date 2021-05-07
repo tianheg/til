@@ -5,7 +5,6 @@ permalink: /pages/0e6ada/
 categories:
   - css
 tags:
-  - 
 ---
 # Use Abbreviated Hex Code
 

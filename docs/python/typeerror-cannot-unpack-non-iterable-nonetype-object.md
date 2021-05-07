@@ -5,7 +5,6 @@ permalink: /pages/b8ab30/
 categories:
   - python
 tags:
-  - 
 ---
 # TypeError: Cannot Unpack Non-iterable NoneType Object
 

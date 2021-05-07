@@ -5,7 +5,6 @@ permalink: /pages/8d342b/
 categories:
   - accessibility
 tags:
-  - 
 ---
 # Make Elements Only Visible To A Screen Reader By Using Custom CSS
 

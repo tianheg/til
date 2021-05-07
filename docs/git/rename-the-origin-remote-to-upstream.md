@@ -5,7 +5,6 @@ permalink: /pages/6e4303/
 categories:
   - git
 tags:
-  - 
 ---
 # Rename The `origin` Remote To `upstream`
 

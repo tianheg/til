@@ -5,7 +5,6 @@ permalink: /pages/9bc1ed/
 categories:
   - python
 tags:
-  - 
 ---
 # Install IPython
 

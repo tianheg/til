@@ -5,7 +5,6 @@ permalink: /pages/7d0bdf/
 categories:
   - ubuntu
 tags:
-  - 
 ---
 # Install VLC
 

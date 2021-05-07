@@ -5,7 +5,6 @@ permalink: /pages/94790b/
 categories:
   - ubuntu
 tags:
-  - 
 ---
 # Edit Sources.list
 

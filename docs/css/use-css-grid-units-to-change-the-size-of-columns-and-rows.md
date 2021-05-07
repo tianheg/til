@@ -5,7 +5,6 @@ permalink: /pages/8fca09/
 categories:
   - css
 tags:
-  - 
 ---
 # Use CSS Grid Units To Change The Size Of Columns And Rows
 

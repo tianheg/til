@@ -5,7 +5,6 @@ permalink: /pages/ddfd6a/
 categories:
   - vim
 tags:
-  - 
 ---
 # Generate .vimrc
 

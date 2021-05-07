@@ -5,7 +5,6 @@ permalink: /pages/3a2fd7/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Learn How Bezier Curves Work
 

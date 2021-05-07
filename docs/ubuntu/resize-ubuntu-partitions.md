@@ -5,7 +5,6 @@ permalink: /pages/5ac4ae/
 categories:
   - ubuntu
 tags:
-  - 
 ---
 # Resize Ubuntu Partitions
 

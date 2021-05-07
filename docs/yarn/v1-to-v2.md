@@ -5,7 +5,6 @@ permalink: /pages/d0a8c3/
 categories:
   - yarn
 tags:
-  - 
 ---
 # V1 To V2
 

@@ -5,7 +5,6 @@ permalink: /pages/edec2c/
 categories:
   - css
 tags:
-  - 
 ---
 # Add Borders Around Your Elements
 

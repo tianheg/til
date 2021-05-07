@@ -5,7 +5,6 @@ permalink: /pages/ef69fb/
 categories:
   - git
 tags:
-  - 
 ---
 # Change The URL Of Your Origin
 

@@ -5,7 +5,6 @@ permalink: /pages/4c4e41/
 categories:
   - git
 tags:
-  - 
 ---
 # What Will Be Done After Rename Branch On GitHub
 

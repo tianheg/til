@@ -5,7 +5,6 @@ permalink: /pages/0567f2/
 categories:
   - css
 tags:
-  - 
 ---
 # Style The HTML Body Element
 

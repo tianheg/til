@@ -5,7 +5,6 @@ permalink: /pages/7eda5e/
 categories:
   - vmware
 tags:
-  - 
 ---
 # Install FreeBSD12
 

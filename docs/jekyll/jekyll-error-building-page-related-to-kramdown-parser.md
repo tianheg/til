@@ -5,7 +5,6 @@ permalink: /pages/a11708/
 categories:
   - jekyll
 tags:
-  - 
 ---
 # Jekyll Error Building Page Related To Kramdown Parser
 

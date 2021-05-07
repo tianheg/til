@@ -5,7 +5,6 @@ permalink: /pages/925fef/
 categories:
   - css
 tags:
-  - 
 ---
 # Size Your Images
 

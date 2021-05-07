@@ -5,13 +5,12 @@ permalink: /pages/37993f/
 categories:
   - git
 tags:
-  - 
 ---
 # Commit Messages Guide
 
 [source](https://github.com/RomuloOliveira/commit-messages-guide)
 
-## Why are commit messages important?
+## Why are commit messages important
 
 - To speed up and streamline code reviews
 - To help in the understanding of a change
@@ -73,7 +72,7 @@ See also: #456, #789
 
 ![Merge](images/merge.svg)
 
-### Why do some people prefer to rebase over merge?
+### Why do some people prefer to rebase over merge
 
 I particularly prefer to rebase over merge. The reasons include:
 

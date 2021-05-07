@@ -5,7 +5,6 @@ permalink: /pages/2c3315/
 categories:
   - css
 tags:
-  - 
 ---
 # Style Multiple Elements With A CSS Class
 

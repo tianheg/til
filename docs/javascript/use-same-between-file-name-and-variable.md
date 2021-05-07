@@ -5,7 +5,6 @@ permalink: /pages/493eb9/
 categories:
   - javascript
 tags:
-  - 
 ---
 # Use Same Between File Name And Variable
 

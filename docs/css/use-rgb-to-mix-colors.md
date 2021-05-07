@@ -5,7 +5,6 @@ permalink: /pages/bc86fc/
 categories:
   - css
 tags:
-  - 
 ---
 # Use RGB To Mix Colors
 

@@ -5,7 +5,6 @@ permalink: /pages/8b7e6f/
 categories:
   - linux
 tags:
-  - 
 ---
 # Change Owner And Group
 

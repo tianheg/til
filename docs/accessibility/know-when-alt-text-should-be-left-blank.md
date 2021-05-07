@@ -5,7 +5,6 @@ permalink: /pages/7f1350/
 categories:
   - accessibility
 tags:
-  - 
 ---
 # Know When Alt Text Should Be Left Blank
 

@@ -5,7 +5,6 @@ permalink: /pages/6e0e69/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Push Elements Left Or Right With The Float Property
 

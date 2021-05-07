@@ -5,7 +5,6 @@ permalink: /pages/251929/
 categories:
   - notion
 tags:
-  - 
 ---
 # Use Page Cover As Card Preview With Gallery
 

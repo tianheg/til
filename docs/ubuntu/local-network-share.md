@@ -5,7 +5,6 @@ permalink: /pages/98f73c/
 categories:
   - ubuntu
 tags:
-  - 
 ---
 # Local Network Share
 

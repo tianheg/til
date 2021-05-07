@@ -5,7 +5,6 @@ permalink: /pages/31938a/
 categories:
   - vmware
 tags:
-  - 
 ---
 # Compare Workstation Player With Workstation Pro
 

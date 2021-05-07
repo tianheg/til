@@ -5,7 +5,6 @@ permalink: /pages/9e11c4/
 categories:
   - html
 tags:
-  - 
 ---
 # Create A Bulleted Unordered List
 

@@ -5,7 +5,6 @@ permalink: /pages/da98b4/
 categories:
   - design-principles
 tags:
-  - 
 ---
 # Create A Media Query
 

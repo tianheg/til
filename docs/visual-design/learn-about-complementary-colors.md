@@ -5,7 +5,6 @@ permalink: /pages/a84710/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Learn About Complementary Colors
 

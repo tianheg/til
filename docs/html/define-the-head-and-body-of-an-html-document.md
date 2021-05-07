@@ -5,7 +5,6 @@ permalink: /pages/8868a2/
 categories:
   - html
 tags:
-  - 
 ---
 # Define The Head And Body Of An HTML Document
 

@@ -5,7 +5,6 @@ permalink: /pages/21c42e/
 categories:
   - css
 tags:
-  - 
 ---
 # Use The Flex Shorthand Property
 

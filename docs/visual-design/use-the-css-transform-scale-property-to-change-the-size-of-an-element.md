@@ -5,7 +5,6 @@ permalink: /pages/d6e161/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Use The CSS Transform Scale Property To Change The Size Of An Element
 

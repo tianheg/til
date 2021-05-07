@@ -5,7 +5,6 @@ permalink: /pages/bf9cba/
 categories:
   - ubuntu
 tags:
-  - 
 ---
 # Install Polar
 

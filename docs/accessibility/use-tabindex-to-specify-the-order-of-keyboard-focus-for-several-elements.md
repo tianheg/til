@@ -5,7 +5,6 @@ permalink: /pages/8a0621/
 categories:
   - accessibility
 tags:
-  - 
 ---
 # Use Tabindex To Specify The Order Of Keyboard Focus For Several Elements
 

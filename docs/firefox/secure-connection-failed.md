@@ -5,7 +5,6 @@ permalink: /pages/5d2b20/
 categories:
   - firefox
 tags:
-  - 
 ---
 # Secure Connection Failed
 

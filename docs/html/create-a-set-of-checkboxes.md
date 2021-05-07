@@ -5,7 +5,6 @@ permalink: /pages/6320eb/
 categories:
   - html
 tags:
-  - 
 ---
 # Create A Set Of Checkboxes
 

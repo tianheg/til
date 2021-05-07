@@ -5,7 +5,6 @@ permalink: /pages/e68871/
 categories:
   - ubuntu
 tags:
-  - 
 ---
 # Install FreeCAD
 

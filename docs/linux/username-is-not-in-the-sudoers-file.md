@@ -5,7 +5,6 @@ permalink: /pages/5e2a75/
 categories:
   - linux
 tags:
-  - 
 ---
 # Username Is Not In The Sudoers File
 

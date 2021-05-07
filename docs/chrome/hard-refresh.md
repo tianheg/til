@@ -5,7 +5,6 @@ permalink: /pages/ea5bcd/
 categories:
   - chrome
 tags:
-  - 
 ---
 # Hard Refresh
 

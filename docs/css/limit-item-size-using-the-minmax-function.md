@@ -5,7 +5,6 @@ permalink: /pages/101092/
 categories:
   - css
 tags:
-  - 
 ---
 # Limit Item Size Using The `minmax` Function
 

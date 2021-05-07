@@ -5,7 +5,6 @@ permalink: /pages/ed1416/
 categories:
   - css
 tags:
-  - 
 ---
 # Use `grid-area` Without Creating An Areas Template
 

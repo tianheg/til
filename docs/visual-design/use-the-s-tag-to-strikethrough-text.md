@@ -5,7 +5,6 @@ permalink: /pages/c37606/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Use The S Tag To Strikethrough Text
 

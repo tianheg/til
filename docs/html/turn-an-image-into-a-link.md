@@ -5,7 +5,6 @@ permalink: /pages/e8c2ef/
 categories:
   - html
 tags:
-  - 
 ---
 # Turn An Image Into A Link
 

@@ -5,7 +5,6 @@ permalink: /pages/730377/
 categories:
   - html
 tags:
-  - 
 ---
 # Add Placeholder Text To A Text Field
 

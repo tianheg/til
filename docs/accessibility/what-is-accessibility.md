@@ -5,7 +5,6 @@ permalink: /pages/608317/
 categories:
   - accessibility
 tags:
-  - 
 ---
 # What Is Accessibility
 

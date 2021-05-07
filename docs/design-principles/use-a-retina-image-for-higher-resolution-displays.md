@@ -5,7 +5,6 @@ permalink: /pages/d41ff6/
 categories:
   - design-principles
 tags:
-  - 
 ---
 # Use A Retina Image For Higher Resolution Displays
 

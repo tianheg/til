@@ -5,7 +5,6 @@ permalink: /pages/e42af5/
 categories:
   - css
 tags:
-  - 
 ---
 # Use The Flex-wrap Property To Wrap A Row Or Column
 

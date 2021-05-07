@@ -5,7 +5,6 @@ permalink: /pages/23348e/
 categories:
   - ubuntu
 tags:
-  - 
 ---
 # Install Jianguoyun
 

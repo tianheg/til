@@ -5,7 +5,6 @@ permalink: /pages/9fc92d/
 categories:
   - css
 tags:
-  - 
 ---
 # Inherit Styles From The Body Element
 

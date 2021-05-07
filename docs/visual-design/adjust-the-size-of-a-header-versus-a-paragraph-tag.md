@@ -5,7 +5,6 @@ permalink: /pages/161b97/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Adjust The Size Of A Header Versus A Paragraph Tag
 

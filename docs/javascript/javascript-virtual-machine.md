@@ -5,7 +5,6 @@ permalink: /pages/1feab1/
 categories:
   - javascript
 tags:
-  - 
 ---
 # JavaScript Virtual Machine
 

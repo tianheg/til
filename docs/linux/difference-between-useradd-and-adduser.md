@@ -5,7 +5,6 @@ permalink: /pages/902db9/
 categories:
   - linux
 tags:
-  - 
 ---
 # Difference Between `useradd` And `adduser`
 

@@ -5,7 +5,6 @@ permalink: /pages/15b800/
 categories:
   - python
 tags:
-  - 
 ---
 # Update Pipfile.lock
 

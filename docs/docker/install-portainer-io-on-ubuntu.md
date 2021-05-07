@@ -5,7 +5,6 @@ permalink: /pages/9d9477/
 categories:
   - docker
 tags:
-  - 
 ---
 # Install Portainer.io On Ubuntu
 

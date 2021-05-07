@@ -5,7 +5,6 @@ permalink: /pages/d19914/
 categories:
   - docker
 tags:
-  - 
 ---
 # Install Docker Compose On Ubuntu
 

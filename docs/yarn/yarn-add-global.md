@@ -5,7 +5,6 @@ permalink: /pages/154cbc/
 categories:
   - yarn
 tags:
-  - 
 ---
 # Yarn Add Global
 

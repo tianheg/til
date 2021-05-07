@@ -5,7 +5,6 @@ permalink: /pages/eb989d/
 categories:
   - css
 tags:
-  - 
 ---
 # Use Display: Flex To Position Two Boxes
 

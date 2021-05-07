@@ -5,7 +5,6 @@ permalink: /pages/c6468f/
 categories:
   - css
 tags:
-  - 
 ---
 # Use A CSS Class To Style An Element
 

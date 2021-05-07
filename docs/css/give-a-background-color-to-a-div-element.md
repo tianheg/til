@@ -5,7 +5,6 @@ permalink: /pages/fa45e6/
 categories:
   - css
 tags:
-  - 
 ---
 # Give A Background Color To A Div Element
 

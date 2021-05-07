@@ -5,7 +5,6 @@ permalink: /pages/e66b9f/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Use A CSS Linear Gradient To Create A Striped Element
 

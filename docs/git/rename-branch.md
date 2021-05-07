@@ -5,7 +5,6 @@ permalink: /pages/7f9267/
 categories:
   - git
 tags:
-  - 
 ---
 # Rename Branch
 

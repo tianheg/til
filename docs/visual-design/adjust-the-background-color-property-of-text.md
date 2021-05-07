@@ -5,7 +5,6 @@ permalink: /pages/6b7b82/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Adjust The Background-color Property Of Text
 

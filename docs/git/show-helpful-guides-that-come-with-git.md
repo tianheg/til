@@ -5,7 +5,6 @@ permalink: /pages/1cd0cf/
 categories:
   - git
 tags:
-  - 
 ---
 # Show Helpful Guides That Come With Git
 

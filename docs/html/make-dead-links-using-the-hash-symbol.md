@@ -5,7 +5,6 @@ permalink: /pages/4a6d15/
 categories:
   - html
 tags:
-  - 
 ---
 # Make Dead Links Using The Hash Symbol
 

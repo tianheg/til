@@ -5,7 +5,6 @@ permalink: /pages/205ebf/
 categories:
   - design-principles
 tags:
-  - 
 ---
 # Make An Image Responsive
 

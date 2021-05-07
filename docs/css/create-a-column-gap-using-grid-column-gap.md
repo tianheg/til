@@ -5,7 +5,6 @@ permalink: /pages/db85ce/
 categories:
   - css
 tags:
-  - 
 ---
 # Create A Column Gap Using Grid-column-gap
 

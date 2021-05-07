@@ -5,7 +5,6 @@ permalink: /pages/b8b73a/
 categories:
   - accessibility
 tags:
-  - 
 ---
 # Improve Accessibility Of Audio Content With The Audio Element
 

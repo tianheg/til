@@ -5,7 +5,6 @@ permalink: /pages/f41df9/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Make Motion More Natural Using A Bezier Curve
 

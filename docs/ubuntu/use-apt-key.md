@@ -5,7 +5,6 @@ permalink: /pages/2480a3/
 categories:
   - ubuntu
 tags:
-  - 
 ---
 # Use Apt-key
 

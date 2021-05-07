@@ -5,7 +5,6 @@ permalink: /pages/e63fb2/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Use The CSS Transform Property SkewX To Skew An Element Along The X-Axis
 

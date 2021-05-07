@@ -5,7 +5,6 @@ permalink: /pages/a74ead/
 categories:
   - visual-design
 tags:
-  - 
 ---
 # Adjust The Color Of Various Elements To Complementary Colors
 

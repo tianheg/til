@@ -5,7 +5,6 @@ permalink: /pages/423ace/
 categories:
   - accessibility
 tags:
-  - 
 ---
 # Make Screen Reader Navigation Easier With The Header Landmark
 
