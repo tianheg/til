@@ -1,11 +1,3 @@
----
-title: adjust-the-margin-of-an-element
-date: 2021-05-01 10:19:14
-permalink: /pages/6caf39/
-categories:
-  - css
-tags:
----
 # Adjust The Margin Of An Element
 
 ```css

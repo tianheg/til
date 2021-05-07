@@ -1,11 +1,3 @@
----
-title: create-an-ordered-list
-date: 2021-05-01 10:19:14
-permalink: /pages/46429d/
-categories:
-  - html
-tags:
----
 # Create An Ordered List
 
 ```html

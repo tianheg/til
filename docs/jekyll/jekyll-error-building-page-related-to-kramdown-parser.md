@@ -1,11 +1,3 @@
----
-title: jekyll-error-building-page-related-to-kramdown-parser
-date: 2021-05-01 10:19:14
-permalink: /pages/a11708/
-categories:
-  - jekyll
-tags:
----
 # Jekyll Error Building Page Related To Kramdown Parser
 
 When running GitHub action, [error](https://github.com/tianheg/english/runs/2311559049?check_suite_focus=true#step:4:61):

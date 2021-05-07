@@ -1,11 +1,3 @@
----
-title: use-apt-key
-date: 2021-05-01 10:19:14
-permalink: /pages/2480a3/
-categories:
-  - ubuntu
-tags:
----
 # Use Apt-key
 
 ```sh

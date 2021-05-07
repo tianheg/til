@@ -1,11 +1,3 @@
----
-title: what-is-javascript
-date: 2021-05-04 09:32:00
-permalink: /pages/c75645/
-categories:
-  - javascript
-tags:
----
 # JavScript 是什么
 
 HTML，CSS 控制网页的内容和样式，JavaScript 控制交互。学习 JavaScript 过程中会涉及它的基础知识，如变量、数组、对象、循环和函数。

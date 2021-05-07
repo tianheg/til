@@ -1,11 +1,3 @@
----
-title: create-empty-branch-locally-and-remotely
-date: 2021-05-01 10:19:14
-permalink: /pages/f9f9bf/
-categories:
-  - git
-tags:
----
 # Create Empty Branch Locally And Remotely
 
 ```sh

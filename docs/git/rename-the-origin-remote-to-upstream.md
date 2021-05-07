@@ -1,11 +1,3 @@
----
-title: rename-the-origin-remote-to-upstream
-date: 2021-05-01 10:19:14
-permalink: /pages/6e4303/
-categories:
-  - git
-tags:
----
 # Rename The `origin` Remote To `upstream`
 
 ```bash

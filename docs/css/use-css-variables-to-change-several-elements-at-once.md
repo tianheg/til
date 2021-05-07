@@ -1,11 +1,3 @@
----
-title: use-css-variables-to-change-several-elements-at-once
-date: 2021-05-01 10:19:14
-permalink: /pages/e73235/
-categories:
-  - css
-tags:
----
 # Use CSS Variables To Change Several Elements At Once
 
 ```html

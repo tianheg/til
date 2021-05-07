@@ -1,11 +1,3 @@
----
-title: use-the-flex-direction-property-to-make-a-row
-date: 2021-05-01 10:19:14
-permalink: /pages/d6af8c/
-categories:
-  - css
-tags:
----
 # Use The Flex-direction Property To Make A Row
 
 ```css

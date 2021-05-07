@@ -1,11 +1,3 @@
----
-title: inherit-styles-from-the-body-element
-date: 2021-05-01 10:19:14
-permalink: /pages/9fc92d/
-categories:
-  - css
-tags:
----
 # Inherit Styles From The Body Element
 
 Remember, you can style your `body` element just like any other HTML element, and all your other elements will inherit your `body` element's styles.

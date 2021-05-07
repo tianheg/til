@@ -1,11 +1,3 @@
----
-title: use-the-flex-grow-property-to-expand-items
-date: 2021-05-01 10:19:14
-permalink: /pages/1216ba/
-categories:
-  - css
-tags:
----
 # Use The Flex-grow Property To Expand Items
 
 ```html

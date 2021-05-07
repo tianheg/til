@@ -1,11 +1,3 @@
----
-title: override-class-declarations-by-styling-id-attributes
-date: 2021-05-01 10:19:14
-permalink: /pages/984613/
-categories:
-  - css
-tags:
----
 # Override Class Declarations By Styling ID Attributes
 
 ```html

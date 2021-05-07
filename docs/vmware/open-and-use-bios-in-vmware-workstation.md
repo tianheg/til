@@ -1,11 +1,3 @@
----
-title: open-and-use-bios-in-vmware-workstation
-date: 2021-05-01 10:19:14
-permalink: /pages/69cc4f/
-categories:
-  - vmware
-tags:
----
 # Open And Use BIOS In VMware Workstation
 
 Add one of these words:

@@ -1,11 +1,3 @@
----
-title: check-radio-buttons-and-checkboxes-by-default
-date: 2021-05-01 10:19:14
-permalink: /pages/9697da/
-categories:
-  - html
-tags:
----
 # Check Radio Buttons And Checkboxes By Default
 
 ```html

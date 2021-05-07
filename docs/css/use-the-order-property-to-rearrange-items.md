@@ -1,11 +1,3 @@
----
-title: use-the-order-property-to-rearrange-items
-date: 2021-05-01 10:19:14
-permalink: /pages/e2aa34/
-categories:
-  - css
-tags:
----
 # Use The Order Property To Rearrange Items
 
 ```html

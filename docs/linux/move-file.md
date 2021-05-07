@@ -1,11 +1,3 @@
----
-title: move-file
-date: 2021-05-01 10:19:14
-permalink: /pages/154f9d/
-categories:
-  - linux
-tags:
----
 # Move File
 
 将目录`/usr/men`中的所有文件移到当前目录（用`.`表示）中：

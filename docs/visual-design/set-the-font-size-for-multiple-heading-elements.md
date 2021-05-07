@@ -1,11 +1,3 @@
----
-title: set-the-font-size-for-multiple-heading-elements
-date: 2021-05-01 10:19:14
-permalink: /pages/1dd804/
-categories:
-  - visual-design
-tags:
----
 # Set The Font-size For Multiple Heading Elements
 
 ```html

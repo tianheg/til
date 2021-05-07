@@ -1,11 +1,3 @@
----
-title: delete-all-local-remote-tags
-date: 2021-05-01 10:19:14
-permalink: /pages/d73d75/
-categories:
-  - git
-tags:
----
 # Delete All Local And Remote Tags
 
 First delete remote tags, then local tags:

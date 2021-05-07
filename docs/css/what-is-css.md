@@ -1,11 +1,3 @@
----
-title: what-is-css
-date: 2021-05-01 10:19:14
-permalink: /pages/b60f3e/
-categories:
-  - css
-tags:
----
 # What Is CSS
 
 Cascading Style Sheets (CSS) tell the browser how to display the text and other content that you write in HTML.

@@ -1,11 +1,3 @@
----
-title: create-visual-balance-using-text-align
-date: 2021-05-01 10:19:14
-permalink: /pages/5d43b1/
-categories:
-  - visual-design
-tags:
----
 # Create Visual Balance Using The Text-align Property
 
 The first group of challenges build on the given card layout to show a number of core principles.

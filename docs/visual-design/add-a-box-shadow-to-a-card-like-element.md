@@ -1,11 +1,3 @@
----
-title: add-a-box-shadow-to-a-card-like-element
-date: 2021-05-01 10:19:14
-permalink: /pages/39f813/
-categories:
-  - visual-design
-tags:
----
 # Add A Box-shadow To A Card-like Element
 
 ```css

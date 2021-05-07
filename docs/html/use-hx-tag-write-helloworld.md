@@ -1,11 +1,3 @@
----
-title: use-hx-tag-write-helloworld
-date: 2021-05-01 10:19:14
-permalink: /pages/9cd49c/
-categories:
-  - html
-tags:
----
 # Use Hx Tag Write Helloworld
 
 `x`'s scope: 1-6

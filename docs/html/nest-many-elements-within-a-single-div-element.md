@@ -1,11 +1,3 @@
----
-title: nest-many-elements-within-a-single-div-element
-date: 2021-05-01 10:19:14
-permalink: /pages/6696b2/
-categories:
-  - html
-tags:
----
 # Nest Many Elements Within A Single Div Element
 
 ```html

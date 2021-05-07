@@ -1,11 +1,3 @@
----
-title: change-the-color-of-text
-date: 2021-05-01 10:19:14
-permalink: /pages/880a8e/
-categories:
-  - css
-tags:
----
 # Change The Color Of Text
 
 ```html

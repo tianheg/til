@@ -1,11 +1,3 @@
----
-title: yarn-upgrade
-date: 2021-05-01 10:19:14
-permalink: /pages/4445cb/
-categories:
-  - yarn
-tags:
----
 # Yarn Upgrade
 
 This command updates dependencies to their latest version based on the version range specified in the `package.json` file. The `yarn.lock` file will be recreated as well.

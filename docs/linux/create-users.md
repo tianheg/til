@@ -1,11 +1,3 @@
----
-title: create-users
-date: 2021-05-01 10:19:14
-permalink: /pages/63627c/
-categories:
-  - linux
-tags:
----
 # Create Users
 
 ## `useradd`

@@ -1,11 +1,3 @@
----
-title: adjust-the-width-of-an-element-using-width
-date: 2021-05-01 10:19:14
-permalink: /pages/f60bf3/
-categories:
-  - visual-design
-tags:
----
 # Adjust The Width Of An Element Using The Width Property
 
 - relative length units: em

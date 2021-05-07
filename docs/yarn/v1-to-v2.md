@@ -1,11 +1,3 @@
----
-title: v1-to-v2
-date: 2021-05-01 10:19:14
-permalink: /pages/d0a8c3/
-categories:
-  - yarn
-tags:
----
 # V1 To V2
 
 1. Run `npm install -g yarn` to update the global yarn version to latest v1

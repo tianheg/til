@@ -1,11 +1,3 @@
----
-title: what-is-html-and-html5
-date: 2021-05-01 10:19:14
-permalink: /pages/7561d5/
-categories:
-  - html
-tags:
----
 # What Is HTML And HTML5
 
 **What is HTML**?

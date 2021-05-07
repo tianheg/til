@@ -1,11 +1,3 @@
----
-title: make-typography-responsive
-date: 2021-05-01 10:19:14
-permalink: /pages/11f327/
-categories:
-  - design-principles
-tags:
----
 # Make Typography Responsive
 
 The four different viewport units are:

@@ -1,11 +1,3 @@
----
-title: use-the-text-transform-property-to-make-text-uppercase
-date: 2021-05-01 10:19:14
-permalink: /pages/ab6f06/
-categories:
-  - visual-design
-tags:
----
 # Use The Text-transform Property To Make Text Uppercase
 
 `text-transform`:

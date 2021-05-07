@@ -1,11 +1,3 @@
----
-title: list-users
-date: 2021-05-01 10:19:14
-permalink: /pages/44f7d5/
-categories:
-  - linux
-tags:
----
 # List Users
 
 **1. List All Users in Linux with the /etc/passwd File**

@@ -1,11 +1,3 @@
----
-title: style-multiple-elements-with-a-css-class
-date: 2021-05-01 10:19:14
-permalink: /pages/2c3315/
-categories:
-  - css
-tags:
----
 # Style Multiple Elements With A CSS Class
 
 ```html

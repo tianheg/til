@@ -1,11 +1,3 @@
----
-title: netplan
-date: 2021-05-01 10:19:14
-permalink: /pages/4256ba/
-categories:
-  - ubuntu
-tags:
----
 # Netplan
 
 [source](https://netplan.io/)

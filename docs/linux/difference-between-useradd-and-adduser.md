@@ -1,11 +1,3 @@
----
-title: difference-between-useradd-and-adduser
-date: 2021-05-01 10:19:14
-permalink: /pages/902db9/
-categories:
-  - linux
-tags:
----
 # Difference Between `useradd` And `adduser`
 
 `useradd` can be used for any Linux distribution, including Ubuntu, CentOS, RHEL, Debian, Fedora, and Arch Linux.

@@ -1,11 +1,3 @@
----
-title: push-elements-left-or-right-with-the-float-property
-date: 2021-05-01 10:19:14
-permalink: /pages/6e0e69/
-categories:
-  - visual-design
-tags:
----
 # Push Elements Left Or Right With The Float Property
 
 ```html

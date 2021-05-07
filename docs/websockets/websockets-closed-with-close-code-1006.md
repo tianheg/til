@@ -1,11 +1,3 @@
----
-title: websockets-closed-with-close-code-1006
-date: 2021-05-01 10:19:14
-permalink: /pages/5512c9/
-categories:
-  - websockets
-tags:
----
 # Websockets Closed With Close Code 1006
 
 问题描述：

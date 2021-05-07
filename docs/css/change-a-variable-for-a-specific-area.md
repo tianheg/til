@@ -1,11 +1,3 @@
----
-title: change-a-variable-for-a-specific-area
-date: 2021-05-01 10:19:14
-permalink: /pages/275b18/
-categories:
-  - css
-tags:
----
 # Change A Variable For A Specific Area
 
 When you create your variables in `:root` they will set the value of that variable for the whole page.

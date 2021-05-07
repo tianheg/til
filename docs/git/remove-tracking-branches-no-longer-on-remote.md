@@ -1,11 +1,3 @@
----
-title: remove-tracking-branches-no-longer-on-remote
-date: 2021-05-01 10:19:14
-permalink: /pages/0dc608/
-categories:
-  - git
-tags:
----
 # Remove Tracking Branches No Longer On Remote
 
 ```sh

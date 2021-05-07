@@ -1,11 +1,3 @@
----
-title: understand-absolute-versus-relative-units
-date: 2021-05-01 10:19:14
-permalink: /pages/ab3855/
-categories:
-  - css
-tags:
----
 # Understand Absolute Versus Relative Units
 
 理解绝对单元和相对单元

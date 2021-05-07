@@ -1,11 +1,3 @@
----
-title: generate-ssh-key
-date: 2021-05-01 10:19:14
-permalink: /pages/87e2ea/
-categories:
-  - ssh
-tags:
----
 # Generate SSH Key
 
 ```sh

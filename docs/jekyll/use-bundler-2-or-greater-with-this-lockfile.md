@@ -1,11 +1,3 @@
----
-title: use-bundler-2-or-greater-with-this-lockfile
-date: 2021-05-01 10:19:14
-permalink: /pages/aca7ed/
-categories:
-  - jekyll
-tags:
----
 # Use Bundler 2 Or Greater With This Lockfile
 
 [source](https://github.com/jekyll/jekyll/issues/7463#issuecomment-451686361)

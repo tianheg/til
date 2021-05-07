@@ -1,11 +1,3 @@
----
-title: branch-name-contain-the-space-char
-date: 2021-05-01 10:19:14
-permalink: /pages/c864f4/
-categories:
-  - git
-tags:
----
 # Branch Name Contain The 'space' Char
 
 I do not know if you are going to find a pure, technical reason down at the bottom of this. However, I can offer that spaces tend to throw wrenches in all sorts of *nix utilities and filename processing, so it may have been to avoid accidentally doing anything wrong further down the line. After all, a git branch boils down to a file in the repo and this avoids dealing with spaces in that file's name (specifically, a branch is a file in .git/refs/heads/, as mentioned in the comment).

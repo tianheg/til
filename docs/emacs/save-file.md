@@ -1,11 +1,3 @@
----
-title: save-file
-date: 2021-05-01 10:19:14
-permalink: /pages/271d70/
-categories:
-  - emacs
-tags:
----
 # Save File
 
 C\-x C\-s

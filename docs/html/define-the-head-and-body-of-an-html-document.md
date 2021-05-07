@@ -1,11 +1,3 @@
----
-title: define-the-head-and-body-of-an-html-document
-date: 2021-05-01 10:19:14
-permalink: /pages/8868a2/
-categories:
-  - html
-tags:
----
 # Define The Head And Body Of An HTML Document
 
 ```html

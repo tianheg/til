@@ -1,11 +1,3 @@
----
-title: rebase
-date: 2021-05-01 10:19:14
-permalink: /pages/b866ac/
-categories:
-  - git
-tags:
----
 # Rebase
 
 manual:

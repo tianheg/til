@@ -1,11 +1,3 @@
----
-title: install-flux-on-ubuntu
-date: 2021-05-01 10:19:14
-permalink: /pages/83a78b/
-categories:
-  - ubuntu
-tags:
----
 # Install F.lux On Ubuntu
 
 ```bash

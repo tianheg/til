@@ -1,11 +1,3 @@
----
-title: override-all-other-styles-by-using-important
-date: 2021-05-01 10:19:14
-permalink: /pages/8a0968/
-categories:
-  - css
-tags:
----
 # Override All Other Styles By Using Important
 
 In many situations, you will use CSS libraries. These may accidentally override your own CSS. So when you absolutely need to be sure that an element has specific CSS, you can use `!important`

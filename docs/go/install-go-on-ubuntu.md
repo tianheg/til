@@ -1,11 +1,3 @@
----
-title: install-go-on-ubuntu
-date: 2021-05-01 10:19:14
-permalink: /pages/0aa37f/
-categories:
-  - go
-tags:
----
 # Install Go On Ubuntu
 
 ```bash

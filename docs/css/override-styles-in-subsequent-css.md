@@ -1,11 +1,3 @@
----
-title: override-styles-in-subsequent-css
-date: 2021-05-01 10:19:14
-permalink: /pages/8c642f/
-categories:
-  - css
-tags:
----
 # Override Styles In Subsequent CSS
 
 It doesn't matter which order the classes are listed in the HTML element.

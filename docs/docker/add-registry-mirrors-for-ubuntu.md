@@ -1,11 +1,3 @@
----
-title: add-registry-mirrors-for-ubuntu
-date: 2021-05-01 10:19:14
-permalink: /pages/e4c1f1/
-categories:
-  - docker
-tags:
----
 # Add Registry Mirrors For Ubuntu
 
 Docker > 1.10.0

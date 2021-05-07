@@ -1,11 +1,3 @@
----
-title: install-nnn
-date: 2021-05-01 10:19:14
-permalink: /pages/5f6879/
-categories:
-  - ubuntu
-tags:
----
 # Install Nnn
 
 ```sh

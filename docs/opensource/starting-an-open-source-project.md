@@ -1,11 +1,3 @@
----
-title: starting-an-open-source-project
-date: 2021-05-01 10:19:14
-permalink: /pages/3ff0ac/
-categories:
-  - opensource
-tags:
----
 # Starting an Open Source Project
 
 source: <https://opensource.guide/starting-a-project/>

@@ -1,11 +1,3 @@
----
-title: install-vlc
-date: 2021-05-01 10:19:14
-permalink: /pages/7d0bdf/
-categories:
-  - ubuntu
-tags:
----
 # Install VLC
 
 Through these:

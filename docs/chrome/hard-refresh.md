@@ -1,11 +1,3 @@
----
-title: hard-refresh
-date: 2021-05-01 10:19:14
-permalink: /pages/ea5bcd/
-categories:
-  - chrome
-tags:
----
 # Hard Refresh
 
 Windows/Linux:

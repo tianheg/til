@@ -1,11 +1,3 @@
----
-title: nmcli
-date: 2021-05-01 10:19:14
-permalink: /pages/25bc83/
-categories:
-  - ubuntu
-tags:
----
 # Nmcli
 
 NetworkManager should be installed by default for most Ubuntu installations if the Desktop installation image was used. Use the apt command to find out if it needs to be installed:

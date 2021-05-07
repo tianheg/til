@@ -1,11 +1,3 @@
----
-title: install-hugo-on-ubuntu
-date: 2021-05-01 10:19:14
-permalink: /pages/fbff9a/
-categories:
-  - hugo
-tags:
----
 # Install Hugo On Ubuntu
 
 ```bash

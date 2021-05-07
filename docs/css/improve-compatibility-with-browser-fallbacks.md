@@ -1,11 +1,3 @@
----
-title: improve-compatibility-with-browser-fallbacks
-date: 2021-05-01 10:19:14
-permalink: /pages/a2d6f3/
-categories:
-  - css
-tags:
----
 # Improve Compatibility With Browser Fallbacks
 
 When working with CSS you will likely run into browser compatibility issues at some point. This is why it's important to provide browser fallbacks to avoid potential problems.

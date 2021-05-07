@@ -1,11 +1,3 @@
----
-title: change-default-package-manager
-date: 2021-05-01 10:19:14
-permalink: /pages/4d1053/
-categories:
-  - gatsby
-tags:
----
 # Change Default Package Manager
 
 ```bash

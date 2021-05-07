@@ -1,11 +1,3 @@
----
-title: hugo-server-bind-ip
-date: 2021-05-01 10:19:14
-permalink: /pages/36398a/
-categories:
-  - hugo
-tags:
----
 # Hugo Server Bind IP
 
 ```bash

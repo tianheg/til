@@ -1,11 +1,3 @@
----
-title: create-a-set-of-radio-buttons
-date: 2021-05-01 10:19:14
-permalink: /pages/ce59de/
-categories:
-  - html
-tags:
----
 # Create A Set Of Radio Buttons
 
 ```html

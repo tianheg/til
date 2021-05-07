@@ -1,11 +1,3 @@
----
-title: create-a-set-of-checkboxes
-date: 2021-05-01 10:19:14
-permalink: /pages/6320eb/
-categories:
-  - html
-tags:
----
 # Create A Set Of Checkboxes
 
 ```html

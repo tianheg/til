@@ -1,11 +1,3 @@
----
-title: use-npx
-date: 2021-05-01 10:19:14
-permalink: /pages/df346a/
-categories:
-  - nodejs
-tags:
----
 # Use Npx
 
 如果有些包我们只会使用一次，或者只想尝试以下，不想安装到全局，也不想作为当前项目的依赖

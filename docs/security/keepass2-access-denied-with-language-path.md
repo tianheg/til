@@ -1,11 +1,3 @@
----
-title: keepass2-access-denied-with-language-path
-date: 2021-05-01 10:19:14
-permalink: /pages/779b4f/
-categories:
-  - security
-tags:
----
 # Keepass2 Access Denied With Language Path
 
 Error log:

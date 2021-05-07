@@ -1,11 +1,3 @@
----
-title: create-links-to-sections-on-the-same-page
-date: 2021-05-01 15:47:43
-permalink: /pages/a51680/
-categories:
-  - html
-tags:
----
 # Create Links To Sections On The Same Page
 
 ```html

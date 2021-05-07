@@ -1,11 +1,3 @@
----
-title: use-the-value-attribute-with-radio-buttons-and-checkboxes
-date: 2021-05-01 10:19:14
-permalink: /pages/3127a0/
-categories:
-  - html
-tags:
----
 # Use The Value Attribute With Radio Buttons And Checkboxes
 
 ```html

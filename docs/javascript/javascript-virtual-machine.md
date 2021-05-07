@@ -1,11 +1,3 @@
----
-title: javascript-virtual-machine
-date: 2021-05-01 10:19:14
-permalink: /pages/1feab1/
-categories:
-  - javascript
-tags:
----
 # JavaScript Virtual Machine
 
 Different engines have different "codenames". For example:

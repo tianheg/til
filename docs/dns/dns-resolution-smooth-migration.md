@@ -1,11 +1,3 @@
----
-title: dns-resolution-smooth-migration
-date: 2021-05-01 10:19:14
-permalink: /pages/a07334/
-categories:
-  - dns
-tags:
----
 # DNS 解析平滑迁移
 
 [source](https://help.aliyun.com/document_detail/97785.html)

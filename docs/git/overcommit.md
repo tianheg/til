@@ -1,11 +1,3 @@
----
-title: overcommit
-date: 2021-05-01 10:19:14
-permalink: /pages/b9b67d/
-categories:
-  - git
-tags:
----
 # Overcommit
 
 [source](https://github.com/sds/overcommit)

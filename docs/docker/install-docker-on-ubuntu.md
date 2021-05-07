@@ -1,11 +1,3 @@
----
-title: install-docker-on-ubuntu
-date: 2021-05-01 10:19:14
-permalink: /pages/be2858/
-categories:
-  - docker
-tags:
----
 # Install Docker On Ubuntu
 
 ```bash

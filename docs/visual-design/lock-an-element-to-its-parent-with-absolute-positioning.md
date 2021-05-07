@@ -1,11 +1,3 @@
----
-title: lock-an-element-to-its-parent-with-absolute-positioning
-date: 2021-05-01 10:19:14
-permalink: /pages/459db3/
-categories:
-  - visual-design
-tags:
----
 # Lock An Element To Its Parent With Absolute Positioning
 
 The next option for the CSS `position` property is `absolute`, which locks the element in place relative to its parent container.

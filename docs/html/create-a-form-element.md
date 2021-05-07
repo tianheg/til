@@ -1,11 +1,3 @@
----
-title: create-a-form-element
-date: 2021-05-01 10:19:14
-permalink: /pages/5c1e71/
-categories:
-  - html
-tags:
----
 # Create A Form Element
 
 ```html

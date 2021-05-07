@@ -1,11 +1,3 @@
----
-title: 04
-date: 2021-05-01 10:19:14
-permalink: /pages/f7f2a9/
-categories:
-  - ubuntu
-tags:
----
 # Cannot Connect Wi-Fi Ubuntu20.04
 
 Tried:

@@ -1,11 +1,3 @@
----
-title: best-practices-with-news-translation
-date: 2021-05-01 10:19:14
-permalink: /pages/871182/
-categories:
-  - tech-translate
-tags:
----
 # Best Practices With [News Translation][1]
 
 ## 翻译

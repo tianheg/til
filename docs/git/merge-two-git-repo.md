@@ -1,11 +1,3 @@
----
-title: merge-two-git-repo
-date: 2021-05-01 10:19:14
-permalink: /pages/6ab1d2/
-categories:
-  - git
-tags:
----
 # Merge Two Git Repo
 
 A: <https://github.com/tianheg/a.git>

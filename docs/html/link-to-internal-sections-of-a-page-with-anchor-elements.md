@@ -1,11 +1,3 @@
----
-title: link-to-internal-sections-of-a-page-with-anchor-elements
-date: 2021-05-01 10:19:14
-permalink: /pages/7b14e7/
-categories:
-  - html
-tags:
----
 # Link To Internal Sections Of A Page With Anchor Elements
 
 `a` (*anchor*) elements can also be used to create internal links to jump to different sections within a webpage.

@@ -1,11 +1,3 @@
----
-title: use-radio
-date: 2021-05-01 15:14:42
-permalink: /pages/d3bdec/
-categories:
-  - html
-tags:
----
 # Use Radio
 
 ```html

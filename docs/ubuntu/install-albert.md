@@ -1,11 +1,3 @@
----
-title: install-albert
-date: 2021-05-01 10:19:14
-permalink: /pages/13ccf6/
-categories:
-  - ubuntu
-tags:
----
 # Install Albert
 
 ```bash

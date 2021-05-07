@@ -1,11 +1,3 @@
----
-title: enable-wsl2-ubuntu-gui-and-use-rdp-to-remote
-date: 2021-05-01 10:19:14
-permalink: /pages/8ba891/
-categories:
-  - ubuntu
-tags:
----
 # Enable WSL2 Ubuntu GUI And Use Rdp To Remote
 
 We assume by now you already have WSL2 running and have at least Ubuntu installed. You can follow this guide to upgrade your Ubuntu to the latest 20.04 LTS distro if you haven’t already done so.

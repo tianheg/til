@@ -1,11 +1,3 @@
----
-title: use-a-media-query-to-change-a-variable
-date: 2021-05-01 10:19:14
-permalink: /pages/9b8030/
-categories:
-  - css
-tags:
----
 # Use A Media Query To Change A Variable
 
 ```html

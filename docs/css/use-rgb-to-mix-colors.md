@@ -1,11 +1,3 @@
----
-title: use-rgb-to-mix-colors
-date: 2021-05-01 10:19:14
-permalink: /pages/bc86fc/
-categories:
-  - css
-tags:
----
 # Use RGB To Mix Colors
 
 ```html

@@ -1,11 +1,3 @@
----
-title: yarn-add-global
-date: 2021-05-01 10:19:14
-permalink: /pages/154cbc/
-categories:
-  - yarn
-tags:
----
 # Yarn Add Global
 
 ```bash

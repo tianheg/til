@@ -1,11 +1,3 @@
----
-title: add-a-submit-button-to-a-form
-date: 2021-05-01 10:19:14
-permalink: /pages/4ab72f/
-categories:
-  - html
-tags:
----
 # Add A Submit Button To A Form
 
 ```html

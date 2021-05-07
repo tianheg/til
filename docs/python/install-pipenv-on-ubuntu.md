@@ -1,11 +1,3 @@
----
-title: install-pipenv-on-ubuntu
-date: 2021-05-01 10:19:14
-permalink: /pages/defe2b/
-categories:
-  - python
-tags:
----
 # Install Pipenv On Ubuntu
 
 ```bash

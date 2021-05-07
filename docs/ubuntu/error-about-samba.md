@@ -1,11 +1,3 @@
----
-title: error-about-samba
-date: 2021-05-01 10:19:14
-permalink: /pages/543f29/
-categories:
-  - ubuntu
-tags:
----
 # Error About Samba
 
 When I install `kubuntu-desktop` use `sudo apt-get install -y kubuntu-desktop`, get error:

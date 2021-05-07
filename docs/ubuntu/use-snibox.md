@@ -1,11 +1,3 @@
----
-title: use-snibox
-date: 2021-05-01 10:19:14
-permalink: /pages/b5fdcd/
-categories:
-  - ubuntu
-tags:
----
 # Use Snibox
 
 ## Emails

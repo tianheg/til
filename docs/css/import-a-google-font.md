@@ -1,11 +1,3 @@
----
-title: import-a-google-font
-date: 2021-05-01 10:19:14
-permalink: /pages/de95d1/
-categories:
-  - css
-tags:
----
 # Import A Google Font
 
 ```html

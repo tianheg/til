@@ -1,11 +1,3 @@
----
-title: install-deb-file
-date: 2021-05-01 10:19:14
-permalink: /pages/0ff9bc/
-categories:
-  - ubuntu
-tags:
----
 # Install Deb File
 
 ```bash

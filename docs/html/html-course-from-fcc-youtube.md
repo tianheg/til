@@ -1,11 +1,3 @@
----
-title: html-course-from-fcc-youtube
-date: 2021-05-04 20:41:24
-permalink: /pages/eaf40c/
-categories:
-  - html
-tags:
----
 # HTML Course From Fcc YouTube
 
 <https://youtu.be/pQN-pnXPaVg>

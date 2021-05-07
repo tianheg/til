@@ -1,11 +1,3 @@
----
-title: add-images-to-website
-date: 2021-05-01 10:19:14
-permalink: /pages/535411/
-categories:
-  - html
-tags:
----
 # Add Images To Website
 
 Just input:

@@ -1,11 +1,3 @@
----
-title: use-the-align-self-property
-date: 2021-05-01 10:19:14
-permalink: /pages/04de7e/
-categories:
-  - css
-tags:
----
 # Use The Align-self Property
 
 ```html

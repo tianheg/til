@@ -1,11 +1,3 @@
----
-title: install-yarn
-date: 2021-05-01 10:19:14
-permalink: /pages/b92ce7/
-categories:
-  - yarn
-tags:
----
 # Install Yarn
 
 ```bash

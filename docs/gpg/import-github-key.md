@@ -1,11 +1,3 @@
----
-title: import-github-key
-date: 2021-05-01 10:19:14
-permalink: /pages/0e7ba6/
-categories:
-  - gpg
-tags:
----
 # Import GitHub Key
 
 ```sh

@@ -1,11 +1,3 @@
----
-title: use-project-manager
-date: 2021-05-01 10:19:14
-permalink: /pages/7a6c8c/
-categories:
-  - vscode
-tags:
----
 # Use Project Manager
 
 - `Project Manager: Save Project` Save the current folder/workspace as a new project

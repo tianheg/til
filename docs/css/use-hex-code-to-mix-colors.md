@@ -1,11 +1,3 @@
----
-title: use-hex-code-to-mix-colors
-date: 2021-05-01 10:19:14
-permalink: /pages/06f4e9/
-categories:
-  - css
-tags:
----
 # Use Hex Code To Mix Colors
 
 ```html

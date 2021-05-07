@@ -1,11 +1,3 @@
----
-title: your-computer-isnt-yours
-date: 2021-05-01 10:19:14
-permalink: /pages/925698/
-categories:
-  - security
-tags:
----
 # Your Computer Isn't Yours
 
 source: <https://sneak.berlin/20201112/your-computer-isnt-yours/>

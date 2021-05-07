@@ -1,11 +1,3 @@
----
-title: use-rgb-values-to-color-elements
-date: 2021-05-01 10:19:14
-permalink: /pages/8f0d6d/
-categories:
-  - css
-tags:
----
 # Use RGB Values To Color Elements
 
 The RGB value for black looks like this:

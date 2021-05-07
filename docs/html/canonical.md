@@ -1,11 +1,3 @@
----
-title: canonical
-date: 2021-05-01 10:19:14
-permalink: /pages/58634f/
-categories:
-  - html
-tags:
----
 # Canonical
 
 From Wikipedia, the free encyclopedia: [Canonical_link_element](https://en.wikipedia.org/wiki/Canonical_link_element)

@@ -1,11 +1,3 @@
----
-title: workstation-player-does-not-support-nested-virtualization-on-this-host
-date: 2021-05-01 10:19:14
-permalink: /pages/5e56f2/
-categories:
-  - vmware
-tags:
----
 # VMware Workstation/Player Does Not Support Nested Virtualization On This Host
 
 ```text

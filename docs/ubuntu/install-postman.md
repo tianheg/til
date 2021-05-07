@@ -1,11 +1,3 @@
----
-title: install-postman
-date: 2021-05-01 10:19:14
-permalink: /pages/240cf8/
-categories:
-  - ubuntu
-tags:
----
 # Install Postman
 
 [source](https://speedysense.com/install-postman-on-ubuntu-20-04/)

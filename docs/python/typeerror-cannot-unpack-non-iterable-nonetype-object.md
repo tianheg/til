@@ -1,11 +1,3 @@
----
-title: typeerror-cannot-unpack-non-iterable-nonetype-object
-date: 2021-05-01 10:19:14
-permalink: /pages/b8ab30/
-categories:
-  - python
-tags:
----
 # TypeError: Cannot Unpack Non-iterable NoneType Object
 
 [File location](https://github.com/tianheg/run/blob/8d96ae99b838923dd2a2b64ba75e8931cfddc1ab/scripts/keep_sync.py)

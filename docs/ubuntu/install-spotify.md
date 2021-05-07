@@ -1,11 +1,3 @@
----
-title: install-spotify
-date: 2021-05-01 10:19:14
-permalink: /pages/9cc024/
-categories:
-  - ubuntu
-tags:
----
 # Install Spotify
 
 [source](https://www.spotify.com/hk-en/download/linux/)

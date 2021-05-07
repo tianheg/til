@@ -1,11 +1,3 @@
----
-title: learn-git
-date: 2021-05-01 10:19:14
-permalink: /pages/e0f0ad/
-categories:
-  - git
-tags:
----
 # Learn Git
 
 - [Git Reference Manual](https://git-scm.com/docs)

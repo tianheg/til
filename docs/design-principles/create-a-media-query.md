@@ -1,11 +1,3 @@
----
-title: create-a-media-query
-date: 2021-05-01 10:19:14
-permalink: /pages/da98b4/
-categories:
-  - design-principles
-tags:
----
 # Create A Media Query
 
 ```css

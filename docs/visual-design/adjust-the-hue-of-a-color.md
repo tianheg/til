@@ -1,11 +1,3 @@
----
-title: adjust-the-hue-of-a-color
-date: 2021-05-01 10:19:14
-permalink: /pages/63a3a8/
-categories:
-  - visual-design
-tags:
----
 # Adjust The Hue Of A Color
 
 Colors have several characteristics including hue, saturation, and lightness.

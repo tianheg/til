@@ -1,11 +1,3 @@
----
-title: set-the-font-family-of-an-element
-date: 2021-05-01 10:19:14
-permalink: /pages/01390e/
-categories:
-  - css
-tags:
----
 # Set The Font Family Of An Element
 
 ```css

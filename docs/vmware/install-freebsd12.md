@@ -1,11 +1,3 @@
----
-title: install-freebsd12
-date: 2021-05-01 10:19:14
-permalink: /pages/7eda5e/
-categories:
-  - vmware
-tags:
----
 # Install FreeBSD12
 
 1. Install FreeBSD 12.2-RELEASE from [here](https://download.freebsd.org/ftp/releases/amd64/amd64/ISO-IMAGES/12.2/), select `FreeBSD-12.2-RELEASE-amd64-disc1.iso`.

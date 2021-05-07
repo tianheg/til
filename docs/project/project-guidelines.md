@@ -1,11 +1,3 @@
----
-title: project-guidelines
-date: 2021-05-01 10:19:14
-permalink: /pages/29989d/
-categories:
-  - project
-tags:
----
 # Project Guidelines
 
 source: <https://github.com/elsewhencode/project-guidelines>
@@ -486,7 +478,7 @@ Having a good guideline for creating commits and sticking to it makes working wi
 - Produce readable production logging. Ideally use logging libraries to be used in production mode (such as [winston](https://github.com/winstonjs/winston) or
 [node-bunyan](https://github.com/trentm/node-bunyan)).
 
-    _Why:_plainplainplainplainplainplainplainplainplainplainplainplainplain
+    _Why:_plainplainplainplain
     > It makes your troubleshooting less unpleasant with colorization, timestamps, log to a file in addition to the console or even logging to a file that rotates daily. [read more...](https://blog.risingstack.com/node-js-logging-tutorial/)
 
 ## 9. API

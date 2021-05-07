@@ -1,11 +1,3 @@
----
-title: use-github-cli
-date: 2021-05-01 10:19:14
-permalink: /pages/dcd985/
-categories:
-  - github
-tags:
----
 # Use GitHub CLI
 
 ## Install [source](https://github.com/cli/cli/blob/trunk/docs/install_linux.md)

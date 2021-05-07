@@ -1,11 +1,3 @@
----
-title: make-circular-images-with-a-border-radius
-date: 2021-05-01 10:19:14
-permalink: /pages/33767a/
-categories:
-  - css
-tags:
----
 # Make Circular Images With A Border-radius
 
 ```css

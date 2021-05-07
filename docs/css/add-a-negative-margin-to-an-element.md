@@ -1,11 +1,3 @@
----
-title: add-a-negative-margin-to-an-element
-date: 2021-05-01 10:19:14
-permalink: /pages/786d67/
-categories:
-  - css
-tags:
----
 # Add A Negative Margin To An Element
 
 ```html

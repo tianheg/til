@@ -1,11 +1,3 @@
----
-title: resilio-sync
-date: 2021-05-01 10:19:14
-permalink: /pages/c29ad1/
-categories:
-  - ubuntu
-tags:
----
 # Resilio Sync
 
 ## Install Resilio Sync
@@ -88,7 +80,7 @@ Service can also be run with the following arguments: `start, stop, restart`
 
 ## Removing the package
 
-### For Debian-based Linux
+### For Debian-based Linux:
 
 ```sh
 sudo apt-get purge resilio-sync
@@ -96,7 +88,7 @@ sudo apt-get purge resilio-sync
 # Invalid operation purge resilio-sync
 ```
 
-### For RPM-based Linux
+### For RPM-based Linux:
 
 ```sh
 sudo yum remove resilio-sync

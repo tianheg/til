@@ -1,11 +1,3 @@
----
-title: set-up-development-environment
-date: 2021-05-01 10:19:14
-permalink: /pages/35be64/
-categories:
-  - gatsby
-tags:
----
 # Set Up Development Environment
 
 Install Node.js(nvm), Git

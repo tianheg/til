@@ -1,12 +1,3 @@
----
-title: file-encryption-using-openssl
-date: 2021-05-01 10:19:14
-permalink: /pages/3c102a/
-categories:
-  - openssl
-tags:
-  - 
----
 # File Encryption Using OpenSSL
 
 ## Symmetic encryption
@@ -15,22 +6,22 @@ For symmetic encryption, you can use the following:
 
 To encrypt:
 
-    openssl aes-256-cbc -salt -a -e -in plaintext.txt -out encrypted.txtplainplain
+    openssl aes-256-cbc -salt -a -e -in plaintext.txt -out encrypted.txt
 
 To decrypt:
 
-    openssl aes-256-cbc -salt -a -d -in encrypted.txt -out plaintext.txtplainplain
+    openssl aes-256-cbc -salt -a -d -in encrypted.txt -out plaintext.txt
 
 ## Asymmetric encryption
 
 For Asymmetric encryption you must first generate your private key and extract the public key.
 
-    openssl genrsa -aes256 -out private.key 8912plainplain
+    openssl genrsa -aes256 -out private.key 8912
     openssl rsa -in private.key -pubout -out public.key
 
 To encrypt:
 
-    openssl rsautl -encrypt -pubin -inkey public.key -in plaintext.txt -out encrypted.txtplain
+    openssl rsautl -encrypt -pubin -inkey public.key -in plaintext.txt -out encrypted.txt
 
 To decrypt:
 
@@ -54,25 +45,25 @@ Private key generation (encrypted private key):
 
 With unecrypted private key:
 
-    openssl req -x509 -nodes -days 100000 -newkey rsa:8912 -keyout private_key.pem -out certificate.pemplain
+    openssl req -x509 -nodes -days 100000 -newkey rsa:8912 -keyout private_key.pem -out certificate.pem
 
 With encrypted private key:
 
-    openssl req -x509 -days 100000 -newkey rsa:8912 -keyout private_key.pem -out certificate.pemplainplain
+    openssl req -x509 -days 100000 -newkey rsa:8912 -keyout private_key.pem -out certificate.pem
 
 With existing encrypted (unecrypted) private key:
 
-    openssl req -x509 -new -days 100000 -key private_key.pem -out certificate.pemplain
+    openssl req -x509 -new -days 100000 -key private_key.pem -out certificate.pem
 
 ### Encrypt a file
 
 Encrypt binary file:
 
-    openssl smime -encrypt -binary -aes-256-cbc -in plainfile.zip -out encrypted.zip.enc -outform DER yourSslCertificate.pemplain
+    openssl smime -encrypt -binary -aes-256-cbc -in plainfile.zip -out encrypted.zip.enc -outform DER yourSslCertificate.pem
 
 Encrypt text file:
 
-    openssl smime -encrypt -aes-256-cbc -in input.txt -out output.txt -outform DER yourSslCertificate.pemplainplainplainplain
+    openssl smime -encrypt -aes-256-cbc -in input.txt -out output.txt -outform DER yourSslCertificate.pem
 
 What is what:
 
@@ -91,11 +82,11 @@ That command can very effectively a strongly encrypt any file regardless of its 
 
 Decrypt binary file:
 
-    openssl smime -decrypt -binary -in encrypted.zip.enc -inform DER -out decrypted.zip -inkey private.key -passin pass:your_passwordplainplain
+    openssl smime -decrypt -binary -in encrypted.zip.enc -inform DER -out decrypted.zip -inkey private.key -passin pass:your_password
 
 For text files:
 
-    openssl smime -decrypt -in encrypted_input.txt -inform DER -out decrypted_input.zip -inkey private.key -passin pass:your_passwordplainplainplainplainplain
+    openssl smime -decrypt -in encrypted_input.txt -inform DER -out decrypted_input.zip -inkey private.key -passin pass:your_password
 
 What is what:
 
@@ -107,11 +98,11 @@ What is what:
 
 Creating a signed digest of a file:
 
-    openssl dgst -sha512 -sign private_key.pem -out digest.sha512 file.txtplainplainplain
+    openssl dgst -sha512 -sign private_key.pem -out digest.sha512 file.txt
 
 Verify a signed digest:
 
-    openssl dgst -sha512 -verify public_key.pem -signature digest.sha512 file.txtplainplainplain
+    openssl dgst -sha512 -verify public_key.pem -signature digest.sha512 file.txt
 
 ---
 

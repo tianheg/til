@@ -1,11 +1,3 @@
----
-title: prioritize-one-style-over-another
-date: 2021-05-01 10:19:14
-permalink: /pages/c5abec/
-categories:
-  - css
-tags:
----
 # Prioritize One Style Over Another
 
 ```html

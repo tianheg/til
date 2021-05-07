@@ -1,11 +1,3 @@
----
-title: declare-the-doctype-of-an-html-document
-date: 2021-05-01 10:19:14
-permalink: /pages/e5b7e0/
-categories:
-  - html
-tags:
----
 # Declare The Doctype Of An HTML Document
 
 ```html

@@ -1,11 +1,3 @@
----
-title: create-a-bulleted-unordered-list
-date: 2021-05-01 10:19:14
-permalink: /pages/9e11c4/
-categories:
-  - html
-tags:
----
 # Create A Bulleted Unordered List
 
 Just input:

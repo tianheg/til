@@ -1,11 +1,3 @@
----
-title: add-rounded-corners-with-border-radius
-date: 2021-05-01 10:19:14
-permalink: /pages/f6b461/
-categories:
-  - css
-tags:
----
 # Add Rounded Corners With Border-radius
 
 ```css

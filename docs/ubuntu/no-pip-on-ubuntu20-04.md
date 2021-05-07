@@ -1,11 +1,3 @@
----
-title: no-pip-on-ubuntu20-04
-date: 2021-05-01 10:19:14
-permalink: /pages/c061fd/
-categories:
-  - ubuntu
-tags:
----
 # No Pip On Ubuntu20.04
 
 ```bash

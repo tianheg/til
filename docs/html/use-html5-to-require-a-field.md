@@ -1,11 +1,3 @@
----
-title: use-html5-to-require-a-field
-date: 2021-05-01 10:19:14
-permalink: /pages/5760b9/
-categories:
-  - html
-tags:
----
 # Use HTML5 To Require A Field
 
 You can require specific form fields so that your user will not be able to submit your form until he or she has filled them out.

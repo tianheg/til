@@ -1,11 +1,3 @@
----
-title: textarea
-date: 2021-05-01 15:31:53
-permalink: /pages/39d20b/
-categories:
-  - html
-tags:
----
 # Textarea
 
 ```html

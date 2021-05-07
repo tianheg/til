@@ -1,11 +1,3 @@
----
-title: preview-files-and-folders
-date: 2021-05-01 10:19:14
-permalink: /pages/65eca4/
-categories:
-  - ubuntu
-tags:
----
 # Preview Files And Folders
 
 [source](https://help.ubuntu.com/stable/ubuntu-help/files-preview.html.en)

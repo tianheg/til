@@ -1,11 +1,3 @@
----
-title: set-up-canonical-livepatch
-date: 2021-05-01 10:19:14
-permalink: /pages/7d384f/
-categories:
-  - ubuntu
-tags:
----
 # Set Up Canonical Livepatch
 
 ```text

@@ -1,11 +1,3 @@
----
-title: create-a-gradual-css-linear-gradient
-date: 2021-05-01 10:19:14
-permalink: /pages/c8577f/
-categories:
-  - visual-design
-tags:
----
 # Create A Gradual CSS Linear Gradient
 
 ```css

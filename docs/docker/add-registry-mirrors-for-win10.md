@@ -1,11 +1,3 @@
----
-title: add-registry-mirrors-for-win10
-date: 2021-05-01 10:19:14
-permalink: /pages/fc13a0/
-categories:
-  - docker
-tags:
----
 # Add Registry Mirrors For Win10
 
 **1. Install Docker for Windows**

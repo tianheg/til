@@ -1,11 +1,3 @@
----
-title: compare-workstation-player-with-workstation-pro
-date: 2021-05-01 10:19:14
-permalink: /pages/31938a/
-categories:
-  - vmware
-tags:
----
 # Compare Workstation Player With Workstation Pro
 
 [reference](https://www.vmware.com/products/workstation-player.html#compare)

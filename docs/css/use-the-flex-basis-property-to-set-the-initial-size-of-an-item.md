@@ -1,11 +1,3 @@
----
-title: use-the-flex-basis-property-to-set-the-initial-size-of-an-item
-date: 2021-05-01 10:19:14
-permalink: /pages/0e6619/
-categories:
-  - css
-tags:
----
 # Use The Flex-basis Property To Set The Initial Size Of An Item
 
 The `flex-basis` property specifies the initial size of the item before CSS makes adjustments with `flex-shrink` or `flex-grow`.

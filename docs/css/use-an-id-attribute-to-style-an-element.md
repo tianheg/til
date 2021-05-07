@@ -1,11 +1,3 @@
----
-title: use-an-id-attribute-to-style-an-element
-date: 2021-05-01 10:19:14
-permalink: /pages/e80c95/
-categories:
-  - css
-tags:
----
 # Use An Id Attribute To Style An Element
 
 ```css

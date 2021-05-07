@@ -1,11 +1,3 @@
----
-title: can-not-change-name-or-comment-without-losing-signatures
-date: 2021-05-01 10:19:14
-permalink: /pages/373f51/
-categories:
-  - gpg
-tags:
----
 # Can Not Change Name Or Comment Without Losing Signatures
 
 Incoming signatures always point to a UID. UIDs can not be modified, only revoked. If you want to change one, it will have to get signed again. If you revoke a UID, you will lose all incoming signatures.

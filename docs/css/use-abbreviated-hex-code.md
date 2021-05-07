@@ -1,11 +1,3 @@
----
-title: use-abbreviated-hex-code
-date: 2021-05-01 10:19:14
-permalink: /pages/0e6ada/
-categories:
-  - css
-tags:
----
 # Use Abbreviated Hex Code
 
 For example, red's hex code `#FF0000` can be shortened to `#F00`. This shortened form gives one digit for red, one digit for green, and one digit for blue.

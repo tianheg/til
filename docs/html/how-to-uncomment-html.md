@@ -1,11 +1,3 @@
----
-title: how-to-uncomment-html
-date: 2021-05-01 10:19:14
-permalink: /pages/60307f/
-categories:
-  - html
-tags:
----
 # How To Uncomment HTML
 
 use `<!-- html code -->`

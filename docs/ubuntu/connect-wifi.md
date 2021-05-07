@@ -1,11 +1,3 @@
----
-title: connect-wifi
-date: 2021-05-01 10:19:14
-permalink: /pages/1589fa/
-categories:
-  - ubuntu
-tags:
----
 # Connect Wifi
 
 ![software-update](images/software-updates.png)

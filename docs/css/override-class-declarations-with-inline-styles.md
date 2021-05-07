@@ -1,11 +1,3 @@
----
-title: override-class-declarations-with-inline-styles
-date: 2021-05-01 10:19:14
-permalink: /pages/e127db/
-categories:
-  - css
-tags:
----
 # Override Class Declarations With Inline Styles
 
 ```html

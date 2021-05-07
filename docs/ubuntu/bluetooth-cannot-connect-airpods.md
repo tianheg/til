@@ -1,11 +1,3 @@
----
-title: bluetooth-cannot-connect-airpods
-date: 2021-05-01 10:19:14
-permalink: /pages/bf0885/
-categories:
-  - ubuntu
-tags:
----
 # Bluetooth Cannot Connect Airpods
 
 ```bash

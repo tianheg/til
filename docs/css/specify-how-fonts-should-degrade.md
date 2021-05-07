@@ -1,11 +1,3 @@
----
-title: specify-how-fonts-should-degrade
-date: 2021-05-01 10:19:14
-permalink: /pages/bf90d7/
-categories:
-  - css
-tags:
----
 # Specify How Fonts Should Degrade
 
 There are several default fonts that are available in all browsers. These generic font families include `monospace`, `serif` and `sans-serif`.

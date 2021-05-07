@@ -1,11 +1,3 @@
----
-title: adjust-the-padding-of-an-element
-date: 2021-05-01 10:19:14
-permalink: /pages/46f2cc/
-categories:
-  - css
-tags:
----
 # Adjust The Padding Of An Element
 
 ```html

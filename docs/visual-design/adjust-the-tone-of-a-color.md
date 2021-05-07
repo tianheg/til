@@ -1,11 +1,3 @@
----
-title: adjust-the-tone-of-a-color
-date: 2021-05-01 10:19:14
-permalink: /pages/e1c4cf/
-categories:
-  - visual-design
-tags:
----
 # Adjust The Tone Of A Color
 
 All elements have a default `background-color` of `transparent`.

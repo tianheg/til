@@ -1,11 +1,3 @@
----
-title: install-portainer-io-on-ubuntu
-date: 2021-05-01 10:19:14
-permalink: /pages/9d9477/
-categories:
-  - docker
-tags:
----
 # Install Portainer.io On Ubuntu
 
 ```bash

@@ -1,11 +1,3 @@
----
-title: 12quirks
-date: 2021-05-01 10:19:14
-permalink: /pages/861eb9/
-categories:
-  - javascript
-tags:
----
 # 12 JavaScript Quirks
 
 source: <https://2ality.com/2013/04/12quirks.html>
@@ -57,7 +49,7 @@ Whenever JavaScript expects a boolean value (e.g. for the condition of an if sta
 
 All other values are considered true. Values interpreted as false are called *falsy*, values interpreted as true are called *truthy*. You can use Boolean as a function to test how a value is interpreted. It converts its argument to boolean:
 
-    > Boolean(undefined)plainplainplain
+    > Boolean(undefined)
     false
     > Boolean(0)
     false
@@ -68,7 +60,7 @@ All other values are considered true. Values interpreted as false are called *fa
 
 In web development, you often get values as strings that are actually numbers or booleans. For example, when users enter this kind of data in a form. If you forget to explicitly convert these strings then JavaScript will surprise you negatively in two ways: First, there will be no warning. Second, the values will be converted automatically, but wrongly. The plus operator (+), for instance, is problematic, because it concatenates strings as soon as one of its operands is a string. During the following interaction with JavaScript, the assumption is that we are adding 1 to 5. Instead, we are concatenating the strings '5' and '1'.
 
-    > var x = '5';  // wrong assumption: x is a numberplainplain
+    > var x = '5';  // wrong assumption: x is a numberplain
     > x + 1
     '51'
 
@@ -100,12 +92,12 @@ Objects are only implicitly converted if JavaScript expects a number or a string
 
 Example for step 1:
 
-    > 3 \* { valueOf: function () { return 5 } }plainplainplainplain
+    > 3 \* { valueOf: function () { return 5 } }plainplain
     15
 
 Example for step 3:
 
-    > function returnObject() { return {} }plain
+    > function returnObject() { return {} }
     > 3 \* { valueOf: returnObject, toString: returnObject }
     TypeError: Cannot convert object to primitive value
 
@@ -115,7 +107,7 @@ If JavaScript converts to string, steps 1 and 2 are swapped: toString() is tried
 
 It is best to explicitly convert values to the desired types before using them. A minimal solution is to use the functions Boolean(), Number() and String():
 
-    function handleFormData(formData) {plainplain
+    function handleFormData(formData) {plain
         var givenName = String(formData.givenName);
         var age = Number(formData.age);
         ...
@@ -144,7 +136,7 @@ Most programming languages have only one value for “no value” or “empty re
 
 undefined is assigned via the language itself. Variables that have not been initialized yet have this value:
 
-    > var foo;plainplainplain
+    > var foo;plain
     > foo
     undefined
 
@@ -156,7 +148,7 @@ Similarly, JavaScript assigns undefined to missing parameters:
 
 null is used by programmers to explicitly indicate that a value is missing. E.g. for [JSON.stringify()](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/JSON/stringify):
 
-    > console.log(JSON.stringify({ first: 'Jane' }, null, 4))plain
+    > console.log(JSON.stringify({ first: 'Jane' }, null, 4))
     {
         "first": "Jane"
     }
@@ -175,7 +167,7 @@ You’ll see more examples of the above check in the post for quirk 5 about para
 
 Some people advocate lenient non\-equality (!=) to check that v is neither undefined nor null:
 
-    if (v != null) {plainplainplainplain
+    if (v != null) {plainplain
         // v has a value
     } else {
         // v does not have a value
@@ -183,7 +175,7 @@ Some people advocate lenient non\-equality (!=) to check that v is neither undef
 
 However, that requires you to know that != considers null to be only equal to itself and to undefined. I prefer the more descriptive use of !==:
 
-    if (v !== undefined && v !== null) {plain
+    if (v !== undefined && v !== null) {
         // v has a value
     } else {
         // v does not have a value
@@ -197,7 +189,7 @@ Let’s start with a simple rule: the normal equality operators \== and != are s
 
 The “normal” equality operator (\==) has many quirks. While it is forgiving, it does not adhere to the typical rules of truthy and falsy (see [quirk 1](http://2ality.com/2013/04/quirk-implicit-conversion.html)):
 
-    > 0 == false  // OKplainplain
+    > 0 == false  // OKplain
     true
     > 1 == true  // OK
     true
@@ -231,7 +223,7 @@ If you are still interested in finding out how exactly \== works, you can read u
 
 Normally, JavaScript automatically creates a global variable if you use an unknown variable name:
 
-    > function f() { foo = 123 }plainplainplainplain
+    > function f() { foo = 123 }plain
     > f()
     > foo
     123
@@ -265,7 +257,7 @@ When calling a function, you can pass as many or as few actual parameters as you
 
 You can call this function with arbitrary many parameters:
 
-    > f()plainplain
+    > f()plain
     x: undefined
     y: undefined
 
@@ -292,7 +284,7 @@ All passed parameters are stored in the special, “Array\-like” (see below fo
 
 Function fromArray is shown below, it converts arguments to an array so that it can be logged. Using g():
 
-    > g()plain
+    > g()
     Length: 0
     Elements:
     > g('a')
@@ -308,7 +300,7 @@ arguments is always there, no matter how many parameters have been explicitly de
 
 If a caller does not provide a parameter, undefined is passed to the function. Because undefined is falsy \[1\], you can use an if statement to check whether the parameter “exists” or not:
 
-    function hasParameter(param) {plainplain
+    function hasParameter(param) {plain
         if (param) {
             return 'yes';
         } else {
@@ -325,7 +317,7 @@ Thus, you get the same result if you omit a parameter and if you pass undefined:
 
 The test works also well for truthy values:
 
-    > hasParameter(\[ 'a', 'b' \])plainplain
+    > hasParameter(\[ 'a', 'b' \])plain
     'yes'
     > hasParameter({ name: 'Jane' })
     'yes'
@@ -334,7 +326,7 @@ The test works also well for truthy values:
 
 With falsy values, however, you have to be careful. For example, false, zero and the empty string are interpreted as missing parameters:
 
-    > hasParameter(false)plainplain
+    > hasParameter(false)plain
     'no'
     > hasParameter(0)
     'no'
@@ -347,7 +339,7 @@ Still, this pattern has proven itself. You do have to be vigilant, but the code 
 
 The following function should accept zero or more parameters. Parameters x and y should have the value 0 if they are missing. A simple way of doing that is:
 
-    function add(x, y) {plain
+    function add(x, y) {
         if (!x) x = 0;
         if (!y) y = 0;
         return x + y;
@@ -385,7 +377,7 @@ Let’s use || to assign parameter default values:
 
 You can also use arguments to accept an arbitrary number of parameters. One example is the following function format() that is modeled after the classic C function sprintf:
 
-    > format('Hello %s! You have %s new message(s).', 'Jane', 5)plainplain
+    > format('Hello %s! You have %s new message(s).', 'Jane', 5)plain
     'Hello Jane! You have 5 new message(s).'
 
 The first argument is a pattern in which '%s' marks blanks. The following arguments are filled into those blanks. A simple implementation of format looks like this:
@@ -403,7 +395,7 @@ Note: the loop skips the first parameter (arguments\[0\]) and thus ignores patte
 
 If you want to force a caller to provide a certain number of parameters, you need to check arguments.length, at runtime:
 
-    function add(x, y) {plainplain
+    function add(x, y) {plain
         if (arguments.length > 2) {
             throw new Error('Need at most 2 parameters');
         }
@@ -414,7 +406,7 @@ If you want to force a caller to provide a certain number of parameters, you nee
 
 arguments is not an array, it is only *array\-like*: you can access the i\-th parameter via arguments\[i\] and you can determine how many parameters there are via arguments.length. But you can’t use Arraymethods such as forEach and indexOf. Further details, along with solutions are discussed in quirk 8. As a preview, the following function converts an array\-like value to an array.
 
-    function fromArray(arrayLikeValue) {plain
+    function fromArray(arrayLikeValue) {
         return Array.prototype.slice.call(arrayLikeValue);
     }
 
@@ -436,7 +428,7 @@ In most programming languages, variables only exist within the block in which th
 
 The cause of the above behavior is *hoisting*: Internally, the declaration at (\*) is moved to the beginning of the function (the assignment stays where it is). That is, what a JavaScript engine actually executes looks like this:
 
-    function func(x) {plainplainplainplain
+    function func(x) {plainplain
         var tmp;
         console.log(tmp); // undefined
         if (x < 0) {
@@ -467,7 +459,7 @@ Closures are a powerful JavaScript feature: If a function leaves the place where
 
 Let’s start with an example of a closure:
 
-    function incrementorFactory(start, step) {plain
+    function incrementorFactory(start, step) {
         return function () {  // (\*)
             start += step;
             return start;
@@ -476,7 +468,7 @@ Let’s start with an example of a closure:
 
 This is how you use incrementorFactory:
 
-    > var inc = incrementorFactory(20, 2);plain
+    > var inc = incrementorFactory(20, 2);
     > inc()
     22
     > inc()
@@ -508,7 +500,7 @@ When a function is created in line (\*), the variable i has a certain value. You
 
 One possible fix is to copy the current value of i via an IIFE \[1\]:
 
-    for (var i=0; i < 5; i++) {plain
+    for (var i=0; i < 5; i++) {
         (function (i2) {  // snaphot of i
             result.push(function () { return i2 });
         }(i));
@@ -542,7 +534,7 @@ Let’s conclude with a more practical example. Two days ago, I implemented a us
 
 An alternative is to use CSS classes instead of IDs and rewrite the above code:
 
-    Array.prototype.forEach.call(plainplain
+    Array.prototype.forEach.call(plain
         document.getElementsByClassName('columnClick'),
         function (elem, col) {  // (\*)
             elem.addEventListener('click', function () {
@@ -576,7 +568,7 @@ Two examples of array\-like objects is the result of the DOM method document.get
 
 And you can access a single argument, e.g. read the first argument:
 
-    arguments\[0\]plainplain
+    arguments\[0\]plain
 
 Array methods, however, have to be borrowed. You can do that, because most of those methods are *generic*.
 
@@ -588,7 +580,7 @@ A generic method does not require this to be an array, it only requires this to 
 
 All functions have a method call that allows you to perform the above invocation differently:
 
-    Array.prototype.m.call(arr, arg0, arg1, ...)plainplain
+    Array.prototype.m.call(arr, arg0, arg1, ...)
 
 The first argument of call is the value for this that m receives (in this case, arr). Because we access m directly and not via arr, we can now hand any this to that method. For example, arguments:
 
@@ -598,7 +590,7 @@ The first argument of call is the value for this that m receives (in this case, 
 
 Let’s continue with a concrete example. The following function printArgs logs all arguments that it receives.
 
-    function printArgs() {plain
+    function printArgs() {
         Array.prototype.forEach.call(arguments,
             function (arg, i) {
                 console.log(i+'. '+arg);
@@ -607,7 +599,7 @@ Let’s continue with a concrete example. The following function printArgs logs 
 
 We have used method forEach generically. printArgs in use:
 
-    > printArgs()plainplainplain
+    > printArgs()plainplain
     > printArgs('a')
     0. a
     > printArgs('a', 'b')
@@ -628,11 +620,11 @@ In the above case, property length did not exist and was automatically created, 
 
 Sometimes the best way to work with an array\-like object is to convert it to an array. That can also be done via a generic method:
 
-    Array.prototype.slice.call(arguments)plain
+    Array.prototype.slice.call(arguments)
 
 Compare: to create a copy of an array arr, you make the method call
 
-    arr.slice()plain
+    arr.slice()
 
 ### Reference
 

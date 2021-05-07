@@ -1,11 +1,3 @@
----
-title: disable-microsoft-defender-antivirus
-date: 2021-05-01 10:19:14
-permalink: /pages/d774f9/
-categories:
-  - win10
-tags:
----
 # Disable Microsoft Defender Antivirus
 
 [source](https://www.windowscentral.com/how-permanently-disable-windows-defender-windows-10#disable-microsoft-defender-with-group-policy)

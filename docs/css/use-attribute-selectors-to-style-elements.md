@@ -1,11 +1,3 @@
----
-title: use-attribute-selectors-to-style-elements
-date: 2021-05-01 10:19:14
-permalink: /pages/5bd3d4/
-categories:
-  - css
-tags:
----
 # Use Attribute Selectors To Style Elements
 
 There are other CSS Selectors you can use to select custom groups of elements to style.

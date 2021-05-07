@@ -1,11 +1,3 @@
----
-title: add-different-margins-to-each-side-of-an-element
-date: 2021-05-01 10:19:14
-permalink: /pages/80e3e7/
-categories:
-  - css
-tags:
----
 # Add Different Margins To Each Side Of An Element
 
 ```html

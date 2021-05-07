@@ -1,11 +1,3 @@
----
-title: something-about-placeholder-text
-date: 2021-05-01 10:19:14
-permalink: /pages/796ac8/
-categories:
-  - html
-tags:
----
 # Something About Placeholder Text[^1]
 
 Web developers traditionally use lorem ipsum text as placeholder text. The lorem ipsum text is randomly scraped from a famous passage by Cicero of Ancient Rome.

@@ -1,11 +1,3 @@
----
-title: use-the-flex-shorthand-property
-date: 2021-05-01 10:19:14
-permalink: /pages/21c42e/
-categories:
-  - css
-tags:
----
 # Use The Flex Shorthand Property
 
 For example, `flex: 1 0 10px;` will set the item to `flex-grow: 1;`, `flex-shrink: 0;`, and `flex-basis: 10px;`.

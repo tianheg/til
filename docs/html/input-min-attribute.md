@@ -1,11 +1,3 @@
----
-title: input-min-attribute
-date: 2021-05-01 14:27:36
-permalink: /pages/084fc9/
-categories:
-  - html
-tags:
----
 # Input Min Attribute
 
 ```html

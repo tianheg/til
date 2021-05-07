@@ -1,11 +1,3 @@
----
-title: gitglossary
-date: 2021-05-01 10:19:14
-permalink: /pages/3e3cb9/
-categories:
-  - git
-tags:
----
 # Gitglossary
 
 [source](https://git-scm.com/docs/gitglossary)

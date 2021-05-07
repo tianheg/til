@@ -1,11 +1,3 @@
----
-title: use-hex-code-for-specific-colors
-date: 2021-05-01 10:19:14
-permalink: /pages/bf6150/
-categories:
-  - css
-tags:
----
 # Use Hex Code For Specific Colors
 
 hexadecimal code 十六进制代码

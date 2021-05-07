@@ -1,11 +1,3 @@
----
-title: divide-the-grid-into-an-area-template
-date: 2021-05-01 10:19:14
-permalink: /pages/0db7a2/
-categories:
-  - css
-tags:
----
 # Divide The Grid Into An Area Template
 
 [source](https://www.freecodecamp.org/learn/responsive-web-design/css-grid/divide-the-grid-into-an-area-template)

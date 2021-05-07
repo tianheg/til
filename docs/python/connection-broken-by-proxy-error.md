@@ -1,11 +1,3 @@
----
-title: connection-broken-by-proxy-error
-date: 2021-05-01 10:19:14
-permalink: /pages/b1c65c/
-categories:
-  - python
-tags:
----
 # Connection Broken By Proxy Error
 
 ```bash

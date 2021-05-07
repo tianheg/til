@@ -1,11 +1,3 @@
----
-title: add-different-padding-to-each-side-of-an-element
-date: 2021-05-01 10:19:14
-permalink: /pages/c3b007/
-categories:
-  - css
-tags:
----
 # Add Different Padding To Each Side Of An Element
 
 ```html

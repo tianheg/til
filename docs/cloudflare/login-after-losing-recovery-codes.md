@@ -1,11 +1,3 @@
----
-title: login-after-losing-recovery-codes
-date: 2021-05-01 10:19:14
-permalink: /pages/bd5630/
-categories:
-  - cloudflare
-tags:
----
 # Login After Losing Recovery Codes
 
 I enabled my 2FA with Cloudflare, and I don't know authenticator app codes or recovery codes. So I can't access my account.

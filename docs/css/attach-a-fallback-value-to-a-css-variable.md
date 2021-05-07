@@ -1,11 +1,3 @@
----
-title: attach-a-fallback-value-to-a-css-variable
-date: 2021-05-01 10:19:14
-permalink: /pages/5ac887/
-categories:
-  - css
-tags:
----
 # Attach A Fallback Value To A CSS Variable
 
 When using your variable as a CSS property value, you can attach a fallback value that your browser will revert to if the given variable is invalid.

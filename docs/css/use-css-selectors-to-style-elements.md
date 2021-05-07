@@ -1,11 +1,3 @@
----
-title: use-css-selectors-to-style-elements
-date: 2021-05-01 10:19:14
-permalink: /pages/da2e30/
-categories:
-  - css
-tags:
----
 # Use CSS Selectors To Style Elements
 
 ```html

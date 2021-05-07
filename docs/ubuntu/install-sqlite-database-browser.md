@@ -1,11 +1,3 @@
----
-title: install-sqlite-database-browser
-date: 2021-05-01 10:19:14
-permalink: /pages/a86201/
-categories:
-  - ubuntu
-tags:
----
 # Install SQLite Database Browser
 
 Install SQLite Database Browser ([sqliteborwser](apt:sqlitebrowser)).

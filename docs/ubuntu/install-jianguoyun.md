@@ -1,11 +1,3 @@
----
-title: install-jianguoyun
-date: 2021-05-01 10:19:14
-permalink: /pages/23348e/
-categories:
-  - ubuntu
-tags:
----
 # Install Jianguoyun
 
 ```bash

@@ -1,11 +1,3 @@
----
-title: checkbox
-date: 2021-05-01 15:19:49
-permalink: /pages/72d403/
-categories:
-  - html
-tags:
----
 # Checkbox
 
 ```html

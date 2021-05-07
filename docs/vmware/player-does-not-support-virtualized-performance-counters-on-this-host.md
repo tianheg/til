@@ -1,11 +1,3 @@
----
-title: player-does-not-support-virtualized-performance-counters-on-this-host
-date: 2021-05-01 10:19:14
-permalink: /pages/fbe168/
-categories:
-  - vmware
-tags:
----
 # Player Does Not Support Virtualized Performance Counters On This Host
 
 ```text

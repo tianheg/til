@@ -1,11 +1,3 @@
----
-title: move-a-relatively-positioned-element-with-css-offsets
-date: 2021-05-01 10:19:14
-permalink: /pages/a2983e/
-categories:
-  - visual-design
-tags:
----
 # Move A Relatively Positioned Element With CSS Offsets
 
 The CSS offsets of `top` or `bottom`, and `left` or `right` tell the browser how far to offset an item relative to where it would sit in the normal flow of the document.

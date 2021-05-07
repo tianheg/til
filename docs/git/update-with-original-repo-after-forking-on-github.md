@@ -1,11 +1,3 @@
----
-title: update-with-original-repo-after-forking-on-github
-date: 2021-05-01 10:19:14
-permalink: /pages/d75e48/
-categories:
-  - git
-tags:
----
 # Update With Original Repo After Forking on GitHub
 
 ## Way one

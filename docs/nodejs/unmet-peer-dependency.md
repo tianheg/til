@@ -1,11 +1,3 @@
----
-title: unmet-peer-dependency
-date: 2021-05-01 10:19:14
-permalink: /pages/4505ca/
-categories:
-  - nodejs
-tags:
----
 # Unmet Peer Dependency
 
 When I install packages, something always shows like these:

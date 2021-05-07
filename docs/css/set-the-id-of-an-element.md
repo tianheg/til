@@ -1,11 +1,3 @@
----
-title: set-the-id-of-an-element
-date: 2021-05-01 10:19:14
-permalink: /pages/de19d6/
-categories:
-  - css
-tags:
----
 # Set The Id Of An Element
 
 ```html

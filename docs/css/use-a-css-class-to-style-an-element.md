@@ -1,11 +1,3 @@
----
-title: use-a-css-class-to-style-an-element
-date: 2021-05-01 10:19:14
-permalink: /pages/c6468f/
-categories:
-  - css
-tags:
----
 # Use A CSS Class To Style An Element
 
 ```html

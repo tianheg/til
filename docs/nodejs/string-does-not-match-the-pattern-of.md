@@ -1,11 +1,3 @@
----
-title: string-does-not-match-the-pattern-of
-date: 2021-05-01 10:19:14
-permalink: /pages/a65a13/
-categories:
-  - nodejs
-tags:
----
 # String Does Not Match The Pattern Of
 
 ```log

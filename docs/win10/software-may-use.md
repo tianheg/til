@@ -1,11 +1,3 @@
----
-title: software-may-use
-date: 2021-05-01 10:19:14
-permalink: /pages/c550ec/
-categories:
-  - win10
-tags:
----
 # Software May Use
 
 - Dism++ <https://www.chuyu.me/zh-Hans/>

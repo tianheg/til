@@ -1,11 +1,3 @@
----
-title: decrease-the-opacity-of-an-element
-date: 2021-05-01 10:19:14
-permalink: /pages/0a9322/
-categories:
-  - visual-design
-tags:
----
 # Decrease The Opacity Of An Element
 
 ```css

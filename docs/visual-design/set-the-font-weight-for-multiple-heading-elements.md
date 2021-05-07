@@ -1,11 +1,3 @@
----
-title: set-the-font-weight-for-multiple-heading-elements
-date: 2021-05-01 10:19:14
-permalink: /pages/3f607b/
-categories:
-  - visual-design
-tags:
----
 # Set The Font-weight For Multiple Heading Elements
 
 ```html

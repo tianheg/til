@@ -1,11 +1,3 @@
----
-title: change-the-font-size-of-an-element
-date: 2021-05-01 10:19:14
-permalink: /pages/aabbb0/
-categories:
-  - css
-tags:
----
 # Change The Font Size Of An Element
 
 ```css

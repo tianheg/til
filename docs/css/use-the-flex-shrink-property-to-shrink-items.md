@@ -1,11 +1,3 @@
----
-title: use-the-flex-shrink-property-to-shrink-items
-date: 2021-05-01 10:19:14
-permalink: /pages/f68d44/
-categories:
-  - css
-tags:
----
 # Use The Flex-shrink Property To Shrink Items
 
 ```html

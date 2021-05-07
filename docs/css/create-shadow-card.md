@@ -1,11 +1,3 @@
----
-title: create-shadow-card
-date: 2021-05-01 10:19:14
-permalink: /pages/8752b1/
-categories:
-  - css
-tags:
----
 # Create Shadow Card
 
 **HTML**:

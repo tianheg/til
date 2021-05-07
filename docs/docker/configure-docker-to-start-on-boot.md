@@ -1,11 +1,3 @@
----
-title: configure-docker-to-start-on-boot
-date: 2021-05-01 10:19:14
-permalink: /pages/b6baa3/
-categories:
-  - docker
-tags:
----
 # Configure Docker To Start On Boot
 
 [source](https://docs.docker.com/engine/install/linux-postinstall/#configure-docker-to-start-on-boot)
