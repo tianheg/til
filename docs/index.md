@@ -64,7 +64,6 @@ _406 TILs and counting..._
 - [Docker(8)](#docker8)
 - [Emacs(1)](#emacs1)
 - [Emmet(1)](#emmet1)
-- [Firefox(1)](#firefox1)
 - [Gatsby(2)](#gatsby2)
 - [Git(26)](#git26)
 - [GitHub(12)](#github12)
@@ -454,15 +453,3 @@ _406 TILs and counting..._
 ### Zsh(1)
 
 - [Add Alias To Zshrc](zsh/add-alias-to-zshrc.md)
-
----
-
-**References**:
-
-- [jbranchaud/til](https://github.com/jbranchaud/til)
-- [daryllxd/til](https://github.com/daryllxd/til)
-- [daryllxd/lifelong-learning](https://github.com/daryllxd/lifelong-learning)
-- [jwworth/til](https://github.com/jwworth/til)
-- [TODAY I LEARNED](https://til.hashrocket.com)
-- [simonw/til](https://github.com/simonw/til)
-- [thoughtbot/til](https://github.com/thoughtbot/til)

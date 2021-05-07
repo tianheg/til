@@ -30,23 +30,23 @@ module.exports = {
           title: "Front-end",
           collapsable: false,
           children: [
-            ["/html/what-is-html-and-html5", "What Is HTML And HTML5?"],
-            ["/html/use-hx-tag-write-helloworld", "Use Hx Tag Write Helloworld"],
-            ["/html/use-p-tag-add-paragraph", "Clothes 👚"],
-            ["/basics/sleep", "Sleep 😴"]
+            ["/html/", "HTML"],
+            ["/css/", "CSS"],
+            ["/javascript/", "JavaScript"]
           ]
         },
         {
-          title: "Extras",
+          title: "Back-end",
           collapsable: false,
           children: [
-            ["/extras/energy", "Energy ⚡️"],
-            ["/extras/goods", "Goods 🔧"],
-            ["/extras/books", "Books 📚"],
-            ["/extras/hygiene", "Hygiene 🚿"],
-            ["/extras/activities", "Activities 🎨"],
-            ["/extras/transport", "Transport 🚆"],
-            ["/extras/internet", "Internet 📶"]
+            ["/go/install-go-on-ubuntu", "Go"]
+          ]
+        },
+        {
+          title: "Others",
+          collapsable: false,
+          children: [
+            ["/docker/add-registry-mirrors-for-ubuntu", "Add Registry Mirrors For Ubuntu"]
           ]
         }
       ]
