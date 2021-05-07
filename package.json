@@ -21,16 +21,9 @@
         "lint-md-cli": "^0.1.2",
         "lint-staged": "^10.4.0",
         "prettier": "^2.1.2",
-        "dayjs": "^1.9.7",
-        "inquirer": "^7.1.0",
-        "json2yaml": "^1.1.0",
-        "yamljs": "^0.3.0",
         "vuepress": "^1.8.2",
-        "vuepress-theme-vdoing": "^1.8.3",
-        "vuepress-plugin-demo-block": "^0.7.2",
-        "vuepress-plugin-one-click-copy": "^1.0.2",
-        "vuepress-plugin-thirdparty-search": "^1.0.2",
-        "vuepress-plugin-zooming": "^1.1.7"
+        "vuepress-plugin-clean-urls": "^1.1.2",
+        "vuepress-theme-book": "^0.0.5"
     },
     "prettier": {
         "singleQuote": true,
@@ -44,8 +37,5 @@
         "hooks": {
             "pre-commit": "yarn test"
         }
-    },
-    "dependencies": {
-        "vuepress-plugin-comment": "^0.7.3"
     }
 }
