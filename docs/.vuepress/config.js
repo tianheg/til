@@ -13,10 +13,9 @@ module.exports = {
     editLinkText: "Edit this page on Github",
     nav: require('./nav/nav'),
     sidebar: {
-      '/api/': getApiSidebar(),
-      '/guide/': getGuideSidebar('Guide', 'Advanced'),
-      '/plugin/': getPluginSidebar('Plugin', 'Introduction', 'Official Plugins'),
-      '/theme/': getThemeSidebar('Theme', 'Introduction')
+      '/front-end/': getFrontendSidebar(),
+      '/back-end/': getBackendSidebar('Guide', 'Advanced'),
+      '/others/': getOthersSidebar('Plugin', 'Introduction', 'Official Plugins')
     }
   },
   plugins: [
@@ -27,6 +26,9 @@ module.exports = {
       }
     ]
   ],
+  extraWatchFiles: [
+    '.vuepress/nav/nav.js'
+  ],
   configureWebpack: {
     resolve: {
       alias: {
@@ -34,4 +36,22 @@ module.exports = {
       }
     }
   }
+}
+
+function getFrontendSidebar() {
+  return[
+    ''
+  ]
+}
+
+function getBackendSidebar() {
+  return [
+    ''
+  ]
+}
+
+function getOthersSidebar() {
+  return [
+    ''
+  ]
 }
