@@ -157,3 +157,86 @@ var quotient = 4.4 / 2.0;
 ```js
 var remainder = 11 % 3;
 ```
+
+## 用括号在字符串中寻找字符
+
+大多数现代编程语言从 0 开始计数。
+
+```js
+var firstName = "Tianhe Gao";
+var firstLetter = firstName[0];
+// ouput: T
+
+// 找第 n 个字符
+var firstName = "Ada";
+var secondLetterOfFirstName = firstname[1];
+// output: d
+
+// 找最后一个字符
+var firstName = "Ada";
+var lastLetter = firstName[firstName.length - 1];
+
+// 找倒数第 n 个
+var firstName = "Charles";
+var thirdToLastLetter = firstName[firstName.length - 3];
+```
+
+## 理解的字符串的不变性
+
+JavaScript 中，字符串的值一经创建无法修改。除非重新赋值。
+
+```js
+var myStr = "Amy";
+myStr = "Tom";
+```
+
+## 填字游戏
+
+```js
+var myNoun = "dog";
+var myAdjective = "big";
+var myVerb = "ran";
+var myAdverb = "quickly";
+
+var wordBlanks = myAdjective + " " + myNoun + " " + myVerb + " " + myAdverb + ".";
+```
+
+## 变量存储多值
+
+```js
+var sandwich = ["A", "B", "C", 12];
+```
+
+## 数组嵌套
+
+```js
+var myArray = [["Amy", 21], ["Tom", 23]];
+```
+
+## 使用索引访问数组数据
+
+```js
+var myArray = [50,60,70];
+var myData = myArray[0];
+
+// 使用索引修改数组数据
+var myArray = [18,64,99];
+myArray[0] = 45;
+
+// 使用索引访问多维数组
+var myArray = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13, 14]];
+var myData = myArray[2][1];
+```
+
+## 使用 `push()` 操作数组
+
+`push()` 能够很轻松地在数组的最后附加数据。
+
+```js
+var myArray = [["John", 23], ["cat", 2]];
+myArray.push(["dog", 3]);
+```
+
+## 使用 `pop()` 操作数组
+
+`pop()` 从数组的最后移除元素
