@@ -17,6 +17,8 @@
         "url": "https://github.com/tianheg/til/issues"
     },
     "devDependencies": {
+        "@vuepress/plugin-back-to-top": "^1.8.2",
+        "@vuepress/plugin-medium-zoom": "^1.8.2",
         "husky": "^5.1.1",
         "lint-md-cli": "^0.1.2",
         "lint-staged": "^10.4.0",

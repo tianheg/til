@@ -3,15 +3,16 @@ const path = require("path")
 module.exports = {
   title: "TIL",
   description: "Today I Learned",
-  theme: "vuepress-theme-book",
+  theme: "book",
   themeConfig: {
+    repo: "tianheg/til",
     searchPlaceholder: "Search...",
-    lastUpdated: "Last Updated",
-    docsRepo: "tianheg/til",
     docsDir: "docs",
+    docsBranch: 'main',
     editLinks: true,
     editLinkText: "Edit this page on Github",
     nav: require('./nav/nav'),
+    smoothScroll: true,
     sidebar: {
       '/front-end/': getFrontendSidebar(),
       '/back-end/': getBackendSidebar('Guide', 'Advanced'),
@@ -24,34 +25,37 @@ module.exports = {
       {
         normalSuffix: "/"
       }
-    ]
+    ],
+    '@vuepress/back-to-top',
+    '@vuepress/medium-zoom'
   ],
   extraWatchFiles: [
     '.vuepress/nav/nav.js'
   ],
-  configureWebpack: {
-    resolve: {
-      alias: {
-        "@assets": path.resolve(__dirname, "../assets")
-      }
-    }
+  markdown: {
+    lineNumbers: true
   }
 }
 
 function getFrontendSidebar() {
-  return[
-    ''
+  return [
+    '',
+    'html',
+    'css',
+    'javascript'
   ]
 }
 
 function getBackendSidebar() {
   return [
-    ''
+    '',
+    'ubuntu'
   ]
 }
 
 function getOthersSidebar() {
   return [
-    ''
+    '',
+    'resilio-sync'
   ]
 }
