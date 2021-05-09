@@ -228,7 +228,7 @@ var myArray = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13, 14]];
 var myData = myArray[2][1];
 ```
 
-## 使用 `push()` 操作数组
+## 使用 `push()` 在数组最后添加数据
 
 `push()` 能够很轻松地在数组的最后附加数据。
 
@@ -237,6 +237,138 @@ var myArray = [["John", 23], ["cat", 2]];
 myArray.push(["dog", 3]);
 ```
 
+## 使用 `unshift()` 在数组开头添加数据
+
+`unshift()` 从数组的开头添加元素
+
+```js
+var ourArray = ["A", "B", "C"];
+ourArray.shift();
+ourArray.unshift("D");
+```
+
 ## 使用 `pop()` 操作数组
 
 `pop()` 从数组的最后移除元素
+
+```js
+var threeArr = [1, 4, 6];
+var oneDown = threeArr.pop();
+console.log(oneDown);
+console.log(threeArr);
+```
+
+## 使用 `shift()` 操作数组
+
+`shift()` 从数组的开头移除元素
+
+```js
+var ourArray = ["A", "B", "C"];
+var removeFromOurArray = ourArray.shift();
+```
+
+## 创建 `List`
+
+`List` 是包含几个子数组的多维数组。作为购物清单的话，多维数组的子数组的第一个元素是包含购买物品的名字的字符串，第二个元素应该是表示数量的数字：`["Chocolate", 12]`。
+
+```js
+var myList = [["A", 12], ["B", 13], ["C", 14],["D", 15], ["E", 16]];
+```
+
+## 使用函数编写可复用的 JavaScript
+
+```js
+function functionName() {
+    console.log("Hello World");
+}
+functionName();
+```
+
+你可以通过类似 `functionName()` 的形式调用该函数。这个函数每调用一次都会在开发控制台打印输出信息：`Hello World`。每次调用函数时，大括号内的所有代码都会执行一次。
+
+## 使用参数将值传递给函数
+
+参数是用作变量的占位符，这些变量将在调用函数时输入到函数中。
+
+```js
+function functionWithArgs(a, b) {
+  console.log(a + b);
+}
+functionWithArgs(12, 13);
+```
+
+## 全局作用域和函数
+
+JavaScript中，范围是指变量的可见性。在功能块之外定义的变量具有全局作用域。这意味着它们可以被用于 JavaScript 代码的任何地方。变量创建的作用域为全局，当不使用 `var` 声明时。这样做时会使你代码的其他地方产生意想不到的结果，或者当你再次使用函数时。你应该总是使用 `var` 声明变量。
+
+```js
+// Declare the myGlobal variable below this line
+var myGlobal = 10;
+
+function fun1() {
+  // Assign 5 to oopsGlobal Here
+    oopsGlobal = 5;
+}
+
+// Only change code above this line
+
+function fun2() {
+  var output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output);
+}
+```
+
+## 局部作用域和函数
+
+在函数中声明的变量以及函数参数具有局部作用域。这意味着他们只在该函数中可见。
+
+```js
+function myLocalScope() {
+
+  // Only change code below this line
+  var myVar;
+  console.log('inside myLocalScope', myVar);
+}
+myLocalScope();
+
+// Run and check the console
+// myVar is not defined outside of myLocalScope
+console.log('outside myLocalScope', myVar);
+```
+
+## 函数中的全局和局部变量
+
+有可能局部变量和全局变量的名字相同。当出现这种情况时，局部变量的优先级高于全局变量。
+
+```js
+var someVar = "Hat";
+function myFun() {
+    var someVar = "Head";
+    return someVar;
+}
+```
+
+## 使用 `return` 将值发回函数
+
+```js
+function plusThree(num) {
+    return num + 3;
+}
+var answer = plusThree(5);
+```
+
+## `undefined` 值
+
+```js
+var sum = 0;
+function addSum(num) {
+    sum = sum + sum;
+}
+addSum(3);
+```
