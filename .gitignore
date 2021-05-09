@@ -10,3 +10,6 @@ package-lock.json
 
 # vuepress
 docs/.vuepress/dist
+
+# history
+.history
