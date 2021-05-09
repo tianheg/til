@@ -42,7 +42,8 @@ function getFrontendSidebar() {
     '',
     'html',
     'css',
-    'javascript'
+    'javascript',
+    'vscode'
   ]
 }
 
