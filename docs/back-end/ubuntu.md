@@ -78,6 +78,8 @@ To view a preview full\-screen, press <kbd>F</kbd> or <kbd>F11</kbd>. Press <kbd
 
 ## Install Software
 
+used software: nomacs, Flameshot, kphotoalbum, Krita, xournal
+
 ### Curl
 
 ```bash
