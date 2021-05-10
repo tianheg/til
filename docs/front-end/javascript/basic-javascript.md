@@ -372,3 +372,350 @@ function addSum(num) {
 }
 addSum(3);
 ```
+
+## 赋返回值
+
+```js
+var processed = 0;
+function processArg(num) {
+  return (num + 3) / 5;
+}
+processed = processArg(7);
+```
+
+## 排队等候
+
+在计算机科学中，队列是一种抽象的数据结构，它的对象按照一定顺序排列。遵从“先进先出，后进后出”的规则。
+
+***着重理解，这段代码***
+
+```js
+function nextInLine(arr, item) {
+  arr.push(item);
+  return arr.shift();
+}
+
+// or
+// function nextInLine(arr, item) {
+//   arr.push(item);
+//   var removed = arr.shift();
+//   return removed;
+// }
+```
+
+## 布尔型
+
+它是一种数据类型。只有两个值：`True` 和 `False`，且互相排斥。注意：布尔型书写时没有引号，带引号的字符串：`"true"``"false"`，不是布尔型，在 JavaScript 中没有特殊意义。
+
+函数返回布尔型：
+
+```js
+function isLess(a, b) {
+  return a < b;
+}
+```
+
+## 用 `if` 表达条件逻辑
+
+```js
+if(true / false) {
+  statement is executed
+}
+```
+
+只有当 if 后括号中的值为 true 时，大括号内的代码才执行。if 与括号之间可以有空格，但为了规范，不写空格。
+
+```js
+function trueOrFalse(wasThatTrue) {
+  if(wasThatTrue) {
+    return "Yes, that was true";
+  }
+  return "No, that was false";
+}
+```
+
+## `else`, `else if`
+
+```js
+// else
+if(num > 10) {
+  return "Bigger than 10";
+} else {
+  return "10 or less";
+}
+// else if
+if(num > 15) {
+  return "Bigger than 15";
+} else if(num < 5) {
+  return "Smaller than 5";
+} else {
+  return "Between 5 and 15";
+}
+```
+
+`if`, `else if` 中的逻辑顺序很重要。以下示例：
+
+```js
+// A
+function foo(x) {
+  if (x < 1) {
+    return "Less than one";
+  } else if (x < 2) {
+    return "Less than two";
+  } else {
+    return "Greater than or equal to two";
+  }
+}
+foo(0) // output: Less than one
+// B
+function bar(x) {
+  if (x < 2) {
+    return "Less than two";
+  } else if (x < 1) {
+    return "Less than one";
+  } else {
+    return "Greater than or equal to two";
+  }
+}
+bar(0) // output: Less than two
+```
+
+`if` 和 `else if` 配合使用：
+
+```js
+function testSize(num) {
+  if (num < 5) {
+    return "Tiny";
+  } else if (num < 10) {
+    return "Small";
+  } else if (num < 15) {
+    return "Medium";
+  } else if (num < 20) {
+    return "Large";
+  } else if (num >= 20) {
+    return "Huge";
+  } else {
+    return "Change me";
+  }
+}
+testSize(7);
+```
+
+## `switch`
+
+在这个例子中，没有理解 `case` 后的值采用 `===`（严格等于）的真正含义。
+
+```js
+function caseInSwitch(val) {
+  var answer = "";
+  switch(val) {
+    case 1:
+      return "alpha";
+      break;
+    case 2:
+      return "beta";
+      break;
+    case 3:
+      return "gamma";
+      break;
+    case 4:
+      return "delta";
+  }
+  return answer;
+}
+caseInSwitch(3);
+```
+
+如果 `switch` 语句的 `case` 中省略了 `break` 语句，则执行下面的 `case` 语句，直到遇到 `break`。如果你有多个带有相同输出的输入，你可以像下面这样表示：
+
+```js
+var result = "";
+switch(val) {
+  case 1:
+  case 2:
+  case 3:
+    result = "1, 2, or 3";
+    break;
+  case 4:
+    result = "4 alone";
+}
+```
+
+`switch` 语句与 `if / if else` 可以互相替换，前者相较于后者更容易编写。
+
+**一个应用的小例子（Card Counting）**：
+
+没找到解题思路
+
+```js
+var count = 0;
+function cc(card) {
+  switch(card) {
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+      count++;
+      break;
+    case 10:
+    case 'J':
+    case 'Q':
+    case 'K':
+    case 'A':
+      count--;
+      break;
+  }
+  if (count > 0) {
+    return count + " Bet";
+  } else {
+    return count + " Hold";
+  }
+}
+```
+
+## 比较运算符
+
+JavaScript 中有很多比较运算符，它们的运算结果是布尔型，即只返回：`True` 和 `False`。
+
+**强制类型转换（ Type Coercion）**
+
+### `==`
+
+```js
+function testEqual(val) {
+  if(val == 12) {
+    return "Equal";
+  }
+  return "Not Equal";
+}
+testEqual(10);
+```
+
+## `===`
+
+Strict equality (`===`) is the counterpart to the equality operator (`==`). 严格相等运算符不支持类型转换，如果比较两个数据类型不同的值，返回值为：`false`。亦即，严格相等运算符在运算时比较两项：数据类型、大小，有一个不同即返回：`False`。
+
+```js
+function tesstStrict(val) {
+  if(val === 7) {
+    return "Equal";
+  }
+  return "Not Equal";
+}
+testStrict(10);
+```
+
+### `!=`
+
+```js
+function testNotEqual(val) {
+  if(val != 99) {
+    return "Not Equal";
+  }
+  return "Equal";
+}
+testNotequal(10);
+```
+
+### `!==`
+
+```js
+function testStrictNotEqual(val) {
+  if(val !== 17)  {
+    return "NotEqual";
+  }
+  return "Equal";
+}
+testStrictNotEqual(10);
+```
+
+### `>`, `<`, `>=`, `<=`
+
+```js
+console.log(1 > 2);
+console.log(2 < 3);
+console.log(2 <= 3);
+console.log(1 >= 2);
+```
+
+### `&&`, `||`
+
+```js
+// &&
+function testLogicalAnd(val) {
+  if(val <= 50 && val >= 25) {
+    return "Yes";
+  }
+  return "No";
+}
+testLogicalAnd(10);
+// ||
+function testLogicalOr(val) {
+  if(val < 10 || val > 20) {
+    return "Outside";
+  }
+  return "Inside";
+}
+testLogicalor(15);
+```
+
+## `return`
+
+返回函数的早期模式：函数中遇到 `return`，当函数运行到 `return` 时，返回 `return` 后面的值，该函数停止执行以后的陈述：
+
+```js
+function myFunc() {
+  console.log("Hello");
+  return "World";
+  console.log("byebye")
+}
+myFunc();
+// Output: Hello\n"World"
+```
+
+## 构建对象
+
+对象和数组很像，只不过对象不使用索引存取和修改数据，而是通过属性。对象对于以结构化方式存储数据很有用。如果您的对象具有任何非字符串属性，则JavaScript会自动将它们作为字符串进行类型转换。
+
+```js
+var myDog = {
+  name: "Xiaoming",
+  legs: 4,
+  tails: 1
+}
+```
+
+### 访问对象属性
+
+**`.`**
+
+当你知道属性名，并且想提前获取时，可以使用 `.`。
+
+```js
+var testObj = {
+  "hat": "ballcap",
+  "shirt": "jersey",
+  "shoes": "cleats"
+};
+var hatValue = testObj.hat;
+var shirtValue = testObj.shirt;
+```
+
+**`[]`**
+
+```js
+var testObj = {
+  "hat": "ballcap",
+  "shirt": "jersey",
+  "shoes": "cleats"
+};
+testObj["hat"];
+testObj["shirt"];
+```
+
+## 功能
+
+### `typeof`
+
+输出数据类型。
