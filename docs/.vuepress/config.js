@@ -21,11 +21,7 @@ module.exports = {
                 'Tools'
             ),
             '/back-end/': getBackendSidebar('Ubuntu'),
-            '/others/': getOthersSidebar(
-                'Plugin',
-                'Introduction',
-                'Official Plugins'
-            ),
+            '/others/': getOthersSidebar('Git'),
         },
     },
     plugins: [
@@ -80,12 +76,20 @@ function getBackendSidebar(groupA) {
                 'ubuntu/intro',
                 'ubuntu/install-software',
                 'ubuntu/i-want-to',
-                'ubuntu/problems'
+                'ubuntu/problems',
             ],
         },
     ];
 }
 
-function getOthersSidebar() {
-    return ['', 'resilio-sync'];
+function getOthersSidebar(groupA) {
+    return [
+        '',
+        {
+            title: groupA,
+            collapsable: false,
+            children: ['what-is-git','git/basic-usage'],
+        },
+        'resilio-sync',
+    ];
 }
