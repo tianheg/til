@@ -14,7 +14,7 @@ module.exports = {
     nav: require('./nav/nav'),
     smoothScroll: true,
     sidebar: {
-      '/front-end/': getFrontendSidebar(),
+      '/front-end/': getFrontendSidebar('HTML', 'CSS', 'JavaScript', 'Tools'),
       '/back-end/': getBackendSidebar('Guide', 'Advanced'),
       '/others/': getOthersSidebar('Plugin', 'Introduction', 'Official Plugins')
     }
@@ -37,13 +37,37 @@ module.exports = {
   }
 }
 
-function getFrontendSidebar() {
+function getFrontendSidebar(groupA, groupB, groupC, groupD) {
   return [
     '',
-    'html',
-    'css',
-    'javascript',
-    'vscode'
+    {
+      title: groupA,
+      collapsable: false,
+      children: [
+        'html/basic-html'
+      ]
+    },
+    {
+      title: groupB,
+      collapsable: false,
+      children: [
+        'css/basic-css'
+      ]
+    },
+    {
+      title: groupC,
+      collapsable: false,
+      children: [
+        'javascript/basic-javascript'
+      ]
+    },
+    {
+      title: groupD,
+      collapsable: false,
+      children: [
+        'tools/vscode'
+      ]
+    }
   ]
 }
 

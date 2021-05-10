@@ -1,4 +1,4 @@
-# Vs Code
+# VS Code
 
 ## 常用快捷键
 
