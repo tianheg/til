@@ -1013,3 +1013,33 @@ wifi.scan-rand-mac-address=no
 **References**:
 
 1. <https://www.answertopia.com/ubuntu/ubuntu-network-management/>
+
+## fcitx
+
+It is a input method.
+
+```sh
+# Install fcitx input method system
+$ sudo apt install fcitx-bin
+# Install Google Pinyin Chinese input method
+$ sudo apt install fcitx-googlepinyin
+```
+
+Change the input method system from `IBus` to `fcitx` in `Region & Language`. Click `Manage Installed Languages`. Click `Install/Remove Languages` to install `Chinese Simplified` and/or `Chinese Traditional` if necessary. Remove all the input sources except `English (US)` under the `Input Sources` in `Region & Language`. Otherwise, there will be two input icons on your system. Reboot the computer and we would see a new input icon at the top right corner of our desktop. We then add Google Pinyin to the `fcitx` method. We start the `fcitx-configtool`by running the following command in the terminal. Click `+` to add input methods. Uncheck `Only Show Current Language`, select `Google Pinyin`, and press `OK`. Now you can start to use `Google Pinyin` by toggling using `Ctrl` + `Space` by default.
+
+The default `fcitx` icon at idle is ugly. We would like to make it look better. We run the following commands in the terminal.
+
+```sh
+# Remove classic UI
+sudo apt remove fcitx-ui-classic
+# Install new UI
+sudo apt install fcitx-ui-qimpanel
+```
+
+Reboot the computer and we would see a new penguin input icon at the top right corner of our desktop. It will turn to a keyboard icon whenever the cursor is placed somewhere allows inputs.
+
+---
+
+**References**:
+
+1. <https://leimao.github.io/blog/Ubuntu-Gaming-Chinese-Input/>
