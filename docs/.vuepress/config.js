@@ -88,7 +88,7 @@ function getOthersSidebar(groupA) {
         {
             title: groupA,
             collapsable: false,
-            children: ['what-is-git','git/basic-usage'],
+            children: ['git/what-is-git','git/basic-usage'],
         },
         'resilio-sync',
     ];
