@@ -2,24 +2,19 @@ const path = require('path');
 
 module.exports = {
     title: 'TIL',
-    description: 'Today I Learned',
+    description: '今天我学习了',
     theme: 'book',
     themeConfig: {
         repo: 'tianheg/til',
-        searchPlaceholder: 'Search...',
+        searchPlaceholder: '搜索……',
         docsDir: 'docs',
         docsBranch: 'main',
         editLinks: true,
-        editLinkText: 'Edit this page on Github',
+        editLinkText: '在 Github 上编辑',
         nav: require('./nav/nav'),
         smoothScroll: true,
         sidebar: {
-            '/fe/': getFeSidebar(
-                'HTML',
-                'CSS',
-                'JavaScript',
-                'Tools'
-            ),
+            '/fe/': getFeSidebar('HTML', 'CSS', 'JavaScript', 'Tools'),
             '/server/': getServerSidebar('Ubuntu'),
             '/others/': getOthersSidebar('Git'),
         },
@@ -56,7 +51,7 @@ function getFeSidebar(groupA, groupB, groupC, groupD) {
         {
             title: groupC,
             collapsable: false,
-            children: ['javascript/basic-javascript'],
+            children: ['javascript/','javascript/basic-javascript'],
         },
         {
             title: groupD,
@@ -69,6 +64,7 @@ function getFeSidebar(groupA, groupB, groupC, groupD) {
 function getServerSidebar(groupA) {
     return [
         '',
+        'linux',
         {
             title: groupA,
             collapsable: false,

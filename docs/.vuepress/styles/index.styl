@@ -1,1 +1,44 @@
 // Override style
+// SEARCH BOX
+
+.navbar
+  box-shadow: 0 3px 8px 0 rgba(116, 129, 141, 0.1)
+  .links
+    flex-direction: row
+
+    .search-box
+      font-size: 1rem
+      border-radius: 3px
+      margin: 0 0 0 1rem
+
+      input
+        font: inherit
+        font-size: 0.9rem
+        border: none
+        margin: 0
+        text-align: left
+        border-radius: 3px
+        padding-left: 2rem
+
+      .suggestions
+        border-radius: 0
+        border-color: $lightDelimiterColor
+        top: 2.25rem
+
+      @media (min-width: $MQNarrow)
+        &:before
+          top: 50%
+          left: 0
+          height: $navbarHeight
+          content: ""
+          position: absolute
+          transform: translateY(-50%)
+          border-left: 1px solid $lightDelimiterColor
+
+        input
+          height: 100%
+          background-size: 0.9rem
+          background-position-y: 50%
+
+    #search-form
+      line-height: inherit
