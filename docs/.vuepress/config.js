@@ -1,6 +1,6 @@
 const path = require('path');
 
-module.exports = {
+module.exports = (ctx) => ({
     title: 'TIL',
     description: '今天我学习了',
     theme: 'book',
@@ -32,7 +32,8 @@ module.exports = {
     markdown: {
         lineNumbers: true,
     },
-};
+    extraWatchFiles: ['.vuepress/nav.js'],
+});
 
 function getFeSidebar(groupA, groupB, groupC, groupD) {
     return [
