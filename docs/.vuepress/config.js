@@ -40,18 +40,21 @@ function getFeSidebar(groupA, groupB, groupC, groupD) {
         '',
         {
             title: groupA,
+            path: '/html/',
             collapsable: false,
-            children: ['html/basic-html'],
+            children: ['basic-html'],
         },
         {
             title: groupB,
+            path: '/css/',
             collapsable: false,
-            children: ['css/basic-css'],
+            children: ['basic-css'],
         },
         {
             title: groupC,
+            path: '/javascript/',
             collapsable: false,
-            children: ['javascript','javascript/basic-javascript'],
+            children: ['', 'basic-javascript'],
         },
         {
             title: groupD,
@@ -84,7 +87,7 @@ function getOthersSidebar(groupA) {
         {
             title: groupA,
             collapsable: false,
-            children: ['git/','git/basic-usage'],
+            children: ['git/', 'git/basic-usage'],
         },
         'resilio-sync',
     ];
