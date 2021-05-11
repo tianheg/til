@@ -14,13 +14,13 @@ module.exports = {
         nav: require('./nav/nav'),
         smoothScroll: true,
         sidebar: {
-            '/front-end/': getFrontendSidebar(
+            '/fe/': getFrontendSidebar(
                 'HTML',
                 'CSS',
                 'JavaScript',
                 'Tools'
             ),
-            '/back-end/': getBackendSidebar('Ubuntu'),
+            '/server/': getBackendSidebar('Ubuntu'),
             '/others/': getOthersSidebar('Git'),
         },
     },

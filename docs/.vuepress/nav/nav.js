@@ -1,5 +1,5 @@
 module.exports = [
-    { text: "Front-end", link: "/front-end/" },
-    { text: "Back-end", link: "/back-end/" },
-    { text: "Others", link: "/others/" }
+    { text: "前端", link: "/fe/" },
+    { text: "后端", link: "/server/" },
+    { text: "其他", link: "/others/" }
 ]

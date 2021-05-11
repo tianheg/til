@@ -1,4 +1,4 @@
-# Others
+# 其他
 
 ## Algolia
 
