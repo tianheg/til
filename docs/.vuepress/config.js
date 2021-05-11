@@ -14,13 +14,13 @@ module.exports = {
         nav: require('./nav/nav'),
         smoothScroll: true,
         sidebar: {
-            '/fe/': getFrontendSidebar(
+            '/fe/': getFeSidebar(
                 'HTML',
                 'CSS',
                 'JavaScript',
                 'Tools'
             ),
-            '/server/': getBackendSidebar('Ubuntu'),
+            '/server/': getServerSidebar('Ubuntu'),
             '/others/': getOthersSidebar('Git'),
         },
     },
@@ -40,7 +40,7 @@ module.exports = {
     },
 };
 
-function getFrontendSidebar(groupA, groupB, groupC, groupD) {
+function getFeSidebar(groupA, groupB, groupC, groupD) {
     return [
         '',
         {
@@ -66,7 +66,7 @@ function getFrontendSidebar(groupA, groupB, groupC, groupD) {
     ];
 }
 
-function getBackendSidebar(groupA) {
+function getServerSidebar(groupA) {
     return [
         '',
         {
