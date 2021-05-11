@@ -19,24 +19,24 @@ module.exports = (ctx) => ({
                 {
                     title: 'HTML',
                     collapsable: false,
-                    children: [['/html/basic-html', 'Basic HTML']],
+                    children: ['/html/basic-html'],
                 },
                 {
                     title: 'CSS',
                     collapsable: false,
-                    children: [['/css/basic-css', 'Basic CSS']],
+                    children: ['/css/basic-css'],
                 },
                 {
                     title: 'JavaScript',
                     collapsable: false,
                     children: [
-                        ['/javascript/basic-javascript', 'Basic JavaScript'],
+                        '/javascript/basic-javascript',
                     ],
                 },
                 {
                     title: 'Tools',
                     collapsable: false,
-                    children: [['/tools/vscode', 'VS Code']],
+                    children: ['/tools/vscode'],
                 },
             ],
             '/server/': [
@@ -65,12 +65,6 @@ module.exports = (ctx) => ({
         },
     },
     plugins: [
-        [
-            'vuepress-plugin-clean-urls',
-            {
-                normalSuffix: '/',
-            },
-        ],
         '@vuepress/back-to-top',
         '@vuepress/medium-zoom',
     ],
