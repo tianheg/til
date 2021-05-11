@@ -51,7 +51,7 @@ function getFeSidebar(groupA, groupB, groupC, groupD) {
         {
             title: groupC,
             collapsable: false,
-            children: [['/fe/javascript/basic-javascript/','Basic JavaScript']],
+            children: [['/javascript/basic-javascript','Basic JavaScript']],
         },
         {
             title: groupD,
