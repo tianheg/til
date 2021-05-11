@@ -14,44 +14,23 @@ module.exports = (ctx) => ({
         nav: require('./nav'),
         smoothScroll: true,
         lastUpdated: '上次更新',
-        sidebarDepth: 2,
-        sidebar: [
-            {
-                title: 'HTML',
-                collapsable: false,
-                children: ['/fe/html/basic-html'],
-            },
-            {
-                title: 'CSS',
-                collapsable: false,
-                children: ['/fe/css/basic-css'],
-            },
-            {
-                title: 'JavaScript',
-                collapsable: false,
-                children: ['/fe/javascript/basic-javascript'],
-            },
-            {
-                title: 'Tools',
-                collapsable: false,
-                children: ['/fe/tools/vscode'],
-            },
-            {
-                title: 'Ubuntu',
-                collapsable: false,
-                children: [
-                    '/ubuntu/intro',
-                    '/ubuntu/install-software',
-                    '/ubuntu/i-want-to',
-                    '/ubuntu/problems',
-                ],
-            },
-            {
-                title: 'Git',
-                collapsable: false,
-                children: ['/git/', '/git/basic-usage'],
-            },
-        ],
+        sidebar: {
+            '/fe/': [
+                '',
+                'html/basic-html',
+                'css/basic-css',
+                'javascript/basic-javascript',
+            ],
+            '/server/': [
+                '',
+                'linux',
+                '/ubuntu/intro',
+                '/ubuntu/install-software',
+                '/ubuntu/i-want-to',
+                '/ubuntu/problems',
+            ],
+            '/others/': ['', '/git/', '/git/basic-usage', 'resilio-sync'],
+        },
     },
     plugins: [
         '@vuepress/back-to-top',
