@@ -29,7 +29,6 @@ module.exports = {
         '@vuepress/back-to-top',
         '@vuepress/medium-zoom',
     ],
-    extraWatchFiles: ['.vuepress/nav/nav.js'],
     markdown: {
         lineNumbers: true,
     },
@@ -40,27 +39,23 @@ function getFeSidebar(groupA, groupB, groupC, groupD) {
         '',
         {
             title: groupA,
-            path: '/fe/html/',
             collapsable: false,
-            children: ['basic-html'],
+            children: ['/fe/html/basic-html'],
         },
         {
             title: groupB,
-            path: '/fe/css/',
             collapsable: false,
-            children: ['basic-css'],
+            children: ['/fe/css/basic-css'],
         },
         {
             title: groupC,
-            path: '/fe/javascript/',
             collapsable: false,
-            children: ['', 'basic-javascript'],
+            children: ['/fe/javascript/', '/fe/javascript/basic-javascript'],
         },
         {
             title: groupD,
-            path: '/fe/tools/',
             collapsable: false,
-            children: ['tools/vscode'],
+            children: ['/fe/tools/vscode'],
         },
     ];
 }
@@ -71,13 +66,12 @@ function getServerSidebar(groupA) {
         'linux',
         {
             title: groupA,
-            path: '/server/ubuntu/',
             collapsable: false,
             children: [
-                'ubuntu/intro',
-                'ubuntu/install-software',
-                'ubuntu/i-want-to',
-                'ubuntu/problems',
+                '/server/ubuntu/intro',
+                '/server/ubuntu/install-software',
+                '/server/ubuntu/i-want-to',
+                '/server/ubuntu/problems',
             ],
         },
     ];
@@ -88,9 +82,8 @@ function getOthersSidebar(groupA) {
         '',
         {
             title: groupA,
-            path: '/others/git/',
             collapsable: false,
-            children: ['', 'basic-usage'],
+            children: ['/others/git/', '/others/git/basic-usage'],
         },
         'resilio-sync',
     ];
