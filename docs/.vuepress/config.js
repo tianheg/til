@@ -11,7 +11,7 @@ module.exports = {
         docsBranch: 'main',
         editLinks: true,
         editLinkText: '在 Github 上编辑',
-        nav: require('./nav/nav'),
+        nav: require('./nav'),
         smoothScroll: true,
         sidebar: {
             '/fe/': getFeSidebar('HTML', 'CSS', 'JavaScript', 'Tools'),
@@ -40,24 +40,25 @@ function getFeSidebar(groupA, groupB, groupC, groupD) {
         '',
         {
             title: groupA,
-            path: '/html/',
+            path: '/fe/html/',
             collapsable: false,
             children: ['basic-html'],
         },
         {
             title: groupB,
-            path: '/css/',
+            path: '/fe/css/',
             collapsable: false,
             children: ['basic-css'],
         },
         {
             title: groupC,
-            path: '/javascript/',
+            path: '/fe/javascript/',
             collapsable: false,
             children: ['', 'basic-javascript'],
         },
         {
             title: groupD,
+            path: '/fe/tools/',
             collapsable: false,
             children: ['tools/vscode'],
         },
@@ -70,6 +71,7 @@ function getServerSidebar(groupA) {
         'linux',
         {
             title: groupA,
+            path: '/server/ubuntu/',
             collapsable: false,
             children: [
                 'ubuntu/intro',
@@ -86,8 +88,9 @@ function getOthersSidebar(groupA) {
         '',
         {
             title: groupA,
+            path: '/others/git/',
             collapsable: false,
-            children: ['git/', 'git/basic-usage'],
+            children: ['', 'basic-usage'],
         },
         'resilio-sync',
     ];
