@@ -36,7 +36,7 @@ module.exports = {
 
 function getFeSidebar(groupA, groupB, groupC, groupD) {
     return [
-        '',
+        
         {
             title: groupA,
             collapsable: false,
