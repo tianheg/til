@@ -37,26 +37,26 @@ module.exports = (ctx) => ({
 
 function getFeSidebar(groupA, groupB, groupC, groupD) {
     return [
-        
+        '',
         {
             title: groupA,
             collapsable: false,
-            children: ['/html/basic-html'],
+            children: ['/fe/html/basic-html'],
         },
         {
             title: groupB,
             collapsable: false,
-            children: ['/css/basic-css'],
+            children: ['/fe/css/basic-css'],
         },
         {
             title: groupC,
             collapsable: false,
-            children: ['/javascript/', '/javascript/basic-javascript'],
+            children: ['/fe/javascript/basic-javascript'],
         },
         {
             title: groupD,
             collapsable: false,
-            children: ['/tools/vscode'],
+            children: ['/fe/tools/vscode'],
         },
     ];
 }
