@@ -714,6 +714,120 @@ testObj["hat"];
 testObj["shirt"];
 ```
 
+**变量**
+
+```js
+var dogs = {
+  Fido: "Mutt", Hunter: "Doberman", Snoopie: "Beagle"
+};
+var myDog = "Hunter";
+var myBreed = dogs[myDog];
+console.log(myBread);
+```
+
+```js
+var someObj = {
+  propName: "John"
+};
+function propPrefix(str) {
+  var s = "prop";
+  return s + str;
+}
+var someProp = propPrefix("Name");
+console.log(someObj[someProp]);
+```
+
+注意：当使用变量获取对象属性时，不要在变量处加引号，因为我们需要变量的值，而不是名字。
+
+### 更新对象属性
+
+```js
+var ourDog = {
+  "name": "Bot"
+};
+ourDog.name = "Happy Bot";
+// or ourDog["name"] = "Happy Bot";
+```
+
+### 添加新属性
+
+就像修改对象属性一样，添加新属性，不过是修改一个当前对象不存在的属性。
+
+```js
+var ourDog = {
+  "name": "Bot"
+};
+ourDog.legs = 4;
+```
+
+### 删除属性
+
+```js
+var ourDog = {
+  "name": "Bot"
+};
+delete ourDog.name;
+```
+
+### 使用对象查询
+
+对象可被看作「键 / 值 存储」，就像字典。如果你有表格数据，你可以使用一个对象查询值而不是一个 `switch` 或 `if / else` 语句。当你清楚你的输入数据是有限范围时很有用。
+
+**不会写**：
+
+```js
+// 问题：
+// switch 语句转成名为 lookup 的对象
+// switch 语句
+  switch(val) {
+    case "alpha":
+      result = "Adams";
+      break;
+    case "bravo":
+      result = "Boston";
+      break;
+    case "charlie":
+      result = "Chicago";
+      break;
+    case "delta":
+      result = "Denver";
+      break;
+    case "echo":
+      result = "Easy";
+      break;
+    case "foxtrot":
+      result = "Frank";
+  }
+// 答案
+function phoneticLookup(val) {
+  var result = "";
+  var lookup = {
+    "alpha": "Adams",
+    "bravo": "Boston",
+    "charlie": "Chicago",
+    "delta": "Denver",
+    "echo": "Easy",
+    "fixtrot": "Frank"
+  }
+  result = lookup[val]; // 这句话没想到这么写
+  return result;
+}
+```
+
+### 测试对象属性存在与否
+
+使用 `.hasOwnProperty(propname)` 对象方法，确定对象是否有给定的属性名。如果有，`.hasOwnProperty()` 返回 `true`，反之返回 `false`。
+
+```js
+var tianhegObj = {
+  right: "air",
+  left: "life" 
+}
+tianhegObj.hasOwnProperty("right");
+tianhegObj.hasOwnProperty("middle");
+// ouput: true false
+```
+
 ## 功能
 
 ### `typeof`
