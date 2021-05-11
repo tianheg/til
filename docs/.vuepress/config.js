@@ -14,9 +14,54 @@ module.exports = (ctx) => ({
         nav: require('./nav'),
         smoothScroll: true,
         sidebar: {
-            '/fe/': getFeSidebar('HTML', 'CSS', 'JavaScript', 'Tools'),
-            '/server/': getServerSidebar('Ubuntu'),
-            '/others/': getOthersSidebar('Git'),
+            '/fe/': [
+                '',
+                {
+                    title: 'HTML',
+                    collapsable: false,
+                    children: [['/html/basic-html', 'Basic HTML']],
+                },
+                {
+                    title: 'CSS',
+                    collapsable: false,
+                    children: [['/css/basic-css', 'Basic CSS']],
+                },
+                {
+                    title: 'JavaScript',
+                    collapsable: false,
+                    children: [
+                        ['/javascript/basic-javascript', 'Basic JavaScript'],
+                    ],
+                },
+                {
+                    title: 'Tools',
+                    collapsable: false,
+                    children: [['/tools/vscode', 'VS Code']],
+                },
+            ],
+            '/server/': [
+                '',
+                'linux',
+                {
+                    title: 'Ubuntu',
+                    collapsable: false,
+                    children: [
+                        '/ubuntu/intro',
+                        '/ubuntu/install-software',
+                        '/ubuntu/i-want-to',
+                        '/ubuntu/problems',
+                    ],
+                },
+            ],
+            '/others/': [
+                '',
+                {
+                    title: 'Git',
+                    collapsable: false,
+                    children: ['/git/', '/git/basic-usage'],
+                },
+                'resilio-sync',
+            ],
         },
     },
     plugins: [
@@ -34,58 +79,3 @@ module.exports = (ctx) => ({
     },
     extraWatchFiles: ['.vuepress/nav.js'],
 });
-
-function getFeSidebar(groupA, groupB, groupC, groupD) {
-    return [
-        '',
-        {
-            title: groupA,
-            collapsable: false,
-            children: [['/fe/html/basic-html', 'Basic HTML']],
-        },
-        {
-            title: groupB,
-            collapsable: false,
-            children: [['/fe/css/basic-css','Basic CSS']],
-        },
-        {
-            title: groupC,
-            collapsable: false,
-            children: [['/javascript/basic-javascript','Basic JavaScript']],
-        },
-        {
-            title: groupD,
-            collapsable: false,
-            children: [['/fe/tools/vscode', 'VS Code']],
-        },
-    ];
-}
-
-function getServerSidebar(groupA) {
-    return [
-        '',
-        'linux',
-        {
-            title: groupA,
-            collapsable: false,
-            children: [
-                '/server/ubuntu/intro',
-                '/server/ubuntu/install-software',
-                '/server/ubuntu/i-want-to',
-                '/server/ubuntu/problems',
-            ],
-        },
-    ];
-}
-
-function getOthersSidebar(groupA) {
-    return [
-        '',
-        {
-            title: groupA,
-            collapsable: false,
-            children: ['/others/git/', '/others/git/basic-usage'],
-        },
-        'resilio-sync',
-    ];
-}
