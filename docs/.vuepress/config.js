@@ -15,28 +15,28 @@ module.exports = (ctx) => ({
         smoothScroll: true,
         sidebar: {
             '/fe/': [
-                '',
+                '/',
                 {
                     title: 'HTML',
                     collapsable: false,
-                    children: ['/html/basic-html'],
+                    children: ['/fe/html/basic-html'],
                 },
                 {
                     title: 'CSS',
                     collapsable: false,
-                    children: ['/css/basic-css'],
+                    children: ['/fe/css/basic-css'],
                 },
                 {
                     title: 'JavaScript',
                     collapsable: false,
                     children: [
-                        '/javascript/basic-javascript',
+                        '/fe/javascript/basic-javascript',
                     ],
                 },
                 {
                     title: 'Tools',
                     collapsable: false,
-                    children: ['/tools/vscode'],
+                    children: ['/fe/tools/vscode'],
                 },
             ],
             '/server/': [
@@ -54,7 +54,7 @@ module.exports = (ctx) => ({
                 },
             ],
             '/others/': [
-                '',
+                '/',
                 {
                     title: 'Git',
                     collapsable: false,
