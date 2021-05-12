@@ -1,4 +1,4 @@
-# Intro about Ubuntu
+# 介绍 Ubuntu
 
 Ubuntu（国际音标：/ʊˈbʊntuː/，uu-BUUN-too）是以桌面应用为主的 Linux 发行版，基于 Debian。Ubuntu 有三个正式版本，包括桌面版、服务器版及用于物联网设备和机器人的 Core 版。从 17.10 版本开始，Ubuntu 以 GNOME 为默认桌面环境。
 
