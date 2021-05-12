@@ -828,6 +828,20 @@ tianhegObj.hasOwnProperty("middle");
 // ouput: true false
 ```
 
+**问题**：输入 `checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "gift")` 格式数据，如果属性存在，返回属性值，若不存在，返回 `"Not Found"`。
+
+```js
+function checkObj(obj, checkProp) {
+  if(obj.hasOwnProperty(checkProp)) {
+    return obj[checkProp];
+  } else {
+    return "Not Found";
+  }
+}
+```
+
+以上是正确答案，我写的错误答案，只是把 `obj[checkProp]` 改为 `obj.checkProp`。
+
 ## 功能
 
 ### `typeof`
