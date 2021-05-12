@@ -14,6 +14,7 @@ module.exports = (ctx) => ({
         nav: require('./nav'),
         smoothScroll: true,
         lastUpdated: '上次更新',
+        activeHeaderLinks: false,
         sidebar: {
             '/fe/': [
                 '',
@@ -30,6 +31,9 @@ module.exports = (ctx) => ({
                 '/ubuntu/problems',
             ],
             '/others/': ['', '/git/', '/git/basic-usage', 'resilio-sync'],
+            '/': [
+                '',
+            ],
         },
     },
     plugins: [
