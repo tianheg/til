@@ -7,6 +7,10 @@ git config --global user.name ""
 git config --global user.email ""
 ```
 
+## `git pull --rebase`
+
+使用该命令可以使用 commits 变得优美流畅，不会存在 merge commit。
+
 ## 分支合并
 
 ### 场景：基于 main 分支代码，开发新特性
