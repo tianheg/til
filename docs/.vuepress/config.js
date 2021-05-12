@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = (ctx) => ({
     title: 'TIL',
-    description: '今天我学习了',
+    description: 'Today I Learnt',
     theme: 'book',
     themeConfig: {
         repo: 'tianheg/til',
@@ -15,6 +15,7 @@ module.exports = (ctx) => ({
         smoothScroll: true,
         lastUpdated: '上次更新',
         activeHeaderLinks: false,
+        sidebarDepth: 2,
         sidebar: {
             '/fe/': getFeSidebar('HTML', 'CSS', 'JavaScript', 'Tools'),
             '/server/': getServerSidebar('Ubuntu'),
@@ -28,7 +29,7 @@ module.exports = (ctx) => ({
             '@vuepress/last-updated',
             {
                 dateOptions: {
-                    hour8: true,
+                    hour12: false,
                 },
             },
         ],
