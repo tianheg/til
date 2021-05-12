@@ -2,7 +2,7 @@
 
 ### Bluetooth Cannot Connect Airpods
 
-```bash
+```sh
 sudo vim /etc/bluetooth/main.conf
 # add `ControllerMode = dual`
 sudo /etc/init.d/bluetooth restart
@@ -235,7 +235,7 @@ From <https://itsfoss.com/speed-up-ubuntu-1310/>
 
 ### No Pip On Ubuntu20.04
 
-```bash
+```sh
 sudo apt update
 sudo apt install python3-pip
 ```
@@ -248,7 +248,7 @@ Tried:
 
 [Way 1](https://askubuntu.com/a/1231027):
 
-```bash
+```sh
 sudo vim /etc/network/interfaces
 # Add following lines:
 # auto wlp5s0
@@ -261,7 +261,7 @@ But `ifconfig` is not found.
 
 [Way 2](https://linuxconfig.org/ubuntu-20-04-connect-to-wifi-from-command-line):
 
-```bash
+```sh
 $ ls /sys/class/net
 enp2s0 lo  wlp3s0
 $ ls /etc/netplan/
@@ -283,7 +283,7 @@ I just seclect the Using instead of Do not.
 
 ### H.264 Not Found
 
-```bash
+```sh
 sudo apt install ubuntu-restricted-extras
 ```
 

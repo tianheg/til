@@ -2,7 +2,7 @@
 
 ## Edit Sources.list
 
-```bash
+```sh
 sudo vim /etc/apt/sources.list
 ```
 
@@ -16,7 +16,7 @@ So I can transfer files between Vbox guest and my mobile hard drive.
 
 ## Flush DNS
 
-```bash
+```sh
 systemd-resolve --flush-caches # Run the command in the terminal
 systemd-resolve --statistics # verify that this ran correctly by running the command
 ```

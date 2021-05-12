@@ -4,7 +4,7 @@ used software: nomacs, Flameshot, kphotoalbum, Krita, xournal, [ImageMagick](htt
 
 ## Curl
 
-```bash
+```sh
 sudo apt-get install curl
 ```
 
@@ -42,7 +42,7 @@ WantedBy=multi-user.target
 
 ## Albert
 
-```bash
+```sh
 curl https://build.opensuse.org/projects/home:manuelschneid3r/public_key | sudo apt-key add -
 echo 'deb http://download.opensuse.org/repositories/home:/manuelschneid3r/xUbuntu_20.04/ /' | sudo tee /etc/apt/sources.list.d/home:manuelschneid3r.list
 sudo wget -nv https://download.opensuse.org/repositories/home:manuelschneid3r/xUbuntu_20.04/Release.key -O "/etc/apt/trusted.gpg.d/home:manuelschneid3r.asc"
@@ -58,7 +58,7 @@ Install from [here](https://apps.ankiweb.net/#download)
 
 Then exec these orders:
 
-```bash
+```sh
 $ tar xjf Downloads/anki-2.1.42-linux.tar.bz2
 $ cd anki-2.1.42-linux
 $ sudo ./install.sh
@@ -80,7 +80,7 @@ source /usr/share/zsh/functions/Completion/Debian/_apt-fast
 
 ## Deb File
 
-```bash
+```sh
 # way 1
 sudo apt install ./file.deb
 # way 2
@@ -98,19 +98,19 @@ references:
 
 ## Emacs
 
-```bash
+```sh
 sudo apt install emacs
 ```
 
 ## Exa
 
-```bash
+```sh
 sudo apt install exa
 ```
 
 Error:
 
-```bash
+```sh
 $ exa
 zsh: command not found: exa
 ```
@@ -121,14 +121,14 @@ The *groovy* name is 20.10, not 20.04 LTS. So [this package](https://packages.ub
 
 But you can install it manually with:
 
-```bash
+```sh
 wget http://archive.ubuntu.com/ubuntu/pool/universe/r/rust-exa/exa_0.9.0-4_amd64.deb
 sudo apt-get install ./exa_0.9.0-4_amd64.deb
 ```
 
 and test it via:
 
-```bash
+```sh
 $ exa --version
 exa v0.9.0
 ```
@@ -137,7 +137,7 @@ exa v0.9.0
 
 ## F.lux
 
-```bash
+```sh
 sudo add-apt-repository ppa:nathan-renniewaldock/flux
 sudo apt-get update
 sudo apt-get install fluxgui
@@ -155,7 +155,7 @@ On most Linux distributions, FreeCAD is directly installable from the software c
 
 ## Jianguoyun
 
-```bash
+```sh
 wget https://www.jianguoyun.com/static/exe/installer/ubuntu/nautilus_nutstore_amd64.deb
 sudo apt install ./nautilus_nutstore_amd64.deb
 ```
@@ -272,7 +272,7 @@ Install `skypeforlinux-64.deb` from [here](https://go.skype.com/skypeforlinux-64
 
 [source](https://www.spotify.com/hk-en/download/linux/)
 
-```bash
+```sh
 curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | sudo apt-key add -
 echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
 sudo apt-get update && sudo apt-get install spotify-client
@@ -332,14 +332,14 @@ If you wish to install the traditional deb package, it is available as usual via
 
 Download from [here](https://my.vmware.com/en/web/vmware/downloads/info/slug/desktop_end_user_computing/vmware_workstation_player/16_0)
 
-```bash
+```sh
 chmod a+x VMware-Player-16.1.0-17198959.x86_64.bundle
 sudo ./VMware-Player-16.1.0-17198959.x86_64.bundle
 ```
 
 ## Zola
 
-```bash
+```sh
 sudo snap install zola --edge
 ```
 
@@ -347,7 +347,7 @@ sudo snap install zola --edge
 
 ## Zotero
 
-```bash
+```sh
 /opt $ sudo wget https://download.zotero.org/client/release/5.0.96/Zotero-5.0.96_linux-x86_64.tar.bz2
 /opt $ sudo tar -xf Zotero-5.0.96_linux-x86_64.tar.bz2
 /opt $ sudo mv Zotero_linux-x86_64 zotero
@@ -365,7 +365,7 @@ source:
 
 ## Manage Fonts
 
-```bash
+```sh
 sudo apt-get install font-manager
 ```
 
@@ -383,26 +383,26 @@ Netplan is a utility for easily configuring networking on a linux system. You si
 
 NetworkManager should be installed by default for most Ubuntu installations if the Desktop installation image was used. Use the apt command to find out if it needs to be installed:
 
-```bash
+```sh
 $ apt -qq list network-manager
 network-manager/focal-updates,now 1.22.10-1ubuntu2.2 amd64 [installed,automatic]
 ```
 
 If necessary, install the package as follows:
 
-```bash
+```sh
 $ apt install network-manager
 ```
 
 Once the package is installed, the NetworkManager daemon will need to be enabled so that it starts each time the system boots:
 
-```bash
+```sh
 $ systemctl status network-manager
 ```
 
 Finally, start the service running and check the status to verify that the launch was successful:
 
-```bash
+```sh
 $ systemctl status network-manager
 ● NetworkManager.service - Network Manager
      Loaded: loaded (/lib/systemd/system/NetworkManager.service; enabled; vendor preset: enabled)
@@ -417,7 +417,7 @@ $ systemctl status network-manager
 
 **Basic nmcli Commands**
 
-```bash
+```sh
 $ nmcli -h
 Usage: nmcli [OPTIONS] OBJECT { COMMAND | help }
 
@@ -446,7 +446,7 @@ OBJECT
   m[onitor]       monitor NetworkManager changes
 ```
 
-```bash
+```sh
 # nmcli device help
 # nmcli dev help
 # nmcli d help
@@ -454,7 +454,7 @@ OBJECT
 
 To check the overall status of NetworkManager on the system, use the following command:
 
-```bash
+```sh
 $ nmcli general status
 STATE      CONNECTIVITY  WIFI-HW  WIFI     WWAN-HW  WWAN    
 connected  full          enabled  enabled  enabled  enabled
@@ -462,7 +462,7 @@ connected  full          enabled  enabled  enabled  enabled
 
 To check the status of the devices installed on a system, the following command can be used:
 
-```bash
+```sh
 $ nmcli dev status
 DEVICE           TYPE      STATE         CONNECTION 
 enp2s0           ethernet  connected     ethernet   
@@ -478,7 +478,7 @@ lo               loopback  unmanaged     --
 
 The output may also be modified by using the -p (pretty) option to make the output more human friendly:
 
-```bash
+```sh
 $ nmcli -p dev status
 =====================
   Status of devices
@@ -498,7 +498,7 @@ lo               loopback  unmanaged     --
 
 Conversely, the -t option may be used to make the output more terse and suitable for automated processing:
 
-```bash
+```sh
 $ nmcli -t dev status
 enp2s0:ethernet:connected:ethernet
 wlp3s0:wifi:disconnected:
@@ -513,7 +513,7 @@ lo:loopback:unmanaged:
 
 The following command displays information about the connections configured on the system:
 
-```bash
+```sh
 $ nmcli con show
 NAME       UUID                                  TYPE      DEVICE 
 ethernet   82900ec5-3f45-3d9c-8d10-3e269bf80e38  ethernet  enp2s0 
@@ -522,7 +522,7 @@ vivo-Y85A  ec8957b2-9f8a-45c6-9680-9aad8e5fde70  wifi      --
 
 To find out the IP address allocated to a connection, the ip tool can be used with the address option:
 
-```bash
+```sh
 $ ip address
 ...
 2: enp2s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
@@ -540,7 +540,7 @@ The ip command will output information for all of the devices detected on the sy
 
 If we only wanted to list active connections, the _nmcli_ command could have been used with the -a option:
 
-```bash
+```sh
 $ nmcli con show -a
 NAME      UUID                                  TYPE      DEVICE 
 ethernet  82900ec5-3f45-3d9c-8d10-3e269bf80e38  ethernet  enp2s0
@@ -548,20 +548,20 @@ ethernet  82900ec5-3f45-3d9c-8d10-3e269bf80e38  ethernet  enp2s0
 
 To switch the WiFi device connection from zoneone to zonetwo, we can run the following command:
 
-```bash
+```sh
 # nmcli device wifi connect zonetwo -ask
 Password:
 ```
 
 The _-ask_ flag causes _nmcli_ to prompt the user to enter the password for the WiFi network. To include the WiFi password on the command-line (particularly useful if the command is being executed in a script), use the _password_ option:
 
-```bash
+```sh
 # nmcli device wifi connect zonetwo password <password here>
 ```
 
 The _nmcli_ tool may also be used to scan for available WiFi networks as follows:
 
-```bash
+```sh
 $ nmcli device wifi list
 IN-USE  BSSID              SSID                          MODE   CHAN  RATE        SIGNAL  BARS  SECURITY  
         50:D2:F5:FC:66:C2  Xiaomi_66C1                   Infra  1     130 Mbit/s  97      ▂▄▆█  WPA1 WPA2 
@@ -576,25 +576,25 @@ IN-USE  BSSID              SSID                          MODE   CHAN  RATE      
 
 A currently active connection can be deactivated as follows:
 
-```bash
+```sh
 $ nmcli con down <connection name>
 ```
 
 Similarly, an inactive connection can be brought back up at any time:
 
-```bash
+```sh
 $ nmcli con up <connection name>
 ```
 
 When a connection is brought down, NetworkManager automatically searches for another connection, activates it and assigns it to the device to which the previous connection was established. To prevent a connection from being used in this situation, disable the autoconnect option as follows:
 
-```bash
+```sh
 $ nmcli con mod <connection name> connection.autoconnect no
 ```
 
 The following command may be used to obtain additional information about a specific connection. This includes the current values for all the connection properties:
 
-```bash
+```sh
 $ nmcli con show ethernet  
 connection.id:                          ethernet
 connection.uuid:                        82900ec5-3f45-3d9c-8d10-3e269bf80e38
@@ -736,7 +736,7 @@ IP6.ROUTE[2]:                           dst = ff00::/8, nh = ::, mt = 256, table
 
 All of these properties can be modified using nmcli with the modify option using the following syntax:
 
-```bash
+```sh
 $ nmcli con mod <connection name> connection.<property name> <setting>
 ```
 
@@ -744,7 +744,7 @@ $ nmcli con mod <connection name> connection.<property name> <setting>
 
 The configuration of a connection is referred to as a _connection profile_ and is stored in a file located in the _/etc/NetworkManager/system-connections_ directory, the contents of which might read as follows:
 
-```bash
+```sh
 $ ls /etc/NetworkManager/system-connections
 ethernet.nmconnection  vivo-Y85A.nmconnection
 ```
@@ -778,13 +778,13 @@ method=auto
 
 Changes to the connection profile can be implemented by modifying this file and instructing *nmcli* to reload the connection configuration files:
 
-```bash
+```sh
 $ nmcli con reload
 ```
 
 New connection profiles can also be created manually or generated automatically by _nmcli_. As an example, assume that a new network device has been installed on the system. When this happens, the NetworkManager service will detect the new hardware and create a device for it. In the example below, the new device has been assigned the name _enp0s8_:
 
-```bash
+```sh
 # nmcli dev status
 DEVICE  TYPE      STATE      CONNECTION         
 enp0s3  ethernet  connected  Wired connection 1 
@@ -793,13 +793,13 @@ enp0s8  ethernet  connected  Wired connection 2
 
 NetworkManager automatically detected the device, activated it and assigned it to a connection named “Wired connection 2”. This is a default connection over which we have no configuration control because there is no interface configuration file for it in _/etc/NetworkManager/systemconnections_. The next steps are to delete the “Wired connection 2” connection and use _nmcli_ to create a new connection and assign it to the device. The command to delete a connection is as follows:
 
-```bash
+```sh
 # nmcli con delete "Wired connection 2"
 ```
 
 Next, _nmcli_ can be used to create a new connection profile configured either with a static IP address, or a dynamic IP address obtained from a DHCP server. To create a dynamic connection profile named _dyn\_ip_, the following command would be used:
 
-```bash
+```sh
 $ nmcli connection dd type ethernet con-name dyn_ip ifname enp0s8
 Connection 'dyn_ip' (160d9e10-bbc8-439a-9c47-a2ec52990472) successfully added.
 ```
@@ -829,7 +829,7 @@ method=auto
 
 Checking the device status should now verify that the enp0s8 device is now using the dyn\_ip connection profile:
 
-```bash
+```sh
 # nmcli dev status
 DEVICE  TYPE      STATE      CONNECTION         
 enp0s8  ethernet  connected  dyn_ip             
@@ -838,7 +838,7 @@ enp0s3  ethernet  connected  Wired connection 1
 
 At this point it is worth noting that the enp0s3 device is also using a default connection profile for which there is no interface file through which to modify the connection settings. The same steps used to create the dyn\_ip profile can also be used for the enp0s3 device. For example, to create a connection named _static\_ip_ assigned a static IP address (in this case 192.168.1.200) assigned to the enp0s3 device, the following command would be used (keeping in mind that if you are connected remotely to the system via the Wired connection 1 interface you will lose the connection):
 
-```bash
+```sh
 # nmcli con delete "Wired connection 1"
 # nmcli con add type ethernet con-name static_ip ifname enp0s3 ip4 192.168.1.200/24 gw4 192.168.1.1
 Connection 'static_ip' (3fccafb3-e761-4271-b310-ad0f28ee8606) successfully added.
@@ -871,7 +871,7 @@ method=auto
 
 The command to add a new connection may be altered slightly to also assign both IPv4 and IPv6 static addresses:
 
-```bash
+```sh
 # nmcli con add type ethernet con-name static_ip ifname enp0s3 ip4 192.168.1.200/24 gw4 192.168.1.1  gw4 192.168.1.1 ip6 cabf::4532 gw6 2010:dfa::1
 ```
 
@@ -879,7 +879,7 @@ The command to add a new connection may be altered slightly to also assign both 
 
 In addition to using _nmcli_ with command\-line options, the tool also includes an interactive mode that can be used to create and modify connection profiles. The following transcript, for example, shows interactive mode being used to create a new Ethernet connection named _demo\_con_:
 
-```bash
+```sh
 # nmcli con edit
 Valid connection types: 6lowpan, 802-11-olpc-mesh (olpc-mesh), 802-11-wireless (wifi), 802-3-ethernet (ethernet), adsl, bluetooth, bond, bridge, cdma, dummy, generic, gsm, infiniband, ip-tunnel, macsec, macvlan, ovs-bridge, ovs-interface, ovs-port, pppoe, team, tun, vlan, vpn, vxlan, wimax, wpan, bond-slave, bridge-slave, team-slave
 Enter connection type: ethernet
@@ -908,7 +908,7 @@ nmcli> quit
 
 The following transcript, on the other hand, modifies the previously created _static\_ip_ connection profile to use a different static IP address to the one originally specified:
 
-```bash
+```sh
 # nmcli con edit static_ip
  
 ===| nmcli interactive connection editor |===
@@ -930,13 +930,13 @@ nmcli> quit
 
 After modifying an existing connection, remember to instruct NetworkManager to reload the configuration profiles:
 
-```bash
+```sh
 # nmcli con reload
 ```
 
 When using interactive mode, it is useful to know that there is an extensive built\-in help system available to learn how to use the tool. The help topics can be accessed by typing _help_ or _?_ at the _nmcli >_ prompt:
 
-```bash
+```sh
 nmcli> ?
 ------------------------------------------------------------------------------
 ---[ Main menu ]---
@@ -959,7 +959,7 @@ quit                                 :: exit nmcli
 
 In addition to making it easier to manage networks on Ubuntu, NetworkManager also allows permissions to be specified for connections. The following command, for example, restricts a connection profile to root and user accounts named john and caitlyn:
 
-```bash
+```sh
 $ nmcli con mod static_ip connection.permissions user:root,john,caitlyn
 ```
 
@@ -969,14 +969,14 @@ In addition, only users with permission are able to make changes to the connecti
 
 **Device is strictly Unmanaged**
 
-```bash
+```sh
 $ nmcli device connect enp2s0   
 Error: Failed to add/activate new connection: Connection 'enp2s0' is not available on device enp2s0 because device is strictly unmanaged
 ```
 
 [Way 1](https://askubuntu.com/a/71205)[no use]:
 
-```bash
+```sh
 sudo nano /etc/NetworkManager/NetworkManager.conf
 # change
 # [ifupdown]
@@ -989,7 +989,7 @@ sudo service network-manager restart
 
 [Way 2](https://superuser.com/a/1632034)[solved]:
 
-```bash
+```sh
 $ sudo nano /etc/NetworkManager/NetworkManager.conf
 $ sudo systemctl restart network-manager
 ```

@@ -6,14 +6,14 @@ There are 3 ways to install it: manually, from repository and using official doc
 
 ### Installing Manually
 
-```bash
+```sh
 wget https://download-cdn.resilio.com/2.7.2.1375/Debian/resilio-sync_2.7.2.1375-1_amd64.deb
 sudo dpkg -i <resilio-sync.deb>
 ```
 
 ### Installing From Repository
 
-```bash
+```sh
 echo "deb http://linux-packages.resilio.com/resilio-sync/deb resilio-sync non-free" | sudo tee /etc/apt/sources.list.d/resilio-sync.list
 curl -L https://linux-packages.resilio.com/resilio-sync/key.asc | sudo apt-key add
 sudo apt-get update
