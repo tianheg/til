@@ -319,23 +319,37 @@ VS Code 默认支持 Emmet。更多 Emmet 语法规则，请自行查阅。
 
 更多配置，可以参考官方文档：[prettier.io/docs/en/options.html](https://prettier.io/docs/en/options.html)
 
+### 24、在新的窗口中打开文件
+
+```json
+"workbench.editor.enablePreview": false,
+```
+
+### 25、如何查看代码结构
+
+「Ctrl + Shift + O」
+
+### 26、在本地开启服务器
+
+使用插件 Live Server
+
 ## [插件使用](https://marketplace.visualstudio.com/vscode)
 
-### 1、[`compareit`](#11文件对比)
+1、`compareit`
 
-### 2、[`GitLens`](#17git-版本管理) | Git History
+2、`GitLens` | Git History
 
-### 3、[`Markdown Preview Github Styling`](#21markdown-语法支持) | Markdown Preview Enhanced | Markdown All in One
+3、`Markdown Preview Github Styling` | Markdown Preview Enhanced | Markdown All in One
 
-### 4、[`Prettier`](#23代码格式化prettier)
+4、`Prettier`
 
-### 5、Live Server
+5、Live Server
 
-### 6、Bracket Pair Colorizer 2：突出显示成对的括号
+6、Bracket Pair Colorizer 2：突出显示成对的括号
 
-### 7、sftp：文件传输
+7、sftp：文件传输
 
-### 8、highlight-icemode：选中相同的代码时，让高亮显示更加明显
+8、highlight-icemode：选中相同的代码时，让高亮显示更加明显
 
 VSCode 自带的高亮显示，实在是不够显眼。用插件支持一下吧。
 
@@ -345,11 +359,11 @@ VSCode 自带的高亮显示，实在是不够显眼。用插件支持一下吧�
 
 参考链接：[vscode 选中后相同内容高亮插件推荐](https://blog.csdn.net/palmer_kai/article/details/79548164)
 
-### 9、vscode-icons
+9、vscode-icons
 
-### 10、Project Manager
+10、Project Manager
 
-### 11、TODO Highlight
+11、TODO Highlight
 
 写代码过程中，突然发现一个 Bug，但是又不想停下来手中的活，以免打断思路，怎么办？按照代码规范，我们一般是在代码中加个 TODO 注释。比如：（注意，一定要写成大写`TODO`，而不是小写的`todo`）
 
@@ -365,29 +379,29 @@ VSCode 自带的高亮显示，实在是不够显眼。用插件支持一下吧�
 
 安装了插件 `TODO Highlight`之后，按住「Cmd + Shift + P」打开命令面板，输入「Todohighlist」，选择相关的命令，我们就可以看到一个 todoList 的清单。
 
-### 12、WakaTime
+12、WakaTime
 
-### 13、Vetur
+13、Vetur
 
-### 14、ES7 React/Redux/GraphQL/React-Native snippets
+14、ES7 React/Redux/GraphQL/React-Native snippets
 
-### 15、Prettier：代码格式化
+15、Prettier：代码格式化
 
 Prettier 是一个代码格式化工具，只关注格式化，但不具备校验功能。在一个多人协同开发的团队中，统一的代码编写规范非常重要。一套规范可以让我们编写的代码达到一致的风格，提高代码的可读性和统一性。自然维护性也会有所提高。
 
-### 16、ESLint：代码格式校验
+16、ESLint：代码格式校验
 
 日常开发中，建议用可以用 Prettier 做代码格式化，然后用 ESlint 做校验。
 
-### 17、JavaScript(ES6) code snippets
+17、JavaScript(ES6) code snippets
 
-### 18、Search node\_modules
+18、Search node\_modules
 
 `node_modules`模块里面的文件夹和模块实在是太多了，根本不好找。好在安装 `Search node_modules` 这个插件后，输入快捷键「Cmd + Shift + P」，然后输入 `node_modules`，在弹出的选项中选择 `Search node_modules`，即可搜索 node\_modules 里的模块。
 
-### 19、indent-rainbow：突出显示代码缩进
+19、indent-rainbow：突出显示代码缩进
 
-### 20、javascript console utils：快速打印 log 日志【荐】
+20、javascript console utils：快速打印 log 日志【荐】
 
 安装这个插件后，当我们按住快捷键「Cmd + Shift + L」后，即可自动出现日志 `console.log()`。简直是日志党福音。
 
@@ -403,49 +417,49 @@ Prettier 是一个代码格式化工具，只关注格式化，但不具备校�
 - 第二等境界是断点调试，在前端、Java、PHP、iOS 开发时非常常用，通过断点调试可以很直观地跟踪代码执行逻辑、调用栈、变量等，是非常实用的技巧。
 - 第一等境界是测试驱动开发，在写代码之前先写测试。与第二等的断点调试刚好相反，大部分人不是很习惯这种方式，但在国外开发者或者敏捷爱好者看来，这是最高效的开发方式，在保证代码质量、重构等方面非常有帮助，是现代编程开发必不可少的一部分。
 
-### 21、Code Spell Checker：单词拼写错误检查
+21、Code Spell Checker：单词拼写错误检查
 
 这个拼写检查程序的目标是帮助捕获常见的单词拼写错误，可以检测驼峰命名。从此告别 Chinglish。
 
-### 22、Local History
+22、Local History
 
 维护文件的本地历史记录，强烈建议安装。代码意外丢失时，有时可以救命。
 
-### 23、RayThis: Instant Beautiful Code Screenshots 代码截图
+23、RayThis: Instant Beautiful Code Screenshots 代码截图
 
 同类：CodeSnap，<https://carbon.now.sh/>，Polacode-2020
 
-### 24、Image Preview 【荐】
+24、Image Preview
 
 图片预览。鼠标移动到图片 url 上的时候，会自动显示图片的预览和图片尺寸。
 
-### 25、Auto Close Tag、Auto Rename Tag
+25、Auto Close Tag、Auto Rename Tag
 
 自动闭合标签、自动对标签重命名。
 
-### 26、Better Comments
+26、Better Comments
 
 为注释添加更醒目、带分类的色彩。
 
-### 27、CSS Peek
+27、CSS Peek
 
 增强 HTML 和 CSS 之间的关联，快速查看该元素上的 CSS 样式。
 
-### 28、Vue CSS Peek
+28、Vue CSS Peek
 
 CSS Peek 对 Vue 没有支持，该插件提供了对 Vue 文件的支持。
 
-### 29、Color Info
+29、Color Info
 
 这个便捷的插件，将为你提供你在 CSS 中使用颜色的相关信息。你只需在颜色上悬停光标，就可以预览色块中色彩模型的（HEX、 RGB、HSL 和 CMYK）相关信息了。
 
-### 30、RemoteHub
+30、RemoteHub
 
 不要惊讶，RemoteHub 和 GitLens 是同一个作者开发出来的。
 
 `RemoteHub`插件的作用是：可以在本地查看 GitHub 网站上的代码，而不需要将代码下载到本地。
 
-### 31、Live Share：实时编码分享
+31、Live Share：实时编码分享
 
 `Live Share`这个神奇的插件是由微软官方出品，它的作用是：**实时编码分享**。也就是说，它可以实现你和你的同伴一起写代码。这绝对就是**结对编程**的神器啊。
 
@@ -453,11 +467,11 @@ CSS Peek 对 Vue 没有支持，该插件提供了对 Vue 文件的支持。
 
 打开插件管理，搜索“live share”，安装。安装后重启 VS Code，在左侧会多出一个按钮。
 
-### 32、Import Cost
+32、Import Cost
 
 在项目开发过程中，我们会引入很多 npm 包，有时候可能只用到了某个包里的一个方法，却引入了整个包，导致代码体积增大很多。`Import Cost`插件可以在代码中友好的提示我们，当前引入的包会增加多少体积，这很有助于帮我们优化代码的体积。
 
-### 33、Paste JSON as Code
+33、Paste JSON as Code
 
 此插件可以将剪贴板中的 JSON 字符串转换成工作代码。支持多种语言。
 
