@@ -2,13 +2,13 @@
 
 used software: nomacs, Flameshot, kphotoalbum, Krita, xournal, [ImageMagick](https://askubuntu.com/a/764557)
 
-### Curl
+## Curl
 
 ```bash
 sudo apt-get install curl
 ```
 
-### Clash
+## Clash
 
 ```sh
 $ go install github.com/Dreamacro/clash@latest # Clash requires Golang 1.16 or a higher version
@@ -40,7 +40,7 @@ Restart=on-failure # or always, on-abort, etc
 WantedBy=multi-user.target
 ```
 
-### Albert
+## Albert
 
 ```bash
 curl https://build.opensuse.org/projects/home:manuelschneid3r/public_key | sudo apt-key add -
@@ -52,7 +52,7 @@ sudo apt install albert
 
 [source](https://albertlauncher.github.io/installing/#using-official-albert-repositories)
 
-### Anki
+## Anki
 
 Install from [here](https://apps.ankiweb.net/#download)
 
@@ -64,7 +64,7 @@ $ cd anki-2.1.42-linux
 $ sudo ./install.sh
 ```
 
-### `apt-fast`
+## `apt-fast`
 
 ```sh
 sudo add-apt-repository ppa:apt-fast/stable
@@ -78,7 +78,7 @@ source /usr/share/zsh/functions/Completion/Debian/_apt-fast
 
 [source](https://github.com/ilikenwf/apt-fast#installation)
 
-### Deb File
+## Deb File
 
 ```bash
 # way 1
@@ -96,13 +96,13 @@ references:
 2. <https://itsfoss.com/install-deb-files-ubuntu/>
 3. <https://linuxize.com/post/how-to-install-deb-packages-on-ubuntu/>
 
-### Emacs
+## Emacs
 
 ```bash
 sudo apt install emacs
 ```
 
-### Exa
+## Exa
 
 ```bash
 sudo apt install exa
@@ -135,7 +135,7 @@ exa v0.9.0
 
 [source](https://the.exa.website/install/linux)
 
-### F.lux
+## F.lux
 
 ```bash
 sudo add-apt-repository ppa:nathan-renniewaldock/flux
@@ -147,13 +147,13 @@ Error: no release file
 
 [source](https://github.com/xflux-gui/fluxgui)
 
-### FreeCAD
+## FreeCAD
 
 On most Linux distributions, FreeCAD is directly installable from the software center application.
 
 [source](https://github.com/FreeCAD/FreeCAD)
 
-### Jianguoyun
+## Jianguoyun
 
 ```bash
 wget https://www.jianguoyun.com/static/exe/installer/ubuntu/nautilus_nutstore_amd64.deb
@@ -164,11 +164,11 @@ Can't use
 
 [source](https://www.jianguoyun.com/s/downloads/linux)
 
-### Keepass
+## Keepass
 
 Install from [here](https://keepass.info/help/v2/setup.html#mono)
 
-### Mailspring
+## Mailspring
 
 [source](https://getmailspring.com/)
 
@@ -177,7 +177,7 @@ $ sudo snap install mailspring
 $ sudo snap remove mailspring
 ```
 
-### MScorefonts
+## MScorefonts
 
 ```sh
 $ sudo apt update
@@ -185,11 +185,11 @@ $ sudo apt install ttf-mscorefonts-installer
 $ sudo fc-cache -f -v
 ```
 
-### Netease Music
+## Netease Music
 
 Download *.deb file [here](https://music.163.com/#/download)
 
-### Nnn
+## Nnn
 
 ```sh
 $ wget https://github.com/jarun/nnn/releases/download/v4.0/nnn_4.0-1_ubuntu20.04.amd64.deb
@@ -198,7 +198,7 @@ $ sudo apt install ./nnn_4.0-1_ubuntu20.04.amd64.deb
 
 [source](https://github.com/jarun/nnn)
 
-### Package Manager
+## Package Manager
 
 synaptic(Graphical package manager) or aptitude(terminal-based package manager)
 
@@ -215,7 +215,7 @@ Apt(Advanced Package Tool) <https://wiki.debian.org/PackageManagement?action=sho
 - <https://packages.ubuntu.com/focal/synaptic>
 - <https://packages.ubuntu.com/focal/aptitude>
 
-### Phddns
+## Phddns
 
 [花生壳 5.0 for Linux 使用教程](https://service.oray.com/question/11630.html)
 
@@ -229,13 +229,13 @@ Apt(Advanced Package Tool) <https://wiki.debian.org/PackageManagement?action=sho
  +--------------------------------------------------+
 ```
 
-### Polar
+## Polar
 
 Get *.deb file from [GitHub](https://getpolarized.io/download/)
 
 Install it.
 
-### Postman
+## Postman
 
 [source](https://speedysense.com/install-postman-on-ubuntu-20-04/)
 
@@ -262,13 +262,13 @@ Comment=Postman GUI
 Categories=Development;Code;
 ```
 
-### Skype
+## Skype
 
 Install `skypeforlinux-64.deb` from [here](https://go.skype.com/skypeforlinux-64.deb)
 
 [source](https://www.skype.com/en/get-skype/download-skype-for-desktop/)
 
-### Spotify
+## Spotify
 
 [source](https://www.spotify.com/hk-en/download/linux/)
 
@@ -278,7 +278,7 @@ echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sou
 sudo apt-get update && sudo apt-get install spotify-client
 ```
 
-### SQLite Database Browser
+## SQLite Database Browser
 
 Install SQLite Database Browser ([sqliteborwser](apt:sqlitebrowser)).
 
@@ -287,12 +287,12 @@ source:
 1. <https://ubuntuforums.org/showthread.php?t=1556007)>
 2. <https://sqlitebrowser.org/dl/#ubuntu-and-derivatives>
 
-### SwitchHosts
+## SwitchHosts
 
 1. Download deb file with here: [source](https://github.com/oldj/SwitchHosts/releases).
 2. `sudo apt install ./SwitchHosts_linux_4.0.0.6029.deb`
 
-### Typora
+## Typora
 
 for Debian/Ubuntu:
 
@@ -318,7 +318,7 @@ After installing Typora, the `typora` package will be managed by `apt-get`, so w
 $ sudo apt-get upgrade
 ```
 
-### VLC
+## VLC
 
 Through these:
 
@@ -328,7 +328,7 @@ If you wish to install the traditional deb package, it is available as usual via
 
 [source](https://www.videolan.org/vlc/download-ubuntu.html)
 
-### VMware Workstation Player
+## VMware Workstation Player
 
 Download from [here](https://my.vmware.com/en/web/vmware/downloads/info/slug/desktop_end_user_computing/vmware_workstation_player/16_0)
 
@@ -337,7 +337,7 @@ chmod a+x VMware-Player-16.1.0-17198959.x86_64.bundle
 sudo ./VMware-Player-16.1.0-17198959.x86_64.bundle
 ```
 
-### Zola
+## Zola
 
 ```bash
 sudo snap install zola --edge
@@ -345,7 +345,7 @@ sudo snap install zola --edge
 
 [source](https://www.getzola.org/documentation/getting-started/installation/#snapcraft)
 
-### Zotero
+## Zotero
 
 ```bash
 /opt $ sudo wget https://download.zotero.org/client/release/5.0.96/Zotero-5.0.96_linux-x86_64.tar.bz2
@@ -363,7 +363,7 @@ source:
 1. <https://www.zotero.org/download/client/dl?channel=release&platform=linux-x86_64&version=5.0.96>
 2. <https://www.zotero.org/support/installation>
 
-### Manage Fonts
+## Manage Fonts
 
 ```bash
 sudo apt-get install font-manager
@@ -371,7 +371,7 @@ sudo apt-get install font-manager
 
 [source](https://askubuntu.com/a/371320)
 
-### Netplan
+## Netplan
 
 [source](https://netplan.io/)
 
@@ -379,7 +379,7 @@ The network configuration abstraction renderer
 
 Netplan is a utility for easily configuring networking on a linux system. You simply create a YAML description of the required network interfaces and what each should be configured to do. From this description Netplan will generate all the necessary configuration for your chosen renderer tool.
 
-### Nmcli
+## Nmcli
 
 NetworkManager should be installed by default for most Ubuntu installations if the Desktop installation image was used. Use the apt command to find out if it needs to be installed:
 
@@ -1043,3 +1043,10 @@ Reboot the computer and we would see a new penguin input icon at the top right c
 **References**:
 
 1. <https://leimao.github.io/blog/Ubuntu-Gaming-Chinese-Input/>
+
+## Draw.io
+
+```sh
+$ wget https://github.com/jgraph/drawio-desktop/releases/download/v14.5.1/drawio-amd64-14.5.1.deb
+$ sudo apt install ./drawio-amd64-14.5.1.deb
+```
