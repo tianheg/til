@@ -112,3 +112,9 @@ References:
 - Win10
 - Yarn
 - Zsh
+
+## 图片
+
+### png 和 jpeg 的区别
+
+png 和 jpeg 都是一种用于存储图像的图像格式。png 使用无损压缩算法，没有图像数据丢失；jpeg 使用有损压缩算法，图像可能丢失部分数据。
