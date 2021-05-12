@@ -16,24 +16,9 @@ module.exports = (ctx) => ({
         lastUpdated: '上次更新',
         activeHeaderLinks: false,
         sidebar: {
-            '/fe/': [
-                '',
-                'html/basic-html',
-                'css/basic-css',
-                'javascript/basic-javascript',
-            ],
-            '/server/': [
-                '',
-                'linux',
-                'ubuntu/intro',
-                'ubuntu/install-software',
-                'ubuntu/i-want-to',
-                'ubuntu/problems',
-            ],
-            '/others/': ['', 'git/', 'git/basic-usage', 'resilio-sync'],
-            '/': [
-                '',
-            ],
+            '/fe/': getFeSidebar('HTML', 'CSS', 'JavaScript', 'Tools'),
+            '/server/': getServerSidebar('Ubuntu'),
+            '/others/': getOthersSidebar('Git'),
         },
     },
     plugins: [
@@ -53,3 +38,57 @@ module.exports = (ctx) => ({
     },
     extraWatchFiles: ['.vuepress/nav.js'],
 });
+function getFeSidebar(groupA, groupB, groupC, groupD) {
+    return [
+        '',
+        {
+            title: groupA,
+            collapsable: false,
+            children: ['html/basic-html'],
+        },
+        {
+            title: groupB,
+            collapsable: false,
+            children: ['css/basic-css'],
+        },
+        {
+            title: groupC,
+            collapsable: false,
+            children: ['javascript/basic-javascript'],
+        },
+        {
+            title: groupD,
+            collapsable: false,
+            children: ['tools/vscode'],
+        },
+    ];
+}
+
+function getServerSidebar(groupA) {
+    return [
+        '',
+        'linux',
+        {
+            title: groupA,
+            collapsable: false,
+            children: [
+                'ubuntu/intro',
+                'ubuntu/install-software',
+                'ubuntu/i-want-to',
+                'ubuntu/problems',
+            ],
+        },
+    ];
+}
+
+function getOthersSidebar(groupA) {
+    return [
+        '',
+        {
+            title: groupA,
+            collapsable: false,
+            children: ['git/', 'git/basic-usage'],
+        },
+        'resilio-sync',
+    ];
+}
