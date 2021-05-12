@@ -1,8 +1,8 @@
 ---
 home: true
-heroText: 今天我学习了
-tagline: 前端 | 后端 | 其他
-actionText: 开始 -->
+heroText: Today I Learnt
+tagline: FE | Server | Others
+actionText: Getting Started
 actionLink: /fe/
 features:
   - title: 前端
