@@ -25,12 +25,12 @@ module.exports = (ctx) => ({
             '/server/': [
                 '',
                 'linux',
-                '/ubuntu/intro',
-                '/ubuntu/install-software',
-                '/ubuntu/i-want-to',
-                '/ubuntu/problems',
+                'ubuntu/intro',
+                'ubuntu/install-software',
+                'ubuntu/i-want-to',
+                'ubuntu/problems',
             ],
-            '/others/': ['', '/git/', '/git/basic-usage', 'resilio-sync'],
+            '/others/': ['', 'git/', 'git/basic-usage', 'resilio-sync'],
             '/': [
                 '',
             ],
