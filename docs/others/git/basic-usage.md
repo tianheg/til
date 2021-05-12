@@ -88,6 +88,149 @@ Git 没有简单的把分支指针右移，而是对三方合并的结果作一�
 
 不论是自动合并还是手动合并，提交之前，都要对代码进行测试。
 
+## 其他
+
+### 修改密码
+
+```sh
+$ git config user.name ""
+```
+
+然后，当我们再输入 `git pull` 等命令行时，就会被要求重新输入*新的*账号密码。此时，密码就可以修改成功了。最后，我们还要输入如下命令，还原当前仓库的用户名：
+
+```sh
+$ git config user.name "username"
+```
+
+### 修改已经 push 的某次 commit 的作者/邮箱
+
+已经 push 的记录，如果要修改作者信息的话，只能通过 --force 命令。
+
+下面是来自 [这里](https://stackoverflow.com/a/750182/12539782) 的脚本：
+
+```sh
+#!/bin/sh
+
+git filter-branch --env-filter '
+OLD_EMAIL="your-old-email@example.com"
+CORRECT_NAME="Your Correct Name"
+CORRECT_EMAIL="your-correct-email@example.com"
+if [ "$GIT_COMMITTER_EMAIL" = "$OLD_EMAIL" ]
+then
+    export GIT_COMMITTER_NAME="$CORRECT_NAME"
+    export GIT_COMMITTER_EMAIL="$CORRECT_EMAIL"
+fi
+if [ "$GIT_AUTHOR_EMAIL" = "$OLD_EMAIL" ]
+then
+    export GIT_AUTHOR_NAME="$CORRECT_NAME"
+    export GIT_AUTHOR_EMAIL="$CORRECT_EMAIL"
+fi
+' --tag-name-filter cat -- --branches --tags
+```
+
+其他方法：
+
+```sh
+$ git filter-branch -f --env-filter \
+"GIT_AUTHOR_NAME='Newname'; GIT_AUTHOR_EMAIL='newemail'; \
+GIT_COMMITTER_NAME='committed-name'; GIT_COMMITTER_EMAIL='committed-email';" HEAD
+# https://stackoverflow.com/a/2920001/12539782
+```
+
+**修改 author**：
+
+```sh
+$ git rebase -i HEAD~n # 表示要修改前 n 次所有的提交
+```
+
+输入此命令后，显示以下结果：
+
+```text
+pick ac0fcc6 add file2
+pick a0cbfbe add file3
+pick 16ee6eb add file4
+
+# Rebase d57f11f..16ee6eb onto d57f11f (3 command(s))
+#
+# Commands:
+# p, pick = use commit
+# r, reword = use commit, but edit the commit message
+# e, edit = use commit, but stop for amending
+# s, squash = use commit, but meld into previous commit
+# f, fixup = like "squash", but discard this commit's log message
+# x, exec = run command (the rest of the line) using shell
+```
+
+我们要修改第二行和第三行的提交，根据提示，因此把第二行和第三行的 pick 改成 edit 或 e，保存退出。
+
+保存上面的修改并退出后，git 会依次执行上面的操作，当操作为 pick 时，直接 commit。当操作为 edit 时，会中断，并提示以下信息：
+
+```sh
+You can amend the commit now, with
+
+    git commit --amend
+
+Once you are satisfied with your changes, run
+
+    git rebase --continue
+
+```
+
+这里的意思是说，你可以使用 `git commit --amend` 来修改此次提交，修改以后，觉得满意了，执行 `git rebase --continue` 继续剩下的流程。
+
+由于我们的主要目的是修改提交者的信息，因此光用 `git commit --amend` 是不够的，我们要使用 `git commit --amend --author "yourname <your email>"` 这样的操作，这一点是修改提交者信息的关键所在。
+
+使用上面的命令成功修改此次提交的提交者信息后，一定要记得执行 `git rebase --continue` 继续。
+
+最终完成以后提示如下：
+
+```sh
+$ git rebase --continue
+Successfully rebased and updated refs/heads/master.
+```
+
+相关讨论：
+
+1. <https://stackoverflow.com/q/750172/12539782>
+2. [git 修改已提交的某一次的邮箱和用户信息](https://segmentfault.com/q/1010000006999861)
+3. [修改 git repo 历史提交的 author](http://baurine.github.io/2015/08/22/git_update_author.html)
+
+### 将 `branch1` 的某个 `commit1` 合并到 `branch2` 当中
+
+切换到 branch2 中，然后执行如下命令：
+
+```sh
+$ git cherry-pick commit1
+```
+
+### 将 Git 项目迁移到另一个仓库
+
+我们假设旧仓库的项目名称叫 `old-repository`，新仓库的项目名称叫 `new-repository`。操作如下：
+
+（1）创建旧仓库的裸克隆：
+
+```sh
+git clone --bare https://github.com/exampleuser/old-repository.git
+```
+
+执行上述命令后，会在本地生成一个名叫 `old-repository.git`的文件夹。
+
+（2）迁移到新仓库：
+
+```sh
+cd old-repository.git
+git push --mirror https://github.com/exampleuser/new-repository.git
+```
+
+这样的话，项目就已经迁移到新仓库了。
+
+注意，我们**不需要**手动新建一个空的新仓库，当我们执行上述命令之后，新仓库就已经自动创建好了。
+
+参考链接：
+
+1. [Duplicating a repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/duplicating-a-repository)
+2. [Git 本地仓库和裸仓库](https://moelove.info/2016/12/04/Git-%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93%E5%92%8C%E8%A3%B8%E4%BB%93%E5%BA%93/)
+
 ---
 
 **参考资料**：
