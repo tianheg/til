@@ -60,7 +60,7 @@ function getFeSidebar(groupA, groupB, groupC, groupD) {
         {
             title: groupD,
             collapsable: false,
-            children: ['tools/vscode'],
+            children: ['tools/vscode', 'tools/chrome', 'tools/emmet'],
         },
     ];
 }
