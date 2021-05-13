@@ -24,13 +24,36 @@ module.exports = (ctx) => ({
     },
     plugins: [
         '@vuepress/back-to-top',
+        '@vuepress/container', // https://vuepress.github.io/reference/default-theme/markdown.html
+        '@vuepress/last-updated',
         '@vuepress/medium-zoom',
+        '@vuepress/nprogress',
+        'one-click-copy',
+        'fulltext-search',
+        'last-reading',
+        'element-ui',
         [
-            '@vuepress/last-updated',
+            'thirdparty-search',
             {
-                dateOptions: {
-                    hour12: false,
-                },
+                thirdparty: [
+                    {
+                        title: '在MDN中搜索',
+                        frontUrl:
+                            'https://developer.mozilla.org/en-US/search?q=',
+                        behindUrl: '',
+                    },
+                    {
+                        title: '在GitHub中搜索',
+                        frontUrl: 'https://github.com/search?q=',
+                        behindUrl: '',
+                    },
+                    {
+                        title: '在fCC中搜索',
+                        frontUrl:
+                            'https://www.freecodecamp.org/news/search/?query=',
+                        behindUrl: '',
+                    },
+                ],
             },
         ],
     ],
