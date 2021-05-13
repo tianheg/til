@@ -19,11 +19,17 @@
     "devDependencies": {
         "@vuepress/plugin-back-to-top": "^1.8.2",
         "@vuepress/plugin-medium-zoom": "^1.8.2",
+        "@vuepress/plugin-nprogress": "^1.8.2",
         "husky": "^6.0.0",
         "lint-md-cli": "^0.1.2",
         "lint-staged": "^11.0.0",
         "prettier": "^2.3.0",
         "vuepress": "^1.8.2",
+        "vuepress-plugin-element-ui": "^1.1.0",
+        "vuepress-plugin-fulltext-search": "^2.2.0",
+        "vuepress-plugin-last-reading": "^1.0.0",
+        "vuepress-plugin-one-click-copy": "^1.0.3",
+        "vuepress-plugin-thirdparty-search": "^1.0.2",
         "vuepress-theme-book": "^0.0.5"
     },
     "prettier": {

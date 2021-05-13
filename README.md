@@ -4,6 +4,15 @@
 
 GitHub Action Consume Time: about 2min2s
 
+```sh
+$ yarn add vuepress-plugin-one-click-copy -D
+$ yarn add vuepress-plugin-fulltext-search -D
+$ yarn add vuepress-plugin-last-reading -D
+$ yarn add vuepress-plugin-element-ui -D
+$ yarn add vuepress-plugin-thirdparty-search -D
+$ yarn add @vuepress/plugin-nprogress -D
+```
+
 ---
 
 **References**:
