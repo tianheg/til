@@ -15,6 +15,7 @@
 - [Devhints](https://devhints.io/) - @rstacruz 总结的各种技术备忘单，界面很好看哦
 - [CSS Reference](https://cssreference.io/) - CSS 属性可视化指南
 - [CSS Triggers](https://csstriggers.com/) - 列出了哪些 CSS 属性会触发浏览器重新布局、绘制和合成
+- [Introducing JSON](https://www.json.org/)
 
 ## 🎨 Playgrounds
 
