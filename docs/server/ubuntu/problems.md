@@ -275,7 +275,7 @@ Finally I found I add my PC to blacklist with the Wi-Fi I want to connect.
 
 ### Connect Wifi
 
-![software-update](images/software-updates.png)
+![software-update](./images/software-updates.png)
 
 I just seclect the Using instead of Do not.
 
