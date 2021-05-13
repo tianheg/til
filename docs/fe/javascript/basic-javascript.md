@@ -842,6 +842,71 @@ function checkObj(obj, checkProp) {
 
 以上是正确答案，我写的错误答案，只是把 `obj[checkProp]` 改为 `obj.checkProp`。
 
+## 操作复杂对象
+
+JavaScript 对象可以使你灵活地存储数据。他们允许字符串、数字、布尔型、数组、函数、对象的任意组合。
+
+例子：
+
+```js
+var myMusic = [
+  {
+    "artist": "Coldplay",
+    "title": "Viva La Vida",
+    "release_year": 2008,
+    "formats": [
+      "CD", 
+      "Cassette", 
+      "LP"
+    ],
+    "gold": true
+  }
+];
+```
+
+这是数组中的内嵌了对象。这个对象有关于一张唱片的各种元信息。它还具有一个嵌套的格式数组。注意：你要在数组中的每一个对象后加 `,` 除非它是数组的最后一个对象。
+
+## 访问嵌套对象
+
+```js
+var myStorage = {
+  "car": {
+    "inside": {
+      "glove box": "maps",
+      "passenger seat": "crumbs"
+    },
+    "outside": {
+      "trunk": "jack"
+    }
+  }
+};
+myStorage.car.inside["glove box"];
+```
+
+## 访问嵌套数组
+
+```js
+var myPets = {
+  {
+    animalType: 'cat',
+    names: [
+      'A',
+      'B',
+      'C'
+    ]
+  },
+  {
+    animalType: 'dog',
+    names: [
+      'D',
+      'E',
+      'F'
+    ]
+  }
+};
+c
+```
+
 ## 功能
 
 ### `typeof`
