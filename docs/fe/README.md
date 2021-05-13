@@ -37,3 +37,4 @@
 - [HTML_CodeSniffer](http://squizlabs.github.io/HTML_CodeSniffer/) - 客户端脚本，用于检查 HTML 源代码并检测是否违反了已定义的编码标准。
 - [The A11Y Checklist](https://a11yproject.com/checklist/) - 该清单使用“ Web 内容可访问性指南（WCAG）”作为参考点。 WCAG 是个人，组织和政府对 Web 内容访问权限的共享标准。
 - [The web accessibility basics](https://www.marcozehe.de/articles/2015-12-14-the-web-accessibility-basics/)
+- [W3Schools How To](https://www.w3schools.com/howto/default.asp) - 用 HTML，CSS，JavaScript 实现的小功能合集
