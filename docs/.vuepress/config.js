@@ -43,14 +43,8 @@ module.exports = (ctx) => ({
                         behindUrl: '',
                     },
                     {
-                        title: '在GitHub中搜索',
-                        frontUrl: 'https://github.com/search?q=',
-                        behindUrl: '',
-                    },
-                    {
-                        title: '在fCC中搜索',
-                        frontUrl:
-                            'https://www.freecodecamp.org/news/search/?query=',
+                        title: '在Runoob中搜索',
+                        frontUrl: 'https://www.runoob.com/?s=',
                         behindUrl: '',
                     },
                 ],
