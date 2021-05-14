@@ -743,9 +743,10 @@ console.log(someObj[someProp]);
 
 ```js
 var ourDog = {
-  "name": "Bot"
+    name: 'Bot',
 };
-ourDog.name = "Happy Bot";
+ourDog.name = 'Happy Bot';
+console.log(ourDog);
 // or ourDog["name"] = "Happy Bot";
 ```
 
@@ -755,18 +756,20 @@ ourDog.name = "Happy Bot";
 
 ```js
 var ourDog = {
-  "name": "Bot"
+    name: 'Bot',
 };
 ourDog.legs = 4;
+console.log(ourDog);
 ```
 
 ### 删除属性
 
 ```js
 var ourDog = {
-  "name": "Bot"
+    name: 'Bot',
 };
 delete ourDog.name;
+console.log(ourDog);
 ```
 
 ### 使用对象查询
@@ -800,18 +803,19 @@ delete ourDog.name;
   }
 // 答案
 function phoneticLookup(val) {
-  var result = "";
-  var lookup = {
-    "alpha": "Adams",
-    "bravo": "Boston",
-    "charlie": "Chicago",
-    "delta": "Denver",
-    "echo": "Easy",
-    "fixtrot": "Frank"
-  }
-  result = lookup[val]; // 这句话没想到这么写
-  return result;
+    var result = '';
+    var lookup = {
+        alpha: 'Adams',
+        bravo: 'Boston',
+        charlie: 'Chicago',
+        delta: 'Denver',
+        echo: 'Easy',
+        fixtrot: 'Frank',
+    };
+    result = lookup[val]; // 这句话没想到这么写
+    return result;
 }
+console.log(phoneticLookup('echo'));
 ```
 
 ### 测试对象属性存在与否
@@ -820,11 +824,11 @@ function phoneticLookup(val) {
 
 ```js
 var tianhegObj = {
-  right: "air",
-  left: "life" 
-}
-tianhegObj.hasOwnProperty("right");
-tianhegObj.hasOwnProperty("middle");
+    right: 'air',
+    left: 'life',
+};
+console.log(tianhegObj.hasOwnProperty('right'));
+console.log(tianhegObj.hasOwnProperty('middle'));
 // ouput: true false
 ```
 
@@ -832,12 +836,13 @@ tianhegObj.hasOwnProperty("middle");
 
 ```js
 function checkObj(obj, checkProp) {
-  if(obj.hasOwnProperty(checkProp)) {
-    return obj[checkProp];
-  } else {
-    return "Not Found";
-  }
+    if (obj.hasOwnProperty(checkProp)) {
+        return obj[checkProp];
+    } else {
+        return 'Not Found';
+    }
 }
+console.log(checkObj({ gift: 'pony', pet: 'kitten', bed: 'sleigh' }, 'gift'));
 ```
 
 以上是正确答案，我写的错误答案，只是把 `obj[checkProp]` 改为 `obj.checkProp`。
@@ -850,17 +855,13 @@ JavaScript 对象可以使你灵活地存储数据。他们允许字符串、数
 
 ```js
 var myMusic = [
-  {
-    "artist": "Coldplay",
-    "title": "Viva La Vida",
-    "release_year": 2008,
-    "formats": [
-      "CD", 
-      "Cassette", 
-      "LP"
-    ],
-    "gold": true
-  }
+    {
+        artist: 'Coldplay',
+        title: 'Viva La Vida',
+        release_year: 2008,
+        formats: ['CD', 'Cassette', 'LP'],
+        gold: true,
+    },
 ];
 ```
 
@@ -870,41 +871,33 @@ var myMusic = [
 
 ```js
 var myStorage = {
-  "car": {
-    "inside": {
-      "glove box": "maps",
-      "passenger seat": "crumbs"
+    car: {
+        inside: {
+            'glove box': 'maps',
+            'passenger seat': 'crumbs',
+        },
+        outside: {
+            trunk: 'jack',
+        },
     },
-    "outside": {
-      "trunk": "jack"
-    }
-  }
 };
-myStorage.car.inside["glove box"];
+console.log(myStorage.car.inside['glove box']);
 ```
 
 ## 访问嵌套数组
 
 ```js
-var myPets = {
-  {
-    animalType: 'cat',
-    names: [
-      'A',
-      'B',
-      'C'
-    ]
-  },
-  {
-    animalType: 'dog',
-    names: [
-      'D',
-      'E',
-      'F'
-    ]
-  }
-};
-c
+var myPets = [
+    {
+        animalType: 'cat',
+        names: ['A', 'B', 'C'],
+    },
+    {
+        animalType: 'dog',
+        names: ['D', 'E', 'F'],
+    },
+];
+console.log(myPets[1].names[1]);
 ```
 
 ## 功能
