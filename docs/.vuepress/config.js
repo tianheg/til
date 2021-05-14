@@ -19,7 +19,7 @@ module.exports = (ctx) => ({
         sidebar: {
             '/fe/': getFeSidebar('HTML', 'CSS', 'JavaScript', 'Tools'),
             '/server/': getServerSidebar('Ubuntu'),
-            '/others/': getOthersSidebar('Git', 'Hardware'),
+            '/others/': getOthersSidebar('Git', 'Hardware', 'Network'),
         },
     },
     plugins: [
@@ -99,9 +99,10 @@ function getServerSidebar(groupA) {
     ];
 }
 
-function getOthersSidebar(groupA, groupB) {
+function getOthersSidebar(groupA, groupB, groupC) {
     return [
         '',
+        'resilio-sync',
         {
             title: groupA,
             collapsable: false,
@@ -110,8 +111,12 @@ function getOthersSidebar(groupA, groupB) {
         {
             title: groupB,
             collapsable: false,
-            children: ['hardware/', 'hardware/power'],
+            children: ['hardware/', 'hardware/power', 'hardware/bluetooth'],
         },
-        'resilio-sync',
+        {
+            title: groupC,
+            collapsable: false,
+            children: ['network/', 'network/protocol'],
+        },
     ];
 }
