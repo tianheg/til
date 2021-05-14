@@ -19,7 +19,7 @@ module.exports = (ctx) => ({
         sidebar: {
             '/fe/': getFeSidebar('HTML', 'CSS', 'JavaScript', 'Tools'),
             '/server/': getServerSidebar('Ubuntu'),
-            '/others/': getOthersSidebar('Git'),
+            '/others/': getOthersSidebar('Git', 'Hardware'),
         },
     },
     plugins: [
@@ -99,13 +99,18 @@ function getServerSidebar(groupA) {
     ];
 }
 
-function getOthersSidebar(groupA) {
+function getOthersSidebar(groupA, groupB) {
     return [
         '',
         {
             title: groupA,
             collapsable: false,
             children: ['git/', 'git/basic-usage'],
+        },
+        {
+            title: groupB,
+            collapsable: false,
+            children: ['hardware/', 'hardware/power'],
         },
         'resilio-sync',
     ];
