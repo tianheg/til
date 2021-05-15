@@ -23,15 +23,19 @@ $ yarn add @vuepress/plugin-nprogress -D
 :::: el-tabs
 
 ::: el-tab-pane label=title
+
 __markdown content__
+
 :::
 
 ::: el-tab-pane label=javascript
+
 \`\`\`javascript
 () => {
   console.log('Javascript code example')
 }
 \`\`\`
+
 :::
 
 ::::
