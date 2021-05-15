@@ -915,6 +915,146 @@ var myPets = [
 console.log(myPets[1].names[1]);
 ```
 
+## 场景：唱片收集
+
+**不会写**
+
+题目：一个文字对象，展示了你的音乐唱片集合。每一个唱片都有唯一的 id 数字，作为它的键，和其他几个属性。并非所有唱片拥有完整的信息。初始化：一个函数名为 `updateRecords` 的文字对象，`records`，包含音乐唱片集锦，`id`，`prop`（像 `artist` 或 `tracks`），和 `value`。使用以下规则修改函数，把对象传递给函数：
+
+1. 你的函数必须总是返回整个记录集合对象。
+2. 如果 `prop` 不是 `tracks`，`value` 非空，更新或将唱片的 `prop` 设置成 `value`。
+3. 如果 `prop` 是 `tracks` 但唱片没有 `tracks` 属性，新建一个空数组，添加 `value`。
+4. 如果 `prop` 是 `tracks` 且 `value` 非空，添加 `value` 到唱片存在的 `tracks` 数组最后。
+5. 如果 `value` 是空字符串，从唱片中删除 `prop` 属性。
+
+默认代码：
+
+```js
+// Setup
+var recordCollection = {
+  2548: {
+    albumTitle: 'Slippery When Wet',
+    artist: 'Bon Jovi',
+    tracks: ['Let It Rock', 'You Give Love a Bad Name']
+  },
+  2468: {
+    albumTitle: '1999',
+    artist: 'Prince',
+    tracks: ['1999', 'Little Red Corvette']
+  },
+  1245: {
+    artist: 'Robert Palmer',
+    tracks: []
+  },
+  5439: {
+    albumTitle: 'ABBA Gold'
+  }
+};
+
+// Only change code below this line
+function updateRecords(records, id, prop, value) {
+  return records;
+}
+
+updateRecords(recordCollection, 5439, 'artist', 'ABBA');
+```
+
+:::: el-tabs
+
+::: el-tab-pane label=我的代码
+
+```js
+function updateRecords(records, id, prop, value) {
+    //var value = '';
+    if (value != '') {
+        return (value = records[id][prop]);
+    } else if (records.hasOwnProperty('tracks') === false) {
+        var myArray = [''];
+        myArray.push(value);
+    } else if (prop === 'tracks' && value != '') {
+        records[id][prop].value;
+    } else if ((value = '')) {
+        delete records[id][prop];
+    } else {
+        return records;
+    }
+}
+
+console.log(updateRecords(recordCollection, 5439, 'artist', 'ABBA'));
+```
+
+:::
+
+::: el-tab-pane label=答案
+
+```js
+// way 1
+function updateRecords(records, id, prop, value) {
+  if (prop !== 'tracks' && value !== "") {
+    records[id][prop] = value;
+  } else if (prop === "tracks" && records[id].hasOwnProperty("tracks") === false) {
+    records[id][prop] = [value];
+  } else if (prop === "tracks" && value !== "") {
+    records[id][prop].push(value);
+  } else if (value === "") {
+    delete records[id][prop];
+  }
+  return records;
+}
+
+// way 2
+function updateRecords(records, id, prop, value) {
+  if (value === '') delete records[id][prop];
+  else if (prop === 'tracks') {
+    records[id][prop] = records[id][prop] || []; // this is called shortcircuit evaluation, see below for explanation
+    records[id][prop].push(value);
+  } else {
+    records[id][prop] = value;
+  }
+  return records;
+}
+```
+
+:::
+
+::::
+
+**Code Explanation**:
+
+- First checks if `value` is a blank string. If so, then the key (`prop`) is removed from the object.
+- If that first check doesn’t pass, it next checks if `prop` is equal to `tracks`. The `tracks` array is initialized if it does not exist, and then `value` is pushed into the `tracks` array. (This step uses shortcircuit evaluation)
+- If both these checks fail (meaning `value` is not an empty string and `prop` is not `tracks`), then either a new key (`prop`) and value (`value`) are added to the object, or an existing key is updated if the `prop` already exists.
+
+## 循环
+
+### `while`
+
+使用 `while` 进行迭代。
+
+```js
+var myArray = [];
+var i = 0;
+while(i < 5) {
+    myArray.push(i);
+    i++;
+}
+console.log(myArray);
+
+//
+
+var myArray = [];
+var i = 5;
+while (i > -1) {
+    myArray.push(i);
+    i--;
+}
+console.log(myArray);
+```
+
+### `for`
+
+
+
 ## 功能
 
 ### `typeof`
