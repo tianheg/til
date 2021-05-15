@@ -14,7 +14,6 @@ module.exports = (ctx) => ({
         nav: require('./nav'),
         smoothScroll: true,
         lastUpdated: '上次更新',
-        activeHeaderLinks: false,
         sidebarDepth: 2,
         sidebar: {
             '/fe/': getFeSidebar('HTML', 'CSS', 'JavaScript', 'Tools'),
@@ -67,12 +66,12 @@ function getFeSidebar(groupA, groupB, groupC, groupD) {
         {
             title: groupB,
             collapsable: false,
-            children: ['css/basic-css'],
+            children: ['css/way', 'css/basic-css'],
         },
         {
             title: groupC,
             collapsable: false,
-            children: ['javascript/basic-javascript'],
+            children: ['javascript/way', 'javascript/basic-javascript'],
         },
         {
             title: groupD,
