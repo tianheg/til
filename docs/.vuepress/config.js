@@ -61,17 +61,21 @@ function getFeSidebar(groupA, groupB, groupC, groupD) {
         {
             title: groupA,
             collapsable: false,
-            children: ['html/basic-html'],
+            children: ['html/basic-html', 'html/examples'],
         },
         {
             title: groupB,
             collapsable: false,
-            children: ['css/way', 'css/basic-css'],
+            children: ['css/way', 'css/basic-css', 'css/examples'],
         },
         {
             title: groupC,
             collapsable: false,
-            children: ['javascript/way', 'javascript/basic-javascript'],
+            children: [
+                'javascript/way',
+                'javascript/basic-javascript',
+                'javascript/examples',
+            ],
         },
         {
             title: groupD,
