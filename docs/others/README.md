@@ -1,5 +1,62 @@
 # 其他
 
+## 问题
+
+### GitHub Action 只生成 `.nojekyll`
+
+有问题的[地址](https://github.com/tianheg/feed/runs/2588088608?check_suite_focus=true#step:6:34)，代码：
+
+```sh
+2021-05-14T23:53:50.5691148Z [INFO] copy /home/runner/work/feed/feed/public to /home/runner/actions_github_pages_1621036430543
+2021-05-14T23:53:50.5744245Z cp: no such file or directory: /home/runner/work/feed/feed/public/*
+2021-05-14T23:53:50.5748693Z cp: no such file or directory: /home/runner/work/feed/feed/public/.*
+2021-05-14T23:53:50.5754401Z [INFO] delete excluded assets
+2021-05-14T23:53:50.5804394Z rm: no paths given
+2021-05-14T23:53:50.5808868Z [INFO] Created /home/runner/actions_github_pages_1621036430543/.nojekyll
+
+[gh-pages (root-commit) e783e47] deploy: 3ccc59a4e70e26668e0189264e8357994c0680ef
+   1 file changed, 0 insertions(+), 0 deletions(-)
+   create mode 100644 .nojekyll
+```
+
+正常的过程不该只生成 `.nojekyll`：
+
+```sh
+[INFO] copy /home/runner/work/feed/feed/public to /home/runner/actions_github_pages_1621037030810
+  cp: no such file or directory: /home/runner/work/feed/feed/public/.*
+  [INFO] delete excluded assets
+  rm: no paths given
+  [INFO] Created /home/runner/actions_github_pages_1621037030810/.nojekyll
+  [INFO] Created /home/runner/actions_github_pages_1621037030810/CNAME
+
+ [gh-pages (root-commit) 7fede38] deploy: 584bbf403bd475f9481986ed57bbc6953687ec31
+   8 files changed, 6756 insertions(+)
+   create mode 100644 .nojekyll
+   create mode 100644 CNAME
+   create mode 100644 cache.json
+   create mode 100644 favicon.ico
+   create mode 100644 feed.atom
+   create mode 100644 index.html
+   create mode 100644 index.js
+   create mode 100644 styles.css
+```
+
+怀疑是添加了 `static/CNAME` 的缘故，我为此新建了一个[测试仓库：osmosfeed-demo](https://github.com/tianheg/osmosfeed-demo)：
+
+```text
+.github/workflows/update-feed.yaml
+includes/before-head-end.html
+static/CNAME
+.gitignore
+README.md
+osmosfeed.yaml
+package.json
+```
+
+但是，它的 GitHub Action 运行是正常的，[生成了全部文件](https://github.com/tianheg/osmosfeed-demo/runs/2588166880?check_suite_focus=true#step:6:67)。我很困惑。
+
+在 osmosfeed-demo 的最近一次 GitHub Action 运行中，只生成 [`.nojekyll`](https://github.com/tianheg/osmosfeed-demo/runs/2588279301?check_suite_focus=true#step:6:68)
+
 ## Algolia
 
 ### What Is A Usage Unit
