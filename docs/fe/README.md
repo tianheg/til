@@ -32,10 +32,23 @@
 **HTML**
 
 - [HTML_CodeSniffer](http://squizlabs.github.io/HTML_CodeSniffer/) - 客户端脚本，用于检查 HTML 源代码并检测是否违反了已定义的编码标准。
+- <https://www.learn-html.org/>
+- [HTML Best Practices](https://hail2u.github.io/html-best-practices/)
+- [HTML Reference](https://htmlreference.io/)
+- <https://learn.shayhowe.com/>
+
+**CSS**
+
+- [CSS Reference](https://cssreference.io/)
+- <https://www.csstutorial.net/>
 
 **CSS Animation**
 
 - [cubic-bezier](http://cubic-bezier.com/) - 贝塞尔曲线生成器，写 CSS 动画的时候很实用
+
+**CSS Layouts**
+
+- <https://learnlayout.com/>
 
 **CSS Flexbox**
 
@@ -49,6 +62,7 @@
 - [CSS Grid Template Builder](https://codepen.io/anthonydugois/full/RpYBmy/) - CSS Grid 的可视化工具
 - [grid-template-areas](https://www.w3schools.com/cssref/playit.asp?filename=playcss_grid-template-areas) - 展示 Grid 效果
 - [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+- <https://griddy.io/>
 
 **CSS Icon**
 
@@ -83,6 +97,12 @@
 **Color**
 
 - [Accessibility Color Palette Generator](https://color.adobe.com/create/color-accessibility)
+- <http://www.hexinvaders.com/>
+- <https://learnui.design/tools/accessible-color-generator.html>
+- <https://mycolor.space/>
+- <https://palette.ninja/>
+- <https://colorhunt.co/>
+- <https://omatsuri.app/color-shades-generator>
 
 **Svg**
 
@@ -95,3 +115,12 @@
 **Web Debugging**
 
 - [whistle](https://wproxy.org/whistle/) - 基于 Node 实现的跨平台 web 调试代理工具
+
+**JavaScript**
+
+- <https://www.jsv9000.app/>
+- <https://github.com/trekhleb/javascript-algorithms/>
+- <https://javascript30.com/>
+- <https://www.javascripttutorial.net/>
+- <https://learnjavascript.online/>
+- <https://www.learn-js.org/en/>
