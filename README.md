@@ -67,4 +67,4 @@ Use `http://localhost:8080/fe/javascript/basic-javascript/` instead of `http://l
 - [TODAY I LEARNED](https://til.hashrocket.com)
 - [simonw/til](https://github.com/simonw/til)
 - [thoughtbot/til](https://github.com/thoughtbot/til)
-- [vuepress-theme-vdoing](https://github.com/xugaoyi/vuepress-theme-vdoing) 它可以添加其他搜索引擎
+- vuepress-plugin-thirdparty-search - 它可以添加其他搜索引擎
