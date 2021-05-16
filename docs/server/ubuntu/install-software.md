@@ -1050,3 +1050,14 @@ Reboot the computer and we would see a new penguin input icon at the top right c
 $ wget https://github.com/jgraph/drawio-desktop/releases/download/v14.5.1/drawio-amd64-14.5.1.deb
 $ sudo apt install ./drawio-amd64-14.5.1.deb
 ```
+
+## 按类别
+
+### 书籍
+
+- [FBReader](https://fbreader.org/)(ePub, mobi, fb2, HTML, RTF, plain text. The primary formats are ePub and fb2)
+- [Buka](https://github.com/oguzhaninan/Buka)(PDF)
+- [Calibre](https://www.calibre-ebook.com/)(`sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin install_dir=/opt`)
+- [Bookworm](https://babluboy.github.io/bookworm/)(ePUB, PDF, MOBI, FB2, CBR, CBZ)
+- [Ebook-Viewer](https://github.com/michaldaniel/Ebook-Viewer)
+- [Foliate](https://github.com/johnfactotum/foliate)(ePUB, azw, azw3, mobi, fb2, fb2.zip, cbr, cbz, cbt, cb7, txt)
