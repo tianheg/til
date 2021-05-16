@@ -1241,7 +1241,19 @@ lookUpProfile("Akira", "likes");
 ::: el-tab-pane label=我的结果
 
 ```js
+function lookUpProfile(name, prop) {
+    if(contacts.hasOwnProperty('firstName')) {
+        for (var i = 0; i < contacts.length; i++) {
+            return (name = contacts[i].firstName);
+        }   
+    } else if () {
+        return "No such property";
+    } else {
+        return "No such contact";
+    }
 
+    console.log(name);
+}
 ```
 
 :::
@@ -1249,12 +1261,42 @@ lookUpProfile("Akira", "likes");
 ::: el-tab-pane label=答案
 
 ```js
+// way 1
+function lookUpProfile(name, prop) {
+    for (let x = 0; x < contacts.length; x++) {
+        if (contacts[x].firstName === name) {
+            if (contacts[x].hasOwnProperty(prop)) {
+                return contacts[x][prop];
+            } else {
+                return 'No such property';
+            }
+        }
+    }
+    return 'No such contact';
+}
 
+// way 2
+function lookUpProfile(name, prop) {
+    for (let i = 0; i < contacts.length; i++) {
+        if (contacts[i].firstName === name) {
+            if (prop in contacts[i]) {
+                return contacts[i][prop];
+            } else {
+                return 'No such property';
+            }
+        }
+    }
+    return 'No such contact';
+}
 ```
 
 :::
 
 ::::
+
+## 场景：生成随机分数
+
+
 
 ## 功能
 
