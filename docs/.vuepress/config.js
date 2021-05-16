@@ -16,7 +16,7 @@ module.exports = (ctx) => ({
         lastUpdated: '上次更新',
         sidebarDepth: 2,
         sidebar: {
-            '/fe/': getFeSidebar('HTML', 'CSS', 'JavaScript', 'Tools'),
+            '/fe/': getFeSidebar('HTML', 'CSS', 'JavaScript', 'Color', 'Tools'),
             '/server/': getServerSidebar('Ubuntu'),
             '/others/': getOthersSidebar('Git', 'Hardware', 'Network'),
         },
@@ -61,7 +61,7 @@ module.exports = (ctx) => ({
     },
     extraWatchFiles: ['.vuepress/nav.js'],
 });
-function getFeSidebar(groupA, groupB, groupC, groupD) {
+function getFeSidebar(groupA, groupB, groupC, groupD, groupE) {
     return [
         '',
         {
@@ -85,6 +85,11 @@ function getFeSidebar(groupA, groupB, groupC, groupD) {
         },
         {
             title: groupD,
+            collapsable: false,
+            children: ['color/basic'],
+        },
+        {
+            title: groupE,
             collapsable: false,
             children: ['tools/vscode', 'tools/chrome', 'tools/emmet'],
         },
