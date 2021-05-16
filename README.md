@@ -31,7 +31,7 @@ __markdown content__
 
 ::: el-tab-pane label=javascript
 
-\`\`\`javascript
+\`\`\`js
 () => {
   console.log('Javascript code example')
 }
