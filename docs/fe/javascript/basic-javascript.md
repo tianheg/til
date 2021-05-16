@@ -691,7 +691,7 @@ myFunc();
 
 ## 构建对象
 
-对象和数组很像，只不过对象不使用索引存取和修改数据，而是通过属性。对象对于以结构化方式存储数据很有用。如果您的对象具有任何非字符串属性，则 JavaScript 会自动将它们作为字符串进行类型转换。
+<mark>对象和数组很像，只不过对象不使用索引存取和修改数据，而是通过属性</mark>。对象对于以结构化方式存储数据很有用。如果您的对象具有任何非字符串属性，则 JavaScript 会自动将它们作为字符串进行类型转换。
 
 ```js
 var myDog = {
@@ -1060,6 +1060,201 @@ console.log(myArray);
 - `c` - 结果表达式
 
 条件语句在每次循环迭代的开始时进行评估，并且只要评估结果为 `true`，便会继续执行。如果条件在迭代开始时为 `false`，则循环将停止执行。这意味着，如果条件开始为假，则循环将永远不会执行。
+
+结果表达式在每一次循环迭代后执行，在下一次条件检查之前，通常用于递增或递减循环计数器。
+
+```js
+var myArray=[];
+for (var i=0; i<5;i++){
+  myArray.push(i);
+}
+console.log(myArray);
+```
+
+**奇数迭代**
+
+```js
+var myArray = [];
+for (var i = 1; i < 10; i += 2) {
+    myArray.push(i);
+}
+console.log(myArray);
+```
+
+**向后计数**
+
+```js
+var myArray = [];
+for (var i=9; i>0;i-=2) {
+  myArray.push(i);
+}
+console.log(myArray);
+```
+
+**遍历数组**
+
+```js
+var myArr = [2, 3, 4, 5, 6];
+var total = 0;
+for (var i = 0; i < myArr.length; i++) {
+  total = total + myArr[i];
+  console.log(total);
+}
+```
+
+### `while`
+
+```js
+var arr = [];
+var i = 5;
+while (i < 5) {
+    arr.push(i);
+    i++;
+}
+console.log(arr);
+```
+
+### `do...while`
+
+它可以使循环代码至少执行一次。
+
+```js
+var arr = [];
+var i = 10;
+do {
+    arr.push(i);
+    i++;
+} while(i < 10);
+console.log(arr);
+```
+
+## 循环嵌套
+
+```js
+// 数组包含的数字相乘
+function multiplyAll(arr) {
+  var product = 1;
+  for (var i = 0; i < arr.length; i++) {
+    for (var j  = 0; j < arr[i].length; j++) {
+      product = product + arr[i][j];
+    }
+  }
+  return product;
+}
+console.log(multiplyAll([[1],[2],[3],]));
+```
+
+## 递归
+
+### 递归代替循环
+
+:::: el-tabs
+
+::: el-tab-pane label=循环
+
+```js
+function multiply(arr, n) {
+    var product = 1;
+    for (var i = 0; i < n; i++) {
+        product *= arr[i];
+    }
+    return  product;
+}
+console.log(multiply([2, 3, 4, 5], 4));
+```
+
+:::
+
+::: el-tab-pane label=递归
+
+```js
+function multiply(arr, n) {
+    if (n <= 0) {
+        return 1;
+    } else {
+        return multiply(arr, n - 1) * arr[n - 1];
+    }
+}
+console.log(multiply([2, 3, 4, 5], 4));
+```
+
+:::
+
+::::
+
+递归的 multiply 版本是这样分解的。在基本情况下，当 n < = 0 时，它返回 1。对于较大的值 n，它调用自己，但是使用 n-1。这个函数调用以同样的方式计算，再次调用 multiply，直到 n < = 0。此时，所有函数都可以返回，而原始的 multiply 将返回答案。
+
+注意: 当递归函数返回时，不再调用该函数时(在本例中，当 n < = 0时) ，必须有一个基准值，否则它们将永远无法完成执行。
+
+## 场景：资料查找
+
+有一个对象数组，表示我们联系人列表里不同的人。一个 `lookUpProfile` 函数以 `name` 和一个属性（`prop`）作为参数已经预先写好。这个函数要检查 `name` 是否与实际联系人的 `firstName` 能对应上，给的 `prop` 也是实际联系人的真实信息。如果两者都对，返回该属性的值。
+
+- 如果没有符合的 `name` 返回字符串 `No such contact`；
+- 如果没有符合的 `prop` 但找到符合的 `name` 返回字符串 `No such property`。
+
+:::: el-tabs
+
+::: el-tab-pane label=原题
+
+```js
+// Setup
+var contacts = [
+    {
+        "firstName": "Akira",
+        "lastName": "Laine",
+        "number": "0543236543",
+        "likes": ["Pizza", "Coding", "Brownie Points"]
+    },
+    {
+        "firstName": "Harry",
+        "lastName": "Potter",
+        "number": "0994372684",
+        "likes": ["Hogwarts", "Magic", "Hagrid"]
+    },
+    {
+        "firstName": "Sherlock",
+        "lastName": "Holmes",
+        "number": "0487345643",
+        "likes": ["Intriguing Cases", "Violin"]
+    },
+    {
+        "firstName": "Kristian",
+        "lastName": "Vos",
+        "number": "unknown",
+        "likes": ["JavaScript", "Gaming", "Foxes"]
+    }
+];
+
+
+function lookUpProfile(name, prop){
+// Only change code below this line
+
+// Only change code above this line
+}
+
+lookUpProfile("Akira", "likes");
+```
+
+:::
+
+::: el-tab-pane label=我的结果
+
+```js
+
+```
+
+:::
+
+::: el-tab-pane label=答案
+
+```js
+
+```
+
+:::
+
+::::
 
 ## 功能
 
