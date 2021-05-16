@@ -4,7 +4,7 @@
 
 ### GitHub Action 只生成 `.nojekyll`
 
-有问题的[地址](https://github.com/tianheg/feed/runs/2588088608?check_suite_focus=true#step:6:34)，代码：
+有问题的 [地址](https://github.com/tianheg/feed/runs/2588088608?check_suite_focus=true#step:6:34)，代码：
 
 ```sh
 2021-05-14T23:53:50.5691148Z [INFO] copy /home/runner/work/feed/feed/public to /home/runner/actions_github_pages_1621036430543
@@ -41,7 +41,7 @@
    create mode 100644 styles.css
 ```
 
-怀疑是添加了 `static/CNAME` 的缘故，我为此新建了一个[测试仓库：osmosfeed-demo](https://github.com/tianheg/osmosfeed-demo)：
+怀疑是添加了 `static/CNAME` 的缘故，我为此新建了一个 [测试仓库：osmosfeed-demo](https://github.com/tianheg/osmosfeed-demo)：
 
 ```text
 .github/workflows/update-feed.yaml
@@ -568,3 +568,21 @@ from <http://www.zhangjiee.com/wiki/growing/computer-english-words.html>
 - YAML - `yaml`, `yml`
 - YANG - `yang`
 - Zig - `zig`
+
+## 书籍
+
+### PDF 与 ePUB
+
+它们的区别在哪？
+
+- PDF 是电子形式的纸张，它是静态的、固定的、不可改变的。就像你不能定制打印的物理书籍一样，你不能真正定制 pdf 文件。这很不灵活。但是他很容易使用、复制、分享。
+- ePUB 在 PDF 诞生十多年后由国际数字出版论坛开发，并成为数字出版的标准格式。它是最适合电子书的格式。
+
+ePUB 和 PDF 相比，它的优势在哪里？
+
+1. 创建和编辑文件相对容易
+2. 将 ePUB 与 PDF 文件区分开来的主要功能是其对内容进行重排的能力。
+3. 可以添加媒体文件（音频、视频、丰富的图片）
+4. 支持多种阅读器
+5. 电子书店的最爱
+6. 提供比 PDF 更高的安全性
