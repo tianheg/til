@@ -1061,3 +1061,4 @@ $ sudo apt install ./drawio-amd64-14.5.1.deb
 - [Bookworm](https://babluboy.github.io/bookworm/)(ePUB, PDF, MOBI, FB2, CBR, CBZ)
 - [Ebook-Viewer](https://github.com/michaldaniel/Ebook-Viewer)
 - [Foliate](https://github.com/johnfactotum/foliate)(ePUB, azw, azw3, mobi, fb2, fb2.zip, cbr, cbz, cbt, cb7, txt)
+- [Moon+ Reader](https://www.moondownload.com/index.html)
