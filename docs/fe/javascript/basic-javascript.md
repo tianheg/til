@@ -595,7 +595,7 @@ JavaScript 中有很多比较运算符，它们的运算结果是布尔型，即
 
 **强制类型转换（ Type Coercion）**
 
-### `==`
+### [`==`](#equal-2)
 
 ```js
 function testEqual(val) {
@@ -607,7 +607,7 @@ function testEqual(val) {
 testEqual(10);
 ```
 
-### `===`
+### [`===`](#equal-3)
 
 Strict equality (`===`) is the counterpart to the equality operator (`==`). 严格相等运算符不支持类型转换，如果比较两个数据类型不同的值，返回值为：`false`。亦即，严格相等运算符在运算时比较两项：数据类型、大小，有一个不同即返回：`False`。
 
@@ -621,7 +621,7 @@ function tesstStrict(val) {
 testStrict(10);
 ```
 
-### `!=`
+### [`!=`](#exclamation-equal)
 
 ```js
 function testNotEqual(val) {
@@ -633,7 +633,7 @@ function testNotEqual(val) {
 testNotequal(10);
 ```
 
-### `!==`
+### [`!==`](#exclamation-equal-2)
 
 ```js
 function testStrictNotEqual(val) {
@@ -645,7 +645,7 @@ function testStrictNotEqual(val) {
 testStrictNotEqual(10);
 ```
 
-### `>`, `<`, `>=`, `<=`
+### [`>`, `<`, `>=`, `<=`](#greater-subtraction-equal)
 
 ```js
 console.log(1 > 2);
@@ -654,7 +654,7 @@ console.log(2 <= 3);
 console.log(1 >= 2);
 ```
 
-### `&&`, `||`
+### [`&&`, `||`](logical-and-or)
 
 ```js
 // &&
@@ -1184,7 +1184,111 @@ console.log(multiply([2, 3, 4, 5], 4));
 
 递归的 multiply 版本是这样分解的。在基本情况下，当 n < = 0 时，它返回 1。对于较大的值 n，它调用自己，但是使用 n-1。这个函数调用以同样的方式计算，再次调用 multiply，直到 n < = 0。此时，所有函数都可以返回，而原始的 multiply 将返回答案。
 
-注意: 当递归函数返回时，不再调用该函数时(在本例中，当 n < = 0时) ，必须有一个基准值，否则它们将永远无法完成执行。
+注意：当递归函数返回时，不再调用该函数时（在本例中，当 n < = 0 时） ，必须有一个基准值，否则它们将永远无法完成执行。
+
+### 写一个计数器
+
+```js
+function countup(n) {
+    if (n < 1) {
+        return [];
+    } else {
+        const countArray = countup(n - 1);
+        countArray.push(n);
+        return countArray;
+    }
+}
+console.log(countup(5));
+// output: [ 1, 2, 3, 4, 5 ]
+```
+
+乍一看，这似乎违反直觉，因为 `n` 的值减小了，但最终数组中的值却增加了。这是因为 push 发生在递归调用返回后的最后。当 `n` 被推入数组时，`countup(n - 1)` 已经被求值并返回 [1, 2, ..., n - 1]。
+
+如果我这样写，会报错：`maximum call stack size exceeded`：
+
+```js
+function countdown(n) {
+    if (n < 1) {
+        return [];
+    } else {
+        const countArray = countdown(n + 1);
+        countArray.push(n);
+        return countArray;
+    }
+}
+console.log(countdown(5));
+```
+
+正确的写法：
+
+```js
+function countdown(n) {
+    if (n < 1) {
+        return [];
+    } else {
+        const countArray = countdown(n - 1);
+        countArray.unshift(i);
+        return countArray;
+    }
+}
+console.log(countdown(5));
+// output: [ 5, 4, 3, 2, 1 ]
+```
+
+### 写一串数字
+
+:::: el-tabs
+::: el-tab-pane label=我的做法
+
+```js
+function rangeOfNumbers(startNum, endNum) {
+    if (endNum < 1) {
+        return [];
+    } else {
+        const countArray = rangeOfNumbers(startNum-1);
+        countArray.push(startNum);
+        return countArray;
+    }
+}
+console.log(rangeOfNumbers(4, 10));
+// output: RangeError: Maximum call stack size exceeded
+```
+
+:::
+::: el-tab-pane label=答案
+
+```js
+// way 1 || 0.172s
+function rangeOfNumbers(startNum, endNum) {
+    if (endNum - startNum === 0) {
+        return [startNum];
+    } else {
+        var numbers = rangeOfNumbers(startNum, endNum -1);
+        numbers.push(endNum);
+        return numbers;
+    }
+}
+console.log(rangeOfNumbers(4, 10));
+
+// way 2 || 0.147s
+function rangeOfNumbers(startNum, endNum) {
+    return startNum === endNum
+        ? [startNum]
+        : rangeOfNumbers(startNum, endNum - 1).concat(endNum);
+}
+console.log(rangeOfNumbers(4, 10));
+
+// way 3 || 0.155s
+function rangeOfNumbers(startNum, endNum) {
+    return startNum === endNum
+        ? [startNum]
+        : [...rangeOfNumbers(startNum, endNum - 1), endNum]; // 为什么这里有 ...rangeOfNumbers
+}
+console.log(rangeOfNumbers(4, 10));
+```
+
+:::
+::::
 
 ## 场景：资料查找
 
@@ -1225,7 +1329,6 @@ var contacts = [
         "likes": ["JavaScript", "Gaming", "Foxes"]
     }
 ];
-
 
 function lookUpProfile(name, prop){
 // Only change code below this line
@@ -1294,12 +1397,89 @@ function lookUpProfile(name, prop) {
 
 ::::
 
-## 场景：生成随机分数
+## 场景：生成随机数
 
+### 随机分数
 
+使用 `Math.random()` 函数
+
+- decimal number 十进制数
+
+### 随机整数
+
+使用 `Math.floor()` 函数，将数字四舍五入到最接近的整数。
+
+**一定范围内的随机整数**
+
+使用 `Math.floor(Math.random() * (max - min + 1)) + min;` 公式，要输入 min 和 max。
+
+## 条件运算符
+
+又称三元（目）运算符。可用于单行 `if-else` 表达式。
+
+`a ? b : c`：`a` 是条件；当条件 `a` 为真时 `b` 部分的代码开始执行；当条件 `a` 为假时执行 `c` 部分的代码。
+
+```js
+// if (a > b) {
+//     return 'a is greater';
+// } else {
+//     return 'b is greater';
+// }
+return a > b ? 'a is greater' : 'b is greater';
+
+// == 才是等于 = 是赋值
+return a == b ? "Equal" : "Not Equal";
+```
+
+**使用多个**
+
+```js
+function findGreaterOrEqual(a, b) {
+  return a === b
+    ? 'a and a are equal'
+    : a > b
+    ? 'a is greater'
+    : 'b is greater';
+}
+console.log(findGreaterOrEqual(2, 3));
+```
+
+以下两种情况，第 1 种能覆盖 `num = 0` 的情况，第 2 种却不行
+
+:::: el-tabs
+::: el-tab-pane label="第 1 种"
+
+```js
+function checkSign(num) {
+  return num > 0 ? 'position'
+    : num < 0 ? 'negative'
+    : 'zero';
+}
+console.log(checkSign(0));
+// output: zero
+```
+
+:::
+::: el-tab-pane label="第 2 种"
+
+```js
+function checkSign(num) {
+    return num > 0 ? 'position' : (num = 0 ? 'zero' : 'negative');
+}
+console.log(checkSign(0));
+// output: negative
+```
+
+:::
 
 ## 功能
 
 ### `typeof`
 
 输出数据类型。
+
+### `parseInt()`
+
+`parseInt(string);` 解析字符串，并返回一个整数。如果字符串的第一位不是整数，则返回 `NaN`。
+
+`parseInt(string, radix);` 它使用第二个基数参数 `radix`，该参数指定字符串中数字的底数。基数可以是 2 到 36 之间的整数。`radix` 指的是满几进一，而基数的范围则表示进制。
