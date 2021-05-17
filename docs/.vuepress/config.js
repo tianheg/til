@@ -80,6 +80,7 @@ function getFeSidebar(groupA, groupB, groupC, groupD, groupE) {
             children: [
                 'javascript/way',
                 'javascript/basic-javascript',
+                'javascript/es6',
                 'javascript/examples',
             ],
         },
@@ -91,7 +92,12 @@ function getFeSidebar(groupA, groupB, groupC, groupD, groupE) {
         {
             title: groupE,
             collapsable: false,
-            children: ['tools/eslint-prettier', 'tools/vscode', 'tools/chrome', 'tools/emmet'],
+            children: [
+                'tools/eslint-prettier',
+                'tools/vscode',
+                'tools/chrome',
+                'tools/emmet',
+            ],
         },
     ];
 }
@@ -117,6 +123,7 @@ function getOthersSidebar(groupA, groupB, groupC) {
     return [
         '',
         'resilio-sync',
+        'backup',
         {
             title: groupA,
             collapsable: false,
