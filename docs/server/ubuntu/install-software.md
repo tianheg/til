@@ -1038,11 +1038,16 @@ sudo apt install fcitx-ui-qimpanel
 
 Reboot the computer and we would see a new penguin input icon at the top right corner of our desktop. It will turn to a keyboard icon whenever the cursor is placed somewhere allows inputs.
 
+**全半角切换**
+
+`Alt + Shift + Escape`
+
 ---
 
 **References**:
 
 1. <https://leimao.github.io/blog/Ubuntu-Gaming-Chinese-Input/>
+2. [What are the meta, super, and hyper keys?](https://askubuntu.com/q/19558)
 
 ## Draw.io
 
