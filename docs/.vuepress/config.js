@@ -18,7 +18,7 @@ module.exports = (ctx) => ({
         sidebarDepth: 2,
         sidebar: {
             '/fe/': getFeSidebar('HTML', 'CSS', 'JavaScript', 'Color', 'Tools'),
-            '/server/': getServerSidebar('Ubuntu'),
+            '/server/': getServerSidebar('Ubuntu', 'Python'),
             '/others/': getOthersSidebar('Git', 'Hardware', 'Network'),
         },
     },
@@ -107,7 +107,7 @@ function getFeSidebar(groupA, groupB, groupC, groupD, groupE) {
     ];
 }
 
-function getServerSidebar(groupA) {
+function getServerSidebar(groupA, groupB) {
     return [
         '',
         'linux',
@@ -119,6 +119,14 @@ function getServerSidebar(groupA) {
                 'ubuntu/install-software',
                 'ubuntu/i-want-to',
                 'ubuntu/problems',
+            ],
+        },
+        {
+            title: groupB,
+            collapsable: false,
+            children: [
+                'python/basic-python',
+                'python/examples',
             ],
         },
     ];
