@@ -32,12 +32,12 @@ module.exports = (ctx) => ({
         'fulltext-search',
         'last-reading',
         'element-ui',
-        [
-            'vuepress-plugin-clean-urls',
-            {
-                normalSuffix: '/',
-            },
-        ],
+        // [
+        //     'vuepress-plugin-clean-urls',
+        //     {
+        //         normalSuffix: '/',
+        //     },
+        // ],
         [
             'thirdparty-search',
             {
