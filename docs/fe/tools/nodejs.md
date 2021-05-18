@@ -42,3 +42,4 @@ To save a dependency as a devDependency on installation we need to do an `npm in
 
 1. [Types of dependencies - Yarn 1.x](https://classic.yarnpkg.com/en/docs/dependency-types)
 2. [dependencies - Yarn 2](https://yarnpkg.com/configuration/manifest/#dependencies)
+3. [Peer Dependencies](https://nodejs.org/en/blog/npm/peer-dependencies/)
