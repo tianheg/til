@@ -8,6 +8,16 @@ used software: nomacs, Flameshot, kphotoalbum, Krita, xournal, [ImageMagick](htt
 sudo apt-get install curl
 ```
 
+### On My Zsh
+
+**Install autojump**
+
+```sh
+[[ -s /home/tianheg/.autojump/etc/profile.d/autojump.sh ]] && source /home/tianheg/.autojump/etc/profile.d/autojump.sh
+
+	autoload -U compinit && compinit -u
+```
+
 ## Clash
 
 ```sh
