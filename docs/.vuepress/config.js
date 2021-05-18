@@ -1,4 +1,5 @@
 const path = require('path');
+const wikilinks = require('vuepress-markdown-it-wikilink')
 
 module.exports = (ctx) => ({
     title: 'TIL',
@@ -58,6 +59,9 @@ module.exports = (ctx) => ({
     ],
     markdown: {
         lineNumbers: true,
+        extendMarkdown: (md) => {
+            md.use(wikilinks);
+        },
     },
     extraWatchFiles: ['.vuepress/nav.js'],
 });
