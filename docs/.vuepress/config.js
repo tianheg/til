@@ -93,6 +93,7 @@ function getFeSidebar(groupA, groupB, groupC, groupD, groupE) {
             title: groupE,
             collapsable: false,
             children: [
+                'tools/nodejs',
                 'tools/eslint-prettier',
                 'tools/vscode',
                 'tools/chrome',
