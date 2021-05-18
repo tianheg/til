@@ -1,1 +1,1 @@
-# 例子
+# JavaScript 例子
