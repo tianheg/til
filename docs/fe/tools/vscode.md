@@ -1,5 +1,9 @@
 # VS Code
 
+## 问题
+
+VS Code 也会出错：在某段时间，`Enter` 和 `BackSpace` 都不好用。最终，我发现 `Project Manager` 正在加载，当它加载完毕，前面的两个按键又好用了。
+
 ## 常用快捷键
 
 ### 1、工作区快捷键
