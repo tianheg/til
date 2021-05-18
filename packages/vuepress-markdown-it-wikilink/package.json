@@ -30,15 +30,15 @@
   },
   "homepage": "https://github.com/spencerwooo/vuepress-markdown-it-wikilink#readme",
   "devDependencies": {
-    "coveralls": "^2.11.14",
-    "eslint": "^3.7.1",
+    "coveralls": "^3.1.0",
+    "eslint": "^7.26.0",
     "istanbul": "^0.4.5",
-    "markdown-it": "^8.0.0",
+    "markdown-it": "^12.0.6",
     "markdown-it-testgen": "^0.1.4",
-    "mocha": "^3.1.0",
+    "mocha": "^8.4.0",
     "prettier": "^2.1.1",
     "request": "^2.75.0",
-    "rimraf": "^2.5.4"
+    "rimraf": "^3.0.2"
   },
   "dependencies": {
     "extend": "^3.0.0",
