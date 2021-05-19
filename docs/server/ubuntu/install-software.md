@@ -20,11 +20,39 @@ sudo apt-get install curl
 
 ## Clash
 
+### Install Clash
+
 ```sh
-$ go install github.com/Dreamacro/clash@latest # Clash requires Golang 1.16 or a higher version
-$ clash -v
-# config
+$ wget -O clash.gz https://github.com/Dreamacro/clash/releases/download/v1.6.0/clash-linux-amd64-v1.6.0.gz
+$ gzip -f clash.gz -d
+$ sudo mv ~/clash /usr/local/bin/clash
+$ chmod +x /usr/local/bin/clash
+$ clash -h
+$ clash # Generate config.yaml, Country.mmdb in ~/.config/clash
+```
+
+### Config
+
+```sh
+$ curl https://....yaml >> ~/.config/clash/config.yaml
+# Config ~/.config/clash/config.yaml in terminal or with Web UI: http://clash.razord.top/
+# UI port is external-controller's port
+
+# Set daemon
 $ sudo vim /etc/systemd/system/clash.service
+# Input these words:
+# [Unit]
+# Description=Clash daemon, A rule-based proxy in Go.
+# After=network.target
+#
+# [Service]
+# Type=simple
+# Restart=always
+# ExecStart=/usr/local/bin/clash -d "/home/tianheg/.config/clash"
+#
+# [Install]
+# WantedBy=multi-user.target
+
 $ systemctl daemon-reload
 $ systemctl enable clash
 $ service clash start # 启动
@@ -33,21 +61,55 @@ $ service clash restart # 重启
 $ service clash status # 状态
 ```
 
-Add these to `/etc/systemd/system/clash.service`:
+`/etc/systemd/system/clash.service`:
 
 ```txt
 [Unit]
-Description=clash service
+Description=Clash daemon, A rule-based proxy in Go.
 After=network.target
 
 [Service]
 Type=simple
-User=root
-ExecStart=/home/tianheg/go/bin/clash
-Restart=on-failure # or always, on-abort, etc
+Restart=always
+ExecStart=/usr/local/bin/clash -d "/home/tianheg/.config/clash"
 
 [Install]
 WantedBy=multi-user.target
+```
+
+`.zshrc`:
+
+```txt
+# terminal proxy (Ubuntu)
+export http_proxy="http://127.0.0.1:7890"
+export https_proxy="https://127.0.0.1:7890"
+export http_proxy_user=user
+export http_proxy_pass=pass
+export https_proxy_user=user
+export https_proxy_pass=pass
+
+# below didn't work
+export http_proxy="socks5://127.0.0.1:1080"    
+export socks_proxy="socks5://127.0.0.1:1080" 
+```
+
+**Setting System Proxy**
+
+Settings > Network > Network Proxy > Manual:
+
+- HTTP Proxy: `127.0.0.1:7890`
+- HTTPS Proxy: `127.0.0.1:7890`
+- Socks Host: `127.0.0.1:7891`
+- Ignore Host: `localhost, 127.0.0.0/8, ::1`
+
+### Problems
+
+**Git**: git clone 报错 ：Failed to receive SOCKS4 connect request ack.
+
+```sh
+# 7891 是 clash 代理 socket 的端口
+git config --global http.proxy 'socks5://127.0.0.1:7891'
+git config --global https.proxy 'socks5://127.0.0.1:7891'
 ```
 
 ## Albert
@@ -214,7 +276,7 @@ synaptic(Graphical package manager) or aptitude(terminal-based package manager)
 
 Can be installed through `apt`
 
-Snap(能不用就不用) <https://snapcraft.io/>
+Snap（能不用就不用） <https://snapcraft.io/>
 
 Apt(Advanced Package Tool) <https://wiki.debian.org/PackageManagement?action=show&redirect=CategoryPackageManagement>
 
