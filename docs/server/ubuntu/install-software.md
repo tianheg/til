@@ -2,10 +2,99 @@
 
 used software: nomacs, Flameshot, kphotoalbum, Krita, xournal, [ImageMagick](https://askubuntu.com/a/764557)
 
-## Curl
+## 安装文件
+
+### Deb File
+
+```sh
+# way 1
+sudo apt install ./file.deb
+# way 2
+sudo apt install gdebi
+sudo gdebi file.deb
+# way 3
+sudo dpkg -i file.deb
+```
+
+references:
+
+1. <https://help.ubuntu.com/kubuntu/desktopguide/C/manual-install.html>
+2. <https://itsfoss.com/install-deb-files-ubuntu/>
+3. <https://linuxize.com/post/how-to-install-deb-packages-on-ubuntu/>
+
+## 软件列表
+
+### Albert
+
+```sh
+curl https://build.opensuse.org/projects/home:manuelschneid3r/public_key | sudo apt-key add -
+echo 'deb http://download.opensuse.org/repositories/home:/manuelschneid3r/xUbuntu_20.04/ /' | sudo tee /etc/apt/sources.list.d/home:manuelschneid3r.list
+sudo wget -nv https://download.opensuse.org/repositories/home:manuelschneid3r/xUbuntu_20.04/Release.key -O "/etc/apt/trusted.gpg.d/home:manuelschneid3r.asc"
+sudo apt update
+sudo apt install albert
+```
+
+[source](https://albertlauncher.github.io/installing/#using-official-albert-repositories)
+
+### Anki
+
+Install from [here](https://apps.ankiweb.net/#download)
+
+Then exec these orders:
+
+```sh
+$ tar xjf Downloads/anki-2.1.42-linux.tar.bz2
+$ cd anki-2.1.42-linux
+$ sudo ./install.sh
+```
+
+### apt
+
+**`apt-key`**
+
+```sh
+apt-key del <keyid>         - remove the key <keyid>
+# examples:
+# pub   rsa3072 2020-09-02 [SC] [expires: 2022-09-02]
+#       2CA3 2056 ED20 6CB8 1F44  A8CA C99B 11DE B975 41F0
+# uid           [ unknown] Nate Smith <vilmibm@github.com>
+# sub   rsa3072 2020-09-02 [E] [expires: 2022-09-02]
+sudo apt-key del "2CA3 2056 ED20 6CB8 1F44  A8CA C99B 11DE B975 41F0"
+# or
+sudo apt-key del B97541F0
+```
+
+keyid is the last 8 characters of the gpg key's fingerprint, which is that long hex-code under `pub`.
+
+### `apt-fast`
+
+```sh
+sudo add-apt-repository ppa:apt-fast/stable
+sudo apt-get update
+sudo apt-get -y install apt-fast
+# zsh
+cp completions/zsh/_apt-fast /usr/share/zsh/functions/Completion/Debian/
+chown root:root /usr/share/zsh/functions/Completion/Debian/_apt-fast
+source /usr/share/zsh/functions/Completion/Debian/_apt-fast
+```
+
+[source](https://github.com/ilikenwf/apt-fast#installation)
+
+### Curl
 
 ```sh
 sudo apt-get install curl
+```
+
+### gh
+
+[source](https://github.com/cli/cli/blob/trunk/docs/install_linux.md#debian-ubuntu-linux-apt)
+
+```sh
+curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo gpg --dearmor -o /usr/share/keyrings/githubcli-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
+sudo apt update
+sudo apt install gh
 ```
 
 ### On My Zsh
@@ -15,12 +104,12 @@ sudo apt-get install curl
 ```sh
 [[ -s /home/tianheg/.autojump/etc/profile.d/autojump.sh ]] && source /home/tianheg/.autojump/etc/profile.d/autojump.sh
 
-	autoload -U compinit && compinit -u
+autoload -U compinit && compinit -u
 ```
 
-## Clash
+### Clash
 
-### Install Clash
+**Install Clash**
 
 ```sh
 $ wget -O clash.gz https://github.com/Dreamacro/clash/releases/download/v1.6.0/clash-linux-amd64-v1.6.0.gz
@@ -31,7 +120,7 @@ $ clash -h
 $ clash # Generate config.yaml, Country.mmdb in ~/.config/clash
 ```
 
-### Config
+**Config**
 
 ```sh
 $ curl https://....yaml >> ~/.config/clash/config.yaml
@@ -102,7 +191,7 @@ Settings > Network > Network Proxy > Manual:
 - Socks Host: `127.0.0.1:7891`
 - Ignore Host: `localhost, 127.0.0.0/8, ::1`
 
-### Problems
+**Problems**
 
 **Git**: git clone 报错 ：Failed to receive SOCKS4 connect request ack.
 
@@ -112,69 +201,13 @@ git config --global http.proxy 'socks5://127.0.0.1:7891'
 git config --global https.proxy 'socks5://127.0.0.1:7891'
 ```
 
-## Albert
-
-```sh
-curl https://build.opensuse.org/projects/home:manuelschneid3r/public_key | sudo apt-key add -
-echo 'deb http://download.opensuse.org/repositories/home:/manuelschneid3r/xUbuntu_20.04/ /' | sudo tee /etc/apt/sources.list.d/home:manuelschneid3r.list
-sudo wget -nv https://download.opensuse.org/repositories/home:manuelschneid3r/xUbuntu_20.04/Release.key -O "/etc/apt/trusted.gpg.d/home:manuelschneid3r.asc"
-sudo apt update
-sudo apt install albert
-```
-
-[source](https://albertlauncher.github.io/installing/#using-official-albert-repositories)
-
-## Anki
-
-Install from [here](https://apps.ankiweb.net/#download)
-
-Then exec these orders:
-
-```sh
-$ tar xjf Downloads/anki-2.1.42-linux.tar.bz2
-$ cd anki-2.1.42-linux
-$ sudo ./install.sh
-```
-
-## `apt-fast`
-
-```sh
-sudo add-apt-repository ppa:apt-fast/stable
-sudo apt-get update
-sudo apt-get -y install apt-fast
-# zsh
-cp completions/zsh/_apt-fast /usr/share/zsh/functions/Completion/Debian/
-chown root:root /usr/share/zsh/functions/Completion/Debian/_apt-fast
-source /usr/share/zsh/functions/Completion/Debian/_apt-fast
-```
-
-[source](https://github.com/ilikenwf/apt-fast#installation)
-
-## Deb File
-
-```sh
-# way 1
-sudo apt install ./file.deb
-# way 2
-sudo apt install gdebi
-sudo gdebi file.deb
-# way 3
-sudo dpkg -i file.deb
-```
-
-references:
-
-1. <https://help.ubuntu.com/kubuntu/desktopguide/C/manual-install.html>
-2. <https://itsfoss.com/install-deb-files-ubuntu/>
-3. <https://linuxize.com/post/how-to-install-deb-packages-on-ubuntu/>
-
-## Emacs
+### Emacs
 
 ```sh
 sudo apt install emacs
 ```
 
-## Exa
+### Exa
 
 ```sh
 sudo apt install exa
@@ -207,49 +240,11 @@ exa v0.9.0
 
 [source](https://the.exa.website/install/linux)
 
-## F.lux
-
-```sh
-sudo add-apt-repository ppa:nathan-renniewaldock/flux
-sudo apt-get update
-sudo apt-get install fluxgui
-```
-
-Error: no release file
-
-[source](https://github.com/xflux-gui/fluxgui)
-
-## FreeCAD
-
-On most Linux distributions, FreeCAD is directly installable from the software center application.
-
-[source](https://github.com/FreeCAD/FreeCAD)
-
-## Jianguoyun
-
-```sh
-wget https://www.jianguoyun.com/static/exe/installer/ubuntu/nautilus_nutstore_amd64.deb
-sudo apt install ./nautilus_nutstore_amd64.deb
-```
-
-Can't use
-
-[source](https://www.jianguoyun.com/s/downloads/linux)
-
-## Keepass
+### Keepass
 
 Install from [here](https://keepass.info/help/v2/setup.html#mono)
 
-## Mailspring
-
-[source](https://getmailspring.com/)
-
-```sh
-$ sudo snap install mailspring
-$ sudo snap remove mailspring
-```
-
-## MScorefonts
+### MScorefonts
 
 ```sh
 $ sudo apt update
@@ -257,11 +252,11 @@ $ sudo apt install ttf-mscorefonts-installer
 $ sudo fc-cache -f -v
 ```
 
-## Netease Music
+### Netease Music
 
 Download *.deb file [here](https://music.163.com/#/download)
 
-## Nnn
+### Nnn
 
 ```sh
 $ wget https://github.com/jarun/nnn/releases/download/v4.0/nnn_4.0-1_ubuntu20.04.amd64.deb
@@ -270,7 +265,7 @@ $ sudo apt install ./nnn_4.0-1_ubuntu20.04.amd64.deb
 
 [source](https://github.com/jarun/nnn)
 
-## Package Manager
+### Package Manager
 
 synaptic(Graphical package manager) or aptitude(terminal-based package manager)
 
@@ -287,7 +282,7 @@ Apt(Advanced Package Tool) <https://wiki.debian.org/PackageManagement?action=sho
 - <https://packages.ubuntu.com/focal/synaptic>
 - <https://packages.ubuntu.com/focal/aptitude>
 
-## Phddns
+### Phddns
 
 [花生壳 5.0 for Linux 使用教程](https://service.oray.com/question/11630.html)
 
@@ -301,13 +296,7 @@ Apt(Advanced Package Tool) <https://wiki.debian.org/PackageManagement?action=sho
  +--------------------------------------------------+
 ```
 
-## Polar
-
-Get *.deb file from [GitHub](https://getpolarized.io/download/)
-
-Install it.
-
-## Postman
+### Postman
 
 [source](https://speedysense.com/install-postman-on-ubuntu-20-04/)
 
@@ -334,13 +323,13 @@ Comment=Postman GUI
 Categories=Development;Code;
 ```
 
-## Skype
+### Skype
 
 Install `skypeforlinux-64.deb` from [here](https://go.skype.com/skypeforlinux-64.deb)
 
 [source](https://www.skype.com/en/get-skype/download-skype-for-desktop/)
 
-## Spotify
+### Spotify
 
 [source](https://www.spotify.com/hk-en/download/linux/)
 
@@ -350,7 +339,7 @@ echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sou
 sudo apt-get update && sudo apt-get install spotify-client
 ```
 
-## SQLite Database Browser
+### SQLite Database Browser
 
 Install SQLite Database Browser ([sqliteborwser](apt:sqlitebrowser)).
 
@@ -359,12 +348,12 @@ source:
 1. <https://ubuntuforums.org/showthread.php?t=1556007)>
 2. <https://sqlitebrowser.org/dl/#ubuntu-and-derivatives>
 
-## SwitchHosts
+### SwitchHosts
 
 1. Download deb file with here: [source](https://github.com/oldj/SwitchHosts/releases).
 2. `sudo apt install ./SwitchHosts_linux_4.0.0.6029.deb`
 
-## Typora
+### Typora
 
 for Debian/Ubuntu:
 
@@ -390,7 +379,7 @@ After installing Typora, the `typora` package will be managed by `apt-get`, so w
 $ sudo apt-get upgrade
 ```
 
-## VLC
+### VLC
 
 Through these:
 
@@ -400,7 +389,7 @@ If you wish to install the traditional deb package, it is available as usual via
 
 [source](https://www.videolan.org/vlc/download-ubuntu.html)
 
-## VMware Workstation Player
+### VMware Workstation Player
 
 Download from [here](https://my.vmware.com/en/web/vmware/downloads/info/slug/desktop_end_user_computing/vmware_workstation_player/16_0)
 
@@ -409,7 +398,7 @@ chmod a+x VMware-Player-16.1.0-17198959.x86_64.bundle
 sudo ./VMware-Player-16.1.0-17198959.x86_64.bundle
 ```
 
-## Zola
+### Zola
 
 ```sh
 sudo snap install zola --edge
@@ -417,7 +406,7 @@ sudo snap install zola --edge
 
 [source](https://www.getzola.org/documentation/getting-started/installation/#snapcraft)
 
-## Zotero
+### Zotero
 
 ```sh
 /opt $ sudo wget https://download.zotero.org/client/release/5.0.96/Zotero-5.0.96_linux-x86_64.tar.bz2
@@ -435,7 +424,7 @@ source:
 1. <https://www.zotero.org/download/client/dl?channel=release&platform=linux-x86_64&version=5.0.96>
 2. <https://www.zotero.org/support/installation>
 
-## Manage Fonts
+### Manage Fonts
 
 ```sh
 sudo apt-get install font-manager
@@ -443,7 +432,7 @@ sudo apt-get install font-manager
 
 [source](https://askubuntu.com/a/371320)
 
-## Netplan
+### Netplan
 
 [source](https://netplan.io/)
 
@@ -451,7 +440,7 @@ The network configuration abstraction renderer
 
 Netplan is a utility for easily configuring networking on a linux system. You simply create a YAML description of the required network interfaces and what each should be configured to do. From this description Netplan will generate all the necessary configuration for your chosen renderer tool.
 
-## Nmcli
+### Nmcli
 
 NetworkManager should be installed by default for most Ubuntu installations if the Desktop installation image was used. Use the apt command to find out if it needs to be installed:
 
@@ -1086,7 +1075,7 @@ wifi.scan-rand-mac-address=no
 
 1. <https://www.answertopia.com/ubuntu/ubuntu-network-management/>
 
-## fcitx
+### fcitx
 
 It is a input method.
 
@@ -1121,7 +1110,7 @@ Reboot the computer and we would see a new penguin input icon at the top right c
 1. <https://leimao.github.io/blog/Ubuntu-Gaming-Chinese-Input/>
 2. [What are the meta, super, and hyper keys?](https://askubuntu.com/q/19558)
 
-## Draw.io
+### Draw.io
 
 ```sh
 $ wget https://github.com/jgraph/drawio-desktop/releases/download/v14.5.1/drawio-amd64-14.5.1.deb
