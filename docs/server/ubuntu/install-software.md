@@ -86,16 +86,35 @@ source /usr/share/zsh/functions/Completion/Debian/_apt-fast
 sudo apt-get install curl
 ```
 
+---
+
+**References**:
+
+1. [curl 错误总结](https://www.cnblogs.com/cposture/p/9029017.html)
+
 ### gh
 
 [source](https://github.com/cli/cli/blob/trunk/docs/install_linux.md#debian-ubuntu-linux-apt)
 
 ```sh
-curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo gpg --dearmor -o /usr/share/keyrings/githubcli-archive-keyring.gpg
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
-sudo apt update
-sudo apt install gh
+# way 1(not work for me)
+$ curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo gpg --dearmor -o /usr/share/keyrings/githubcli-archive-keyring.gpg
+$ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
+$ sudo apt update
+$ sudo apt install gh
+# error when first step: OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to 127.0.0.1:7890
+
+# way 2
+$ wget https://github.com/cli/cli/releases/download/v1.10.2/gh_1.10.2_linux_amd64.deb && sudo apt install ./gh_1.10.2_linux_amd64.deb
 ```
+
+### gpg
+
+---
+
+**References**:
+
+1. [GnuPrivacyGuardHowto](https://help.ubuntu.com/community/GnuPrivacyGuardHowto)
 
 ### On My Zsh
 
