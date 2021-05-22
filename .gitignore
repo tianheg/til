@@ -16,3 +16,6 @@ docs/.vuepress/dist
 
 # history
 .history
+
+# sh
+docs/server/sh/test.sh
