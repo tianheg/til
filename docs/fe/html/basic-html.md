@@ -205,7 +205,7 @@ Supported browsers: Chrome, Brave and Samsung Internet on Android.
 <link rel="icon" href="/favicon.ico">
 ```
 
-A 32×32px favicon for legacy browsers. It should live in the root of your website. 
+A 32×32px favicon for legacy browsers. It should live in the root of your website.
 
 ```html
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -290,7 +290,7 @@ Stuff we don’t need anymore
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 ```
 
-> Starting with IE11, document modes are deprecated and should no longer be used, except on a temporary basis. 
+> Starting with IE11, document modes are deprecated and should no longer be used, except on a temporary basis.
 >
 > Starting with IE11, edge mode is the preferred document mode; it represents the highest support for modern standards available to the browser.
 
