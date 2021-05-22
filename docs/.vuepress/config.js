@@ -18,7 +18,7 @@ module.exports = (ctx) => ({
         sidebarDepth: 2,
         sidebar: {
             '/fe/': getFeSidebar('HTML', 'CSS', 'JavaScript', 'Color', 'Tools'),
-            '/server/': getServerSidebar('Ubuntu', 'Python'),
+            '/server/': getServerSidebar('Ubuntu', 'Python', 'sh'),
             '/others/': getOthersSidebar('Git', 'Hardware', 'Network'),
         },
     },
@@ -107,7 +107,7 @@ function getFeSidebar(groupA, groupB, groupC, groupD, groupE) {
     ];
 }
 
-function getServerSidebar(groupA, groupB) {
+function getServerSidebar(groupA, groupB, groupC) {
     return [
         '',
         'linux',
@@ -127,6 +127,13 @@ function getServerSidebar(groupA, groupB) {
             children: [
                 'python/basic-python',
                 'python/examples',
+            ],
+        },
+        {
+            title: groupC,
+            collapsable: false,
+            children: [
+                'sh/examples',
             ],
         },
     ];
