@@ -4,6 +4,11 @@
 
 GitHub Action Consume Time: about 2min2s
 
+## 改变
+
+- 2021-05-07: Front-end, Server, Others
+- 2021-05-22: 前端与服务端的区分是因为业务需求，而不是技术本身。
+
 ## Problems
 
 1. Can't resolve mark head link, like [this](https://til.yidajiabei.xyz/fe/javascript/basic-javascript/#-2), want to access `JavaScript 基础 --> 比较运算符 --> ==`
