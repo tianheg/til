@@ -150,7 +150,13 @@ function getBasicSidebar(
         {
             title: groupI,
             collapsable: false,
-            children: ['ubuntu/intro', 'ubuntu/install-software', 'ubuntu/i-want-to', 'backup', 'ubuntu/problems'],
+            children: [
+                'ubuntu/intro',
+                'ubuntu/install-software',
+                'ubuntu/i-want-to',
+                'ubuntu/backup',
+                'ubuntu/problems',
+            ],
         },
         {
             title: groupJ,
