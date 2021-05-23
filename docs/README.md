@@ -10,7 +10,7 @@ features:
   - title: 进阶
     details: 编一些好玩儿的玩具吧
   - title: 自然
-    details: 技术文档、教程、技巧、总结等文章
+    details: 科技与自然的统一
 ---
 <!-- markdownlint-disable MD041 -->
 
