@@ -1,9 +1,9 @@
 ---
 home: true
 heroText: Today I Learnt
-tagline: FE | Server | Others
-actionText: Getting Started
-actionLink: /fe/
+tagline: 入门 | 进阶 | 自然
+actionText: 入门
+actionLink: /basic/
 features:
   - title: 入门
     details: 掌握技术基础
