@@ -1,5 +1,5 @@
 const path = require('path');
-const wikilinks = require('vuepress-markdown-it-wikilink')
+const wikilinks = require('vuepress-markdown-it-wikilink');
 
 module.exports = (ctx) => ({
     title: 'TIL',
@@ -17,9 +17,19 @@ module.exports = (ctx) => ({
         lastUpdated: '上次更新',
         sidebarDepth: 2,
         sidebar: {
-            '/fe/': getFeSidebar('HTML', 'CSS', 'JavaScript', 'Color', 'Tools'),
-            '/server/': getServerSidebar('Ubuntu', 'Python', 'sh'),
-            '/others/': getOthersSidebar('Git', 'Hardware', 'Network'),
+            '/basic/': getBasicSidebar(
+                'HTML',
+                'CSS',
+                'JavaScript',
+                'Git',
+                'Network',
+                'GPG',
+                'Hardware',
+                'Python',
+                'Ubuntu',
+                'SH',
+                'Tools'
+            ),
         },
     },
     plugins: [
@@ -65,9 +75,20 @@ module.exports = (ctx) => ({
     },
     extraWatchFiles: ['.vuepress/nav.js'],
 });
-function getFeSidebar(groupA, groupB, groupC, groupD, groupE) {
+function getBasicSidebar(
+    groupA,
+    groupB,
+    groupC,
+    groupD,
+    groupE,
+    groupF,
+    groupG,
+    groupH,
+    groupI,
+    groupJ,
+    groupK
+) {
     return [
-        '',
         {
             title: groupA,
             collapsable: false,
@@ -76,7 +97,12 @@ function getFeSidebar(groupA, groupB, groupC, groupD, groupE) {
         {
             title: groupB,
             collapsable: false,
-            children: ['css/way', 'css/basic-css', 'css/examples'],
+            children: [
+                'css/way',
+                'css/basic-css',
+                'css/examples',
+                'color/basic',
+            ],
         },
         {
             title: groupC,
@@ -91,73 +117,60 @@ function getFeSidebar(groupA, groupB, groupC, groupD, groupE) {
         {
             title: groupD,
             collapsable: false,
-            children: ['color/basic'],
+            children: ['git/', 'git/basic-usage', 'git/github'],
         },
         {
             title: groupE,
             collapsable: false,
             children: [
-                'tools/nodejs',
-                'tools/eslint-prettier',
-                'tools/vscode',
-                'tools/chrome',
-                'tools/emmet',
+                'network/',
+                'network/protocol',
+                'dns/dns-resolution-smooth-migration',
             ],
         },
-    ];
-}
-
-function getServerSidebar(groupA, groupB, groupC) {
-    return [
-        '',
+        {
+            title: groupF,
+            collapsable: false,
+            children: [
+                'gpg/import-github-key',
+                'gpg/can-not-change-name-or-comment-without-losing-signatures',
+            ],
+        },
+        {
+            title: groupG,
+            collapsable: false,
+            children: ['hardware/', 'hardware/bluetooth', 'hardware/power'],
+        },
+        {
+            title: groupH,
+            collapsable: false,
+            children: ['python/basic-python', 'python/examples'],
+        },
         'linux',
         {
-            title: groupA,
+            title: groupI,
+            collapsable: false,
+            children: ['ubuntu/intro', 'ubuntu/install-software', 'ubuntu/i-want-to', 'backup', 'ubuntu/problems'],
+        },
+        {
+            title: groupJ,
+            collapsable: false,
+            children: ['sh/examples'],
+        },
+        {
+            title: groupK,
             collapsable: false,
             children: [
-                'ubuntu/intro',
-                'ubuntu/install-software',
-                'ubuntu/i-want-to',
-                'ubuntu/problems',
+                'tools/chrome',
+                'tools/emacs',
+                'tools/emmet',
+                'tools/eslint-prettier',
+                'tools/firefox',
+                'tools/gulp',
+                'tools/nodejs',
+                'tools/resilio-sync',
+                'tools/vscode',
             ],
-        },
-        {
-            title: groupB,
-            collapsable: false,
-            children: [
-                'python/basic-python',
-                'python/examples',
-            ],
-        },
-        {
-            title: groupC,
-            collapsable: false,
-            children: [
-                'sh/examples',
-            ],
-        },
-    ];
-}
-
-function getOthersSidebar(groupA, groupB, groupC) {
-    return [
-        '',
-        'resilio-sync',
-        'backup',
-        {
-            title: groupA,
-            collapsable: false,
-            children: ['git/', 'git/basic-usage'],
-        },
-        {
-            title: groupB,
-            collapsable: false,
-            children: ['hardware/', 'hardware/power', 'hardware/bluetooth'],
-        },
-        {
-            title: groupC,
-            collapsable: false,
-            children: ['network/', 'network/protocol'],
         },
     ];
 }
