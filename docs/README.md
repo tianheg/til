@@ -815,7 +815,7 @@ ePUB 和 PDF 相比，它的优势在哪里？
 
 ## 访问网页特定文字
 
-例子：`https://baike.baidu.com/item/%E8%AE%A4%E7%9F%A5%E7%A7%91%E5%AD%A6/2190912#:~:text=%E6%88%91%E5%9B%BD%E5%AD%A6%E8%80%85%E6%9D%8E%E4%BC%AF%E7%BA%A6,%E5%85%A8%E6%96%B9%E4%BD%8D%E7%9A%84%E7%BB%BC%E5%90%88%E7%A0%94%E7%A9%B6%E3%80%82`
+例子：[访问网页特定文字](https://baike.baidu.com/item/%E8%AE%A4%E7%9F%A5%E7%A7%91%E5%AD%A6/2190912#:~:text=%E6%88%91%E5%9B%BD%E5%AD%A6%E8%80%85%E6%9D%8E%E4%BC%AF%E7%BA%A6,%E5%85%A8%E6%96%B9%E4%BD%8D%E7%9A%84%E7%BB%BC%E5%90%88%E7%A0%94%E7%A9%B6%E3%80%82)
 
 ---
 
