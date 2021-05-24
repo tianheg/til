@@ -28,7 +28,8 @@ module.exports = (ctx) => ({
                 'Python',
                 'Ubuntu',
                 'SH',
-                'Tools'
+                'Tools',
+                'Node.js'
             ),
         },
     },
@@ -86,7 +87,8 @@ function getBasicSidebar(
     groupH,
     groupI,
     groupJ,
-    groupK
+    groupK,
+    groupL
 ) {
     return [
         {
@@ -176,6 +178,15 @@ function getBasicSidebar(
                 'tools/nodejs',
                 'tools/resilio-sync',
                 'tools/vscode',
+            ],
+        },
+        {
+            title: groupL,
+            collapsable: false,
+            children: [
+                'nodejs/install-nodejs-npm',
+                'nodejs/used-packages',
+                'nodejs/sources',
             ],
         },
     ];
