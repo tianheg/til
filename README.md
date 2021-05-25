@@ -79,3 +79,4 @@ Use `http://localhost:8080/fe/javascript/basic-javascript/` instead of `http://l
 - [simonw/til](https://github.com/simonw/til)
 - [thoughtbot/til](https://github.com/thoughtbot/til)
 - vuepress-plugin-thirdparty-search - 它可以添加其他搜索引擎
+- [教你如何打造舒适、高效、时尚的前端开发环境](https://github.com/ykfe/fe-dev-playbook)
