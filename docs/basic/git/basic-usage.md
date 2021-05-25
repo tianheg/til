@@ -7,6 +7,97 @@ git config --global user.name ""
 git config --global user.email ""
 ```
 
+## 常用命令
+
+```sh
+$ git reset --hard ^HEAD # 版本回退
+$ git checkout -- [file] # 撤销修改
+$ git stash # 暂存修改
+$ git stash apply # 恢复修改
+```
+
+## 多人合作开发
+
+如果要开发多人合作项目，我们建议将 master 分支设置为 [protected (opens new window)](https://help.github.com/en/articles/configuring-protected-branches) 分支，使得不允许直接在 master 上提交代码，只能通过 PR 的形式来合并。如何向项目提交 PR 请参考 [GitHub 的 Pull Request 是指什么意思？](https://www.zhihu.com/question/21682976/answer/79489643)
+
+## 使用 git-flow
+
+使用 [git-flow (opens new window)](https://www.git-tower.com/learn/git/ebook/cn/command-line/advanced-topics/git-flow) 这个工具可以帮助我们更好的控制我们的工作流程
+
+## commit message 规范
+
+commit message 是必须要遵循一定的规范的，随意的 commit message 只会让人感受到不专业。这里我们参考 [AngularJS commit message conventions](https://gist.github.com/stephenparish/9941e89d80e2bc58a153)
+
+> This would add kinda “context” information. Look at these messages (taken from last few angular’s commits):  
+Fix small typo in docs widget (tutorial instructions)  
+Fix test for scenario. Application - should remove old iframe  
+docs - various doc fixes  
+docs - stripping extra new lines  
+Replaced double line break with single when text is fetched from Google  
+Added support for properties in documentation  
+
+## 使用 git rebase 来合并你的 commit
+
+大部分人在实际开发过程中，都会建立自己的分支开发，这是大部分团队都能做到的，但是我们在测试问题的时候总是会提交一些无用的 commit 去远程的 repo，自己的分支还好，但是最后把自己的分支合并到 master 上的时候如果还带上这些 commit 就十分不雅观了，当然 github 的 PR 功能已经给我们合并 PR 的时候提供了多种选项，其中就包括 rebase。但是这里还是要介绍一个很多人不常用的命令，git rebase，也就是变基，git rebase 功能很强大，也很容易一不小心弄不好就把你的整个 commit 或者 git 历史弄乱，所以这里我们不写如何用它来变基，只说如何用它来合并自己的 commit。[参考教程](http://gitbook.liuhui998.com/4_2.html)
+
+注意事项：只有个人操作的分支才可以用 git rebase，多人一起协作的分支切记不要轻易使用 git rebase, 否则很容易造成冲突。
+
+实战操作，首先建立一个 git 目录。
+
+```bash
+$ mkdir testGit
+$ git init
+$ vim 1. txt
+```
+
+在 master 分支对 1.txt 做修改并且 commit
+
+![](http://gw.alicdn.com/tfs/TB1luMFXBr0gK0jSZFnXXbRRXXa-1138-852.png)
+
+切换到 rebase 分支，修改两次 1.txt，并进行两次 commit
+![](http://gw.alicdn.com/tfs/TB1UWIFXBv0gK0jSZKbXXbK2FXa-1140-856.png)
+使用 git rebase 合并刚刚的两次 commit
+
+```bash
+$ git rebase - i HEAD~x # x 代表你要合并前 x 次 commit 这里我们填 2, 这里你也可以直接填具体的 commit 对应的 hash 值
+$ git rebase - i HEAD~2
+```
+
+![](http://gw.alicdn.com/tfs/TB1Qs7DXAT2gK0jSZFkXXcIQFXa-1154-866.png)
+这里的 pick 的意思是
+
+> pick：保留该 commit（缩写：p）  
+reword：保留该 commit，但我需要修改该 commit 的注释（缩写：r）  
+edit：保留该 commit, 但我要停下来修改该提交（不仅仅修改注释）（缩写：e）  
+squash：将该 commit 和前一个 commit 合并（缩写：s）  
+fixup：将该 commit 和前一个 commit 合并，但我不要保留该提交的注释信息（缩写：f）  
+exec：执行 shell 命令（缩写：x）  
+drop：我要丢弃该 commit（缩写：d）  
+
+我们使用的比较多的是 `s` 和 `f` 两个选项，在这里我们想要合并两次 commit 为一个，所以将我们的 rebase 信息改为
+
+![](http://gw.alicdn.com/tfs/TB1wPMDXuL2gK0jSZFmXXc7iXXa-1148-840.png)
+
+保存之后出现如下界面，可以让我们设置合并后的 commit 信息，在第二行写上新的 cm 信息，并且注释掉之前的两次 cm 信息，或者直接用 dd 来删除
+
+![](http://gw.alicdn.com/tfs/TB1WuIDXAT2gK0jSZPcXXcKkpXa-1142-852.png)
+
+ `:wq` 保存后查看 git log
+
+![](http://gw.alicdn.com/tfs/TB1l5.DXuP2gK0jSZFoXXauIVXa-1144-848.png)
+
+ok, 前两次 cm 信息成功被合并为了一个
+
+注意事项
+
+你执行了 rebase 命令的分支如果和远程仓库的 commit history 不一样，是没有办法直接 push 到远程仓库的，因为这时候你本地仓库的 commit history 已经修改了，和远程的会冲突。
+
+解决方式
+
+```bash
+$ git push origin dev -f # 使用--force 来强制 push，但你要清楚这可能会导致你的一些 commit 记录的丢失，所以请仅在个人分支进行该操作
+```
+
 ## `git pull --rebase`
 
 使用该命令可以使用 commits 变得优美流畅，不会存在 merge commit。
