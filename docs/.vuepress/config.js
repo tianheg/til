@@ -29,7 +29,8 @@ module.exports = (ctx) => ({
                 'Ubuntu',
                 'SH',
                 'Tools',
-                'Node.js'
+                'Node.js',
+                'Debug'
             ),
         },
     },
@@ -88,7 +89,8 @@ function getBasicSidebar(
     groupI,
     groupJ,
     groupK,
-    groupL
+    groupL,
+    groupM
 ) {
     return [
         {
@@ -114,6 +116,7 @@ function getBasicSidebar(
                 'javascript/basic-javascript',
                 'javascript/es6',
                 'javascript/examples',
+                'javascript/typescript'
             ],
         },
         {
@@ -178,6 +181,7 @@ function getBasicSidebar(
                 'tools/nodejs',
                 'tools/resilio-sync',
                 'tools/vscode',
+                'tools/vim'
             ],
         },
         {
@@ -188,6 +192,11 @@ function getBasicSidebar(
                 'nodejs/used-packages',
                 'nodejs/sources',
             ],
+        },
+        {
+            title: groupM,
+            collapsable: false,
+            children: ['debug/breakpoint-debugging'],
         },
     ];
 }
