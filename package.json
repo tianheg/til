@@ -48,9 +48,10 @@
     },
     "dependencies": {
         "@andymatuschak/note-link-janitor": "file:./packages/note-link-janitor",
-        "vuepress-markdown-it-wikilink": "file:./packages/vuepress-markdown-it-wikilink",
         "@vuepress/plugin-active-header-links": "^1.8.2",
+        "dns-packet": "^5.2.2",
         "foam-cli": "^0.11.0",
-        "trim": "^1.0.1"
+        "trim": "^1.0.1",
+        "vuepress-markdown-it-wikilink": "file:./packages/vuepress-markdown-it-wikilink"
     }
 }
