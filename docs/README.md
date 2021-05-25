@@ -14,7 +14,11 @@ features:
 ---
 <!-- markdownlint-disable MD041 -->
 
-关于构建技术文档的思考：
+## 编程习惯
+
+写代码之前，要画流程图
+
+## 关于构建技术文档的思考：
 
 前端与服务端的区分是因为业务需求，而不是技术本身。
 
@@ -26,18 +30,71 @@ features:
 
 参考人体主要系统：
 
-- Circulatory system / Cardiovascular system(循环系统/心血管系统)
-- Digestive system / Excretory system(消化/排泄系统)
-- Endocrine system(内分泌系统)
-- Integumentary system / Exocrine system(表皮系统/外分泌系统)
-- Muscular system(肌肉系统)
-- Nervous system(神经系统)
-- Renal system and Urinary system(肾系统/泌尿系统)
-- Reproductive system(生殖系统)
-- Respiratory system(呼吸系统)
-- Skeletal System(骨骼系统)
+- Circulatory system / Cardiovascular system（循环系统/心血管系统）
+- Digestive system / Excretory system（消化/排泄系统）
+- Endocrine system（内分泌系统）
+- Integumentary system / Exocrine system（表皮系统/外分泌系统）
+- Muscular system（肌肉系统）
+- Nervous system（神经系统）
+- Renal system and Urinary system（肾系统/泌尿系统）
+- Reproductive system（生殖系统）
+- Respiratory system（呼吸系统）
+- Skeletal System（骨骼系统）
 
 以上的系统举例有重叠部分，但这不是重点。据我所知（关于这方面的知识，仅限于中国初高中生物课本，以及现在了解的点滴生物学知识），人体系统是异常复杂的，但是，通过复杂系统构成的人体，能够以一种简化的方式被人们自己掌握。人们可以轻松地控制自己的身体，以使它帮助自己完成某些事情。它可以简化到某种程度，也可以复杂到某种程度，我在想：我的技术文档是不是可以达到这种程度。
+
+搭建好一个框架，嵌入子系统
+
+怎样才能成为全栈工程师？
+
+- 传统前端技能：HTML、JavaScript、CSS
+- 一门后端语言
+- 移动端开发：iOS / Android / HTML5
+- 其他技能：数据库、HTTP 等等
+
+## 软件行业的发展动力
+
+历史演变：前后端不分 -> 前后端分离 -> 全栈工程师
+
+动力：更加产业化、大规模地生产软件
+
+- 效率更高
+- 成本更低
+
+通用性好、能够快速产出的技术最终会赢，单个程序员的生产力要求越来越高。
+
+---
+
+## H5 就是一个最好的例子
+
+为什么 H5 技术会赢得移动端？
+
+- 开发速度快：Native 需要重新编译才能看到结果，H5 是即时输出
+- 开发成本低：Native 需要两个开发团队，H5 只要一个
+- 快速发布：安卓 Native 新版本需要 24 小时，iOS 需要 3 ～ 4 天，H5 可以随时更新
+
+---
+
+## 未来软件的特点
+
+- 联网
+- 高并发
+- 分布式
+- 跨终端
+
+现在基于 Web 的前端技术，将演变为未来所有软件的通用的 GUI 解决方案。
+
+---
+
+## 未来只有两种软件工程师
+
+- 端工程师
+  - 手机端
+  - PC 端
+  - TV 端
+  - VR 端
+  - ……
+- 云工程师
 
 # 前端
 
@@ -64,9 +121,9 @@ dclone
 - [The A11Y Checklist](https://a11yproject.com/checklist/) - 该清单使用“Web 内容可访问性指南（WCAG）”作为参考点。 WCAG 是个人，组织和政府对 Web 内容访问权限的共享标准。
 - [W3Schools How To](https://www.w3schools.com/howto/default.asp) - 用 HTML，CSS，JavaScript 实现的小功能合集
 - [The web accessibility basics](https://www.marcozehe.de/articles/2015-12-14-the-web-accessibility-basics/) <el-tag type="info">Accessibility</el-tag>
-- [Autoprefixer](https://autoprefixer.github.io/) 为css加上浏览器前缀，配套webpack相关插件
+- [Autoprefixer](https://autoprefixer.github.io/) 为 css 加上浏览器前缀，配套 webpack 相关插件
 - [在线可视化正则表达式测试网站](https://regexper.com)
-- [在线js编辑器](https://jsfiddle.net/)
+- [在线 js 编辑器](https://jsfiddle.net/)
 
 ## 🎨 Playgrounds
 
