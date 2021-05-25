@@ -1,6 +1,3 @@
-# javascript
-docs/fe/javascript/index.js
-
 #npm
 node_modules/
 package-lock.json
@@ -16,6 +13,3 @@ docs/.vuepress/dist
 
 # history
 .history
-
-# sh
-docs/server/sh/test.sh
