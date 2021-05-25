@@ -30,7 +30,8 @@ module.exports = (ctx) => ({
                 'SH',
                 'Tools',
                 'Node.js',
-                'Debug'
+                'Debug',
+                'Algorithm'
             ),
         },
     },
@@ -90,7 +91,8 @@ function getBasicSidebar(
     groupJ,
     groupK,
     groupL,
-    groupM
+    groupM,
+    groupN
 ) {
     return [
         {
@@ -116,7 +118,7 @@ function getBasicSidebar(
                 'javascript/basic-javascript',
                 'javascript/es6',
                 'javascript/examples',
-                'javascript/typescript'
+                'javascript/typescript',
             ],
         },
         {
@@ -172,6 +174,7 @@ function getBasicSidebar(
             title: groupK,
             collapsable: false,
             children: [
+                'tools/charles',
                 'tools/chrome',
                 'tools/emacs',
                 'tools/emmet',
@@ -181,7 +184,7 @@ function getBasicSidebar(
                 'tools/nodejs',
                 'tools/resilio-sync',
                 'tools/vscode',
-                'tools/vim'
+                'tools/vim',
             ],
         },
         {
@@ -197,6 +200,11 @@ function getBasicSidebar(
             title: groupM,
             collapsable: false,
             children: ['debug/breakpoint-debugging'],
+        },
+        {
+            title: groupN,
+            collapsable: false,
+            children: ['algorithm/basic-algorithm'],
         },
     ];
 }
