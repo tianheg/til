@@ -119,6 +119,7 @@ function getBasicSidebar(
                 'javascript/es6',
                 'javascript/examples',
                 'javascript/typescript',
+                'javascript/react',
             ],
         },
         {
