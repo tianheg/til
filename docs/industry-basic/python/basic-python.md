@@ -12,3 +12,5 @@
 >>> datetime.today().strftime('%Y-%m-%d')
 '2021-01-26'
 ```
+
+[source](https://stackoverflow.com/a/32490661/12539782)
