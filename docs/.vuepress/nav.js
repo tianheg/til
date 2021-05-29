@@ -1,5 +1,5 @@
 module.exports = [
-    { text: '入门', link: '/basic/' },
-    { text: '进阶', link: '/advanced/' },
-    { text: '自然', link: '/nature' },
+    { text: '通用基础', link: '/basic/' },
+    { text: '行业基础', link: '/industry-basic/' },
+    { text: '行业专用', link: '/industry-special/' },
 ];

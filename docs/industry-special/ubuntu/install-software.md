@@ -1,6 +1,6 @@
 # 软件安装
 
-used software: nomacs, Flameshot, kphotoalbum, Krita, xournal, [ImageMagick](https://askubuntu.com/a/764557)
+used software: nomacs, Flameshot, kphotoalbum, Krita, xournal, [ImageMagick](https://askubuntu.com/a/764557), pppoeconf
 
 ## 安装文件
 

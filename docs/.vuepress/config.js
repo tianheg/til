@@ -17,21 +17,22 @@ module.exports = (ctx) => ({
         lastUpdated: '上次更新',
         sidebarDepth: 2,
         sidebar: {
-            '/basic/': getBasicSidebar(
+            '/basic/': getBasicSidebar('Network', 'Hardware', 'Algorithm'),
+            '/industry-basic/': getIndustrybasicSidebar(
                 'HTML',
                 'CSS',
                 'JavaScript',
                 'Git',
-                'Network',
                 'GPG',
-                'Hardware',
                 'Python',
-                'Ubuntu',
                 'SH',
+                'Debug'
+            ),
+            '/industry-special/': getIndustryspecialSidebar(
+                'Ubuntu',
                 'Tools',
                 'Node.js',
-                'Debug',
-                'Algorithm'
+                'Debug'
             ),
         },
     },
@@ -78,23 +79,42 @@ module.exports = (ctx) => ({
     },
     extraWatchFiles: ['.vuepress/nav.js'],
 });
-function getBasicSidebar(
+function getBasicSidebar(groupA, groupB, groupC) {
+    return [
+        '',
+        {
+            title: groupA,
+            collapsable: false,
+            children: [
+                'network/',
+                'network/protocol',
+                'dns/dns-resolution-smooth-migration',
+            ],
+        },
+        {
+            title: groupB,
+            collapsable: false,
+            children: ['hardware/', 'hardware/bluetooth', 'hardware/power'],
+        },
+        'linux',
+        {
+            title: groupC,
+            collapsable: false,
+            children: ['algorithm/basic-algorithm'],
+        },
+    ];
+}
+function getIndustrybasicSidebar(
     groupA,
     groupB,
     groupC,
     groupD,
     groupE,
     groupF,
-    groupG,
-    groupH,
-    groupI,
-    groupJ,
-    groupK,
-    groupL,
-    groupM,
-    groupN
+    groupG
 ) {
     return [
+        '',
         {
             title: groupA,
             collapsable: false,
@@ -131,32 +151,27 @@ function getBasicSidebar(
             title: groupE,
             collapsable: false,
             children: [
-                'network/',
-                'network/protocol',
-                'dns/dns-resolution-smooth-migration',
-            ],
-        },
-        {
-            title: groupF,
-            collapsable: false,
-            children: [
                 'gpg/import-github-key',
                 'gpg/can-not-change-name-or-comment-without-losing-signatures',
             ],
         },
         {
-            title: groupG,
-            collapsable: false,
-            children: ['hardware/', 'hardware/bluetooth', 'hardware/power'],
-        },
-        {
-            title: groupH,
+            title: groupF,
             collapsable: false,
             children: ['python/basic-python', 'python/examples'],
         },
-        'linux',
         {
-            title: groupI,
+            title: groupG,
+            collapsable: false,
+            children: ['sh/examples'],
+        },
+    ];
+}
+function getIndustryspecialSidebar(groupA, groupB, groupC, groupD) {
+    return [
+        '',
+        {
+            title: groupA,
             collapsable: false,
             children: [
                 'ubuntu/intro',
@@ -167,12 +182,7 @@ function getBasicSidebar(
             ],
         },
         {
-            title: groupJ,
-            collapsable: false,
-            children: ['sh/examples'],
-        },
-        {
-            title: groupK,
+            title: groupB,
             collapsable: false,
             children: [
                 'tools/charles',
@@ -189,7 +199,7 @@ function getBasicSidebar(
             ],
         },
         {
-            title: groupL,
+            title: groupC,
             collapsable: false,
             children: [
                 'nodejs/install-nodejs-npm',
@@ -198,14 +208,9 @@ function getBasicSidebar(
             ],
         },
         {
-            title: groupM,
+            title: groupD,
             collapsable: false,
             children: ['debug/breakpoint-debugging'],
-        },
-        {
-            title: groupN,
-            collapsable: false,
-            children: ['algorithm/basic-algorithm'],
         },
     ];
 }

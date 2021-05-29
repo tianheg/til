@@ -9,6 +9,7 @@ GitHub Action Consume Time: about 2min2s
 - 2021-05-07: Front-end, Server, Others
 - 2021-05-22: 前端与服务端的区分是因为业务需求，而不是技术本身。
 - 2021-05-23: 组织我的技术体系时，前后端分类的方式一定无法满足我的需要；目前：入门，进阶，自然
+- 2021-05-29: 通用基础 basic，行业基础 industry-basic，行业专用 industry-special
 
 ## Problems
 

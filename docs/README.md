@@ -5,12 +5,12 @@ tagline: 入门 | 进阶 | 自然
 actionText: 入门
 actionLink: /basic/
 features:
-  - title: 入门
+  - title: 通用基础
     details: 掌握技术基础
-  - title: 进阶
-    details: 编一些好玩儿的玩具吧
-  - title: 自然
-    details: 科技与自然的统一
+  - title: 行业基础
+    details: 某个特定方向的基础
+  - title: 行业专用
+    details: 特别专一的知识
 ---
 <!-- markdownlint-disable MD041 -->
 
@@ -101,6 +101,16 @@ features:
 - HTML
 - CSS
 - JavaScript
+
+## 建立前端知识体系
+
+知识分类：通用+行业。
+
+通用知识是指最为基础、适用面也最大的知识，比如数理化，这些知识我们上学时都学过，工作中用到的知识都是建立在这些通用知识基础之上的，比如没有一定数学基础就难以学习计算机可视化领域，因为其中会大量运用数学知识。
+
+通用知识最有用，也最保值，所以学校时就安排给我们了，那么大学其实就在教通用行业知识，所以这个阶段如果没有打牢的基础，想要弥补也很简单，只要按照大学教材温习一遍就好了，对于计算机领域的通用知识一般有计算机原理、操作系统、设计模式、编译原理、数据结构、算法等。
+
+领域通用知识看上去比较死板，而初入工作的同学一般都在做拧螺丝钉的事，往往会忽略行业通用知识的重要性，但当你不断深入接触公司核心技术时，会发现大量运用了大学里教的那些通用知识，等用到的时候再学就迟了。
 
 ## 常用 packages
 
@@ -229,6 +239,17 @@ dclone
 - <https://www.javascripttutorial.net/>
 - <https://learnjavascript.online/>
 - <https://www.learn-js.org/en/>
+
+**代码美化**
+
+- <https://unminify.com/>
+
+**绘图**
+
+- [流程图 diagrams](https://www.diagrams.net/)
+- [流程图 processon](https://www.processon.com/)
+- [手绘](https://excalidraw.com/)
+- [UML](https://tsuml-demo.firebaseapp.com/)
 
 # 后端
 

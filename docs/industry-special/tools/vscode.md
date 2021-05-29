@@ -345,7 +345,7 @@ VS Code 默认支持 Emmet。更多 Emmet 语法规则，请自行查阅。
 
 2、`GitLens` | Git History
 
-3、`Markdown Preview Github Styling` | Markdown Preview Enhanced | Markdown All in One
+3、`Markdown Preview Github Styling` | Markdown Preview Enhanced | Markdown All in One `<!-- omit in toc -->`
 
 4、`Prettier`
 
