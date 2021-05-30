@@ -304,3 +304,13 @@ fi
 **References**:
 
 1. <https://linuxhint.com/30_bash_script_examples/>
+
+### Set default value
+
+```sh
+#!/bin/bash
+
+read -p "Enter your name [A]: " name
+name=${name:-A}
+echo $name
+```
