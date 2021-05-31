@@ -8,6 +8,14 @@
 $ set -o vi
 ```
 
+**替换文本**：
+
+```sh
+:%s/http:\/\/ports.ubuntu.com/https:\/\/mirrors.ustc.edu.cn/g
+```
+
+在当前文件中，寻找 `http://ports.ubuntu.com` 替换成 `https://mirrors.ustc.edu.cn`
+
 然后就可以在终端里，以 vi 的方式对命令进行操作，非常方便。
 
 ## 快捷键
