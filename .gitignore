@@ -2,14 +2,16 @@
 node_modules/
 package-lock.json
 
-# husky
-.husky
-
 # vscode
 .vscode
 
-# vuepress
-docs/.vuepress/dist
+*.gem
+.bundle
+.ruby-version
+.jekyll-cache
+.sass-cache
+_site
+Gemfile.lock
 
 # history
 .history

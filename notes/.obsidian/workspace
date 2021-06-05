@@ -1,0 +1,100 @@
+{
+  "main": {
+    "id": "e38dc59b953a60b8",
+    "type": "split",
+    "children": [
+      {
+        "id": "db8c6562b3e6eb45",
+        "type": "leaf",
+        "active": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Clients & Servers.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4416b0cf81691669",
+    "type": "split",
+    "children": [
+      {
+        "id": "81bad8fc970e9d5f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ab4c0385a76d227b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "435ae34769d8629a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "adf59ef13690c5d2",
+    "type": "split",
+    "children": [
+      {
+        "id": "381724e350f8cb3f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "05705ad7474bfa25",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Clients & Servers.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "lastOpenFiles": [
+    "Clients & Servers.md",
+    "000002.md",
+    "JavaScript Functions.md",
+    "000008.md",
+    "000010.md",
+    "000027.md",
+    "000023.md",
+    "000025.md",
+    "Functions.md",
+    "000028.md"
+  ]
+}

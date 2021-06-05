@@ -1,5 +1,9 @@
 # 改变
 
+## 2021-06-05
+
+抛弃 VuePress，使用 Jekyll。但这不是重点。[notes.ajb.app](https://github.com/andybyers21/notes.ajb.app) 应用了「[卢曼卡片盒笔记法](https://zettelkasten.de/introduction/zh/)」，我仿照它形成我自己的笔记系统雏形。
+
 ## 2021-05-29
 
 - 通用基础 basic，行业基础 industry-basic，行业专用 industry-special
