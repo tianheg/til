@@ -13,4 +13,4 @@
 11. [精读《前端职业规划 - 2021 年》 - ascoders/weekly - GitHub](https://github.com/ascoders/weekly/blob/master/%E5%89%8D%E6%B2%BF%E6%8A%80%E6%9C%AF/196.%E7%B2%BE%E8%AF%BB%E3%80%8A%E5%89%8D%E7%AB%AF%E8%81%8C%E4%B8%9A%E8%A7%84%E5%88%92%20-%202021%20%E5%B9%B4%E3%80%8B.md)
 12. [97 Things Every Programmer Should Know](https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/index.html)
 13. [The Key To Accelerating Your Coding Skills](http://blog.thefirehoseproject.com/posts/learn-to-code-and-be-self-reliant/)
-14. [Stevey's Google Platforms Rant](https://gist.github.com/chitchcock/1281611)
+14. [andybyers21/notes.ajb.app](https://github.com/andybyers21/notes.ajb.app)
