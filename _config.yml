@@ -32,12 +32,15 @@ exclude:
     'Gemfile.lock',
     'package.json',
     'package-lock.json',
+    'yarn.lock',
     'script/',
-    'LICENSE.txt',
+    'LICENSE.md',
     'lib/',
     'bin/',
     'README.md',
     'Rakefile',
+    'references.md',
+    'CHANGELOG.md',
   ]
 
 # Set a path/url to a logo that will be displayed instead of the title
