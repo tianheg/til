@@ -6,10 +6,12 @@
       {
         "id": "cb782980f8e125b9",
         "type": "leaf",
-        "active": true,
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "000001.md",
+            "mode": "source"
+          }
         }
       }
     ],
@@ -66,11 +68,24 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "000001.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c3040474d9e12a1f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "000001.md"
               }
             }
           }
@@ -81,16 +96,17 @@
     "width": 300,
     "collapsed": true
   },
+  "active": "cb782980f8e125b9",
   "lastOpenFiles": [
+    "000001.md",
+    "000005.md",
+    "000084.md",
+    "000006.md",
     "Clients & Servers.md",
     "000002.md",
     "JavaScript Functions.md",
     "000008.md",
     "000010.md",
-    "000027.md",
-    "000023.md",
-    "000025.md",
-    "Functions.md",
-    "000028.md"
+    "000027.md"
   ]
 }
