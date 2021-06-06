@@ -6,8 +6,6 @@ has_children: true
 has_toc: false
 ---
 
-# Version Control
-
 ## Git and Version Control
 
 - [[Git Fundamentals]]

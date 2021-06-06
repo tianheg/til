@@ -41,6 +41,7 @@ exclude:
     'Rakefile',
     'references.md',
     'CHANGELOG.md',
+    '.history/',
   ]
 
 # Set a path/url to a logo that will be displayed instead of the title
@@ -67,7 +68,6 @@ footer_content: ''
 color_scheme: dark
 
 plugins:
-  - jekyll-feed
   - jekyll-seo-tag
   # - wikilinks
 

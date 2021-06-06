@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "000001.md",
+            "file": "202106061119.md",
             "mode": "source"
           }
         }
@@ -40,7 +40,7 @@
               "type": "search",
               "state": {
                 "query": "",
-                "matchingCase": false,
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -68,14 +68,14 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "000001.md",
+                "file": "202106061119.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               }
             }
           },
@@ -85,7 +85,18 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "000001.md"
+                "file": "202106061119.md"
+              }
+            }
+          },
+          {
+            "id": "313c431858b9afe9",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
               }
             }
           }
@@ -93,20 +104,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 282.6000061035156
   },
   "active": "cb782980f8e125b9",
   "lastOpenFiles": [
-    "000001.md",
-    "000005.md",
-    "000084.md",
-    "000006.md",
-    "Clients & Servers.md",
-    "000002.md",
-    "JavaScript Functions.md",
-    "000008.md",
-    "000010.md",
-    "000027.md"
+    "202106061119.md",
+    "202106061116.md",
+    "202106052027.md",
+    "template.md",
+    "202106052007.md",
+    "202106061043.md",
+    "202106060959.md",
+    "Untitled.md",
+    "002.md",
+    "003.md"
   ]
 }

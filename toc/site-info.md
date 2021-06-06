@@ -1,7 +1,7 @@
 ---
 layout: note
 title: Site Info
-nav_order: 99
+nav_order: 1
 parent: Home
 has_children: true
 has_toc: false
@@ -16,13 +16,13 @@ has_toc: false
 
 # Personal
 
-- [[Personal Learning Path (Backend) - 20/11/2020]]
+- [[Personal Learning Path (Frontend) - 20/11/2020]]
 
 ---
 
 - Notes are automatically transformed by [Jekyll](https://jekyllrb.com/) into a static site whenever I push this repo to GitHub and deployed to the web by [Netlify](https://app.netlify.com/).
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/43f05955-0f84-4186-bbd5-14175f0919fa/deploy-status)](https://app.netlify.com/sites/affectionate-goldstine-d6699d/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7adba10f-2f80-4d2f-830a-f0458d19936f/deploy-status)](https://app.netlify.com/sites/tianheg-til/deploys)
 
 - Backlinks maintained with Andy Matuschak's [[Note Link Janitor]]
 
