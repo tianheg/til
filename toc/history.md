@@ -1,11 +1,11 @@
 ---
 layout: note
-title: 历史
+title: History
 parent: Home
 has_children: true
 has_toc: false
 ---
 
-## 科技
+## Science and Technology
 
-- [[前端]]
+- [[Front-end]]
