@@ -1,8 +1,18 @@
 # 改变
 
+## 2021-06-07
+
+Use another file name system: 
+
+---
+
+**References**:
+
+1. <https://tevinzhang.com/digital-zettelkasten/>
+
 ## 2021-06-05
 
-抛弃 VuePress，使用 Jekyll。但这不是重点。[notes.ajb.app](https://github.com/andybyers21/notes.ajb.app) 应用了「[卢曼卡片盒笔记法](https://zettelkasten.de/introduction/zh/)」，我仿照它形成我自己的笔记系统雏形。
+抛弃 VuePress，使用 Jekyll。但这不是重点。[notes.ajb.app](https://github.com/andybyers21/notes.ajb.app) 应用了「[卢曼卡片盒笔记法](https://zettelkasten.de/introduction/zh/)」，我仿照它形成我自己的笔记系统雏形。初步使用时间戳作为笔记名称，但是经过这两天的使用来看，这样做会使文件名字毫无意义。无法应用 ZettelKasten 的精髓。
 
 ## 2021-05-29
 
