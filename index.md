@@ -8,7 +8,14 @@ has_toc: false
 
 # Hi, I'm tianheg
 
-I'm a software developer from Chian with goals around building knowledge management for the web. You can view my portfolio at [yidajiabei.xyz](https://www.yidajiabei.xyz)
+## Ask myself Some Questions
+
+1. If you didn't think about what you write, why you wrote it?
+2. Thinking about what you write, is it really hard?
+
+## Introduction
+
+I'm a software developer from China with goals around building knowledge management for the web. You can view my portfolio at [yidajiabei.xyz](https://www.yidajiabei.xyz)
 
 I built this site as a vault for my ongoing PKM. The topics are broad and cover things like self-education, [Computer Science & Web Concepts](toc/computer-science) personal knowledge management (PKM), [Productivity](toc/productivity), entrepreneurship, strategy, marketing, [Wealth Creation](toc/wealth-creation), and whatever other rabbit holes I find myself in. I’ve committed to sharing my findings with the world. _If you’re willing to let people access your life, they’ll find what they need to help you succeed._
 
@@ -18,7 +25,7 @@ Note categorization is loosely based on the zettelkasten system. Whenever you ad
 
 _One important notion, there will be very few straight lines within this platform. It should be dominated by curves and offshoots._
 
-If you want to [view the code you can do so here.](https://github.com/tianheg/til) You can see my [TO-DO list for the site](./notes/202106052027). If you want to get in touch with me or have any comments, you can do so by emailing me at <a href="mailto:yidajiabei@gmail.com">yidajiabei@gmail.com</a>
+If you want to [view the code you can do so here.](https://github.com/tianheg/til) You can see my [TO-DO list for the site](./notes/5.1). If you want to get in touch with me or have any comments, you can do so by emailing me at <a href="mailto:yidajiabei@gmail.com">yidajiabei@gmail.com</a>
 
 P.S. As these are my personal notes some of them may not make any sense to you or be part complete. My intent for is to use them for developing ideas over time.
 
