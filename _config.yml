@@ -62,7 +62,7 @@ aux_links:
     - 'https://github.com/tianheg'
 
 # Footer content appears at the bottom of every page's main content
-footer_content: ''
+footer_content: 'Based on notes.ajb.app'
 
 # Color scheme currently only supports "dark" or nil (default)
 color_scheme: dark
