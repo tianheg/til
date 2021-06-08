@@ -2,7 +2,7 @@
 
 ## 2021-06-07
 
-Use another file name system: 
+Use another file name system: x.x.md
 
 ---
 
