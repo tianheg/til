@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Git",
+                "query": "difference ",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -56,7 +56,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -117,14 +118,14 @@
   "active": "52f76545736d5bd7",
   "lastOpenFiles": [
     "8.4.md",
-    "14.1.md",
     "Untitled.md",
-    "14.5.md",
-    "14.6.md",
-    "16.1.md",
-    "14.7.md",
-    "14.5.7.md",
-    "14.4.md",
-    "14.5.1.md"
+    "3.7.md",
+    "3.6.md",
+    "3.2.md",
+    "3.1.md",
+    "13.1.md",
+    "10.1.md",
+    "6.1.md",
+    "14.1.md"
   ]
 }
