@@ -5,6 +5,7 @@ package-lock.json
 # vscode
 .vscode
 
+# jekyll
 *.gem
 .bundle
 .ruby-version
@@ -12,5 +13,10 @@ package-lock.json
 .sass-cache
 _site
 
-# history
-.history
+# yarn v2
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+yarn-error.log
