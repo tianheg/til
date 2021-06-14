@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "8.4.md",
+            "file": "3.7.md",
             "mode": "source"
           }
         }
@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "difference ",
+                "query": "CSS Box",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -56,12 +56,12 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "adf59ef13690c5d2",
@@ -77,7 +77,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "8.4.md"
+                "file": "3.7.md"
               }
             }
           },
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "8.4.md",
+                "file": "3.7.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,15 +117,15 @@
   },
   "active": "52f76545736d5bd7",
   "lastOpenFiles": [
+    "3.7.md",
+    "3.8.md",
+    "3.6.md",
     "8.4.md",
     "Untitled.md",
-    "3.7.md",
-    "3.6.md",
     "3.2.md",
     "3.1.md",
     "13.1.md",
     "10.1.md",
-    "6.1.md",
-    "14.1.md"
+    "6.1.md"
   ]
 }
