@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "52f76545736d5bd7",
+        "id": "c3c7d7d2b9238edf",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "3.7.md",
+            "file": "13.2.md",
             "mode": "source"
           }
         }
@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "CSS Box",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -60,8 +60,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "adf59ef13690c5d2",
@@ -77,7 +76,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3.7.md"
+                "file": "13.2.md"
               }
             }
           },
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3.7.md",
+                "file": "13.2.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,17 +114,17 @@
     "direction": "horizontal",
     "width": 282.6000061035156
   },
-  "active": "52f76545736d5bd7",
+  "active": "c3c7d7d2b9238edf",
   "lastOpenFiles": [
-    "3.7.md",
-    "3.8.md",
-    "3.6.md",
-    "8.4.md",
+    "13.2.md",
+    "13.2.4.md",
+    "13.2.3.md",
     "Untitled.md",
-    "3.2.md",
-    "3.1.md",
+    "13.2.2.md",
+    "14.1.md",
+    "13.2.1.md",
     "13.1.md",
-    "10.1.md",
-    "6.1.md"
+    "10.2.md",
+    "10.1.md"
   ]
 }
