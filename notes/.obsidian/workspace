@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "13.2.md",
+            "file": "4.2.md",
             "mode": "source"
           }
         }
@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "node",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -76,7 +76,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "13.2.md"
+                "file": "4.2.md"
               }
             }
           },
@@ -97,13 +97,25 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "13.2.md",
+                "file": "4.2.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "bf671df6498696f4",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "4.2.md",
+                "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
@@ -116,15 +128,15 @@
   },
   "active": "c3c7d7d2b9238edf",
   "lastOpenFiles": [
-    "13.2.md",
+    "4.2.md",
+    "4.1.md",
     "13.2.4.md",
-    "13.2.3.md",
-    "Untitled.md",
-    "13.2.2.md",
-    "14.1.md",
-    "13.2.1.md",
+    "1.1.1.md",
     "13.1.md",
-    "10.2.md",
-    "10.1.md"
+    "14.1.md",
+    "13.2.3.md",
+    "1.9.md",
+    "1.8.md",
+    "13.2.md"
   ]
 }
