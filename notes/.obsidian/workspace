@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "4.2.md",
+            "file": "13.2.4.md",
             "mode": "source"
           }
         }
@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "node",
+                "query": "Installation Guide",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -76,7 +76,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4.2.md"
+                "file": "13.2.4.md"
               }
             }
           },
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4.2.md",
+                "file": "13.2.4.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,13 +114,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "4.2.md",
+                "file": "13.2.4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -128,15 +129,15 @@
   },
   "active": "c3c7d7d2b9238edf",
   "lastOpenFiles": [
-    "4.2.md",
-    "4.1.md",
     "13.2.4.md",
-    "1.1.1.md",
-    "13.1.md",
-    "14.1.md",
-    "13.2.3.md",
-    "1.9.md",
-    "1.8.md",
-    "13.2.md"
+    "13.3.md",
+    "Untitled.md",
+    "13.2.1.md",
+    "3.1.md",
+    "2.3.md",
+    "2.2.md",
+    "2.1.md",
+    "4.1.md",
+    "4.2.md"
   ]
 }
