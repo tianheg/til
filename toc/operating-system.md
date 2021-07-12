@@ -21,3 +21,5 @@ has_toc: false
 ## [[Arch]]
 
 - [[Installation Guide]]
+
+## [[Reinstall System]]

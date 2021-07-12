@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "13.2.4.md",
+            "file": "Reinstall System.md",
             "mode": "source"
           }
         }
@@ -76,7 +76,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "13.2.4.md"
+                "file": "Reinstall System.md"
               }
             }
           },
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "13.2.4.md",
+                "file": "Reinstall System.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "13.2.4.md",
+                "file": "Reinstall System.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -129,15 +129,15 @@
   },
   "active": "c3c7d7d2b9238edf",
   "lastOpenFiles": [
+    "Reinstall System.md",
+    "template.md",
+    "Untitled.md",
     "13.2.4.md",
     "13.3.md",
-    "Untitled.md",
     "13.2.1.md",
     "3.1.md",
     "2.3.md",
     "2.2.md",
-    "2.1.md",
-    "4.1.md",
-    "4.2.md"
+    "2.1.md"
   ]
 }
