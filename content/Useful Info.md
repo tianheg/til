@@ -1,0 +1,18 @@
+---
+title: Useful Info
+---
+# Useful Info
+
+## Difference between PDF and ePUB
+
+- A PDF is an electronic form of paper that is static, fixed, and unchangeable. Just like you can't customize a physical book for printing, you can't really customize a pdf file. It's very inflexible. But he is easy to use, copy, and share.
+- ePUB was developed by the International Digital Publishing Forum more than a decade after the birth of PDF, and has become the standard format for digital publishing. It is the most suitable format for e-books.
+
+What are the advantages of ePUB compared with PDF?
+
+1. relatively easy to create and edit files
+2. the main feature that distinguishes ePUB from PDF files is its ability to rearrange content
+3. the ability to add media files (audio, video, rich images)
+4. supports multiple readers
+5. a favorite of e-bookstores
+6. provides higher security than PDF
