@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "notes/Yarn v2 Usage.md",
+            "file": "index.md",
             "mode": "source"
           }
         }
@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Version",
+                "query": "yarn",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -68,14 +68,14 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/Yarn v2 Usage.md",
+                "file": "index.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               }
             }
           },
@@ -85,7 +85,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/Yarn v2 Usage.md",
+                "file": "index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -97,12 +97,11 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/Yarn v2 Usage.md"
+                "file": "index.md"
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -110,15 +109,15 @@
   },
   "active": "496348a3277ad45a",
   "lastOpenFiles": [
-    "Yarn v2 Usage.md",
-    "JavaScript.md",
     "index.md",
+    "notes/Yarn v2 Usage.md",
+    "notes/Install Software.md",
+    "JavaScript.md",
+    "Yarn v2 Usage.md",
     "Raspberry Pi.md",
     "Hardware.md",
     "notes/Power supply unit.md",
     "Power supply unit.md",
-    "Bluetooth.md",
-    "Reinstall System.md",
-    "Operating System.md"
+    "Bluetooth.md"
   ]
 }
