@@ -11,7 +11,7 @@
 - 文件名称中含有中文字符
 - 文件名称中含有空格
 
-当设置 `prismPreset` 为 `prism-twilight',`时，和 `gatsby-plugin-local-search` 是矛盾的，无法执行 `gatsby develop`成功。目前不明白为什么会有这样的 Bug，以后有时间和精力的话会探究一下。
+当设置 `prismPreset` 为 `prism-twilight`时，和 `gatsby-plugin-local-search` 是矛盾的，无法执行 `gatsby develop`成功。目前不明白为什么会有这样的 Bug，以后有时间和精力的话会探究一下。
 
 二、
 
@@ -23,7 +23,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-theme-ui',
       options: {
-        prismPreset: 'prism-twilight',
+        prismPreset: 'prism',
       },
     },
   ],
