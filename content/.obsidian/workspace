@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "index.md",
+            "file": "面向面试编程.md",
             "mode": "source"
           }
         }
@@ -52,7 +52,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317
+    "width": 317,
+    "collapsed": true
   },
   "right": {
     "id": "e8287a7c0423406c",
@@ -68,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "面向面试编程.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -85,7 +86,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "index.md",
+                "file": "面向面试编程.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -97,11 +98,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md"
+                "file": "面向面试编程.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -109,6 +111,7 @@
   },
   "active": "496348a3277ad45a",
   "lastOpenFiles": [
+    "面向面试编程.md",
     "index.md",
     "notes/Yarn v2 Usage.md",
     "notes/Install Software.md",
@@ -117,7 +120,6 @@
     "Raspberry Pi.md",
     "Hardware.md",
     "notes/Power supply unit.md",
-    "Power supply unit.md",
-    "Bluetooth.md"
+    "Power supply unit.md"
   ]
 }
