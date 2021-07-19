@@ -1141,6 +1141,20 @@ $ wget https://github.com/jgraph/drawio-desktop/releases/download/v14.5.1/drawio
 $ sudo apt install ./drawio-amd64-14.5.1.deb
 ```
 
+### Remmina
+
+它是一个 SSH、远程桌面工具。
+
+```sh
+sudo snap install remmina
+sudo snap connect remmina:avahi-observe :avahi-observe # servers discovery
+sudo snap connect remmina:cups-control :cups-control # printing
+sudo snap connect remmina:mount-observe :mount-observe # mount management
+sudo snap connect remmina:password-manager-service :password-manager-service # password manager
+cp ~/.ssh/* ~/snap/remmina/common/.ssh/ # donot do this now! I donot learn about its danger
+sudo snap refresh remmina --channel=stable
+```
+ref: https://remmina.org/how-to-install-remmina/#snap
 ## 按类别
 
 ### 书籍
