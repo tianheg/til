@@ -1,5 +1,7 @@
 {
   "baseFontSize": 15,
-  "enabledCssSnippets": [],
-  "theme": "moonstone"
+  "enabledCssSnippets": [
+    "obsidian"
+  ],
+  "theme": "obsidian"
 }

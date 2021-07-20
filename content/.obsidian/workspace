@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "面向面试编程.md",
-            "mode": "source"
+            "file": "notes/CORS.md",
+            "mode": "preview"
           }
         }
       }
@@ -52,8 +52,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317,
-    "collapsed": true
+    "width": 317
   },
   "right": {
     "id": "e8287a7c0423406c",
@@ -69,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "面向面试编程.md",
+                "file": "notes/CORS.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -86,7 +85,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "面向面试编程.md",
+                "file": "notes/CORS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -98,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "面向面试编程.md"
+                "file": "notes/CORS.md"
               }
             }
           }
@@ -111,15 +110,15 @@
   },
   "active": "496348a3277ad45a",
   "lastOpenFiles": [
+    "CORS.md",
+    "CS & Web Concepts.md",
+    "notes/计算机网络.md",
     "面向面试编程.md",
+    "JavaScript.md",
     "index.md",
+    "Useful Info.md",
     "notes/Yarn v2 Usage.md",
     "notes/Install Software.md",
-    "JavaScript.md",
-    "Yarn v2 Usage.md",
-    "Raspberry Pi.md",
-    "Hardware.md",
-    "notes/Power supply unit.md",
-    "Power supply unit.md"
+    "Yarn v2 Usage.md"
   ]
 }
