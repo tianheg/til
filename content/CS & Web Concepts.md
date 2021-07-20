@@ -10,3 +10,8 @@ title: CS & Web Concepts
 - [[科技英语]]
 - [[Front-end and its history]]
 - [[Operating System]]
+- [[CORS]]
+
+## 一些想法
+
+1. 编程语言没有优劣，只有更合适的应用场景
