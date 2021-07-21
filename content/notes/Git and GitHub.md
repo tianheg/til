@@ -214,7 +214,10 @@ publish:
 
 ![](https://res.wx.qq.com/op_res/A2UVQnCR7s9y5uggqAWM2NK-V6PJOMpSKY7wA7aGKZ2GZUD123KVykc7yk8UGbmo)
 
-## Show Diff
+## API
+https://api.github.com/
+## Usage
+### Show Diff
 
 ```diff
 - var GITHUB_ISSUES_LINK = "https://api.github.com/repos/nelsontky/gh-pages-url-shortener-db/issues/";
