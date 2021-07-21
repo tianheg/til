@@ -11,10 +11,7 @@ HTML，CSS 控制网页的内容和样式，JavaScript 控制交互。学习 Jav
 - [[Yarn v2 Usage]]
 - [[Used Packages from npm or yarn]]
 - [[The difference between js in head and body]]
-
-## Great Posts about JS
-
-- [12 JavaScript quirks](https://2ality.com/2013/04/12quirks.html)
+- [[JS Code Snippets]]
 
 ## 我的学习路径
 
@@ -35,3 +32,7 @@ ref:
 - <https://github.com/leonardomso/33-js-concepts> - 33 JavaScript concepts every developer should know
 - <https://github.com/trekhleb/javascript-algorithms> - Algorithms and data structures implemented in JavaScript with explanations and links to further readings
 - [JavaScript DOM 编程艺术](https://rbew.github.io/Javascript_Dom/)
+
+## Great Posts about JS
+
+- [12 JavaScript quirks](https://2ality.com/2013/04/12quirks.html)
