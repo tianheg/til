@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "notes/CORS.md",
-            "mode": "preview"
+            "file": "面向面试编程.md",
+            "mode": "source"
           }
         }
       }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/CORS.md",
+                "file": "面向面试编程.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -85,7 +85,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/CORS.md",
+                "file": "面向面试编程.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/CORS.md"
+                "file": "面向面试编程.md"
               }
             }
           }
@@ -110,15 +110,15 @@
   },
   "active": "496348a3277ad45a",
   "lastOpenFiles": [
-    "CORS.md",
-    "CS & Web Concepts.md",
-    "notes/计算机网络.md",
     "面向面试编程.md",
+    "HTML.md",
+    "JS Code Snippets.md",
     "JavaScript.md",
-    "index.md",
-    "Useful Info.md",
-    "notes/Yarn v2 Usage.md",
-    "notes/Install Software.md",
-    "Yarn v2 Usage.md"
+    "notes/What I learnt from JS.md",
+    "notes/Git and GitHub.md",
+    "Version Control - Git.md",
+    "notes/Images.md",
+    "Web Design.md",
+    "notes/CORS.md"
   ]
 }
