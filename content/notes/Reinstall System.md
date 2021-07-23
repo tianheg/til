@@ -3,6 +3,101 @@ title: Reinstall System
 ---
 # Reinstall System
 
+EFI引导(ref: [www.cnblogs.com](https://www.cnblogs.com/shuoguoleilei/p/14682030.html))：2g swap 8g / 118g /home 500g /usr 300g 还有剩余空间; then I select the default option, did not choose parttition myself.
+
+**重装时，可以不选最小安装，选一般即可，选择下载时安装更新**
+
+ref: [askubuntu.com](https://askubuntu.com/a/1266679) [zhuanlan.zhihu.com](https://zhuanlan.zhihu.com/p/268620595)
+
+> /只分30G、没分/usr的受害者来回复一下，装了个cuda就没法装pytorch了。建议其他人如果不分/usr一定要把/分得够大\[捂脸\]
+
+软件安装
+
+*   ohmyzsh
+*   git
+*   clash
+*   fcitx
+*   Gnome Tweaks
+*   Google Chrome
+
+```sh
+
+wget -q -O - [dl-ssl.google.com](https://dl-ssl.google.com/linux/linux_signing_key.pub) | sudo apt-key add -
+
+sudo sh -c "echo 'deb \[arch=amd64\] [dl.google.com](http://dl.google.com/linux/chrome/deb/) stable main' >> /etc/apt/sources.list"
+
+sudo apt-get update
+
+sudo apt-get install google-chrome-stable
+
+```
+
+*   Obsidian
+
+dl deb file(if I want the latest version, I can use the source package) from [obsidian.md](https://obsidian.md/download) then install
+
+gh
+
+*   VS Code
+
+```sh
+wget -qO- [packages.microsoft.com](https://packages.microsoft.com/keys/microsoft.asc) | gpg --dearmor > packages.microsoft.gpg
+
+sudo install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.d/ sudo sh -c 'echo "deb \[arch=amd64,arm64,armhf signed-by=/etc/apt/trusted.gpg.d/packages.microsoft.gpg\] [packages.microsoft.com](https://packages.microsoft.com/repos/code) stable main" > /etc/apt/sources.list.d/vscode.list'
+
+rm -f packages.microsoft.gpg
+
+sudo apt install apt-transport-https
+
+sudo apt update
+
+sudo apt install code # or code-insiders
+
+```
+
+*   VMware Workstation Pro(cannot find key, so choose vbox)
+
+1. dl .bundle file from [www.vmware.com](https://www.vmware.com/go/getworkstation-linux)
+2. chmod +x VMware-Workstation-Full-16.1.2-17966106.x86\_64.bundle
+3. sudo ./VMware-Workstation-Full-16.1.2-17966106.x86\_64.bundle
+
+uninstall VMware Workstation 16 Pro
+
+1.  sudo su
+2.  vmware-installer -u vmware-workstation
+3.  Next
+
+emacs
+
+1.  sudo add-apt-repository ppa:kelleyk/emacs
+2.  sudo apt update
+3.  sudo apt install emacs27
+4.  [github.com](https://github.com/hlissner/doom-emacs)
+
+Vbox
+
+1.  sudo sh -c "echo 'deb \[arch=amd64\] [download.virtualbox.org](https://download.virtualbox.org/virtualbox/debian) focal contrib' >> /etc/apt/sources.list"
+2.  wget -q [www.virtualbox.org](https://www.virtualbox.org/download/oracle_vbox_2016.asc) -O- | sudo apt-key add -
+3.  sudo apt-get update && sudo apt-get install virtualbox-6.1
+
+Vagrant
+
+```sh
+
+curl -fsSL [apt.releases.hashicorp.com](https://apt.releases.hashicorp.com/gpg) | sudo apt-key add -
+
+sudo apt-add-repository "deb \[arch=amd64\] [apt.releases.hashicorp.com](https://apt.releases.hashicorp.com) $(lsb\_release -cs) main"
+
+sudo apt-get update && sudo apt-get install vagrant
+
+```
+
+redshift
+
+hugo
+
+---
+
 1. 传统 to UEFI
 2. Ubuntu20.04 通过 Rufus 写入 U盘
 3. 系统迁移（机械——>固态，要把原D盘所有文件擦除，无备份因为没有硬盘，用的是 diskgenius，搞错了，系统本来就在固态上，迁移完重启，发现系统在机械盘。重启后复原了）
