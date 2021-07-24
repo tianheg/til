@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "面向面试编程.md",
+            "file": "Learning How to Learn.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "面向面试编程.md",
+                "file": "Learning How to Learn.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -85,7 +85,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "面向面试编程.md",
+                "file": "Learning How to Learn.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "面向面试编程.md"
+                "file": "Learning How to Learn.md"
               }
             }
           }
@@ -110,15 +110,15 @@
   },
   "active": "496348a3277ad45a",
   "lastOpenFiles": [
+    "Learning How to Learn.md",
+    "index.md",
     "面向面试编程.md",
+    "notes/HTML Basics.md",
     "HTML.md",
-    "JS Code Snippets.md",
-    "JavaScript.md",
-    "notes/What I learnt from JS.md",
-    "notes/Git and GitHub.md",
+    "notes/HTML Code Snippets.md",
+    "HTML Code Snippets.md",
+    "Python.md",
     "Version Control - Git.md",
-    "notes/Images.md",
-    "Web Design.md",
-    "notes/CORS.md"
+    "Tools.md"
   ]
 }
