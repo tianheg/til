@@ -25,6 +25,7 @@ Data ——> Information ——> Knowledge ——> Wisdom
 	- [[Version Control - Git]]
 - [[Useful Info]]
 - [[Hardware]]
+- [[Learning How to Learn]]
 
 ---
 
