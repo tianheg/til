@@ -25,7 +25,6 @@ Data ——> Information ——> Knowledge ——> Wisdom
 	- [[Version Control - Git]]
 - [[Useful Info]]
 - [[Hardware]]
-- [[Productivity]]
 - [[面向面试编程]]
 
 ---
