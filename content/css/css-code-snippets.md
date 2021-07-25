@@ -45,3 +45,16 @@ The simplest way to make your images properly appear on High\-Resolution Display
 ```html
 <style> img { height: 250px; width: 250px; } </style> <img src="coolPic500x500" alt="A most excellent picture">
 ```
+
+## 居中图像
+
+```css
+img {
+  display: block;
+  margin: 0 auto;
+}
+```
+
+注意：
+
+以上代码片段，默认图片没有 body 宽。如果图片比较大，它就会溢出 body，溢出到页面的其他部分。有两个办法修改：1）改变图像的实际大小；2）用 CSS 属性使图像变小
