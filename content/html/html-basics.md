@@ -1,22 +1,164 @@
----
-title: HTML Basics
----
 # HTML Basics
+
+HTML(**H**yper**t**ext **M**arkup **L**anguage，超文本标记语言)，它是一种定义你内容结构的一种标记语言。
+
+## 剖析一个 HTML 元素
+
+![剖析一个 HTML 元素](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics/grumpy-cat-small.png)
+
+一个元素主要由以上 3 部分组成：
+
+1. 开标签
+2. 闭标签
+3. 内容
+4. 元素：The opening tag, the closing tag, and the content together comprise the element.
+
+![元素属性](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics/grumpy-cat-attribute-small.png)
+
+元素还有属性。属性由属性名（`class`）和属性值（`editor-note`）构成。`class` 属性允许给元素加一个不唯一的标识符，用以指向这个元素，然后可以为这个元素添加样式/其他行为。
+
+一个属性应该包含以下几个部分：
+
+1. 属性与属性之间、属性和元素名之间，应该有 1 个空格
+2. 属性名后有一个 `=`
+3. 属性值由引号包裹 `""`/`''`
+
+## 嵌套元素
+
+能够放进其他元素的，就是嵌套元素。
+
+## 空元素
+
+一些元素没有内容供它们包裹，它们的作用不是来改变内容，而是把元素表示的东西嵌入 HTML 页面里。
+
+```html
+<img src="images/firefox-icon.png" alt="My test image">
+```
+
+## 一个 HTML 文档结构
 
 ```html
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="This is an example.">
+    <meta charset="utf-8">
     <title>Title</title>
   </head>
   <body>
-  <h2>Hello World!</h2>
-  <p>Hello World!</p>
+    <element>content</element>
+    <empty-element>
   </body>
 </html>
 ```
+
+介绍：
+
+1. `<!DOCTYPE html>`：早些时候，它具备很多功能（自动错误检查等）；现在只有一个：确保 HTML 表现正常
+2. `<html></html>`：它包裹当前页面的所有内容，也被称为「根元素」
+3. `<head></head>`：包含在页面中却不被访问者看见的内容的聚集地，它可以包含：字符声明、SEO关键字、样式元素等
+4. `<meta charset="utf-8">`：它是最全的字符集，包括了几乎所有世界上使用的语言，最重要的是它可以识别你输入的任何内容，HTML 中它是必备的
+5. `<title></title>`：用于浏览器标签显示标题，也用于添加标签/喜爱时的描述
+6. `<body></body>`：这里包含了你想向访客展示的一切内容
+
+## 图像
+
+```html
+<img src="images/firefox-icon.png" alt="My test image">
+```
+
+介绍：
+
+1. `src`(source)：图像路径
+2. `alt`(alternative)：`alt` 应该写得足够详细以概括图像的内容
+   1. 当图像无法显示时，`alt` 文本就会显示
+   2. 这样设置，是为了帮助有视觉障碍的人，理解图片的含义。
+
+在进行图片的显示大小设置时，可以只设置一个（width 或 height），之后 HTML 会自动把没有设置的那一个按图片比例调整到合适大小。adjust the aspect ratio for you（为你调整长宽比）。
+
+`alt` 描述图片内容，并提供可选文本。它可以应对图片加载失败或者无法被用户看见的情况。它也能让搜索引擎知道一张图片里包含了什么。
+
+HTML5 引入了新的 `figure` 和与它相关的 `figcaption`，它们可以一起展示可视化的事物（像图像、图表），包裹这些元素能够能够提供双层可访问性加速，通过语义地对相关内容进行分组并提供一个可选文本解释 `figure`。对于数据可视化，像图表，说明可以被用来为有视觉障碍的用户简短地提示趋势或结论。使用它面临的另一个挑战：如何为读屏读者移动脱离屏幕的表格数据。
+
+在进行图片的显示大小设置时，可以只设置一个（width 或 height），之后 HTML 会自动把没有设置的那一个按图片比例调整到合适大小。adjust the aspect ratio for you（为你调整长宽比）。
+
+## 标记文本
+
+### 标题
+
+```html
+<h1>Hello World!</h1>
+<h2>Hello World!</h2>
+<h3>Hello World!</h3>
+```
+
+### 段落
+
+```html
+<p>Hello World!</p>
+```
+
+### 列表
+
+`<ul>`(unordered lists)/`<ol>`(ordered listed)：无序/有序列表。它们中都有 `<li>`(list item) 元素。
+
+```html
+<ul>
+  <li><a href="#">Apples</a></li>
+  <li>Oranges
+    <ol>
+      <li>tetx</li>
+    </ol>
+  </li>
+  <li>Bananas</li>
+</ul>
+
+<ol type="a/A/I/i">
+  <li>Apples</li>
+  <li>Oranges</li>
+  <li>Bananas</li>
+</ol>
+
+<ol start="11">
+  <li>HTML</li>
+  <li>HTML</li>
+  <li>HTML</li>
+</ol>
+
+<dl>
+  <dt>Apples</dt>
+  <dd>- They are red.</dd>
+  <dt>Oranges</dt>
+  <dd>- They are orange.</dd>
+</dl>
+```
+
+## 链接
+
+`<a>`(anchor)，`href`(hypertext reference)
+
+```html
+<a href="https://www.google.com" target="_blank">Google's Homepage</a>
+
+<a href="pages2.html">Pages2Tss</a>
+
+<a href='path/to/file' download>
+Download
+</a>
+
+<a href="mailto:{email}?subject={subject}&body={content}">
+Send us an email
+</a>
+
+<a href="tel:{phone}">
+Call us
+</a>
+
+<a href="sms:{phone}?body={content}">
+Send us a message
+</a>
+```
+
+`a` 所包含的文本要能表示即将跳转页面的含义。
 
 ## Basic Tags
 
@@ -61,32 +203,6 @@ title: HTML Basics
 </html>
 ```
 
-## Links
-
-```html
-<a href="https://www.google.com" target="_blank"><h1>Google's Homepage</h1></a>
-
-<a href="pages2.html">Pages2Tss</a>
-
-<a href='path/to/file' download>
-Download
-</a>
-
-<a href="mailto:{email}?subject={subject}&body={content}">
-Send us an email
-</a>
-
-<a href="tel:{phone}">
-Call us
-</a>
-
-<a href="sms:{phone}?body={content}">
-Send us a message
-</a>
-```
-
-`a` 所包含的文本要能表示即将跳转页面的含义。
-
 ## Images
 
 ```html
@@ -103,14 +219,6 @@ Send us a message
 <img src='image.jpg' loading='lazy' alt='Alternative Text'>
 ```
 
-在进行图片的显示大小设置时，可以只设置一个（width 或 height），之后 HTML 会自动把没有设置的那一个按图片比例调整到合适大小。adjust the aspect ratio for you（为你调整长宽比）。
-
-`alt` 描述图片内容，并提供可选文本。它可以应对图片加载失败或者无法被用户看见的情况。它也能让搜索引擎知道一张图片里包含了什么。
-
-HTML5 引入了新的 `figure` 和与它相关的 `figcaption`，它们可以一起展示可视化的事物（像图像、图表），包裹这些元素能够能够提供双层可访问性加速，通过语义地对相关内容进行分组并提供一个可选文本解释 `figure`。对于数据可视化，像图表，说明可以被用来为有视觉障碍的用户简短地提示趋势或结论。使用它面临的另一个挑战：如何为读屏读者移动脱离屏幕的表格数据。
-
-在进行图片的显示大小设置时，可以只设置一个（width 或 height），之后 HTML 会自动把没有设置的那一个按图片比例调整到合适大小。adjust the aspect ratio for you（为你调整长宽比）。
-
 ## Videos and YouTube iFrames
 
 ```html
@@ -120,39 +228,6 @@ HTML5 引入了新的 `figure` 和与它相关的 `figcaption`，它们可以一
 ```
 
 - `controls` 显示基本的操作：播放、暂停等；
-
-## Lists
-
-```html
-<ul>
-  <li><a href="#">Apples</a></li>
-  <li>Oranges
-    <ol>
-      <li>tetx</li>
-    </ol>
-  </li>
-  <li>Bananas</li>
-</ul>
-
-<ol type="a/A/I/i">
-  <li>Apples</li>
-  <li>Oranges</li>
-  <li>Bananas</li>
-</ol>
-
-<ol start="11">
-  <li>HTML</li>
-  <li>HTML</li>
-  <li>HTML</li>
-</ol>
-
-<dl>
-  <dt>Apples</dt>
-  <dd>- They are red.</dd>
-  <dt>Oranges</dt>
-  <dd>- They are orange.</dd>
-</dl>
-```
 
 ## Tables
 
@@ -317,6 +392,7 @@ fCC JavaScript
 
 **参考资料**：
 
-1. [Basic HTML and HTML5 - freeCodeCamp](https://www.freecodecamp.org/learn/responsive-web-design/#basic-html-and-html5)
-2. [HTML Full Course - Build a Website Tutorial](https://youtu.be/pQN-pnXPaVg)
-3. [HTML Tutorial - W3Schools](https://www.w3schools.com/html/default.asp)
+1. <https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics>
+2. <https://www.freecodecamp.org/learn/responsive-web-design/#basic-html-and-html5>
+3. <https://youtu.be/pQN-pnXPaVg>
+4. <https://www.w3schools.com/html/default.asp>
