@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Learning How to Learn.md",
+            "file": "notes/HTML Basics.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Learning How to Learn.md",
+                "file": "notes/HTML Basics.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -85,7 +85,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Learning How to Learn.md",
+                "file": "notes/HTML Basics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Learning How to Learn.md"
+                "file": "notes/HTML Basics.md"
               }
             }
           }
@@ -110,11 +110,11 @@
   },
   "active": "496348a3277ad45a",
   "lastOpenFiles": [
-    "Learning How to Learn.md",
-    "index.md",
-    "面向面试编程.md",
     "notes/HTML Basics.md",
     "HTML.md",
+    "index.md",
+    "Learning How to Learn.md",
+    "面向面试编程.md",
     "notes/HTML Code Snippets.md",
     "HTML Code Snippets.md",
     "Python.md",
