@@ -1,5 +1,9 @@
 # 改变
 
+## 2021-07-25
+
+我终于明白：我需要的仅仅只是一个文档仓库而已，我不需要其他花哨的技术。我只是想要在需要的时候能够找到我的文档。
+
 ## 2021-07-17
 
 使用了 [gatsby-digital-garden](https://github.com/mathieudutour/gatsby-digital-garden)
