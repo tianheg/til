@@ -4,6 +4,10 @@ CSS 是层叠样式表。
 
 - [CSS Basics](css-basics.md)
 
+## I Want
+
+- 把 blog 的任务列表样式去掉
+
 ## Responsive Web Design
 
 There are many devices that can access the web, and they come in all shapes and sizes. Responsive web design is the practice of designing flexible websites that can respond to different screen sizes, orientations, and resolutions.
