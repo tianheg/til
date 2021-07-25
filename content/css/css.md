@@ -1,6 +1,3 @@
----
-title: CSS
----
 # CSS
 
 层叠样式表
@@ -9,21 +6,7 @@ title: CSS
 
 There are many devices that can access the web, and they come in all shapes and sizes. Responsive web design is the practice of designing flexible websites that can respond to different screen sizes, orientations, and resolutions.
 
-## Main
-- [[CSS Basics]]
-- [[CSS Box]]
-- [[CSS Position]]
-- Improve Compatibility with [[Browser Fallbacks]]
-- [[Attribute Selectors]]
-- [[CSS pseudo-classes]]
-- [[Viewport Dimensions]]
-- [[Web Design]]
-
-## Snippets
-- [[Keep footer at the Bottom]]
-- [[Create A Media Query]]
-- [[Make Typography Responsive]]
-- [[Use A Retina Image For Higher Resolution Displays]] 为更高的分辨率使用视网膜图像
+- [CSS Code Snippets](css-code-snippets.md)
 
 **引入外部样式表 css 文件**的方式。这种引入方式又分为两种：
 

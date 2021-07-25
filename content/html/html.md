@@ -1,17 +1,14 @@
----
-title: HTML
----
 # HTML
 
 HTML 是超文本标记语言。
 
-- [[HTML Basics]]
-- [[HTML Code Snippets]]
+- [HTML Basics](html-basics.md)
+- [HTML Code Snippets](html-code-snippets.md)
 
 ## What I Want To Know
 
-- [[The difference between js in the head and body]]
-- [[Access to web-specific text]]
+- [The difference between js in the head and body](the-difference-between-js-in-head-and-body.md)
+- [Access to web-specific text](access-to-web-specific-text.md)
 - [Canonical link element](https://en.wikipedia.org/wiki/Canonical_link_element)
 
 ## 面试题

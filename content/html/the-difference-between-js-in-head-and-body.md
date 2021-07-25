@@ -1,5 +1,5 @@
 ---
-title: The difference between js in head and body
+title: 
 ---
 # The difference between js in the head and body
 

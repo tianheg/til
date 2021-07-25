@@ -1,6 +1,3 @@
----
-title: DNS
----
 # DNS
 
 Domain Name System（域名系统）。负责匹配 IP 和域名。

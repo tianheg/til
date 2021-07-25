@@ -1,6 +1,3 @@
----
-title: Algorithms and Data Structure
----
 # Algorithms and Data Structure
 
 ## Data Structures

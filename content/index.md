@@ -1,6 +1,3 @@
----
-title: 索引
----
 # 索引
 
 Data ——> Information ——> Knowledge ——> Wisdom
