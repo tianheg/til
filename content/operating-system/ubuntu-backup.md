@@ -1,6 +1,3 @@
----
-title: Ubuntu Backup
----
 # Ubuntu Backup
 
 发展出一个备份计划：备份什么，备份到哪里，如何从备份中恢复数据

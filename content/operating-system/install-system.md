@@ -1,7 +1,6 @@
----
-title: Reinstall System
----
-# Reinstall System
+# Install System
+
+## Ubuntu
 
 EFI引导(ref: [www.cnblogs.com](https://www.cnblogs.com/shuoguoleilei/p/14682030.html))：2g swap 8g / 118g /home 500g /usr 300g 还有剩余空间; then I select the default option, did not choose parttition myself.
 

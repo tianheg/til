@@ -1,7 +1,4 @@
----
-title: I Want To Do With Ubuntu
----
-# I Want To Do With Ubuntu
+# Ubuntu Common Usage
 
 ## Edit Sources.list
 

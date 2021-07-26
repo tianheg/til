@@ -1,6 +1,3 @@
----
-title: Arch Installation Guide
----
 # Arch Installation Guide
 
 ```sh

@@ -1,6 +1,3 @@
----
-title: Linux Common Orders
----
 # Linux Common Orders
 
 - `man`: watch order docs

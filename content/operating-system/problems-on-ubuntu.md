@@ -1,6 +1,3 @@
----
-title: Problems on Ubuntu
----
 # Problems on Ubuntu
 
 ## Bluetooth Cannot Connect Airpods

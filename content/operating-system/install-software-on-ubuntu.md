@@ -1,7 +1,4 @@
----
-title: Install Software
----
-# Install Software
+# Install Software on Ubuntu
 
 used software: nomacs, Flameshot, kphotoalbum, Krita, xournal, [ImageMagick](https://askubuntu.com/a/764557), pppoeconf, [redshift](https://github.com/jonls/redshift#redshift)
 
