@@ -1,6 +1,6 @@
 # Install Software on Ubuntu
 
-used software: nomacs, Flameshot, kphotoalbum, Krita, xournal, [ImageMagick](https://askubuntu.com/a/764557), pppoeconf, [redshift](https://github.com/jonls/redshift#redshift)
+used software: nomacs, Flameshot, kphotoalbum, Krita, xournal, [ImageMagick](https://askubuntu.com/a/764557), pppoeconf, [redshift](https://github.com/jonls/redshift#redshift), gparted
 
 ## 安装文件
 
@@ -125,6 +125,8 @@ $ wget https://github.com/cli/cli/releases/download/v1.10.2/gh_1.10.2_linux_amd6
 
 autoload -U compinit && compinit -u
 ```
+
+### proxychains-ng
 
 ### Clash
 
