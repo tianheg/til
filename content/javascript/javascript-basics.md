@@ -1,8 +1,65 @@
----
-title: JavaScript Basics
----
 # JavaScript Basics
-## Comment JavaScript Code
+
+## 什么是 JavaScript？
+
+JS 是一个成熟的动态编程语言，它能为网站添加交互。Brendan Eich(co-founder of the Mozilla project, the Mozilla Foundation, and the Mozilla Corporation) 发明了 JS。
+
+JS 相对简洁，而且非常灵活。开发人员已经在核心 JavaScript 语言之上编写了各种各样的工具，用最小的努力解锁了大量的功能。它们包括：
+
+- 内建浏览器的 API：提供动态编辑 HTML 和设置 CSS 样式的功能
+- 第三方 API 允许开发人员与网站进行交互，例如 Twitter/ Facebook
+- 第三方框架和库能够让你操作 HTML，从而加快构建网站和应用
+
+## `Hello, World!`
+
+```js
+const myFirstCode = document.querySelector('h1');
+myFirstCode.textContent = 'Hello, World!';
+```
+
+作为 js 文件导入 HTML时，应该把 `<script src="*.js"></script>` 放在 `</body>` 前，确保在加载 js 时 HTML 已经准备好。
+
+## 变量
+
+变量是存储值的容器。
+
+计算机可以识别数字，例如 `2`，字符串，例如 `"2"`,`"cat"`， 或者 `"2 cat"`，最后一个是字符的组合。计算机能进行有关数字的数学运算，但它不能运算字符串。
+
+计算机能以动态方式存储操作变量。计算机使用标签指向数据，而不是直接使用数据。变量可以是八种数据类型的任何一个或多个。
+
+这里的变量和你在数学中用到的 x 和 y 变量很像，这说明变量是一个代表我们想用的数据的简单名字。计算机变量不同于数学变量，因为它们可以在不同的时间存储不同的值。
+
+在 JavaScript 中，使用 `let`(不建议使用 `var`，ES6 引入了 `let`) 创建或声明一个变量：
+
+```js
+let myName
+myName = 'Jim'
+
+// or
+let myName = 'Jim'
+```
+
+在 JavaScript 中使用分号结束声明。[是否/在什么时候使用 `;`？](https://www.codecademy.com/resources/blog/your-guide-to-semicolons-in-javascript/)。**数字、字母和 `$` 或 `_`是变量名组成范围**，但是：
+
+1. 变量不能含有空格；
+2. 首字母不能是数字。
+
+变量可以不断赋值：
+
+```js
+let a = 'a'
+a = 'b'
+```
+
+变量能够表示的数据类型：
+
+- String：单引号包裹的文本就是字符串
+- Number：数字没有引号
+- Boolean：`true`/`false` 是特殊关键字，不需要引号
+- Array：这种结构允许我在单个引用中存储多个值
+- Object：这可以是任何东西。JavaScript 中的所有内容都是一个对象，可以存储在一个变量中。在我学习的时候记住这一点。
+
+## 注释
 
 JavaScript 会忽略被注释掉的代码。写注释能够帮你或别人弄清楚代码的意思。注释的两种方法：
 
@@ -15,76 +72,60 @@ multi-line comment */
 
 好的注释能够帮助代码传达实现意图。
 
-## 声明 JavaScript 变量
+## 操作符
 
-在计算机科学中，data 指代一切对计算机有意义的事物。JavaScript 提供了 8 种不同的数据类型，它们分别是 `undefined`，`null`，`boolean`，`string`，`symbol`，`bigint`，`number`，`object`。
+操作符是一种数学符号，能够产生基于两个值的结果。
 
-计算机可以识别数字，例如 `2`，字符串，例如 `"2"`,`"cat"`， 或者 `"2 cat"`，最后一个是字符的组合。计算机能进行有关数字的数学运算，但它不能运算字符串。
+- `+`(Addition)
+- `-`,`*`,`/`(Subtraction, Multiplication, Division)
+- `=`(Assignment)：把值赋给变量
+- `===`(Equality)：它返回布尔值
+- `!`,`!==`(Not, Does-not-equal)：前者将返回与之前的值在逻辑上相反的值；后者测试两个值是否不相等，如果不想等，返回 `true`，相等则返回 `false`。
 
-计算机能以动态方式存储操作变量。计算机使用标签指向数据，而不是直接使用数据。变量可以是八种数据类型的任何一个或多个。
+当计算时混合数据类型会导致奇怪的运行结果。
 
-这里的变量和你在数学中用到的 x 和 y 变量很像，这说明变量是一个代表我们想用的数据的简单名字。计算机变量不同于数学变量，因为它们可以在不同的时间存储不同的值。
-
-在 JavaScript 中，使用 `var` 创建或声明一个变量：
-
-```js
-var ourName;
-```
-
-在 JavaScript 中使用分号结束声明。**数字、字母和 `$` 或 `_`是变量名组成范围**，但是：
-
-1. 变量不能含有空格；
-2. 首字母不能是数字。
-
-## 使用赋值操作符存储值
+## 条件语句
 
 ```js
-myVariable = 5; // assigns the number value 5 to myVariable
+if(conditions) {
+
+} else {
+
+}
 ```
 
-如果 `=` 右侧有任何计算，在把值赋给操作符左边的变量之前，计算已经结束了。
+## 函数
 
-例子：
+函数是一种包装复用功能的一种方式。函数后有 `()` 跟随，函数接受参数 `function(var1, var2, ...)`
 
 ```js
-var myVar;
-myVar = 5;
+function multiply(num1, num2) {
+  let result = num1 * num2
+  return result
+}
+multiply(2,3)
 ```
 
-## 把一个变量的值赋给另一个变量
+`return` 是必须的，因为这样才能返回运算结果。否则由于作用域的限制，函数内部的运算无法显示至全局。
+
+## 事件
+
+网站上的真正交互性需要事件处理程序。这些代码结构监听浏览器上的活动并运行代码回复。
 
 ```js
-var myVar;
-myVar = 5;
-var myNum;
-myNum = myVar;
+document.querySelector('html').onclick = function() {
+  alert('Oh1 Stop touching me!')
+}
+
+// or
+
+let myHTML = document.querySelector('html')
+myHTML.onclick = function() {
+  ...
+}
 ```
 
-## 使用赋值操作副初始化变量
-
-```js
-var myVar = 0;
-```
-
-## 理解未初始化变量
-
-在 JavaScript 中，刚声明的变量具有初始值：`undefined`。如果使用一个 `undefined` 变量执行数学操作，你的结果会是 `NaN`，意为“不是一个数字”。如果和 `undefined` 变量组成字符串，你会得到一个文字字符串 `undefined`。
-
-## 理解变量的大小写敏感
-
-在 JavaScript 中，所有变量和函数的名字是大小写敏感的。这意味着大写对它们的名字有影响。
-
-`MYVAR` 和 `MyVar` 或 `myvar` 都不一样。可能有多个这样的变量，它们名字相同，但具有不同的大小写。为了清晰强烈推荐不要使用这个语言特点。
-
-**最佳实践**：
-
-在 JavaScript 中使用驼峰命名法。该种方法中，多单词变量的第一个单词首字母小写，第二个单词和之后的单词的首字母大写。
-
-```js
-var someVariable;
-var anotherVariableName;
-var theVariableNameIsSoLong;
-```
+---
 
 ## 基本运算
 
@@ -1485,3 +1526,5 @@ console.log(checkSign(0));
 `parseInt(string);` 解析字符串，并返回一个整数。如果字符串的第一位不是整数，则返回 `NaN`。
 
 `parseInt(string, radix);` 它使用第二个基数参数 `radix`，该参数指定字符串中数字的底数。基数可以是 2 到 36 之间的整数。`radix` 指的是满几进一，而基数的范围则表示进制。
+
+ref: <https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics>
