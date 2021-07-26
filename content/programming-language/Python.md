@@ -43,3 +43,12 @@ print(bigword, bigcount)
 
 # Code: http://www.py4e.com/code3/words.py
 ```
+
+## not on PATH
+
+```sh
+WARNING: The script tomato is installed in '/home/vagrant/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+```
+
+把 `export PATH=/home/vagrant/.local/bin:$PATH` 放在 .zshrc 的最后一行。
