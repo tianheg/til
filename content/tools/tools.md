@@ -3,8 +3,8 @@ title: Tools
 ---
 # Tools
 
-- [[Docker]]
-- [Vagrant](https://www.vagrantup.com/)
+- [Docker]
+- [Vagrant](vagrant.md)
 - [[GPG]]
 
 ## Static Site Generator(SSG)
