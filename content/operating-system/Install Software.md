@@ -1154,7 +1154,9 @@ sudo snap connect remmina:password-manager-service :password-manager-service # p
 cp ~/.ssh/* ~/snap/remmina/common/.ssh/ # donot do this now! I donot learn about its danger
 sudo snap refresh remmina --channel=stable
 ```
-ref: https://remmina.org/how-to-install-remmina/#snap
+
+ref: <https://remmina.org/how-to-install-remmina/#snap>
+
 ## 按类别
 
 ### 书籍
@@ -1166,3 +1168,4 @@ ref: https://remmina.org/how-to-install-remmina/#snap
 - [Ebook-Viewer](https://github.com/michaldaniel/Ebook-Viewer)
 - [Foliate](https://github.com/johnfactotum/foliate)(ePUB, azw, azw3, mobi, fb2, fb2.zip, cbr, cbz, cbt, cb7, txt)
 - [Moon+ Reader](https://www.moondownload.com/index.html)
+- [Koodo Reader](https://github.com/troyeguo/koodo-reader)
