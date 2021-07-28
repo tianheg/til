@@ -15,6 +15,8 @@ Data ——> Information ——> Knowledge ——> Wisdom
 - [HTML](html/html.md)
 - [CSS](css/css.md)
 - [JavaScript](javascript/javascript.md)
+- [Vue](vue/vue.md)
+- [Front-end](front-end.md)
 - [Shell](programming-language/shell.md)
 - [Python](programming-language/python.md)
 - [Go](programming-language/go.md)
@@ -23,9 +25,3 @@ Data ——> Information ——> Knowledge ——> Wisdom
 - [Useful Info](useful-info.md)
 - [Hardware](hardware/hardware.md)
 - [Learning How to Learn](learning-how-to-learn.md)
-
----
-
-Find me:
-
-[GitHub](https://github.com/tianheg) &bull; [Email](mailto:yidajiabei@gmail.com) &bull; [Personal Website](https://www.yidajiabei.xyz/)
