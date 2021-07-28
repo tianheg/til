@@ -114,6 +114,7 @@ $ sudo umount /boot
 1. [backup and object storage](https://nichi.co/articles/backup-and-object-storage.html)
 2. <https://askubuntu.com/a/7811>; <https://askubuntu.com/a/6321>
 3. [从个人工作电脑硬盘故障说起](https://mp.weixin.qq.com/s/TAygYrFKJrXnmuMEx__gAA)
+4. [PKM 实证连载 Vol.01：我的家庭数据五重备份系统](https://mp.weixin.qq.com/s/ZdeeVMbIthLZLxNzt_yMCQ)
 
 restic.net
 

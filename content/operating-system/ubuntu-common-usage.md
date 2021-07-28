@@ -76,11 +76,13 @@ The built\-in preview supports most file formats for documents, images, video, a
 
 To view a preview full\-screen, press <kbd>F</kbd> or <kbd>F11</kbd>. Press <kbd>F</kbd> or <kbd>F11</kbd> again to leave full\-screen, or press the space bar to exit the preview completely.
 
-## Mount disk `/dev/sda1` to /mnt/xx
+## Auto Mount disk `/dev/sda1` to /mnt/xx
 
 ```sh
 sudo mount /dev/sda1 /mnt/vd
 ```
+
+Use Disk software <https://askubuntu.com/a/375319> to mount at system startup
 
 ## Set terminal proxy
 

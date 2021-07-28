@@ -2,6 +2,58 @@
 
 ## Ubuntu
 
+https://askubuntu.com/a/1266679
+https://zhuanlan.zhihu.com/p/268620595
+/只分30G、没分/usr的受害者来回复一下，装了个cuda就没法装pytorch了。建议其他人如果不分/usr一定要把/分得够大[捂脸]
+
+先照着这个来： https://www.cnblogs.com/shuoguoleilei/p/14682030.html
+EFI引导：2g
+swap 8g
+/ 118g
+/home 500g
+/usr 300g
+还有剩余空间
+
+重装时，可以不选最小安装，选一般即可，选择下载时安装更新。最小安装时，wifi驱动无法很容易安装，gnome-tweak-tool会出现没有依赖的状况
+
+Install Gnome Tweak Tool
+
+remap the caps-lock and ctrl keys: use tweaks, link
+
+Select Keyboard & Mouse --> Keyboard --> Additional Layout Options --> Ctrl Position --> Swap Ctrl and Caps Lock
+
+## 软件安装
+
+ohmyzsh
+git
+clash
+Gnome Tweaks
+Google Chrome
+
+```sh
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+sudo sh -c "echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' >>   /etc/apt/sources.list"
+sudo apt-get update
+sudo apt-get install google-chrome-stable
+```
+Obsidian
+dl deb file(if I want the latest version, I can use the source package) from https://obsidian.md/download then install
+VS Code
+
+```sh
+wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+sudo install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.d/
+sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/trusted.gpg.d/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
+rm -f packages.microsoft.gpg
+sudo apt install apt-transport-https
+sudo apt update
+sudo apt install code # or code-insiders
+```
+VMware Workstation Pro
+1. dl .bundle file from https://www.vmware.com/go/getworkstation-linux
+2. chmod +x VMware-Workstation-Full-16.1.2-17966106.x86_64.bundle
+3. sudo ./VMware-Workstation-Full-16.1.2-17966106.x86_64.bundle
+
 EFI引导(ref: [www.cnblogs.com](https://www.cnblogs.com/shuoguoleilei/p/14682030.html))：2g swap 8g / 118g /home 500g /usr 300g 还有剩余空间; then I select the default option, did not choose parttition myself.
 
 **重装时，可以不选最小安装，选一般即可，选择下载时安装更新**
