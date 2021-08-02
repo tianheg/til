@@ -47,7 +47,7 @@ sudo mysql_secure_installation # MariaDB
 sudo mysql -uroot -p # run MySQL
 MariaDB [(none)]> create database wordpress;
 Query OK, 1 row affected (0.001 sec)
-MariaDB [(none)]> GRANT ALL PRIVILEGES ON wordpress.* TO 'root'@'localhost' IDENTIFIED BY '<YOUR PASSWORD>';
+MariaDB [(none)]> GRANT ALL PRIVILEGES ON wordpress.* TO 'root'@'hostname' IDENTIFIED BY '<YOUR PASSWORD>';
 Query OK, 0 rows affected (0.012 sec)
 MariaDB [(none)]> FLUSH PRIVILEGES;
 Query OK, 0 rows affected (0.001 sec)
@@ -108,7 +108,17 @@ I like <https://zenhabits.net/>'s theme, I [download it](https://zenhabits.net/t
 3. Find <kbd>Add New</kbd>/<kbd>Upload Theme</kbd>, you can just upload the zh2 zip file. That's it!
 4. Custom it as you want.
 
+## Support HTTPS
+
+Before test these activity, must backup the site:
+
+```sh
+
+```
+
 ref:
 
 1. <https://projects.raspberrypi.org/en/projects/lamp-web-server-with-wordpress>
 2. <https://linuxize.com/post/how-to-install-php-on-ubuntu-20-04/>
+3. <https://www.wpbeginner.com/wp-tutorials/how-to-add-ssl-and-https-in-wordpress/>
+4. <https://wordpress.org/plugins/really-simple-ssl/#installation>
