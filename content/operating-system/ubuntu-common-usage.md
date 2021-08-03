@@ -86,7 +86,7 @@ Use Disk software <https://askubuntu.com/a/375319> to mount at system startup
 
 ## Set terminal proxy
 
-https://gist.github.com/fearblackcat/850c6e027d5a03017c44daaa6a7ffc30
+<https://gist.github.com/fearblackcat/850c6e027d5a03017c44daaa6a7ffc30>
 
 ## How do I do when facing `You must choose a longer password`?
 
