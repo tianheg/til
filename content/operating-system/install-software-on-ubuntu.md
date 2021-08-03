@@ -1,6 +1,6 @@
 # Install Software on Ubuntu
 
-used software: nomacs, Flameshot, kphotoalbum, Krita, xournal, [ImageMagick](https://askubuntu.com/a/764557), pppoeconf, [redshift](https://github.com/jonls/redshift#redshift), gparted
+used software: nomacs, Flameshot, kphotoalbum, Krita, xournal, [ImageMagick](https://askubuntu.com/a/764557), pppoeconf, [redshift](https://github.com/jonls/redshift#redshift), gparted, tree
 
 ## 安装文件
 
@@ -124,6 +124,12 @@ $ wget https://github.com/cli/cli/releases/download/v1.10.2/gh_1.10.2_linux_amd6
 [[ -s /home/tianheg/.autojump/etc/profile.d/autojump.sh ]] && source /home/tianheg/.autojump/etc/profile.d/autojump.sh
 
 autoload -U compinit && compinit -u
+```
+
+### FileZilla
+
+```sh
+sudo apt install filezilla
 ```
 
 ### proxychains-ng
