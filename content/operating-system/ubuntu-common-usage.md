@@ -86,8 +86,31 @@ Use Disk software <https://askubuntu.com/a/375319> to mount at system startup
 
 ## Set terminal proxy
 
-```zshrc
+https://gist.github.com/fearblackcat/850c6e027d5a03017c44daaa6a7ffc30
 
+## How do I do when facing `You must choose a longer password`?
+
+```sh
+sudo vi /etc/pam.d/common-password
 ```
 
-https://gist.github.com/fearblackcat/850c6e027d5a03017c44daaa6a7ffc30
+改变 25 行的部分，对比：
+
+```txt
+password        [success=1 default=ignore]      pam_unix.so obscure sha512 # 改变前
+password        [success=1 default=ignore]      pam_unix.so sha512 minlen=3 # 改变后
+```
+
+ref: <https://qr.ae/pGwfdq>
+
+## Create a bootable USB stick on Ubuntu
+
+ref: <https://ubuntu.com/tutorials/create-a-usb-stick-on-ubuntu>
+
+## 验证下载软件
+
+ref: <https://ubuntu.com/tutorials/how-to-verify-ubuntu>
+
+## Install Ubuntu Desktop
+
+ref: <https://ubuntu.com/tutorials/install-ubuntu-desktop>
