@@ -4,6 +4,42 @@
 
 ref: <https://mxlinux.org/download-links/>
 
+- Google Chrome
+- VS Code
+- ohmyzsh(autojump, zsh-syntax-highlighting, zsh-autosuggestions)
+- git
+- Aptitude(better than apt)
+- apt-fast
+- bluez
+- gh
+- fcitx
+- Flameshot
+- neovim, gedit
+- vlc
+- KeePass2(mono)
+- Redshift
+- Foliate
+- Vagrant
+- Additional Drivers(rtl8821ce-dkms)
+- laptop-mode-tools(power saving), Timeshift(backup)
+- node, yarn
+- font
+- libreoffice
+- rsync
+- wpasupplicant
+- aria2
+- filezilla
+- nmap
+- rbenv
+- fdisk
+- GnuPG
+- neofetch
+- curl
+- wget
+- DevDocs
+- Youtube, Twitter, Telegram
+- Oracle VM VirtualBox Manager
+
 ## Tip
 
 ```sh
