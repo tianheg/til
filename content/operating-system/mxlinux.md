@@ -12,3 +12,27 @@ cryptsetup: WARNING: The initramfs image may not contain cryptsetup binaries
     'cryptsetup-initramfs' package in order to disable the cryptsetup initramfs 
     integration and avoid this warning
 ```
+
+Use my ssh key, gpg:
+
+```sh
+➜  github gh repo clone user/repo
+Cloning into 'important-doc'...
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Permissions 0440 for '/home/user/.ssh/id_rsa' are too open.
+It is required that your private key files are NOT accessible by others.
+This private key will be ignored.
+Load key "/home/user/.ssh/id_rsa": bad permissions
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+exit status 128
+
+➜  github chmod 400 ~/.ssh/id_rsa
+```
+
+ref: https://stackoverflow.com/a/37779390
