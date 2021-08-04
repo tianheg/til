@@ -179,3 +179,35 @@ password: mxlinux.2021
 email: yidajiabei@qq.com
 
 MX Linux can't use Ubuntu ppa ref: <https://mxlinux.org/wiki/system/add-ppa-repository/>
+
+### VBoxManage error
+
+```sh
+➜  ub1 vagrant up
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Box 'generic/debian10' could not be found. Attempting to find and install...
+    default: Box Provider: virtualbox
+    default: Box Version: >= 0
+==> default: Loading metadata for box 'generic/debian10'
+    default: URL: https://vagrantcloud.com/generic/debian10
+==> default: Adding box 'generic/debian10' (v3.3.2) for provider: virtualbox
+    default: Downloading: https://vagrantcloud.com/generic/boxes/debian10/versions/3.3.2/providers/virtualbox.box
+    default: Calculating and comparing box checksum...
+==> default: Successfully added box 'generic/debian10' (v3.3.2) for 'virtualbox'!
+==> default: Importing base box 'generic/debian10'...
+Progress: 90%There was an error while executing `VBoxManage`, a CLI used by Vagrant
+for controlling VirtualBox. The command and stderr is shown below.
+
+Command: ["import", "/home/tianheg/.vagrant.d/boxes/generic-VAGRANTSLASH-debian10/3.3.2/virtualbox/box.ovf", "--vsys", "0", "--vmname", "generic-debian10-virtualbox_1628092278549_60819", "--vsys", "0", "--unit", "10", "--disk", "/media/tianheg/vd/vbox/generic-debian10-virtualbox_1628092278549_60819/generic-debian10-virtualbox-disk001.vmdk"]
+
+Stderr: 0%...10%...20%...30%...40%...50%...60%...70%...80%...90%...100%
+Interpreting /home/tianheg/.vagrant.d/boxes/generic-VAGRANTSLASH-debian10/3.3.2/virtualbox/box.ovf...
+OK.
+0%...
+Progress state: NS_ERROR_INVALID_ARG
+VBoxManage: error: Appliance import failed
+VBoxManage: error: Code NS_ERROR_INVALID_ARG (0x80070057) - Invalid argument value (extended info not available)
+VBoxManage: error: Context: "RTEXITCODE handleImportAppliance(HandlerArg*)" at line 1119 of file VBoxManageAppliance.cpp
+```
+
+原来是我 VM VirtualBox 的默认路径不存在导致的这个问题。
