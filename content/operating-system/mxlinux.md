@@ -42,6 +42,7 @@ ref: <https://mxlinux.org/download-links/>
 - Youtube, Twitter, Telegram
 - Oracle VM VirtualBox Manager
 - [default background image](adrien-olichon-RCAhiGJsUUE-unsplash.jpg)
+- gnome-disk-utility(auto mount drive)
 
 ### Google Chrome
 
@@ -169,7 +170,7 @@ exit status 128
 ➜  github chmod 400 ~/.ssh/id_rsa
 ```
 
-ref: https://stackoverflow.com/a/37779390
+ref: <https://stackoverflow.com/a/37779390>
 
 mxlinux forum registration:
 
