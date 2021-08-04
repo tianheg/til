@@ -1,9 +1,7 @@
----
-title: Docker
----
 # Docker
 
 ## Add Registry Mirrors For Ubuntu
+
 Docker > 1.10.0
 
 ```bash

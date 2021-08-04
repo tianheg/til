@@ -135,6 +135,44 @@ gpg --import tianheg-pubkeys.txt
 gpg --import github-web-flow.txt
 ```
 
+### Docker
+
+ref: <https://docs.docker.com/engine/install/debian/>
+
+```sh
+sudo apt-get remove docker docker-engine docker.io containerd runc
+sudo apt-get update
+sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release
+curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+echo \
+  "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io # install the latest version of Docker Engine and containerd
+###
+apt-cache madison docker-ce # List the versions available in your repo
+sudo apt-get install docker-ce=<VERSION_STRING> docker-ce-cli=<VERSION_STRING> containerd.io #  Install a specific version using the version string from the second column
+###
+sudo docker run hello-world # Verify that Docker Engine is installed correctly
+
+###
+sudo apt-get purge docker-ce docker-ce-cli containerd.io # Uninstall the Docker Engine, CLI, and Containerd packages
+# Images, containers, volumes, or customized configuration files on your host are not automatically removed
+sudo rm -rf /var/lib/docker
+sudo rm -rf /var/lib/containerd
+```
+
+The contents of `/var/lib/docker/`, including images, containers, volumes, and networks, are preserved. The Docker Engine package is now called `docker-ce`.
+
+### Vagrant
+
+Download deb file
+
 ## Remove
 
 - Geany
