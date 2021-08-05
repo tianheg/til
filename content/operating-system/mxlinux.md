@@ -122,6 +122,9 @@ sudo apt remove fcitx-ui-classic
 # Install new UI
 sudo apt install fcitx-ui-qimpanel
 im-config
+
+# run on login
+# Config "Session and Startup"
 ```
 
 ### GPG keys
@@ -173,9 +176,11 @@ The contents of `/var/lib/docker/`, including images, containers, volumes, and n
 
 Download deb file
 
-## Remove
+### Wifi
 
-- Geany
+## KDE
+
+给我的感觉和 xfce 是不一样的。
 
 ## Tip
 
