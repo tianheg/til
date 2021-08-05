@@ -43,6 +43,29 @@ ref: <https://mxlinux.org/download-links/>
 - Oracle VM VirtualBox Manager
 - [default background image](adrien-olichon-RCAhiGJsUUE-unsplash.jpg)
 - gnome-disk-utility(auto mount drive)
+- view log(tried: gnome-system-log,[glogg](https://glogg.bonnefon.org/),journalctl(default installed))
+
+### nvm
+
+```sh
+wget https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh
+sh install.sh
+nvm install --lts
+npm install -g yarn
+```
+
+### Swap Caps Lock with left Ctrl
+
+```sh
+sudo vim /etc/default/keyboard
+```
+
+```conf
+# before
+XKBOPTIONS="grp_led:scroll,terminate:ctrl_alt_bksp"
+# after
+XKBOPTIONS="grp_led:scroll,terminate:ctrl_alt_bksp,ctrl:swapcaps"
+```
 
 ### Google Chrome
 
@@ -69,13 +92,61 @@ sudo apt install code # or code-insiders
 
 ```sh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/plugins/zsh-syntax-highlighting
-git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 sed -i "/# for examples/aif\ test -t l; then\nexec zsh\nfi" ~/.bashrc
+sudo apt install autojump
+curl https://raw.githubusercontent.com/tianheg/config/main/shell/zshrc --output ~/.zshrc
 # edit ~/.zshrc
+# zsh-syntax-highlighting,zsh-autosuggestions must at the end of plugins
 ```
 
-### git
+ref:
+
+1. <https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh>
+
+### Git
+
+Install it from source code:
+
+```sh
+➜  git-2.32.0 make prefix=/usr all doc info
+make: curl-config: Command not found # after installing python3-pycurl, error still exist; libcurl4-gnutls-dev installed, solved
+    CC fuzz-commit-graph.o
+In file included from commit-graph.h:4,
+                 from fuzz-commit-graph.c:1:
+git-compat-util.h:306:10: fatal error: openssl/ssl.h: No such file or directory # `sudo apt-get install libssl-dev` solved
+ #include <openssl/ssl.h>
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Makefile:2489: fuzz-commit-graph.o] Error 1
+
+http-push.c:22:10: fatal error: expat.h: No such file or directory # `sudo apt-get install libexpat1-dev` solved
+ #include <expat.h>
+          ^~~~~~~~~
+compilation terminated.
+make: *** [Makefile:2489: http-push.o] Error 1
+
+SUBDIR templates
+    MSGFMT po/build/locale/pt_PT/LC_MESSAGES/git.mo
+/bin/sh: 1: msgfmt: not found # `sudo apt-get install gettext` solved
+make: *** [Makefile:2686: po/build/locale/pt_PT/LC_MESSAGES/git.mo] Error 127
+
+/bin/sh: 2: asciidoc: not found # `sudo apt-get install asciidoc` solved
+/bin/sh: 2: xsltproc: not found # `sudo apt-get install xsltproc` solved
+/bin/sh: 2: xmlto: not found # `sudo apt-get install xmlto` solved
+/bin/sh: 2: docbook2x-texi: not found # `sudo apt-get install docbook2x` solved
+
+sudo make prefix=/usr install # all done
+git version
+```
+
+ref:
+
+1. <https://gist.github.com/lxneng/1031014#file-gistfile1-txt>
+2. <https://stackoverflow.com/a/3016986>
+3. <https://github.com/scottcorgan/bucket-list/issues/2#issuecomment-40327294>
+4. <https://stackoverflow.com/q/9500898>
 
 ### VM VirtualBox
 
@@ -113,9 +184,12 @@ Can't solved it, donot use it.
 
 ### Input method(fcitx)
 
+Need config System Locales: en_US.UTF-8,zh_CN.UTF-8
+
 ```sh
 sudo apt install zenity
 sudo apt install fcitx-bin
+sudo apt install fcitx-config-gtk
 sudo apt install fcitx-googlepinyin
 # Remove classic UI
 sudo apt remove fcitx-ui-classic
@@ -227,6 +301,8 @@ Finished running dkms install steps.
 ➜  rtl8821ce git:(master)
 ```
 
+Wifi 成功启用。
+
 ## KDE
 
 给我的感觉和 xfce 是不一样的。
@@ -307,3 +383,9 @@ VBoxManage: error: Context: "RTEXITCODE handleImportAppliance(HandlerArg*)" at l
 ```
 
 原来是我 VM VirtualBox 的默认路径不存在导致的这个问题。
+
+### VBox 里的 MX Linux
+
+- 每隔一段时间卡一次
+- 菜单栏的关机、退出当前用户等按钮，经过不知怎么回事的设置后，消失了，取而代之的是我的用户名
+- 无法关机
