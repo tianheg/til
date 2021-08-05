@@ -178,9 +178,62 @@ Download deb file
 
 ### Wifi
 
+需要安装 `rtl8821ce`（[link](https://github.com/tomaspinho/rtl8821ce)）
+
+Wi-Fi not working for kernel >= 5.9:
+
+The Linux Kernel 5.9 version comes with a broken `rtw88` module developed by Realtek that has poor compatibility with most revision of the 8821ce chip.
+
+You must disable it by adding the following to your module blacklists (`/etc/modprobe.d/blacklist.conf`):
+
+```conf
+blacklist rtw88_8821ce
+```
+
+Then, make sure you have the rtl8821ce module correctly installed.
+
+Turn off your computer, wait a few seconds (to force firmware reload) and then turn it on again.
+
+```sh
+➜  rtl8821ce git:(master) sudo ./dkms-install.sh
+[sudo] password for tianheg: 
+About to run dkms install steps...
+
+Creating symlink /var/lib/dkms/rtl8821ce/v5.5.2_34066.20200325/source ->
+                 /usr/src/rtl8821ce-v5.5.2_34066.20200325
+
+DKMS: add completed.
+
+Kernel preparation unnecessary for this kernel.  Skipping...
+
+Building module:
+cleaning build area...
+'make' -j8 KVER=5.10.0-5mx-amd64..................
+cleaning build area...
+
+DKMS: build completed.
+
+8821ce.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/5.10.0-5mx-amd64/updates/dkms/
+
+depmod...
+
+DKMS: install completed.
+Finished running dkms install steps.
+➜  rtl8821ce git:(master)
+```
+
 ## KDE
 
 给我的感觉和 xfce 是不一样的。
+
+## antix
+
+竟然无法关机，可以了，它（Shutdown）隐藏在 Logout 菜单下。
 
 ## Tip
 
