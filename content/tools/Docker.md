@@ -67,29 +67,7 @@ f08d8e2a3ba1: Downloading [=>                                                 ] 
 3baa9cb2483b: Downloading [>                                                  ]     422B/35.36kB
 94e5ff4c0b15: Download complete
 1860925334f9: Download complete
-d49511f6bc25: Waiting
-c2016a0d8b61: Waiting
-4a18a117ffdb: Waiting
-f9411a50d53d: Waiting
-cd3a266f2552: Waiting
-fb1f18755162: Waiting
-11b872239c59: Waiting
-163853c9d290: Waiting
-f87eb78b6f77: Waiting
-24f55aaae019: Waiting
-8d4710a532c3: Waiting
-aa05dbdee05a: Waiting
-087f7c98891e: Waiting
-39ceb0ec08fb: Waiting
-9303bca05f26: Waiting
-635caa4382e5: Waiting
-830ba87015b1: Waiting
-6ed16c000601: Waiting
-6492b70e66b7: Waiting
-0ee06da44985: Waiting
-e3f112923122: Waiting
-34a233ff0906: Waiting
-11b9a2597fa2: Waiting
+......
 docker: error pulling image configuration: Get https://production.cloudflare.docker.com/registry-v2/docker/registry/v2/blobs/sha256/25/2525d47820b9b2830cf42ca0dd4254ddd0d9f0a8f3eecf27df2b36f02d3e568f/data?verify=1613641483-Yr3Gy3gmkRLnxHeiMpLfmkef%2BHE%3D: EOF.
 See 'docker run --help'.
 ```
@@ -142,12 +120,20 @@ sudo docker run hello-world
 
 [source](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository)
 
-## Install Portainer.io On Ubuntu
+## Install Portainer.io
 
-```bash
+## MX
+
+```sh
 docker volume create portainer_data
 docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
-docker run -d -p 9001:9001 --name portainer_agent --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v /var/lib/docker/volumes:/var/lib/docker/volumes portainer/agent
+```
+
+### Ubuntu
+
+```sh
+docker volume create portainer_data
+docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
 ```
 
 [source](https://documentation.portainer.io/v2.0/deploy/ceinstalldocker/)
@@ -162,3 +148,9 @@ docker run hello-world
 ```
 
 [source](https://docs.docker.com/engine/install/linux-postinstall/)
+
+## Use Sysvinit manage docker
+
+ref:
+
+1. <https://github.com/kata-containers/documentation/blob/master/install/docker/debian-docker-install.md>
