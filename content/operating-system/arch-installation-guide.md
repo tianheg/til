@@ -1,102 +1,158 @@
 # Arch Installation Guide
 
+## Proxy
+
+### Clash
+
 ```sh
-# Install ARCH Linux with encrypted file-system and UEFI
-# The official installation guide (https://wiki.archlinux.org/index.php/Installation_Guide) contains a more verbose description.
+export CLASH_VERSION=""
+wget -O clash.gz https://github.com/Dreamacro/clash/releases/download/v${CLASH_VERSION}/clash-linux-amd64-v${CLASH_VERSION}.gz
+gzip -f clash.gz -d
+sudo mv ~/clash /usr/local/bin/clash
+chmod +x /usr/local/bin/clash
+clash # Generate config.yaml, Country.mmdb in ~/.config/clash
+## download yaml file from your service provider, rename it to config.yaml, put it under your clash folder
 
-# Download the archiso image from https://www.archlinux.org/
-# Copy to a usb-drive
-dd if=archlinux.img of=/dev/sdX bs=16M && sync # on linux
-
-# Boot from the usb. If the usb fails to boot, make sure that secure boot is disabled in the BIOS configuration.
-
-# This assumes a wifi only system...
-wifi-menu
-
-# Create partitions
-cgdisk /dev/sdX
-1 100MB EFI partition # Hex code ef00
-2 250MB Boot partition # Hex code 8300
-3 100% size partiton # (to be encrypted) Hex code 8300
-
-mkfs.vfat -F32 /dev/sdX1
-mkfs.ext2 /dev/sdX2
-
-# Setup the encryption of the system
-cryptsetup -c aes-xts-plain64 -y --use-random luksFormat /dev/sdX3
-cryptsetup luksOpen /dev/sdX3 luks
-
-# Create encrypted partitions
-# This creates one partions for root, modify if /home or other partitions should be on separate partitions
-pvcreate /dev/mapper/luks
-vgcreate vg0 /dev/mapper/luks
-lvcreate --size 8G vg0 --name swap
-lvcreate -l +100%FREE vg0 --name root
-
-# Create filesystems on encrypted partitions
-mkfs.btrfs /dev/mapper/vg0-root
-mkswap /dev/mapper/vg0-swap
-
-# Mount the new system 
-mount /dev/mapper/vg0-root /mnt # /mnt is the installed system
-swapon /dev/mapper/vg0-swap # Not needed but a good thing to test
-mkdir /mnt/boot
-mount /dev/sdX2 /mnt/boot
-mkdir /mnt/boot/efi
-mount /dev/sdX1 /mnt/boot/efi
-
-# Install the system also includes stuff needed for starting wifi when first booting into the newly installed system
-# Unless vim and zsh are desired these can be removed from the command
-pacstrap /mnt base base-devel grub-efi-x86_64 python fish neovim git efibootmgr dialog wpa_supplicant wget openssh
-
-# 'install' fstab
-genfstab -U /mnt >> /mnt/etc/fstab
-
-# Enter the new system
-arch-chroot /mnt
-
-# Setup system clock
-ln -s /usr/share/zoneinfo/Asian/Shanghai /etc/localtime
-hwclock --systohc --utc
-
-# Set the hostname
-echo MYHOSTNAME > /etc/hostname
-
-# Update locale
-echo LANG=en_US.UTF-8 >> /etc/locale.conf
-echo LANGUAGE=en_US >> /etc/locale.conf
-echo LC_ALL=C >> /etc/locale.conf
-
-# Set password for root
-passwd
-
-# Add real user remove -s flag if you don't whish to use zsh
-# useradd -m -g users -G wheel -s /usr/bin/fish MYUSERNAME
-# passwd MYUSERNAME
-
-# Configure mkinitcpio with modules needed for the initrd image
-vim /etc/mkinitcpio.conf
-# Add 'encrypt' and 'lvm2' to HOOKS before filesystems
-
-# Regenerate initrd image
-mkinitcpio -p linux
-
-# Setup grub
-grub-install
-In /etc/default/grub edit the line GRUB_CMDLINE_LINUX to GRUB_CMDLINE_LINUX="cryptdevice=/dev/sdX3:luks:allow-discards" then run:
-grub-mkconfig -o /boot/grub/grub.cfg
-
-# Exit new system and go into the cd shell
-exit
-
-# Unmount all partitions
-umount -R /mnt
-swapoff -a
-
-# Reboot into the new system, don't forget to remove the cd/usb
-reboot
-
-# Install GUI libs
-
-sudo pacman -S unzip ctags
+# open clash at start https://github.com/Dreamacro/clash/wiki/clash-as-a-daemon
+sudo vim /etc/systemd/system/clash.service
 ```
+
+`/etc/systemd/system/clash.service`:
+
+```sh
+[Unit]
+Description=Clash daemon, A rule-based proxy in Go.
+After=network.target
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=/usr/local/bin/clash -d "/home/archie/.config/clash"
+
+[Install]
+WantedBy=multi-user.target
+```
+
+```sh
+systemctl daemon-reload
+systemctl enable clash
+```
+
+## Input method
+
+Want to remove ibus, use fcitx.
+
+```sh
+sudo pacman -S fcitx-im fcitx-configtool fcitx-googlepinyin
+```
+
+Add support for gtk,qt:
+
+```txt
+# /etc/profile
+export XMODIFIERS="@im=fcitx"
+export GTK_IM_MODULE="fcitx"
+export QT_IM_MODULE="fcitx"
+```
+
+## Font
+
+Default Gnome 40 font:
+
+- Cantarell Regular 11
+- Cantarell Regular 11
+- Source Code Pro Regular 10
+- Cantarell Bold 11
+
+```sh
+sudo pacman -S noto-fonts noto-fonts-extra noto-fonts-emoji noto-fonts-cjk ttf-dejavu ttf-liberation ttf-roboto ttf-inconsolata ttf-linux-libertine ttf-droid adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts
+yay -S otf-eb-garamond ttf-monaco otf-san-francisco consolas-font
+```
+
+中文：
+
+noto-fonts, noto-fonts-cjk, noto-fonts-emoji, noto-fonts-extra
+
+代码：
+
+monaco, menlo
+
+- 命令行安装的字体所在的目录：`/usr/share/fonts/`
+- 手动安装的字体所在的目录：`~/.local/share/fonts/`
+
+```sh
+fc-cache -fv # update font cache
+```
+
+## Other Software
+
+```sh
+sudo pacman -S telegram-desktop
+```
+
+## Bluetooth
+
+```sh
+sudo systemctl enable --now bluetooth
+```
+
+## Theme
+
+```sh
+sudo pacman -S gtk-engine-murrine gtk-engines
+```
+
+ref: <https://github.com/vinceliuice/Layan-gtk-theme>
+
+## Extensions
+
+### Extension list
+
+<https://extensions.gnome.org/extension/3088/extension-list/>
+
+### Dash to Dock
+
+```sh
+sudo pacman -S sassc
+git clone --branch ewlsh-ewlsh/gnome-40 https://github.com/micheleg/dash-to-dock.git
+make
+make install
+```
+
+<https://gitlab.gnome.org/GNOME/gnome-shell-extensions>
+
+### Simple net speed
+
+<https://extensions.gnome.org/extension/1085/simple-net-speed/>
+
+### GSconnect
+
+<https://extensions.gnome.org/extension/1319/gsconnect/>
+
+Connect PC with phone
+
+## Hide GRUB
+
+Tried [this way](https://io-oi.me/tech/hello-arch-linux/#隐藏-grub-除非按下-shift-键) not work, then try [this](https://www.reddit.com/r/linux4noobs/comments/5372gj/disable_arch_linux_grub_boot_menu/d7qjh6s?utm_source=share&utm_medium=web2x&context=3):
+
+```sh
+sudo vim /etc/default/grub
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+```
+
+Edit `etc/default/grub`:
+
+```sh
+-GRUB_TIMEOUT=1
++GRUB_TIMEOUT=0
+```
+
+## Problems
+
+### `command not found: service`
+
+
+
+### fcitx
+
+Follow above section works
