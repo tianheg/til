@@ -163,6 +163,27 @@ ncmdump-go | 网易云音乐的 `.ncm` 格式转换工具 | *
 sudo pacman -Rs gnome-software gnome-calendar gnome-documents gnome-todo gnome-maps gnome-contacts evolution gnome-builder gnome-boxes geary gnome-clocks gnome-books gnome-photos gnome-connections gnome-games ghex gnome-mahjongg gnome-music epiphany
 ```
 
+### Steam
+
+```sh
+sudo nano /etc/pacman.conf
+```
+
+```sh
+-#[multilib]
+-#Include = /etc/pacman.d/mirrorlist
++[multilib]
++Include = /etc/pacman.d/mirrorlist
+```
+
+```sh
+sudo pacman -Sy
+```
+
+### Mutt
+
+终端邮件 <http://www.mutt.org/>
+
 ### Tracker
 
 Gnome 自带的文件索引生成软件，它使文件搜索更快。
