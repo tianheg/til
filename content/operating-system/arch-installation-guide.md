@@ -1,5 +1,43 @@
 # Arch Installation Guide
 
+## Proxy
+
+### Clash
+
+```sh
+export CLASH_VERSION=""
+wget -O clash.gz https://github.com/Dreamacro/clash/releases/download/v${CLASH_VERSION}/clash-linux-amd64-v${CLASH_VERSION}.gz
+gzip -f clash.gz -d
+sudo mv ~/clash /usr/local/bin/clash
+chmod +x /usr/local/bin/clash
+clash # Generate config.yaml, Country.mmdb in ~/.config/clash
+## download yaml file from your service provider, rename it to config.yaml, put it under your clash folder
+
+# open clash at start https://github.com/Dreamacro/clash/wiki/clash-as-a-daemon
+sudo vim /etc/systemd/system/clash.service
+```
+
+`/etc/systemd/system/clash.service`:
+
+```sh
+[Unit]
+Description=Clash daemon, A rule-based proxy in Go.
+After=network.target
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=/usr/local/bin/clash -d "/home/archie/.config/clash"
+
+[Install]
+WantedBy=multi-user.target
+```
+
+```sh
+systemctl daemon-reload
+systemctl enable clash
+```
+
 ## Input method
 
 Want to remove ibus, use fcitx.
@@ -38,8 +76,8 @@ monaco, menlo
 - 手动安装的字体所在的目录：`~/.local/share/fonts/`
 
 ```sh
-$ mkdir ~/.config/fontconfig
-$ vim ~/.config/fontconfig/fonts.conf
+mkdir ~/.config/fontconfig
+vim ~/.config/fontconfig/fonts.conf
 ```
 
 ```conf
@@ -140,7 +178,9 @@ Edit `etc/default/grub`:
 
 ## Problems
 
-### `zsh: command not found: service`
+### `command not found: service`
+
+
 
 ### fcitx
 
