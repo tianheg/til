@@ -5,7 +5,7 @@
 ### Clash
 
 ```sh
-export CLASH_VERSION=""
+export CLASH_VERSION="1.6.5"
 wget -O clash.gz https://github.com/Dreamacro/clash/releases/download/v${CLASH_VERSION}/clash-linux-amd64-v${CLASH_VERSION}.gz
 gzip -f clash.gz -d
 sudo mv ~/clash /usr/local/bin/clash
@@ -84,10 +84,41 @@ monaco, menlo
 fc-cache -fv # update font cache
 ```
 
-## Other Software
+## Config Git
+
+
+
+## GPG
+
+Modify `~/.gnupg/` permission:
 
 ```sh
-sudo pacman -S telegram-desktop
+# https://superuser.com/a/954536 ; https://superuser.com/a/954639
+# Set ownership to your own user and primary group
+chown -R "$USER:$(id -gn)" ~/.gnupg
+# Set permissions to read, write, execute for only yourself, no others
+chmod 700 ~/.gnupg
+# Set permissions to read, write for only yourself, no others
+chmod 600 ~/.gnupg/*
+```
+
+This step is to solve `gpg: WARNING: unsafe permissions on homedir '/home/user/.gnupg'`.
+
+**Save ~/.gnupg safely**, then import public keys from GitHub(user + web-flow):
+
+```sh
+wget -O tianheg-pubkeys.txt https://github.com/tianheg.gpg
+wget -O github-web-flow.txt https://github.com/web-flow.gpg
+gpg --import tianheg-pubkeys.txt
+gpg --import github-web-flow.txt
+```
+
+## Other Software
+
+<https://io-oi.me/tech/hello-arch-linux/>
+
+```sh
+sudo pacman -S telegram-desktop keepass liferea flameshot
 ```
 
 ### SSH
@@ -95,6 +126,48 @@ sudo pacman -S telegram-desktop
 ```sh
 chmod 400 ~/.ssh/id_ed25519 # solve sign_and_send_pubkey: signing failed for ED25519 "/home/user/.ssh/id_ed25519" from agent: agent refused operation; git@github.com: Permission denied (publickey).
 ```
+
+名字 | 说明 | 类似
+:---:|:---:|:---:
+google-chrome | Google Chrome 浏览器 | *
+visual-studio-code-bin | Visual Studio Code | *
+netease-cloud-music | 网易云音乐 | *
+Flameshot | 现代、快捷、轻便的截图工具 | *
+proxychains-ng | 终端内科学上网代理工具 | *
+redshift | 显示屏色温调节工具 | f.lux
+vlc | 强大的多媒体播放工具 | *
+deadbeef | 终极音频播放软件 | foobar2000
+telegram-desktop | 客户端开源的加密聊天工具 | *
+liferea | RSS 阅读器 | *
+qbittorrent | 好用的 BT 下载工具 | *
+calibre | 电子书转换、编辑、阅读工具 | *
+gthumb | 图片浏览工具，可简单编辑图片，可清除照片元数据 | *
+libreoffice-fresh | 必备的办公软件 | Microsoft Office
+peek | 录制 GIF 动图 | *
+gimp | 强大的图片编辑工具 | Adobe Photoshop
+inkscape | 强大的矢量图形编辑软件 | Adobe Illustrator、CorelDraw
+shotcut | 强大的视频剪辑软件 | Adobe Premiere
+fontforge | 字体设计、编辑软件 | FontCreator
+audacity | 简单的音频编辑软件 | GoldWave
+kid3 | 音频元数据编辑软件 | Mp3tag
+aria2 | 强大的多线程下载工具 | *
+youtube-dl | YouTube 视频下载工具 | *
+baidupcs-go-git | 百度网盘下载工具 | *
+ncmdump-go | 网易云音乐的 `.ncm` 格式转换工具 | *
+
+### Remove software
+
+```sh
+sudo pacman -Rs gnome-software gnome-calendar gnome-documents gnome-todo gnome-maps gnome-contacts evolution gnome-builder gnome-boxes geary gnome-clocks gnome-books gnome-photos
+```
+
+### Tracker
+
+Gnome 自带的文件索引生成软件，它使文件搜索更快。
+
+### Flameshot
+
+可以配置下快捷键，使用起来更加快捷。去 Settings > Keyboard，然后下拉页面到底部，点击 `+` 号，Name 填 `Flameshot`，Command 填 `flameshot gui`，然后点击下 Shortcut 的右方方块，按下 `Alt` + `Super/Win` + `P` 键
 
 ## Bluetooth
 
@@ -110,7 +183,9 @@ sudo pacman -S gtk-engine-murrine gtk-engines
 
 ref: <https://github.com/vinceliuice/Layan-gtk-theme>
 
-## Extensions
+## GNOME Extensions
+
+Extensions install: Copy the unziped folder to `~/.local/share/gnome-shell/extensions/`, rename the folder with `metadata.json`'s uuid.
 
 ### Extension list
 
@@ -126,6 +201,14 @@ make install
 ```
 
 <https://gitlab.gnome.org/GNOME/gnome-shell-extensions>
+
+### Coverflow Alt-Tab
+
+<https://extensions.gnome.org/extension/97/coverflow-alt-tab/>
+
+### Tray Icons: Reloaded
+
+<https://extensions.gnome.org/extension/2890/tray-icons-reloaded/>
 
 ### Simple net speed
 
