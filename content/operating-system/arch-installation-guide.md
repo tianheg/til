@@ -90,6 +90,12 @@ fc-cache -fv # update font cache
 sudo pacman -S telegram-desktop
 ```
 
+### SSH
+
+```sh
+chmod 400 ~/.ssh/id_ed25519 # solve sign_and_send_pubkey: signing failed for ED25519 "/home/user/.ssh/id_ed25519" from agent: agent refused operation; git@github.com: Permission denied (publickey).
+```
+
 ## Bluetooth
 
 ```sh
