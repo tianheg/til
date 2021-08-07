@@ -206,8 +206,8 @@ im-config
 **Save ~/.gnupg safely**, then import public keys from GitHub(user + web-flow):
 
 ```sh
-wget -o tianheg-pubkeys.txt https://github.com/tianheg.gpg
-wget -o github-web-flow.txt https://github.com/web-flow.gpg
+wget -O tianheg-pubkeys.txt https://github.com/tianheg.gpg
+wget -O github-web-flow.txt https://github.com/web-flow.gpg
 gpg --import tianheg-pubkeys.txt
 gpg --import github-web-flow.txt
 ```
