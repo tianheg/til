@@ -57,6 +57,13 @@ export QT_IM_MODULE="fcitx"
 
 ## Font
 
+Default Gnome 40 font:
+
+- Cantarell Regular 11
+- Cantarell Regular 11
+- Source Code Pro Regular 10
+- Cantarell Bold 11
+
 ```sh
 sudo pacman -S noto-fonts noto-fonts-extra noto-fonts-emoji noto-fonts-cjk ttf-dejavu ttf-liberation ttf-roboto ttf-inconsolata ttf-linux-libertine ttf-droid adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts
 yay -S otf-eb-garamond ttf-monaco otf-san-francisco consolas-font
@@ -70,67 +77,17 @@ noto-fonts, noto-fonts-cjk, noto-fonts-emoji, noto-fonts-extra
 
 monaco, menlo
 
-<https://github.com/ueaner/fonts>
-
 - 命令行安装的字体所在的目录：`/usr/share/fonts/`
 - 手动安装的字体所在的目录：`~/.local/share/fonts/`
 
 ```sh
-mkdir ~/.config/fontconfig
-vim ~/.config/fontconfig/fonts.conf
+fc-cache -fv # update font cache
 ```
 
-```conf
-<?xml version='1.0'?>
-<!DOCTYPE fontconfig SYSTEM 'fonts.dtd'>
-<fontconfig>
-
-  <alias>
-    <family>sans-serif</family>
-    <prefer>
-      <family>Linux Biolinum O</family>
-      <family>Source Han Serif CN</family>
-      <family>Source Han Sans CN</family>
-      <family>Noto Sans CJK TC</family>
-      <family>Noto Sans CJK JP</family>
-      <family>Noto Sans CJK KR</family>
-      <family>Noto Sans</family>
-      <family>Noto Color Emoji</family>
-    </prefer>
-  </alias>
-
-  <alias>
-    <family>serif</family>
-    <prefer>
-      <family>Source Han Serif CN</family>
-      <family>Noto Serif CJK TC</family>
-      <family>Noto Serif CJK JP</family>
-      <family>Noto Serif CJK KR</family>
-      <family>Noto Serif</family>
-      <family>Noto Color Emoji</family>
-    </prefer>
-  </alias>
-
-  <alias>
-    <family>monospace</family>
-    <prefer>
-      <family>Menlo</family>
-      <family>Source Han Serif CN</family>
-      <family>Source Han Sans CN</family>
-      <family>Noto Sans CJK TC</family>
-      <family>Noto Sans CJK JP</family>
-      <family>Noto Sans CJK KR</family>
-      <family>Noto Sans</family>
-      <family>Noto Color Emoji</family>
-    </prefer>
-  </alias>
-
-  <dir>~/.local/share/fonts</dir>
-</fontconfig>
-```
+## Other Software
 
 ```sh
-fc-cache -fv # update font cache
+sudo pacman -S telegram-desktop
 ```
 
 ## Bluetooth
@@ -149,6 +106,10 @@ ref: <https://github.com/vinceliuice/Layan-gtk-theme>
 
 ## Extensions
 
+### Extension list
+
+<https://extensions.gnome.org/extension/3088/extension-list/>
+
 ### Dash to Dock
 
 ```sh
@@ -159,6 +120,16 @@ make install
 ```
 
 <https://gitlab.gnome.org/GNOME/gnome-shell-extensions>
+
+### Simple net speed
+
+<https://extensions.gnome.org/extension/1085/simple-net-speed/>
+
+### GSconnect
+
+<https://extensions.gnome.org/extension/1319/gsconnect/>
+
+Connect PC with phone
 
 ## Hide GRUB
 
