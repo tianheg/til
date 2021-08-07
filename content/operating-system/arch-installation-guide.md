@@ -86,7 +86,9 @@ fc-cache -fv # update font cache
 
 ## Config Git
 
-
+```sh
+wget -O ~/.gitconfig https://raw.githubusercontent.com/tianheg/dotfiles/main/git/gitconfig
+```
 
 ## GPG
 
@@ -158,7 +160,7 @@ ncmdump-go | 网易云音乐的 `.ncm` 格式转换工具 | *
 ### Remove software
 
 ```sh
-sudo pacman -Rs gnome-software gnome-calendar gnome-documents gnome-todo gnome-maps gnome-contacts evolution gnome-builder gnome-boxes geary gnome-clocks gnome-books gnome-photos
+sudo pacman -Rs gnome-software gnome-calendar gnome-documents gnome-todo gnome-maps gnome-contacts evolution gnome-builder gnome-boxes geary gnome-clocks gnome-books gnome-photos gnome-connections gnome-games ghex gnome-mahjongg gnome-music epiphany
 ```
 
 ### Tracker
