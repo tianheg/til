@@ -344,12 +344,6 @@ exit status 128
 
 ref: <https://stackoverflow.com/a/37779390>
 
-mxlinux forum registration:
-
-username: tianheg
-password: mxlinux.2021
-email: yidajiabei@qq.com
-
 MX Linux can't use Ubuntu ppa ref: <https://mxlinux.org/wiki/system/add-ppa-repository/>
 
 ### VBoxManage error
