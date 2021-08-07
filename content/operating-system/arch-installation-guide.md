@@ -124,100 +124,18 @@ make install
 
 ## Hide GRUB
 
-<https://io-oi.me/tech/hello-arch-linux/#隐藏-grub-除非按下-shift-键>
+Tried [this way](https://io-oi.me/tech/hello-arch-linux/#隐藏-grub-除非按下-shift-键) not work, then try [this](https://www.reddit.com/r/linux4noobs/comments/5372gj/disable_arch_linux_grub_boot_menu/d7qjh6s?utm_source=share&utm_medium=web2x&context=3):
 
 ```sh
-sudo vim /etc/grub.d/31_hold_shift
+sudo vim /etc/default/grub
+sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
-Add:
+Edit `etc/default/grub`:
 
 ```sh
-# 来源：https://gist.githubusercontent.com/anonymous/8eb2019db2e278ba99be/raw/257f15100fd46aeeb8e33a7629b209d0a14b9975/gistfile1.sh
-
-#! /bin/sh
-set -e
-
-prefix="/usr"
-exec_prefix="${prefix}"
-datarootdir="${prefix}/share"
-
-export TEXTDOMAIN=grub
-export TEXTDOMAINDIR="${datarootdir}/locale"
-. "${datarootdir}/grub/grub-mkconfig_lib"
-
-found_other_os=
-
-make_timeout () {
-
-  if [ "x${GRUB_FORCE_HIDDEN_MENU}" = "xtrue" ] ; then 
-    if [ "x${1}" != "x" ] ; then
-      if [ "x${GRUB_HIDDEN_TIMEOUT_QUIET}" = "xtrue" ] ; then
-    verbose=
-      else
-    verbose=" --verbose"
-      fi
-
-      if [ "x${1}" = "x0" ] ; then
-    cat <<EOF
-if [ "x\${timeout}" != "x-1" ]; then
-  if keystatus; then
-    if keystatus --shift; then
-      set timeout=-1
-    else
-      set timeout=0
-    fi
-  else
-    if sleep$verbose --interruptible 3 ; then
-      set timeout=0
-    fi
-  fi
-fi
-EOF
-      else
-    cat << EOF
-if [ "x\${timeout}" != "x-1" ]; then
-  if sleep$verbose --interruptible ${GRUB_HIDDEN_TIMEOUT} ; then
-    set timeout=0
-  fi
-fi
-EOF
-      fi
-    fi
-  fi
-}
-
-adjust_timeout () {
-  if [ "x$GRUB_BUTTON_CMOS_ADDRESS" != "x" ]; then
-    cat <<EOF
-if cmostest $GRUB_BUTTON_CMOS_ADDRESS ; then
-EOF
-    make_timeout "${GRUB_HIDDEN_TIMEOUT_BUTTON}" "${GRUB_TIMEOUT_BUTTON}"
-    echo else
-    make_timeout "${GRUB_HIDDEN_TIMEOUT}" "${GRUB_TIMEOUT}"
-    echo fi
-  else
-    make_timeout "${GRUB_HIDDEN_TIMEOUT}" "${GRUB_TIMEOUT}"
-  fi
-}
-
-  adjust_timeout
-
-    cat <<EOF
-if [ "x\${timeout}" != "x-1" ]; then
-  if keystatus; then
-    if keystatus --shift; then
-      set timeout=-1
-    else
-      set timeout=0
-    fi
-  else
-    if sleep$verbose --interruptible 3 ; then
-      set timeout=0
-    fi
-  fi
-fi
-EOF
+-GRUB_TIMEOUT=1
++GRUB_TIMEOUT=0
 ```
 
 ## Problems
