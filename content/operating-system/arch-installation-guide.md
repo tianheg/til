@@ -146,9 +146,10 @@ aria2 | 强大的多线程下载工具 | *
 youtube-dl | YouTube 视频下载工具 | *
 baidupcs-go-git | 百度网盘下载工具 | *
 ncmdump-go | 网易云音乐的 `.ncm` 格式转换工具 | *
+glances | monitoring tool | *
 
 ```sh
-sudo pacman -S telegram-desktop keepass liferea flameshot
+sudo pacman -S telegram-desktop keepass liferea flameshot glances hugo foliate
 ```
 
 ### SSH
