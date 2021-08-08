@@ -119,16 +119,6 @@ gpg --import github-web-flow.txt
 
 <https://io-oi.me/tech/hello-arch-linux/>
 
-```sh
-sudo pacman -S telegram-desktop keepass liferea flameshot
-```
-
-### SSH
-
-```sh
-chmod 400 ~/.ssh/id_ed25519 # solve sign_and_send_pubkey: signing failed for ED25519 "/home/user/.ssh/id_ed25519" from agent: agent refused operation; git@github.com: Permission denied (publickey).
-```
-
 名字 | 说明 | 类似
 :---:|:---:|:---:
 google-chrome | Google Chrome 浏览器 | *
@@ -157,6 +147,80 @@ youtube-dl | YouTube 视频下载工具 | *
 baidupcs-go-git | 百度网盘下载工具 | *
 ncmdump-go | 网易云音乐的 `.ncm` 格式转换工具 | *
 
+```sh
+sudo pacman -S telegram-desktop keepass liferea flameshot
+```
+
+### SSH
+
+```sh
+chmod 400 ~/.ssh/id_ed25519 # solve sign_and_send_pubkey: signing failed for ED25519 "/home/user/.ssh/id_ed25519" from agent: agent refused operation; git@github.com: Permission denied (publickey).
+```
+
+### Virtualbox
+
+<https://wiki.archlinux.org/title/VirtualBox>
+
+```sh
+sudo pacman -S virtualbox virtualbox-host-modules-arch virtualbox-ext-oracle
+virtualbox
+```
+
+Error message:
+
+```sh
+WARNING: The vboxdrv kernel module is not loaded. Either there is no module
+         available for the current kernel (5.13.8-arch1-1) or it failed to
+         load. Please recompile the kernel module and install it by
+
+           sudo /sbin/vboxconfig
+
+         You will not be able to start VMs until this problem is fixed.
+```
+
+### Vagrant
+
+<https://wiki.archlinux.org/title/Vagrant>
+
+```sh
+sudo pacman -S vagrant
+mkdir arch-vagrant &&  cd $_
+vim Vagrantfile
+vagrant up
+```
+
+`Vagrantfile`:
+
+```sh
+Vagrant.configure("2") do |config|
+  config.vm.box = "archlinux/archlinux"
+end
+```
+
+After exec `vagrant up`, error message:
+
+> No usable default provider could be found for your system.
+>
+> Vagrant relies on interactions with 3rd party systems, known as
+>
+> "providers", to provide Vagrant with resources to run development
+>
+> environments. Examples are VirtualBox, VMware, Hyper-V.
+>
+> The easiest solution to this message is to install VirtualBox, which
+>
+> is available for free on all major platforms.
+>
+> If you believe you already have a provider available, make sure it
+>
+> is properly installed and configured. You can see more details about
+>
+> why a particular provider isn't working by forcing usage with
+>
+> `vagrant up --provider=PROVIDER`, which should give you a more specific
+>
+> error message for that particular provider.
+
 ### Remove software
 
 ```sh
@@ -179,6 +243,8 @@ sudo nano /etc/pacman.conf
 ```sh
 sudo pacman -Sy
 ```
+
+I play Dota2, just a newbie.
 
 ### Mutt
 
@@ -262,8 +328,6 @@ Edit `etc/default/grub`:
 ## Problems
 
 ### `command not found: service`
-
-
 
 ### fcitx
 
