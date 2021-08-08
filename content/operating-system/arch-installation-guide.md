@@ -178,6 +178,12 @@ WARNING: The vboxdrv kernel module is not loaded. Either there is no module
          You will not be able to start VMs until this problem is fixed.
 ```
 
+```sh
+sudo modprobe vboxdrv
+```
+
+No message now.
+
 ### Vagrant
 
 <https://wiki.archlinux.org/title/Vagrant>
@@ -220,6 +226,28 @@ After exec `vagrant up`, error message:
 > `vagrant up --provider=PROVIDER`, which should give you a more specific
 >
 > error message for that particular provider.
+
+After exec `sudo modprobe vboxdrv`, no message now.
+
+```sh
+vagrant up
+
+
+Vagrant is currently configured to create VirtualBox synced folders with
+the `SharedFoldersEnableSymlinksCreate` option enabled. If the Vagrant
+guest is not trusted, you may want to disable this option. For more
+information on this option, please refer to the VirtualBox manual:
+
+  https://www.virtualbox.org/manual/ch04.html#sharedfolders
+
+This option can be disabled globally with an environment variable:
+
+  VAGRANT_DISABLE_VBOXSYMLINKCREATE=1
+
+or on a per folder basis within the Vagrantfile:
+
+  config.vm.synced_folder '/host/path', '/guest/path', SharedFoldersEnableSymlinksCreate: false
+```
 
 ### Remove software
 
