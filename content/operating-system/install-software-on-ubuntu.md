@@ -2,6 +2,32 @@
 
 used software: nomacs, Flameshot, kphotoalbum, Krita, xournal, [ImageMagick](https://askubuntu.com/a/764557), pppoeconf, [redshift](https://github.com/jonls/redshift#redshift), gparted, tree
 
+### Ubuntu
+
+- <https://wiki.ubuntu.org.cn/Qref/Applications> - 软件推荐
+
+#### package manager
+
+- <https://wiki.debian.org/Aptitude> - terminal-based package manager
+- <http://www.nongnu.org/synaptic/> - graphical package management program for apt
+
+#### Software
+
+- <https://github.com/ogham/exa> - a modern replacement for *ls*
+- <https://github.com/flameshot-org/flameshot> - Powerful yet simple to use screenshot software
+- <https://github.com/johnfactotum/foliate> - A simple and modern GTK eBook reader
+- <https://github.com/FontManager/font-manager> - A simple font management application for GTK Desktop Environments
+- <https://gparted.org/> - a free partition editor for graphically managing your disk partitions
+- <https://github.com/jarun/nnn> - a full-featured terminal file manager
+- <https://htop.dev/> - an interactive process viewer
+- <http://sqlitebrowser.org/> - DB Browser for SQLite
+- <https://github.com/astrand/xclip> - a command line utility that is designed to run on any system with an X11 implementation
+- <http://xournal.sourceforge.net/> - an application for notetaking, sketching, keeping a journal using a stylus
+- <https://www.zettlr.com/> - Zettlr is the number one Markdown Editor for researchers in the arts and humanities
+- <https://www.clamav.net/> - the open source standard for mail gateway scanning software
+- <https://github.com/hlissner/doom-emacs> - An Emacs framework for the stubborn martian hacker
+- <https://www.geany.org/> - a powerful, stable and lightweight programmer's text editor
+
 ## 安装文件
 
 ### Deb File
