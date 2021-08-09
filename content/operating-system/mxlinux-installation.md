@@ -383,3 +383,48 @@ VBoxManage: error: Context: "RTEXITCODE handleImportAppliance(HandlerArg*)" at l
 - 每隔一段时间卡一次
 - 菜单栏的关机、退出当前用户等按钮，经过不知怎么回事的设置后，消失了，取而代之的是我的用户名
 - 无法关机
+
+### 其他
+
+1. UEFI 应该安装MSR grub引导，我安装了 MBR 启动时，找不到引导显示硬盘不存在
+
+2. 很卡，重启之后，蓝牙键盘能链接了，不卡了
+
+3. 直接选择重启后进入了tty1终端，日志报错：
+
+3.900179 kfd kfd: TOPAZ not support in kfd
+
+error: unexpectedly disconnected from boot status daemon
+
+出现问题的可能原因：在 MX Tweak 同时开启了 AMD 但我没有 AMD GPU
+
+我修改了 /etc/modprobe.d/kfd.conf:
+
+修改前：blacklist amdkfd
+
+修改后：blacklist kfd
+
+没有解决问题，恢复未修改的样子
+
+Topaz is an AMD CPU
+
+解决问题的操作：sudo mv /etc/X11/xorg.conf.d/20-amd.conf /etc/X11/xorg.conf.d/20-amd.conf.bak。没有找到 /etc/X11/xorg.conf。搞定！
+
+4. 交换 Caps Lock 和 Left Ctrl
+
+```sh
+sudo vim /etc/default/keyboard
+```
+
+add XKBOPTIONS="ctrl:swapcaps"
+
+5. 用 MXpackage installer 删除包，会卡
+6. 刚才，重启一次 VM VirtualBox 又卡，等了近 5 分钟不卡了
+
+ref:
+
+1. <https://www.linuxquestions.org/questions/linux-hardware-18/i%27m-not-sure-if-i%27m-using-my-dedicated-gpu-how-can-i-switch-4175679340/>
+2. <https://forum.mxlinux.org/viewtopic.php?t=44035>
+3. <https://mxlinux.org/wiki/hardware/nvidia-driver-install-recovery/>
+4. <https://serverfault.com/a/1005911>
+5. <https://forum.mxlinux.org/viewtopic.php?p=486414&sid=acef60993a8c8bcdc55f8965e6cc50b6#p486414>
