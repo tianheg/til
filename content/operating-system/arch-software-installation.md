@@ -115,6 +115,25 @@ gpg --import tianheg-pubkeys.txt
 gpg --import github-web-flow.txt
 ```
 
+## archcn
+
+Add repo:
+
+```conf
+[archlinuxcn]
+Server = https://repo.archlinuxcn.org/$arch
+```
+
+to your `/etc/pacman.conf`.
+
+For mirrors (mainly in China), see [archlinuxcn/mirrorlist-repo](https://github.com/archlinuxcn/mirrorlist-repo).
+
+Import PGP Keys:
+
+```sh
+sudo pacman -Syy && sudo pacman -S archlinuxcn-keyring
+```
+
 ## Other Software
 
 <https://io-oi.me/tech/hello-arch-linux/>
@@ -370,3 +389,7 @@ Follow above section works
 安装软件时错误，Unknown download protocol: https
 
 更新 pacman 包，但是当用 yay 下载 netease-cloud-music 时，仍然出现这个错误。
+
+### 中文语言不能选择 Hanyu Pinyin (with AltGr dead keys)，当我通过鼠标点击切换到它时，电脑卡了
+
+### Cannot find fcitx input method module for Qt4.
