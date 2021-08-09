@@ -1,363 +1,351 @@
 # Arch Installation Guide
 
-## Proxy
+安装过程整体顺利，没有无法解决的问题，主要参考资料：
 
-### Clash
+1. <https://io-oi.me/tech/hello-arch-linux/>
+2. <https://wiki.archlinux.org/>
+3. Google
 
-```sh
-export CLASH_VERSION="1.6.5"
-wget -O clash.gz https://github.com/Dreamacro/clash/releases/download/v${CLASH_VERSION}/clash-linux-amd64-v${CLASH_VERSION}.gz
-gzip -f clash.gz -d
-sudo mv ~/clash /usr/local/bin/clash
-chmod +x /usr/local/bin/clash
-clash # Generate config.yaml, Country.mmdb in ~/.config/clash
-## download yaml file from your service provider, rename it to config.yaml, put it under your clash folder
+S <=> Step
 
-# open clash at start https://github.com/Dreamacro/clash/wiki/clash-as-a-daemon
-sudo vim /etc/systemd/system/clash.service
-```
+## 初始安装
 
-`/etc/systemd/system/clash.service`:
+S1. 插入制作好的 arch linux USB 启动盘，当前目录下并无 install.txt（详见参考资料 1）。
 
-```sh
-[Unit]
-Description=Clash daemon, A rule-based proxy in Go.
-After=network.target
+S2. `ls /sys/firmware/efi/efivars` 有输出，说明启动模式为 UEFI。
 
-[Service]
-Type=simple
-Restart=always
-ExecStart=/usr/local/bin/clash -d "/home/archie/.config/clash"
+S3. `ping archlinux.org -c 3` 验证网络，0% packet loss 说明网络正常。
 
-[Install]
-WantedBy=multi-user.target
-```
+S4. `timedatectl set-ntp true` 更新系统时间，`timedatectl status` 检查无误。
+
+S5. `fdisk -l` 查看硬盘信息：
+
+sdb 119.24g 固态，sda 931.51g 机械
+
+S6. `fdisk /dev/sdb` 固态硬盘分区
+
+进入 fdisk 操作界面后，m 查看命令帮助，p 显示目标硬盘分区，g 新建 GPT 分区表。创建 sdb1 分区，n 创建分区、分区序号、类型起始扇区默认，结束扇区 +256M。修改分区类型为 EFI System，p 确认为 EFI System。创建 sdb2 分区，全部默认。我的安装移除了原系统的 signature。
+
+分区结果：
 
 ```sh
-systemctl daemon-reload
-systemctl enable clash
+Device      Start       End   Sectors  Size Type
+/dev/sdb1    2048    526335    524288  256M EFI System
+/dev/sdb2  526336 250069646 249543311  119G Linux filesystem
 ```
 
-## Input method
+机械硬盘 sda 作为挂载硬盘存储文件。
 
-Want to remove ibus, use fcitx.
+S7. 格式化并建立新的文件系统
 
 ```sh
-sudo pacman -S fcitx-im fcitx-configtool fcitx-googlepinyin
+mkfs.fat -F32 /dev/sdb1
+mkfs.ext4 /dev/sdb2
+mkfs.ext4 /dev/sda
 ```
 
-Add support for gtk,qt:
-
-```txt
-# /etc/profile
-export XMODIFIERS="@im=fcitx"
-export GTK_IM_MODULE="fcitx"
-export QT_IM_MODULE="fcitx"
-```
-
-## Font
-
-Default Gnome 40 font:
-
-- Cantarell Regular 11
-- Cantarell Regular 11
-- Source Code Pro Regular 10
-- Cantarell Bold 11
+S8. 挂载分区
 
 ```sh
-sudo pacman -S noto-fonts noto-fonts-extra noto-fonts-emoji noto-fonts-cjk ttf-dejavu ttf-liberation ttf-roboto ttf-inconsolata ttf-linux-libertine ttf-droid adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts
-yay -S otf-eb-garamond ttf-monaco otf-san-francisco consolas-font
+mount /dev/sdb2 /mnt
+mkdir -p /mnt/boot/efi
+mount /dev/sdb1 /mnt/boot/efi
 ```
 
-中文：
-
-noto-fonts, noto-fonts-cjk, noto-fonts-emoji, noto-fonts-extra
-
-代码：
-
-monaco, menlo
-
-- 命令行安装的字体所在的目录：`/usr/share/fonts/`
-- 手动安装的字体所在的目录：`~/.local/share/fonts/`
+S9. 选择镜像源
 
 ```sh
-fc-cache -fv # update font cache
+pacman -Syyy reflector # reflector 能够方便地选择镜像源
+reflector -c China -a 6 --sort rate --save /etc/pacman.d/mirrorlist
+pacman -Syyy
 ```
 
-## Config Git
+S10. 安装基本系统和安装时要用的应用到硬盘
 
 ```sh
-wget -O ~/.gitconfig https://raw.githubusercontent.com/tianheg/dotfiles/main/git/gitconfig
+pacstrap -i /mnt base base-devel linux linux-firmware dhcpcd vim
 ```
 
-## GPG
+## 配置系统
 
-Modify `~/.gnupg/` permission:
+S11. 进入硬盘，而不在U盘
 
 ```sh
-# https://superuser.com/a/954536 ; https://superuser.com/a/954639
-# Set ownership to your own user and primary group
-chown -R "$USER:$(id -gn)" ~/.gnupg
-# Set permissions to read, write, execute for only yourself, no others
-chmod 700 ~/.gnupg
-# Set permissions to read, write for only yourself, no others
-chmod 600 ~/.gnupg/*
+arch-chroot /mnt /bin/bash
 ```
 
-This step is to solve `gpg: WARNING: unsafe permissions on homedir '/home/user/.gnupg'`.
-
-**Save ~/.gnupg safely**, then import public keys from GitHub(user + web-flow):
+S12. 生成挂载表
 
 ```sh
-wget -O tianheg-pubkeys.txt https://github.com/tianheg.gpg
-wget -O github-web-flow.txt https://github.com/web-flow.gpg
-gpg --import tianheg-pubkeys.txt
-gpg --import github-web-flow.txt
+genfstab -U -p /mnt >> /mnt/etc/fstab
 ```
 
-## Other Software
-
-<https://io-oi.me/tech/hello-arch-linux/>
-
-名字 | 说明 | 类似
-:---:|:---:|:---:
-google-chrome | Google Chrome 浏览器 | *
-visual-studio-code-bin | Visual Studio Code | *
-netease-cloud-music | 网易云音乐 | *
-Flameshot | 现代、快捷、轻便的截图工具 | *
-proxychains-ng | 终端内科学上网代理工具 | *
-redshift | 显示屏色温调节工具 | f.lux
-vlc | 强大的多媒体播放工具 | *
-deadbeef | 终极音频播放软件 | foobar2000
-telegram-desktop | 客户端开源的加密聊天工具 | *
-liferea | RSS 阅读器 | *
-qbittorrent | 好用的 BT 下载工具 | *
-calibre | 电子书转换、编辑、阅读工具 | *
-gthumb | 图片浏览工具，可简单编辑图片，可清除照片元数据 | *
-libreoffice-fresh | 必备的办公软件 | Microsoft Office
-peek | 录制 GIF 动图 | *
-gimp | 强大的图片编辑工具 | Adobe Photoshop
-inkscape | 强大的矢量图形编辑软件 | Adobe Illustrator、CorelDraw
-shotcut | 强大的视频剪辑软件 | Adobe Premiere
-fontforge | 字体设计、编辑软件 | FontCreator
-audacity | 简单的音频编辑软件 | GoldWave
-kid3 | 音频元数据编辑软件 | Mp3tag
-aria2 | 强大的多线程下载工具 | *
-youtube-dl | YouTube 视频下载工具 | *
-baidupcs-go-git | 百度网盘下载工具 | *
-ncmdump-go | 网易云音乐的 `.ncm` 格式转换工具 | *
-glances | monitoring tool | *
+检查：
 
 ```sh
-sudo pacman -S telegram-desktop keepass liferea flameshot glances hugo foliate
+cat /mnt/etc/fstab
 ```
 
-### SSH
+S13. 时区和语言
+
+设置时区：
 
 ```sh
-chmod 400 ~/.ssh/id_ed25519 # solve sign_and_send_pubkey: signing failed for ED25519 "/home/user/.ssh/id_ed25519" from agent: agent refused operation; git@github.com: Permission denied (publickey).
+ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+hwclock --systohc --utc
 ```
 
-### Virtualbox
+配置系统语言环境:
 
-<https://wiki.archlinux.org/title/VirtualBox>
+`vim /etc/locale.gen` 取消注释：
 
-```sh
-sudo pacman -S virtualbox virtualbox-host-modules-arch virtualbox-ext-oracle
-virtualbox
+```gen
+en_US.UTF-8 UTF-8
+...
+zh_CN.UTF-8 UTF-8
 ```
 
-Error message:
+生成配置：
 
 ```sh
-WARNING: The vboxdrv kernel module is not loaded. Either there is no module
-         available for the current kernel (5.13.8-arch1-1) or it failed to
-         load. Please recompile the kernel module and install it by
-
-           sudo /sbin/vboxconfig
-
-         You will not be able to start VMs until this problem is fixed.
+locale-gen
 ```
 
-```sh
-sudo modprobe vboxdrv
+设置本地语言环境:
+
+`vim /etc/locale.conf` 输入：
+
+```conf
+LANG=en_US.UTF-8
 ```
 
-No message now.
-
-### Vagrant
-
-<https://wiki.archlinux.org/title/Vagrant>
+S14. 安装引导程序
 
 ```sh
-sudo pacman -S vagrant
-mkdir arch-vagrant &&  cd $_
-vim Vagrantfile
-vagrant up
+pacman -S grub efibootmgr
+grub-install --target=x86_64-efi --bootloader-id=GRUB --efi-directory=/boot/efi
+grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
-`Vagrantfile`:
+运行 grub 相关操作时，会出现警告：`Warning: os-prober will not be executed to detect other bootable partitions.`。查 arch wiki 后，可以在 /etc/default/grub 中设置 `GRUB_DISABLE_OS_PROBER=false`。
+
+S15. 设置主机名
 
 ```sh
-Vagrant.configure("2") do |config|
-  config.vm.box = "archlinux/archlinux"
-end
+echo arch > /etc/hostname
 ```
 
-After exec `vagrant up`, error message:
+`vim /etc/hosts` 添加以下内容：
 
-> No usable default provider could be found for your system.
->
-> Vagrant relies on interactions with 3rd party systems, known as
->
-> "providers", to provide Vagrant with resources to run development
->
-> environments. Examples are VirtualBox, VMware, Hyper-V.
->
-> The easiest solution to this message is to install VirtualBox, which
->
-> is available for free on all major platforms.
->
-> If you believe you already have a provider available, make sure it
->
-> is properly installed and configured. You can see more details about
->
-> why a particular provider isn't working by forcing usage with
->
-> `vagrant up --provider=PROVIDER`, which should give you a more specific
->
-> error message for that particular provider.
-
-After exec `sudo modprobe vboxdrv`, no message now.
-
-```sh
-vagrant up
-
-
-Vagrant is currently configured to create VirtualBox synced folders with
-the `SharedFoldersEnableSymlinksCreate` option enabled. If the Vagrant
-guest is not trusted, you may want to disable this option. For more
-information on this option, please refer to the VirtualBox manual:
-
-  https://www.virtualbox.org/manual/ch04.html#sharedfolders
-
-This option can be disabled globally with an environment variable:
-
-  VAGRANT_DISABLE_VBOXSYMLINKCREATE=1
-
-or on a per folder basis within the Vagrantfile:
-
-  config.vm.synced_folder '/host/path', '/guest/path', SharedFoldersEnableSymlinksCreate: false
+```hosts
+127.0.0.1 localhost
+::1 localhost
+127.0.0.1 arch.localdomain arch
 ```
 
-### Remove software
+S16. 提前配置网络
 
 ```sh
-sudo pacman -Rs gnome-software gnome-calendar gnome-documents gnome-todo gnome-maps gnome-contacts evolution gnome-builder gnome-boxes geary gnome-clocks gnome-books gnome-photos gnome-connections gnome-games ghex gnome-mahjongg gnome-music epiphany
+pacman -S networkmanager
+systemctl enable NetworkManager
 ```
 
-### Steam
+S17. 设置 root 密码
 
 ```sh
-sudo nano /etc/pacman.conf
+passwd
 ```
 
+S18. 新建普通用户
+
 ```sh
--#[multilib]
--#Include = /etc/pacman.d/mirrorlist
-+[multilib]
-+Include = /etc/pacman.d/mirrorlist
+useradd -m -g users -G wheel -s /bin/bash archie
 ```
 
+设置普通用户密码：
+
 ```sh
-sudo pacman -Sy
+passwd archie
 ```
 
-I play Dota2, just a newbie.
-
-### Mutt
-
-终端邮件 <http://www.mutt.org/>
-
-### Tracker
-
-Gnome 自带的文件索引生成软件，它使文件搜索更快。
-
-### Flameshot
-
-可以配置下快捷键，使用起来更加快捷。去 Settings > Keyboard，然后下拉页面到底部，点击 `+` 号，Name 填 `Flameshot`，Command 填 `flameshot gui`，然后点击下 Shortcut 的右方方块，按下 `Alt` + `Super/Win` + `P` 键
-
-## Bluetooth
+设置普通用户权限:
 
 ```sh
-sudo systemctl enable --now bluetooth
+EDITOR=vim visudo
 ```
 
-## Theme
+取消注释：
 
-```sh
-sudo pacman -S gtk-engine-murrine gtk-engines
+```visudo
+## Uncomment to allow members of group wheel to execute any command
+
+%wheel ALL=(ALL) ALL
+
+## Same thing without a password
+
+%wheel ALL=(ALL) NOPASSWD: ALL
 ```
 
-ref: <https://github.com/vinceliuice/Layan-gtk-theme>
-
-## GNOME Extensions
-
-Extensions install: Copy the unziped folder to `~/.local/share/gnome-shell/extensions/`, rename the folder with `metadata.json`'s uuid.
-
-### Extension list
-
-<https://extensions.gnome.org/extension/3088/extension-list/>
-
-### Dash to Dock
+S19. 返回 U 盘
 
 ```sh
-sudo pacman -S sassc
-git clone --branch ewlsh-ewlsh/gnome-40 https://github.com/micheleg/dash-to-dock.git
-make
-make install
+exit
 ```
 
-<https://gitlab.gnome.org/GNOME/gnome-shell-extensions>
-
-### Coverflow Alt-Tab
-
-<https://extensions.gnome.org/extension/97/coverflow-alt-tab/>
-
-### Tray Icons: Reloaded
-
-<https://extensions.gnome.org/extension/2890/tray-icons-reloaded/>
-
-### Simple net speed
-
-<https://extensions.gnome.org/extension/1085/simple-net-speed/>
-
-### GSconnect
-
-<https://extensions.gnome.org/extension/1319/gsconnect/>
-
-Connect PC with phone
-
-## Hide GRUB
-
-Tried [this way](https://io-oi.me/tech/hello-arch-linux/#隐藏-grub-除非按下-shift-键) not work, then try [this](https://www.reddit.com/r/linux4noobs/comments/5372gj/disable_arch_linux_grub_boot_menu/d7qjh6s?utm_source=share&utm_medium=web2x&context=3):
+S20. 重启系统
 
 ```sh
-sudo vim /etc/default/grub
+umount -R /mnt
+reboot
+```
+
+开机后改动 BIOS，配置系统启动后，拔掉 U 盘
+
+普通用户 archie 登录
+
+## 完善系统
+
+S21. 启动微码更新
+
+```sh
+sudo pacman -S intel-ucode
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
-Edit `etc/default/grub`:
+S22. 完善显卡驱动
+
+这一步要在知道自己显卡配置的前提下执行。
 
 ```sh
--GRUB_TIMEOUT=1
-+GRUB_TIMEOUT=0
+sudo pacman -S xf86-video-intel intel-media-driver vulkan-intel xf86-video-amdgpu xf86-video-ati mesa-vdpau vulkan-radeon
 ```
 
-## Problems
+S23. 安装图形界面
 
-### `command not found: service`
+```sh
+sudo pacman -S xorg xorg-server xorg-xinit gnome gnome-extra
+systemctl enable gdm
+```
 
-### fcitx
+切换 Wayland 至 Xorg：
 
-Follow above section works
+```sh
+sudo vim /etc/gdm/custom.conf
+```
+
+`/etc/gdm/custom.conf`:
+
+```conf
+[daemon]
+# Uncoment the line below to force the login screen to use Xorg
+-#WaylandEnable=false
++WaylandEnable=false
+```
+
+重启后，图形界面打开，但无法打开 Gnome Terminal，通过 Ctrl+Alt+F2 进入命令行模式，输入 gnome-terminal 显示：
+
+```sh
+# Locale not supported by C library.
+# Using the fallback 'C' locale
+Unable to init server: Could not connect: Connection refused
+# Failed to parse arguments: Cannot open display!
+```
+
+解决：在配置系统语言环境时，选择了 es_US，而不是 en_US。
+
+S24. 改用轻量 LightDM
+
+```sh
+sudo pacman -S lightdm lightdm-gtk-greeter
+systemctl disable gdm
+systemctl enable lightdm
+```
+
+重启后，选择 Gnome on Xorg 启动。
+
+发现启动界面有两个 Gnome 选项，解决办法：
+
+```sh
+sudo mv /usr/share/wayland-sessions/gnome.desktop /usr/share/wayland-sessions/gnome.desktop.bak
+```
+
+S25.  安装 yay
+
+timeout 问题 <https://github.com/Jguer/yay/issues/1278#issuecomment-635833427>
+
+### SSD 优化
+
+S26. 开启TRIM
+
+一定要确认固态硬盘是否支持，否则别用。会导致数据丢失
+
+查看是否支持：`lsblk --discard` 如果输出的 DISC-GRAN 和 DISC-MAX 不为 0，则表明支持。
+
+```sh
+sudo vim /etc/fstab
+```
+
+添加 noatime 和 diacard：
+
+```fstab
+# <file system> <dir> <type> <options> <dump> <pass>
+# /dev/sdb2
+UUID=b182ad17-2f74-4bf0-95b6-a42884a4ff79 /          ext4       rw,noatime,discard 0 1
+
+# /dev/sdb1
+UUID=EF6F-2E0C       /boot/efi  vfat       rw,noatime,discard,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro 0 2
+```
+
+S27. 更换 I/O  scheduler
+
+```sh
+sudo vim /etc/default/grub
+```
+
+找到 `GRUB_CMDLINE_LINUX_DEFAULT` 这一行，添加 `elevator=noop`:
+
+```grub
+GRUB_CMDLINE_LINUX_DEFAULT="elevator=noop loglevel=3 quiet"
+```
+
+```sh
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+```
+
+S28. 迁移高读写文件到 tmpfs
+
+```sh
+sudo vim /etc/fstab
+```
+
+添加以下内容到最后：
+
+```fstab
+tmpfs  /tmp    tmpfs   defaults,noatime,mode=1777 0 0
+tmpfs  /var/log    tmpfs   defaults,noatime,mode=1777 0 0
+tmpfs  /var/tmp    tmpfs   defaults,noatime,mode=1777 0 0
+```
+
+将 Google Chrome 的缓存挂载到 /tmp：
+
+```sh
+cd ~/.cache/google-chrome/Default/ && rm -rf Cache && ln -sf /tmp Cache
+```
+
+S29. 检查硬盘状况
+
+```sh
+sudo pacman -S hdparm smartmontools
+sudo hdparm -I /dev/sdb
+sudo smartctl -t short /dev/sdb
+```
+
+S30. 测试固态硬盘速度
+
+```sh
+sudo dd if=/dev/zero of=/tmp/test.img bs=1G count=1 oflag=dsync
+```
+
+至此系统完善到此告一段落。
+
+软件安装[见此](arch-software-installation.md)

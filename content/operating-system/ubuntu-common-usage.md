@@ -8,7 +8,7 @@ sudo vim /etc/apt/sources.list
 
 ## Local Network Share
 
-![Local Network Share](./images/local-network-share.png)
+![Local Network Share](https://raw.githubusercontent.com/tianheg/til/667631242418dc182e70e1c037b4362f640227c6/docs/industry-special/ubuntu/images/local-network-share.png)
 
 Insert your mobile hard drive, find Properties, find Local Network Share like the image.
 

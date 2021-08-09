@@ -15,8 +15,8 @@ $ sudo tar czf /backup.tar.gz --exclude=/backup.tar.gz --exclude=/dev --exclude=
 ```
 
 BackupPC can be managed through its web interface:
- http://tianheg-PC/backuppc/
 
+<http://tianheg-PC/backuppc/>
 
 For that purpose, a web user named 'backuppc' with 'OucAdvi4' as password has been created. You can change this password by running 'htpasswd /etc/backuppc/htpasswd backuppc'.
 
