@@ -7,6 +7,7 @@
 
 ## Arch
 
+- [Usage](arch-usage.md)
 - [Installation Guide](arch-installation-guide.md)
 - [Software Installation](arch-software-installation.md)
 
