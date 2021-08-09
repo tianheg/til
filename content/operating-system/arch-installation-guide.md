@@ -6,6 +6,8 @@
 2. <https://wiki.archlinux.org/>
 3. Google
 
+除此之外，还有 [archinstall](https://python-archinstall.readthedocs.io/en/latest/index.html)
+
 S <=> Step
 
 ## 初始安装
@@ -56,7 +58,7 @@ S9. 选择镜像源
 
 ```sh
 pacman -Syyy reflector # reflector 能够方便地选择镜像源
-reflector -c China -a 6 --sort rate --save /etc/pacman.d/mirrorlist
+reflector -c China -a 6 --sort rate --save /etc/pacman.d/mirrorlist # 这里的 mirrorlist 是 U 盘中的，还是硬盘中的？
 pacman -Syyy
 ```
 
