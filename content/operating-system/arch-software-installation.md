@@ -170,9 +170,10 @@ keepass | password manage | *
 hugo | static site generator | *
 foliate | equb ... reader | *
 anki | a spaced repetition system | *
+mpv | to play audio on anki | vlc
 
 ```sh
-sudo pacman -S telegram-desktop keepass liferea flameshot glances hugo foliate
+sudo pacman -S telegram-desktop keepass liferea flameshot glances hugo foliate mpv
 ```
 
 ### SSH
