@@ -134,6 +134,17 @@ Import PGP Keys:
 sudo pacman -Syy && sudo pacman -S archlinuxcn-keyring
 ```
 
+## yay
+
+<https://github.com/Jguer/yay>
+
+```sh
+pacman -S --needed git base-devel
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+```
+
 ## Other Software
 
 <https://io-oi.me/tech/hello-arch-linux/>
@@ -173,8 +184,14 @@ anki | a spaced repetition system | *
 mpv | to play audio on anki | vlc
 
 ```sh
-sudo pacman -S telegram-desktop keepass liferea flameshot glances hugo foliate mpv
+sudo pacman -S telegram-desktop keepass liferea flameshot glances hugo foliate mpv informant
 ```
+
+### informant
+
+An Arch Linux News reader and pacman hook. You could use a pacman hook like informantAUR which prevents you from updating if there is fresh Arch News that you have not read since the last update ran.
+
+ref: <https://wiki.archlinux.org/title/System_maintenance#Read_before_upgrading_the_system>
 
 ### SSH
 
