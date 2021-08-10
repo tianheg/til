@@ -166,6 +166,10 @@ youtube-dl | YouTube 视频下载工具 | *
 baidupcs-go-git | 百度网盘下载工具 | *
 ncmdump-go | 网易云音乐的 `.ncm` 格式转换工具 | *
 glances | monitoring tool | *
+keepass | password manage | *
+hugo | static site generator | *
+foliate | equb ... reader | *
+anki | a spaced repetition system | *
 
 ```sh
 sudo pacman -S telegram-desktop keepass liferea flameshot glances hugo foliate
@@ -306,6 +310,16 @@ Gnome 自带的文件索引生成软件，它使文件搜索更快。
 ### Flameshot
 
 可以配置下快捷键，使用起来更加快捷。去 Settings > Keyboard，然后下拉页面到底部，点击 `+` 号，Name 填 `Flameshot`，Command 填 `flameshot gui`，然后点击下 Shortcut 的右方方块，按下 `Alt` + `Super/Win` + `P` 键
+
+### Anki
+
+<https://apps.ankiweb.net/#download>
+
+```sh
+tar xjf ~/Downloads/anki-2.1.46-linux.tar.bz2
+cd anki-2.1.46-linux
+sudo ./install.sh
+```
 
 ## Bluetooth
 
