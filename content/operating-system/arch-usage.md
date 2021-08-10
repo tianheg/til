@@ -1,3 +1,103 @@
-# Arcg Usage
+# Arch Usage
 
-## 
+## 弄清楚 Arch 的更新模式：Arch 系统如何更新、它的 pacman、yay 包如何更新、怎样更新特定包、怎样避免使系统彻底崩溃
+
+Is it possible that there is a major kernel update in the repository, and that some of the driver packages have not been updated?
+
+No, it is not possible. Major kernel updates (e.g. linux 3.5.0-1 to linux 3.6.0-1) are always accompanied by rebuilds of all supported kernel driver packages. On the other hand, if you have an unsupported driver package (e.g. from the AUR) installed on your system, then a kernel update might break things for you if you do not rebuild it for the new kernel. Users are responsible for updating any unsupported driver packages that they have installed.
+
+S1. `pacman` 使用
+
+```sh
+pacman -Qe # List all explicitly installed packages
+pacman -Sg group # List all packages in the package group named `group`, etc, base-devel, gnome
+pacman -Qm # List all foreign packages (typically manually downloaded and installed or packages removed from the repositories)
+pacman -Qn # List all native packages (installed from the sync database(s))
+pacman -Qent # List all explicitly installed native packages (i.e. present in the sync database) that are not direct or optional dependencies
+pacman -Qs regex # List packages by regex
+sudo pacman -Qtdq | sudo pacman -Rns - # recursively removing orphans and their configuration files
+sudo pacman -Qii | awk '/^MODIFIED/ {print $2}' # print modified files under /etc
+
+pacman -Syu # Update package list and upgrade all packages afterwards
+pacman -Syu gpm # Update package list, upgrade all packages, and then install gpm if it wasn’t already installed
+pacman -S package_name1 package_name2 # Installing specific packages
+pacman -S $(pacman -Ssq package_regex) # Install a list of packages with regex
+pacman -S extra/package_name # Install specific repositories' package
+pacman -S plasma-{desktop,mediacenter,nm}
+pacman -S plasma-{workspace{,-wallpapers},pa}
+
+pacman -S gnome # Install through group of packages
+Enter a selection (default=all): 1-10 15 # which will select packages 1 through 10 and 15 for installation
+Enter a selection (default=all): ^5-8 ^2 # which will select all packages except 5 through 8 and 2 for installation
+
+pacman -R package_name # remove a single package, leaving all of its dependencies installed
+pacman -Rs package_name # remove a single package and its dependencies which are not required by any other installed package
+
+pacman -Qtd # check for packages that were installed as a dependency but now, no other packages depend on them
+
+pacman -Ss string1 string2 ... # search for packages in the database
+pacman -Qs string1 string2 ... # search for already installed packages
+pacman -F string1 string2 ... # search for package file names in remote packages
+pacman -Si package_name # display extensive information about a given package
+pacman -Qi package_name # display extensive information about locally installed packages
+pacman -Qii package_name # also display the list of backup files and their modification states
+pacman -Ql package_name # retrieve a list of the files installed by a package
+pacman -Fl package_name # retrieve a list of the files installed by a remote package
+pacman -Qk package_name # verify the presence of the files installed by a package, Passing the k flag twice will perform a more thorough check
+pacman -Qo /path/to/file_name # query the database to know which package a file in the file system belongs to
+pacman -F /path/to/file_name # query the database to know which remote package a file belongs to
+
+pacman -Qet # list all packages explicitly installed and not required as dependencies
+```
+
+应该避免执行的 `pacman` 指令：
+
+```sh
+pacman -Syu # always run
+pacman -Sy # never run!!!
+pacman -Rdd package # never run!!!
+```
+
+When installing packages in Arch, avoid refreshing the package list without upgrading the system (for example, when a package is no longer found in the official repositories). In practice, do not run pacman -Sy package_name instead of pacman -Syu package_name, as this could lead to dependency issues.
+
+list all development/unstable packages:
+
+```sh
+pacman -Qq | grep -Ee '-(bzr|cvs|darcs|git|hg|svn)$'
+```
+
+ref:
+
+1. <https://wiki.archlinux.org/title/Arch_User_Repository#Installing_and_upgrading_packages>
+2. <https://wiki.archlinux.org/title/Frequently_asked_questions#Is_it_possible_that_there_is_a_major_kernel_update_in_the_repository,_and_that_some_of_the_driver_packages_have_not_been_updated?>
+3. <https://wiki.archlinux.org/title/Pacman/Tips_and_tricks>
+4. <https://wiki.archlinux.org/title/Pacman>
+5. <https://wiki.archlinux.org/title/System_maintenance#Avoid_certain_pacman_commands>
+
+## When `sudo pacman -Syu`
+
+### WARNING: Possibly missing firmware for module
+
+这是一种警告。
+
+ref:
+
+1. <https://wiki.archlinux.org/title/Mkinitcpio#Possibly_missing_firmware_for_module_XXXX>
+2. <https://arcolinuxforum.com/viewtopic.php?t=1174>
+
+### gpg: key 786C63F330D7CB92: no user ID for key signature packet of class 10
+
+```sh
+786C63F330D7CB92
+1EB2638FF56C0C53
+```
+
+### warning: /etc/pacman.d/mirrorlist installed as /etc/pacman.d/mirrorlist.pacnew
+
+### /etc/mkinitcpio.d/linux.preset: 'default' and /etc/mkinitcpio.d/linux.preset: 'fallback'
+
+[mkinitcpio - ArchWiki](https://wiki.archlinux.org/title/Mkinitcpio)
+
+## System maintenance 系统维护
+
+
