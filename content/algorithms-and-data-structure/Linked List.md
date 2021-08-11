@@ -1,8 +1,0 @@
----
-title: Linked List
----
-# Linked List
-
-In computer science, a **linked list**(链表) is a linear collection of data elements(数据元素), in which linear order is not given by their physical placement in memory. It is a data structure consisting of a group of nodes which together represent a sequence(序列).
-
-![Linked List](https://cdn.jsdelivr.net/gh/tianheg/static@main/img/linked-list.svg)
