@@ -30,6 +30,15 @@ style: convert tabs to spaces
 
 test: ensure Tayne retains clothing
 
+## GitHub
+
+```sh
+git commit -m "fix: accept current change
+https://github.com/tianheg/blog/blob/26af0419337014dea93ada9bf4a3d8bbbcc39619/layouts/shortcodes/music.html#L1"
+git commit -m "add: ...
+close #123"
+```
+
 ref:
 
 1. [Semantic Commit Messages](https://sparkbox.com/foundry/semantic_commit_messages)
