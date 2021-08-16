@@ -339,6 +339,19 @@ cd anki-2.1.46-linux
 sudo ./install.sh
 ```
 
+### exercism
+
+```sh
+# https://github.com/exercism/cli/releases/ download exercism-linux-64bit.tgz
+tar -xf exercism-linux-64bit.tgz
+# Once you download and extract the archive, make it available in your $PATH
+cd ~/Downloads/exercism-linux-64bit
+mkdir -p ~/bin
+mv exercism ~/bin
+~/bin/exercism
+exercism configure --token=
+```
+
 ## Bluetooth
 
 ```sh
