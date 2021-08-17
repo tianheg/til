@@ -352,6 +352,29 @@ mv exercism ~/bin
 exercism configure --token=
 ```
 
+### Scheme Programming Language
+
+```sh
+guile hello-world.scm
+;;; note: source file /home/archie/exercism/scheme/hello-world/hello-world.scm
+;;;       newer than compiled /home/archie/.cache/guile/ccache/2.2-LE-8-3.A/home/archie/exercism/scheme/hello-world/hello-world.scm.go
+;;; note: auto-compilation is enabled, set GUILE_AUTO_COMPILE=0
+;;;       or pass the --no-auto-compile argument to disable.
+;;; compiling /home/archie/exercism/scheme/hello-world/hello-world.scm
+;;; compiled /home/archie/.cache/guile/ccache/2.2-LE-8-3.A/home/archie/exercism/scheme/hello-world/hello-world.scm.go
+Hello World!
+
+guile hello-world.scm --no-auto-compile
+```
+
+How to close these info?
+
+```zshrc
+alias guile="guile --no-auto-compile"
+```
+
+[Install guile](https://www.linuxfromscratch.org/blfs/view/svn/general/guile.html)
+
 ## Bluetooth
 
 ```sh
