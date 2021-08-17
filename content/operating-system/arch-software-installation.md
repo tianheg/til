@@ -461,3 +461,11 @@ Follow above section works
 ### 中文语言不能选择 Hanyu Pinyin (with AltGr dead keys)，当我通过鼠标点击切换到它时，电脑卡了
 
 ### Cannot find fcitx input method module for Qt4.
+
+### 2次进入 tplogin.cn 均卡顿
+
+本来使用有线接入网络，树莓派需要用到有线，限于网线只有一根。于是，电脑连接无线网络。
+
+进入路由器管理页面，点击〔设备管理〕/〔应用管理〕页面后，出现卡顿现象。具体表现：键盘鼠标失灵
+
+采取措施：按住电源键重启。
