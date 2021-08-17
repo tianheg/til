@@ -495,9 +495,16 @@ pacman -U linux-5.13.9.arch1-1-x86_64.pkg.tar.zst
 
 依然出现卡顿，推测是无线网的缘故，需要安装驱动。（驱动已安装）
 
+编辑了 /etc/default/grub:
+
+GRUB_CMDLINE_LINUX_DEFAULT="elevator=noop loglevel=3 quiet"
+
+GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet mds=full,nosmt"
+
 ref:
 
 1. <https://wiki.archlinux.org/title/downgrading_packages#Downgrading_the_kernel>
 2. <https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/mds.html>
+3. <https://askubuntu.com/a/1250060>
 
 ### rpi-imager 能够用 `yay -S rpi-imager` 下载，却不能用 `sudo pacman -S rpi-imager` 下载
