@@ -491,6 +491,8 @@ pacman -U linux-5.13.9.arch1-1-x86_64.pkg.tar.zst
 # linux kernel: 5.13.10 --> 5.13.9
 ```
 
+依然出现卡顿，推测是无线网的缘故，需要安装驱动。
+
 ref: <https://wiki.archlinux.org/title/downgrading_packages#Downgrading_the_kernel>
 
 ### rpi-imager 能够用 `yay -S rpi-imager` 下载，却不能用 `sudo pacman -S rpi-imager` 下载
