@@ -134,7 +134,7 @@ Import PGP Keys:
 sudo pacman -Syy && sudo pacman -S archlinuxcn-keyring
 ```
 
-## yay(donot use, only use pacman)
+## yay(~~donot use, only use pacman~~)
 
 <https://github.com/Jguer/yay>
 
@@ -294,8 +294,12 @@ or on a per folder basis within the Vagrantfile:
 ### Remove software
 
 ```sh
-sudo pacman -Rs gnome-software gnome-calendar gnome-documents gnome-todo gnome-maps gnome-contacts evolution gnome-builder gnome-boxes geary gnome-clocks gnome-books gnome-photos gnome-connections gnome-games ghex gnome-mahjongg gnome-music epiphany
+sudo pacman -Rs gnome-software gnome-calendar gnome-documents gnome-todo gnome-maps gnome-contacts evolution gnome-builder gnome-boxes geary gnome-clocks gnome-books gnome-photos gnome-connections gnome-games ghex gnome-mahjongg gnome-music epiphany totem accerciser dconf-editor glade five-or-more four-in-a-row gedit gnome-sudoku gnome-nettool gnome-nibbles gnome-recipes gnome-robots gnome-taquin gnome-tetravex gnome-weather hitori iagno
 ```
+
+totem <--> Gnome Video
+
+iagno <--> Reversi
 
 ### Steam
 
@@ -471,3 +475,5 @@ Follow above section works
 采取措施：按住电源键重启。
 
 依旧卡顿，仅仅打开一个网页。
+
+### rpi-imager 能够用 `yay -S rpi-imager` 下载，却不能用 `sudo pacman -S rpi-imager` 下载
