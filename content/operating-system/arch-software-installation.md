@@ -462,10 +462,12 @@ Follow above section works
 
 ### Cannot find fcitx input method module for Qt4.
 
-### 2次进入 tplogin.cn 均卡顿
+### 2次进入 tplogin.cn 均卡顿，似乎与进入网址无关
 
 本来使用有线接入网络，树莓派需要用到有线，限于网线只有一根。于是，电脑连接无线网络。
 
 进入路由器管理页面，点击〔设备管理〕/〔应用管理〕页面后，出现卡顿现象。具体表现：键盘鼠标失灵
 
 采取措施：按住电源键重启。
+
+依旧卡顿，仅仅打开一个网页。
