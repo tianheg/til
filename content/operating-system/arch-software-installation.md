@@ -134,7 +134,7 @@ Import PGP Keys:
 sudo pacman -Syy && sudo pacman -S archlinuxcn-keyring
 ```
 
-## yay
+## yay(donot use, only use pacman)
 
 <https://github.com/Jguer/yay>
 
