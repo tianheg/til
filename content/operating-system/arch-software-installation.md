@@ -466,7 +466,9 @@ Follow above section works
 
 ### Cannot find fcitx input method module for Qt4.
 
-### 2次进入 tplogin.cn 均卡顿，似乎与进入网址无关
+### 系统卡顿
+
+2次进入 tplogin.cn 均卡顿，似乎与进入网址无关
 
 本来使用有线接入网络，树莓派需要用到有线，限于网线只有一根。于是，电脑连接无线网络。
 
@@ -491,7 +493,7 @@ pacman -U linux-5.13.9.arch1-1-x86_64.pkg.tar.zst
 # linux kernel: 5.13.10 --> 5.13.9
 ```
 
-依然出现卡顿，推测是无线网的缘故，需要安装驱动。
+依然出现卡顿，推测是无线网的缘故，需要安装驱动。（驱动已安装）
 
 ref: <https://wiki.archlinux.org/title/downgrading_packages#Downgrading_the_kernel>
 
