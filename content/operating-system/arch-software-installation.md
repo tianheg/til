@@ -476,4 +476,21 @@ Follow above section works
 
 依旧卡顿，仅仅打开一个网页。
 
+---
+
+现在暂时不卡顿，解决办法：
+
+设置 BIOS U 盘启动，插入制作好的 USB 启动盘，进入 U 盘中的 arch 系统，然后执行命令：
+
+```sh
+mount /dev/sdb2 /mnt
+arch-root /mnt /bin/bash
+cd /var/cache/pacman/pkg
+ls -a | grep linux
+pacman -U linux-5.13.9.arch1-1-x86_64.pkg.tar.zst
+# linux kernel: 5.13.10 --> 5.13.9
+```
+
+ref: <https://wiki.archlinux.org/title/downgrading_packages#Downgrading_the_kernel>
+
 ### rpi-imager 能够用 `yay -S rpi-imager` 下载，却不能用 `sudo pacman -S rpi-imager` 下载
