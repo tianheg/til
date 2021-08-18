@@ -73,6 +73,7 @@ ref:
 3. <https://wiki.archlinux.org/title/Pacman/Tips_and_tricks>
 4. <https://wiki.archlinux.org/title/Pacman>
 5. <https://wiki.archlinux.org/title/System_maintenance#Avoid_certain_pacman_commands>
+6. <https://wiki.archlinux.org/title/Pacman/Rosetta>
 
 S2. `yay` 使用
 
