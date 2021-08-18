@@ -74,6 +74,18 @@ ref:
 4. <https://wiki.archlinux.org/title/Pacman>
 5. <https://wiki.archlinux.org/title/System_maintenance#Avoid_certain_pacman_commands>
 
+S2. `yay` 使用
+
+```sh
+yay -S package # install package
+```
+
+安装时总是出现 `==> WARNING: Using existing $srcdir/ tree`，这个可以忽视，只是说明安装过程。
+
+ref:
+
+1. <https://github.com/Jguer/yay/issues/1248>
+
 ## When `sudo pacman -Syu`
 
 ### WARNING: Possibly missing firmware for module
