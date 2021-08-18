@@ -349,6 +349,14 @@ S30. 测试固态硬盘速度
 sudo dd if=/dev/zero of=/tmp/test.img bs=1G count=1 oflag=dsync
 ```
 
+S31. `nscd` 自启动
+
+```sh
+systemctl enable nscd
+```
+
+nscd is a daemon that provides a cache for the most common name service requests. The default configuration file, /etc/nscd.conf, determines the behavior of the cache daemon.
+
 至此系统完善到此告一段落。
 
 软件安装[见此](arch-software-installation.md)
