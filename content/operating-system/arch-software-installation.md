@@ -190,9 +190,10 @@ hugo | static site generator | *
 foliate | equb ... reader | *
 anki | a spaced repetition system | *
 mpv | to play audio on anki | vlc
+dnsutils | `dig` | *
 
 ```sh
-sudo pacman -S telegram-desktop keepass liferea flameshot glances hugo foliate mpv informant
+sudo pacman -S telegram-desktop keepass liferea flameshot glances hugo foliate mpv informant dnsutils
 ```
 
 ### informant
