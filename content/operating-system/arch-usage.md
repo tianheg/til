@@ -151,3 +151,7 @@ ref:
 1. <https://github.com/felixonmars/dnsmasq-china-list>
 2. <https://serverfault.com/a/845473>
 3. <https://web.archive.org/web/20191101231638/http://felixc.at:80/Dnsmasq>
+
+## 备份
+
+<https://blog.lilydjwg.me/2013/12/29/rsync-btrfs-dm-crypt-full-backup.42219.html>
