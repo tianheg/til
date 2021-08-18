@@ -145,6 +145,12 @@ cd yay
 makepkg -si
 ```
 
+## Imager(rpi-imager)
+
+```sh
+yay -S rpi-imager
+```
+
 ## Other Software
 
 <https://io-oi.me/tech/hello-arch-linux/>
