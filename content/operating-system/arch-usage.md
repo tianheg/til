@@ -129,3 +129,7 @@ done
 pacman -Sy
 EOF
 ```
+
+## 使用国外 DNS 造成国内网站访问慢的解决方法
+
+<https://wzyboy.im/post/874.html>
