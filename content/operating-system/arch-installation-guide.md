@@ -255,6 +255,14 @@ Unable to init server: Could not connect: Connection refused
 
 解决：在配置系统语言环境时，选择了 es_US，而不是 en_US。
 
+改 GNOME 为 KDE：
+
+ref: <https://wiki.archlinux.org/title/KDE>
+
+```sh
+sudo pacman -S plasma # 知道自己需要什么，选择下载
+```
+
 S24. 改用轻量 LightDM
 
 ```sh
