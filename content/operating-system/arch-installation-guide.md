@@ -332,6 +332,7 @@ tmpfs  /var/tmp    tmpfs   defaults,noatime,mode=1777 0 0
 
 ```sh
 cd ~/.cache/google-chrome/Default/ && rm -rf Cache && ln -sf /tmp Cache
+cd ~/.cache/google-chrome/Default/ && unlink Cache # 取消 Symbolic Link
 ```
 
 S29. 检查硬盘状况
