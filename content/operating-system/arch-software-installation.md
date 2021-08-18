@@ -191,9 +191,10 @@ foliate | equb ... reader | *
 anki | a spaced repetition system | *
 mpv | to play audio on anki | vlc
 dnsutils | `dig` | *
+dnsmasq | 使用国外 DNS 造成国内网站访问慢的解决方法 | *
 
 ```sh
-sudo pacman -S telegram-desktop keepass liferea flameshot glances hugo foliate mpv informant dnsutils
+sudo pacman -S telegram-desktop keepass liferea flameshot glances hugo foliate mpv informant dnsutils dnsmasq
 ```
 
 ### informant
