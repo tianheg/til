@@ -142,6 +142,12 @@ systemctl status dnsmasq
        Docs: man:dnsmasq(8)
 ```
 
+`dnsmasq.service: Start request repeated too quickly.`:
+
+The default limit is to allow 5 restarts in a 10sec period. If a service goes over that threshold due to the `Restart=` config option in the service definition, it will not attempt to restart any further.
+
 ref:
 
 1. <https://github.com/felixonmars/dnsmasq-china-list>
+2. <https://serverfault.com/a/845473>
+3. <https://web.archive.org/web/20191101231638/http://felixc.at:80/Dnsmasq>
