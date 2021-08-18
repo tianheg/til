@@ -151,6 +151,8 @@ makepkg -si
 yay -S rpi-imager
 ```
 
+对于支持 UEFI 启动的设备，直接复制 iso 镜像中的所有文件到安装介质（如 U 盘）中即可启动。
+
 ## Other Software
 
 <https://io-oi.me/tech/hello-arch-linux/>
