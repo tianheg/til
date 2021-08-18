@@ -113,4 +113,19 @@ ref:
 
 ## System maintenance 系统维护
 
+## 让 Arch Linux 系统和最新的镜像同步，从最快的镜像下载
 
+<https://blog.lilydjwg.me/2020/10/29/pacsync.215578.html>
+
+```sh
+#!/bin/bash -e
+
+unshare -m bash <<'EOF'
+mount --make-rprivate /
+for f in /etc/pacman.d/*.sync; do
+  filename="${f%.*}"
+  mount --bind "$f" "$filename"
+done
+pacman -Sy
+EOF
+```
