@@ -133,3 +133,15 @@ EOF
 ## 使用国外 DNS 造成国内网站访问慢的解决方法
 
 <https://wzyboy.im/post/874.html>
+
+```sh
+systemctl status dnsmasq
+ dnsmasq.service - dnsmasq - A lightweight DHCP and caching DNS server
+     Loaded: loaded (/usr/lib/systemd/system/dnsmasq.service; enabled; vendor preset: disabled)
+     Active: inactive (dead)
+       Docs: man:dnsmasq(8)
+```
+
+ref:
+
+1. <https://github.com/felixonmars/dnsmasq-china-list>
