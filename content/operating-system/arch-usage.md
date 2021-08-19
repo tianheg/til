@@ -67,6 +67,8 @@ list all development/unstable packages:
 pacman -Qq | grep -Ee '-(bzr|cvs|darcs|git|hg|svn)$'
 ```
 
+`warning: dependency cycle detected` 循环依赖
+
 ref:
 
 1. <https://wiki.archlinux.org/title/Arch_User_Repository#Installing_and_upgrading_packages>
