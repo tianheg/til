@@ -229,9 +229,10 @@ anki | a spaced repetition system | *
 mpv | to play audio on anki | vlc
 dnsutils | `dig` | *
 dnsmasq | 使用国外 DNS 造成国内网站访问慢的解决方法 | *
+tldr | <https://github.com/tldr-pages/tldr> | ×
 
 ```sh
-sudo pacman -S telegram-desktop keepass liferea flameshot glances hugo foliate mpv informant dnsutils dnsmasq
+sudo pacman -S telegram-desktop keepass liferea flameshot glances hugo foliate mpv informant dnsutils dnsmasq tldr
 ```
 
 ### informant
@@ -557,3 +558,7 @@ ref:
 5. <https://wiki.archlinux.org/title/Security_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)>
 
 ### rpi-imager 能够用 `yay -S rpi-imager` 下载，却不能用 `sudo pacman -S rpi-imager` 下载
+
+### gparted `Too many primary partitions`
+
+Create new partition atble, then solved.
