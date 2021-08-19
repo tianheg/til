@@ -373,7 +373,7 @@ nscd is a daemon that provides a cache for the most common name service requests
 ## KDE
 
 ```sh
-sudo pacman -S kgpg
+sudo pacman -S 
 ```
 
 ### Swap Lctrl with CapsLock
