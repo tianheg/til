@@ -160,6 +160,15 @@ ref:
 - <https://blog.lilydjwg.me/2013/12/29/rsync-btrfs-dm-crypt-full-backup.42219.html>
 - <https://github.com/teejee2008/timeshift>
 
+```sh
+sudo pacman -S timeshift
+```
+
+### timeshift
+
+1. Snapshot type: rsync ~~(btrfs cannot use because of BTRFS snapts are saved on system partition)~~
+2. User home directories: root-include all files, user-include only hidden files
+
 ## 自动更新 hosts GitHub 相关 IP
 
 ref:
