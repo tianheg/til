@@ -376,4 +376,12 @@ nscd is a daemon that provides a cache for the most common name service requests
 
 System Settings --> Keyboard --> Advanced
 
+### Error Discover(Software Center)
+
+### kde Connect
+
+```sh
+sudo pacman -S kdeconnect
+```
+
 软件安装[见此](arch-software-installation.md)
