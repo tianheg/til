@@ -167,6 +167,10 @@ ref:
 1. <https://bbs.archlinuxcn.org/viewtopic.php?pid=43366#p43366>
 2. <https://gist.github.com/lilydjwg/93d33ed04547e1b9f7a86b64ef2ed058>
 
+```sh
+sudo pacman -S python-aiohttp
+```
+
 ```py
 #!/usr/bin/python3
 
