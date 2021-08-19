@@ -388,4 +388,10 @@ System Settings --> Keyboard --> Advanced
 sudo pacman -S kdeconnect
 ```
 
+### kde wallet
+
+```sh
+sudo pacman -S kwalletmanager
+```
+
 软件安装[见此](arch-software-installation.md)
