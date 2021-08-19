@@ -1,5 +1,42 @@
 # Arch Software Installation
 
+## reflector
+
+<https://wiki.archlinux.org/title/reflector>
+
+S1. Automation
+
+`/etc/xdg/reflector/reflector.conf`:
+
+```conf
+--save /etc/pacman.d/mirrorlist
+--country China
+--protocol https
+--latest 5
+```
+
+```sh
+systemctl enable reflector
+systemctl start reflector
+```
+
+S2. pacman hook
+
+`/etc/pacman.d/hooks/mirrorupgrade.hook`:
+
+```hook
+[Trigger]
+Operation = Upgrade
+Type = Package
+Target = pacman-mirrorlist
+
+[Action]
+Description = Updating pacman-mirrorlist with reflector and removing pacnew...
+When = PostTransaction
+Depends = reflector
+Exec = /bin/sh -c 'systemctl start reflector.service; [ -f /etc/pacman.d/mirrorlist.pacnew ] && rm /etc/pacman.d/mirrorlist.pacnew'
+```
+
 ## Proxy
 
 ### Clash
@@ -516,7 +553,7 @@ ref:
 1. <https://wiki.archlinux.org/title/downgrading_packages#Downgrading_the_kernel>
 2. <https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/mds.html>
 3. <https://askubuntu.com/a/1250060>
-4. https://www.google.com/url?sa=t&source=web&rct=j&url=https://www.linprofs.com/blog/how-to-patch-the-intel-mds-bug/&ved=2ahUKEwjwq-W9jbjyAhWqQPUHHVznB0IQFnoECD4QAQ&usg=AOvVaw1Ijihg0Il1razMVV1yrvM9
-5. https://wiki.archlinux.org/title/Security_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)
+4. <https://www.google.com/url?sa=t&source=web&rct=j&url=https://www.linprofs.com/blog/how-to-patch-the-intel-mds-bug/&ved=2ahUKEwjwq-W9jbjyAhWqQPUHHVznB0IQFnoECD4QAQ&usg=AOvVaw1Ijihg0Il1razMVV1yrvM9>
+5. <https://wiki.archlinux.org/title/Security_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)>
 
 ### rpi-imager 能够用 `yay -S rpi-imager` 下载，却不能用 `sudo pacman -S rpi-imager` 下载
