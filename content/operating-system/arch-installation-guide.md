@@ -391,7 +391,7 @@ sudo pacman -S kdeconnect
 ### kde wallet
 
 ```sh
-sudo pacman -S kwalletmanager
+sudo pacman -S kwalletmanager seahorse
 ```
 
 软件安装[见此](arch-software-installation.md)
