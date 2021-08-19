@@ -39,3 +39,4 @@ done
 ref: <https://stackoverflow.com/a/43460416/12539782>
 
 3. `mkdir folder && cd $_`: Create folder and open it
+4. `chmod +x script` make script executable
