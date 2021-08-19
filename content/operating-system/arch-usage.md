@@ -166,6 +166,7 @@ ref:
 
 1. <https://bbs.archlinuxcn.org/viewtopic.php?pid=43366#p43366>
 2. <https://gist.github.com/lilydjwg/93d33ed04547e1b9f7a86b64ef2ed058>
+3. <https://github.com/rbew/github-host>
 
 前提：`/etc/hosts` 文件中要先存在 `github.com`
 
