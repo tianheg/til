@@ -10,6 +10,7 @@ S1. `pacman` 使用
 
 ```sh
 pacman -Qe # List all explicitly installed packages
+pacman -Qg group_name # List installed packages under this group
 pacman -Sg group # List all packages in the package group named `group`, etc, base-devel, gnome
 pacman -Qm # List all foreign packages (typically manually downloaded and installed or packages removed from the repositories)
 pacman -Qn # List all native packages (installed from the sync database(s))
