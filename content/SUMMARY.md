@@ -2,6 +2,7 @@
 
 - [CS & Web Concepts](cs-and-web-concepts/cs-and-web-concepts.md)
   - [计算机网络](cs-and-web-concepts/计算机网络.md)
+    - [DNS](cs-and-web-concepts/dns.md)
   - [科技英语](cs-and-web-concepts/科技英语.md)
   - [Front-end and its history](cs-and-web-concepts/front-end-and-its-history.md)
   - [CORS](cs-and-web-concepts/cors.md)
