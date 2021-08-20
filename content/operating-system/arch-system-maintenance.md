@@ -2,6 +2,11 @@
 
 Arch 系统维护
 
+参考资料：
+
+1. <https://wiki.archlinux.org/title/System_maintenance>
+2. [Arch Linux 安装使用教程](https://archlinuxstudio.github.io/ArchLinuxTutorial/#/)
+
 ## Identify files not owned by any package
 
 ref:
