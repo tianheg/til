@@ -41,6 +41,8 @@ Device      Start       End   Sectors  Size Type
 /dev/sdb2  526336 250069646 249543311  119G Linux filesystem
 ```
 
+关于是否分配 SWAP 分区的讨论：<https://bbs.archlinuxcn.org/viewtopic.php?id=10472>
+
 机械硬盘 sda 作为挂载硬盘存储文件。
 
 ### 硬盘格式化、新建文件系统
