@@ -8,8 +8,6 @@
 
 除此之外，还有 [archinstall](https://python-archinstall.readthedocs.io/en/latest/index.html)
 
-S <=> Step/Section
-
 ## 初始安装
 
 ### 更改 BIOS，使用 USB 系统启动盘优先启动
