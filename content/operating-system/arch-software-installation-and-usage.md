@@ -121,6 +121,10 @@ sudo pacman -S fcitx5-im fcitx5-chinese-addons fcitx5-pinyin-zhwiki fcitx5-mater
 
 配置开机启动；主题：material-color-black
 
+### fcitx5 使用问题
+
+`Enter` 回车键异常：中文模式下，按 <kbd>；</kbd> 后再按 <kbd>Enter</kbd> 无法输入英文分号。可能不是问题，刚从 fcitx4 升级到 fcitx5。
+
 ref:
 
 1. <https://zhuanlan.zhihu.com/p/341637818>
@@ -974,6 +978,16 @@ sudo pacman -S python-aiohttp
 ```
 
 ## Problems
+
+### Protocol not available - Bluetooth
+
+```sh
+journalctl -n 20
+bluetoothd[445]: src/service.c:btd_service_connect() a2dp-sink profile connect failed for 00:02:5B:FF:10:D0: Protocol not available
+sudo pacman -S pulseaudio-bluetooth
+```
+
+Still can't connect with my wireless earphone.
 
 ### `command not found: service`
 
