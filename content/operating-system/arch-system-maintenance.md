@@ -38,3 +38,7 @@ ref:
 不建议你往系统里的 /usr/local 塞核心库。
 
 不知道为什么中文网络上有很多教程都是让你自行编译安装各种东西，和系统的东西打起架来那场面真的壮观。在 Arch Linux 上请不要这样的。请使用 pacman 管理你的系统。如果需要额外的软件包可以到 AUR 或者 [archlinuxcn] 仓库寻找，再不行自己写 PKGBUILD 吧……总之不要和 pacman 管的东西打架。
+
+## Backup
+
+Do-It-Yourself Backup System Using Rsync <https://www.sanitarium.net/golug/rsync_backups_2010.html>
