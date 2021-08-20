@@ -468,9 +468,10 @@ dnsutils | `dig` | *
 dnsmasq | 使用国外 DNS 造成国内网站访问慢的解决方法 | *
 tldr | <https://github.com/tldr-pages/tldr> | *
 virtualbox | Virtual Machine | *
+earlyoom | Early OOM Daemon for Linux | *
 
 ```sh
-sudo pacman -S google-chrome visual-studio-code-bin netease-cloud-music flameshot proxychains-ng redshift vlc telegram-desktop gthumb libreoffice-fresh inkscape youtube-dl glances keepass hugo foliate anki informant dnsutils dnsmasq tldr virtualbox virtualbox-host-modules-arch virtualbox-ext-oracle virtualbox
+sudo pacman -S google-chrome visual-studio-code-bin netease-cloud-music flameshot proxychains-ng redshift vlc telegram-desktop gthumb libreoffice-fresh inkscape youtube-dl glances keepass hugo foliate anki informant dnsutils dnsmasq tldr virtualbox virtualbox-host-modules-arch virtualbox-ext-oracle virtualbox earlyoom
 ```
 
 ### informant
@@ -500,6 +501,19 @@ sudo modprobe vboxdrv
 ```
 
 No message now.
+
+### earlyoom
+
+如果是为了避免系统卡死，可以安装并使用 earlyoom。
+
+该软件默认将在空余内存、空余swap两者均低于10%时，结束 oom_score 值最高的进程，避免系统内存耗尽卡死。
+
+from <https://bbs.archlinuxcn.org/viewtopic.php?pid=45774#p45774>
+
+```sh
+# after install
+sudo systemctl enable --now earlyoom
+```
 
 ### Vagrant
 
