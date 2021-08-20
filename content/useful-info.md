@@ -1,6 +1,3 @@
----
-title: Useful Info
----
 # Useful Info
 
 ## Difference between PDF and ePUB
