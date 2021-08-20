@@ -1,4 +1,4 @@
-# Arch Software Installation
+# Arch Software Installation and Usage
 
 ## Hide GRUB
 
