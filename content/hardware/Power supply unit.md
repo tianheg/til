@@ -1,8 +1,0 @@
----
-title: Power supply unit
----
-# Power supply unit
-
----
-
-ref: <https://en.wikipedia.org/wiki/Power_supply_unit_(computer)>, [台式机电源杂谈（附主流电源型号）](https://zhuanlan.zhihu.com/p/105719776), [正确认识电源的80PLUS认证](https://zhuanlan.zhihu.com/p/45737794)
