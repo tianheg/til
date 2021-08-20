@@ -1,6 +1,3 @@
----
-title: Remove Tracking Branches No Longer On Remote
----
 # Remove Tracking Branches No Longer On Remote
 
 ```sh

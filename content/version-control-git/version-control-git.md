@@ -1,16 +1,6 @@
----
-title: Version Control - Git
----
 # Version Control - Git
 
 Git 是一个记录文件变化的软件。由 Linux 之父 Linus Torvalds 于 2005 年创造。
-
-- [Commit](git-commit.md)
-- [[Git Glossary]]
-- [[Git Command Line Reference]]
-- [[Git and GitHub]]
-- [[Useful Tips about Git]]
-- [[Commit Messages Guide]]
 
 ---
 

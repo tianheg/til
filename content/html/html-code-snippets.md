@@ -1,8 +1,6 @@
----
-title: HTML Code Snippets
----
 # HTML Code Snippets
-## 
+
+## Form
 
 ```html
 <form action="https://freecatphotoapp.com/submit-cat-photo">
@@ -36,3 +34,7 @@ title: HTML Code Snippets
 <label for="textarea">You may want to say:</label>
 <textarea id="textarea" name="textarea" rows="4" cols="7"></textarea>
 ```
+
+## Access to web-specific text
+
+`https://example.com/#:~:text=xxx`

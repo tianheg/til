@@ -1,6 +1,3 @@
----
-title: Git and GitHub
----
 # Git and GitHub
 
 ## 工作流
@@ -215,8 +212,11 @@ publish:
 ![](https://res.wx.qq.com/op_res/A2UVQnCR7s9y5uggqAWM2NK-V6PJOMpSKY7wA7aGKZ2GZUD123KVykc7yk8UGbmo)
 
 ## API
-https://api.github.com/
+
+<https://api.github.com/>
+
 ## Usage
+
 ### Show Diff
 
 ```diff
@@ -231,6 +231,7 @@ https://api.github.com/
 a.  [[GitHub Action only Generate .nojekyll]]
 
 b.
+
 ```sh
 $ bash bootstrap.sh
 Cloning into '/home/tianheg/.vim'...

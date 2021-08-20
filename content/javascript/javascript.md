@@ -2,15 +2,6 @@
 
 HTML，CSS 控制网页的内容和样式，JavaScript 控制交互。学习 JavaScript 过程中会涉及它的基础知识，如变量、数组、对象、循环和函数。
 
-- [JavaScript Basics](javascript-basics.md)
-- [[ES6]]
-- [[What I learnt from JS]]
-- [[Install Node.js, NPM and Yarn]]
-- [[Yarn v2 Usage]]
-- [[Used Packages from npm or yarn]]
-- [[The difference between js in head and body]]
-- [JS Code Snippets](js-code-snippets.md)
-
 ## 我的学习路径
 
 1. freeCodeCamp's JavaScript Algorithms and Data Structures(not complete)

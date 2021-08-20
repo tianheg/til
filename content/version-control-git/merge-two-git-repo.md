@@ -1,6 +1,3 @@
----
-title: Merge Two Git Repo
----
 # Merge Two Git Repo
 
 A: <https://github.com/tianheg/a.git>

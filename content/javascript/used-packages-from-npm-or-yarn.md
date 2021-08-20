@@ -1,6 +1,3 @@
----
-title: Used Packages from npm or yarn
----
 # Used Packages from npm or yarn
 
  Name | GitHub URL | npm URL | yarn URL

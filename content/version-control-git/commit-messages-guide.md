@@ -1,6 +1,3 @@
----
-title: Commit Messages Guide
----
 # Commit Messages Guide
 
 [source](https://github.com/RomuloOliveira/commit-messages-guide)

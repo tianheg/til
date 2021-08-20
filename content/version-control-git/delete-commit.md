@@ -1,6 +1,3 @@
----
-title: Delete Commit
----
 # Delete Commit
 
 ```sh

@@ -1,6 +1,3 @@
----
-title: What I learnt from JS
----
 # What I learnt from JS
 
 ## Use Npx

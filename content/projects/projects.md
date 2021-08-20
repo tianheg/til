@@ -1,3 +1,1 @@
 # Projects
-
-- [WordPress](wordpress.md)

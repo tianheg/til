@@ -1,6 +1,3 @@
----
-title: Git Fundamentals
----
 # Git Fundamentals
 
 Git 与其他版本控制系统不同的一点，就是它处理数据的方式。大多数其他系统，会备份你的文件，然后保存文档的变化。

@@ -1,6 +1,3 @@
----
-title: 
----
 # The difference between js in the head and body
 
 When I put `external-link.js` in the `head` tag, it can't work, but when it's in the `body` tag, it works. The code is:
@@ -23,7 +20,7 @@ external_new_window();
 
 ```html
 <head>
-	<script type="text/javascript" src="{{ '/assets/js/external-link.js' | absolute_url }}"></script>
+    <script type="text/javascript" src="{{ '/assets/js/external-link.js' | absolute_url }}"></script>
 </head>
 ```
 
@@ -31,7 +28,7 @@ external_new_window();
 
 ```html
 <body>
-	<script type="text/javascript" src="{{ '/assets/js/external-link.js' | absolute_url }}"></script>
+    <script type="text/javascript" src="{{ '/assets/js/external-link.js' | absolute_url }}"></script>
 </body>
 ```
 

@@ -1,6 +1,3 @@
----
-title: Go
----
 # Go
 
 ## Install Go

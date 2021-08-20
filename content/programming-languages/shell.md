@@ -1,7 +1,5 @@
----
-title: Shell
----
 # Shell
+
 ## examples
 
 ### bash

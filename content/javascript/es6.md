@@ -1,6 +1,3 @@
----
-title: ES6
----
 # ES6
 
 ECMAScript，或 ES，是一种 JavaScript 标准化版本。目前我接触的 JavaScript 的大部分内容是 ES5，发布于 2009 年。虽然如此，但 JavaScript 始终进化着，每年都会有新功能发布。

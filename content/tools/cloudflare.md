@@ -1,6 +1,3 @@
----
-title: Cloudflare
----
 # Cloudflare
 
 ## Login After Losing Recovery Codes

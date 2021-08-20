@@ -1,6 +1,3 @@
----
-title: Images
----
 # Images
 
 ## Tools about Images

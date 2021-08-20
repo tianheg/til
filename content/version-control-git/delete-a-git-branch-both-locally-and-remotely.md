@@ -1,6 +1,3 @@
----
-title: Delete A Git Branch Both Locally And Remotely
----
 # Delete A Git Branch Both Locally And Remotely
 
 ```sh

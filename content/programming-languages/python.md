@@ -1,6 +1,3 @@
----
-title: Python
----
 # Python
 
 ## Python 的几个模块

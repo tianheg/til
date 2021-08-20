@@ -1,5 +1,14 @@
 # Docker
 
+## `Dockerfile`
+
+```dockerfile
+FROM ubuntu:20.04
+WORKDIR /home/
+COPY . .
+RUN bash ./setup.sh
+```
+
 ## Add Registry Mirrors For Ubuntu
 
 Docker > 1.10.0

@@ -1,7 +1,5 @@
----
-title: GitHub Action only Generate .nojekyll
----
 # GitHub Action only Generate `.nojekyll`
+
 problem [source](https://github.com/tianheg/feed/runs/2588088608?check_suite_focus=true#step:6:34):
 
 ```sh
@@ -53,4 +51,4 @@ package.json
 
 However, it's GitHub Action is running fine, [generating all the files](https://github.com/tianheg/osmosfeed-demo/runs/2588166880?check_suite_focus=true#step:6:67). I'm confused.
 
-The last GitHub Action run for osmosfeed-demo only generated [`.nojekyll`](https://github.com/tianheg/osmosfeed-demo/runs/2588279301?check_suite_ focus=true#step:6:68)
+The last GitHub Action run for osmosfeed-demo only generated [`.nojekyll`](https://github.com/tianheg/osmosfeed-demo/runs/2588279301?check_suite_focus=true#step:6:68) (Outdated)

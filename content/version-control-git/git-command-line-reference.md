@@ -1,6 +1,3 @@
----
-title: Git Command Line Reference
----
 # Git Command Line Reference
 
 This is a reference list of the most commonly used Git commands. Try to familiarize yourself with the commands so that you can eventually remember them all:

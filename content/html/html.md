@@ -2,16 +2,6 @@
 
 HTML 是超文本标记语言。
 
-- [Before HTML](before-html.md)
-- [HTML Basics](html-basics.md)
-- [HTML Code Snippets](html-code-snippets.md)
-
-## What I Want To Know
-
-- [The difference between js in the head and body](the-difference-between-js-in-head-and-body.md)
-- [Access to web-specific text](access-to-web-specific-text.md)
-- [Canonical link element](https://en.wikipedia.org/wiki/Canonical_link_element)
-
 ## 面试题
 
 DTD: Doctype Declaration

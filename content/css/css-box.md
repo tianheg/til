@@ -1,6 +1,3 @@
----
-title: CSS Box
----
 # CSS Box
 
 When laying out a document, the browser's rendering engine represents each element as a rectangular box according to the standard CSS basic box model. CSS determines the size, position, properties (color, background, border size, etc.) of these boxes.

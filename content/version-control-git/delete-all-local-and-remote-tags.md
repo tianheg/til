@@ -1,6 +1,3 @@
----
-title: Delete All Local And Remote Tags
----
 # Delete All Local And Remote Tags
 
 First delete remote tags, then local tags:

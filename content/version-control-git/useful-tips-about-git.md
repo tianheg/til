@@ -1,16 +1,4 @@
----
-title: Useful Tips about Git
----
 # Useful Tips about Git
-
-- [[Branch Name Contain The 'space' Char]]
-- [[Create Empty Branch Locally And Remotely]]
-- [[Delete A Git Branch Both Locally And Remotely]]
-- [[Delete All Local And Remote Tags]]
-- [[Delete Commit]]
-- [[Merge Two Git Repo]]
-- [[Remove Tracking Branches No Longer On Remote]]
-- [[Update With Original Repo After Forking on GitHub]]
 
 ## 多人合作开发
 

@@ -1,6 +1,3 @@
----
-title: Create Empty Branch Locally And Remotely
----
 # Create Empty Branch Locally And Remotely
 
 ```sh

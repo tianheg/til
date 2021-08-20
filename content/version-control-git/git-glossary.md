@@ -1,6 +1,3 @@
----
-title: Git Glossary
----
 # Git Glossary
 
 - **git:** an open source, distributed version-control system
