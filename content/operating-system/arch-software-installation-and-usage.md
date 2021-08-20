@@ -694,9 +694,10 @@ earlyoom | Early OOM Daemon for Linux | *
 gtk2,3,4 | gtk | *
 lsb-release | LSB version query program | *
 exa | | *
+qemu | A generic and open source machine emulator and virtualizer | virtualbox
 
 ```sh
-sudo pacman -S google-chrome visual-studio-code-bin netease-cloud-music flameshot proxychains-ng redshift vlc telegram-desktop gthumb libreoffice-fresh inkscape youtube-dl glances keepass hugo foliate anki informant dnsutils dnsmasq tldr virtualbox virtualbox-host-modules-arch virtualbox-ext-oracle virtualbox earlyoom
+sudo pacman -S google-chrome visual-studio-code-bin netease-cloud-music flameshot proxychains-ng redshift vlc telegram-desktop gthumb libreoffice-fresh inkscape youtube-dl glances keepass hugo foliate anki informant dnsutils dnsmasq tldr virtualbox virtualbox-host-modules-arch virtualbox-ext-oracle virtualbox earlyoom gtk2 gtk3 gtk4 lsb-release exa qemu
 ```
 
 ### exa
