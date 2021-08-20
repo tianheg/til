@@ -16,6 +16,10 @@ Edit `etc/default/grub`:
 +GRUB_TIMEOUT=0
 ```
 
+## Mount
+
+挂载外来文件系统，推荐使用 udiskctl(install udisks2, `pkgfile -b udisksctl`) 命令，很多时候不需要 root 权限就能挂载和卸载 from <https://bbs.archlinuxcn.org/viewtopic.php?pid=44067#p44067>
+
 ## reflector
 
 <https://wiki.archlinux.org/title/reflector>
