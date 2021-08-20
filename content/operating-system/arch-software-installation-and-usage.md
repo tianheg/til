@@ -112,6 +112,19 @@ export GTK_IM_MODULE="fcitx"
 export QT_IM_MODULE="fcitx"
 ```
 
+fcitx4 to fcitx5:
+
+```sh
+sudo pacman -Rsc fcitx
+sudo pacman -S fcitx5-im fcitx5-chinese-addons fcitx5-pinyin-zhwiki fcitx5-material-color
+```
+
+配置开机启动；主题：material-color-black
+
+ref:
+
+1. <https://zhuanlan.zhihu.com/p/341637818>
+
 ## Font
 
 Use default Gnome 40 font:
@@ -132,7 +145,7 @@ noto-fonts, noto-fonts-cjk, noto-fonts-emoji, noto-fonts-extra
 
 代码：
 
-monaco, menlo
+monaco, menlo, hack, IBM Plex Mono
 
 - 命令行安装的字体所在的目录：`/usr/share/fonts/`
 - 手动安装的字体所在的目录：`~/.local/share/fonts/`
@@ -140,6 +153,10 @@ monaco, menlo
 ```sh
 fc-cache -fv # update font cache
 ```
+
+ref:
+
+1. <https://realdougwilson.com/writing/coding-with-character>
 
 ## Bluetooth
 
@@ -299,9 +316,30 @@ ref:
 ##### gpg: key 786C63F330D7CB92: no user ID for key signature packet of class 10
 
 ```sh
-786C63F330D7CB92
-1EB2638FF56C0C53
+gpg: key 786C63F330D7CB92: no user ID for key signature packet of class 10
+gpg: key 1EB2638FF56C0C53: no user ID for key signature packet of class 10
+gpg: next trustdb check due at 2021-10-09
+  -> Disabled 3 keys.
+
+## try 1
+sudo pacman-key --refresh-keys
+sudo pacman -S archlinux-keyring archlinuxcn-keyring
+## try 2
+sudo rm -R /etc/pacman.d/gnupg/ # No such file or directory
+sudo rm -rf /etc/pacman.d/gnupg/
+sudo rm -R /root/.gnupg/ 
+sudo rm -R /var/cache/pacman/pkg/
+sudo gpg --refresh-keys
+sudo pacman-key --init
+sudo pacman-key --populate archlinux # still display `gpg: key xxx: no user ID for key signature packet of class 10`
+sudo pacman-key --refresh-keys
+sudo pacman -Syyu
+
 ```
+
+ref:
+
+1. <https://github.com/yuk7/ArchWSL/issues/91#issuecomment-506806989>
 
 ##### warning: /etc/pacman.d/mirrorlist installed as /etc/pacman.d/mirrorlist.pacnew
 
@@ -357,6 +395,7 @@ yay -Ps
 
 1. 安装时总是出现 `==> WARNING: Using existing $srcdir/ tree`，这个可以忽视，只是说明安装过程。
 2. timeout 问题 <https://github.com/Jguer/yay/issues/1278#issuecomment-635833427>
+3. `Missing AUR Packages`
 
 ref:
 
@@ -373,9 +412,184 @@ yay -S rpi-imager
 
 ## KDE
 
-```sh
-sudo pacman -S 
+### konsole
+
+文档读到 <https://docs.kde.org/stable5/en/konsole/konsole/console-dialogs.html>
+
+ref: <https://forum.kde.org/viewtopic.php?f=21&t=78963#p380065>
+
+profile configuration file `~/.local/share/konsole/archie.profile`:
+
+```profile
+[Appearance]
+AntiAliasFonts=true
+BoldIntense=true
+ColorScheme=custom
+Font=Monaco,11,-1,5,50,0,0,0,0,0
+UseFontLineChararacters=false
+
+[General]
+Name=archie
+Parent=FALLBACK/
+TerminalColumns=210
 ```
+
+Highlight style: `~/.local/share/konsole/custom.colorscheme`:
+
+```colorscheme
+[Background]
+Color=0,0,0
+RandomHueRange=360
+RandomSaturationRange=100
+
+[BackgroundFaint]
+Color=0,0,0
+RandomHueRange=360
+RandomSaturationRange=100
+
+[BackgroundIntense]
+Color=0,0,0
+RandomHueRange=360
+RandomSaturationRange=100
+
+[Color0]
+Color=0,0,0
+
+[Color0Faint]
+Color=24,24,24
+
+[Color0Intense]
+Color=104,104,104
+
+[Color1]
+Color=250,75,75
+
+[Color1Faint]
+Color=101,25,25
+
+[Color1Intense]
+Color=255,84,84
+
+[Color2]
+Color=24,178,24
+
+[Color2Faint]
+Color=0,101,0
+
+[Color2Intense]
+Color=84,255,84
+
+[Color3]
+Color=178,104,24
+
+[Color3Faint]
+Color=101,74,0
+
+[Color3Intense]
+Color=255,255,84
+
+[Color4]
+Color=24,24,178
+
+[Color4Faint]
+Color=0,0,101
+
+[Color4Intense]
+Color=84,84,255
+
+[Color5]
+Color=225,30,225
+
+[Color5Faint]
+Color=95,5,95
+
+[Color5Intense]
+Color=255,84,255
+
+[Color6]
+Color=24,178,178
+
+[Color6Faint]
+Color=0,101,101
+
+[Color6Intense]
+Color=84,255,255
+
+[Color7]
+Color=178,178,178
+
+[Color7Faint]
+Color=101,101,101
+
+[Color7Intense]
+Color=255,255,255
+
+[Foreground]
+Color=24,240,24
+RandomHueRange=360
+RandomSaturationRange=100
+
+[ForegroundFaint]
+Color=18,200,18
+RandomHueRange=360
+RandomSaturationRange=100
+
+[ForegroundIntense]
+Color=24,240,24
+RandomHueRange=360
+RandomSaturationRange=100
+
+[General]
+Blur=true
+ColorRandomization=true
+Description=custom
+Opacity=1
+Wallpaper=/home/archie/Pictures/adrien-olichon-RCAhiGJsUUE-unsplash.jpg
+```
+
+`~/.config/konsolerc`:
+
+```konsolerc
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAAB4AAAAO1AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAHABzAGUAcwBzAGkAbwBuAFQAbwBvAGwAYgBhAHIBAAAFlf////8AAAAAAAAAAA==
+StatusBar=Disabled
+eDP1 Window-Maximized 1920x1080=true
+
+[Desktop Entry]
+DefaultProfile=archie.profile
+
+[KFileDialog Settings]
+Recent Files[$e]=adrien-olichon-RCAhiGJsUUE-unsplash.jpg,file:$HOME/Pictures/adrien-olichon-RCAhiGJsUUE-unsplash.jpg
+Recent URLs[$e]=file:$HOME/Pictures/
+detailViewIconSize=16
+
+[KonsoleWindow]
+ShowMenuBarByDefault=false
+
+[MainWindow]
+RestorePositionForNextInstance=false
+State=AAAA/wAAAAD9AAAAAAAAB4AAAAOWAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAHABzAGUAcwBzAGkAbwBuAFQAbwBvAGwAYgBhAHIBAAAFcf////8AAAAAAAAAAA==
+StatusBar=Disabled
+ToolBarsMovable=Disabled
+eDP1 Height 1920x1080=1080
+eDP1 Width 1920x1080=1920
+eDP1 Window-Maximized 1920x1080=true
+eDP1 XPosition 1920x1080=0
+eDP1 YPosition 1920x1080=85
+
+[MainWindow][Toolbar mainToolBar]
+IconSize=16
+
+[Notification Messages]
+CloseAllEmptyTabs=true
+```
+
+#### konsole keyboard shortcut
+
+- `Ctrl Shift M` Open/Close menu bar
+- `Ctrl Shift (` split view Left/Right
+- `Ctrl Shift (` split view Left/Right
+- `Ctrl Shift T` new Tab
 
 ### Swap Lctrl with CapsLock
 
@@ -473,9 +687,28 @@ dnsmasq | 使用国外 DNS 造成国内网站访问慢的解决方法 | *
 tldr | <https://github.com/tldr-pages/tldr> | *
 virtualbox | Virtual Machine | *
 earlyoom | Early OOM Daemon for Linux | *
+gtk2,3,4 | gtk | *
+lsb-release | LSB version query program | *
+exa | | *
 
 ```sh
 sudo pacman -S google-chrome visual-studio-code-bin netease-cloud-music flameshot proxychains-ng redshift vlc telegram-desktop gthumb libreoffice-fresh inkscape youtube-dl glances keepass hugo foliate anki informant dnsutils dnsmasq tldr virtualbox virtualbox-host-modules-arch virtualbox-ext-oracle virtualbox earlyoom
+```
+
+### exa
+
+A modern replacement for `ls` (List directory contents) <https://the.exa.website>
+
+```sh
+exa
+exa --oneline # List files one per line
+exa --all # List all files, including hidden files
+exa --long --all # Long format list (permissions, ownership, size and modification date) of all files
+exa --reverse --sort=size # List files with the largest at the top
+exa --long --tree --level=3 # Display a tree of files, three levels deep
+exa --long --sort=modified # List files sorted by modification date (oldest first)
+exa --long --header --icons --git # List files with their headers, icons, and Git statuses
+exa --git-ignore # Don't list files mentioned in `.gitignore`
 ```
 
 ### informant
