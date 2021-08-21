@@ -4,4 +4,8 @@
 
 ## Syntax
 
+## Error
 
+Source parser for markdown not registered
+
+AttributeError: 'str' object has no attribute 'supported'
