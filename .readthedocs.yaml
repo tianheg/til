@@ -5,7 +5,7 @@ version: 2
 formats:
   - htmlzip
 
-# Build from the docs/ directory with Sphinx
+# Build from the / directory with Sphinx
 sphinx:
   configuration: conf.py
 
