@@ -1,9 +1,0 @@
-[book]
-authors = ["一大加贝"]
-language = "zh"
-multilingual = false
-src = "content"
-title = "Today I Learnt"
-
-[output.html]
-mathjax-support = true
