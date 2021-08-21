@@ -1,10 +1,5 @@
-
 til
 ===
-
-.. image:: https://readthedocs.org/projects/til/badge/?version=latest
-  :target: https://til.readthedocs.io/en/latest/?badge=latest
-  :alt: Documentation Status
 
 📝 Today I Learned
 
