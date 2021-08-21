@@ -1,0 +1,356 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>How the Web works &mdash; Today I Learnt  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Algorithms and Data Structure" href="../algorithms-and-data-structure/algorithms-and-data-structure.html" />
+    <link rel="prev" title="CORS" href="cors.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Today I Learnt
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="cs-and-web-concepts.html">CS &amp; Web Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C.html">计算机网络</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dns.html">DNS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E7%A7%91%E6%8A%80%E8%8B%B1%E8%AF%AD.html">科技英语</a></li>
+<li class="toctree-l1"><a class="reference internal" href="front-end-and-its-history.html">Front-end and its history</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cors.html">CORS</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">How the Web works</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">客户端和服务器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">当访问网页时究竟发生了什么</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">解析组件文件的顺序</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dns">解释 DNS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#packets">解释 Packets</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../algorithms-and-data-structure/algorithms-and-data-structure.html">Algorithms and Data Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../algorithms-and-data-structure/books.html">一些算法书籍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/operating-system.html">Operating System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/linux-details.html">Linux Details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/linux-common-orders.html">Linux Common Orders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/arch-system-maintenance.html">Arch System Maintenance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/arch-package.html">Arch Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/arch-software-installation-and-usage.html">Arch Software Installation and Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/arch-installation-guide.html">Arch Installation Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/openbsd-installation.html">OpenBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/ubuntu-backup.html">Ubuntu Backup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/ubuntu-common-usage.html">Ubuntu Common Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/ubuntu-install-software.html">Install Software on Ubuntu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/ubuntu-problems.html">Problems on Ubuntu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/mxlinux-installation.html">MX Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../html/html.html">HTML</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../html/before-html.html">Before HTML</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../html/html-basics.html">HTML Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../html/images.html">Images</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../html/html-code-snippets.html">HTML Code Snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../css/css.html">CSS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../css/css-basics.html">CSS Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../css/css-box.html">CSS Box</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../css/css-position.html">CSS Position</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../css/css-code-snippets.html">CSS Code Snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/javascript.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/es6.html">ES6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/what-i-learnt-from-js.html">What I learnt from JS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/install-node-npm-yarn.html">Install Node.js, NPM and Yarn</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/yarn-v2-usage.html">Yarn v2 Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/used-packages-from-npm-or-yarn.html">Used Packages from npm or yarn</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/the-difference-between-js-in-head-and-body.html">The difference between js in the head and body</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/js-code-snippets.html">JS Code Snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vue/vue.html">Vue</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../front-end.html">Front-end</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../programming-languages/programming-language.html">Programming Language</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../programming-languages/shell.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../programming-languages/python.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../programming-languages/go.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projects/projects.html">Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projects/wordpress.html">WordPress</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/docker.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/vagrant.html">Vagrant</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/gpg.html">title: GPG</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/gpg.html#can-not-change-name-or-comment-without-losing-signatures">Can Not Change Name Or Comment Without Losing Signatures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/gpg.html#import-github-key">Import GitHub Key</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/jekyll.html">title: Jekyll</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/jekyll.html#setup-jekyll-environment">Setup Jekyll Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/jekyll.html#jekyll-error-building-page-related-to-kramdown-parser">Jekyll Error Building Page Related To Kramdown Parser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/jekyll.html#use-bundler-2-or-greater-with-this-lockfile">Use Bundler 2 Or Greater With This Lockfile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/hugo.html">title: Hugo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/hugo.html#install-hugo-on-ubuntu">Install Hugo On Ubuntu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/hugo.html#hugo-server-bind-ip">Hugo Server Bind IP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/hugo.html#use-new-archetype-create-post-in-posts-folder">Use New Archetype Create Post In Posts Folder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/neovim.html">neovim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/cloudflare.html">Cloudflare</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/gatsby.html">title: Gatsby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/gatsby.html#change-default-package-manager">Change Default Package Manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/gatsby.html#set-up-development-environment">Set Up Development Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/version-control-git.html">Version Control - Git</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/git-fundamentals.html">Git Fundamentals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/git-commit.html">Git Commit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/commit-messages-guide.html">Commit Messages Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/git-and-gitHub.html">Git and GitHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/git-command-line-reference.html">Git Command Line Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/git-glossary.html">Git Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/useful-tips-about-git.html">Useful Tips about Git</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/branch-name-contain-the-space-char.html">Branch Name Contain The ‘space’ Char</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/create-empty-branch-locally-and-remotely.html">Create Empty Branch Locally And Remotely</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/delete-a-git-branch-both-locally-and-remotely.html">Delete A Git Branch Both Locally And Remotely</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/delete-all-local-and-remote-tags.html">Delete All Local And Remote Tags</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/delete-commit.html">Delete Commit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/merge-two-git-repo.html">Merge Two Git Repo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/remove-tracking-branches-no-longer-on-remote.html">Remove Tracking Branches No Longer On Remote</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/update-with-original-repo-after-forking-on-github.html">Update With Original Repo After Forking on GitHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/git-clone-specify-branch.html">Git Clone Specify Branch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/github-action-only-generate-nojekyll.html">GitHub Action only Generate <code class="docutils literal notranslate"><span class="pre">.nojekyll</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../useful-info.html">Useful Info</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/hardware.html">Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/bluetooth.html">Bluetooth</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/power-supply-unit.html">Power supply unit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/raspberry-pi.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../learning-how-to-learn.html">Learning How to Learn</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Today I Learnt</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>How the Web works</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/content/cs-and-web-concepts/how-the-web-works.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="how-the-web-works">
+<h1>How the Web works<a class="headerlink" href="#how-the-web-works" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id1">
+<h2>客户端和服务器<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<a class="reference external image-reference" href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works/simple-client-server.png"><img alt="Client connect Server" src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works/simple-client-server.png" /></a>
+<ul class="simple">
+<li><p>客户端是典型的网络用户的互联网连接设备（例如，你的电脑连接到 Wi-Fi，或者你的手机连接到移动网络），以及这些设备上可用的网络访问软件（通常是 Firefox 或 Chrome 这样的网络浏览器）。</p></li>
+<li><p>服务器是存放网页、站点和应用的地方。当客户端设备想访问一个网页时，服务器会把网页的拷贝发送到客户端，用来显示在用户的网络浏览器上。</p></li>
+</ul>
+<p>想像一下，在一条长长的马路（Web）上，客户端就像你位于马路一端的家，服务器如同位于马路另一端的商店。</p>
+<p>除此之外，我们还需要通过以下概念的作用，来达到正常访问网页的目的：</p>
+<ul class="simple">
+<li><p>你的网络连接：允许你收发来自网络的数据。就像你的房子和商店之间的那条街</p></li>
+<li><p>TCP/IP：传输控制协议和网际协议是沟通协议，它们定义数据应该如何在网络中传输。这像某种运输机制，让你下订单，去商店，并购买你的商品。在例子中，它可能是汽车或自行车等工具</p></li>
+<li><p>DNS：域名系统就像网站的地址簿。当你输入想访问的网站时，浏览器会在域名系统中寻找网站的真正地址，在它找到网站以前。浏览器需要找到网站所在的服务器，这样就能够给服务器发送 HTTP 消息。这就像寻找商店地址，这样你就能进去购物</p></li>
+<li><p>HTTP：超文本传输协议是一个应用层协议，它为客户端和服务器的互相通信定义了一种语言。这就像你订货时使用的语言</p></li>
+<li><p>Component files：一个网站由很多不同的文件构成，这就像你从商店购买不同的商品一样。这些文件主要分为两种：</p>
+<ul>
+<li><p>代码文件：网站主要使用 HTML，CSS，JavaScript 构建</p></li>
+<li><p>附件（Assets）：这是构成一个网站的所有其他东西的统称，比如，图片、音乐、视频、 Word 文档和 pdf 文件</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2>当访问网页时究竟发生了什么<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>浏览器向 DNS 服务器询问要访问网站的真正服务器地址</p></li>
+<li><p>浏览器向服务器发送 HTTP 请求消息，请求发送一个网站备份给客户端。使用 TCP/IP 协议通过你的网络连接互传这个消息以及其他用于客户端和服务器通信的数据</p></li>
+<li><p>如果服务器批准客户端的请求，服务器会发送“200 OK”给客户端，意思是：当然，你可以访问这个网站！给你。服务器把网站文件分成被称为数据包的小块，然后发送小块到浏览器</p></li>
+<li><p>浏览器组装小块后，把一个完整的页面呈现给访问者</p></li>
+</ol>
+</div>
+<div class="section" id="id3">
+<h2>解析组件文件的顺序<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>HTML 文件最先被解析</p></li>
+<li><p>HTML 解析完成后，DOM 树结构也已经生成。链接的 CSS 被解析，样式被应用于 DOM 树的合适位置。这时，页面的视觉呈现被画在屏幕上，用户就可以看到</p></li>
+<li><p>HTML 和 CSS 被渲染后，JS 通常在此时解析并应用于页面</p></li>
+</ul>
+</div>
+<div class="section" id="dns">
+<h2>解释 DNS<a class="headerlink" href="#dns" title="Permalink to this headline">¶</a></h2>
+<p>真正的 Web 地址是一串数字，不好看也不容易记忆。它们是 IP 地址。它代表网络中的唯一位置。这就是 DNS 存在的原因：DNS 想一个地址簿把域名和 IP 地址联系起来。网站有两种访问方式：IP 地址和域名。</p>
+</div>
+<div class="section" id="packets">
+<h2>解释 Packets<a class="headerlink" href="#packets" title="Permalink to this headline">¶</a></h2>
+<p>首先，数据在网络中传输是以块的形式的。有多种原因导致数据以小包的形式发送。它们有时可能会丢失/中断，当这种情况发生时小包很容易替换。另外，数据包可以沿不同的路径传送，使交换更快，并允许许多不同的用户同时下载同一网站。如果每个网站作为一个大块传输，一次只有一个用户能够下载，这明显会降低效率，而且使用起来不那么有趣。</p>
+<p>ref: <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works">https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works</a></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../algorithms-and-data-structure/algorithms-and-data-structure.html" class="btn btn-neutral float-right" title="Algorithms and Data Structure" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="cors.html" class="btn btn-neutral float-left" title="CORS" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Jim Gao.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

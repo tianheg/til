@@ -1,0 +1,1705 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>JavaScript Basics &mdash; Today I Learnt  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Today I Learnt
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/cs-and-web-concepts.html">CS &amp; Web Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C.html">计算机网络</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/dns.html">DNS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/%E7%A7%91%E6%8A%80%E8%8B%B1%E8%AF%AD.html">科技英语</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/front-end-and-its-history.html">Front-end and its history</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/cors.html">CORS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/how-the-web-works.html">How the Web works</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../algorithms-and-data-structure/algorithms-and-data-structure.html">Algorithms and Data Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../algorithms-and-data-structure/books.html">一些算法书籍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/operating-system.html">Operating System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/linux-details.html">Linux Details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/linux-common-orders.html">Linux Common Orders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/arch-system-maintenance.html">Arch System Maintenance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/arch-package.html">Arch Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/arch-software-installation-and-usage.html">Arch Software Installation and Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/arch-installation-guide.html">Arch Installation Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/openbsd-installation.html">OpenBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/ubuntu-backup.html">Ubuntu Backup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/ubuntu-common-usage.html">Ubuntu Common Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/ubuntu-install-software.html">Install Software on Ubuntu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/ubuntu-problems.html">Problems on Ubuntu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/mxlinux-installation.html">MX Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../html/html.html">HTML</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../html/before-html.html">Before HTML</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../html/html-basics.html">HTML Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../html/images.html">Images</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../html/html-code-snippets.html">HTML Code Snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../css/css.html">CSS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../css/css-basics.html">CSS Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../css/css-box.html">CSS Box</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../css/css-position.html">CSS Position</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../css/css-code-snippets.html">CSS Code Snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="javascript.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="es6.html">ES6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="what-i-learnt-from-js.html">What I learnt from JS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install-node-npm-yarn.html">Install Node.js, NPM and Yarn</a></li>
+<li class="toctree-l1"><a class="reference internal" href="yarn-v2-usage.html">Yarn v2 Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="used-packages-from-npm-or-yarn.html">Used Packages from npm or yarn</a></li>
+<li class="toctree-l1"><a class="reference internal" href="the-difference-between-js-in-head-and-body.html">The difference between js in the head and body</a></li>
+<li class="toctree-l1"><a class="reference internal" href="js-code-snippets.html">JS Code Snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vue/vue.html">Vue</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../front-end.html">Front-end</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../programming-languages/programming-language.html">Programming Language</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../programming-languages/shell.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../programming-languages/python.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../programming-languages/go.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projects/projects.html">Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projects/wordpress.html">WordPress</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/docker.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/vagrant.html">Vagrant</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/gpg.html">title: GPG</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/gpg.html#can-not-change-name-or-comment-without-losing-signatures">Can Not Change Name Or Comment Without Losing Signatures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/gpg.html#import-github-key">Import GitHub Key</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/jekyll.html">title: Jekyll</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/jekyll.html#setup-jekyll-environment">Setup Jekyll Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/jekyll.html#jekyll-error-building-page-related-to-kramdown-parser">Jekyll Error Building Page Related To Kramdown Parser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/jekyll.html#use-bundler-2-or-greater-with-this-lockfile">Use Bundler 2 Or Greater With This Lockfile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/hugo.html">title: Hugo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/hugo.html#install-hugo-on-ubuntu">Install Hugo On Ubuntu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/hugo.html#hugo-server-bind-ip">Hugo Server Bind IP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/hugo.html#use-new-archetype-create-post-in-posts-folder">Use New Archetype Create Post In Posts Folder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/neovim.html">neovim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/cloudflare.html">Cloudflare</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/gatsby.html">title: Gatsby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/gatsby.html#change-default-package-manager">Change Default Package Manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/gatsby.html#set-up-development-environment">Set Up Development Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/version-control-git.html">Version Control - Git</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/git-fundamentals.html">Git Fundamentals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/git-commit.html">Git Commit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/commit-messages-guide.html">Commit Messages Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/git-and-gitHub.html">Git and GitHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/git-command-line-reference.html">Git Command Line Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/git-glossary.html">Git Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/useful-tips-about-git.html">Useful Tips about Git</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/branch-name-contain-the-space-char.html">Branch Name Contain The ‘space’ Char</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/create-empty-branch-locally-and-remotely.html">Create Empty Branch Locally And Remotely</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/delete-a-git-branch-both-locally-and-remotely.html">Delete A Git Branch Both Locally And Remotely</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/delete-all-local-and-remote-tags.html">Delete All Local And Remote Tags</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/delete-commit.html">Delete Commit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/merge-two-git-repo.html">Merge Two Git Repo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/remove-tracking-branches-no-longer-on-remote.html">Remove Tracking Branches No Longer On Remote</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/update-with-original-repo-after-forking-on-github.html">Update With Original Repo After Forking on GitHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/git-clone-specify-branch.html">Git Clone Specify Branch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/github-action-only-generate-nojekyll.html">GitHub Action only Generate <code class="docutils literal notranslate"><span class="pre">.nojekyll</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../useful-info.html">Useful Info</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/hardware.html">Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/bluetooth.html">Bluetooth</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/power-supply-unit.html">Power supply unit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/raspberry-pi.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../learning-how-to-learn.html">Learning How to Learn</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Today I Learnt</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>JavaScript Basics</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/content/javascript/javascript-basics.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="javascript-basics">
+<h1>JavaScript Basics<a class="headerlink" href="#javascript-basics" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="javascript">
+<h2>什么是 JavaScript？<a class="headerlink" href="#javascript" title="Permalink to this headline">¶</a></h2>
+<p>JS 是一个成熟的动态编程语言，它能为网站添加交互。Brendan Eich(co-founder of the Mozilla project, the Mozilla Foundation, and the Mozilla Corporation) 发明了 JS。</p>
+<p>JS 相对简洁，而且非常灵活。开发人员已经在核心 JavaScript 语言之上编写了各种各样的工具，用最小的努力解锁了大量的功能。它们包括：</p>
+<ul class="simple">
+<li><p>内建浏览器的 API：提供动态编辑 HTML 和设置 CSS 样式的功能</p></li>
+<li><p>第三方 API 允许开发人员与网站进行交互，例如 Twitter/ Facebook</p></li>
+<li><p>第三方框架和库能够让你操作 HTML，从而加快构建网站和应用</p></li>
+</ul>
+</div>
+<div class="section" id="hello-world">
+<h2><code class="docutils literal notranslate"><span class="pre">Hello,</span> <span class="pre">World!</span></code><a class="headerlink" href="#hello-world" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">const</span> <span class="nx">myFirstCode</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;h1&#39;</span><span class="p">);</span>
+<span class="nx">myFirstCode</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="s1">&#39;Hello, World!&#39;</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>作为 js 文件导入 HTML时，应该把 <code class="docutils literal notranslate"><span class="pre">&lt;script</span> <span class="pre">src=&quot;*.js&quot;&gt;&lt;/script&gt;</span></code> 放在 <code class="docutils literal notranslate"><span class="pre">&lt;/body&gt;</span></code> 前，确保在加载 js 时 HTML 已经准备好。</p>
+</div>
+<div class="section" id="id1">
+<h2>变量<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>变量是存储值的容器。</p>
+<p>计算机可以识别数字，例如 <code class="docutils literal notranslate"><span class="pre">2</span></code>，字符串，例如 <code class="docutils literal notranslate"><span class="pre">&quot;2&quot;</span></code>,<code class="docutils literal notranslate"><span class="pre">&quot;cat&quot;</span></code>， 或者 <code class="docutils literal notranslate"><span class="pre">&quot;2</span> <span class="pre">cat&quot;</span></code>，最后一个是字符的组合。计算机能进行有关数字的数学运算，但它不能运算字符串。</p>
+<p>计算机能以动态方式存储操作变量。计算机使用标签指向数据，而不是直接使用数据。变量可以是八种数据类型的任何一个或多个。</p>
+<p>这里的变量和你在数学中用到的 x 和 y 变量很像，这说明变量是一个代表我们想用的数据的简单名字。计算机变量不同于数学变量，因为它们可以在不同的时间存储不同的值。</p>
+<p>在 JavaScript 中，使用 <code class="docutils literal notranslate"><span class="pre">let</span></code>(不建议使用 <code class="docutils literal notranslate"><span class="pre">var</span></code>，ES6 引入了 <code class="docutils literal notranslate"><span class="pre">let</span></code>) 创建或声明一个变量：</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">let</span> <span class="nx">myName</span>
+<span class="nx">myName</span> <span class="o">=</span> <span class="s1">&#39;Jim&#39;</span>
+
+<span class="c1">// or</span>
+<span class="kd">let</span> <span class="nx">myName</span> <span class="o">=</span> <span class="s1">&#39;Jim&#39;</span>
+</pre></div>
+</div>
+<p>在 JavaScript 中使用分号结束声明。<cite>是否/在什么时候使用 `</cite>;``？ &lt;<a class="reference external" href="https://www.codecademy.com/resources/blog/your-guide-to-semicolons-in-javascript/">https://www.codecademy.com/resources/blog/your-guide-to-semicolons-in-javascript/</a>&gt;`_。<strong>数字、字母和 ``$`` 或 ``_``是变量名组成范围</strong>，但是：</p>
+<ol class="arabic simple">
+<li><p>变量不能含有空格；</p></li>
+<li><p>首字母不能是数字。</p></li>
+</ol>
+<p>变量可以不断赋值：</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">let</span> <span class="nx">a</span> <span class="o">=</span> <span class="s1">&#39;a&#39;</span>
+<span class="nx">a</span> <span class="o">=</span> <span class="s1">&#39;b&#39;</span>
+</pre></div>
+</div>
+<p>变量能够表示的数据类型：</p>
+<ul class="simple">
+<li><p>String：单引号包裹的文本就是字符串</p></li>
+<li><p>Number：数字没有引号</p></li>
+<li><p>Boolean：<code class="docutils literal notranslate"><span class="pre">true</span></code>/<code class="docutils literal notranslate"><span class="pre">false</span></code> 是特殊关键字，不需要引号</p></li>
+<li><p>Array：这种结构允许我在单个引用中存储多个值</p></li>
+<li><p>Object：这可以是任何东西。JavaScript 中的所有内容都是一个对象，可以存储在一个变量中。在我学习的时候记住这一点。</p></li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2>注释<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>JavaScript 会忽略被注释掉的代码。写注释能够帮你或别人弄清楚代码的意思。注释的两种方法：</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// This is an in-line comment.</span>
+
+<span class="cm">/* This is a</span>
+<span class="cm">multi-line comment */</span>
+</pre></div>
+</div>
+<p>好的注释能够帮助代码传达实现意图。</p>
+</div>
+<div class="section" id="id3">
+<h2>操作符<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>操作符是一种数学符号，能够产生基于两个值的结果。</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">+</span></code>(Addition)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-</span></code>,<code class="docutils literal notranslate"><span class="pre">*</span></code>,<code class="docutils literal notranslate"><span class="pre">/</span></code>(Subtraction, Multiplication, Division)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">=</span></code>(Assignment)：把值赋给变量</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">===</span></code>(Equality)：它返回布尔值</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">!</span></code>,<code class="docutils literal notranslate"><span class="pre">!==</span></code>(Not, Does-not-equal)：前者将返回与之前的值在逻辑上相反的值；后者测试两个值是否不相等，如果不想等，返回 <code class="docutils literal notranslate"><span class="pre">true</span></code>，相等则返回 <code class="docutils literal notranslate"><span class="pre">false</span></code>。</p></li>
+</ul>
+<p>当计算时混合数据类型会导致奇怪的运行结果。</p>
+</div>
+<div class="section" id="id4">
+<h2>条件语句<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="k">if</span><span class="p">(</span><span class="nx">conditions</span><span class="p">)</span> <span class="p">{</span>
+
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id5">
+<h2>函数<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p>函数是一种包装复用功能的一种方式。函数后有 <code class="docutils literal notranslate"><span class="pre">()</span></code> 跟随，函数接受参数 <code class="docutils literal notranslate"><span class="pre">function(var1,</span> <span class="pre">var2,</span> <span class="pre">...)</span></code></p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">multiply</span><span class="p">(</span><span class="nx">num1</span><span class="p">,</span> <span class="nx">num2</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">num1</span> <span class="o">*</span> <span class="nx">num2</span>
+  <span class="k">return</span> <span class="nx">result</span>
+<span class="p">}</span>
+<span class="nx">multiply</span><span class="p">(</span><span class="mf">2</span><span class="p">,</span><span class="mf">3</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">return</span></code> 是必须的，因为这样才能返回运算结果。否则由于作用域的限制，函数内部的运算无法显示至全局。</p>
+</div>
+<div class="section" id="id6">
+<h2>事件<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<p>网站上的真正交互性需要事件处理程序。这些代码结构监听浏览器上的活动并运行代码回复。</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;html&#39;</span><span class="p">).</span><span class="nx">onclick</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Oh1 Stop touching me!&#39;</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="c1">// or</span>
+
+<span class="kd">let</span> <span class="nx">myHTML</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;html&#39;</span><span class="p">)</span>
+<span class="nx">myHTML</span><span class="p">.</span><span class="nx">onclick</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="p">...</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="id7">
+<h2>基本运算<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id8">
+<h3>两数加法<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">Number</span></code> 是 JavaScript 中的一种数据类型，它可以表示数字数据。<code class="docutils literal notranslate"><span class="pre">+</span></code> 是 JavaScript 的加法操作运算符。</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">myVar</span> <span class="o">=</span> <span class="mf">1</span> <span class="o">+</span> <span class="mf">2</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id9">
+<h3>两数相减<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">myVar</span> <span class="o">=</span> <span class="mf">2</span> <span class="o">-</span> <span class="mf">1</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id10">
+<h3>两数相乘<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">myVar</span> <span class="o">=</span> <span class="mf">2</span> <span class="o">*</span> <span class="mf">3</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id11">
+<h3>两数相除<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">myVar</span> <span class="o">=</span> <span class="mf">4</span> <span class="o">/</span> <span class="mf">2</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id12">
+<h2>自增 1 再赋值<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">i</span><span class="o">++</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id13">
+<h2>自减 1 再赋值<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">i</span><span class="o">--</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id14">
+<h2>创建十进制数<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h2>
+<p>十进制数有时候也可看成 <em>floating point numbers</em> 或 <em>floats</em>。</p>
+<p><strong>不过并非所有实数都能用浮点数准确表示。这样会导致化整误差</strong>。</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">myDecimal</span> <span class="o">=</span> <span class="mf">2.3</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id15">
+<h2>两浮点数相乘<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">product</span> <span class="o">=</span> <span class="mf">2.0</span> <span class="o">*</span> <span class="mf">2.5</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id16">
+<h2>两浮点数相除<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">quotient</span> <span class="o">=</span> <span class="mf">4.4</span> <span class="o">/</span> <span class="mf">2.0</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id17">
+<h2>取余<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h2>
+<p>余数运算符 <code class="docutils literal notranslate"><span class="pre">％</span></code> 给出两个数字除法的余数（取余操作符 <code class="docutils literal notranslate"><span class="pre">%</span></code> 作为两数相除后的余数标志，括号内的是自己的翻译）。</p>
+<p>在数学中，通过检查与 <code class="docutils literal notranslate"><span class="pre">2</span></code> 整除的余数来确定一个数字是偶数还是奇数。</p>
+<p><strong>有时，取余操作符有时会被误认为是模操作符</strong>。它和模操作符很像，但它无法识别负数。</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">remainder</span> <span class="o">=</span> <span class="mf">11</span> <span class="o">%</span> <span class="mf">3</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id18">
+<h2>用括号在字符串中寻找字符<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h2>
+<p>大多数现代编程语言从 0 开始计数。</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">firstName</span> <span class="o">=</span> <span class="s2">&quot;Tianhe Gao&quot;</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">firstLetter</span> <span class="o">=</span> <span class="nx">firstName</span><span class="p">[</span><span class="mf">0</span><span class="p">];</span>
+<span class="c1">// ouput: T</span>
+
+<span class="c1">// 找第 n 个字符</span>
+<span class="kd">var</span> <span class="nx">firstName</span> <span class="o">=</span> <span class="s2">&quot;Ada&quot;</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">secondLetterOfFirstName</span> <span class="o">=</span> <span class="nx">firstname</span><span class="p">[</span><span class="mf">1</span><span class="p">];</span>
+<span class="c1">// output: d</span>
+
+<span class="c1">// 找最后一个字符</span>
+<span class="kd">var</span> <span class="nx">firstName</span> <span class="o">=</span> <span class="s2">&quot;Ada&quot;</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">lastLetter</span> <span class="o">=</span> <span class="nx">firstName</span><span class="p">[</span><span class="nx">firstName</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mf">1</span><span class="p">];</span>
+
+<span class="c1">// 找倒数第 n 个</span>
+<span class="kd">var</span> <span class="nx">firstName</span> <span class="o">=</span> <span class="s2">&quot;Charles&quot;</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">thirdToLastLetter</span> <span class="o">=</span> <span class="nx">firstName</span><span class="p">[</span><span class="nx">firstName</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mf">3</span><span class="p">];</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id19">
+<h2>理解的字符串的不变性<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h2>
+<p>JavaScript 中，字符串的值一经创建无法修改。除非重新赋值。</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">myStr</span> <span class="o">=</span> <span class="s2">&quot;Amy&quot;</span><span class="p">;</span>
+<span class="nx">myStr</span> <span class="o">=</span> <span class="s2">&quot;Tom&quot;</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id20">
+<h2>填字游戏<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">myNoun</span> <span class="o">=</span> <span class="s1">&#39;dog&#39;</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">myAdjective</span> <span class="o">=</span> <span class="s1">&#39;Big&#39;</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">myVerb</span> <span class="o">=</span> <span class="s1">&#39;ran&#39;</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">myAdverb</span> <span class="o">=</span> <span class="s1">&#39;quickly&#39;</span><span class="p">;</span>
+
+<span class="kd">var</span> <span class="nx">wordBlanks</span> <span class="o">=</span>
+    <span class="nx">myAdjective</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="nx">myNoun</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="nx">myVerb</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="nx">myAdverb</span> <span class="o">+</span> <span class="s1">&#39;.&#39;</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">wordBlanks</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id21">
+<h2>变量存储多值<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">sandwich</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;A&quot;</span><span class="p">,</span> <span class="s2">&quot;B&quot;</span><span class="p">,</span> <span class="s2">&quot;C&quot;</span><span class="p">,</span> <span class="mf">12</span><span class="p">];</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id22">
+<h2>数组嵌套<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">myArray</span> <span class="o">=</span> <span class="p">[[</span><span class="s2">&quot;Amy&quot;</span><span class="p">,</span> <span class="mf">21</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot;Tom&quot;</span><span class="p">,</span> <span class="mf">23</span><span class="p">]];</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id23">
+<h2>使用索引访问数组数据<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">myArray</span> <span class="o">=</span> <span class="p">[</span><span class="mf">50</span><span class="p">,</span><span class="mf">60</span><span class="p">,</span><span class="mf">70</span><span class="p">];</span>
+<span class="kd">var</span> <span class="nx">myData</span> <span class="o">=</span> <span class="nx">myArray</span><span class="p">[</span><span class="mf">0</span><span class="p">];</span>
+
+<span class="c1">// 使用索引修改数组数据</span>
+<span class="kd">var</span> <span class="nx">myArray</span> <span class="o">=</span> <span class="p">[</span><span class="mf">18</span><span class="p">,</span><span class="mf">64</span><span class="p">,</span><span class="mf">99</span><span class="p">];</span>
+<span class="nx">myArray</span><span class="p">[</span><span class="mf">0</span><span class="p">]</span> <span class="o">=</span> <span class="mf">45</span><span class="p">;</span>
+
+<span class="c1">// 使用索引访问多维数组</span>
+<span class="kd">var</span> <span class="nx">myArray</span> <span class="o">=</span> <span class="p">[[</span><span class="mf">1</span><span class="p">,</span><span class="mf">2</span><span class="p">,</span><span class="mf">3</span><span class="p">],</span> <span class="p">[</span><span class="mf">4</span><span class="p">,</span><span class="mf">5</span><span class="p">,</span><span class="mf">6</span><span class="p">],</span> <span class="p">[</span><span class="mf">7</span><span class="p">,</span><span class="mf">8</span><span class="p">,</span><span class="mf">9</span><span class="p">],</span> <span class="p">[[</span><span class="mf">10</span><span class="p">,</span><span class="mf">11</span><span class="p">,</span><span class="mf">12</span><span class="p">],</span> <span class="mf">13</span><span class="p">,</span> <span class="mf">14</span><span class="p">]];</span>
+<span class="kd">var</span> <span class="nx">myData</span> <span class="o">=</span> <span class="nx">myArray</span><span class="p">[</span><span class="mf">2</span><span class="p">][</span><span class="mf">1</span><span class="p">];</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id24">
+<h2>首尾增减数组<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="unshift">
+<h3><code class="docutils literal notranslate"><span class="pre">unshift()</span></code><a class="headerlink" href="#unshift" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">unshift()</span></code> 从数组的开头添加元素</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">ourArray</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">];</span>
+<span class="nx">ourArray</span><span class="p">.</span><span class="nx">shift</span><span class="p">();</span>
+<span class="nx">ourArray</span><span class="p">.</span><span class="nx">unshift</span><span class="p">(</span><span class="s1">&#39;D&#39;</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">ourArray</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="shift">
+<h3><code class="docutils literal notranslate"><span class="pre">shift()</span></code><a class="headerlink" href="#shift" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">shift()</span></code> 从数组的开头移除元素</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">ourArray</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;A&quot;</span><span class="p">,</span> <span class="s2">&quot;B&quot;</span><span class="p">,</span> <span class="s2">&quot;C&quot;</span><span class="p">];</span>
+<span class="kd">var</span> <span class="nx">removeFromOurArray</span> <span class="o">=</span> <span class="nx">ourArray</span><span class="p">.</span><span class="nx">shift</span><span class="p">();</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="push">
+<h3><code class="docutils literal notranslate"><span class="pre">push()</span></code><a class="headerlink" href="#push" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">push()</span></code> 能够很轻松地在数组的最后附加数据。</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">myArray</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">[</span><span class="s1">&#39;John&#39;</span><span class="p">,</span> <span class="mf">23</span><span class="p">],</span>
+    <span class="p">[</span><span class="s1">&#39;cat&#39;</span><span class="p">,</span> <span class="mf">2</span><span class="p">],</span>
+<span class="p">];</span>
+<span class="nx">myArray</span><span class="p">.</span><span class="nx">push</span><span class="p">([</span><span class="s1">&#39;dog&#39;</span><span class="p">,</span> <span class="mf">3</span><span class="p">]);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">myArray</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="pop">
+<h3><code class="docutils literal notranslate"><span class="pre">pop()</span></code><a class="headerlink" href="#pop" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">pop()</span></code> 从数组的最后移除元素</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">threeArr</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1</span><span class="p">,</span> <span class="mf">4</span><span class="p">,</span> <span class="mf">6</span><span class="p">];</span>
+<span class="kd">var</span> <span class="nx">oneDown</span> <span class="o">=</span> <span class="nx">threeArr</span><span class="p">.</span><span class="nx">pop</span><span class="p">();</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">oneDown</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">threeArr</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="list">
+<h2>创建 <code class="docutils literal notranslate"><span class="pre">List</span></code><a class="headerlink" href="#list" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">List</span></code> 是包含几个子数组的多维数组。作为购物清单的话，多维数组的子数组的第一个元素是包含购买物品的名字的字符串，第二个元素应该是表示数量的数字：<code class="docutils literal notranslate"><span class="pre">[&quot;Chocolate&quot;,</span> <span class="pre">12]</span></code>。</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">myList</span> <span class="o">=</span> <span class="p">[[</span><span class="s2">&quot;A&quot;</span><span class="p">,</span> <span class="mf">12</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot;B&quot;</span><span class="p">,</span> <span class="mf">13</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot;C&quot;</span><span class="p">,</span> <span class="mf">14</span><span class="p">],[</span><span class="s2">&quot;D&quot;</span><span class="p">,</span> <span class="mf">15</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot;E&quot;</span><span class="p">,</span> <span class="mf">16</span><span class="p">]];</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id25">
+<h2>使用函数编写可复用的 JavaScript<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">functionName</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Hello World&#39;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nx">functionName</span><span class="p">();</span>
+</pre></div>
+</div>
+<p>你可以通过类似 <code class="docutils literal notranslate"><span class="pre">functionName()</span></code> 的形式调用该函数。这个函数每调用一次都会在开发控制台打印输出信息：<code class="docutils literal notranslate"><span class="pre">Hello</span> <span class="pre">World</span></code>。每次调用函数时，大括号内的所有代码都会执行一次。</p>
+</div>
+<div class="section" id="id26">
+<h2>使用参数将值传递给函数<a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h2>
+<p>参数是用作变量的占位符，这些变量将在调用函数时输入到函数中。</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">functionWithArgs</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nx">functionWithArgs</span><span class="p">(</span><span class="mf">12</span><span class="p">,</span> <span class="mf">13</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id27">
+<h2>全局作用域和函数<a class="headerlink" href="#id27" title="Permalink to this headline">¶</a></h2>
+<p>JavaScript 中，范围是指变量的可见性。在功能块之外定义的变量具有全局作用域。这意味着它们可以被用于 JavaScript 代码的任何地方。变量创建的作用域为全局，当不使用 <code class="docutils literal notranslate"><span class="pre">var</span></code> 声明时。这样做时会使你代码的其他地方产生意想不到的结果，或者当你再次使用函数时。你应该总是使用 <code class="docutils literal notranslate"><span class="pre">var</span></code> 声明变量。</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="c1">// Declare the myGlobal variable below this line</span>
+<span class="kd">var</span> <span class="nx">myGlobal</span> <span class="o">=</span> <span class="mf">10</span><span class="p">;</span>
+
+<span class="kd">function</span> <span class="nx">fun1</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// Assign 5 to oopsGlobal Here</span>
+    <span class="nx">oopsGlobal</span> <span class="o">=</span> <span class="mf">5</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// Only change code above this line</span>
+
+<span class="kd">function</span> <span class="nx">fun2</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">output</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="ow">typeof</span> <span class="nx">myGlobal</span> <span class="o">!=</span> <span class="s1">&#39;undefined&#39;</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">output</span> <span class="o">+=</span> <span class="s1">&#39;myGlobal: &#39;</span> <span class="o">+</span> <span class="nx">myGlobal</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">if</span> <span class="p">(</span><span class="ow">typeof</span> <span class="nx">oopsGlobal</span> <span class="o">!=</span> <span class="s1">&#39;undefined&#39;</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">output</span> <span class="o">+=</span> <span class="s1">&#39; oopsGlobal: &#39;</span> <span class="o">+</span> <span class="nx">oopsGlobal</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">output</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nx">fun1</span><span class="p">();</span>
+<span class="nx">fun2</span><span class="p">();</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id28">
+<h2>局部作用域和函数<a class="headerlink" href="#id28" title="Permalink to this headline">¶</a></h2>
+<p>在函数中声明的变量以及函数参数具有局部作用域。这意味着他们只在该函数中可见。</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">myLocalScope</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// Only change code below this line</span>
+    <span class="kd">var</span> <span class="nx">myVar</span><span class="p">;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;inside myLocalScope&#39;</span><span class="p">,</span> <span class="nx">myVar</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nx">myLocalScope</span><span class="p">();</span>
+
+<span class="c1">// Run and check the console</span>
+<span class="c1">// myVar is not defined outside of myLocalScope</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;outside myLocalScope&#39;</span><span class="p">,</span> <span class="nx">myVar</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id29">
+<h2>函数中的全局和局部变量<a class="headerlink" href="#id29" title="Permalink to this headline">¶</a></h2>
+<p>有可能局部变量和全局变量的名字相同。当出现这种情况时，局部变量的优先级高于全局变量。</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">someVar</span> <span class="o">=</span> <span class="s1">&#39;Hat&#39;</span><span class="p">;</span>
+<span class="kd">function</span> <span class="nx">myFun</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">someVar</span> <span class="o">=</span> <span class="s1">&#39;Head&#39;</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nx">someVar</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">myFun</span><span class="p">());</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="return">
+<h2>使用 <code class="docutils literal notranslate"><span class="pre">return</span></code> 将值发回函数<a class="headerlink" href="#return" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">plusThree</span><span class="p">(</span><span class="nx">num</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">num</span> <span class="o">+</span> <span class="mf">3</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kd">var</span> <span class="nx">answer</span> <span class="o">=</span> <span class="nx">plusThree</span><span class="p">(</span><span class="mf">5</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">answer</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="undefined">
+<h2><code class="docutils literal notranslate"><span class="pre">undefined</span></code> 值<a class="headerlink" href="#undefined" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">sum</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span>
+<span class="kd">function</span> <span class="nx">addSum</span><span class="p">(</span><span class="nx">num</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">sum</span> <span class="o">=</span> <span class="nx">sum</span> <span class="o">+</span> <span class="nx">sum</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">addSum</span><span class="p">(</span><span class="mf">3</span><span class="p">));</span>
+<span class="c1">// output: undefined</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id30">
+<h2>赋返回值<a class="headerlink" href="#id30" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">processed</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span>
+<span class="kd">function</span> <span class="nx">processArg</span><span class="p">(</span><span class="nx">num</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">(</span><span class="nx">num</span> <span class="o">+</span> <span class="mf">3</span><span class="p">)</span> <span class="o">/</span> <span class="mf">5</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">processed</span> <span class="o">=</span> <span class="nx">processArg</span><span class="p">(</span><span class="mf">7</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">processed</span><span class="p">);</span>
+<span class="c1">// output: 2</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id31">
+<h2>排队等候<a class="headerlink" href="#id31" title="Permalink to this headline">¶</a></h2>
+<p>在计算机科学中，队列是一种抽象的数据结构，它的对象按照一定顺序排列。遵从“先进先出，后进后出”的规则。</p>
+<p><a href="#id32"><span class="problematic" id="id33">**</span></a><em>着重理解，这段代码</em>**</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">nextInLine</span><span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="nx">item</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">arr</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">item</span><span class="p">);</span>
+  <span class="k">return</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">shift</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="c1">// or</span>
+<span class="c1">// function nextInLine(arr, item) {</span>
+<span class="c1">//   arr.push(item);</span>
+<span class="c1">//   var removed = arr.shift();</span>
+<span class="c1">//   return removed;</span>
+<span class="c1">// }</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id34">
+<h2>布尔型<a class="headerlink" href="#id34" title="Permalink to this headline">¶</a></h2>
+<p>它是一种数据类型。只有两个值：<code class="docutils literal notranslate"><span class="pre">True</span></code> 和 <code class="docutils literal notranslate"><span class="pre">False</span></code>，且互相排斥。注意：布尔型书写时没有引号，带引号的字符串：<span class="raw-html-m2r"><code class="docutils literal"><span class="pre">"true"&#96;&#96;"false"</span></code></span>，不是布尔型，在 JavaScript 中没有特殊意义。</p>
+<p>函数返回布尔型：</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">isLess</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">a</span> <span class="o">&lt;</span> <span class="nx">b</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="if">
+<h2>用 <code class="docutils literal notranslate"><span class="pre">if</span></code> 表达条件逻辑<a class="headerlink" href="#if" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="k">if</span><span class="p">(</span><span class="kc">true</span> <span class="o">/</span> <span class="kc">false</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">statement</span> <span class="nx">is</span> <span class="nx">executed</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>只有当 if 后括号中的值为 true 时，大括号内的代码才执行。if 与括号之间可以有空格，但为了规范，不写空格。</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">trueOrFalse</span><span class="p">(</span><span class="nx">wasThatTrue</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">wasThatTrue</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">&quot;Yes, that was true&quot;</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="s2">&quot;No, that was false&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="else-else-if">
+<h2><code class="docutils literal notranslate"><span class="pre">else</span></code>, <code class="docutils literal notranslate"><span class="pre">else</span> <span class="pre">if</span></code><a class="headerlink" href="#else-else-if" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="c1">// else</span>
+<span class="k">if</span><span class="p">(</span><span class="nx">num</span> <span class="o">&gt;</span> <span class="mf">10</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="s2">&quot;Bigger than 10&quot;</span><span class="p">;</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="s2">&quot;10 or less&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">// else if</span>
+<span class="k">if</span><span class="p">(</span><span class="nx">num</span> <span class="o">&gt;</span> <span class="mf">15</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="s2">&quot;Bigger than 15&quot;</span><span class="p">;</span>
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="nx">num</span> <span class="o">&lt;</span> <span class="mf">5</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="s2">&quot;Smaller than 5&quot;</span><span class="p">;</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="s2">&quot;Between 5 and 15&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">if</span></code>, <code class="docutils literal notranslate"><span class="pre">else</span> <span class="pre">if</span></code> 中的逻辑顺序很重要。以下示例：</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="c1">// A</span>
+<span class="kd">function</span> <span class="nx">foo</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">x</span> <span class="o">&lt;</span> <span class="mf">1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">&quot;Less than one&quot;</span><span class="p">;</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">x</span> <span class="o">&lt;</span> <span class="mf">2</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">&quot;Less than two&quot;</span><span class="p">;</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">&quot;Greater than or equal to two&quot;</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="nx">foo</span><span class="p">(</span><span class="mf">0</span><span class="p">)</span> <span class="c1">// output: Less than one</span>
+<span class="c1">// B</span>
+<span class="kd">function</span> <span class="nx">bar</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">x</span> <span class="o">&lt;</span> <span class="mf">2</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">&quot;Less than two&quot;</span><span class="p">;</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">x</span> <span class="o">&lt;</span> <span class="mf">1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">&quot;Less than one&quot;</span><span class="p">;</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">&quot;Greater than or equal to two&quot;</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="nx">bar</span><span class="p">(</span><span class="mf">0</span><span class="p">)</span> <span class="c1">// output: Less than two</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">if</span></code> 和 <code class="docutils literal notranslate"><span class="pre">else</span> <span class="pre">if</span></code> 配合使用：</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">testSize</span><span class="p">(</span><span class="nx">num</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">num</span> <span class="o">&lt;</span> <span class="mf">5</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">&quot;Tiny&quot;</span><span class="p">;</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">num</span> <span class="o">&lt;</span> <span class="mf">10</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">&quot;Small&quot;</span><span class="p">;</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">num</span> <span class="o">&lt;</span> <span class="mf">15</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">&quot;Medium&quot;</span><span class="p">;</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">num</span> <span class="o">&lt;</span> <span class="mf">20</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">&quot;Large&quot;</span><span class="p">;</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">num</span> <span class="o">&gt;=</span> <span class="mf">20</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">&quot;Huge&quot;</span><span class="p">;</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">&quot;Change me&quot;</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="nx">testSize</span><span class="p">(</span><span class="mf">7</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="switch">
+<h2><code class="docutils literal notranslate"><span class="pre">switch</span></code><a class="headerlink" href="#switch" title="Permalink to this headline">¶</a></h2>
+<p>在这个例子中，没有理解 <code class="docutils literal notranslate"><span class="pre">case</span></code> 后的值采用 <code class="docutils literal notranslate"><span class="pre">===</span></code>（严格等于）的真正含义。</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">caseInSwitch</span><span class="p">(</span><span class="nx">val</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">answer</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
+  <span class="k">switch</span><span class="p">(</span><span class="nx">val</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="mf">1</span><span class="o">:</span>
+      <span class="k">return</span> <span class="s2">&quot;alpha&quot;</span><span class="p">;</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="mf">2</span><span class="o">:</span>
+      <span class="k">return</span> <span class="s2">&quot;beta&quot;</span><span class="p">;</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="mf">3</span><span class="o">:</span>
+      <span class="k">return</span> <span class="s2">&quot;gamma&quot;</span><span class="p">;</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="mf">4</span><span class="o">:</span>
+      <span class="k">return</span> <span class="s2">&quot;delta&quot;</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="nx">answer</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">caseInSwitch</span><span class="p">(</span><span class="mf">3</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>如果 <code class="docutils literal notranslate"><span class="pre">switch</span></code> 语句的 <code class="docutils literal notranslate"><span class="pre">case</span></code> 中省略了 <code class="docutils literal notranslate"><span class="pre">break</span></code> 语句，则执行下面的 <code class="docutils literal notranslate"><span class="pre">case</span></code> 语句，直到遇到 <code class="docutils literal notranslate"><span class="pre">break</span></code>。如果你有多个带有相同输出的输入，你可以像下面这样表示：</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">result</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
+<span class="k">switch</span><span class="p">(</span><span class="nx">val</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">case</span> <span class="mf">1</span><span class="o">:</span>
+  <span class="k">case</span> <span class="mf">2</span><span class="o">:</span>
+  <span class="k">case</span> <span class="mf">3</span><span class="o">:</span>
+    <span class="nx">result</span> <span class="o">=</span> <span class="s2">&quot;1, 2, or 3&quot;</span><span class="p">;</span>
+    <span class="k">break</span><span class="p">;</span>
+  <span class="k">case</span> <span class="mf">4</span><span class="o">:</span>
+    <span class="nx">result</span> <span class="o">=</span> <span class="s2">&quot;4 alone&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">switch</span></code> 语句与 <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">/</span> <span class="pre">if</span> <span class="pre">else</span></code> 可以互相替换，前者相较于后者更容易编写。</p>
+<p><strong>一个应用的小例子（Card Counting）</strong>：</p>
+<p>没找到解题思路</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">count</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span>
+<span class="kd">function</span> <span class="nx">cc</span><span class="p">(</span><span class="nx">card</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">switch</span><span class="p">(</span><span class="nx">card</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="mf">2</span><span class="o">:</span>
+    <span class="k">case</span> <span class="mf">3</span><span class="o">:</span>
+    <span class="k">case</span> <span class="mf">4</span><span class="o">:</span>
+    <span class="k">case</span> <span class="mf">5</span><span class="o">:</span>
+    <span class="k">case</span> <span class="mf">6</span><span class="o">:</span>
+      <span class="nx">count</span><span class="o">++</span><span class="p">;</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="mf">10</span><span class="o">:</span>
+    <span class="k">case</span> <span class="s1">&#39;J&#39;</span><span class="o">:</span>
+    <span class="k">case</span> <span class="s1">&#39;Q&#39;</span><span class="o">:</span>
+    <span class="k">case</span> <span class="s1">&#39;K&#39;</span><span class="o">:</span>
+    <span class="k">case</span> <span class="s1">&#39;A&#39;</span><span class="o">:</span>
+      <span class="nx">count</span><span class="o">--</span><span class="p">;</span>
+      <span class="k">break</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">count</span> <span class="o">&gt;</span> <span class="mf">0</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">count</span> <span class="o">+</span> <span class="s2">&quot; Bet&quot;</span><span class="p">;</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">count</span> <span class="o">+</span> <span class="s2">&quot; Hold&quot;</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id35">
+<h2>比较运算符<a class="headerlink" href="#id35" title="Permalink to this headline">¶</a></h2>
+<p>JavaScript 中有很多比较运算符，它们的运算结果是布尔型，即只返回：<code class="docutils literal notranslate"><span class="pre">True</span></code> 和 <code class="docutils literal notranslate"><span class="pre">False</span></code>。</p>
+<p><strong>强制类型转换（ Type Coercion）</strong></p>
+<div class="section" id="equal-2">
+<h3><cite>``==`</cite> &lt;#equal-2&gt;`_<a class="headerlink" href="#equal-2" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">testEqual</span><span class="p">(</span><span class="nx">val</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">val</span> <span class="o">==</span> <span class="mf">12</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">&quot;Equal&quot;</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="s2">&quot;Not Equal&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">testEqual</span><span class="p">(</span><span class="mf">10</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="equal-3">
+<h3><cite>``===`</cite> &lt;#equal-3&gt;`_<a class="headerlink" href="#equal-3" title="Permalink to this headline">¶</a></h3>
+<p>Strict equality (<code class="docutils literal notranslate"><span class="pre">===</span></code>) is the counterpart to the equality operator (<code class="docutils literal notranslate"><span class="pre">==</span></code>). 严格相等运算符不支持类型转换，如果比较两个数据类型不同的值，返回值为：<code class="docutils literal notranslate"><span class="pre">false</span></code>。亦即，严格相等运算符在运算时比较两项：数据类型、大小，有一个不同即返回：<code class="docutils literal notranslate"><span class="pre">False</span></code>。</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">tesstStrict</span><span class="p">(</span><span class="nx">val</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">val</span> <span class="o">===</span> <span class="mf">7</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">&quot;Equal&quot;</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="s2">&quot;Not Equal&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">testStrict</span><span class="p">(</span><span class="mf">10</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="exclamation-equal">
+<h3><cite>`</cite>!=`` &lt;#exclamation-equal&gt;`_<a class="headerlink" href="#exclamation-equal" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">testNotEqual</span><span class="p">(</span><span class="nx">val</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">val</span> <span class="o">!=</span> <span class="mf">99</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">&quot;Not Equal&quot;</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="s2">&quot;Equal&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">testNotequal</span><span class="p">(</span><span class="mf">10</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="exclamation-equal-2">
+<h3><cite>`</cite>!==`` &lt;#exclamation-equal-2&gt;`_<a class="headerlink" href="#exclamation-equal-2" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">testStrictNotEqual</span><span class="p">(</span><span class="nx">val</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">val</span> <span class="o">!==</span> <span class="mf">17</span><span class="p">)</span>  <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">&quot;NotEqual&quot;</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="s2">&quot;Equal&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">testStrictNotEqual</span><span class="p">(</span><span class="mf">10</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="greater-subtraction-equal">
+<h3><cite>`</cite>&gt;``, <code class="docutils literal notranslate"><span class="pre">&lt;</span></code>, <code class="docutils literal notranslate"><span class="pre">&gt;=</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;=</span></code> &lt;#greater-subtraction-equal&gt;`_<a class="headerlink" href="#greater-subtraction-equal" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mf">1</span> <span class="o">&gt;</span> <span class="mf">2</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mf">2</span> <span class="o">&lt;</span> <span class="mf">3</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mf">2</span> <span class="o">&lt;=</span> <span class="mf">3</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mf">1</span> <span class="o">&gt;=</span> <span class="mf">2</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="logical-and-or">
+<h3><cite>``&amp;&amp;`</cite>, <code class="docutils literal notranslate"><span class="pre">||</span></code> &lt;logical-and-or&gt;`_<a class="headerlink" href="#logical-and-or" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="c1">// &amp;&amp;</span>
+<span class="kd">function</span> <span class="nx">testLogicalAnd</span><span class="p">(</span><span class="nx">val</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">val</span> <span class="o">&lt;=</span> <span class="mf">50</span> <span class="o">&amp;&amp;</span> <span class="nx">val</span> <span class="o">&gt;=</span> <span class="mf">25</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">&quot;Yes&quot;</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="s2">&quot;No&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">testLogicalAnd</span><span class="p">(</span><span class="mf">10</span><span class="p">);</span>
+<span class="c1">// ||</span>
+<span class="kd">function</span> <span class="nx">testLogicalOr</span><span class="p">(</span><span class="nx">val</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">val</span> <span class="o">&lt;</span> <span class="mf">10</span> <span class="o">||</span> <span class="nx">val</span> <span class="o">&gt;</span> <span class="mf">20</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">&quot;Outside&quot;</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="s2">&quot;Inside&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">testLogicalor</span><span class="p">(</span><span class="mf">15</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id36">
+<h2><code class="docutils literal notranslate"><span class="pre">return</span></code><a class="headerlink" href="#id36" title="Permalink to this headline">¶</a></h2>
+<p>返回函数的早期模式：函数中遇到 <code class="docutils literal notranslate"><span class="pre">return</span></code>，当函数运行到 <code class="docutils literal notranslate"><span class="pre">return</span></code> 时，返回 <code class="docutils literal notranslate"><span class="pre">return</span></code> 后面的值，该函数停止执行以后的陈述：</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">myFunc</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">);</span>
+  <span class="k">return</span> <span class="s2">&quot;World&quot;</span><span class="p">;</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;byebye&quot;</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="nx">myFunc</span><span class="p">();</span>
+<span class="c1">// Output: Hello\n&quot;World&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id37">
+<h2>构建对象<a class="headerlink" href="#id37" title="Permalink to this headline">¶</a></h2>
+<p><span class="raw-html-m2r"><mark>对象和数组很像，只不过对象不使用索引存取和修改数据，而是通过属性</mark></span>。对象对于以结构化方式存储数据很有用。如果您的对象具有任何非字符串属性，则 JavaScript 会自动将它们作为字符串进行类型转换。</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">myDog</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;Xiaoming&quot;</span><span class="p">,</span>
+  <span class="nx">legs</span><span class="o">:</span> <span class="mf">4</span><span class="p">,</span>
+  <span class="nx">tails</span><span class="o">:</span> <span class="mf">1</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="section" id="id38">
+<h3>访问对象属性<a class="headerlink" href="#id38" title="Permalink to this headline">¶</a></h3>
+<p><a href="#id39"><span class="problematic" id="id40">**</span></a><code class="docutils literal notranslate"><span class="pre">.</span></code>**</p>
+<p>当你知道属性名，并且想提前获取时，可以使用 <code class="docutils literal notranslate"><span class="pre">.</span></code>。</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">testObj</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="s2">&quot;hat&quot;</span><span class="o">:</span> <span class="s2">&quot;ballcap&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;shirt&quot;</span><span class="o">:</span> <span class="s2">&quot;jersey&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;shoes&quot;</span><span class="o">:</span> <span class="s2">&quot;cleats&quot;</span>
+<span class="p">};</span>
+<span class="kd">var</span> <span class="nx">hatValue</span> <span class="o">=</span> <span class="nx">testObj</span><span class="p">.</span><span class="nx">hat</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">shirtValue</span> <span class="o">=</span> <span class="nx">testObj</span><span class="p">.</span><span class="nx">shirt</span><span class="p">;</span>
+</pre></div>
+</div>
+<p><a href="#id41"><span class="problematic" id="id42">**</span></a><code class="docutils literal notranslate"><span class="pre">[]</span></code>**</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">testObj</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="s2">&quot;hat&quot;</span><span class="o">:</span> <span class="s2">&quot;ballcap&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;shirt&quot;</span><span class="o">:</span> <span class="s2">&quot;jersey&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;shoes&quot;</span><span class="o">:</span> <span class="s2">&quot;cleats&quot;</span>
+<span class="p">};</span>
+<span class="nx">testObj</span><span class="p">[</span><span class="s2">&quot;hat&quot;</span><span class="p">];</span>
+<span class="nx">testObj</span><span class="p">[</span><span class="s2">&quot;shirt&quot;</span><span class="p">];</span>
+</pre></div>
+</div>
+<p><strong>变量</strong></p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">dogs</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">Fido</span><span class="o">:</span> <span class="s2">&quot;Mutt&quot;</span><span class="p">,</span> <span class="nx">Hunter</span><span class="o">:</span> <span class="s2">&quot;Doberman&quot;</span><span class="p">,</span> <span class="nx">Snoopie</span><span class="o">:</span> <span class="s2">&quot;Beagle&quot;</span>
+<span class="p">};</span>
+<span class="kd">var</span> <span class="nx">myDog</span> <span class="o">=</span> <span class="s2">&quot;Hunter&quot;</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">myBreed</span> <span class="o">=</span> <span class="nx">dogs</span><span class="p">[</span><span class="nx">myDog</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">myBread</span><span class="p">);</span>
+</pre></div>
+</div>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">someObj</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">propName</span><span class="o">:</span> <span class="s2">&quot;John&quot;</span>
+<span class="p">};</span>
+<span class="kd">function</span> <span class="nx">propPrefix</span><span class="p">(</span><span class="nx">str</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">s</span> <span class="o">=</span> <span class="s2">&quot;prop&quot;</span><span class="p">;</span>
+  <span class="k">return</span> <span class="nx">s</span> <span class="o">+</span> <span class="nx">str</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kd">var</span> <span class="nx">someProp</span> <span class="o">=</span> <span class="nx">propPrefix</span><span class="p">(</span><span class="s2">&quot;Name&quot;</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">someObj</span><span class="p">[</span><span class="nx">someProp</span><span class="p">]);</span>
+</pre></div>
+</div>
+<p>注意：当使用变量获取对象属性时，不要在变量处加引号，因为我们需要变量的值，而不是名字。</p>
+</div>
+<div class="section" id="id43">
+<h3>更新对象属性<a class="headerlink" href="#id43" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">ourDog</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Bot&#39;</span><span class="p">,</span>
+<span class="p">};</span>
+<span class="nx">ourDog</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="s1">&#39;Happy Bot&#39;</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">ourDog</span><span class="p">);</span>
+<span class="c1">// or ourDog[&quot;name&quot;] = &quot;Happy Bot&quot;;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id44">
+<h3>添加新属性<a class="headerlink" href="#id44" title="Permalink to this headline">¶</a></h3>
+<p>就像修改对象属性一样，添加新属性，不过是修改一个当前对象不存在的属性。</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">ourDog</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Bot&#39;</span><span class="p">,</span>
+<span class="p">};</span>
+<span class="nx">ourDog</span><span class="p">.</span><span class="nx">legs</span> <span class="o">=</span> <span class="mf">4</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">ourDog</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id45">
+<h3>删除属性<a class="headerlink" href="#id45" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">ourDog</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Bot&#39;</span><span class="p">,</span>
+<span class="p">};</span>
+<span class="ow">delete</span> <span class="nx">ourDog</span><span class="p">.</span><span class="nx">name</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">ourDog</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id46">
+<h3>使用对象查询<a class="headerlink" href="#id46" title="Permalink to this headline">¶</a></h3>
+<p>对象可被看作「键 / 值 存储」，就像字典。如果你有表格数据，你可以使用一个对象查询值而不是一个 <code class="docutils literal notranslate"><span class="pre">switch</span></code> 或 <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">/</span> <span class="pre">else</span></code> 语句。当你清楚你的输入数据是有限范围时很有用。</p>
+<p><strong>不会写</strong>：</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="c1">// 问题：</span>
+<span class="c1">// switch 语句转成名为 lookup 的对象</span>
+<span class="c1">// switch 语句</span>
+  <span class="k">switch</span><span class="p">(</span><span class="nx">val</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="s2">&quot;alpha&quot;</span><span class="o">:</span>
+      <span class="nx">result</span> <span class="o">=</span> <span class="s2">&quot;Adams&quot;</span><span class="p">;</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="s2">&quot;bravo&quot;</span><span class="o">:</span>
+      <span class="nx">result</span> <span class="o">=</span> <span class="s2">&quot;Boston&quot;</span><span class="p">;</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="s2">&quot;charlie&quot;</span><span class="o">:</span>
+      <span class="nx">result</span> <span class="o">=</span> <span class="s2">&quot;Chicago&quot;</span><span class="p">;</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="s2">&quot;delta&quot;</span><span class="o">:</span>
+      <span class="nx">result</span> <span class="o">=</span> <span class="s2">&quot;Denver&quot;</span><span class="p">;</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="s2">&quot;echo&quot;</span><span class="o">:</span>
+      <span class="nx">result</span> <span class="o">=</span> <span class="s2">&quot;Easy&quot;</span><span class="p">;</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="s2">&quot;foxtrot&quot;</span><span class="o">:</span>
+      <span class="nx">result</span> <span class="o">=</span> <span class="s2">&quot;Frank&quot;</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="c1">// 答案</span>
+<span class="kd">function</span> <span class="nx">phoneticLookup</span><span class="p">(</span><span class="nx">val</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">result</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">lookup</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="nx">alpha</span><span class="o">:</span> <span class="s1">&#39;Adams&#39;</span><span class="p">,</span>
+        <span class="nx">bravo</span><span class="o">:</span> <span class="s1">&#39;Boston&#39;</span><span class="p">,</span>
+        <span class="nx">charlie</span><span class="o">:</span> <span class="s1">&#39;Chicago&#39;</span><span class="p">,</span>
+        <span class="nx">delta</span><span class="o">:</span> <span class="s1">&#39;Denver&#39;</span><span class="p">,</span>
+        <span class="nx">echo</span><span class="o">:</span> <span class="s1">&#39;Easy&#39;</span><span class="p">,</span>
+        <span class="nx">fixtrot</span><span class="o">:</span> <span class="s1">&#39;Frank&#39;</span><span class="p">,</span>
+    <span class="p">};</span>
+    <span class="nx">result</span> <span class="o">=</span> <span class="nx">lookup</span><span class="p">[</span><span class="nx">val</span><span class="p">];</span> <span class="c1">// 这句话没想到这么写</span>
+    <span class="k">return</span> <span class="nx">result</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">phoneticLookup</span><span class="p">(</span><span class="s1">&#39;echo&#39;</span><span class="p">));</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id47">
+<h3>测试对象属性存在与否<a class="headerlink" href="#id47" title="Permalink to this headline">¶</a></h3>
+<p>使用 <code class="docutils literal notranslate"><span class="pre">.hasOwnProperty(propname)</span></code> 对象方法，确定对象是否有给定的属性名。如果有，<code class="docutils literal notranslate"><span class="pre">.hasOwnProperty()</span></code> 返回 <code class="docutils literal notranslate"><span class="pre">true</span></code>，反之返回 <code class="docutils literal notranslate"><span class="pre">false</span></code>。</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">tianhegObj</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">right</span><span class="o">:</span> <span class="s1">&#39;air&#39;</span><span class="p">,</span>
+    <span class="nx">left</span><span class="o">:</span> <span class="s1">&#39;life&#39;</span><span class="p">,</span>
+<span class="p">};</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">tianhegObj</span><span class="p">.</span><span class="nx">hasOwnProperty</span><span class="p">(</span><span class="s1">&#39;right&#39;</span><span class="p">));</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">tianhegObj</span><span class="p">.</span><span class="nx">hasOwnProperty</span><span class="p">(</span><span class="s1">&#39;middle&#39;</span><span class="p">));</span>
+<span class="c1">// ouput: true false</span>
+</pre></div>
+</div>
+<p><strong>问题</strong>：输入 <code class="docutils literal notranslate"><span class="pre">checkObj({gift:</span> <span class="pre">&quot;pony&quot;,</span> <span class="pre">pet:</span> <span class="pre">&quot;kitten&quot;,</span> <span class="pre">bed:</span> <span class="pre">&quot;sleigh&quot;},</span> <span class="pre">&quot;gift&quot;)</span></code> 格式数据，如果属性存在，返回属性值，若不存在，返回 <code class="docutils literal notranslate"><span class="pre">&quot;Not</span> <span class="pre">Found&quot;</span></code>。</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">checkObj</span><span class="p">(</span><span class="nx">obj</span><span class="p">,</span> <span class="nx">checkProp</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">obj</span><span class="p">.</span><span class="nx">hasOwnProperty</span><span class="p">(</span><span class="nx">checkProp</span><span class="p">))</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nx">obj</span><span class="p">[</span><span class="nx">checkProp</span><span class="p">];</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="s1">&#39;Not Found&#39;</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">checkObj</span><span class="p">({</span> <span class="nx">gift</span><span class="o">:</span> <span class="s1">&#39;pony&#39;</span><span class="p">,</span> <span class="nx">pet</span><span class="o">:</span> <span class="s1">&#39;kitten&#39;</span><span class="p">,</span> <span class="nx">bed</span><span class="o">:</span> <span class="s1">&#39;sleigh&#39;</span> <span class="p">},</span> <span class="s1">&#39;gift&#39;</span><span class="p">));</span>
+</pre></div>
+</div>
+<p>以上是正确答案，我写的错误答案，只是把 <code class="docutils literal notranslate"><span class="pre">obj[checkProp]</span></code> 改为 <code class="docutils literal notranslate"><span class="pre">obj.checkProp</span></code>。</p>
+</div>
+</div>
+<div class="section" id="id48">
+<h2>操作复杂对象<a class="headerlink" href="#id48" title="Permalink to this headline">¶</a></h2>
+<p>JavaScript 对象可以使你灵活地存储数据。他们允许字符串、数字、布尔型、数组、函数、对象的任意组合。</p>
+<p>例子：</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">myMusic</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span>
+        <span class="nx">artist</span><span class="o">:</span> <span class="s1">&#39;Coldplay&#39;</span><span class="p">,</span>
+        <span class="nx">title</span><span class="o">:</span> <span class="s1">&#39;Viva La Vida&#39;</span><span class="p">,</span>
+        <span class="nx">release_year</span><span class="o">:</span> <span class="mf">2008</span><span class="p">,</span>
+        <span class="nx">formats</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;CD&#39;</span><span class="p">,</span> <span class="s1">&#39;Cassette&#39;</span><span class="p">,</span> <span class="s1">&#39;LP&#39;</span><span class="p">],</span>
+        <span class="nx">gold</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="p">},</span>
+<span class="p">];</span>
+</pre></div>
+</div>
+<p>这是数组中的内嵌了对象。这个对象有关于一张唱片的各种元信息。它还具有一个嵌套的格式数组。注意：你要在数组中的每一个对象后加 <code class="docutils literal notranslate"><span class="pre">,</span></code> 除非它是数组的最后一个对象。</p>
+</div>
+<div class="section" id="id49">
+<h2>访问嵌套对象<a class="headerlink" href="#id49" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">myStorage</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">car</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">inside</span><span class="o">:</span> <span class="p">{</span>
+            <span class="s1">&#39;glove box&#39;</span><span class="o">:</span> <span class="s1">&#39;maps&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;passenger seat&#39;</span><span class="o">:</span> <span class="s1">&#39;crumbs&#39;</span><span class="p">,</span>
+        <span class="p">},</span>
+        <span class="nx">outside</span><span class="o">:</span> <span class="p">{</span>
+            <span class="nx">trunk</span><span class="o">:</span> <span class="s1">&#39;jack&#39;</span><span class="p">,</span>
+        <span class="p">},</span>
+    <span class="p">},</span>
+<span class="p">};</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">myStorage</span><span class="p">.</span><span class="nx">car</span><span class="p">.</span><span class="nx">inside</span><span class="p">[</span><span class="s1">&#39;glove box&#39;</span><span class="p">]);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id50">
+<h2>访问嵌套数组<a class="headerlink" href="#id50" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">myPets</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span>
+        <span class="nx">animalType</span><span class="o">:</span> <span class="s1">&#39;cat&#39;</span><span class="p">,</span>
+        <span class="nx">names</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">],</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nx">animalType</span><span class="o">:</span> <span class="s1">&#39;dog&#39;</span><span class="p">,</span>
+        <span class="nx">names</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="s1">&#39;E&#39;</span><span class="p">,</span> <span class="s1">&#39;F&#39;</span><span class="p">],</span>
+    <span class="p">},</span>
+<span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">myPets</span><span class="p">[</span><span class="mf">1</span><span class="p">].</span><span class="nx">names</span><span class="p">[</span><span class="mf">1</span><span class="p">]);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id51">
+<h2>场景：唱片收集<a class="headerlink" href="#id51" title="Permalink to this headline">¶</a></h2>
+<p><strong>不会写</strong></p>
+<p>题目：一个文字对象，展示了你的音乐唱片集合。每一个唱片都有唯一的 id 数字，作为它的键，和其他几个属性。并非所有唱片拥有完整的信息。初始化：一个函数名为 <code class="docutils literal notranslate"><span class="pre">updateRecords</span></code> 的文字对象，<code class="docutils literal notranslate"><span class="pre">records</span></code>，包含音乐唱片集锦，<code class="docutils literal notranslate"><span class="pre">id</span></code>，<code class="docutils literal notranslate"><span class="pre">prop</span></code>（像 <code class="docutils literal notranslate"><span class="pre">artist</span></code> 或 <code class="docutils literal notranslate"><span class="pre">tracks</span></code>），和 <code class="docutils literal notranslate"><span class="pre">value</span></code>。使用以下规则修改函数，把对象传递给函数：</p>
+<ol class="arabic simple">
+<li><p>你的函数必须总是返回整个记录集合对象。</p></li>
+<li><p>如果 <code class="docutils literal notranslate"><span class="pre">prop</span></code> 不是 <code class="docutils literal notranslate"><span class="pre">tracks</span></code>，<code class="docutils literal notranslate"><span class="pre">value</span></code> 非空，更新或将唱片的 <code class="docutils literal notranslate"><span class="pre">prop</span></code> 设置成 <code class="docutils literal notranslate"><span class="pre">value</span></code>。</p></li>
+<li><p>如果 <code class="docutils literal notranslate"><span class="pre">prop</span></code> 是 <code class="docutils literal notranslate"><span class="pre">tracks</span></code> 但唱片没有 <code class="docutils literal notranslate"><span class="pre">tracks</span></code> 属性，新建一个空数组，添加 <code class="docutils literal notranslate"><span class="pre">value</span></code>。</p></li>
+<li><p>如果 <code class="docutils literal notranslate"><span class="pre">prop</span></code> 是 <code class="docutils literal notranslate"><span class="pre">tracks</span></code> 且 <code class="docutils literal notranslate"><span class="pre">value</span></code> 非空，添加 <code class="docutils literal notranslate"><span class="pre">value</span></code> 到唱片存在的 <code class="docutils literal notranslate"><span class="pre">tracks</span></code> 数组最后。</p></li>
+<li><p>如果 <code class="docutils literal notranslate"><span class="pre">value</span></code> 是空字符串，从唱片中删除 <code class="docutils literal notranslate"><span class="pre">prop</span></code> 属性。</p></li>
+</ol>
+<p>默认代码：</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="c1">// Setup</span>
+<span class="kd">var</span> <span class="nx">recordCollection</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="mf">2548</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">albumTitle</span><span class="o">:</span> <span class="s1">&#39;Slippery When Wet&#39;</span><span class="p">,</span>
+    <span class="nx">artist</span><span class="o">:</span> <span class="s1">&#39;Bon Jovi&#39;</span><span class="p">,</span>
+    <span class="nx">tracks</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;Let It Rock&#39;</span><span class="p">,</span> <span class="s1">&#39;You Give Love a Bad Name&#39;</span><span class="p">]</span>
+  <span class="p">},</span>
+  <span class="mf">2468</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">albumTitle</span><span class="o">:</span> <span class="s1">&#39;1999&#39;</span><span class="p">,</span>
+    <span class="nx">artist</span><span class="o">:</span> <span class="s1">&#39;Prince&#39;</span><span class="p">,</span>
+    <span class="nx">tracks</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;1999&#39;</span><span class="p">,</span> <span class="s1">&#39;Little Red Corvette&#39;</span><span class="p">]</span>
+  <span class="p">},</span>
+  <span class="mf">1245</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">artist</span><span class="o">:</span> <span class="s1">&#39;Robert Palmer&#39;</span><span class="p">,</span>
+    <span class="nx">tracks</span><span class="o">:</span> <span class="p">[]</span>
+  <span class="p">},</span>
+  <span class="mf">5439</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">albumTitle</span><span class="o">:</span> <span class="s1">&#39;ABBA Gold&#39;</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+
+<span class="c1">// Only change code below this line</span>
+<span class="kd">function</span> <span class="nx">updateRecords</span><span class="p">(</span><span class="nx">records</span><span class="p">,</span> <span class="nx">id</span><span class="p">,</span> <span class="nx">prop</span><span class="p">,</span> <span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">records</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nx">updateRecords</span><span class="p">(</span><span class="nx">recordCollection</span><span class="p">,</span> <span class="mf">5439</span><span class="p">,</span> <span class="s1">&#39;artist&#39;</span><span class="p">,</span> <span class="s1">&#39;ABBA&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>:::: el-tabs</p>
+<p>::: el-tab-pane label=我的代码</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">updateRecords</span><span class="p">(</span><span class="nx">records</span><span class="p">,</span> <span class="nx">id</span><span class="p">,</span> <span class="nx">prop</span><span class="p">,</span> <span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//var value = &#39;&#39;;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">value</span> <span class="o">!=</span> <span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="p">(</span><span class="nx">value</span> <span class="o">=</span> <span class="nx">records</span><span class="p">[</span><span class="nx">id</span><span class="p">][</span><span class="nx">prop</span><span class="p">]);</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">records</span><span class="p">.</span><span class="nx">hasOwnProperty</span><span class="p">(</span><span class="s1">&#39;tracks&#39;</span><span class="p">)</span> <span class="o">===</span> <span class="kc">false</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">myArray</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;&#39;</span><span class="p">];</span>
+        <span class="nx">myArray</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">value</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">prop</span> <span class="o">===</span> <span class="s1">&#39;tracks&#39;</span> <span class="o">&amp;&amp;</span> <span class="nx">value</span> <span class="o">!=</span> <span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">records</span><span class="p">[</span><span class="nx">id</span><span class="p">][</span><span class="nx">prop</span><span class="p">].</span><span class="nx">value</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">((</span><span class="nx">value</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">))</span> <span class="p">{</span>
+        <span class="ow">delete</span> <span class="nx">records</span><span class="p">[</span><span class="nx">id</span><span class="p">][</span><span class="nx">prop</span><span class="p">];</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nx">records</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">updateRecords</span><span class="p">(</span><span class="nx">recordCollection</span><span class="p">,</span> <span class="mf">5439</span><span class="p">,</span> <span class="s1">&#39;artist&#39;</span><span class="p">,</span> <span class="s1">&#39;ABBA&#39;</span><span class="p">));</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:::</span> <span class="n">el</span><span class="o">-</span><span class="n">tab</span><span class="o">-</span><span class="n">pane</span> <span class="n">label</span><span class="o">=</span><span class="n">答案</span>
+</pre></div>
+</div>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="c1">// way 1</span>
+<span class="kd">function</span> <span class="nx">updateRecords</span><span class="p">(</span><span class="nx">records</span><span class="p">,</span> <span class="nx">id</span><span class="p">,</span> <span class="nx">prop</span><span class="p">,</span> <span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">prop</span> <span class="o">!==</span> <span class="s1">&#39;tracks&#39;</span> <span class="o">&amp;&amp;</span> <span class="nx">value</span> <span class="o">!==</span> <span class="s2">&quot;&quot;</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">records</span><span class="p">[</span><span class="nx">id</span><span class="p">][</span><span class="nx">prop</span><span class="p">]</span> <span class="o">=</span> <span class="nx">value</span><span class="p">;</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">prop</span> <span class="o">===</span> <span class="s2">&quot;tracks&quot;</span> <span class="o">&amp;&amp;</span> <span class="nx">records</span><span class="p">[</span><span class="nx">id</span><span class="p">].</span><span class="nx">hasOwnProperty</span><span class="p">(</span><span class="s2">&quot;tracks&quot;</span><span class="p">)</span> <span class="o">===</span> <span class="kc">false</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">records</span><span class="p">[</span><span class="nx">id</span><span class="p">][</span><span class="nx">prop</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="nx">value</span><span class="p">];</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">prop</span> <span class="o">===</span> <span class="s2">&quot;tracks&quot;</span> <span class="o">&amp;&amp;</span> <span class="nx">value</span> <span class="o">!==</span> <span class="s2">&quot;&quot;</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">records</span><span class="p">[</span><span class="nx">id</span><span class="p">][</span><span class="nx">prop</span><span class="p">].</span><span class="nx">push</span><span class="p">(</span><span class="nx">value</span><span class="p">);</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">value</span> <span class="o">===</span> <span class="s2">&quot;&quot;</span><span class="p">)</span> <span class="p">{</span>
+    <span class="ow">delete</span> <span class="nx">records</span><span class="p">[</span><span class="nx">id</span><span class="p">][</span><span class="nx">prop</span><span class="p">];</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="nx">records</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// way 2</span>
+<span class="kd">function</span> <span class="nx">updateRecords</span><span class="p">(</span><span class="nx">records</span><span class="p">,</span> <span class="nx">id</span><span class="p">,</span> <span class="nx">prop</span><span class="p">,</span> <span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">value</span> <span class="o">===</span> <span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="ow">delete</span> <span class="nx">records</span><span class="p">[</span><span class="nx">id</span><span class="p">][</span><span class="nx">prop</span><span class="p">];</span>
+  <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">prop</span> <span class="o">===</span> <span class="s1">&#39;tracks&#39;</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">records</span><span class="p">[</span><span class="nx">id</span><span class="p">][</span><span class="nx">prop</span><span class="p">]</span> <span class="o">=</span> <span class="nx">records</span><span class="p">[</span><span class="nx">id</span><span class="p">][</span><span class="nx">prop</span><span class="p">]</span> <span class="o">||</span> <span class="p">[];</span> <span class="c1">// this is called shortcircuit evaluation, see below for explanation</span>
+    <span class="nx">records</span><span class="p">[</span><span class="nx">id</span><span class="p">][</span><span class="nx">prop</span><span class="p">].</span><span class="nx">push</span><span class="p">(</span><span class="nx">value</span><span class="p">);</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="nx">records</span><span class="p">[</span><span class="nx">id</span><span class="p">][</span><span class="nx">prop</span><span class="p">]</span> <span class="o">=</span> <span class="nx">value</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="nx">records</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:::</span>
+</pre></div>
+</div>
+<p><strong>Code Explanation</strong>:</p>
+<ul class="simple">
+<li><p>First checks if <code class="docutils literal notranslate"><span class="pre">value</span></code> is a blank string. If so, then the key (<code class="docutils literal notranslate"><span class="pre">prop</span></code>) is removed from the object.</p></li>
+<li><p>If that first check doesn’t pass, it next checks if <code class="docutils literal notranslate"><span class="pre">prop</span></code> is equal to <code class="docutils literal notranslate"><span class="pre">tracks</span></code>. The <code class="docutils literal notranslate"><span class="pre">tracks</span></code> array is initialized if it does not exist, and then <code class="docutils literal notranslate"><span class="pre">value</span></code> is pushed into the <code class="docutils literal notranslate"><span class="pre">tracks</span></code> array. (This step uses shortcircuit evaluation)</p></li>
+<li><p>If both these checks fail (meaning <code class="docutils literal notranslate"><span class="pre">value</span></code> is not an empty string and <code class="docutils literal notranslate"><span class="pre">prop</span></code> is not <code class="docutils literal notranslate"><span class="pre">tracks</span></code>), then either a new key (<code class="docutils literal notranslate"><span class="pre">prop</span></code>) and value (<code class="docutils literal notranslate"><span class="pre">value</span></code>) are added to the object, or an existing key is updated if the <code class="docutils literal notranslate"><span class="pre">prop</span></code> already exists.</p></li>
+</ul>
+</div>
+<div class="section" id="id52">
+<h2>循环<a class="headerlink" href="#id52" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="while">
+<h3><code class="docutils literal notranslate"><span class="pre">while</span></code><a class="headerlink" href="#while" title="Permalink to this headline">¶</a></h3>
+<p>使用 <code class="docutils literal notranslate"><span class="pre">while</span></code> 进行迭代。</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">myArray</span> <span class="o">=</span> <span class="p">[];</span>
+<span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span>
+<span class="k">while</span><span class="p">(</span><span class="nx">i</span> <span class="o">&lt;</span> <span class="mf">5</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">myArray</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+    <span class="nx">i</span><span class="o">++</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">myArray</span><span class="p">);</span>
+
+<span class="c1">//</span>
+
+<span class="kd">var</span> <span class="nx">myArray</span> <span class="o">=</span> <span class="p">[];</span>
+<span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">5</span><span class="p">;</span>
+<span class="k">while</span> <span class="p">(</span><span class="nx">i</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mf">1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">myArray</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+    <span class="nx">i</span><span class="o">--</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">myArray</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="for">
+<h3><code class="docutils literal notranslate"><span class="pre">for</span></code><a class="headerlink" href="#for" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">for(a;</span> <span class="pre">b;</span> <span class="pre">c)</span></code>：</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">a</span></code> - 初始化语句 仅在循环开始前执行一次，它通常被用于定义和设置循环变量</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">b</span></code> - 条件语句</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">c</span></code> - 结果表达式</p></li>
+</ul>
+<p>条件语句在每次循环迭代的开始时进行评估，并且只要评估结果为 <code class="docutils literal notranslate"><span class="pre">true</span></code>，便会继续执行。如果条件在迭代开始时为 <code class="docutils literal notranslate"><span class="pre">false</span></code>，则循环将停止执行。这意味着，如果条件开始为假，则循环将永远不会执行。</p>
+<p>结果表达式在每一次循环迭代后执行，在下一次条件检查之前，通常用于递增或递减循环计数器。</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">myArray</span><span class="o">=</span><span class="p">[];</span>
+<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mf">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">&lt;</span><span class="mf">5</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+  <span class="nx">myArray</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">myArray</span><span class="p">);</span>
+</pre></div>
+</div>
+<p><strong>奇数迭代</strong></p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">myArray</span> <span class="o">=</span> <span class="p">[];</span>
+<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">1</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mf">10</span><span class="p">;</span> <span class="nx">i</span> <span class="o">+=</span> <span class="mf">2</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">myArray</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">myArray</span><span class="p">);</span>
+</pre></div>
+</div>
+<p><strong>向后计数</strong></p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">myArray</span> <span class="o">=</span> <span class="p">[];</span>
+<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mf">9</span><span class="p">;</span> <span class="nx">i</span><span class="o">&gt;</span><span class="mf">0</span><span class="p">;</span><span class="nx">i</span><span class="o">-=</span><span class="mf">2</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">myArray</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">myArray</span><span class="p">);</span>
+</pre></div>
+</div>
+<p><strong>遍历数组</strong></p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">myArr</span> <span class="o">=</span> <span class="p">[</span><span class="mf">2</span><span class="p">,</span> <span class="mf">3</span><span class="p">,</span> <span class="mf">4</span><span class="p">,</span> <span class="mf">5</span><span class="p">,</span> <span class="mf">6</span><span class="p">];</span>
+<span class="kd">var</span> <span class="nx">total</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span>
+<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">myArr</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">total</span> <span class="o">=</span> <span class="nx">total</span> <span class="o">+</span> <span class="nx">myArr</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">total</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id53">
+<h3><code class="docutils literal notranslate"><span class="pre">while</span></code><a class="headerlink" href="#id53" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[];</span>
+<span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">5</span><span class="p">;</span>
+<span class="k">while</span> <span class="p">(</span><span class="nx">i</span> <span class="o">&lt;</span> <span class="mf">5</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">arr</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+    <span class="nx">i</span><span class="o">++</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="do-while">
+<h3><code class="docutils literal notranslate"><span class="pre">do...while</span></code><a class="headerlink" href="#do-while" title="Permalink to this headline">¶</a></h3>
+<p>它可以使循环代码至少执行一次。</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[];</span>
+<span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">10</span><span class="p">;</span>
+<span class="k">do</span> <span class="p">{</span>
+    <span class="nx">arr</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+    <span class="nx">i</span><span class="o">++</span><span class="p">;</span>
+<span class="p">}</span> <span class="k">while</span><span class="p">(</span><span class="nx">i</span> <span class="o">&lt;</span> <span class="mf">10</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id54">
+<h2>循环嵌套<a class="headerlink" href="#id54" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="c1">// 数组包含的数字相乘</span>
+<span class="kd">function</span> <span class="nx">multiplyAll</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">product</span> <span class="o">=</span> <span class="mf">1</span><span class="p">;</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">j</span>  <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">j</span> <span class="o">&lt;</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">length</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">product</span> <span class="o">=</span> <span class="nx">product</span> <span class="o">+</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="nx">j</span><span class="p">];</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="nx">product</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">multiplyAll</span><span class="p">([[</span><span class="mf">1</span><span class="p">],[</span><span class="mf">2</span><span class="p">],[</span><span class="mf">3</span><span class="p">],]));</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id55">
+<h2>递归<a class="headerlink" href="#id55" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id56">
+<h3>递归代替循环<a class="headerlink" href="#id56" title="Permalink to this headline">¶</a></h3>
+<p>:::: el-tabs</p>
+<p>::: el-tab-pane label=循环</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">multiply</span><span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="nx">n</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">product</span> <span class="o">=</span> <span class="mf">1</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">n</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">product</span> <span class="o">*=</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
+    <span class="p">}</span>
+    <span class="k">return</span>  <span class="nx">product</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">multiply</span><span class="p">([</span><span class="mf">2</span><span class="p">,</span> <span class="mf">3</span><span class="p">,</span> <span class="mf">4</span><span class="p">,</span> <span class="mf">5</span><span class="p">],</span> <span class="mf">4</span><span class="p">));</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:::</span> <span class="n">el</span><span class="o">-</span><span class="n">tab</span><span class="o">-</span><span class="n">pane</span> <span class="n">label</span><span class="o">=</span><span class="n">递归</span>
+</pre></div>
+</div>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">multiply</span><span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="nx">n</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">n</span> <span class="o">&lt;=</span> <span class="mf">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="mf">1</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nx">multiply</span><span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="nx">n</span> <span class="o">-</span> <span class="mf">1</span><span class="p">)</span> <span class="o">*</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">n</span> <span class="o">-</span> <span class="mf">1</span><span class="p">];</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">multiply</span><span class="p">([</span><span class="mf">2</span><span class="p">,</span> <span class="mf">3</span><span class="p">,</span> <span class="mf">4</span><span class="p">,</span> <span class="mf">5</span><span class="p">],</span> <span class="mf">4</span><span class="p">));</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:::</span>
+</pre></div>
+</div>
+<p>递归的 multiply 版本是这样分解的。在基本情况下，当 n &lt; = 0 时，它返回 1。对于较大的值 n，它调用自己，但是使用 n-1。这个函数调用以同样的方式计算，再次调用 multiply，直到 n &lt; = 0。此时，所有函数都可以返回，而原始的 multiply 将返回答案。</p>
+<p>注意：当递归函数返回时，不再调用该函数时（在本例中，当 n &lt; = 0 时） ，必须有一个基准值，否则它们将永远无法完成执行。</p>
+</div>
+<div class="section" id="id57">
+<h3>写一个计数器<a class="headerlink" href="#id57" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">countup</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">n</span> <span class="o">&lt;</span> <span class="mf">1</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="p">[];</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="kd">const</span> <span class="nx">countArray</span> <span class="o">=</span> <span class="nx">countup</span><span class="p">(</span><span class="nx">n</span> <span class="o">-</span> <span class="mf">1</span><span class="p">);</span>
+        <span class="nx">countArray</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">n</span><span class="p">);</span>
+        <span class="k">return</span> <span class="nx">countArray</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">countup</span><span class="p">(</span><span class="mf">5</span><span class="p">));</span>
+<span class="c1">// output: [ 1, 2, 3, 4, 5 ]</span>
+</pre></div>
+</div>
+<p>乍一看，这似乎违反直觉，因为 <code class="docutils literal notranslate"><span class="pre">n</span></code> 的值减小了，但最终数组中的值却增加了。这是因为 push 发生在递归调用返回后的最后。当 <code class="docutils literal notranslate"><span class="pre">n</span></code> 被推入数组时，<code class="docutils literal notranslate"><span class="pre">countup(n</span> <span class="pre">-</span> <span class="pre">1)</span></code> 已经被求值并返回 [1, 2, …, n - 1]。</p>
+<p>如果我这样写，会报错：<code class="docutils literal notranslate"><span class="pre">maximum</span> <span class="pre">call</span> <span class="pre">stack</span> <span class="pre">size</span> <span class="pre">exceeded</span></code>：</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">countdown</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">n</span> <span class="o">&lt;</span> <span class="mf">1</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="p">[];</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="kd">const</span> <span class="nx">countArray</span> <span class="o">=</span> <span class="nx">countdown</span><span class="p">(</span><span class="nx">n</span> <span class="o">+</span> <span class="mf">1</span><span class="p">);</span>
+        <span class="nx">countArray</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">n</span><span class="p">);</span>
+        <span class="k">return</span> <span class="nx">countArray</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">countdown</span><span class="p">(</span><span class="mf">5</span><span class="p">));</span>
+</pre></div>
+</div>
+<p>正确的写法：</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">countdown</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">n</span> <span class="o">&lt;</span> <span class="mf">1</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="p">[];</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="kd">const</span> <span class="nx">countArray</span> <span class="o">=</span> <span class="nx">countdown</span><span class="p">(</span><span class="nx">n</span> <span class="o">-</span> <span class="mf">1</span><span class="p">);</span>
+        <span class="nx">countArray</span><span class="p">.</span><span class="nx">unshift</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+        <span class="k">return</span> <span class="nx">countArray</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">countdown</span><span class="p">(</span><span class="mf">5</span><span class="p">));</span>
+<span class="c1">// output: [ 5, 4, 3, 2, 1 ]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id58">
+<h3>写一串数字<a class="headerlink" href="#id58" title="Permalink to this headline">¶</a></h3>
+<p>:::: el-tabs
+::: el-tab-pane label=我的做法</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">rangeOfNumbers</span><span class="p">(</span><span class="nx">startNum</span><span class="p">,</span> <span class="nx">endNum</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">endNum</span> <span class="o">&lt;</span> <span class="mf">1</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="p">[];</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="kd">const</span> <span class="nx">countArray</span> <span class="o">=</span> <span class="nx">rangeOfNumbers</span><span class="p">(</span><span class="nx">startNum</span><span class="o">-</span><span class="mf">1</span><span class="p">);</span>
+        <span class="nx">countArray</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">startNum</span><span class="p">);</span>
+        <span class="k">return</span> <span class="nx">countArray</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">rangeOfNumbers</span><span class="p">(</span><span class="mf">4</span><span class="p">,</span> <span class="mf">10</span><span class="p">));</span>
+<span class="c1">// output: RangeError: Maximum call stack size exceeded</span>
+</pre></div>
+</div>
+<p>:::
+::: el-tab-pane label=答案</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="c1">// way 1 || 0.172s</span>
+<span class="kd">function</span> <span class="nx">rangeOfNumbers</span><span class="p">(</span><span class="nx">startNum</span><span class="p">,</span> <span class="nx">endNum</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">endNum</span> <span class="o">-</span> <span class="nx">startNum</span> <span class="o">===</span> <span class="mf">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="p">[</span><span class="nx">startNum</span><span class="p">];</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">numbers</span> <span class="o">=</span> <span class="nx">rangeOfNumbers</span><span class="p">(</span><span class="nx">startNum</span><span class="p">,</span> <span class="nx">endNum</span> <span class="o">-</span><span class="mf">1</span><span class="p">);</span>
+        <span class="nx">numbers</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">endNum</span><span class="p">);</span>
+        <span class="k">return</span> <span class="nx">numbers</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">rangeOfNumbers</span><span class="p">(</span><span class="mf">4</span><span class="p">,</span> <span class="mf">10</span><span class="p">));</span>
+
+<span class="c1">// way 2 || 0.147s</span>
+<span class="kd">function</span> <span class="nx">rangeOfNumbers</span><span class="p">(</span><span class="nx">startNum</span><span class="p">,</span> <span class="nx">endNum</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">startNum</span> <span class="o">===</span> <span class="nx">endNum</span>
+        <span class="o">?</span> <span class="p">[</span><span class="nx">startNum</span><span class="p">]</span>
+        <span class="o">:</span> <span class="nx">rangeOfNumbers</span><span class="p">(</span><span class="nx">startNum</span><span class="p">,</span> <span class="nx">endNum</span> <span class="o">-</span> <span class="mf">1</span><span class="p">).</span><span class="nx">concat</span><span class="p">(</span><span class="nx">endNum</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">rangeOfNumbers</span><span class="p">(</span><span class="mf">4</span><span class="p">,</span> <span class="mf">10</span><span class="p">));</span>
+
+<span class="c1">// way 3 || 0.155s</span>
+<span class="kd">function</span> <span class="nx">rangeOfNumbers</span><span class="p">(</span><span class="nx">startNum</span><span class="p">,</span> <span class="nx">endNum</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">startNum</span> <span class="o">===</span> <span class="nx">endNum</span>
+        <span class="o">?</span> <span class="p">[</span><span class="nx">startNum</span><span class="p">]</span>
+        <span class="o">:</span> <span class="p">[...</span><span class="nx">rangeOfNumbers</span><span class="p">(</span><span class="nx">startNum</span><span class="p">,</span> <span class="nx">endNum</span> <span class="o">-</span> <span class="mf">1</span><span class="p">),</span> <span class="nx">endNum</span><span class="p">];</span> <span class="c1">// 为什么这里有 ...rangeOfNumbers</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">rangeOfNumbers</span><span class="p">(</span><span class="mf">4</span><span class="p">,</span> <span class="mf">10</span><span class="p">));</span>
+</pre></div>
+</div>
+<div class="section" id="id59">
+<h4>:::<a class="headerlink" href="#id59" title="Permalink to this headline">¶</a></h4>
+</div>
+</div>
+</div>
+<div class="section" id="id60">
+<h2>场景：资料查找<a class="headerlink" href="#id60" title="Permalink to this headline">¶</a></h2>
+<p>有一个对象数组，表示我们联系人列表里不同的人。一个 <code class="docutils literal notranslate"><span class="pre">lookUpProfile</span></code> 函数以 <code class="docutils literal notranslate"><span class="pre">name</span></code> 和一个属性（<code class="docutils literal notranslate"><span class="pre">prop</span></code>）作为参数已经预先写好。这个函数要检查 <code class="docutils literal notranslate"><span class="pre">name</span></code> 是否与实际联系人的 <code class="docutils literal notranslate"><span class="pre">firstName</span></code> 能对应上，给的 <code class="docutils literal notranslate"><span class="pre">prop</span></code> 也是实际联系人的真实信息。如果两者都对，返回该属性的值。</p>
+<ul class="simple">
+<li><p>如果没有符合的 <code class="docutils literal notranslate"><span class="pre">name</span></code> 返回字符串 <code class="docutils literal notranslate"><span class="pre">No</span> <span class="pre">such</span> <span class="pre">contact</span></code>；</p></li>
+<li><p>如果没有符合的 <code class="docutils literal notranslate"><span class="pre">prop</span></code> 但找到符合的 <code class="docutils literal notranslate"><span class="pre">name</span></code> 返回字符串 <code class="docutils literal notranslate"><span class="pre">No</span> <span class="pre">such</span> <span class="pre">property</span></code>。</p></li>
+</ul>
+<p>:::: el-tabs</p>
+<p>::: el-tab-pane label=原题</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="c1">// Setup</span>
+<span class="kd">var</span> <span class="nx">contacts</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;firstName&quot;</span><span class="o">:</span> <span class="s2">&quot;Akira&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;lastName&quot;</span><span class="o">:</span> <span class="s2">&quot;Laine&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;number&quot;</span><span class="o">:</span> <span class="s2">&quot;0543236543&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;likes&quot;</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;Pizza&quot;</span><span class="p">,</span> <span class="s2">&quot;Coding&quot;</span><span class="p">,</span> <span class="s2">&quot;Brownie Points&quot;</span><span class="p">]</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;firstName&quot;</span><span class="o">:</span> <span class="s2">&quot;Harry&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;lastName&quot;</span><span class="o">:</span> <span class="s2">&quot;Potter&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;number&quot;</span><span class="o">:</span> <span class="s2">&quot;0994372684&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;likes&quot;</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;Hogwarts&quot;</span><span class="p">,</span> <span class="s2">&quot;Magic&quot;</span><span class="p">,</span> <span class="s2">&quot;Hagrid&quot;</span><span class="p">]</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;firstName&quot;</span><span class="o">:</span> <span class="s2">&quot;Sherlock&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;lastName&quot;</span><span class="o">:</span> <span class="s2">&quot;Holmes&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;number&quot;</span><span class="o">:</span> <span class="s2">&quot;0487345643&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;likes&quot;</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;Intriguing Cases&quot;</span><span class="p">,</span> <span class="s2">&quot;Violin&quot;</span><span class="p">]</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;firstName&quot;</span><span class="o">:</span> <span class="s2">&quot;Kristian&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;lastName&quot;</span><span class="o">:</span> <span class="s2">&quot;Vos&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;number&quot;</span><span class="o">:</span> <span class="s2">&quot;unknown&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;likes&quot;</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;JavaScript&quot;</span><span class="p">,</span> <span class="s2">&quot;Gaming&quot;</span><span class="p">,</span> <span class="s2">&quot;Foxes&quot;</span><span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">];</span>
+
+<span class="kd">function</span> <span class="nx">lookUpProfile</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">prop</span><span class="p">){</span>
+<span class="c1">// Only change code below this line</span>
+
+<span class="c1">// Only change code above this line</span>
+<span class="p">}</span>
+
+<span class="nx">lookUpProfile</span><span class="p">(</span><span class="s2">&quot;Akira&quot;</span><span class="p">,</span> <span class="s2">&quot;likes&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:::</span> <span class="n">el</span><span class="o">-</span><span class="n">tab</span><span class="o">-</span><span class="n">pane</span> <span class="n">label</span><span class="o">=</span><span class="n">我的结果</span>
+</pre></div>
+</div>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">lookUpProfile</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">prop</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">contacts</span><span class="p">.</span><span class="nx">hasOwnProperty</span><span class="p">(</span><span class="s1">&#39;firstName&#39;</span><span class="p">))</span> <span class="p">{</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">contacts</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="p">(</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">contacts</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">firstName</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="s2">&quot;No such property&quot;</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="s2">&quot;No such contact&quot;</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">name</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:::</span> <span class="n">el</span><span class="o">-</span><span class="n">tab</span><span class="o">-</span><span class="n">pane</span> <span class="n">label</span><span class="o">=</span><span class="n">答案</span>
+</pre></div>
+</div>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="c1">// way 1</span>
+<span class="kd">function</span> <span class="nx">lookUpProfile</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">prop</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">x</span> <span class="o">&lt;</span> <span class="nx">contacts</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">x</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">contacts</span><span class="p">[</span><span class="nx">x</span><span class="p">].</span><span class="nx">firstName</span> <span class="o">===</span> <span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="nx">contacts</span><span class="p">[</span><span class="nx">x</span><span class="p">].</span><span class="nx">hasOwnProperty</span><span class="p">(</span><span class="nx">prop</span><span class="p">))</span> <span class="p">{</span>
+                <span class="k">return</span> <span class="nx">contacts</span><span class="p">[</span><span class="nx">x</span><span class="p">][</span><span class="nx">prop</span><span class="p">];</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                <span class="k">return</span> <span class="s1">&#39;No such property&#39;</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="s1">&#39;No such contact&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// way 2</span>
+<span class="kd">function</span> <span class="nx">lookUpProfile</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">prop</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">contacts</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">contacts</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">firstName</span> <span class="o">===</span> <span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="nx">prop</span> <span class="ow">in</span> <span class="nx">contacts</span><span class="p">[</span><span class="nx">i</span><span class="p">])</span> <span class="p">{</span>
+                <span class="k">return</span> <span class="nx">contacts</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="nx">prop</span><span class="p">];</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                <span class="k">return</span> <span class="s1">&#39;No such property&#39;</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="s1">&#39;No such contact&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:::</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id61">
+<h2>场景：生成随机数<a class="headerlink" href="#id61" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id62">
+<h3>随机分数<a class="headerlink" href="#id62" title="Permalink to this headline">¶</a></h3>
+<p>使用 <code class="docutils literal notranslate"><span class="pre">Math.random()</span></code> 函数</p>
+<ul class="simple">
+<li><p>decimal number 十进制数</p></li>
+</ul>
+</div>
+<div class="section" id="id63">
+<h3>随机整数<a class="headerlink" href="#id63" title="Permalink to this headline">¶</a></h3>
+<p>使用 <code class="docutils literal notranslate"><span class="pre">Math.floor()</span></code> 函数，将数字四舍五入到最接近的整数。</p>
+<p><strong>一定范围内的随机整数</strong></p>
+<p>使用 <code class="docutils literal notranslate"><span class="pre">Math.floor(Math.random()</span> <span class="pre">*</span> <span class="pre">(max</span> <span class="pre">-</span> <span class="pre">min</span> <span class="pre">+</span> <span class="pre">1))</span> <span class="pre">+</span> <span class="pre">min;</span></code> 公式，要输入 min 和 max。</p>
+</div>
+</div>
+<div class="section" id="id64">
+<h2>条件运算符<a class="headerlink" href="#id64" title="Permalink to this headline">¶</a></h2>
+<p>又称三元（目）运算符。可用于单行 <code class="docutils literal notranslate"><span class="pre">if-else</span></code> 表达式。</p>
+<p><code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">?</span> <span class="pre">b</span> <span class="pre">:</span> <span class="pre">c</span></code>：<code class="docutils literal notranslate"><span class="pre">a</span></code> 是条件；当条件 <code class="docutils literal notranslate"><span class="pre">a</span></code> 为真时 <code class="docutils literal notranslate"><span class="pre">b</span></code> 部分的代码开始执行；当条件 <code class="docutils literal notranslate"><span class="pre">a</span></code> 为假时执行 <code class="docutils literal notranslate"><span class="pre">c</span></code> 部分的代码。</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="c1">// if (a &gt; b) {</span>
+<span class="c1">//     return &#39;a is greater&#39;;</span>
+<span class="c1">// } else {</span>
+<span class="c1">//     return &#39;b is greater&#39;;</span>
+<span class="c1">// }</span>
+<span class="k">return</span> <span class="nx">a</span> <span class="o">&gt;</span> <span class="nx">b</span> <span class="o">?</span> <span class="s1">&#39;a is greater&#39;</span> <span class="o">:</span> <span class="s1">&#39;b is greater&#39;</span><span class="p">;</span>
+
+<span class="c1">// == 才是等于 = 是赋值</span>
+<span class="k">return</span> <span class="nx">a</span> <span class="o">==</span> <span class="nx">b</span> <span class="o">?</span> <span class="s2">&quot;Equal&quot;</span> <span class="o">:</span> <span class="s2">&quot;Not Equal&quot;</span><span class="p">;</span>
+</pre></div>
+</div>
+<p><strong>使用多个</strong></p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">findGreaterOrEqual</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">a</span> <span class="o">===</span> <span class="nx">b</span>
+    <span class="o">?</span> <span class="s1">&#39;a and a are equal&#39;</span>
+    <span class="o">:</span> <span class="nx">a</span> <span class="o">&gt;</span> <span class="nx">b</span>
+    <span class="o">?</span> <span class="s1">&#39;a is greater&#39;</span>
+    <span class="o">:</span> <span class="s1">&#39;b is greater&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">findGreaterOrEqual</span><span class="p">(</span><span class="mf">2</span><span class="p">,</span> <span class="mf">3</span><span class="p">));</span>
+</pre></div>
+</div>
+<p>以下两种情况，第 1 种能覆盖 <code class="docutils literal notranslate"><span class="pre">num</span> <span class="pre">=</span> <span class="pre">0</span></code> 的情况，第 2 种却不行</p>
+<p>:::: el-tabs
+::: el-tab-pane label=”第 1 种”</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">checkSign</span><span class="p">(</span><span class="nx">num</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">num</span> <span class="o">&gt;</span> <span class="mf">0</span> <span class="o">?</span> <span class="s1">&#39;position&#39;</span>
+    <span class="o">:</span> <span class="nx">num</span> <span class="o">&lt;</span> <span class="mf">0</span> <span class="o">?</span> <span class="s1">&#39;negative&#39;</span>
+    <span class="o">:</span> <span class="s1">&#39;zero&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">checkSign</span><span class="p">(</span><span class="mf">0</span><span class="p">));</span>
+<span class="c1">// output: zero</span>
+</pre></div>
+</div>
+<p>:::
+::: el-tab-pane label=”第 2 种”</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">checkSign</span><span class="p">(</span><span class="nx">num</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">num</span> <span class="o">&gt;</span> <span class="mf">0</span> <span class="o">?</span> <span class="s1">&#39;position&#39;</span> <span class="o">:</span> <span class="p">(</span><span class="nx">num</span> <span class="o">=</span> <span class="mf">0</span> <span class="o">?</span> <span class="s1">&#39;zero&#39;</span> <span class="o">:</span> <span class="s1">&#39;negative&#39;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">checkSign</span><span class="p">(</span><span class="mf">0</span><span class="p">));</span>
+<span class="c1">// output: negative</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id65">
+<h2>功能<a class="headerlink" href="#id65" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="typeof">
+<h3><code class="docutils literal notranslate"><span class="pre">typeof</span></code><a class="headerlink" href="#typeof" title="Permalink to this headline">¶</a></h3>
+<p>输出数据类型。</p>
+</div>
+<div class="section" id="parseint">
+<h3><code class="docutils literal notranslate"><span class="pre">parseInt()</span></code><a class="headerlink" href="#parseint" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">parseInt(string);</span></code> 解析字符串，并返回一个整数。如果字符串的第一位不是整数，则返回 <code class="docutils literal notranslate"><span class="pre">NaN</span></code>。</p>
+<p><code class="docutils literal notranslate"><span class="pre">parseInt(string,</span> <span class="pre">radix);</span></code> 它使用第二个基数参数 <code class="docutils literal notranslate"><span class="pre">radix</span></code>，该参数指定字符串中数字的底数。基数可以是 2 到 36 之间的整数。<code class="docutils literal notranslate"><span class="pre">radix</span></code> 指的是满几进一，而基数的范围则表示进制。</p>
+<p>ref: <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics">https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics</a></p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Jim Gao.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
