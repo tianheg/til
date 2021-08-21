@@ -12,6 +12,7 @@
   - [书籍](algorithms-and-data-structure/books.md)
 
 - [Operating System](operating-system/operating-system.md)
+  - [Linux Details](operating-system/linux-details.md)
   - [Linux Common Orders](operating-system/linux-common-orders.md)
   - [Difference between /bin and /usr/bin](https://unix.stackexchange.com/a/5916)
   - [Arch System Maintenance](operating-system/arch-system-maintenance.md)
