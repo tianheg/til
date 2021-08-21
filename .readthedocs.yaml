@@ -3,8 +3,6 @@
 version: 2
 
 formats:
-  - epub
-  - pdf
   - htmlzip
 
 # Build from the docs/ directory with Sphinx
