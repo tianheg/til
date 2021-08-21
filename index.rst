@@ -3,6 +3,10 @@ Home
 
 Record what I learnt.
 
+测试短链接：
+
+:ghissue:`146`
+
 Contents
 --------
 
