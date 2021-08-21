@@ -24,15 +24,8 @@ extensions = [
 master_doc = 'index'
 pygments_style = 'sphinx'
 templates_path = ['_templates']
-exclude_patterns = ['_build', '.github', '.vscode']
+exclude_patterns = ['_build']
 html_theme = 'sphinx_rtd_theme'
-html_sidebars = {
-    '**': [
-        'navigation.html',
-        "relations.html",
-        'searchbox.html',
-    ]
-}
 html_static_path = ['_static']
 source_suffix = ['.rst', '.md']
 todo_include_todos = True
