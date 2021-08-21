@@ -10,7 +10,7 @@ Contents
    :maxdepth: 2
 
    content/cs-and-web-concepts/cs-and-web-concepts.md
-      content/cs-and-web-concepts/计算机网络.md
+   content/cs-and-web-concepts/计算机网络.md
    content/cs-and-web-concepts/dns.md
    content/cs-and-web-concepts/科技英语.md
    content/cs-and-web-concepts/front-end-and-its-history.md
@@ -20,36 +20,36 @@ Contents
    content/algorithms-and-data-structure/books.md
    content/operating-system/operating-system.md
    content/operating-system/linux-details.md
-   operating-system/linux-common-orders.md
-   operating-system/arch-system-maintenance.md
-   operating-system/arch-package.md
-   operating-system/arch-software-installation-and-usage.md
-   operating-system/arch-installation-guide.md
-   operating-system/openbsd-installation.md
-   operating-system/ubuntu-backup.md
-   operating-system/ubuntu-common-usage.md
-   operating-system/ubuntu-install-software.md
-   operating-system/ubuntu-problems.md
-   operating-system/mxlinux-installation.md
-   html/html.md
-   html/before-html.md
-   html/html-basics.md
-   html/images.md
-   html/html-code-snippets.md
-   css/css.md
-   css/css-basics.md
-   css/css-box.md
-   css/css-position.md
-   css/css-code-snippets.md
-   javascript/javascript.md
-   javascript-basics.md
-   javascript/es6.md
-   javascript/what-i-learnt-from-js.md
-   javascript/install-node-npm-yarn.md
-   javascript/yarn-v2-usage.md
-   javascript/used-packages-from-npm-or-yarn.md
-   javascript/the-difference-between-js-in-head-and-body.md
-   javascript/js-code-snippets.md
+   content/operating-system/linux-common-orders.md
+   content/operating-system/arch-system-maintenance.md
+   content/operating-system/arch-package.md
+   content/operating-system/arch-software-installation-and-usage.md
+   content/operating-system/arch-installation-guide.md
+   content/operating-system/openbsd-installation.md
+   content/operating-system/ubuntu-backup.md
+   content/operating-system/ubuntu-common-usage.md
+   content/operating-system/ubuntu-install-software.md
+   content/operating-system/ubuntu-problems.md
+   content/operating-system/mxlinux-installation.md
+   content/html/html.md
+   content/html/before-html.md
+   content/html/html-basics.md
+   content/html/images.md
+   content/html/html-code-snippets.md
+   content/css/css.md
+   content/css/css-basics.md
+   content/css/css-box.md
+   content/css/css-position.md
+   content/css/css-code-snippets.md
+   content/javascript/javascript.md
+   content/javascript-basics.md
+   content/javascript/es6.md
+   content/javascript/what-i-learnt-from-js.md
+   content/javascript/install-node-npm-yarn.md
+   content/javascript/yarn-v2-usage.md
+   content/javascript/used-packages-from-npm-or-yarn.md
+   content/javascript/the-difference-between-js-in-head-and-body.md
+   content/javascript/js-code-snippets.md
    content/vue/vue.md
    content/front-end.md
    content/programming-languages/programming-language.md
