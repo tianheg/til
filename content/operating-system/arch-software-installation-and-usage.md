@@ -708,6 +708,7 @@ Sphinx is a documentation generator or a tool that translates a set of plain tex
 ```sh
 pip install sphinx-autobuild rstcheck # for VS Code extension: reStructuredText
 pip install sphinx-rtd-theme # sphinx-rtd-theme theme
+pip install m2r2 # converts a markdown file including reStructuredText (rst) markups to a valid rst format
 ```
 
 ### exa
