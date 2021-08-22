@@ -430,6 +430,22 @@ sudo vim /etc/systemd/system/clash.service
 systemctl <span class="nb">enable</span> clash
 </pre></div>
 </div>
+<p>测试代理是否有效（还不起作用）：</p>
+<p>from 依云 <a class="reference external" href="https://cfp.vim-cn.com/cb3wN/python">https://cfp.vim-cn.com/cb3wN/python</a></p>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">test_youtube</span><span class="p">(</span><span class="n">port</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">bool</span><span class="p">]:</span>
+  <span class="n">output</span> <span class="o">=</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">check_output</span><span class="p">([</span>
+    <span class="s1">&#39;curl&#39;</span><span class="p">,</span> <span class="s1">&#39;-sS&#39;</span><span class="p">,</span> <span class="s1">&#39;-m30&#39;</span><span class="p">,</span> <span class="s1">&#39;-H&#39;</span><span class="p">,</span> <span class="s1">&#39;Accept-Language: en&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;https://www.youtube.com/premium&#39;</span><span class="p">,</span> <span class="s1">&#39;--socks5-hostname&#39;</span><span class="p">,</span> <span class="sa">f</span><span class="s1">&#39;localhost:</span><span class="si">{</span><span class="n">port</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span>
+  <span class="p">],</span> <span class="n">text</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+  <span class="k">if</span> <span class="s1">&#39;Premium is not available in your country&#39;</span> <span class="ow">in</span> <span class="n">output</span><span class="p">:</span>
+    <span class="k">return</span> <span class="kc">False</span>
+  <span class="n">m</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;countryCode&quot;:&quot;(\w+)&#39;</span><span class="p">,</span> <span class="n">output</span><span class="p">)</span>
+  <span class="k">if</span> <span class="n">m</span><span class="p">:</span>
+    <span class="k">return</span> <span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+  <span class="k">else</span><span class="p">:</span>
+    <span class="k">return</span> <span class="s1">&#39;US&#39;</span>
+</pre></div>
+</div>
 </div>
 </div>
 <div class="section" id="input-method">
@@ -1172,9 +1188,16 @@ make install
 </ul>
 </td>
 </tr>
+<tr class="row-even"><td><p>filezilla</p></td>
+<td><p>Fast and reliable FTP, FTPS and SFTP client</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+</tr>
 </tbody>
 </table>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo pacman -S google-chrome visual-studio-code-bin netease-cloud-music flameshot proxychains-ng redshift vlc telegram-desktop gthumb libreoffice-fresh inkscape youtube-dl glances keepass hugo foliate anki informant dnsutils dnsmasq tldr virtualbox virtualbox-host-modules-arch virtualbox-ext-oracle virtualbox earlyoom gtk2 gtk3 gtk4 lsb-release exa qemu python-sphinx
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo pacman -S google-chrome visual-studio-code-bin netease-cloud-music flameshot proxychains-ng redshift vlc telegram-desktop gthumb libreoffice-fresh inkscape youtube-dl glances keepass hugo foliate anki informant dnsutils dnsmasq tldr virtualbox virtualbox-host-modules-arch virtualbox-ext-oracle virtualbox earlyoom gtk2 gtk3 gtk4 lsb-release exa qemu python-sphinx filezilla
 </pre></div>
 </div>
 <div class="section" id="sphinx">

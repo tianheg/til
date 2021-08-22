@@ -95,6 +95,25 @@ systemctl daemon-reload
 systemctl enable clash
 ```
 
+测试代理是否有效（还不起作用）：
+
+from 依云 <https://cfp.vim-cn.com/cb3wN/python>
+
+```py
+def test_youtube(port: int) -> Union[str, bool]:
+  output = subprocess.check_output([
+    'curl', '-sS', '-m30', '-H', 'Accept-Language: en',
+    'https://www.youtube.com/premium', '--socks5-hostname', f'localhost:{port}',
+  ], text=True)
+  if 'Premium is not available in your country' in output:
+    return False
+  m = re.search(r'countryCode":"(\w+)', output)
+  if m:
+    return m.group(1)
+  else:
+    return 'US'
+```
+
 ## Input method
 
 Want to remove ibus, use fcitx.
@@ -696,9 +715,10 @@ lsb-release | LSB version query program | *
 exa | | *
 qemu | A generic and open source machine emulator and virtualizer | virtualbox
 python-sphinx | a documentation generator | *
+filezilla | Fast and reliable FTP, FTPS and SFTP client | *
 
 ```sh
-sudo pacman -S google-chrome visual-studio-code-bin netease-cloud-music flameshot proxychains-ng redshift vlc telegram-desktop gthumb libreoffice-fresh inkscape youtube-dl glances keepass hugo foliate anki informant dnsutils dnsmasq tldr virtualbox virtualbox-host-modules-arch virtualbox-ext-oracle virtualbox earlyoom gtk2 gtk3 gtk4 lsb-release exa qemu python-sphinx
+sudo pacman -S google-chrome visual-studio-code-bin netease-cloud-music flameshot proxychains-ng redshift vlc telegram-desktop gthumb libreoffice-fresh inkscape youtube-dl glances keepass hugo foliate anki informant dnsutils dnsmasq tldr virtualbox virtualbox-host-modules-arch virtualbox-ext-oracle virtualbox earlyoom gtk2 gtk3 gtk4 lsb-release exa qemu python-sphinx filezilla
 ```
 
 ### Sphinx
