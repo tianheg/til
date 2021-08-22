@@ -1160,6 +1160,8 @@ GRUB_CMDLINE_LINUX_DEFAULT="elevator=noop loglevel=3 quiet"
 
 GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet mds=full,nosmt"
 
+[X freeze/crash with intel driver](https://wiki.archlinux.org/title/Intel_graphics#:~:text=VGA-1%3A1280x800-,X%20freeze/crash%20with%20intel%20driver,-Some%20issues%20with)
+
 ref:
 
 1. <https://wiki.archlinux.org/title/downgrading_packages#Downgrading_the_kernel>
@@ -1173,3 +1175,68 @@ ref:
 ### gparted `Too many primary partitions`
 
 Create new partition atble, then solved.
+
+### amdgpu: TOPAZ  not supported in kfd
+
+More error log:
+
+```sh
+➜  ~ sudo dmesg | grep amdgpu
+[    3.647423] [drm] amdgpu kernel modesetting enabled.
+[    3.647749] amdgpu: CRAT table not found
+[    3.647751] amdgpu: Virtual CRAT table created for CPU
+[    3.647760] amdgpu: Topology: Add CPU node
+[    4.446589] amdgpu 0000:01:00.0: enabling device (0000 -> 0003)
+[    4.446708] amdgpu 0000:01:00.0: amdgpu: Trusted Memory Zone (TMZ) feature not supported
+[    4.446906] kfd kfd: amdgpu: TOPAZ  not supported in kfd
+[    4.473165] amdgpu 0000:01:00.0: amdgpu: Fetched VBIOS from ATRM
+[    4.473170] amdgpu: ATOM BIOS: BR34366.001
+[    4.480027] amdgpu 0000:01:00.0: amdgpu: VRAM: 2048M 0x000000F400000000 - 0x000000F47FFFFFFF (2048M used)
+[    4.480031] amdgpu 0000:01:00.0: amdgpu: GART: 256M 0x000000FF00000000 - 0x000000FF0FFFFFFF
+[    4.480074] [drm] amdgpu: 2048M of VRAM memory ready
+[    4.480077] [drm] amdgpu: 3072M of GTT memory ready.
+[    4.487650] amdgpu: hwmgr_sw_init smu backed is iceland_smu
+[    4.504069] amdgpu: can't get the mac of 5
+[    4.509005] amdgpu 0000:01:00.0: amdgpu: SE 1, SH per SE 1, CU per SH 6, active_cu_number 5
+[    4.512216] amdgpu 0000:01:00.0: amdgpu: Using BOCO for runtime pm
+[    4.512580] [drm] Initialized amdgpu 3.41.0 20150101 for 0000:01:00.0 on minor 1
+[   11.011196] amdgpu: VI should always have 2 performance levels
+[   63.292478] amdgpu: can't get the mac of 5
+[   69.617338] amdgpu: VI should always have 2 performance levels
+[   91.291963] amdgpu: can't get the mac of 5
+[   97.654465] amdgpu: VI should always have 2 performance levels
+[  231.210550] amdgpu: can't get the mac of 5
+[  237.586419] amdgpu: VI should always have 2 performance levels
+[  442.652120] amdgpu: can't get the mac of 5
+[  448.914182] amdgpu: VI should always have 2 performance levels
+[  537.714801] amdgpu: can't get the mac of 5
+[  543.975875] amdgpu: VI should always have 2 performance levels
+[ 1423.430405] amdgpu: can't get the mac of 5
+[ 1429.649499] amdgpu: VI should always have 2 performance levels
+[ 2080.668493] amdgpu: can't get the mac of 5
+[ 2086.918590] amdgpu: VI should always have 2 performance levels
+[ 2115.280282] amdgpu: can't get the mac of 5
+[ 2121.495346] amdgpu: VI should always have 2 performance levels
+[ 2226.608091] amdgpu: can't get the mac of 5
+[ 2232.866186] amdgpu: VI should always have 2 performance levels
+[ 2248.077359] amdgpu: can't get the mac of 5
+[ 2254.325451] amdgpu: VI should always have 2 performance levels
+```
+
+a dual gpu system(双 GPU 系统)
+
+```sh
+➜  Downloads xrandr --listproviders
+Providers: number : 2
+Provider 0: id: 0x44 cap: 0xf, Source Output, Sink Output, Source Offload, Sink Offload crtcs: 3 outputs: 2 associated providers: 1 name:modesetting
+Provider 1: id: 0xc7 cap: 0xd, Source Output, Source Offload, Sink Offload crtcs: 0 outputs: 0 associated providers: 1 name:Unknown AMD Radeon GPU @ pci:0000:01:00.0
+```
+
+ref:
+
+1. <https://wiki.archlinux.org/title/Xorg#AMD>
+2. <https://bbs.archlinux.org/viewtopic.php?id=236430#:~:text=Since%20this%20is-,a%20dual%20gpu%20system,-%2C%20you%20will%20want>
+
+### KDE's plasma eating CPU
+
+<https://wiki.gentoo.org/wiki/Intel#:~:text=KDE%27s%20plasma%20eating%20CPU,-If%20/usr/bin>
