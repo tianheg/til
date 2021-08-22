@@ -1,0 +1,536 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Git and GitHub &mdash; Today I Learnt  文档</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="Git Command Line Reference" href="git-command-line-reference.html" />
+    <link rel="prev" title="Commit Messages Guide" href="commit-messages-guide.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Today I Learnt
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="在文档中搜索" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/cs-and-web-concepts.html">CS &amp; Web Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C.html">计算机网络</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/dns.html">DNS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/%E7%A7%91%E6%8A%80%E8%8B%B1%E8%AF%AD.html">科技英语</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/front-end-and-its-history.html">Front-end and its history</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/cors.html">CORS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/how-the-web-works.html">How the Web works</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../algorithms-and-data-structure/algorithms-and-data-structure.html">Algorithms and Data Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../algorithms-and-data-structure/books.html">一些算法书籍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/operating-system.html">Operating System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/linux-details.html">Linux Details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/linux-common-orders.html">Linux Common Orders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/arch-system-maintenance.html">Arch System Maintenance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/arch-package.html">Arch Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/arch-software-installation-and-usage.html">Arch Software Installation and Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/arch-installation-guide.html">Arch Installation Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/openbsd-installation.html">OpenBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/ubuntu-backup.html">Ubuntu Backup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/ubuntu-common-usage.html">Ubuntu Common Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/ubuntu-install-software.html">Install Software on Ubuntu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/ubuntu-problems.html">Problems on Ubuntu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/mxlinux-installation.html">MX Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../html/html.html">HTML</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../html/before-html.html">Before HTML</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../html/html-basics.html">HTML Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../html/images.html">Images</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../html/html-code-snippets.html">HTML Code Snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../css/css.html">CSS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../css/css-basics.html">CSS Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../css/css-box.html">CSS Box</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../css/css-position.html">CSS Position</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../css/css-code-snippets.html">CSS Code Snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/javascript.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/javascript-basics.html">JavaScript Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/es6.html">ES6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/what-i-learnt-from-js.html">What I learnt from JS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/install-node-npm-yarn.html">Install Node.js, NPM and Yarn</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/yarn-v2-usage.html">Yarn v2 Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/used-packages-from-npm-or-yarn.html">Used Packages from npm or yarn</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/the-difference-between-js-in-head-and-body.html">The difference between js in the head and body</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/js-code-snippets.html">JS Code Snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vue/vue.html">Vue</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../front-end.html">Front-end</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../programming-languages/programming-language.html">Programming Language</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../programming-languages/shell.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../programming-languages/python.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../programming-languages/go.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projects/projects.html">Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projects/wordpress.html">WordPress</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/docker.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/vagrant.html">Vagrant</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/gpg.html">GPG</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/jekyll.html">Jekyll</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/hugo.html">Hugo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/neovim.html">neovim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/cloudflare.html">Cloudflare</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/gatsby.html">Gatsby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/sphinx.html">Sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="version-control-git.html">Version Control - Git</a></li>
+<li class="toctree-l1"><a class="reference internal" href="git-fundamentals.html">Git Fundamentals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="git-commit.html">Git Commit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commit-messages-guide.html">Commit Messages Guide</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Git and GitHub</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">工作流</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ci">CI</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#api">API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#usage">Usage</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#show-diff">Show Diff</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#problems">Problems</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="git-command-line-reference.html">Git Command Line Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="git-glossary.html">Git Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="useful-tips-about-git.html">Useful Tips about Git</a></li>
+<li class="toctree-l1"><a class="reference internal" href="branch-name-contain-the-space-char.html">Branch Name Contain The ‘space’ Char</a></li>
+<li class="toctree-l1"><a class="reference internal" href="create-empty-branch-locally-and-remotely.html">Create Empty Branch Locally And Remotely</a></li>
+<li class="toctree-l1"><a class="reference internal" href="delete-a-git-branch-both-locally-and-remotely.html">Delete A Git Branch Both Locally And Remotely</a></li>
+<li class="toctree-l1"><a class="reference internal" href="delete-all-local-and-remote-tags.html">Delete All Local And Remote Tags</a></li>
+<li class="toctree-l1"><a class="reference internal" href="delete-commit.html">Delete Commit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="merge-two-git-repo.html">Merge Two Git Repo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="remove-tracking-branches-no-longer-on-remote.html">Remove Tracking Branches No Longer On Remote</a></li>
+<li class="toctree-l1"><a class="reference internal" href="update-with-original-repo-after-forking-on-github.html">Update With Original Repo After Forking on GitHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="git-clone-specify-branch.html">Git Clone Specify Branch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="github-action-only-generate-nojekyll.html">GitHub Action only Generate <code class="docutils literal notranslate"><span class="pre">.nojekyll</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../useful-info.html">Useful Info</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/hardware.html">Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/bluetooth.html">Bluetooth</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/power-supply-unit.html">Power supply unit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/raspberry-pi.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../learning-how-to-learn.html">Learning How to Learn</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Today I Learnt</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Git and GitHub</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/tianheg/til/blob/main/content/version-control-git/git-and-gitHub.rst" class="fa fa-github"> 在 GitHub 上修改</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="git-and-github">
+<h1>Git and GitHub<a class="headerlink" href="#git-and-github" title="永久链接至标题">¶</a></h1>
+<div class="section" id="id1">
+<h2>工作流<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<div class="section" id="ci">
+<h3>CI<a class="headerlink" href="#ci" title="永久链接至标题">¶</a></h3>
+<p>在 Github Actions 出来之前，比较流行的开源 CI 服务分别是 <a class="reference external" href="https://circleci.com/">CircleCI</a> 以及 <a class="reference external" href="https://travis-ci.org/">TravisCI</a>。之前也有一些项目使用过这些第三方服务，但给人的体验都不是很好例如构建缓慢。特别是对于国内用户来说访问它们的资源实在是太慢了，并且它们自身的功能也存在一点缺失。</p>
+<p><strong>Github Actions</strong></p>
+<p>接下来让我们看看应用要如何接入 <a class="reference external" href="https://docs.github.com/cn/free-pro-team&#64;latest/actions">Github Actions</a>
+以 <a class="reference external" href="https://github.com/zhangyuang/create-ssr-app">create-ssr-app</a> 为例</p>
+<p><strong>创建配置文件</strong></p>
+<blockquote>
+<div><p>$ mkdir -p .github/workflows
+$ touch .github/workflows/CI.yaml</p>
+</div></blockquote>
+<p><strong>监听 Git 命令</strong></p>
+<p>在 push 代码 以及 合并 PR 的时候触发 CI 工作</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">CI</span>
+
+<span class="c1"># Controls when the action will run. Triggers the workflow on push or pull request</span>
+<span class="c1"># events but only for the dev branch</span>
+<span class="nt">on</span><span class="p">:</span>
+  <span class="nt">push</span><span class="p">:</span>
+    <span class="nt">branches</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="nv">dev</span><span class="p p-Indicator">,</span> <span class="nv">master</span><span class="p p-Indicator">]</span>
+  <span class="nt">pull_request</span><span class="p">:</span>
+    <span class="nt">branches</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="nv">dev</span><span class="p p-Indicator">,</span> <span class="nv">master</span><span class="p p-Indicator">]</span>
+</pre></div>
+</div>
+<p><strong>添加构建环境</strong></p>
+<p>这里推荐使用 build matix 来确保我们的应用可以在多个操作系统，多个语言版本中成功构建</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">strategy</span><span class="p">:</span>
+    <span class="nt">matrix</span><span class="p">:</span>
+      <span class="nt">os</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="nv">ubuntu-latest</span><span class="p p-Indicator">,</span> <span class="nv">macos-latest</span><span class="p p-Indicator">,</span> <span class="nv">windows-latest</span><span class="p p-Indicator">]</span>
+      <span class="nt">node</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="s">&quot;12&quot;</span><span class="p p-Indicator">,</span> <span class="s">&quot;13&quot;</span><span class="p p-Indicator">,</span> <span class="s">&quot;14&quot;</span><span class="p p-Indicator">]</span>
+<span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">install - ${{ matrix.os }} - ${{ matrix.node }}</span>
+<span class="nt">runs-on</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">${{ matrix.os }}</span>
+</pre></div>
+</div>
+<p><strong>定义 job</strong></p>
+<p>我们的构建一般都包含多个任务，github 可以并行的执行这些任务来提升构建速度，并且可以指定任务之间的依赖关系</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">jobs</span><span class="p">:</span>
+  <span class="nt">install</span><span class="p">:</span> <span class="c1"># 定义安装依赖的任务</span>
+    <span class="nt">if</span><span class="p">:</span> <span class="s">&quot;!contains(github.event.head_commit.message,</span><span class="nv"> </span><span class="s">&#39;skip</span><span class="nv"> </span><span class="s">ci&#39;)</span><span class="nv"> </span><span class="s">&amp;&amp;</span><span class="nv"> </span><span class="s">!contains(github.event.head_commit.message,</span><span class="nv"> </span><span class="s">&#39;.md&#39;)&quot;</span> <span class="c1"># 如果 commit 信息包含以下关键字则跳过该任务</span>
+    <span class="nt">strategy</span><span class="p">:</span> <span class="c1"># 分别在三个操作系统的三种 Node.js 环境中运行任务</span>
+        <span class="nt">matrix</span><span class="p">:</span>
+          <span class="nt">os</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="nv">ubuntu-latest</span><span class="p p-Indicator">,</span> <span class="nv">macos-latest</span><span class="p p-Indicator">,</span> <span class="nv">windows-latest</span><span class="p p-Indicator">]</span>
+          <span class="nt">node</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="s">&quot;12&quot;</span><span class="p p-Indicator">,</span> <span class="s">&quot;13&quot;</span><span class="p p-Indicator">,</span> <span class="s">&quot;14&quot;</span><span class="p p-Indicator">]</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">install - ${{ matrix.os }} - ${{ matrix.node }}</span>
+    <span class="nt">runs-on</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">${{ matrix.os }}</span>
+    <span class="nt">steps</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="nt">uses</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">actions/checkout@v2</span>
+      <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Use Node.js</span>
+        <span class="nt">uses</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">actions/setup-node@v1</span>
+        <span class="nt">with</span><span class="p">:</span>
+          <span class="nt">node-version</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">${{ matrix.node }}</span>
+      <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">restore</span> <span class="c1"># 恢复之前缓存的依赖</span>
+        <span class="nt">uses</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">actions/cache@v2</span>
+        <span class="nt">with</span><span class="p">:</span>
+          <span class="nt">path</span><span class="p">:</span> <span class="p p-Indicator">|</span>
+            <span class="no">node_modules</span>
+            <span class="no">*/*/node_modules</span>
+          <span class="nt">key</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">${{ runner.os }}-${{ hashFiles(&#39;**/package.json&#39;) }}</span> <span class="c1"># 依赖缓存的 key 当 package.json 内容变动时丢弃缓存 也可以使用 package-lock.json or yarn.lock</span>
+          <span class="nt">restore-keys</span><span class="p">:</span> <span class="p p-Indicator">|</span>
+            <span class="no">${{ runner.os }}-${{ matrix.node-version }}-nodemodules-</span>
+      <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Install dependencies</span> <span class="c1"># 安装依赖</span>
+        <span class="nt">run</span><span class="p">:</span> <span class="p p-Indicator">|</span>
+          <span class="no">yarn</span>
+</pre></div>
+</div>
+<p>测试 和 lint 任务需要依赖 install 任务执行完毕后才可以执行。但这两个任务之间没有依赖关系，可以并行的运行</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">test</span><span class="p">:</span>
+    <span class="nt">needs</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">install</span>
+    <span class="nt">strategy</span><span class="p">:</span>
+        <span class="nt">matrix</span><span class="p">:</span>
+          <span class="nt">os</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="nv">ubuntu-latest</span><span class="p p-Indicator">,</span> <span class="nv">macos-latest</span><span class="p p-Indicator">,</span> <span class="nv">windows-latest</span><span class="p p-Indicator">]</span>
+          <span class="nt">node</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="s">&quot;12&quot;</span><span class="p p-Indicator">,</span> <span class="s">&quot;13&quot;</span><span class="p p-Indicator">,</span> <span class="s">&quot;14&quot;</span><span class="p p-Indicator">]</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">test - ${{ matrix.os }} - ${{ matrix.node }}</span>
+    <span class="nt">runs-on</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">${{ matrix.os }}</span>
+    <span class="nt">steps</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="nt">uses</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">actions/checkout@v2</span>
+      <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Use Node.js</span>
+        <span class="nt">uses</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">actions/setup-node@v1</span>
+        <span class="nt">with</span><span class="p">:</span>
+          <span class="nt">node-version</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">${{ matrix.node }}</span>
+      <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Load node_modules</span>
+        <span class="nt">uses</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">actions/cache@v2</span>
+        <span class="nt">with</span><span class="p">:</span>
+          <span class="nt">path</span><span class="p">:</span> <span class="p p-Indicator">|</span>
+            <span class="no">node_modules</span>
+            <span class="no">*/*/node_modules</span>
+          <span class="nt">key</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">${{ runner.os }}-${{ hashFiles(&#39;**/package.json&#39;) }}</span>
+      <span class="p p-Indicator">-</span> <span class="nt">run</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">yarn test</span> <span class="c1"># 执行测试并生成覆盖率，这里一般都是接入 codecov 服务，需要配置 CODECOV_TOKEN 环境变量才能够上传</span>
+<span class=" -Error">  </span><span class="nt">lint</span><span class="p">:</span>
+    <span class="nt">needs</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">install</span>
+    <span class="nt">strategy</span><span class="p">:</span>
+        <span class="nt">matrix</span><span class="p">:</span>
+          <span class="nt">os</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="nv">ubuntu-latest</span><span class="p p-Indicator">,</span> <span class="nv">macos-latest</span><span class="p p-Indicator">,</span> <span class="nv">windows-latest</span><span class="p p-Indicator">]</span>
+          <span class="nt">node</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="s">&quot;12&quot;</span><span class="p p-Indicator">,</span> <span class="s">&quot;13&quot;</span><span class="p p-Indicator">,</span> <span class="s">&quot;14&quot;</span><span class="p p-Indicator">]</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">lint - ${{ matrix.os }} - ${{ matrix.node }}</span>
+    <span class="nt">runs-on</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">${{ matrix.os }}</span>
+    <span class="nt">steps</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="nt">uses</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">actions/checkout@v2</span>
+      <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Use Node.js</span>
+        <span class="nt">uses</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">actions/setup-node@v1</span>
+        <span class="nt">with</span><span class="p">:</span>
+          <span class="nt">node-version</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">${{ matrix.node }}</span>
+      <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Load node_modules</span>
+        <span class="nt">uses</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">actions/cache@v2</span>
+        <span class="nt">with</span><span class="p">:</span>
+          <span class="nt">path</span><span class="p">:</span> <span class="p p-Indicator">|</span>
+            <span class="no">node_modules</span>
+            <span class="no">*/*/node_modules</span>
+          <span class="nt">key</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">${{ runner.os }}-${{ hashFiles(&#39;**/package.json&#39;) }}</span>
+      <span class="p p-Indicator">-</span> <span class="nt">run</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">yarn lint</span>
+</pre></div>
+</div>
+<p><strong>构建产物并上传</strong></p>
+<p>我们的应用的运行代码通常是用构建工具 如 tsc|babel|webpack 来生成的。但是我们提交到 github 的只有源代码。在这里我们在 CI 中进行构建任务后，需要将构建的产物上传。否则下一个发布任务将无法获得构建任务生成后的目录文件</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">build</span><span class="p">:</span>
+  <span class="nt">needs</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="nv">lint</span><span class="p p-Indicator">,</span> <span class="nv">test</span><span class="p p-Indicator">]</span>
+  <span class="nt">strategy</span><span class="p">:</span>
+      <span class="nt">matrix</span><span class="p">:</span>
+        <span class="nt">os</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="nv">ubuntu-latest</span><span class="p p-Indicator">,</span> <span class="nv">macos-latest</span><span class="p p-Indicator">,</span> <span class="nv">windows-latest</span><span class="p p-Indicator">]</span>
+        <span class="nt">node</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="s">&quot;12&quot;</span><span class="p p-Indicator">,</span> <span class="s">&quot;13&quot;</span><span class="p p-Indicator">,</span> <span class="s">&quot;14&quot;</span><span class="p p-Indicator">]</span>
+  <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">build - ${{ matrix.os }} - ${{ matrix.node }}</span>
+  <span class="nt">runs-on</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">${{ matrix.os }}</span>
+  <span class="nt">steps</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="nt">uses</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">actions/checkout@v2</span>
+    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Use Node.js</span>
+      <span class="nt">uses</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">actions/setup-node@v1</span>
+      <span class="nt">with</span><span class="p">:</span>
+        <span class="nt">node-version</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">${{ matrix.node }}</span>
+    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Load node_modules</span>
+      <span class="nt">uses</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">actions/cache@v2</span>
+      <span class="nt">with</span><span class="p">:</span>
+        <span class="nt">path</span><span class="p">:</span> <span class="p p-Indicator">|</span>
+          <span class="no">node_modules</span>
+          <span class="no">*/*/node_modules</span>
+        <span class="nt">key</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">${{ runner.os }}-${{ hashFiles(&#39;**/package.json&#39;) }}</span>
+    <span class="p p-Indicator">-</span> <span class="nt">run</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">yarn build</span> <span class="c1"># 执行构建</span>
+    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Upload artifact</span> <span class="c1"># 上传构建产物，这里我们的源码目录是 src，而实际运行的代码是构建后的 bin 目录</span>
+      <span class="nt">uses</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">actions/upload-artifact@v2</span>
+      <span class="nt">with</span><span class="p">:</span>
+        <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">build_output</span>
+        <span class="nt">path</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">bin</span> <span class="c1"># 上传 bin 目录</span>
+</pre></div>
+</div>
+<p><strong>发布到 NPM</strong></p>
+<p>这里不需要使用到 matrix, 我们只需要在一个环境发布即可。发布功能依赖一些环境变量，我们需要创建 NPM_TOKEN 环境变量</p>
+<blockquote>
+<div><p>$ npm token create</p>
+</div></blockquote>
+<p>在 github 项目主页添加环境变量</p>
+<a class="reference external image-reference" href="https://res.wx.qq.com/op_res/fIHeA-ZVJ229K_xpIR2QiyVyH3ZTwtKqmQzM_e6AVZHXAxRw2q1qlWHrmqJ20xhP"><img alt="" src="https://res.wx.qq.com/op_res/fIHeA-ZVJ229K_xpIR2QiyVyH3ZTwtKqmQzM_e6AVZHXAxRw2q1qlWHrmqJ20xhP" /></a>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">publish</span><span class="p">:</span>
+  <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Publish</span>
+  <span class="nt">runs-on</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span>
+  <span class="nt">needs</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="nv">build</span><span class="p p-Indicator">]</span>
+  <span class="nt">steps</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="nt">uses</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">actions/checkout@v2</span>
+    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Setup node</span>
+      <span class="nt">uses</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">actions/setup-node@v1</span>
+      <span class="nt">with</span><span class="p">:</span>
+        <span class="nt">node-version</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">12</span>
+    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Download artifacts</span> <span class="c1"># 下载之前上传的构建产物</span>
+      <span class="nt">uses</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">actions/download-artifact@v2</span>
+      <span class="nt">with</span><span class="p">:</span>
+        <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">build_output</span>
+        <span class="nt">path</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">bin</span>
+    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Publish</span>
+      <span class="nt">run</span><span class="p">:</span> <span class="p p-Indicator">|</span> <span class="c1"># 只有 commit 信息包含版本号的提交才进行发布，否则不需要发布。这里我们可以使用 lerna publish/version 或者 npm version 来进行发布</span>
+        <span class="no">if git log -1 --pretty=%B | grep &quot;^[0-9]\+\.[0-9]\+\.[0-9]\+$&quot;;</span>
+        <span class="no">then</span>
+          <span class="no">echo &quot;//registry.npmjs.org/:_authToken=$NPM_TOKEN&quot; &gt;&gt; ~/.npmrc</span>
+          <span class="no">npm publish</span>
+        <span class="no">else</span>
+          <span class="no">echo &quot;Not a release, skipping publish&quot;</span>
+        <span class="no">fi</span>
+      <span class="nt">env</span><span class="p">:</span>
+        <span class="nt">GITHUB_TOKEN</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">${{ secrets.GITHUB_TOKEN }}</span>
+        <span class="nt">NPM_TOKEN</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">${{ secrets.NPM_TOKEN }}</span>
+</pre></div>
+</div>
+<p>以上的步骤都做完后，当执行 <code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">version</span> <span class="pre">patch</span></code> 命令来生成版本后推送到仓库便会自动帮你执行构建发布流程</p>
+<a class="reference external image-reference" href="https://res.wx.qq.com/op_res/A2UVQnCR7s9y5uggqAWM2NK-V6PJOMpSKY7wA7aGKZ2GZUD123KVykc7yk8UGbmo"><img alt="" src="https://res.wx.qq.com/op_res/A2UVQnCR7s9y5uggqAWM2NK-V6PJOMpSKY7wA7aGKZ2GZUD123KVykc7yk8UGbmo" /></a>
+</div>
+</div>
+<div class="section" id="api">
+<h2>API<a class="headerlink" href="#api" title="永久链接至标题">¶</a></h2>
+<p><a class="reference external" href="https://api.github.com/">https://api.github.com/</a></p>
+</div>
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="永久链接至标题">¶</a></h2>
+<div class="section" id="show-diff">
+<h3>Show Diff<a class="headerlink" href="#show-diff" title="永久链接至标题">¶</a></h3>
+<div class="highlight-diff notranslate"><div class="highlight"><pre><span></span><span class="gd">- var GITHUB_ISSUES_LINK = &quot;https://api.github.com/repos/nelsontky/gh-pages-url-shortener-db/issues/&quot;;</span>
+<span class="gi">+ var GITHUB_ISSUES_LINK = &quot;https://api.github.com/repos/${your name}/${your db repo}/issues/&quot;;</span>
+</pre></div>
+</div>
+<p><a class="reference external" href="https://github.com/mayandev/gh-short-url#before-use">source</a></p>
+</div>
+</div>
+<div class="section" id="problems">
+<h2>Problems<a class="headerlink" href="#problems" title="永久链接至标题">¶</a></h2>
+<ol class="loweralpha simple">
+<li><p>[[GitHub Action only Generate .nojekyll]]</p></li>
+<li><p>$ bash bootstrap.sh
+Cloning into ‘/home/tianheg/.vim’…
+fatal: unable to access ‘<a class="reference external" href="https://github.com/carlhuda/janus.git/">https://github.com/carlhuda/janus.git/</a>’: gnutls_handshake() failed: The TLS connection was non-properly terminated.
+Could not clone the repository to /home/tianheg/.vim</p></li>
+</ol>
+<p>This error means that Git cannot establish a secure connection to the server you’re trying to use. Your version of Git uses the GnuTLS library to set up TLS (encrypted) connections, and for some reason that setup process is failing.</p>
+<p>This could be for a couple of reasons. One is that your server (which one you haven’t mentioned) is using an incompatible set of cipher suites or TLS versions, and there’s no encryption algorithms in common that can be chosen. It’s also possible that you have someone tampering with the connection via a MITM device.</p>
+<p>The version of Git and GnuTLS you’re using should work just fine with most standard servers. Re-installing it won’t help. You can try upgrading to a newer version of Debian, or you can try building Git yourself against a version of libcurl using OpenSSL. You can also just switch to SSH-based remotes, which will avoid this incompatibility altogether.</p>
+<blockquote>
+<div><p>Cloning into ‘/home/tianheg/.vim/janus/vim/colors/base16-vim’…
+fatal: unable to access ‘<a class="reference external" href="https://github.com/chriskempson/base16-vim.git/">https://github.com/chriskempson/base16-vim.git/</a>’: gnutls_handshake() failed: Error in the pull function.</p>
+</div></blockquote>
+<hr class="docutils" />
+<p>ref:</p>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://github.community/t/unable-to-push-to-repo-gnutls-handshake-failed/885/19">https://github.community/t/unable-to-push-to-repo-gnutls-handshake-failed/885/19</a></p></li>
+<li><p><a class="reference external" href="https://askubuntu.com/a/1009764">https://askubuntu.com/a/1009764</a></p></li>
+</ol>
+<ol class="loweralpha" start="3">
+<li><p>$ gh auth refresh -s read:public_key</p>
+<p>Post “<a class="reference external" href="https://github.com/login/device/code">https://github.com/login/device/code</a>”: read tcp 192.168.43.2:51274-&gt;140.82.113.4:443: read: connection reset by peer</p>
+</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="git-command-line-reference.html" class="btn btn-neutral float-right" title="Git Command Line Reference" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="commit-messages-guide.html" class="btn btn-neutral float-left" title="Commit Messages Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; 版权所有 2021 - 2021, Jim Gao.
+
+    </p>
+  </div>
+    
+    
+    
+    利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用了 
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    
+    由 <a href="https://readthedocs.org">Read the Docs</a>开发.
+<p>除额外注明的地方外，本文档按 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议发布。</p>
+ 
+
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,562 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Shell &mdash; Today I Learnt  文档</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="Python" href="python.html" />
+    <link rel="prev" title="Programming Language" href="programming-language.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Today I Learnt
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="在文档中搜索" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/cs-and-web-concepts.html">CS &amp; Web Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C.html">计算机网络</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/dns.html">DNS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/%E7%A7%91%E6%8A%80%E8%8B%B1%E8%AF%AD.html">科技英语</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/front-end-and-its-history.html">Front-end and its history</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/cors.html">CORS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/how-the-web-works.html">How the Web works</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../algorithms-and-data-structure/algorithms-and-data-structure.html">Algorithms and Data Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../algorithms-and-data-structure/books.html">一些算法书籍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/operating-system.html">Operating System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/linux-details.html">Linux Details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/linux-common-orders.html">Linux Common Orders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/arch-system-maintenance.html">Arch System Maintenance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/arch-package.html">Arch Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/arch-software-installation-and-usage.html">Arch Software Installation and Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/arch-installation-guide.html">Arch Installation Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/openbsd-installation.html">OpenBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/ubuntu-backup.html">Ubuntu Backup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/ubuntu-common-usage.html">Ubuntu Common Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/ubuntu-install-software.html">Install Software on Ubuntu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/ubuntu-problems.html">Problems on Ubuntu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operating-system/mxlinux-installation.html">MX Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../html/html.html">HTML</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../html/before-html.html">Before HTML</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../html/html-basics.html">HTML Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../html/images.html">Images</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../html/html-code-snippets.html">HTML Code Snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../css/css.html">CSS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../css/css-basics.html">CSS Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../css/css-box.html">CSS Box</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../css/css-position.html">CSS Position</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../css/css-code-snippets.html">CSS Code Snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/javascript.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/javascript-basics.html">JavaScript Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/es6.html">ES6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/what-i-learnt-from-js.html">What I learnt from JS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/install-node-npm-yarn.html">Install Node.js, NPM and Yarn</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/yarn-v2-usage.html">Yarn v2 Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/used-packages-from-npm-or-yarn.html">Used Packages from npm or yarn</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/the-difference-between-js-in-head-and-body.html">The difference between js in the head and body</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/js-code-snippets.html">JS Code Snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vue/vue.html">Vue</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../front-end.html">Front-end</a></li>
+<li class="toctree-l1"><a class="reference internal" href="programming-language.html">Programming Language</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Shell</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#examples">examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#bash">bash</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#set-default-value">Set default value</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="python.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="go.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projects/projects.html">Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projects/wordpress.html">WordPress</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/docker.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/vagrant.html">Vagrant</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/gpg.html">GPG</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/jekyll.html">Jekyll</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/hugo.html">Hugo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/neovim.html">neovim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/cloudflare.html">Cloudflare</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/gatsby.html">Gatsby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/sphinx.html">Sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/version-control-git.html">Version Control - Git</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/git-fundamentals.html">Git Fundamentals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/git-commit.html">Git Commit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/commit-messages-guide.html">Commit Messages Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/git-and-gitHub.html">Git and GitHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/git-command-line-reference.html">Git Command Line Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/git-glossary.html">Git Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/useful-tips-about-git.html">Useful Tips about Git</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/branch-name-contain-the-space-char.html">Branch Name Contain The ‘space’ Char</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/create-empty-branch-locally-and-remotely.html">Create Empty Branch Locally And Remotely</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/delete-a-git-branch-both-locally-and-remotely.html">Delete A Git Branch Both Locally And Remotely</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/delete-all-local-and-remote-tags.html">Delete All Local And Remote Tags</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/delete-commit.html">Delete Commit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/merge-two-git-repo.html">Merge Two Git Repo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/remove-tracking-branches-no-longer-on-remote.html">Remove Tracking Branches No Longer On Remote</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/update-with-original-repo-after-forking-on-github.html">Update With Original Repo After Forking on GitHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/git-clone-specify-branch.html">Git Clone Specify Branch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/github-action-only-generate-nojekyll.html">GitHub Action only Generate <code class="docutils literal notranslate"><span class="pre">.nojekyll</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../useful-info.html">Useful Info</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/hardware.html">Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/bluetooth.html">Bluetooth</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/power-supply-unit.html">Power supply unit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/raspberry-pi.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../learning-how-to-learn.html">Learning How to Learn</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Today I Learnt</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Shell</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/tianheg/til/blob/main/content/programming-languages/shell.rst" class="fa fa-github"> 在 GitHub 上修改</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="shell">
+<h1>Shell<a class="headerlink" href="#shell" title="永久链接至标题">¶</a></h1>
+<div class="section" id="examples">
+<h2>examples<a class="headerlink" href="#examples" title="永久链接至标题">¶</a></h2>
+<div class="section" id="bash">
+<h3>bash<a class="headerlink" href="#bash" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>#!/bin/bash
+echo “Hello World”</p>
+<p>#!/bin/bash
+echo “Printing text with newline”
+echo -n “Printing text widthout newline”
+echo -e “nRemovingtbackslash t charactersn”</p>
+</div></blockquote>
+<p>Single line comment:</p>
+<blockquote>
+<div><p>#!/bin/bash</p>
+<p># Add two numeric value
+((sum=12+13))</p>
+<p># Print the result
+echo $sum</p>
+</div></blockquote>
+<p>Multi-line comment:</p>
+<blockquote>
+<div><p>#!/bin/bash</p>
+<p>: ‘
+The following script calculates
+the square value of the number, 5.
+‘
+((area=5*6))
+echo $area</p>
+<p>&lt;&lt;LongComment
+kljljj
+LongComment</p>
+</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">while</span></code> Loop:</p>
+<blockquote>
+<div><p>while [ condition ]
+do</p>
+<blockquote>
+<div><p>commands</p>
+</div></blockquote>
+<p>done</p>
+<p>#!/bin/bash</p>
+<p>n=1
+while [ $n -le 5 ]
+do</p>
+<blockquote>
+<div><p>echo “Running $n time”
+(( n++ ))</p>
+</div></blockquote>
+<p>done</p>
+<p>#!/bin/bash</p>
+<p>valid=true
+count=1
+while [ $valid ]
+do
+echo $count
+if [ $count -eq 15 ];
+then
+break
+fi
+((count++))
+done</p>
+<p>#!/bin/bash</p>
+<p># 使用 break 语句进行条件退出
+n=1
+while [ $n -le 6 ]
+do</p>
+<blockquote>
+<div><p>if [ $n == 6 ]
+then</p>
+<blockquote>
+<div><p>echo “Terminated”
+break</p>
+</div></blockquote>
+<p>fi
+echo “Position: $n”
+(( n++ ))</p>
+</div></blockquote>
+<p>done</p>
+<p>#!/bin/bash</p>
+<p># 使用 continue 语句省略特定步骤
+n=0
+while [ $n -le 5 ]
+do</p>
+<blockquote>
+<div><p>(( n++ ))
+if [ $n == 3 ]
+then</p>
+<blockquote>
+<div><p>continue</p>
+</div></blockquote>
+<p>fi
+echo “Position $n”</p>
+</div></blockquote>
+<p>done</p>
+<p>#!/bin/bash</p>
+<p># 创建无限循环
+n=1
+while :
+do</p>
+<blockquote>
+<div><p>printf “The current value of n=$nn”
+if [ $n == 3 ]
+then</p>
+<blockquote>
+<div><p>echo “good”</p>
+</div></blockquote>
+<p>elif [ $n == 5 ]
+then</p>
+<blockquote>
+<div><p>echo “bad”</p>
+</div></blockquote>
+<p>elif [ $n == 7 ]
+then</p>
+<blockquote>
+<div><p>echo “ugly”</p>
+</div></blockquote>
+<p>elif [ $n == 10 ]
+then</p>
+<blockquote>
+<div><p>exit 0</p>
+</div></blockquote>
+<p>fi</p>
+<p>(( n++ ))</p>
+</div></blockquote>
+<p>done</p>
+</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">for</span></code> Loop:</p>
+<blockquote>
+<div><p>for variable_name in lists
+do
+commands
+done</p>
+<p>#!/bin/bash</p>
+<p>for (( counter=22; counter&gt;0; counter– ))
+do
+echo -n “$counter ”
+done
+printf “n”</p>
+<p>#!/bin/bash</p>
+<p># Reading static values
+for color in Blue Green Red White
+do
+echo “Color = $color”
+done</p>
+<p>#!/bin/bash</p>
+<p># Reading Array Variable
+ColorList=(“Blue Green Red White”)
+for color in $ColorList
+do
+if [ $color == ‘White’ ]
+then
+echo “The color I hate the most is $color”
+fi
+done</p>
+<p>#!/bin/bash</p>
+<p># Reading Command-line arguments
+for val in $*
+do
+echo “Argument: $val”
+done</p>
+<p># exec: bash test.sh 12 3 12 31
+# Argument: 12
+# Argument: 3
+# Argument: 12
+# Argument: 31</p>
+<p>#!/bin/bash</p>
+<p># Finding odd and even number using three expressions
+for (( n=1; n&lt;=15; n++))
+do
+if (( $n%2==0 ))
+then
+echo “$n is even”
+else
+echo “$n is odd”
+fi
+done</p>
+<p>#!/bin/bash</p>
+<p># Reading file content
+# weekday.txt: Sunday Monday Tuesday Wednesday Thursday Friday Saturday
+i=1
+for var in <cite>cat weekday.txt</cite>
+do
+echo “Weekday $i: $var”
+((i++))
+done</p>
+</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">read</span></code>:</p>
+<p>It’s used to get user input.</p>
+<blockquote>
+<div><p>#!/bin/bash</p>
+<p># Using simple read command
+echo “Enter your name”
+read name
+echo “Welcome $name to China”</p>
+<p>#!/bin/bash</p>
+<p># Using read command with options
+read -p ‘Username: ‘ user # -p 用来显示帮助输入的信息
+read -sp ‘Password: ‘ pass # -s 隐藏输入内容</p>
+<p>if (( $user == “admin” &amp;&amp; $pass == “1234” ))
+then</p>
+<blockquote>
+<div><p>echo -e “nSuccessful login”</p>
+</div></blockquote>
+<dl class="simple">
+<dt>else</dt><dd><p>echo -e “nUnsuccessful login”</p>
+</dd>
+</dl>
+<p>fi</p>
+<p>#!/bin/bash</p>
+<p># Using read command to take multiple inputs
+echo “Type two names of your favorite programming languages”
+read lan1 lan2
+echo “$lan1 is your 1st choice”
+echo “$lan2 is your 2nd choice”</p>
+<p>#!/bin/bash</p>
+<p># Using read command with the time limit
+read -t 5 -p “Type your favorite color : ” color
+echo $color</p>
+</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">if</span></code>:</p>
+<p>被用于比较的连接命令：<code class="docutils literal notranslate"><span class="pre">-lt</span></code>，<code class="docutils literal notranslate"><span class="pre">-eq</span></code>(equality)，<code class="docutils literal notranslate"><span class="pre">-ne</span></code>(not equality)，<code class="docutils literal notranslate"><span class="pre">-gt</span></code>(greater than)。</p>
+<p>将与（<code class="docutils literal notranslate"><span class="pre">&amp;&amp;</span></code>）或（<code class="docutils literal notranslate"><span class="pre">||</span></code>）应用于 <code class="docutils literal notranslate"><span class="pre">if</span></code> 语句中。</p>
+<p><code class="docutils literal notranslate"><span class="pre">elif</span></code>:</p>
+<blockquote>
+<div><p>#!/bin/bash</p>
+<p>echo “Enter your lucky number”
+read n</p>
+<p>if [ $n -eq 101 ];
+then
+echo “You got 1st prize”
+elif [ $n -eq 520 ];
+then
+echo “You got 2nd prize”
+elif [ $n -eq 999 ];
+then
+echo “You got 3rd prize”</p>
+<p>else
+echo “Sorry, try for the next time”
+fi</p>
+</div></blockquote>
+<hr class="docutils" />
+<p><strong>References</strong>:</p>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://linuxhint.com/30_bash_script_examples/">https://linuxhint.com/30_bash_script_examples/</a></p></li>
+</ol>
+<div class="section" id="set-default-value">
+<h4>Set default value<a class="headerlink" href="#set-default-value" title="永久链接至标题">¶</a></h4>
+<blockquote>
+<div><p>#!/bin/bash</p>
+<p>read -p “Enter your name [A]: ” name
+name=${name:-A}
+echo $name</p>
+</div></blockquote>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="python.html" class="btn btn-neutral float-right" title="Python" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="programming-language.html" class="btn btn-neutral float-left" title="Programming Language" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; 版权所有 2021 - 2021, Jim Gao.
+
+    </p>
+  </div>
+    
+    
+    
+    利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用了 
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    
+    由 <a href="https://readthedocs.org">Read the Docs</a>开发.
+<p>除额外注明的地方外，本文档按 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议发布。</p>
+ 
+
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

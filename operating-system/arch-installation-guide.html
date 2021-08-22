@@ -1,0 +1,701 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Arch Installation Guide &mdash; Today I Learnt  文档</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="OpenBSD" href="openbsd-installation.html" />
+    <link rel="prev" title="Arch Software Installation and Usage" href="arch-software-installation-and-usage.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Today I Learnt
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="在文档中搜索" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/cs-and-web-concepts.html">CS &amp; Web Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C.html">计算机网络</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/dns.html">DNS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/%E7%A7%91%E6%8A%80%E8%8B%B1%E8%AF%AD.html">科技英语</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/front-end-and-its-history.html">Front-end and its history</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/cors.html">CORS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/how-the-web-works.html">How the Web works</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../algorithms-and-data-structure/algorithms-and-data-structure.html">Algorithms and Data Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../algorithms-and-data-structure/books.html">一些算法书籍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="operating-system.html">Operating System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="linux-details.html">Linux Details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="linux-common-orders.html">Linux Common Orders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arch-system-maintenance.html">Arch System Maintenance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arch-package.html">Arch Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arch-software-installation-and-usage.html">Arch Software Installation and Usage</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Arch Installation Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">初始安装</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#bios-usb">更改 BIOS，使用 USB 系统启动盘优先启动</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#uefi">验证 UEFI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">验证网络</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">更新系统时间</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">硬盘分区</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">硬盘格式化、新建文件系统</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">挂载分区</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id7">选择镜像源</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id8">安装基本系统和安装时要用的应用到硬盘</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id9">配置系统</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#u">进入硬盘，而不在 U 盘</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id10">生成挂载表</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id11">时区和语言</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id12">安装引导程序</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id13">设置主机名</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id14">提前配置网络</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#root">设置 root 密码</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id15">新建普通用户</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id16">返回 U 盘</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id17">重启系统</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id18">完善系统</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id19">启动微码更新</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id20">完善显卡驱动</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#va-api-or-vdpau">VA-API or VDPAU</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id21">安装图形界面</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ssd">SSD 优化</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#trim">开启TRIM</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#i-o-scheduler">更换 I/O  scheduler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tmpfs">迁移高读写文件到 tmpfs</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id22">检查硬盘状况</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id23">测试固态硬盘速度</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="openbsd-installation.html">OpenBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ubuntu-backup.html">Ubuntu Backup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ubuntu-common-usage.html">Ubuntu Common Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ubuntu-install-software.html">Install Software on Ubuntu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ubuntu-problems.html">Problems on Ubuntu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mxlinux-installation.html">MX Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../html/html.html">HTML</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../html/before-html.html">Before HTML</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../html/html-basics.html">HTML Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../html/images.html">Images</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../html/html-code-snippets.html">HTML Code Snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../css/css.html">CSS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../css/css-basics.html">CSS Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../css/css-box.html">CSS Box</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../css/css-position.html">CSS Position</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../css/css-code-snippets.html">CSS Code Snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/javascript.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/javascript-basics.html">JavaScript Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/es6.html">ES6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/what-i-learnt-from-js.html">What I learnt from JS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/install-node-npm-yarn.html">Install Node.js, NPM and Yarn</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/yarn-v2-usage.html">Yarn v2 Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/used-packages-from-npm-or-yarn.html">Used Packages from npm or yarn</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/the-difference-between-js-in-head-and-body.html">The difference between js in the head and body</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/js-code-snippets.html">JS Code Snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vue/vue.html">Vue</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../front-end.html">Front-end</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../programming-languages/programming-language.html">Programming Language</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../programming-languages/shell.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../programming-languages/python.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../programming-languages/go.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projects/projects.html">Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projects/wordpress.html">WordPress</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/docker.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/vagrant.html">Vagrant</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/gpg.html">GPG</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/jekyll.html">Jekyll</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/hugo.html">Hugo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/neovim.html">neovim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/cloudflare.html">Cloudflare</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/gatsby.html">Gatsby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/sphinx.html">Sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/version-control-git.html">Version Control - Git</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/git-fundamentals.html">Git Fundamentals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/git-commit.html">Git Commit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/commit-messages-guide.html">Commit Messages Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/git-and-gitHub.html">Git and GitHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/git-command-line-reference.html">Git Command Line Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/git-glossary.html">Git Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/useful-tips-about-git.html">Useful Tips about Git</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/branch-name-contain-the-space-char.html">Branch Name Contain The ‘space’ Char</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/create-empty-branch-locally-and-remotely.html">Create Empty Branch Locally And Remotely</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/delete-a-git-branch-both-locally-and-remotely.html">Delete A Git Branch Both Locally And Remotely</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/delete-all-local-and-remote-tags.html">Delete All Local And Remote Tags</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/delete-commit.html">Delete Commit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/merge-two-git-repo.html">Merge Two Git Repo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/remove-tracking-branches-no-longer-on-remote.html">Remove Tracking Branches No Longer On Remote</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/update-with-original-repo-after-forking-on-github.html">Update With Original Repo After Forking on GitHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/git-clone-specify-branch.html">Git Clone Specify Branch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/github-action-only-generate-nojekyll.html">GitHub Action only Generate <code class="docutils literal notranslate"><span class="pre">.nojekyll</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../useful-info.html">Useful Info</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/hardware.html">Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/bluetooth.html">Bluetooth</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/power-supply-unit.html">Power supply unit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/raspberry-pi.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../learning-how-to-learn.html">Learning How to Learn</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Today I Learnt</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Arch Installation Guide</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/tianheg/til/blob/main/content/operating-system/arch-installation-guide.rst" class="fa fa-github"> 在 GitHub 上修改</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="arch-installation-guide">
+<h1>Arch Installation Guide<a class="headerlink" href="#arch-installation-guide" title="永久链接至标题">¶</a></h1>
+<p>安装过程整体顺利，没有无法解决的问题，主要参考资料：</p>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://io-oi.me/tech/hello-arch-linux/">https://io-oi.me/tech/hello-arch-linux/</a></p></li>
+<li><p><a class="reference external" href="https://wiki.archlinux.org/">https://wiki.archlinux.org/</a></p></li>
+<li><p>Google</p></li>
+</ol>
+<p>除此之外，还有 <a class="reference external" href="https://python-archinstall.readthedocs.io/en/latest/index.html">archinstall</a></p>
+<div class="section" id="id1">
+<h2>初始安装<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<div class="section" id="bios-usb">
+<h3>更改 BIOS，使用 USB 系统启动盘优先启动<a class="headerlink" href="#bios-usb" title="永久链接至标题">¶</a></h3>
+<p>插入制作好的 arch linux USB 启动盘，当前目录下并无 install.txt（详见参考资料 1）。</p>
+</div>
+<div class="section" id="uefi">
+<h3>验证 UEFI<a class="headerlink" href="#uefi" title="永久链接至标题">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">ls</span> <span class="pre">/sys/firmware/efi/efivars</span></code> 有输出，说明启动模式为 UEFI。</p>
+</div>
+<div class="section" id="id2">
+<h3>验证网络<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">ping</span> <span class="pre">archlinux.org</span> <span class="pre">-c</span> <span class="pre">3</span></code> 验证网络，0% packet loss 说明网络正常。</p>
+</div>
+<div class="section" id="id3">
+<h3>更新系统时间<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">timedatectl</span> <span class="pre">set-ntp</span> <span class="pre">true</span></code> 更新系统时间，<code class="docutils literal notranslate"><span class="pre">timedatectl</span> <span class="pre">status</span></code> 检查无误。</p>
+</div>
+<div class="section" id="id4">
+<h3>硬盘分区<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h3>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">fdisk</span> <span class="pre">-l</span></code> 查看硬盘信息：sdb 119.24g 固态，sda 931.51g 机械</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">fdisk</span> <span class="pre">/dev/sdb</span></code> 固态硬盘分区</p></li>
+</ol>
+<p>进入 fdisk 操作界面后，m 查看命令帮助，p 显示目标硬盘分区，g 新建 GPT 分区表。创建 sdb1 分区，n 创建分区、分区序号、类型起始扇区默认，结束扇区 +256M。修改分区类型为 EFI System，p 确认为 EFI System。创建 sdb2 分区，全部默认。我的安装移除了原系统的 signature。</p>
+<p>分区结果：</p>
+<blockquote>
+<div><p>Device      Start       End   Sectors  Size Type
+/dev/sdb1    2048    526335    524288  256M EFI System
+/dev/sdb2  526336 250069646 249543311  119G Linux filesystem</p>
+</div></blockquote>
+<p>关于是否分配 SWAP 分区的讨论：<a class="reference external" href="https://bbs.archlinuxcn.org/viewtopic.php?id=10472">https://bbs.archlinuxcn.org/viewtopic.php?id=10472</a></p>
+<p>机械硬盘 sda 作为挂载硬盘存储文件。</p>
+</div>
+<div class="section" id="id5">
+<h3>硬盘格式化、新建文件系统<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>mkfs.fat -F32 /dev/sdb1
+mkfs.ext4 /dev/sdb2
+mkfs.ext4 /dev/sda</p>
+</div></blockquote>
+</div>
+<div class="section" id="id6">
+<h3>挂载分区<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>mount /dev/sdb2 /mnt
+mkdir -p /mnt/boot/efi
+mount /dev/sdb1 /mnt/boot/efi</p>
+</div></blockquote>
+</div>
+<div class="section" id="id7">
+<h3>选择镜像源<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>pacman -Syyy reflector # reflector 能够方便地选择镜像源
+reflector -c China -a 6 –sort rate –save /etc/pacman.d/mirrorlist # 这里的 mirrorlist 是 U 盘中的，还是硬盘中的？U 盘中的
+# 该配置不仅会应用到安装环境，也会应用至新系统中 from <a class="reference external" href="https://bbs.archlinuxcn.org/viewtopic.php?id=1037#:~:text=%E8%AF%A5%E9%85%8D%E7%BD%AE%E4%B8%8D%E4%BB%85%E4%BC%9A%E5%BA%94%E7%94%A8%E5%88%B0%E5%AE%89%E8%A3%85%E7%8E%AF%E5%A2%83%EF%BC%8C%E4%B9%9F%E4%BC%9A%E5%BA%94%E7%94%A8%E8%87%B3%E6%96%B0%E7%B3%BB%E7%BB%9F%E4%B8%AD">https://bbs.archlinuxcn.org/viewtopic.php?id=1037#:~:text=%E8%AF%A5%E9%85%8D%E7%BD%AE%E4%B8%8D%E4%BB%85%E4%BC%9A%E5%BA%94%E7%94%A8%E5%88%B0%E5%AE%89%E8%A3%85%E7%8E%AF%E5%A2%83%EF%BC%8C%E4%B9%9F%E4%BC%9A%E5%BA%94%E7%94%A8%E8%87%B3%E6%96%B0%E7%B3%BB%E7%BB%9F%E4%B8%AD</a>
+pacman -Syyy # y 刷新本地缓存 yyy 强制刷新</p>
+<p># 另一种选择镜像源命令
+sed -i ‘/China/!{n;/Server/s/^/#/};t;n’ /etc/pacman.d/mirrorlist</p>
+</div></blockquote>
+</div>
+<div class="section" id="id8">
+<h3>安装基本系统和安装时要用的应用到硬盘<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>pacstrap -i /mnt base base-devel linux linux-headers linux-firmware dhcpcd vim</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="id9">
+<h2>配置系统<a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h2>
+<div class="section" id="u">
+<h3>进入硬盘，而不在 U 盘<a class="headerlink" href="#u" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>arch-chroot /mnt /bin/bash</p>
+</div></blockquote>
+</div>
+<div class="section" id="id10">
+<h3>生成挂载表<a class="headerlink" href="#id10" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>genfstab -U -p /mnt &gt;&gt; /mnt/etc/fstab</p>
+</div></blockquote>
+<p>检查：</p>
+<blockquote>
+<div><p>cat /mnt/etc/fstab</p>
+</div></blockquote>
+</div>
+<div class="section" id="id11">
+<h3>时区和语言<a class="headerlink" href="#id11" title="永久链接至标题">¶</a></h3>
+<p>设置时区：</p>
+<blockquote>
+<div><p>ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+hwclock –systohc –utc</p>
+</div></blockquote>
+<p>配置系统语言环境:</p>
+<p><code class="docutils literal notranslate"><span class="pre">vim</span> <span class="pre">/etc/locale.gen</span></code> 取消注释：</p>
+<blockquote>
+<div><p>en_US.UTF-8 UTF-8
+…
+zh_CN.UTF-8 UTF-8</p>
+</div></blockquote>
+<p>生成配置：</p>
+<blockquote>
+<div><p>locale-gen</p>
+</div></blockquote>
+<p>设置本地语言环境:</p>
+<p><code class="docutils literal notranslate"><span class="pre">vim</span> <span class="pre">/etc/locale.conf</span></code> 输入：</p>
+<blockquote>
+<div><p>LANG=en_US.UTF-8</p>
+</div></blockquote>
+</div>
+<div class="section" id="id12">
+<h3>安装引导程序<a class="headerlink" href="#id12" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>pacman -S grub efibootmgr
+grub-install –target=x86_64-efi –bootloader-id=GRUB –efi-directory=/boot/efi
+grub-mkconfig -o /boot/grub/grub.cfg</p>
+</div></blockquote>
+<p>运行 grub 相关操作时，会出现警告：<code class="docutils literal notranslate"><span class="pre">Warning:</span> <span class="pre">os-prober</span> <span class="pre">will</span> <span class="pre">not</span> <span class="pre">be</span> <span class="pre">executed</span> <span class="pre">to</span> <span class="pre">detect</span> <span class="pre">other</span> <span class="pre">bootable</span> <span class="pre">partitions.</span></code>。查 arch wiki 后，可以在 /etc/default/grub 中设置 <code class="docutils literal notranslate"><span class="pre">GRUB_DISABLE_OS_PROBER=false</span></code>。</p>
+</div>
+<div class="section" id="id13">
+<h3>设置主机名<a class="headerlink" href="#id13" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>echo arch &gt; /etc/hostname</p>
+</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">vim</span> <span class="pre">/etc/hosts</span></code> 添加以下内容：</p>
+<blockquote>
+<div><p>127.0.0.1 localhost
+::1 localhost
+127.0.0.1 arch.localdomain arch</p>
+</div></blockquote>
+</div>
+<div class="section" id="id14">
+<h3>提前配置网络<a class="headerlink" href="#id14" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>pacman -S networkmanager
+systemctl enable NetworkManager
+systemctl start NetworkManager
+systemctl status NetworkManager # 检查是否运行</p>
+</div></blockquote>
+</div>
+<div class="section" id="root">
+<h3>设置 root 密码<a class="headerlink" href="#root" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>passwd</p>
+</div></blockquote>
+</div>
+<div class="section" id="id15">
+<h3>新建普通用户<a class="headerlink" href="#id15" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>useradd -m -g users -G wheel -s /bin/bash archie</p>
+</div></blockquote>
+<p>设置普通用户密码：</p>
+<blockquote>
+<div><p>passwd archie</p>
+</div></blockquote>
+<p>设置普通用户权限:</p>
+<blockquote>
+<div><p>EDITOR=vim visudo</p>
+</div></blockquote>
+<p>取消注释：</p>
+<blockquote>
+<div><p>## Uncomment to allow members of group wheel to execute any command</p>
+<p>%wheel ALL=(ALL) ALL</p>
+<p>## Same thing without a password</p>
+<p>%wheel ALL=(ALL) NOPASSWD: ALL</p>
+</div></blockquote>
+</div>
+<div class="section" id="id16">
+<h3>返回 U 盘<a class="headerlink" href="#id16" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>exit</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="id17">
+<h2>重启系统<a class="headerlink" href="#id17" title="永久链接至标题">¶</a></h2>
+<blockquote>
+<div><p>umount -R /mnt
+reboot</p>
+</div></blockquote>
+<p>开机后改动 BIOS，配置「系统启动」后，拔掉 U 盘。普通用户 archie 登录。</p>
+</div>
+<div class="section" id="id18">
+<h2>完善系统<a class="headerlink" href="#id18" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id19">
+<h3>启动微码更新<a class="headerlink" href="#id19" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>sudo pacman -S intel-ucode
+sudo grub-mkconfig -o /boot/grub/grub.cfg</p>
+</div></blockquote>
+</div>
+<div class="section" id="id20">
+<h3>完善显卡驱动<a class="headerlink" href="#id20" title="永久链接至标题">¶</a></h3>
+<p>这一步要在知道自己显卡配置的前提下执行。</p>
+<div class="section" id="va-api-or-vdpau">
+<h4>VA-API or VDPAU<a class="headerlink" href="#va-api-or-vdpau" title="永久链接至标题">¶</a></h4>
+<blockquote>
+<div><p>sudo pacman -S libva-utils vdpauinfo</p>
+<p>vainfo
+vainfo: VA-API version: 1.12 (libva 2.12.0)
+vainfo: Driver version: Intel iHD driver for Intel(R) Gen Graphics - 21.3.2 ()
+vainfo: Supported profile and entrypoints
+VAProfileNone                   : VAEntrypointVideoProc
+VAProfileNone                   : VAEntrypointStats
+VAProfileMPEG2Simple            : VAEntrypointVLD
+VAProfileMPEG2Simple            : VAEntrypointEncSlice
+VAProfileMPEG2Main              : VAEntrypointVLD
+VAProfileMPEG2Main              : VAEntrypointEncSlice
+VAProfileH264Main               : VAEntrypointVLD
+VAProfileH264Main               : VAEntrypointEncSlice
+VAProfileH264Main               : VAEntrypointFEI
+VAProfileH264Main               : VAEntrypointEncSliceLP
+VAProfileH264High               : VAEntrypointVLD
+VAProfileH264High               : VAEntrypointEncSlice
+VAProfileH264High               : VAEntrypointFEI
+VAProfileH264High               : VAEntrypointEncSliceLP
+VAProfileVC1Simple              : VAEntrypointVLD
+VAProfileVC1Main                : VAEntrypointVLD
+VAProfileVC1Advanced            : VAEntrypointVLD
+VAProfileJPEGBaseline           : VAEntrypointVLD
+VAProfileJPEGBaseline           : VAEntrypointEncPicture
+VAProfileH264ConstrainedBaseline: VAEntrypointVLD
+VAProfileH264ConstrainedBaseline: VAEntrypointEncSlice
+VAProfileH264ConstrainedBaseline: VAEntrypointFEI
+VAProfileH264ConstrainedBaseline: VAEntrypointEncSliceLP
+VAProfileVP8Version0_3          : VAEntrypointVLD
+VAProfileVP8Version0_3          : VAEntrypointEncSlice
+VAProfileHEVCMain               : VAEntrypointVLD
+VAProfileHEVCMain               : VAEntrypointEncSlice
+VAProfileHEVCMain               : VAEntrypointFEI
+VAProfileHEVCMain10             : VAEntrypointVLD
+VAProfileHEVCMain10             : VAEntrypointEncSlice
+VAProfileVP9Profile0            : VAEntrypointVLD
+VAProfileVP9Profile2            : VAEntrypointVLD</p>
+<p>vdpauinfo
+display: :0   screen: 0
+Failed to open VDPAU backend libvdpau_va_gl.so: cannot open shared object file: No such file or directory
+Error creating VDPAU device: 1</p>
+</div></blockquote>
+<p>So mine is VA-API, I supposed to install <a class="reference external" href="https://wiki.archlinux.org/title/Hardware_video_acceleration#:~:text=VA-API%20on%20Radeon%20HD%202000%20and%20newer%20GPUs">libva-mesa-driver</a>.</p>
+<p>我的两种 GPU：</p>
+<blockquote>
+<div><p>00:02.0 VGA compatible controller: Intel Corporation UHD Graphics 620 (rev 07)
+01:00.0 Display controller: Advanced Micro Devices, Inc. [AMD/ATI] Topaz XT [Radeon R7 M260/M265 / M340/M360 / M440/M445 / 530/535 / 620/625 Mobile] (rev c3)</p>
+</div></blockquote>
+<ul>
+<li><p>Radeon R7 M260(Topaz) <a class="reference external" href="https://en.wikipedia.org/wiki/List_of_AMD_graphics_processing_units#Radeon_R5/R7/R9_M200_series">https://en.wikipedia.org/wiki/List_of_AMD_graphics_processing_units#Radeon_R5/R7/R9_M200_series</a></p>
+<blockquote>
+<div><p>sudo pacman -S intel-media-driver vulkan-intel vulkan-radeon xf86-video-amdgpu xf86-video-ati libva-mesa-driver</p>
+</div></blockquote>
+</li>
+</ul>
+<p>不推荐安装 <code class="docutils literal notranslate"><span class="pre">xf86-video-intel</span></code>，详见 <a class="reference external" href="https://wiki.archlinux.org/title/Intel_graphics#:~:text=Often%20not%20recommended%2C%20see%20note%20below">Intel graphics - ArchWiki</a></p>
+<p>CPU 的详细信息：<a class="reference external" href="https://en.wikipedia.org/wiki/List_of_Intel_graphics_processing_units#:~:text=38.4-,Core%20i5-8250U,-Core%20i5-8350U">https://en.wikipedia.org/wiki/List_of_Intel_graphics_processing_units#:~:text=38.4-,Core%20i5-8250U,-Core%20i5-8350U</a></p>
+<p>HDMI audio: <a class="reference external" href="https://wiki.archlinux.org/title/ATI#:~:text=cut%20-d-%20-f2--,HDMI%20audio,-HDMI%20audio%20is">https://wiki.archlinux.org/title/ATI#:~:text=cut%20-d-%20-f2–,HDMI%20audio,-HDMI%20audio%20is</a></p>
+<p>ref:</p>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://wiki.archlinux.org/title/Hardware_video_acceleration">https://wiki.archlinux.org/title/Hardware_video_acceleration</a></p></li>
+<li><p><a class="reference external" href="https://wiki.archlinux.org/title/Vulkan">https://wiki.archlinux.org/title/Vulkan</a></p></li>
+<li><p><a class="reference external" href="https://wiki.archlinux.org/title/Xorg#Driver_installation">https://wiki.archlinux.org/title/Xorg#Driver_installation</a></p></li>
+<li><p><a class="reference external" href="https://wiki.archlinux.org/title/Hardware_video_acceleration#:~:text=VDPAU%20on%20Radeon%20R300%20and%20newer%20GPUs">https://wiki.archlinux.org/title/Hardware_video_acceleration#:~:text=VDPAU%20on%20Radeon%20R300%20and%20newer%20GPUs</a></p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="id21">
+<h3>安装图形界面<a class="headerlink" href="#id21" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>sudo pacman -S xorg xorg-server xorg-xinit plasma # gnome gnome-extra
+# systemctl enable gdm
+systemctl enable sddm # for kde(plasma)</p>
+</div></blockquote>
+<p>桌面环境为 GNOME 时，切换 Wayland 至 Xorg：</p>
+<blockquote>
+<div><p>sudo vim /etc/gdm/custom.conf</p>
+</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">/etc/gdm/custom.conf</span></code>:</p>
+<blockquote>
+<div><p>[daemon]
+# Uncoment the line below to force the login screen to use Xorg
+-#WaylandEnable=false
++WaylandEnable=false</p>
+</div></blockquote>
+<p>重启后，图形界面打开，但无法打开 Gnome Terminal，通过 Ctrl+Alt+F2 进入命令行模式，输入 gnome-terminal 显示：</p>
+<blockquote>
+<div><p># Locale not supported by C library.
+# Using the fallback ‘C’ locale
+Unable to init server: Could not connect: Connection refused
+# Failed to parse arguments: Cannot open display!</p>
+</div></blockquote>
+<p>解决：在配置系统语言环境时，选择了 es_US，而不是 en_US。</p>
+</div>
+<div class="section" id="ssd">
+<h3>SSD 优化<a class="headerlink" href="#ssd" title="永久链接至标题">¶</a></h3>
+<div class="section" id="trim">
+<h4>开启TRIM<a class="headerlink" href="#trim" title="永久链接至标题">¶</a></h4>
+<p>一定要确认固态硬盘是否支持，否则别用。会导致数据丢失</p>
+<p>查看是否支持：<code class="docutils literal notranslate"><span class="pre">lsblk</span> <span class="pre">--discard</span></code> 如果输出的 DISC-GRAN 和 DISC-MAX 不为 0，则表明支持。</p>
+<blockquote>
+<div><p>sudo vim /etc/fstab</p>
+</div></blockquote>
+<p>添加 noatime 和 diacard：</p>
+<blockquote>
+<div><p># &lt;file system&gt; &lt;dir&gt; &lt;type&gt; &lt;options&gt; &lt;dump&gt; &lt;pass&gt;
+# /dev/sdb2
+UUID=b182ad17-2f74-4bf0-95b6-a42884a4ff79 /          ext4       rw,noatime,discard 0 1</p>
+<p># /dev/sdb1
+UUID=EF6F-2E0C       /boot/efi  vfat       rw,noatime,discard,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro 0 2</p>
+</div></blockquote>
+</div>
+<div class="section" id="i-o-scheduler">
+<h4>更换 I/O  scheduler<a class="headerlink" href="#i-o-scheduler" title="永久链接至标题">¶</a></h4>
+<blockquote>
+<div><p>sudo vim /etc/default/grub</p>
+</div></blockquote>
+<p>找到 <code class="docutils literal notranslate"><span class="pre">GRUB_CMDLINE_LINUX_DEFAULT</span></code> 这一行，添加 <code class="docutils literal notranslate"><span class="pre">elevator=noop</span></code>:</p>
+<blockquote>
+<div><p>GRUB_CMDLINE_LINUX_DEFAULT=”elevator=noop loglevel=3 quiet”</p>
+<p>sudo grub-mkconfig -o /boot/grub/grub.cfg</p>
+</div></blockquote>
+</div>
+<div class="section" id="tmpfs">
+<h4>迁移高读写文件到 tmpfs<a class="headerlink" href="#tmpfs" title="永久链接至标题">¶</a></h4>
+<blockquote>
+<div><p>sudo vim /etc/fstab</p>
+</div></blockquote>
+<p>添加以下内容到最后：</p>
+<blockquote>
+<div><p>tmpfs  /tmp    tmpfs   defaults,noatime,mode=1777 0 0
+tmpfs  /var/log    tmpfs   defaults,noatime,mode=1777 0 0
+tmpfs  /var/tmp    tmpfs   defaults,noatime,mode=1777 0 0</p>
+</div></blockquote>
+<p>将 Google Chrome 的缓存挂载到 /tmp（后因排查 <a class="reference external" href="https://github.com/tianheg/blog/issues/147">arch linux system freeze after connecting wifi</a> 问题取消挂载）：</p>
+<blockquote>
+<div><p>cd ~/.cache/google-chrome/Default/ &amp;&amp; rm -rf Cache &amp;&amp; ln -sf /tmp Cache
+cd ~/.cache/google-chrome/Default/ &amp;&amp; unlink Cache # 取消 Symbolic Link</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="id22">
+<h3>检查硬盘状况<a class="headerlink" href="#id22" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>sudo pacman -S hdparm smartmontools
+sudo hdparm -I /dev/sdb
+sudo smartctl -t short /dev/sdb</p>
+</div></blockquote>
+</div>
+<div class="section" id="id23">
+<h3>测试固态硬盘速度<a class="headerlink" href="#id23" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>sudo dd if=/dev/zero of=/tmp/test.img bs=1G count=1 oflag=dsync</p>
+</div></blockquote>
+<p>至此系统完善到此告一段落。</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="openbsd-installation.html" class="btn btn-neutral float-right" title="OpenBSD" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="arch-software-installation-and-usage.html" class="btn btn-neutral float-left" title="Arch Software Installation and Usage" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; 版权所有 2021 - 2021, Jim Gao.
+
+    </p>
+  </div>
+    
+    
+    
+    利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用了 
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    
+    由 <a href="https://readthedocs.org">Read the Docs</a>开发.
+<p>除额外注明的地方外，本文档按 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议发布。</p>
+ 
+
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

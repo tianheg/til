@@ -1,0 +1,1403 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Install Software on Ubuntu &mdash; Today I Learnt  文档</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="Problems on Ubuntu" href="ubuntu-problems.html" />
+    <link rel="prev" title="Ubuntu Common Usage" href="ubuntu-common-usage.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Today I Learnt
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="在文档中搜索" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/cs-and-web-concepts.html">CS &amp; Web Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C.html">计算机网络</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/dns.html">DNS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/%E7%A7%91%E6%8A%80%E8%8B%B1%E8%AF%AD.html">科技英语</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/front-end-and-its-history.html">Front-end and its history</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/cors.html">CORS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/how-the-web-works.html">How the Web works</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../algorithms-and-data-structure/algorithms-and-data-structure.html">Algorithms and Data Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../algorithms-and-data-structure/books.html">一些算法书籍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="operating-system.html">Operating System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="linux-details.html">Linux Details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="linux-common-orders.html">Linux Common Orders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arch-system-maintenance.html">Arch System Maintenance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arch-package.html">Arch Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arch-software-installation-and-usage.html">Arch Software Installation and Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arch-installation-guide.html">Arch Installation Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="openbsd-installation.html">OpenBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ubuntu-backup.html">Ubuntu Backup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ubuntu-common-usage.html">Ubuntu Common Usage</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Install Software on Ubuntu</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#ubuntu">Ubuntu</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#package-manager">package manager</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#software">Software</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id1">安装文件</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#deb-file">Deb File</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">软件列表</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#albert">Albert</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#anki">Anki</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#apt">apt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#apt-fast"><code class="docutils literal notranslate"><span class="pre">apt-fast</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#curl">Curl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#gh">gh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#gpg">gpg</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#on-my-zsh">On My Zsh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#filezilla">FileZilla</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#proxychains-ng">proxychains-ng</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#clash">Clash</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#emacs">Emacs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#exa">Exa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#keepass">Keepass</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mscorefonts">MScorefonts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#netease-music">Netease Music</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#nnn">Nnn</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">Package Manager-</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#phddns">Phddns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#postman">Postman</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#skype">Skype</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#spotify">Spotify</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sqlite-database-browser">SQLite Database Browser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#switchhosts">SwitchHosts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#typora">Typora</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#vlc">VLC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#vmware-workstation-player">VMware Workstation Player</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#zola">Zola</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#zotero">Zotero</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#manage-fonts">Manage Fonts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#netplan">Netplan</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#nmcli">Nmcli</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fcitx">fcitx</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#draw-io">Draw.io</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#remmina">Remmina</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id5">按类别</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">书籍</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ubuntu-problems.html">Problems on Ubuntu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mxlinux-installation.html">MX Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../html/html.html">HTML</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../html/before-html.html">Before HTML</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../html/html-basics.html">HTML Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../html/images.html">Images</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../html/html-code-snippets.html">HTML Code Snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../css/css.html">CSS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../css/css-basics.html">CSS Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../css/css-box.html">CSS Box</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../css/css-position.html">CSS Position</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../css/css-code-snippets.html">CSS Code Snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/javascript.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/javascript-basics.html">JavaScript Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/es6.html">ES6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/what-i-learnt-from-js.html">What I learnt from JS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/install-node-npm-yarn.html">Install Node.js, NPM and Yarn</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/yarn-v2-usage.html">Yarn v2 Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/used-packages-from-npm-or-yarn.html">Used Packages from npm or yarn</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/the-difference-between-js-in-head-and-body.html">The difference between js in the head and body</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/js-code-snippets.html">JS Code Snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vue/vue.html">Vue</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../front-end.html">Front-end</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../programming-languages/programming-language.html">Programming Language</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../programming-languages/shell.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../programming-languages/python.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../programming-languages/go.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projects/projects.html">Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projects/wordpress.html">WordPress</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/docker.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/vagrant.html">Vagrant</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/gpg.html">GPG</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/jekyll.html">Jekyll</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/hugo.html">Hugo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/neovim.html">neovim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/cloudflare.html">Cloudflare</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/gatsby.html">Gatsby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/sphinx.html">Sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/version-control-git.html">Version Control - Git</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/git-fundamentals.html">Git Fundamentals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/git-commit.html">Git Commit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/commit-messages-guide.html">Commit Messages Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/git-and-gitHub.html">Git and GitHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/git-command-line-reference.html">Git Command Line Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/git-glossary.html">Git Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/useful-tips-about-git.html">Useful Tips about Git</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/branch-name-contain-the-space-char.html">Branch Name Contain The ‘space’ Char</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/create-empty-branch-locally-and-remotely.html">Create Empty Branch Locally And Remotely</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/delete-a-git-branch-both-locally-and-remotely.html">Delete A Git Branch Both Locally And Remotely</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/delete-all-local-and-remote-tags.html">Delete All Local And Remote Tags</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/delete-commit.html">Delete Commit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/merge-two-git-repo.html">Merge Two Git Repo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/remove-tracking-branches-no-longer-on-remote.html">Remove Tracking Branches No Longer On Remote</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/update-with-original-repo-after-forking-on-github.html">Update With Original Repo After Forking on GitHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/git-clone-specify-branch.html">Git Clone Specify Branch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/github-action-only-generate-nojekyll.html">GitHub Action only Generate <code class="docutils literal notranslate"><span class="pre">.nojekyll</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../useful-info.html">Useful Info</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/hardware.html">Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/bluetooth.html">Bluetooth</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/power-supply-unit.html">Power supply unit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/raspberry-pi.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../learning-how-to-learn.html">Learning How to Learn</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Today I Learnt</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Install Software on Ubuntu</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/tianheg/til/blob/main/content/operating-system/ubuntu-install-software.rst" class="fa fa-github"> 在 GitHub 上修改</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="install-software-on-ubuntu">
+<h1>Install Software on Ubuntu<a class="headerlink" href="#install-software-on-ubuntu" title="永久链接至标题">¶</a></h1>
+<p>used software: nomacs, Flameshot, kphotoalbum, Krita, xournal, <a class="reference external" href="https://askubuntu.com/a/764557">ImageMagick</a>, pppoeconf, <a class="reference external" href="https://github.com/jonls/redshift#redshift">redshift</a>, gparted, tree</p>
+<div class="section" id="ubuntu">
+<h2>Ubuntu<a class="headerlink" href="#ubuntu" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://wiki.ubuntu.org.cn/Qref/Applications">https://wiki.ubuntu.org.cn/Qref/Applications</a> - 软件推荐</p></li>
+</ul>
+<div class="section" id="package-manager">
+<h3>package manager<a class="headerlink" href="#package-manager" title="永久链接至标题">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://wiki.debian.org/Aptitude">https://wiki.debian.org/Aptitude</a> - terminal-based package manager</p></li>
+<li><p><a class="reference external" href="http://www.nongnu.org/synaptic/">http://www.nongnu.org/synaptic/</a> - graphical package management program for apt</p></li>
+</ul>
+</div>
+<div class="section" id="software">
+<h3>Software<a class="headerlink" href="#software" title="永久链接至标题">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/ogham/exa">https://github.com/ogham/exa</a> - a modern replacement for <em>ls</em></p></li>
+<li><p><a class="reference external" href="https://github.com/flameshot-org/flameshot">https://github.com/flameshot-org/flameshot</a> - Powerful yet simple to use screenshot software</p></li>
+<li><p><a class="reference external" href="https://github.com/johnfactotum/foliate">https://github.com/johnfactotum/foliate</a> - A simple and modern GTK eBook reader</p></li>
+<li><p><a class="reference external" href="https://github.com/FontManager/font-manager">https://github.com/FontManager/font-manager</a> - A simple font management application for GTK Desktop Environments</p></li>
+<li><p><a class="reference external" href="https://gparted.org/">https://gparted.org/</a> - a free partition editor for graphically managing your disk partitions</p></li>
+<li><p><a class="reference external" href="https://github.com/jarun/nnn">https://github.com/jarun/nnn</a> - a full-featured terminal file manager</p></li>
+<li><p><a class="reference external" href="https://htop.dev/">https://htop.dev/</a> - an interactive process viewer</p></li>
+<li><p><a class="reference external" href="http://sqlitebrowser.org/">http://sqlitebrowser.org/</a> - DB Browser for SQLite</p></li>
+<li><p><a class="reference external" href="https://github.com/astrand/xclip">https://github.com/astrand/xclip</a> - a command line utility that is designed to run on any system with an X11 implementation</p></li>
+<li><p><a class="reference external" href="http://xournal.sourceforge.net/">http://xournal.sourceforge.net/</a> - an application for notetaking, sketching, keeping a journal using a stylus</p></li>
+<li><p><a class="reference external" href="https://www.zettlr.com/">https://www.zettlr.com/</a> - Zettlr is the number one Markdown Editor for researchers in the arts and humanities</p></li>
+<li><p><a class="reference external" href="https://www.clamav.net/">https://www.clamav.net/</a> - the open source standard for mail gateway scanning software</p></li>
+<li><p><a class="reference external" href="https://github.com/hlissner/doom-emacs">https://github.com/hlissner/doom-emacs</a> - An Emacs framework for the stubborn martian hacker</p></li>
+<li><p><a class="reference external" href="https://www.geany.org/">https://www.geany.org/</a> - a powerful, stable and lightweight programmer’s text editor</p></li>
+</ul>
+<div class="section" id="id1">
+<h4>安装文件<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h4>
+</div>
+</div>
+</div>
+<div class="section" id="deb-file">
+<h2>Deb File<a class="headerlink" href="#deb-file" title="永久链接至标题">¶</a></h2>
+<blockquote>
+<div><p># way 1
+sudo apt install ./file.deb
+# way 2
+sudo apt install gdebi
+sudo gdebi file.deb
+# way 3
+sudo dpkg -i file.deb</p>
+</div></blockquote>
+<p>references:</p>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://help.ubuntu.com/kubuntu/desktopguide/C/manual-install.html">https://help.ubuntu.com/kubuntu/desktopguide/C/manual-install.html</a></p></li>
+<li><p><a class="reference external" href="https://itsfoss.com/install-deb-files-ubuntu/">https://itsfoss.com/install-deb-files-ubuntu/</a></p></li>
+<li><p><a class="reference external" href="https://linuxize.com/post/how-to-install-deb-packages-on-ubuntu/">https://linuxize.com/post/how-to-install-deb-packages-on-ubuntu/</a></p></li>
+</ol>
+<div class="section" id="id2">
+<h3>软件列表<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h3>
+</div>
+</div>
+<div class="section" id="albert">
+<h2>Albert<a class="headerlink" href="#albert" title="永久链接至标题">¶</a></h2>
+<blockquote>
+<div><p>curl <a class="reference external" href="https://build.opensuse.org/projects/home:manuelschneid3r/public_key">https://build.opensuse.org/projects/home:manuelschneid3r/public_key</a> | sudo apt-key add -
+echo ‘deb <a class="reference external" href="http://download.opensuse.org/repositories/home:/manuelschneid3r/xUbuntu_20.04/">http://download.opensuse.org/repositories/home:/manuelschneid3r/xUbuntu_20.04/</a> /’ | sudo tee /etc/apt/sources.list.d/home:manuelschneid3r.list
+sudo wget -nv https://download.opensuse.org/repositories/home:manuelschneid3r/xUbuntu_20.04/Release.key -O “/etc/apt/trusted.gpg.d/home:manuelschneid3r.asc”
+sudo apt update
+sudo apt install albert</p>
+</div></blockquote>
+<p><a class="reference external" href="https://albertlauncher.github.io/installing/#using-official-albert-repositories">source1</a></p>
+</div>
+<div class="section" id="anki">
+<h2>Anki<a class="headerlink" href="#anki" title="永久链接至标题">¶</a></h2>
+<p>Install from <a class="reference external" href="https://apps.ankiweb.net/#download">here1</a></p>
+<p>Then exec these orders:</p>
+<blockquote>
+<div><p>$ tar xjf Downloads/anki-2.1.42-linux.tar.bz2
+$ cd anki-2.1.42-linux
+$ sudo ./install.sh</p>
+</div></blockquote>
+</div>
+<div class="section" id="apt">
+<h2>apt<a class="headerlink" href="#apt" title="永久链接至标题">¶</a></h2>
+<p><strong>``apt-key``</strong></p>
+<blockquote>
+<div><p>apt-key del &lt;keyid&gt;         - remove the key &lt;keyid&gt;
+# examples:
+# pub   rsa3072 2020-09-02 [SC] [expires: 2022-09-02]
+#       2CA3 2056 ED20 6CB8 1F44  A8CA C99B 11DE B975 41F0
+# uid           [ unknown] Nate Smith &lt;<a class="reference external" href="mailto:vilmibm&#37;&#52;&#48;github&#46;com">vilmibm<span>&#64;</span>github<span>&#46;</span>com</a>&gt;
+# sub   rsa3072 2020-09-02 [E] [expires: 2022-09-02]
+sudo apt-key del “2CA3 2056 ED20 6CB8 1F44  A8CA C99B 11DE B975 41F0”
+# or
+sudo apt-key del B97541F0</p>
+</div></blockquote>
+<p>keyid is the last 8 characters of the gpg key’s fingerprint, which is that long hex-code under <code class="docutils literal notranslate"><span class="pre">pub</span></code>.</p>
+</div>
+<div class="section" id="apt-fast">
+<h2><code class="docutils literal notranslate"><span class="pre">apt-fast</span></code><a class="headerlink" href="#apt-fast" title="永久链接至标题">¶</a></h2>
+<blockquote>
+<div><p>sudo add-apt-repository ppa:apt-fast/stable
+sudo apt-get update
+sudo apt-get -y install apt-fast
+# zsh
+cp completions/zsh/_apt-fast /usr/share/zsh/functions/Completion/Debian/
+chown root:root /usr/share/zsh/functions/Completion/Debian/_apt-fast
+source /usr/share/zsh/functions/Completion/Debian/_apt-fast</p>
+</div></blockquote>
+<p><a class="reference external" href="https://github.com/ilikenwf/apt-fast#installation">source2</a></p>
+</div>
+<div class="section" id="curl">
+<h2>Curl<a class="headerlink" href="#curl" title="永久链接至标题">¶</a></h2>
+<blockquote>
+<div><p>sudo apt-get install curl</p>
+</div></blockquote>
+<hr class="docutils" />
+<p><strong>References</strong>:</p>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://www.cnblogs.com/cposture/p/9029017.html">curl 错误总结</a></p></li>
+</ol>
+</div>
+<div class="section" id="gh">
+<h2>gh<a class="headerlink" href="#gh" title="永久链接至标题">¶</a></h2>
+<p><a class="reference external" href="https://github.com/cli/cli/blob/trunk/docs/install_linux.md#debian-ubuntu-linux-apt">source3</a></p>
+<blockquote>
+<div><p># way 1(not work for me)
+$ curl -fsSL <a class="reference external" href="https://cli.github.com/packages/githubcli-archive-keyring.gpg">https://cli.github.com/packages/githubcli-archive-keyring.gpg</a> | sudo gpg –dearmor -o /usr/share/keyrings/githubcli-archive-keyring.gpg
+$ echo “deb [arch=$(dpkg –print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] <a class="reference external" href="https://cli.github.com/packages">https://cli.github.com/packages</a> stable main” | sudo tee /etc/apt/sources.list.d/github-cli.list &gt; /dev/null
+$ sudo apt update
+$ sudo apt install gh
+# error when first step: OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to 127.0.0.1:7890</p>
+<p># way 2
+$ wget <a class="reference external" href="https://github.com/cli/cli/releases/download/v1.10.2/gh_1.10.2_linux_amd64.deb">https://github.com/cli/cli/releases/download/v1.10.2/gh_1.10.2_linux_amd64.deb</a> &amp;&amp; sudo apt install ./gh_1.10.2_linux_amd64.deb</p>
+</div></blockquote>
+</div>
+<div class="section" id="gpg">
+<h2>gpg<a class="headerlink" href="#gpg" title="永久链接至标题">¶</a></h2>
+<p><strong>References</strong>:</p>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://help.ubuntu.com/community/GnuPrivacyGuardHowto">GnuPrivacyGuardHowto</a></p></li>
+</ol>
+</div>
+<div class="section" id="on-my-zsh">
+<h2>On My Zsh<a class="headerlink" href="#on-my-zsh" title="永久链接至标题">¶</a></h2>
+<p><strong>Install autojump</strong></p>
+<blockquote>
+<div><p>[[ -s /home/tianheg/.autojump/etc/profile.d/autojump.sh ]] &amp;&amp; source /home/tianheg/.autojump/etc/profile.d/autojump.sh</p>
+<p>autoload -U compinit &amp;&amp; compinit -u</p>
+</div></blockquote>
+</div>
+<div class="section" id="filezilla">
+<h2>FileZilla<a class="headerlink" href="#filezilla" title="永久链接至标题">¶</a></h2>
+<blockquote>
+<div><p>sudo apt install filezilla</p>
+</div></blockquote>
+</div>
+<div class="section" id="proxychains-ng">
+<h2>proxychains-ng<a class="headerlink" href="#proxychains-ng" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="clash">
+<h2>Clash<a class="headerlink" href="#clash" title="永久链接至标题">¶</a></h2>
+<p><strong>Install Clash</strong></p>
+<blockquote>
+<div><p>$ wget -O clash.gz <a class="reference external" href="https://github.com/Dreamacro/clash/releases/download/v1.6.0/clash-linux-amd64-v1.6.0.gz">https://github.com/Dreamacro/clash/releases/download/v1.6.0/clash-linux-amd64-v1.6.0.gz</a>
+$ gzip -f clash.gz -d
+$ sudo mv ~/clash /usr/local/bin/clash
+$ chmod +x /usr/local/bin/clash
+$ clash -h
+$ clash # Generate config.yaml, Country.mmdb in ~/.config/clash</p>
+</div></blockquote>
+<p><strong>Config</strong></p>
+<blockquote>
+<div><p>$ curl <a class="reference external" href="https://....yaml">https://….yaml</a> &gt;&gt; ~/.config/clash/config.yaml
+# Config ~/.config/clash/config.yaml in terminal or with Web UI: <a class="reference external" href="http://clash.razord.top/">http://clash.razord.top/</a>
+# UI port is external-controller’s port</p>
+<p># Set daemon
+$ sudo vim /etc/systemd/system/clash.service
+# Input these words:
+# [Unit]
+# Description=Clash daemon, A rule-based proxy in Go.
+# After=network.target
+#
+# [Service]
+# Type=simple
+# Restart=always
+# ExecStart=/usr/local/bin/clash -d “/home/tianheg/.config/clash”
+#
+# [Install]
+# WantedBy=multi-user.target</p>
+<p>$ systemctl daemon-reload
+$ systemctl enable clash
+$ service clash start # 启动
+$ service clash stop # 停止
+$ service clash restart # 重启
+$ service clash status # 状态</p>
+</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">/etc/systemd/system/clash.service</span></code>:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>[Unit]
+Description=Clash daemon, A rule-based proxy in Go.
+After=network.target
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=/usr/local/bin/clash -d &quot;/home/tianheg/.config/clash&quot;
+
+[Install]
+WantedBy=multi-user.target
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">.zshrc</span></code>:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span># terminal proxy (Ubuntu)
+export http_proxy=&quot;http://127.0.0.1:7890&quot;
+export https_proxy=&quot;https://127.0.0.1:7890&quot;
+export http_proxy_user=user
+export http_proxy_pass=pass
+export https_proxy_user=user
+export https_proxy_pass=pass
+
+# below didn&#39;t work
+export http_proxy=&quot;socks5://127.0.0.1:1080&quot;
+export socks_proxy=&quot;socks5://127.0.0.1:1080&quot;
+</pre></div>
+</div>
+<p><strong>Setting System Proxy</strong></p>
+<p>Settings &gt; Network &gt; Network Proxy &gt; Manual:</p>
+<ul class="simple">
+<li><p>HTTP Proxy: <code class="docutils literal notranslate"><span class="pre">127.0.0.1:7890</span></code></p></li>
+<li><p>HTTPS Proxy: <code class="docutils literal notranslate"><span class="pre">127.0.0.1:7890</span></code></p></li>
+<li><p>Socks Host: <code class="docutils literal notranslate"><span class="pre">127.0.0.1:7891</span></code></p></li>
+<li><p>Ignore Host: <code class="docutils literal notranslate"><span class="pre">localhost,</span> <span class="pre">127.0.0.0/8,</span> <span class="pre">::1</span></code></p></li>
+</ul>
+<p><strong>Problems</strong></p>
+<p><strong>Git</strong>: git clone 报错 ：Failed to receive SOCKS4 connect request ack.</p>
+<blockquote>
+<div><p># 7891 是 clash 代理 socket 的端口
+git config –global http.proxy ‘socks5://127.0.0.1:7891’
+git config –global https.proxy ‘socks5://127.0.0.1:7891’</p>
+</div></blockquote>
+</div>
+<div class="section" id="emacs">
+<h2>Emacs<a class="headerlink" href="#emacs" title="永久链接至标题">¶</a></h2>
+<blockquote>
+<div><p>sudo apt install emacs</p>
+</div></blockquote>
+</div>
+<div class="section" id="exa">
+<h2>Exa<a class="headerlink" href="#exa" title="永久链接至标题">¶</a></h2>
+<blockquote>
+<div><p>sudo apt install exa</p>
+</div></blockquote>
+<p>Error:</p>
+<blockquote>
+<div><p>$ exa
+zsh: command not found: exa</p>
+</div></blockquote>
+<p>Understand from <a class="reference external" href="https://askubuntu.com/a/1290552">url</a>:</p>
+<p>The <em>groovy</em> name is 20.10, not 20.04 LTS. So <a class="reference external" href="https://packages.ubuntu.com/groovy/exa">this package</a> is not available for 20.04 LTS.</p>
+<p>But you can install it manually with:</p>
+<blockquote>
+<div><p>wget <a class="reference external" href="http://archive.ubuntu.com/ubuntu/pool/universe/r/rust-exa/exa_0.9.0-4_amd64.deb">http://archive.ubuntu.com/ubuntu/pool/universe/r/rust-exa/exa_0.9.0-4_amd64.deb</a>
+sudo apt-get install ./exa_0.9.0-4_amd64.deb</p>
+</div></blockquote>
+<p>and test it via:</p>
+<blockquote>
+<div><p>$ exa –version
+exa v0.9.0</p>
+</div></blockquote>
+<p><a class="reference external" href="https://the.exa.website/install/linux">source4</a></p>
+</div>
+<div class="section" id="keepass">
+<h2>Keepass<a class="headerlink" href="#keepass" title="永久链接至标题">¶</a></h2>
+<p>Install from <a class="reference external" href="https://keepass.info/help/v2/setup.html#mono">here2</a></p>
+</div>
+<div class="section" id="mscorefonts">
+<h2>MScorefonts<a class="headerlink" href="#mscorefonts" title="永久链接至标题">¶</a></h2>
+<blockquote>
+<div><p>$ sudo apt update
+$ sudo apt install ttf-mscorefonts-installer
+$ sudo fc-cache -f -v</p>
+</div></blockquote>
+</div>
+<div class="section" id="netease-music">
+<h2>Netease Music<a class="headerlink" href="#netease-music" title="永久链接至标题">¶</a></h2>
+<p>Download *.deb file <a class="reference external" href="https://music.163.com/#/download">here3</a></p>
+</div>
+<div class="section" id="nnn">
+<h2>Nnn<a class="headerlink" href="#nnn" title="永久链接至标题">¶</a></h2>
+<blockquote>
+<div><p>$ wget <a class="reference external" href="https://github.com/jarun/nnn/releases/download/v4.0/nnn_4.0-1_ubuntu20.04.amd64.deb">https://github.com/jarun/nnn/releases/download/v4.0/nnn_4.0-1_ubuntu20.04.amd64.deb</a>
+$ sudo apt install ./nnn_4.0-1_ubuntu20.04.amd64.deb</p>
+</div></blockquote>
+<p><a class="reference external" href="https://github.com/jarun/nnn">source5</a></p>
+</div>
+<div class="section" id="id4">
+<h2>Package Manager-<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+<p>synaptic(Graphical package manager) or aptitude(terminal-based package manager)</p>
+<p>Can be installed through <code class="docutils literal notranslate"><span class="pre">apt</span></code></p>
+<p>Snap（能不用就不用） <a class="reference external" href="https://snapcraft.io/">https://snapcraft.io/</a></p>
+<p>Apt(Advanced Package Tool) <a class="reference external" href="https://wiki.debian.org/PackageManagement?action=show&amp;redirect=CategoryPackageManagement">https://wiki.debian.org/PackageManagement?action=show&amp;redirect=CategoryPackageManagement</a></p>
+<hr class="docutils" />
+<p><strong>References</strong>:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://packages.ubuntu.com/focal/synaptic">https://packages.ubuntu.com/focal/synaptic</a></p></li>
+<li><p><a class="reference external" href="https://packages.ubuntu.com/focal/aptitude">https://packages.ubuntu.com/focal/aptitude</a></p></li>
+</ul>
+</div>
+<div class="section" id="phddns">
+<h2>Phddns<a class="headerlink" href="#phddns" title="永久链接至标题">¶</a></h2>
+<p><a class="reference external" href="https://service.oray.com/question/11630.html">花生壳 5.0 for Linux 使用教程</a></p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Oray PeanutHull Linux 5.1.0</p></td>
+</tr>
+<tr class="row-even"><td><p>SN: oray8deecb38e199   Default password: admin</p></td>
+</tr>
+<tr class="row-odd"><td><p>Remote Management Address <a class="reference external" href="http://b.oray.com">http://b.oray.com</a></p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+<div class="section" id="postman">
+<h2>Postman<a class="headerlink" href="#postman" title="永久链接至标题">¶</a></h2>
+<p><a class="reference external" href="https://speedysense.com/install-postman-on-ubuntu-20-04/">source6</a></p>
+<blockquote>
+<div><p># Download Postman from <a class="reference external" href="https://dl.pstmn.io/download/latest/linux64">https://dl.pstmn.io/download/latest/linux64</a>
+$ cd Downloads
+$ tar -xzf Postman-linux-x64-VERSION-NAME.tar.gz
+$ sudo rm -rf /opt/Postman # If you have already installed previous version first remove it.
+$ sudo mv Postman /opt
+$ sudo ln -s /opt/Postman/Postman /usr/local/bin/postman
+$ postman # run postman
+$ sudo gedit /usr/share/applications/postman.desktop # Create a desktop file for Postman App</p>
+</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">/usr/share/applications/postman.desktop</span></code>:</p>
+<blockquote>
+<div><p>[Desktop Entry]
+Type=Application
+Name=Postman
+Icon=/opt/Postman/app/resources/app/assets/icon.png
+Exec=”/opt/Postman/Postman”
+Comment=Postman GUI
+Categories=Development;Code;</p>
+</div></blockquote>
+</div>
+<div class="section" id="skype">
+<h2>Skype<a class="headerlink" href="#skype" title="永久链接至标题">¶</a></h2>
+<p>Install <code class="docutils literal notranslate"><span class="pre">skypeforlinux-64.deb</span></code> from <a class="reference external" href="https://go.skype.com/skypeforlinux-64.deb">here4</a></p>
+<p><a class="reference external" href="https://www.skype.com/en/get-skype/download-skype-for-desktop/">source7</a></p>
+</div>
+<div class="section" id="spotify">
+<h2>Spotify<a class="headerlink" href="#spotify" title="永久链接至标题">¶</a></h2>
+<p><a class="reference external" href="https://www.spotify.com/hk-en/download/linux/">source8</a></p>
+<blockquote>
+<div><p>curl -sS <a class="reference external" href="https://download.spotify.com/debian/pubkey_0D811D58.gpg">https://download.spotify.com/debian/pubkey_0D811D58.gpg</a> | sudo apt-key add -
+echo “deb <a class="reference external" href="http://repository.spotify.com">http://repository.spotify.com</a> stable non-free” | sudo tee /etc/apt/sources.list.d/spotify.list
+sudo apt-get update &amp;&amp; sudo apt-get install spotify-client
+sudo apt-get remove spotify-client
+# 安装完白屏，打不开</p>
+</div></blockquote>
+</div>
+<div class="section" id="sqlite-database-browser">
+<h2>SQLite Database Browser<a class="headerlink" href="#sqlite-database-browser" title="永久链接至标题">¶</a></h2>
+<p>Install SQLite Database Browser (<a class="reference external" href="apt:sqlitebrowser">sqliteborwser</a>).</p>
+<p>source:</p>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://ubuntuforums.org/showthread.php?t=1556007">https://ubuntuforums.org/showthread.php?t=1556007</a>)</p></li>
+<li><p><a class="reference external" href="https://sqlitebrowser.org/dl/#ubuntu-and-derivatives">https://sqlitebrowser.org/dl/#ubuntu-and-derivatives</a></p></li>
+</ol>
+</div>
+<div class="section" id="switchhosts">
+<h2>SwitchHosts<a class="headerlink" href="#switchhosts" title="永久链接至标题">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Download deb file with here: <a class="reference external" href="https://github.com/oldj/SwitchHosts/releases">source9</a>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt</span> <span class="pre">install</span> <span class="pre">./SwitchHosts_linux_4.0.0.6029.deb</span></code></p></li>
+</ol>
+</div>
+<div class="section" id="typora">
+<h2>Typora<a class="headerlink" href="#typora" title="永久链接至标题">¶</a></h2>
+<p>for Debian/Ubuntu:</p>
+<blockquote>
+<div><p># or use
+# sudo apt-key adv –keyserver keyserver.ubuntu.com –recv-keys BA300B7755AFCFAE
+$ wget -qO - <a class="reference external" href="https://typora.io/linux/public-key.asc">https://typora.io/linux/public-key.asc</a> | sudo apt-key add -</p>
+<p># add Typora’s repository
+$ sudo add-apt-repository ‘deb <a class="reference external" href="https://typora.io/linux">https://typora.io/linux</a> ./’
+$ sudo apt-get update</p>
+<p># install typora
+$ sudo apt-get install typora</p>
+</div></blockquote>
+<p><strong>Upgrade Typora</strong></p>
+<p>After installing Typora, the <code class="docutils literal notranslate"><span class="pre">typora</span></code> package will be managed by <code class="docutils literal notranslate"><span class="pre">apt-get</span></code>, so when your system updates installed packages, or you execute <code class="docutils literal notranslate"><span class="pre">apt-get</span> <span class="pre">upgrade</span></code>, Typora will be updated to latest version.</p>
+<blockquote>
+<div><p># upgrade all packages include Typora
+$ sudo apt-get upgrade</p>
+</div></blockquote>
+</div>
+<div class="section" id="vlc">
+<h2>VLC<a class="headerlink" href="#vlc" title="永久链接至标题">¶</a></h2>
+<p>Through these:</p>
+<p><strong>Nota Bene</strong></p>
+<p>If you wish to install the traditional deb package, it is available as usual via <a class="reference external" href="apt://vlc">APT1</a>, with all security and critical bug fixes. However, there will be no major VLC version updates until the next Ubuntu release.</p>
+<p><a class="reference external" href="https://www.videolan.org/vlc/download-ubuntu.html">source10</a></p>
+</div>
+<div class="section" id="vmware-workstation-player">
+<h2>VMware Workstation Player<a class="headerlink" href="#vmware-workstation-player" title="永久链接至标题">¶</a></h2>
+<p>Download from <a class="reference external" href="https://my.vmware.com/en/web/vmware/downloads/info/slug/desktop_end_user_computing/vmware_workstation_player/16_0">here5</a></p>
+<blockquote>
+<div><p>chmod a+x VMware-Player-16.1.0-17198959.x86_64.bundle
+sudo ./VMware-Player-16.1.0-17198959.x86_64.bundle</p>
+</div></blockquote>
+</div>
+<div class="section" id="zola">
+<h2>Zola<a class="headerlink" href="#zola" title="永久链接至标题">¶</a></h2>
+<blockquote>
+<div><p>sudo snap install zola –edge</p>
+</div></blockquote>
+<p><a class="reference external" href="https://www.getzola.org/documentation/getting-started/installation/#snapcraft">source11</a></p>
+</div>
+<div class="section" id="zotero">
+<h2>Zotero<a class="headerlink" href="#zotero" title="永久链接至标题">¶</a></h2>
+<blockquote>
+<div><p>/opt $ sudo wget <a class="reference external" href="https://download.zotero.org/client/release/5.0.96/Zotero-5.0.96_linux-x86_64.tar.bz2">https://download.zotero.org/client/release/5.0.96/Zotero-5.0.96_linux-x86_64.tar.bz2</a>
+/opt $ sudo tar -xf Zotero-5.0.96_linux-x86_64.tar.bz2
+/opt $ sudo mv Zotero_linux-x86_64 zotero
+/opt $ cd zotero
+/opt/zotero $ ./zotero
+/opt/zotero $ sudo ./set_launcher_icon
+/opt/zotero $ ln -s /opt/zotero/zotero.desktop ~/.local/share/applications/zotero.desktop
+/opt $ sudo chown -R tianheg:tianheg zotero # give write permission to zotero folder and its files</p>
+</div></blockquote>
+<p>source:</p>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://www.zotero.org/download/client/dl?channel=release&amp;platform=linux-x86_64&amp;version=5.0.96">https://www.zotero.org/download/client/dl?channel=release&amp;platform=linux-x86_64&amp;version=5.0.96</a></p></li>
+<li><p><a class="reference external" href="https://www.zotero.org/support/installation">https://www.zotero.org/support/installation</a></p></li>
+</ol>
+</div>
+<div class="section" id="manage-fonts">
+<h2>Manage Fonts<a class="headerlink" href="#manage-fonts" title="永久链接至标题">¶</a></h2>
+<blockquote>
+<div><p>sudo apt-get install font-manager</p>
+</div></blockquote>
+<p><a class="reference external" href="https://askubuntu.com/a/371320">source12</a></p>
+</div>
+<div class="section" id="netplan">
+<h2>Netplan<a class="headerlink" href="#netplan" title="永久链接至标题">¶</a></h2>
+<p><a class="reference external" href="https://netplan.io/">source13</a></p>
+<p>The network configuration abstraction renderer</p>
+<p>Netplan is a utility for easily configuring networking on a linux system. You simply create a YAML description of the required network interfaces and what each should be configured to do. From this description Netplan will generate all the necessary configuration for your chosen renderer tool.</p>
+</div>
+<div class="section" id="nmcli">
+<h2>Nmcli<a class="headerlink" href="#nmcli" title="永久链接至标题">¶</a></h2>
+<p>NetworkManager should be installed by default for most Ubuntu installations if the Desktop installation image was used. Use the apt command to find out if it needs to be installed:</p>
+<blockquote>
+<div><p>$ apt -qq list network-manager
+network-manager/focal-updates,now 1.22.10-1ubuntu2.2 amd64 [installed,automatic]</p>
+</div></blockquote>
+<p>If necessary, install the package as follows:</p>
+<blockquote>
+<div><p>$ apt install network-manager</p>
+</div></blockquote>
+<p>Once the package is installed, the NetworkManager daemon will need to be enabled so that it starts each time the system boots:</p>
+<blockquote>
+<div><p>$ systemctl status network-manager</p>
+</div></blockquote>
+<p>Finally, start the service running and check the status to verify that the launch was successful:</p>
+<blockquote>
+<div><p>$ systemctl status network-manager
+● NetworkManager.service - Network Manager</p>
+<blockquote>
+<div><blockquote>
+<div><p>Loaded: loaded (/lib/systemd/system/NetworkManager.service; enabled; vendor preset: enabled)
+Active: active (running) since Sat 2021-04-10 09:08:43 CST; 33min ago</p>
+<blockquote>
+<div><p>Docs: man:NetworkManager(8)</p>
+</div></blockquote>
+</div></blockquote>
+<dl>
+<dt>Main PID: 993 (NetworkManager)</dt><dd><blockquote>
+<div><p>Tasks: 3 (limit: 28502)</p>
+</div></blockquote>
+<p>Memory: 16.6M
+CGroup: /system.slice/NetworkManager.service</p>
+<blockquote>
+<div><p>└─993 /usr/sbin/NetworkManager –no-daemon</p>
+</div></blockquote>
+</dd>
+</dl>
+</div></blockquote>
+</div></blockquote>
+<p><strong>Basic nmcli Commands</strong></p>
+<blockquote>
+<div><p>$ nmcli -h
+Usage: nmcli [OPTIONS] OBJECT { COMMAND | help }</p>
+<dl>
+<dt>OPTIONS</dt><dd><dl class="option-list">
+<dt><kbd><span class="option">-a</span>, <span class="option">--ask</span></kbd></dt>
+<dd><p>ask for missing parameters</p>
+</dd>
+</dl>
+<p>-c, –colors auto|yes|no                 whether to use colors in output
+-e, –escape yes|no                      escape columns separators in values
+-f, –fields &lt;field,…&gt;|all|common      specify fields to output
+-g, –get-values &lt;field,…&gt;|all|common  shortcut for -m tabular -t -f
+-h, –help                               print this help
+-m, –mode tabular|multiline             output mode
+-o, –overview                           overview mode
+-p, –pretty                             pretty output
+-s, –show-secrets                       allow displaying passwords
+-t, –terse                              terse output
+-v, –version                            show program version
+-w, –wait &lt;seconds&gt;                     set timeout waiting for finishing operations</p>
+</dd>
+<dt>OBJECT</dt><dd><p>g[eneral]       NetworkManager’s general status and operations
+n[etworking]    overall networking control
+r[adio]         NetworkManager radio switches
+c[onnection]    NetworkManager’s connections
+d[evice]        devices managed by NetworkManager
+a[gent]         NetworkManager secret agent or polkit agent
+m[onitor]       monitor NetworkManager changes</p>
+</dd>
+</dl>
+<p># nmcli device help
+# nmcli dev help
+# nmcli d help</p>
+</div></blockquote>
+<p>To check the overall status of NetworkManager on the system, use the following command:</p>
+<blockquote>
+<div><p>$ nmcli general status
+STATE      CONNECTIVITY  WIFI-HW  WIFI     WWAN-HW  WWAN
+connected  full          enabled  enabled  enabled  enabled</p>
+</div></blockquote>
+<p>To check the status of the devices installed on a system, the following command can be used:</p>
+<blockquote>
+<div><p>$ nmcli dev status
+DEVICE           TYPE      STATE         CONNECTION
+enp2s0           ethernet  connected     ethernet
+wlp3s0           wifi      disconnected  –
+br-7ae3b144feb2  bridge    unmanaged     –
+docker0          bridge    unmanaged     –
+veth2ac2d63      ethernet  unmanaged     –
+vethfeb2ce6      ethernet  unmanaged     –
+vmnet1           ethernet  unmanaged     –
+vmnet8           ethernet  unmanaged     –
+lo               loopback  unmanaged     –</p>
+</div></blockquote>
+<p>The output may also be modified by using the -p (pretty) option to make the output more human friendly:</p>
+<blockquote>
+<div><p>$ nmcli -p dev status
+Status of devices</p>
+<p>DEVICE           TYPE      STATE         CONNECTION
+enp2s0           ethernet  connected     ethernet
+wlp3s0           wifi      disconnected  –
+br-7ae3b144feb2  bridge    unmanaged     –
+docker0          bridge    unmanaged     –
+veth2ac2d63      ethernet  unmanaged     –
+vethfeb2ce6      ethernet  unmanaged     –
+vmnet1           ethernet  unmanaged     –
+vmnet8           ethernet  unmanaged     –
+lo               loopback  unmanaged     –</p>
+</div></blockquote>
+<p>Conversely, the -t option may be used to make the output more terse and suitable for automated processing:</p>
+<blockquote>
+<div><p>$ nmcli -t dev status
+enp2s0:ethernet:connected:ethernet
+wlp3s0:wifi:disconnected:
+br-7ae3b144feb2:bridge:unmanaged:
+docker0:bridge:unmanaged:
+veth2ac2d63:ethernet:unmanaged:
+vethfeb2ce6:ethernet:unmanaged:
+vmnet1:ethernet:unmanaged:
+vmnet8:ethernet:unmanaged:
+lo:loopback:unmanaged:</p>
+</div></blockquote>
+<p>The following command displays information about the connections configured on the system:</p>
+<blockquote>
+<div><p>$ nmcli con show
+NAME       UUID                                  TYPE      DEVICE
+ethernet   82900ec5-3f45-3d9c-8d10-3e269bf80e38  ethernet  enp2s0
+vivo-Y85A  ec8957b2-9f8a-45c6-9680-9aad8e5fde70  wifi      –</p>
+</div></blockquote>
+<p>To find out the IP address allocated to a connection, the ip tool can be used with the address option:</p>
+<blockquote>
+<div><p>$ ip address
+…
+2: enp2s0: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc fq_codel state UP group default qlen 1000</p>
+<blockquote>
+<div><p>link/ether e4:e7:49:9e:c1:35 brd ff:ff:ff:ff:ff:ff
+inet 192.168.1.105/24 brd 192.168.1.255 scope global dynamic noprefixroute enp2s0</p>
+<blockquote>
+<div><p>valid_lft 6528sec preferred_lft 6528sec</p>
+</div></blockquote>
+<p>inet6 fe80::a757:50c2:bb55:ad72/64 scope link noprefixroute</p>
+<blockquote>
+<div><p>valid_lft forever preferred_lft forever</p>
+</div></blockquote>
+</div></blockquote>
+<dl class="simple">
+<dt>3: wlp3s0: &lt;NO-CARRIER,BROADCAST,MULTICAST,UP&gt; mtu 1500 qdisc mq state DOWN group default qlen 1000</dt><dd><p>link/ether 0c:96:e6:09:43:bd brd ff:ff:ff:ff:ff:ff</p>
+</dd>
+</dl>
+</div></blockquote>
+<p>The ip command will output information for all of the devices detected on the system. The above output shows that the ethernet device has been assigned an IP address of 192.168.1.105.</p>
+<p>If we only wanted to list active connections, the <em>nmcli</em> command could have been used with the -a option:</p>
+<blockquote>
+<div><p>$ nmcli con show -a
+NAME      UUID                                  TYPE      DEVICE
+ethernet  82900ec5-3f45-3d9c-8d10-3e269bf80e38  ethernet  enp2s0</p>
+</div></blockquote>
+<p>To switch the WiFi device connection from zoneone to zonetwo, we can run the following command:</p>
+<blockquote>
+<div><p># nmcli device wifi connect zonetwo -ask
+Password:</p>
+</div></blockquote>
+<p>The <em>-ask</em> flag causes <em>nmcli</em> to prompt the user to enter the password for the WiFi network. To include the WiFi password on the command-line (particularly useful if the command is being executed in a script), use the <em>password</em> option:</p>
+<blockquote>
+<div><p># nmcli device wifi connect zonetwo password &lt;password here&gt;</p>
+</div></blockquote>
+<p>A currently active connection can be deactivated as follows:</p>
+<blockquote>
+<div><p>$ nmcli con down &lt;connection name&gt;</p>
+</div></blockquote>
+<p>Similarly, an inactive connection can be brought back up at any time:</p>
+<blockquote>
+<div><p>$ nmcli con up &lt;connection name&gt;</p>
+</div></blockquote>
+<p>When a connection is brought down, NetworkManager automatically searches for another connection, activates it and assigns it to the device to which the previous connection was established. To prevent a connection from being used in this situation, disable the autoconnect option as follows:</p>
+<blockquote>
+<div><p>$ nmcli con mod &lt;connection name&gt; connection.autoconnect no</p>
+</div></blockquote>
+<p>The following command may be used to obtain additional information about a specific connection. This includes the current values for all the connection properties:</p>
+<blockquote>
+<div><p>$ nmcli con show ethernet
+connection.id:                          ethernet
+connection.uuid:                        82900ec5-3f45-3d9c-8d10-3e269bf80e38
+connection.stable-id:                   –
+connection.type:                        802-3-ethernet
+connection.interface-name:              enp2s0
+connection.autoconnect:                 yes
+connection.autoconnect-priority:        -999
+connection.autoconnect-retries:         -1 (default)
+connection.multi-connect:               0 (default)
+connection.auth-retries:                -1
+connection.timestamp:                   1618021615
+connection.read-only:                   no
+connection.permissions:                 –
+connection.zone:                        –
+connection.master:                      –
+connection.slave-type:                  –
+connection.autoconnect-slaves:          -1 (default)
+connection.secondaries:                 –
+connection.gateway-ping-timeout:        0
+connection.metered:                     unknown
+connection.lldp:                        default
+connection.mdns:                        -1 (default)
+connection.llmnr:                       -1 (default)
+connection.wait-device-timeout:         -1
+802-3-ethernet.port:                    –
+802-3-ethernet.speed:                   0
+802-3-ethernet.duplex:                  –
+802-3-ethernet.auto-negotiate:          no
+802-3-ethernet.mac-address:             –
+802-3-ethernet.cloned-mac-address:      –
+802-3-ethernet.generate-mac-address-mask:–
+802-3-ethernet.mac-address-blacklist:   –
+802-3-ethernet.mtu:                     auto
+802-3-ethernet.s390-subchannels:        –
+802-3-ethernet.s390-nettype:            –
+802-3-ethernet.s390-options:            –
+802-3-ethernet.wake-on-lan:             default
+802-3-ethernet.wake-on-lan-password:    –
+ipv4.method:                            auto
+ipv4.dns:                               –
+ipv4.dns-search:                        –
+ipv4.dns-options:                       –
+ipv4.dns-priority:                      0
+ipv4.addresses:                         –
+ipv4.gateway:                           –
+ipv4.routes:                            –
+ipv4.route-metric:                      -1
+ipv4.route-table:                       0 (unspec)
+ipv4.routing-rules:                     –
+ipv4.ignore-auto-routes:                no
+ipv4.ignore-auto-dns:                   no
+ipv4.dhcp-client-id:                    –
+ipv4.dhcp-iaid:                         –
+ipv4.dhcp-timeout:                      0 (default)
+ipv4.dhcp-send-hostname:                yes
+ipv4.dhcp-hostname:                     –
+ipv4.dhcp-fqdn:                         –
+ipv4.dhcp-hostname-flags:               0x0 (none)
+ipv4.never-default:                     no
+ipv4.may-fail:                          yes
+ipv4.dad-timeout:                       -1 (default)
+ipv6.method:                            auto
+ipv6.dns:                               –
+ipv6.dns-search:                        –
+ipv6.dns-options:                       –
+ipv6.dns-priority:                      0
+ipv6.addresses:                         –
+ipv6.gateway:                           –
+ipv6.routes:                            –
+ipv6.route-metric:                      -1
+ipv6.route-table:                       0 (unspec)
+ipv6.routing-rules:                     –
+ipv6.ignore-auto-routes:                no
+ipv6.ignore-auto-dns:                   no
+ipv6.never-default:                     no
+ipv6.may-fail:                          yes
+ipv6.ip6-privacy:                       -1 (unknown)
+ipv6.addr-gen-mode:                     stable-privacy
+ipv6.ra-timeout:                        0 (default)
+ipv6.dhcp-duid:                         –
+ipv6.dhcp-iaid:                         –
+ipv6.dhcp-timeout:                      0 (default)
+ipv6.dhcp-send-hostname:                yes
+ipv6.dhcp-hostname:                     –
+ipv6.dhcp-hostname-flags:               0x0 (none)
+ipv6.token:                             –
+proxy.method:                           none
+proxy.browser-only:                     no
+proxy.pac-url:                          –
+proxy.pac-script:                       –
+GENERAL.NAME:                           ethernet
+GENERAL.UUID:                           82900ec5-3f45-3d9c-8d10-3e269bf80e38
+GENERAL.DEVICES:                        enp2s0
+GENERAL.IP-IFACE:                       enp2s0
+GENERAL.STATE:                          activated
+GENERAL.DEFAULT:                        yes
+GENERAL.DEFAULT6:                       no
+GENERAL.SPEC-OBJECT:                    –
+GENERAL.VPN:                            no
+GENERAL.DBUS-PATH:                      /org/freedesktop/NetworkManager/ActiveConnection/1
+GENERAL.CON-PATH:                       /org/freedesktop/NetworkManager/Settings/2
+GENERAL.ZONE:                           –
+GENERAL.MASTER-PATH:                    –
+IP4.ADDRESS[1]:                         192.168.1.105/24
+IP4.GATEWAY:                            192.168.1.1
+IP4.ROUTE[1]:                           dst = 0.0.0.0/0, nh = 192.168.1.1, mt = 100
+IP4.ROUTE[2]:                           dst = 192.168.1.0/24, nh = 0.0.0.0, mt = 100
+IP4.ROUTE[3]:                           dst = 169.254.0.0/16, nh = 0.0.0.0, mt = 1000
+IP4.DNS[1]:                             192.168.1.1
+DHCP4.OPTION[1]:                        dhcp_lease_time = 7200
+DHCP4.OPTION[2]:                        domain_name_servers = 192.168.1.1
+DHCP4.OPTION[3]:                        expiry = 1618027916
+DHCP4.OPTION[4]:                        ip_address = 192.168.1.105
+DHCP4.OPTION[5]:                        requested_broadcast_address = 1
+DHCP4.OPTION[6]:                        requested_domain_name = 1
+DHCP4.OPTION[7]:                        requested_domain_name_servers = 1
+DHCP4.OPTION[8]:                        requested_domain_search = 1
+DHCP4.OPTION[9]:                        requested_host_name = 1
+DHCP4.OPTION[10]:                       requested_interface_mtu = 1
+DHCP4.OPTION[11]:                       requested_ms_classless_static_routes = 1
+DHCP4.OPTION[12]:                       requested_nis_domain = 1
+DHCP4.OPTION[13]:                       requested_nis_servers = 1
+DHCP4.OPTION[14]:                       requested_ntp_servers = 1
+DHCP4.OPTION[15]:                       requested_rfc3442_classless_static_routes = 1
+DHCP4.OPTION[16]:                       requested_root_path = 1
+DHCP4.OPTION[17]:                       requested_routers = 1
+DHCP4.OPTION[18]:                       requested_static_routes = 1
+DHCP4.OPTION[19]:                       requested_subnet_mask = 1
+DHCP4.OPTION[20]:                       requested_time_offset = 1
+DHCP4.OPTION[21]:                       requested_wpad = 1
+DHCP4.OPTION[22]:                       routers = 192.168.1.1
+DHCP4.OPTION[23]:                       subnet_mask = 255.255.255.0
+IP6.ADDRESS[1]:                         fe80::a757:50c2:bb55:ad72/64
+IP6.GATEWAY:                            –
+IP6.ROUTE[1]:                           dst = fe80::/64, nh = ::, mt = 100
+IP6.ROUTE[2]:                           dst = ff00::/8, nh = ::, mt = 256, table=255</p>
+</div></blockquote>
+<p>All of these properties can be modified using nmcli with the modify option using the following syntax:</p>
+<blockquote>
+<div><p>$ nmcli con mod &lt;connection name&gt; connection.&lt;property name&gt; &lt;setting&gt;</p>
+</div></blockquote>
+<p><strong>Working with Connection Profiles</strong></p>
+<p>The configuration of a connection is referred to as a <em>connection profile</em> and is stored in a file located in the <em>/etc/NetworkManager/system-connections</em> directory, the contents of which might read as follows:</p>
+<blockquote>
+<div><p>$ ls /etc/NetworkManager/system-connections
+ethernet.nmconnection  vivo-Y85A.nmconnection</p>
+</div></blockquote>
+<p>Each of the files is an interface configuration file containing the connection profile for the corresponding connection.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">connection</span><span class="p">]</span>
+<span class="nb">id</span><span class="o">=</span><span class="n">ethernet</span>
+<span class="n">uuid</span><span class="o">=</span><span class="mi">82900</span><span class="n">ec5</span><span class="o">-</span><span class="mi">3</span><span class="n">f45</span><span class="o">-</span><span class="mi">3</span><span class="n">d9c</span><span class="o">-</span><span class="mi">8</span><span class="n">d10</span><span class="o">-</span><span class="mf">3e269</span><span class="n">bf80e38</span>
+<span class="nb">type</span><span class="o">=</span><span class="n">ethernet</span>
+<span class="n">autoconnect</span><span class="o">-</span><span class="n">priority</span><span class="o">=-</span><span class="mi">999</span>
+<span class="n">interface</span><span class="o">-</span><span class="n">name</span><span class="o">=</span><span class="n">enp2s0</span>
+<span class="n">permissions</span><span class="o">=</span>
+<span class="n">timestamp</span><span class="o">=</span><span class="mi">1618020718</span>
+
+<span class="p">[</span><span class="n">ethernet</span><span class="p">]</span>
+<span class="n">mac</span><span class="o">-</span><span class="n">address</span><span class="o">-</span><span class="n">blacklist</span><span class="o">=</span>
+
+<span class="p">[</span><span class="n">ipv4</span><span class="p">]</span>
+<span class="n">dns</span><span class="o">-</span><span class="n">search</span><span class="o">=</span>
+<span class="n">method</span><span class="o">=</span><span class="n">auto</span>
+
+<span class="p">[</span><span class="n">ipv6</span><span class="p">]</span>
+<span class="n">addr</span><span class="o">-</span><span class="n">gen</span><span class="o">-</span><span class="n">mode</span><span class="o">=</span><span class="n">stable</span><span class="o">-</span><span class="n">privacy</span>
+<span class="n">dns</span><span class="o">-</span><span class="n">search</span><span class="o">=</span>
+<span class="n">method</span><span class="o">=</span><span class="n">auto</span>
+
+<span class="p">[</span><span class="n">proxy</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Changes to the connection profile can be implemented by modifying this file and instructing <em>nmcli</em> to reload the connection configuration files:</p>
+<blockquote>
+<div><p>$ nmcli con reload</p>
+</div></blockquote>
+<p>New connection profiles can also be created manually or generated automatically by <em>nmcli</em>. As an example, assume that a new network device has been installed on the system. When this happens, the NetworkManager service will detect the new hardware and create a device for it. In the example below, the new device has been assigned the name <em>enp0s8</em>:</p>
+<blockquote>
+<div><p># nmcli dev status
+DEVICE  TYPE      STATE      CONNECTION
+enp0s3  ethernet  connected  Wired connection 1
+enp0s8  ethernet  connected  Wired connection 2</p>
+</div></blockquote>
+<p>NetworkManager automatically detected the device, activated it and assigned it to a connection named “Wired connection 2”. This is a default connection over which we have no configuration control because there is no interface configuration file for it in <em>/etc/NetworkManager/systemconnections</em>. The next steps are to delete the “Wired connection 2” connection and use <em>nmcli</em> to create a new connection and assign it to the device. The command to delete a connection is as follows:</p>
+<blockquote>
+<div><p># nmcli con delete “Wired connection 2”</p>
+</div></blockquote>
+<p>Next, <em>nmcli</em> can be used to create a new connection profile configured either with a static IP address, or a dynamic IP address obtained from a DHCP server. To create a dynamic connection profile named _dyn_ip_, the following command would be used:</p>
+<blockquote>
+<div><p>$ nmcli connection dd type ethernet con-name dyn_ip ifname enp0s8
+Connection ‘dyn_ip’ (160d9e10-bbc8-439a-9c47-a2ec52990472) successfully added.</p>
+</div></blockquote>
+<p>After the connection has been created, a file named _dyn_ip * will have been added to the */etc/NetworkManager/system-connections _ directory and will read as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">connection</span><span class="p">]</span>
+<span class="nb">id</span><span class="o">=</span><span class="n">dyn_ip</span>
+<span class="n">uuid</span><span class="o">=</span><span class="mi">3</span><span class="n">dc0bb6b</span><span class="o">-</span><span class="mi">33</span><span class="n">dc</span><span class="o">-</span><span class="mi">4</span><span class="n">cf8</span><span class="o">-</span><span class="n">b5da</span><span class="o">-</span><span class="mi">5</span><span class="n">b9fd560342a</span>
+<span class="nb">type</span><span class="o">=</span><span class="n">ethernet</span>
+<span class="n">interface</span><span class="o">-</span><span class="n">name</span><span class="o">=</span><span class="n">enp0s8</span>
+<span class="n">permissions</span><span class="o">=</span>
+
+<span class="p">[</span><span class="n">ethernet</span><span class="p">]</span>
+<span class="n">mac</span><span class="o">-</span><span class="n">address</span><span class="o">-</span><span class="n">blacklist</span><span class="o">=</span>
+
+<span class="p">[</span><span class="n">ipv4</span><span class="p">]</span>
+<span class="n">dns</span><span class="o">-</span><span class="n">search</span><span class="o">=</span>
+<span class="n">method</span><span class="o">=</span><span class="n">auto</span>
+
+<span class="p">[</span><span class="n">ipv6</span><span class="p">]</span>
+<span class="n">addr</span><span class="o">-</span><span class="n">gen</span><span class="o">-</span><span class="n">mode</span><span class="o">=</span><span class="n">stable</span><span class="o">-</span><span class="n">privacy</span>
+<span class="n">dns</span><span class="o">-</span><span class="n">search</span><span class="o">=</span>
+<span class="n">method</span><span class="o">=</span><span class="n">auto</span>
+</pre></div>
+</div>
+<p>Checking the device status should now verify that the enp0s8 device is now using the dyn_ip connection profile:</p>
+<blockquote>
+<div><p># nmcli dev status
+DEVICE  TYPE      STATE      CONNECTION
+enp0s8  ethernet  connected  dyn_ip
+enp0s3  ethernet  connected  Wired connection 1</p>
+</div></blockquote>
+<p>At this point it is worth noting that the enp0s3 device is also using a default connection profile for which there is no interface file through which to modify the connection settings. The same steps used to create the dyn_ip profile can also be used for the enp0s3 device. For example, to create a connection named _static_ip_ assigned a static IP address (in this case 192.168.1.200) assigned to the enp0s3 device, the following command would be used (keeping in mind that if you are connected remotely to the system via the Wired connection 1 interface you will lose the connection):</p>
+<blockquote>
+<div><p># nmcli con delete “Wired connection 1”
+# nmcli con add type ethernet con-name static_ip ifname enp0s3 ip4 192.168.1.200/24 gw4 192.168.1.1
+Connection ‘static_ip’ (3fccafb3-e761-4271-b310-ad0f28ee8606) successfully added.
+# nmcli reload</p>
+</div></blockquote>
+<p>The corresponding _static_ip_ file will read as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">connection</span><span class="p">]</span>
+<span class="nb">id</span><span class="o">=</span><span class="n">static_ip</span>
+<span class="n">uuid</span><span class="o">=</span><span class="mf">6e03666</span><span class="n">b</span><span class="o">-</span><span class="mi">26</span><span class="n">a1</span><span class="o">-</span><span class="mi">476</span><span class="n">e</span><span class="o">-</span><span class="n">b5b2</span><span class="o">-</span><span class="mi">77</span><span class="n">c8eac6006c</span>
+<span class="nb">type</span><span class="o">=</span><span class="n">ethernet</span>
+<span class="n">interface</span><span class="o">-</span><span class="n">name</span><span class="o">=</span><span class="n">enp0s3</span>
+<span class="n">permissions</span><span class="o">=</span>
+
+<span class="p">[</span><span class="n">ethernet</span><span class="p">]</span>
+<span class="n">mac</span><span class="o">-</span><span class="n">address</span><span class="o">-</span><span class="n">blacklist</span><span class="o">=</span>
+
+<span class="p">[</span><span class="n">ipv4</span><span class="p">]</span>
+<span class="n">address1</span><span class="o">=</span><span class="mf">192.168.1.200</span><span class="o">/</span><span class="mi">24</span><span class="p">,</span><span class="mf">192.168.1.1</span>
+<span class="n">dns</span><span class="o">-</span><span class="n">search</span><span class="o">=</span>
+<span class="n">method</span><span class="o">=</span><span class="n">manual</span>
+
+<span class="p">[</span><span class="n">ipv6</span><span class="p">]</span>
+<span class="n">addr</span><span class="o">-</span><span class="n">gen</span><span class="o">-</span><span class="n">mode</span><span class="o">=</span><span class="n">stable</span><span class="o">-</span><span class="n">privacy</span>
+<span class="n">dns</span><span class="o">-</span><span class="n">search</span><span class="o">=</span>
+<span class="n">method</span><span class="o">=</span><span class="n">auto</span>
+</pre></div>
+</div>
+<p>The command to add a new connection may be altered slightly to also assign both IPv4 and IPv6 static addresses:</p>
+<blockquote>
+<div><p># nmcli con add type ethernet con-name static_ip ifname enp0s3 ip4 192.168.1.200/24 gw4 192.168.1.1  gw4 192.168.1.1 ip6 cabf::4532 gw6 2010:dfa::1</p>
+</div></blockquote>
+<p><strong>Interactive Editing</strong></p>
+<p>In addition to using <em>nmcli</em> with command-line options, the tool also includes an interactive mode that can be used to create and modify connection profiles. The following transcript, for example, shows interactive mode being used to create a new Ethernet connection named _demo_con_:</p>
+<blockquote>
+<div><p># nmcli con edit
+Valid connection types: 6lowpan, 802-11-olpc-mesh (olpc-mesh), 802-11-wireless (wifi), 802-3-ethernet (ethernet), adsl, bluetooth, bond, bridge, cdma, dummy, generic, gsm, infiniband, ip-tunnel, macsec, macvlan, ovs-bridge, ovs-interface, ovs-port, pppoe, team, tun, vlan, vpn, vxlan, wimax, wpan, bond-slave, bridge-slave, team-slave
+Enter connection type: ethernet</p>
+<p>Adding a new ‘802-3-ethernet’ connection</p>
+<p>Type ‘help’ or ‘?’ for available commands.
+Type ‘print’ to show all the connection properties.
+Type ‘describe [&lt;setting&gt;.&lt;prop&gt;]’ for detailed property description.</p>
+<p>You may edit the following settings: connection, 802-3-ethernet (ethernet), 802-1x, dcb, sriov, ethtool, match, ipv4, ipv6, tc, proxy
+nmcli&gt; set connection.id demo_con
+nmcli&gt; set connection.interface enp0s8
+nmcli&gt; set connection.autoconnect yes
+nmcli&gt; set ipv4.method auto
+nmcli&gt; set 802-3-ethernet.mtu auto
+nmcli&gt; set ipv6.method auto
+nmcli&gt; save
+Saving the connection with ‘autoconnect=yes’. That might result in an immediate activation of the connection.
+Do you still want to save? (yes/no) [yes] yes
+Connection ‘demo_con’ (cb837408-6c6f-4572-9548-4932f88b9275) successfully saved.
+nmcli&gt; quit</p>
+</div></blockquote>
+<p>The following transcript, on the other hand, modifies the previously created _static_ip_ connection profile to use a different static IP address to the one originally specified:</p>
+<blockquote>
+<div><p># nmcli con edit static_ip</p>
+<p>Editing existing ‘802-3-ethernet’ connection: ‘static_ip’</p>
+<p>Type ‘help’ or ‘?’ for available commands.
+Type ‘print’ to show all the connection properties.
+Type ‘describe [&lt;setting&gt;.&lt;prop&gt;]’ for detailed property description.</p>
+<p>You may edit the following settings: connection, 802-3-ethernet (ethernet), 802-1x, dcb, sriov, ethtool, match, ipv4, ipv6, tc, proxy
+nmcli&gt; print ipv4.addresses
+ipv4.addresses: 192.168.1.200/24
+nmcli&gt; set ipv4.addresses 192.168.1.201/24
+nmcli&gt; save
+Connection ‘static_ip’ (3fccafb3-e761-4271-b310-ad0f28ee8606) successfully updated.
+nmcli&gt; quit</p>
+</div></blockquote>
+<p>After modifying an existing connection, remember to instruct NetworkManager to reload the configuration profiles:</p>
+<blockquote>
+<div><p># nmcli con reload</p>
+</div></blockquote>
+<p>When using interactive mode, it is useful to know that there is an extensive built-in help system available to learn how to use the tool. The help topics can be accessed by typing <em>help</em> or <em>?</em> at the <em>nmcli &gt;</em> prompt:</p>
+<blockquote>
+<div><p>nmcli&gt; ?
+—[ Main menu ]—
+goto     [&lt;setting&gt; | &lt;prop&gt;]        :: go to a setting or property
+remove   &lt;setting&gt;[.&lt;prop&gt;] | &lt;prop&gt; :: remove setting or reset property value
+set      [&lt;setting&gt;.&lt;prop&gt; &lt;value&gt;]  :: set property value
+describe [&lt;setting&gt;.&lt;prop&gt;]          :: describe property
+print    [all | &lt;setting&gt;[.&lt;prop&gt;]]  :: print the connection
+verify   [all | fix]                 :: verify the connection
+save     [persistent|temporary]      :: save the connection
+activate [&lt;ifname&gt;] [/&lt;ap&gt;|&lt;nsp&gt;]    :: activate the connection
+back                                 :: go one level up (back)
+help/?   [&lt;command&gt;]                 :: print this help
+nmcli    &lt;conf-option&gt; &lt;value&gt;       :: nmcli configuration
+quit                                 :: exit nmcli
+——————————————————————————</p>
+</div></blockquote>
+<p><strong>Configuring NetworkManager Permissions</strong></p>
+<p>In addition to making it easier to manage networks on Ubuntu, NetworkManager also allows permissions to be specified for connections. The following command, for example, restricts a connection profile to root and user accounts named john and caitlyn:</p>
+<blockquote>
+<div><p>$ nmcli con mod static_ip connection.permissions user:root,john,caitlyn</p>
+</div></blockquote>
+<p>Once the connection profiles have been reloaded by NetworkManager, the _static_ip_ connection will only be active and accessible to other users when at least one of the designated users is logged in to an active session on the system. As soon as the last of these users logs out, the connection will go down and remain inactive until one of the users signs back in.</p>
+<p>In addition, only users with permission are able to make changes to the connection status or configuration.</p>
+<p><strong>Device is strictly Unmanaged</strong></p>
+<blockquote>
+<div><p>$ nmcli device connect enp2s0
+Error: Failed to add/activate new connection: Connection ‘enp2s0’ is not available on device enp2s0 because device is strictly unmanaged</p>
+</div></blockquote>
+<p><a class="reference external" href="https://askubuntu.com/a/71205">Way 1</a>[no use]:</p>
+<blockquote>
+<div><p>sudo nano /etc/NetworkManager/NetworkManager.conf
+# change
+# [ifupdown]
+# managed=false
+# to
+# [ifupdown]
+# managed=true
+sudo service network-manager restart</p>
+</div></blockquote>
+<p><a class="reference external" href="https://superuser.com/a/1632034">Way 2</a>[solved]:</p>
+<blockquote>
+<div><p>$ sudo nano /etc/NetworkManager/NetworkManager.conf
+$ sudo systemctl restart network-manager</p>
+<p>[main]
+plugins=ifupdown,keyfile</p>
+<p>[ifupdown]
+managed=true</p>
+<p>[keyfile]
+unmanaged-devices=*,except:type:wifi,except:type:gsm,except:type:cdma,except:type:wwan,except:type:ethernet,except:type:vlan</p>
+<p>[device]
+wifi.scan-rand-mac-address=no</p>
+</div></blockquote>
+<hr class="docutils" />
+<p><strong>References</strong>:</p>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://www.answertopia.com/ubuntu/ubuntu-network-management/">https://www.answertopia.com/ubuntu/ubuntu-network-management/</a></p></li>
+</ol>
+</div>
+<div class="section" id="fcitx">
+<h2>fcitx<a class="headerlink" href="#fcitx" title="永久链接至标题">¶</a></h2>
+<p>It is a input method.</p>
+<blockquote>
+<div><p># Install fcitx input method system
+$ sudo apt install fcitx-bin
+# Install Google Pinyin Chinese input method
+$ sudo apt install fcitx-googlepinyin</p>
+</div></blockquote>
+<p>Change the input method system from <code class="docutils literal notranslate"><span class="pre">IBus</span></code> to <code class="docutils literal notranslate"><span class="pre">fcitx</span></code> in <code class="docutils literal notranslate"><span class="pre">Region</span> <span class="pre">&amp;</span> <span class="pre">Language</span></code>. Click <code class="docutils literal notranslate"><span class="pre">Manage</span> <span class="pre">Installed</span> <span class="pre">Languages</span></code>. Click <code class="docutils literal notranslate"><span class="pre">Install/Remove</span> <span class="pre">Languages</span></code> to install <code class="docutils literal notranslate"><span class="pre">Chinese</span> <span class="pre">Simplified</span></code> and/or <code class="docutils literal notranslate"><span class="pre">Chinese</span> <span class="pre">Traditional</span></code> if necessary. Remove all the input sources except <code class="docutils literal notranslate"><span class="pre">English</span> <span class="pre">(US)</span></code> under the <code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">Sources</span></code> in <code class="docutils literal notranslate"><span class="pre">Region</span> <span class="pre">&amp;</span> <span class="pre">Language</span></code>. Otherwise, there will be two input icons on your system. Reboot the computer and we would see a new input icon at the top right corner of our desktop. We then add Google Pinyin to the <code class="docutils literal notranslate"><span class="pre">fcitx</span></code> method. We start the <code class="docutils literal notranslate"><span class="pre">fcitx-configtool</span></code>by running the following command in the terminal. Click <code class="docutils literal notranslate"><span class="pre">+</span></code> to add input methods. Uncheck <code class="docutils literal notranslate"><span class="pre">Only</span> <span class="pre">Show</span> <span class="pre">Current</span> <span class="pre">Language</span></code>, select <code class="docutils literal notranslate"><span class="pre">Google</span> <span class="pre">Pinyin</span></code>, and press <code class="docutils literal notranslate"><span class="pre">OK</span></code>. Now you can start to use <code class="docutils literal notranslate"><span class="pre">Google</span> <span class="pre">Pinyin</span></code> by toggling using <code class="docutils literal notranslate"><span class="pre">Ctrl</span></code> + <code class="docutils literal notranslate"><span class="pre">Space</span></code> by default.</p>
+<p>The default <code class="docutils literal notranslate"><span class="pre">fcitx</span></code> icon at idle is ugly. We would like to make it look better. We run the following commands in the terminal.</p>
+<blockquote>
+<div><p># Remove classic UI
+sudo apt remove fcitx-ui-classic
+# Install new UI
+sudo apt install fcitx-ui-qimpanel</p>
+</div></blockquote>
+<p>Reboot the computer and we would see a new penguin input icon at the top right corner of our desktop. It will turn to a keyboard icon whenever the cursor is placed somewhere allows inputs.</p>
+<p><strong>全半角切换</strong></p>
+<p><code class="docutils literal notranslate"><span class="pre">Alt</span> <span class="pre">+</span> <span class="pre">Shift</span> <span class="pre">+</span> <span class="pre">Escape</span></code></p>
+<hr class="docutils" />
+<p><strong>References</strong>:</p>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://leimao.github.io/blog/Ubuntu-Gaming-Chinese-Input/">https://leimao.github.io/blog/Ubuntu-Gaming-Chinese-Input/</a></p></li>
+<li><p><a class="reference external" href="https://askubuntu.com/q/19558">What are the meta, super, and hyper keys?</a></p></li>
+</ol>
+</div>
+<div class="section" id="draw-io">
+<h2>Draw.io<a class="headerlink" href="#draw-io" title="永久链接至标题">¶</a></h2>
+<blockquote>
+<div><p>$ wget <a class="reference external" href="https://github.com/jgraph/drawio-desktop/releases/download/v14.5.1/drawio-amd64-14.5.1.deb">https://github.com/jgraph/drawio-desktop/releases/download/v14.5.1/drawio-amd64-14.5.1.deb</a>
+$ sudo apt install ./drawio-amd64-14.5.1.deb</p>
+</div></blockquote>
+</div>
+<div class="section" id="remmina">
+<h2>Remmina<a class="headerlink" href="#remmina" title="永久链接至标题">¶</a></h2>
+<p>它是一个 SSH、远程桌面工具。</p>
+<blockquote>
+<div><p>sudo snap install remmina
+sudo snap connect remmina:avahi-observe :avahi-observe # servers discovery
+sudo snap connect remmina:cups-control :cups-control # printing
+sudo snap connect remmina:mount-observe :mount-observe # mount management
+sudo snap connect remmina:password-manager-service :password-manager-service # password manager
+cp ~/.ssh/* ~/snap/remmina/common/.ssh/ # donot do this now! I donot learn about its danger
+sudo snap refresh remmina –channel=stable</p>
+</div></blockquote>
+<p>ref: <a class="reference external" href="https://remmina.org/how-to-install-remmina/#snap">https://remmina.org/how-to-install-remmina/#snap</a></p>
+<div class="section" id="id5">
+<h3>按类别<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h3>
+</div>
+</div>
+<div class="section" id="id6">
+<h2>书籍<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://fbreader.org/">FBReader</a>(ePub, mobi, fb2, HTML, RTF, plain text. The primary formats are ePub and fb2)</p></li>
+<li><p><a class="reference external" href="https://github.com/oguzhaninan/Buka">Buka</a>(PDF)</p></li>
+<li><p><a class="reference external" href="https://www.calibre-ebook.com/">Calibre</a>(<code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">-v</span> <span class="pre">&amp;&amp;</span> <span class="pre">wget</span> <span class="pre">-nv</span> <span class="pre">-O-</span> <span class="pre">https://download.calibre-ebook.com/linux-installer.sh</span> <span class="pre">|</span> <span class="pre">sudo</span> <span class="pre">sh</span> <span class="pre">/dev/stdin</span> <span class="pre">install_dir=/opt</span></code>)</p></li>
+<li><p><a class="reference external" href="https://babluboy.github.io/bookworm/">Bookworm</a>(ePUB, PDF, MOBI, FB2, CBR, CBZ)</p></li>
+<li><p><a class="reference external" href="https://github.com/michaldaniel/Ebook-Viewer">Ebook-Viewer</a></p></li>
+<li><p><a class="reference external" href="https://github.com/johnfactotum/foliate">Foliate</a>(ePUB, azw, azw3, mobi, fb2, fb2.zip, cbr, cbz, cbt, cb7, txt)</p></li>
+<li><p><a class="reference external" href="https://www.moondownload.com/index.html">Moon+ Reader</a></p></li>
+<li><p><a class="reference external" href="https://github.com/troyeguo/koodo-reader">Koodo Reader</a></p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="ubuntu-problems.html" class="btn btn-neutral float-right" title="Problems on Ubuntu" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="ubuntu-common-usage.html" class="btn btn-neutral float-left" title="Ubuntu Common Usage" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; 版权所有 2021 - 2021, Jim Gao.
+
+    </p>
+  </div>
+    
+    
+    
+    利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用了 
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    
+    由 <a href="https://readthedocs.org">Read the Docs</a>开发.
+<p>除额外注明的地方外，本文档按 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议发布。</p>
+ 
+
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

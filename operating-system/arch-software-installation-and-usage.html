@@ -1,0 +1,1784 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Arch Software Installation and Usage &mdash; Today I Learnt  文档</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="Arch Installation Guide" href="arch-installation-guide.html" />
+    <link rel="prev" title="Arch Package" href="arch-package.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Today I Learnt
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="在文档中搜索" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/cs-and-web-concepts.html">CS &amp; Web Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C.html">计算机网络</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/dns.html">DNS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/%E7%A7%91%E6%8A%80%E8%8B%B1%E8%AF%AD.html">科技英语</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/front-end-and-its-history.html">Front-end and its history</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/cors.html">CORS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/how-the-web-works.html">How the Web works</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../algorithms-and-data-structure/algorithms-and-data-structure.html">Algorithms and Data Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../algorithms-and-data-structure/books.html">一些算法书籍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="operating-system.html">Operating System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="linux-details.html">Linux Details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="linux-common-orders.html">Linux Common Orders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arch-system-maintenance.html">Arch System Maintenance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arch-package.html">Arch Package</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Arch Software Installation and Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#hide-grub">Hide GRUB</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mount">Mount</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#reflector">reflector</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#automation">Automation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pacman-hook">Pacman hook</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#proxy">Proxy</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#clash">Clash</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#input-method">Input method</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#fcitx5">fcitx5 使用问题</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#font">Font</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bluetooth">Bluetooth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#git">Git</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#gpg">GPG</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#archcn">archcn</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pacman">pacman</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">pacman 命令</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">应该避免执行的 <code class="docutils literal notranslate"><span class="pre">pacman</span></code> 指令</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#list-all-development-unstable-packages">list all development/unstable packages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">执行 pacman 命令过程中，遇到的信息/警告/错误</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#when-sudo-pacman-syu">When <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">pacman</span> <span class="pre">-Syu</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#yay-del-donot-use-only-use-pacman-del">yay(<span class="raw-html-m2r"><del>donot use, only use pacman</del></span>)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#yay">安装 yay</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">使用 yay</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">yay 问题</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#imager-rpi-imager">Imager(rpi-imager)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#kde">KDE</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#konsole">konsole</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#konsole-keyboard-shortcut">konsole keyboard shortcut</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#swap-lctrl-with-capslock">Swap Lctrl with CapsLock</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#error-discover-software-center">Error Discover(Software Center)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#kde-connect">kde Connect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#seahorse-kde-wallet">seahorse + kde wallet</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#gnome">GNOME</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#remove-software">Remove software</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#extension">Extension</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#dash-to-dock">Dash to Dock</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#coverflow-alt-tab">Coverflow Alt-Tab</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tray-icons-reloaded">Tray Icons: Reloaded</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#simple-net-speed">Simple net speed</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gsconnect">GSconnect</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#other-software">Other Software</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#dkms">dkms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sagemath">Sagemath</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tomcat8">Tomcat8</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mysql">MySQL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#idea">IDEA</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sphinx">Sphinx</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#exa">exa</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#informant">informant</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#virtualbox">Virtualbox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#earlyoom">earlyoom</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vagrant">Vagrant</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mutt">Mutt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#flameshot">Flameshot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#anki">Anki</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#exercism">exercism</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#scheme-programming-language">Scheme Programming Language</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nscd"><code class="docutils literal notranslate"><span class="pre">nscd</span></code> 自启动</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#redshift">redshift</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#arch-linux">让 Arch Linux 系统和最新的镜像同步，从最快的镜像下载</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dns">使用国外 DNS 造成国内网站访问慢的解决方法</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">备份</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#timeshift">timeshift</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#hosts-github-ip">自动更新 hosts GitHub 相关 IP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#problems">Problems</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#protocol-not-available-bluetooth">Protocol not available - Bluetooth</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#command-not-found-service"><code class="docutils literal notranslate"><span class="pre">command</span> <span class="pre">not</span> <span class="pre">found:</span> <span class="pre">service</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fcitx">fcitx</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#unknown-download-protocol-https"><code class="docutils literal notranslate"><span class="pre">Unknown</span> <span class="pre">download</span> <span class="pre">protocol:</span> <span class="pre">https</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hanyu-pinyin-with-altgr-dead-keys">中文语言不能选择 Hanyu Pinyin (with AltGr dead keys)，当我通过鼠标点击切换到它时，电脑卡了</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cannot-find-fcitx-input-method-module-for-qt4">Cannot find fcitx input method module for Qt4.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id7">系统卡顿</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rpi-imager-yay-s-rpi-imager-sudo-pacman-s-rpi-imager">rpi-imager 能够用 <code class="docutils literal notranslate"><span class="pre">yay</span> <span class="pre">-S</span> <span class="pre">rpi-imager</span></code> 下载，却不能用 <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">pacman</span> <span class="pre">-S</span> <span class="pre">rpi-imager</span></code> 下载</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gparted-too-many-primary-partitions">gparted <code class="docutils literal notranslate"><span class="pre">Too</span> <span class="pre">many</span> <span class="pre">primary</span> <span class="pre">partitions</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#amdgpu-topaz-not-supported-in-kfd">amdgpu: TOPAZ  not supported in kfd</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#kde-s-plasma-eating-cpu">KDE’s plasma eating CPU</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="arch-installation-guide.html">Arch Installation Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="openbsd-installation.html">OpenBSD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ubuntu-backup.html">Ubuntu Backup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ubuntu-common-usage.html">Ubuntu Common Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ubuntu-install-software.html">Install Software on Ubuntu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ubuntu-problems.html">Problems on Ubuntu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mxlinux-installation.html">MX Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../html/html.html">HTML</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../html/before-html.html">Before HTML</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../html/html-basics.html">HTML Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../html/images.html">Images</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../html/html-code-snippets.html">HTML Code Snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../css/css.html">CSS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../css/css-basics.html">CSS Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../css/css-box.html">CSS Box</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../css/css-position.html">CSS Position</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../css/css-code-snippets.html">CSS Code Snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/javascript.html">JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/javascript-basics.html">JavaScript Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/es6.html">ES6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/what-i-learnt-from-js.html">What I learnt from JS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/install-node-npm-yarn.html">Install Node.js, NPM and Yarn</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/yarn-v2-usage.html">Yarn v2 Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/used-packages-from-npm-or-yarn.html">Used Packages from npm or yarn</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/the-difference-between-js-in-head-and-body.html">The difference between js in the head and body</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../javascript/js-code-snippets.html">JS Code Snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vue/vue.html">Vue</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../front-end.html">Front-end</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../programming-languages/programming-language.html">Programming Language</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../programming-languages/shell.html">Shell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../programming-languages/python.html">Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../programming-languages/go.html">Go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projects/projects.html">Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projects/wordpress.html">WordPress</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/docker.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/vagrant.html">Vagrant</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/gpg.html">GPG</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/jekyll.html">Jekyll</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/hugo.html">Hugo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/neovim.html">neovim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/cloudflare.html">Cloudflare</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/gatsby.html">Gatsby</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/sphinx.html">Sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/version-control-git.html">Version Control - Git</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/git-fundamentals.html">Git Fundamentals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/git-commit.html">Git Commit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/commit-messages-guide.html">Commit Messages Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/git-and-gitHub.html">Git and GitHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/git-command-line-reference.html">Git Command Line Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/git-glossary.html">Git Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/useful-tips-about-git.html">Useful Tips about Git</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/branch-name-contain-the-space-char.html">Branch Name Contain The ‘space’ Char</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/create-empty-branch-locally-and-remotely.html">Create Empty Branch Locally And Remotely</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/delete-a-git-branch-both-locally-and-remotely.html">Delete A Git Branch Both Locally And Remotely</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/delete-all-local-and-remote-tags.html">Delete All Local And Remote Tags</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/delete-commit.html">Delete Commit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/merge-two-git-repo.html">Merge Two Git Repo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/remove-tracking-branches-no-longer-on-remote.html">Remove Tracking Branches No Longer On Remote</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/update-with-original-repo-after-forking-on-github.html">Update With Original Repo After Forking on GitHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/git-clone-specify-branch.html">Git Clone Specify Branch</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../version-control-git/github-action-only-generate-nojekyll.html">GitHub Action only Generate <code class="docutils literal notranslate"><span class="pre">.nojekyll</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../useful-info.html">Useful Info</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/hardware.html">Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/bluetooth.html">Bluetooth</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/power-supply-unit.html">Power supply unit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/raspberry-pi.html">Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../learning-how-to-learn.html">Learning How to Learn</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Today I Learnt</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Arch Software Installation and Usage</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/tianheg/til/blob/main/content/operating-system/arch-software-installation-and-usage.rst" class="fa fa-github"> 在 GitHub 上修改</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="arch-software-installation-and-usage">
+<h1>Arch Software Installation and Usage<a class="headerlink" href="#arch-software-installation-and-usage" title="永久链接至标题">¶</a></h1>
+<div class="section" id="hide-grub">
+<h2>Hide GRUB<a class="headerlink" href="#hide-grub" title="永久链接至标题">¶</a></h2>
+<p>Tried <a class="reference external" href="https://io-oi.me/tech/hello-arch-linux/#隐藏-grub-除非按下-shift-键">this way</a> not work, then try <a class="reference external" href="https://www.reddit.com/r/linux4noobs/comments/5372gj/disable_arch_linux_grub_boot_menu/d7qjh6s?utm_source=share&amp;utm_medium=web2x&amp;context=3">this</a>:</p>
+<blockquote>
+<div><p>sudo vim /etc/default/grub
+sudo grub-mkconfig -o /boot/grub/grub.cfg</p>
+</div></blockquote>
+<p>Edit <code class="docutils literal notranslate"><span class="pre">etc/default/grub</span></code>:</p>
+<blockquote>
+<div><p>-GRUB_TIMEOUT=1
++GRUB_TIMEOUT=0</p>
+</div></blockquote>
+</div>
+<div class="section" id="mount">
+<h2>Mount<a class="headerlink" href="#mount" title="永久链接至标题">¶</a></h2>
+<p>挂载外来文件系统，推荐使用 udiskctl(install udisks2, <code class="docutils literal notranslate"><span class="pre">pkgfile</span> <span class="pre">-b</span> <span class="pre">udisksctl</span></code>) 命令，很多时候不需要 root 权限就能挂载和卸载 from <a class="reference external" href="https://bbs.archlinuxcn.org/viewtopic.php?pid=44067#p44067">https://bbs.archlinuxcn.org/viewtopic.php?pid=44067#p44067</a></p>
+</div>
+<div class="section" id="reflector">
+<h2>reflector<a class="headerlink" href="#reflector" title="永久链接至标题">¶</a></h2>
+<p><a class="reference external" href="https://wiki.archlinux.org/title/reflector">https://wiki.archlinux.org/title/reflector</a></p>
+<div class="section" id="automation">
+<h3>Automation<a class="headerlink" href="#automation" title="永久链接至标题">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">/etc/xdg/reflector/reflector.conf</span></code>:</p>
+<blockquote>
+<div><p>–save /etc/pacman.d/mirrorlist
+–country China
+–protocol https
+–latest 5</p>
+<p>systemctl enable reflector
+systemctl start reflector</p>
+</div></blockquote>
+</div>
+<div class="section" id="pacman-hook">
+<h3>Pacman hook<a class="headerlink" href="#pacman-hook" title="永久链接至标题">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">/etc/pacman.d/hooks/mirrorupgrade.hook</span></code>:</p>
+<blockquote>
+<div><p>[Trigger]
+Operation = Upgrade
+Type = Package
+Target = pacman-mirrorlist</p>
+<p>[Action]
+Description = Updating pacman-mirrorlist with reflector and removing pacnew…
+When = PostTransaction
+Depends = reflector
+Exec = /bin/sh -c ‘systemctl start reflector.service; [ -f /etc/pacman.d/mirrorlist.pacnew ] &amp;&amp; rm /etc/pacman.d/mirrorlist.pacnew’</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="proxy">
+<h2>Proxy<a class="headerlink" href="#proxy" title="永久链接至标题">¶</a></h2>
+<div class="section" id="clash">
+<h3>Clash<a class="headerlink" href="#clash" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>export CLASH_VERSION=”1.6.5”
+wget -O clash.gz <a class="reference external" href="https://github.com/Dreamacro/clash/releases/download">https://github.com/Dreamacro/clash/releases/download</a>/v${CLASH_VERSION}/clash-linux-amd64-v${CLASH_VERSION}.gz
+gzip -f clash.gz -d
+sudo mv ~/clash /usr/local/bin/clash
+chmod +x /usr/local/bin/clash
+clash # Generate config.yaml, Country.mmdb in ~/.config/clash
+## download yaml file from your service provider, rename it to config.yaml, put it under your clash folder</p>
+<p># open clash at start <a class="reference external" href="https://github.com/Dreamacro/clash/wiki/clash-as-a-daemon">https://github.com/Dreamacro/clash/wiki/clash-as-a-daemon</a>
+sudo vim /etc/systemd/system/clash.service</p>
+</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">/etc/systemd/system/clash.service</span></code>:</p>
+<blockquote>
+<div><p>[Unit]
+Description=Clash daemon, A rule-based proxy in Go.
+After=network.target</p>
+<p>[Service]
+Type=simple
+Restart=always
+ExecStart=/usr/local/bin/clash -d “/home/archie/.config/clash”</p>
+<p>[Install]
+WantedBy=multi-user.target</p>
+<p>systemctl daemon-reload
+systemctl enable clash</p>
+</div></blockquote>
+<p>测试代理是否有效（还不起作用）：</p>
+<p>from 依云 <a class="reference external" href="https://cfp.vim-cn.com/cb3wN/python">https://cfp.vim-cn.com/cb3wN/python</a></p>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">test_youtube</span><span class="p">(</span><span class="n">port</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">bool</span><span class="p">]:</span>
+  <span class="n">output</span> <span class="o">=</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">check_output</span><span class="p">([</span>
+    <span class="s1">&#39;curl&#39;</span><span class="p">,</span> <span class="s1">&#39;-sS&#39;</span><span class="p">,</span> <span class="s1">&#39;-m30&#39;</span><span class="p">,</span> <span class="s1">&#39;-H&#39;</span><span class="p">,</span> <span class="s1">&#39;Accept-Language: en&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;https://www.youtube.com/premium&#39;</span><span class="p">,</span> <span class="s1">&#39;--socks5-hostname&#39;</span><span class="p">,</span> <span class="sa">f</span><span class="s1">&#39;localhost:</span><span class="si">{</span><span class="n">port</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span>
+  <span class="p">],</span> <span class="n">text</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+  <span class="k">if</span> <span class="s1">&#39;Premium is not available in your country&#39;</span> <span class="ow">in</span> <span class="n">output</span><span class="p">:</span>
+    <span class="k">return</span> <span class="kc">False</span>
+  <span class="n">m</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;countryCode&quot;:&quot;(\w+)&#39;</span><span class="p">,</span> <span class="n">output</span><span class="p">)</span>
+  <span class="k">if</span> <span class="n">m</span><span class="p">:</span>
+    <span class="k">return</span> <span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+  <span class="k">else</span><span class="p">:</span>
+    <span class="k">return</span> <span class="s1">&#39;US&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="input-method">
+<h2>Input method<a class="headerlink" href="#input-method" title="永久链接至标题">¶</a></h2>
+<p>Want to remove ibus, use fcitx.</p>
+<blockquote>
+<div><p>sudo pacman -S fcitx-im fcitx-configtool fcitx-googlepinyin</p>
+</div></blockquote>
+<p>Add support for gtk,qt:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span># /etc/profile
+export XMODIFIERS=&quot;@im=fcitx&quot;
+export GTK_IM_MODULE=&quot;fcitx&quot;
+export QT_IM_MODULE=&quot;fcitx&quot;
+</pre></div>
+</div>
+<p>fcitx4 to fcitx5:</p>
+<blockquote>
+<div><p>sudo pacman -Rsc fcitx
+sudo pacman -S fcitx5-im fcitx5-chinese-addons fcitx5-pinyin-zhwiki fcitx5-material-color</p>
+</div></blockquote>
+<p>配置开机启动；主题：material-color-black</p>
+<div class="section" id="fcitx5">
+<h3>fcitx5 使用问题<a class="headerlink" href="#fcitx5" title="永久链接至标题">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">Enter</span></code> 回车键异常：中文模式下，按 <span class="raw-html-m2r"><kbd>；</kbd></span> 后再按 <span class="raw-html-m2r"><kbd>Enter</kbd></span> 无法输入英文分号。可能不是问题，刚从 fcitx4 升级到 fcitx5。</p>
+<p>ref:</p>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://zhuanlan.zhihu.com/p/341637818">https://zhuanlan.zhihu.com/p/341637818</a></p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="font">
+<h2>Font<a class="headerlink" href="#font" title="永久链接至标题">¶</a></h2>
+<p>Use default Gnome 40 font:</p>
+<ul>
+<li><p>Cantarell Regular 11</p></li>
+<li><p>Cantarell Regular 11</p></li>
+<li><p>Source Code Pro Regular 10</p></li>
+<li><p>Cantarell Bold 11</p>
+<blockquote>
+<div><p>sudo pacman -S noto-fonts noto-fonts-extra noto-fonts-emoji noto-fonts-cjk ttf-dejavu ttf-liberation ttf-roboto ttf-inconsolata ttf-linux-libertine ttf-droid adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts
+yay -S otf-eb-garamond ttf-monaco otf-san-francisco consolas-font</p>
+</div></blockquote>
+</li>
+</ul>
+<p>中文：</p>
+<p>noto-fonts, noto-fonts-cjk, noto-fonts-emoji, noto-fonts-extra</p>
+<p>代码：</p>
+<p>monaco, menlo, hack, IBM Plex Mono</p>
+<ul>
+<li><p>命令行安装的字体所在的目录：<code class="docutils literal notranslate"><span class="pre">/usr/share/fonts/</span></code></p></li>
+<li><p>手动安装的字体所在的目录：<code class="docutils literal notranslate"><span class="pre">~/.local/share/fonts/</span></code></p>
+<blockquote>
+<div><p>fc-cache -fv # update font cache</p>
+</div></blockquote>
+</li>
+</ul>
+<p>ref:</p>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://realdougwilson.com/writing/coding-with-character">https://realdougwilson.com/writing/coding-with-character</a></p></li>
+</ol>
+</div>
+<div class="section" id="bluetooth">
+<h2>Bluetooth<a class="headerlink" href="#bluetooth" title="永久链接至标题">¶</a></h2>
+<blockquote>
+<div><p>sudo systemctl enable –now bluetooth</p>
+</div></blockquote>
+</div>
+<div class="section" id="git">
+<h2>Git<a class="headerlink" href="#git" title="永久链接至标题">¶</a></h2>
+<blockquote>
+<div><p>wget -O ~/.gitconfig <a class="reference external" href="https://raw.githubusercontent.com/tianheg/dotfiles/main/git/gitconfig">https://raw.githubusercontent.com/tianheg/dotfiles/main/git/gitconfig</a></p>
+<p>## SSH
+chmod 400 ~/.ssh/id_ed25519
+# solve sign_and_send_pubkey: signing failed for ED25519 “/home/user/.ssh/id_ed25519” from agent: agent refused operation; <a class="reference external" href="mailto:git&#37;&#52;&#48;github&#46;com">git<span>&#64;</span>github<span>&#46;</span>com</a>: Permission denied (publickey).</p>
+</div></blockquote>
+</div>
+<div class="section" id="gpg">
+<h2>GPG<a class="headerlink" href="#gpg" title="永久链接至标题">¶</a></h2>
+<p>Modify <code class="docutils literal notranslate"><span class="pre">~/.gnupg/</span></code> permission:</p>
+<blockquote>
+<div><p># <a class="reference external" href="https://superuser.com/a/954536">https://superuser.com/a/954536</a> ; <a class="reference external" href="https://superuser.com/a/954639">https://superuser.com/a/954639</a>
+# Set ownership to your own user and primary group
+chown -R “$USER:$(id -gn)” ~/.gnupg
+# Set permissions to read, write, execute for only yourself, no others
+chmod 700 ~/.gnupg
+# Set permissions to read, write for only yourself, no others
+chmod 600 ~/.gnupg/*</p>
+</div></blockquote>
+<p>This step is to solve <code class="docutils literal notranslate"><span class="pre">gpg:</span> <span class="pre">WARNING:</span> <span class="pre">unsafe</span> <span class="pre">permissions</span> <span class="pre">on</span> <span class="pre">homedir</span> <span class="pre">'/home/user/.gnupg'</span></code>.</p>
+<p><strong>Save ~/.gnupg safely</strong>, then import public keys from GitHub(user + web-flow):</p>
+<blockquote>
+<div><p>wget -O tianheg-pubkeys.txt <a class="reference external" href="https://github.com/tianheg.gpg">https://github.com/tianheg.gpg</a>
+wget -O github-web-flow.txt <a class="reference external" href="https://github.com/web-flow.gpg">https://github.com/web-flow.gpg</a>
+gpg –import tianheg-pubkeys.txt
+gpg –import github-web-flow.txt</p>
+</div></blockquote>
+</div>
+<div class="section" id="archcn">
+<h2>archcn<a class="headerlink" href="#archcn" title="永久链接至标题">¶</a></h2>
+<p>Add repo:</p>
+<blockquote>
+<div><p>[archlinuxcn]
+Server = <a class="reference external" href="https://repo.archlinuxcn.org/$arch">https://repo.archlinuxcn.org/$arch</a></p>
+</div></blockquote>
+<p>to your <code class="docutils literal notranslate"><span class="pre">/etc/pacman.conf</span></code>.</p>
+<p>For mirrors (mainly in China), see <a class="reference external" href="https://github.com/archlinuxcn/mirrorlist-repo">archlinuxcn/mirrorlist-repo</a>.</p>
+<p>Import PGP Keys:</p>
+<blockquote>
+<div><p>sudo pacman -Syy &amp;&amp; sudo pacman -S archlinuxcn-keyring</p>
+</div></blockquote>
+</div>
+<div class="section" id="pacman">
+<h2>pacman<a class="headerlink" href="#pacman" title="永久链接至标题">¶</a></h2>
+<p>Is it possible that there is a major kernel update in the repository, and that some of the driver packages have not been updated?</p>
+<p>No, it is not possible. Major kernel updates (e.g. linux 3.5.0-1 to linux 3.6.0-1) are always accompanied by rebuilds of all supported kernel driver packages. On the other hand, if you have an unsupported driver package (e.g. from the AUR) installed on your system, then a kernel update might break things for you if you do not rebuild it for the new kernel. Users are responsible for updating any unsupported driver packages that they have installed.</p>
+<div class="section" id="id1">
+<h3>pacman 命令<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>## Common
+pacman -Qe # List all explicitly installed packages
+pacman -Qet # list all packages explicitly installed and not required as dependencies
+pacman -Qent # List all explicitly installed native packages (i.e. present in the sync database) that are not direct or optional dependencies
+pacman -Qn # List all native packages (installed from the sync database(s))
+pacman -Qm # List all foreign packages (typically manually downloaded and installed or packages removed from the repositories)</p>
+<p>sudo pacman -Qtdq | sudo pacman -Rns - # recursively removing orphans and their configuration files</p>
+<p>sudo pacman -Qii | awk ‘/^MODIFIED/ {print $2}’ # print modified files under /etc</p>
+<p>pacman -Qs regex # List packages by regex</p>
+<p>pacman -Qg group_name # List installed packages under this group
+pacman -Sg group # List all packages in the package group named <cite>group</cite>, etc, base-devel, gnome</p>
+<p>pacman -Syu # Update package list and upgrade all packages afterwards
+pacman -Syu git # Update package list, upgrade all packages, and then install git if it wasn’t already installed</p>
+<p>pacman -S package_name1 package_name2 # Installing specific packages
+pacman -S $(pacman -Ssq package_regex) # Install a list of packages with regex
+pacman -S extra/package_name # Install specific repositories’ package
+pacman -S plasma-{desktop,mediacenter,nm}
+pacman -S plasma-{workspace{,-wallpapers},pa}</p>
+<p>pacman -S gnome # Install through group of packages
+Enter a selection (default=all): 1-10 15 # which will select packages 1 through 10 and 15 for installation
+Enter a selection (default=all): ^5-8 ^2 # which will select all packages except 5 through 8 and 2 for installation</p>
+<p>pacman -R package_name # remove a single package, leaving all of its dependencies installed
+pacman -Rs package_name # remove a single package and its dependencies which are not required by any other installed package</p>
+<p>pacman -Qtd # check for packages that were installed as a dependency but now, no other packages depend on them</p>
+<p>pacman -Ss string1 string2 … # search for packages in the database
+pacman -Qs string1 string2 … # search for already installed packages
+pacman -F string1 string2 … # search for package file names in remote packages
+pacman -Fy string1 string2 … # first flush local cache, then search for package file names in remote packages</p>
+<p>pacman -Si package_name # display extensive information about a given package
+pacman -Qi package_name # display extensive information about locally installed packages
+pacman -Qii package_name # also display the list of backup files and their modification states</p>
+<p>pacman -Ql package_name # retrieve a list of the files installed by a package
+pacman -Fl package_name # retrieve a list of the files installed by a remote package</p>
+<p>## Rarely use
+pacman -Qk package_name # verify the presence of the files installed by a package, Passing the k flag twice will perform a more thorough check
+pacman -Qo /path/to/file_name # query the database to know which package a file in the file system belongs to
+pacman -F /path/to/file_name # query the database to know which remote package a file belongs to</p>
+</div></blockquote>
+</div>
+<div class="section" id="id2">
+<h3>应该避免执行的 <code class="docutils literal notranslate"><span class="pre">pacman</span></code> 指令<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>pacman -Syu # always run
+pacman -Sy # never run!!!
+pacman -Rdd package # never run!!!</p>
+</div></blockquote>
+<p>When installing packages in Arch, avoid refreshing the package list without upgrading the system (for example, when a package is no longer found in the official repositories). In practice, do not run pacman -Sy package_name instead of pacman -Syu package_name, as this could lead to dependency issues.</p>
+</div>
+<div class="section" id="list-all-development-unstable-packages">
+<h3>list all development/unstable packages<a class="headerlink" href="#list-all-development-unstable-packages" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>pacman -Qq | grep -Ee ‘-(bzr|cvs|darcs|git|hg|svn)$’</p>
+</div></blockquote>
+</div>
+<div class="section" id="id3">
+<h3>执行 pacman 命令过程中，遇到的信息/警告/错误<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>warning: dependency cycle detected # 循环依赖</p>
+</div></blockquote>
+<div class="section" id="when-sudo-pacman-syu">
+<h4>When <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">pacman</span> <span class="pre">-Syu</span></code><a class="headerlink" href="#when-sudo-pacman-syu" title="永久链接至标题">¶</a></h4>
+<div class="section" id="warning-possibly-missing-firmware-for-module">
+<h5>WARNING: Possibly missing firmware for module<a class="headerlink" href="#warning-possibly-missing-firmware-for-module" title="永久链接至标题">¶</a></h5>
+<p>这是一种警告。</p>
+<p>ref:</p>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://wiki.archlinux.org/title/Mkinitcpio#Possibly_missing_firmware_for_module_XXXX">https://wiki.archlinux.org/title/Mkinitcpio#Possibly_missing_firmware_for_module_XXXX</a></p></li>
+<li><p><a class="reference external" href="https://arcolinuxforum.com/viewtopic.php?t=1174">https://arcolinuxforum.com/viewtopic.php?t=1174</a></p></li>
+</ol>
+</div>
+<div class="section" id="gpg-key-786c63f330d7cb92-no-user-id-for-key-signature-packet-of-class-10">
+<h5>gpg: key 786C63F330D7CB92: no user ID for key signature packet of class 10<a class="headerlink" href="#gpg-key-786c63f330d7cb92-no-user-id-for-key-signature-packet-of-class-10" title="永久链接至标题">¶</a></h5>
+<blockquote>
+<div><p>gpg: key 786C63F330D7CB92: no user ID for key signature packet of class 10
+gpg: key 1EB2638FF56C0C53: no user ID for key signature packet of class 10
+gpg: next trustdb check due at 2021-10-09
+-&gt; Disabled 3 keys.</p>
+<p>## try 1
+sudo pacman-key –refresh-keys
+sudo pacman -S archlinux-keyring archlinuxcn-keyring
+## try 2
+sudo rm -R /etc/pacman.d/gnupg/ # No such file or directory
+sudo rm -rf /etc/pacman.d/gnupg/
+sudo rm -R /root/.gnupg/
+sudo rm -R /var/cache/pacman/pkg/
+sudo gpg –refresh-keys
+sudo pacman-key –init
+sudo pacman-key –populate archlinux # still display <cite>gpg: key xxx: no user ID for key signature packet of class 10</cite>
+sudo pacman-key –refresh-keys
+sudo pacman -Syyu</p>
+</div></blockquote>
+<p>ref:</p>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://github.com/yuk7/ArchWSL/issues/91#issuecomment-506806989">https://github.com/yuk7/ArchWSL/issues/91#issuecomment-506806989</a></p></li>
+</ol>
+</div>
+<div class="section" id="warning-etc-pacman-d-mirrorlist-installed-as-etc-pacman-d-mirrorlist-pacnew">
+<h5>warning: /etc/pacman.d/mirrorlist installed as /etc/pacman.d/mirrorlist.pacnew<a class="headerlink" href="#warning-etc-pacman-d-mirrorlist-installed-as-etc-pacman-d-mirrorlist-pacnew" title="永久链接至标题">¶</a></h5>
+</div>
+<div class="section" id="etc-mkinitcpio-d-linux-preset-default-and-etc-mkinitcpio-d-linux-preset-fallback">
+<h5>/etc/mkinitcpio.d/linux.preset: ‘default’ and /etc/mkinitcpio.d/linux.preset: ‘fallback’<a class="headerlink" href="#etc-mkinitcpio-d-linux-preset-default-and-etc-mkinitcpio-d-linux-preset-fallback" title="永久链接至标题">¶</a></h5>
+<p><a class="reference external" href="https://wiki.archlinux.org/title/Mkinitcpio">mkinitcpio - ArchWiki</a></p>
+<p>ref:</p>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://wiki.archlinux.org/title/Arch_User_Repository#Installing_and_upgrading_packages">https://wiki.archlinux.org/title/Arch_User_Repository#Installing_and_upgrading_packages</a></p></li>
+<li><p><a class="reference external" href="https://wiki.archlinux.org/title/Frequently_asked_questions#Is_it_possible_that_there_is_a_major_kernel_update_in_the_repository,_and_that_some_of_the_driver_packages_have_not_been_updated">https://wiki.archlinux.org/title/Frequently_asked_questions#Is_it_possible_that_there_is_a_major_kernel_update_in_the_repository,_and_that_some_of_the_driver_packages_have_not_been_updated</a>?</p></li>
+<li><p><a class="reference external" href="https://wiki.archlinux.org/title/Pacman/Tips_and_tricks">https://wiki.archlinux.org/title/Pacman/Tips_and_tricks</a></p></li>
+<li><p><a class="reference external" href="https://wiki.archlinux.org/title/Pacman">https://wiki.archlinux.org/title/Pacman</a></p></li>
+<li><p><a class="reference external" href="https://wiki.archlinux.org/title/System_maintenance#Avoid_certain_pacman_commands">https://wiki.archlinux.org/title/System_maintenance#Avoid_certain_pacman_commands</a></p></li>
+<li><p><a class="reference external" href="https://wiki.archlinux.org/title/Pacman/Rosetta">https://wiki.archlinux.org/title/Pacman/Rosetta</a></p></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="yay-del-donot-use-only-use-pacman-del">
+<h2>yay(<span class="raw-html-m2r"><del>donot use, only use pacman</del></span>)<a class="headerlink" href="#yay-del-donot-use-only-use-pacman-del" title="永久链接至标题">¶</a></h2>
+<p>Yet Another Yogurt: A utility for Arch Linux to build and install packages from the Arch User Repository.</p>
+<div class="section" id="yay">
+<h3>安装 yay<a class="headerlink" href="#yay" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>sudo pacman -S yay
+# pacman -S –needed git base-devel
+# git clone <a class="reference external" href="https://aur.archlinux.org/yay.git">https://aur.archlinux.org/yay.git</a>
+# cd yay
+# makepkg -si</p>
+</div></blockquote>
+</div>
+<div class="section" id="id4">
+<h3>使用 yay<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p># Interactively search and install packages from the repos and AUR:
+yay package_name|search_term
+# Synchronize and update all packages from the repos and AUR:
+yay
+#Synchronize and update only AUR packages:
+yay -Sua
+# Install a new package from the repos and AUR:
+yay -S package_name
+# Remove an installed package and both its dependencies and configuration files:
+yay -Rns package_name
+# Search the package database for a keyword from the repos and AUR:
+yay -Ss keyword
+# Remove orphaned packages (installed as dependencies but not required by any package):
+yay -Yc
+# Show statistics for installed packages and system health:
+yay -Ps</p>
+</div></blockquote>
+</div>
+<div class="section" id="id5">
+<h3>yay 问题<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h3>
+<ol class="arabic simple">
+<li><p>安装时总是出现 <code class="docutils literal notranslate"><span class="pre">==&gt;</span> <span class="pre">WARNING:</span> <span class="pre">Using</span> <span class="pre">existing</span> <span class="pre">$srcdir/</span> <span class="pre">tree</span></code>，这个可以忽视，只是说明安装过程。</p></li>
+<li><p>timeout 问题 <a class="reference external" href="https://github.com/Jguer/yay/issues/1278#issuecomment-635833427">https://github.com/Jguer/yay/issues/1278#issuecomment-635833427</a></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Missing</span> <span class="pre">AUR</span> <span class="pre">Packages</span></code></p></li>
+</ol>
+<p>ref:</p>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://github.com/Jguer/yay">https://github.com/Jguer/yay</a></p></li>
+<li><p><a class="reference external" href="https://github.com/Jguer/yay/issues/1248">https://github.com/Jguer/yay/issues/1248</a></p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="imager-rpi-imager">
+<h2>Imager(rpi-imager)<a class="headerlink" href="#imager-rpi-imager" title="永久链接至标题">¶</a></h2>
+<blockquote>
+<div><p>yay -S rpi-imager</p>
+</div></blockquote>
+<p>对于支持 UEFI 启动的设备，直接复制 iso 镜像中的所有文件到安装介质（如 U 盘）中即可启动。</p>
+</div>
+<div class="section" id="kde">
+<h2>KDE<a class="headerlink" href="#kde" title="永久链接至标题">¶</a></h2>
+<div class="section" id="konsole">
+<h3>konsole<a class="headerlink" href="#konsole" title="永久链接至标题">¶</a></h3>
+<p>文档读到 <a class="reference external" href="https://docs.kde.org/stable5/en/konsole/konsole/console-dialogs.html">https://docs.kde.org/stable5/en/konsole/konsole/console-dialogs.html</a></p>
+<p>ref: <a class="reference external" href="https://forum.kde.org/viewtopic.php?f=21&amp;t=78963#p380065">https://forum.kde.org/viewtopic.php?f=21&amp;t=78963#p380065</a></p>
+<p>profile configuration file <code class="docutils literal notranslate"><span class="pre">~/.local/share/konsole/archie.profile</span></code>:</p>
+<blockquote>
+<div><p>[Appearance]
+AntiAliasFonts=true
+BoldIntense=true
+ColorScheme=custom
+Font=Monaco,11,-1,5,50,0,0,0,0,0
+UseFontLineChararacters=false</p>
+<p>[General]
+Name=archie
+Parent=FALLBACK/
+TerminalColumns=210</p>
+</div></blockquote>
+<p>Highlight style: <code class="docutils literal notranslate"><span class="pre">~/.local/share/konsole/custom.colorscheme</span></code>:</p>
+<div class="highlight-scheme notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="nv">Background</span><span class="p">]</span>
+<span class="nv">Color=0,0,0</span>
+<span class="nv">RandomHueRange=360</span>
+<span class="nv">RandomSaturationRange=100</span>
+
+<span class="p">[</span><span class="nv">BackgroundFaint</span><span class="p">]</span>
+<span class="nv">Color=0,0,0</span>
+<span class="nv">RandomHueRange=360</span>
+<span class="nv">RandomSaturationRange=100</span>
+
+<span class="p">[</span><span class="nv">BackgroundIntense</span><span class="p">]</span>
+<span class="nv">Color=0,0,0</span>
+<span class="nv">RandomHueRange=360</span>
+<span class="nv">RandomSaturationRange=100</span>
+
+<span class="p">[</span><span class="nv">Color0</span><span class="p">]</span>
+<span class="nv">Color=0,0,0</span>
+
+<span class="p">[</span><span class="nv">Color0Faint</span><span class="p">]</span>
+<span class="nv">Color=24,24,24</span>
+
+<span class="p">[</span><span class="nv">Color0Intense</span><span class="p">]</span>
+<span class="nv">Color=104,104,104</span>
+
+<span class="p">[</span><span class="nv">Color1</span><span class="p">]</span>
+<span class="nv">Color=250,75,75</span>
+
+<span class="p">[</span><span class="nv">Color1Faint</span><span class="p">]</span>
+<span class="nv">Color=101,25,25</span>
+
+<span class="p">[</span><span class="nv">Color1Intense</span><span class="p">]</span>
+<span class="nv">Color=255,84,84</span>
+
+<span class="p">[</span><span class="nv">Color2</span><span class="p">]</span>
+<span class="nv">Color=24,178,24</span>
+
+<span class="p">[</span><span class="nv">Color2Faint</span><span class="p">]</span>
+<span class="nv">Color=0,101,0</span>
+
+<span class="p">[</span><span class="nv">Color2Intense</span><span class="p">]</span>
+<span class="nv">Color=84,255,84</span>
+
+<span class="p">[</span><span class="nv">Color3</span><span class="p">]</span>
+<span class="nv">Color=178,104,24</span>
+
+<span class="p">[</span><span class="nv">Color3Faint</span><span class="p">]</span>
+<span class="nv">Color=101,74,0</span>
+
+<span class="p">[</span><span class="nv">Color3Intense</span><span class="p">]</span>
+<span class="nv">Color=255,255,84</span>
+
+<span class="p">[</span><span class="nv">Color4</span><span class="p">]</span>
+<span class="nv">Color=24,24,178</span>
+
+<span class="p">[</span><span class="nv">Color4Faint</span><span class="p">]</span>
+<span class="nv">Color=0,0,101</span>
+
+<span class="p">[</span><span class="nv">Color4Intense</span><span class="p">]</span>
+<span class="nv">Color=84,84,255</span>
+
+<span class="p">[</span><span class="nv">Color5</span><span class="p">]</span>
+<span class="nv">Color=225,30,225</span>
+
+<span class="p">[</span><span class="nv">Color5Faint</span><span class="p">]</span>
+<span class="nv">Color=95,5,95</span>
+
+<span class="p">[</span><span class="nv">Color5Intense</span><span class="p">]</span>
+<span class="nv">Color=255,84,255</span>
+
+<span class="p">[</span><span class="nv">Color6</span><span class="p">]</span>
+<span class="nv">Color=24,178,178</span>
+
+<span class="p">[</span><span class="nv">Color6Faint</span><span class="p">]</span>
+<span class="nv">Color=0,101,101</span>
+
+<span class="p">[</span><span class="nv">Color6Intense</span><span class="p">]</span>
+<span class="nv">Color=84,255,255</span>
+
+<span class="p">[</span><span class="nv">Color7</span><span class="p">]</span>
+<span class="nv">Color=178,178,178</span>
+
+<span class="p">[</span><span class="nv">Color7Faint</span><span class="p">]</span>
+<span class="nv">Color=101,101,101</span>
+
+<span class="p">[</span><span class="nv">Color7Intense</span><span class="p">]</span>
+<span class="nv">Color=255,255,255</span>
+
+<span class="p">[</span><span class="nv">Foreground</span><span class="p">]</span>
+<span class="nv">Color=24,240,24</span>
+<span class="nv">RandomHueRange=360</span>
+<span class="nv">RandomSaturationRange=100</span>
+
+<span class="p">[</span><span class="nv">ForegroundFaint</span><span class="p">]</span>
+<span class="nv">Color=18,200,18</span>
+<span class="nv">RandomHueRange=360</span>
+<span class="nv">RandomSaturationRange=100</span>
+
+<span class="p">[</span><span class="nv">ForegroundIntense</span><span class="p">]</span>
+<span class="nv">Color=24,240,24</span>
+<span class="nv">RandomHueRange=360</span>
+<span class="nv">RandomSaturationRange=100</span>
+
+<span class="p">[</span><span class="nv">General</span><span class="p">]</span>
+<span class="nv">Blur=true</span>
+<span class="nv">ColorRandomization=true</span>
+<span class="nv">Description=custom</span>
+<span class="nv">Opacity=1</span>
+<span class="nv">Wallpaper=/home/archie/Pictures/adrien-olichon-RCAhiGJsUUE-unsplash</span><span class="o">.</span><span class="nv">jpg</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">~/.config/konsolerc</span></code>:</p>
+<blockquote>
+<div><p>MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAAB4AAAAO1AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAHABzAGUAcwBzAGkAbwBuAFQAbwBvAGwAYgBhAHIBAAAFlf////8AAAAAAAAAAA==
+StatusBar=Disabled
+eDP1 Window-Maximized 1920x1080=true</p>
+<p>[Desktop Entry]
+DefaultProfile=archie.profile</p>
+<p>[KFileDialog Settings]
+Recent Files[$e]=adrien-olichon-RCAhiGJsUUE-unsplash.jpg,file:$HOME/Pictures/adrien-olichon-RCAhiGJsUUE-unsplash.jpg
+Recent URLs[$e]=file:$HOME/Pictures/
+detailViewIconSize=16</p>
+<p>[KonsoleWindow]
+ShowMenuBarByDefault=false</p>
+<p>[MainWindow]
+RestorePositionForNextInstance=false
+State=AAAA/wAAAAD9AAAAAAAAB4AAAAOWAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAHABzAGUAcwBzAGkAbwBuAFQAbwBvAGwAYgBhAHIBAAAFcf////8AAAAAAAAAAA==
+StatusBar=Disabled
+ToolBarsMovable=Disabled
+eDP1 Height 1920x1080=1080
+eDP1 Width 1920x1080=1920
+eDP1 Window-Maximized 1920x1080=true
+eDP1 XPosition 1920x1080=0
+eDP1 YPosition 1920x1080=85</p>
+<p>[MainWindow][Toolbar mainToolBar]
+IconSize=16</p>
+<p>[Notification Messages]
+CloseAllEmptyTabs=true</p>
+</div></blockquote>
+<div class="section" id="konsole-keyboard-shortcut">
+<h4>konsole keyboard shortcut<a class="headerlink" href="#konsole-keyboard-shortcut" title="永久链接至标题">¶</a></h4>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">Shift</span> <span class="pre">M</span></code> Open/Close menu bar</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">Shift</span> <span class="pre">(</span></code> split view Left/Right</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">Shift</span> <span class="pre">(</span></code> split view Left/Right</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">Shift</span> <span class="pre">T</span></code> new Tab</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="swap-lctrl-with-capslock">
+<h3>Swap Lctrl with CapsLock<a class="headerlink" href="#swap-lctrl-with-capslock" title="永久链接至标题">¶</a></h3>
+<p>System Settings –&gt; Keyboard –&gt; Advanced</p>
+</div>
+<div class="section" id="error-discover-software-center">
+<h3>Error Discover(Software Center)<a class="headerlink" href="#error-discover-software-center" title="永久链接至标题">¶</a></h3>
+<p>Uninstall it.</p>
+</div>
+<div class="section" id="kde-connect">
+<h3>kde Connect<a class="headerlink" href="#kde-connect" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>sudo pacman -S kdeconnect</p>
+</div></blockquote>
+</div>
+<div class="section" id="seahorse-kde-wallet">
+<h3>seahorse + kde wallet<a class="headerlink" href="#seahorse-kde-wallet" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>sudo pacman -S kwalletmanager seahorse</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="gnome">
+<h2>GNOME<a class="headerlink" href="#gnome" title="永久链接至标题">¶</a></h2>
+<p>Extensions install: Copy the unziped folder to <code class="docutils literal notranslate"><span class="pre">~/.local/share/gnome-shell/extensions/</span></code>, rename the folder with <code class="docutils literal notranslate"><span class="pre">metadata.json</span></code>‘s uuid.</p>
+<div class="section" id="remove-software">
+<h3>Remove software<a class="headerlink" href="#remove-software" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>sudo pacman -Rs gnome-software gnome-calendar gnome-documents gnome-todo gnome-maps gnome-contacts evolution gnome-builder gnome-boxes geary gnome-clocks gnome-books gnome-photos gnome-connections gnome-games ghex gnome-mahjongg gnome-music epiphany totem accerciser dconf-editor glade five-or-more four-in-a-row gedit gnome-sudoku gnome-nettool gnome-nibbles gnome-recipes gnome-robots gnome-taquin gnome-tetravex gnome-weather hitori iagno</p>
+</div></blockquote>
+<p>totem &lt;–&gt; Gnome Video</p>
+<p>iagno &lt;–&gt; Reversi</p>
+</div>
+<div class="section" id="extension">
+<h3>Extension<a class="headerlink" href="#extension" title="永久链接至标题">¶</a></h3>
+<p><a class="reference external" href="https://extensions.gnome.org/extension/3088/extension-list/">https://extensions.gnome.org/extension/3088/extension-list/</a></p>
+<div class="section" id="dash-to-dock">
+<h4>Dash to Dock<a class="headerlink" href="#dash-to-dock" title="永久链接至标题">¶</a></h4>
+<blockquote>
+<div><p>sudo pacman -S sassc
+git clone –branch ewlsh-ewlsh/gnome-40 <a class="reference external" href="https://github.com/micheleg/dash-to-dock.git">https://github.com/micheleg/dash-to-dock.git</a>
+make
+make install</p>
+</div></blockquote>
+<p><a class="reference external" href="https://gitlab.gnome.org/GNOME/gnome-shell-extensions">https://gitlab.gnome.org/GNOME/gnome-shell-extensions</a></p>
+</div>
+<div class="section" id="coverflow-alt-tab">
+<h4>Coverflow Alt-Tab<a class="headerlink" href="#coverflow-alt-tab" title="永久链接至标题">¶</a></h4>
+<p><a class="reference external" href="https://extensions.gnome.org/extension/97/coverflow-alt-tab/">https://extensions.gnome.org/extension/97/coverflow-alt-tab/</a></p>
+</div>
+<div class="section" id="tray-icons-reloaded">
+<h4>Tray Icons: Reloaded<a class="headerlink" href="#tray-icons-reloaded" title="永久链接至标题">¶</a></h4>
+<p><a class="reference external" href="https://extensions.gnome.org/extension/2890/tray-icons-reloaded/">https://extensions.gnome.org/extension/2890/tray-icons-reloaded/</a></p>
+</div>
+<div class="section" id="simple-net-speed">
+<h4>Simple net speed<a class="headerlink" href="#simple-net-speed" title="永久链接至标题">¶</a></h4>
+<p><a class="reference external" href="https://extensions.gnome.org/extension/1085/simple-net-speed/">https://extensions.gnome.org/extension/1085/simple-net-speed/</a></p>
+</div>
+<div class="section" id="gsconnect">
+<h4>GSconnect<a class="headerlink" href="#gsconnect" title="永久链接至标题">¶</a></h4>
+<p><a class="reference external" href="https://extensions.gnome.org/extension/1319/gsconnect/">https://extensions.gnome.org/extension/1319/gsconnect/</a></p>
+<p>Connect PC with phone</p>
+</div>
+</div>
+</div>
+<div class="section" id="other-software">
+<h2>Other Software<a class="headerlink" href="#other-software" title="永久链接至标题">¶</a></h2>
+<p>ref: <a class="reference external" href="https://io-oi.me/tech/hello-arch-linux/">https://io-oi.me/tech/hello-arch-linux/</a></p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">header-rows</dt>
+<dd class="field-odd"><p>1</p>
+</dd>
+</dl>
+<ul class="simple">
+<li><ul>
+<li><p>名字</p></li>
+<li><p>说明</p></li>
+<li><p>类似</p></li>
+</ul>
+</li>
+<li><ul>
+<li><p>google-chrome</p></li>
+<li><p>Google Chrome 浏览器</p></li>
+<li><ul>
+<li></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><ul>
+<li><p>visual-studio-code-bin</p></li>
+<li><p>Visual Studio Code</p></li>
+<li><ul>
+<li></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><ul>
+<li><p>netease-cloud-music</p></li>
+<li><p>网易云音乐</p></li>
+<li><ul>
+<li></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><ul>
+<li><p>flameshot</p></li>
+<li><p>现代、快捷、轻便的截图工具</p></li>
+<li><ul>
+<li></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><ul>
+<li><p>proxychains-ng</p></li>
+<li><p>终端内科学上网代理工具</p></li>
+<li><ul>
+<li></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><ul>
+<li><p>redshift</p></li>
+<li><p>显示屏色温调节工具</p></li>
+<li><p>f.lux</p></li>
+</ul>
+</li>
+<li><ul>
+<li><p>vlc</p></li>
+<li><p>强大的多媒体播放工具</p></li>
+<li><ul>
+<li></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><ul>
+<li><p>telegram-desktop</p></li>
+<li><p>客户端开源的加密聊天工具</p></li>
+<li><ul>
+<li></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><ul>
+<li><p>gthumb</p></li>
+<li><p>图片浏览工具，可简单编辑图片，可清除照片元数据</p></li>
+<li><ul>
+<li></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><ul>
+<li><p>libreoffice-fresh</p></li>
+<li><p>必备的办公软件</p></li>
+<li><p>Microsoft Office</p></li>
+</ul>
+</li>
+<li><ul>
+<li><p>inkscape</p></li>
+<li><p>强大的矢量图形编辑软件</p></li>
+<li><p>Adobe Illustrator、CorelDraw</p></li>
+</ul>
+</li>
+<li><ul>
+<li><p>youtube-dl</p></li>
+<li><p>YouTube 视频下载工具</p></li>
+<li><ul>
+<li></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><ul>
+<li><p>glances</p></li>
+<li><p>monitoring tool</p></li>
+<li><ul>
+<li></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><ul>
+<li><p>keepass</p></li>
+<li><p>password manage</p></li>
+<li><ul>
+<li></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><ul>
+<li><p>hugo</p></li>
+<li><p>static site generator</p></li>
+<li><ul>
+<li></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><ul>
+<li><p>foliate</p></li>
+<li><p>equb … reader</p></li>
+<li><ul>
+<li></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><ul>
+<li><p>anki</p></li>
+<li><p>a spaced repetition system</p></li>
+<li><ul>
+<li></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><ul>
+<li><p>informant</p></li>
+<li><p>arch news reader and pacman hook</p></li>
+<li><ul>
+<li></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><ul>
+<li><p>dnsutils</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">dig</span></code></p></li>
+<li><ul>
+<li></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><ul>
+<li><p>dnsmasq</p></li>
+<li><p>使用国外 DNS 造成国内网站访问慢的解决方法</p></li>
+<li><ul>
+<li></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><ul>
+<li><p>tldr</p></li>
+<li><p><a class="reference external" href="https://github.com/tldr-pages/tldr">https://github.com/tldr-pages/tldr</a></p></li>
+<li><ul>
+<li></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><ul>
+<li><p>virtualbox</p></li>
+<li><p>Virtual Machine</p></li>
+<li><ul>
+<li></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><ul>
+<li><p>earlyoom</p></li>
+<li><p>Early OOM Daemon for Linux</p></li>
+<li><ul>
+<li></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><ul>
+<li><p>gtk2,3,4</p></li>
+<li><p>gtk</p></li>
+<li><ul>
+<li></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><ul>
+<li><p>lsb-release</p></li>
+<li><p>LSB version query program</p></li>
+<li><ul>
+<li></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><ul>
+<li><p>exa</p></li>
+<li></li>
+<li><ul>
+<li></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><ul>
+<li><p>qemu</p></li>
+<li><p>A generic and open source machine emulator and virtualizer</p></li>
+<li><p>virtualbox</p></li>
+</ul>
+</li>
+<li><ul>
+<li><p>python-sphinx</p></li>
+<li><p>a documentation generator</p></li>
+<li><ul>
+<li></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><ul>
+<li><p>filezilla</p></li>
+<li><p>Fast and reliable FTP, FTPS and SFTP client</p></li>
+<li><ul>
+<li></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><ul>
+<li><p>intellij-idea-community-edition</p></li>
+<li><p>IDE</p></li>
+<li><p>VS Studio</p></li>
+</ul>
+</li>
+<li><ul>
+<li><p>mysql</p></li>
+<li><p>Database</p></li>
+<li><p>a lot</p></li>
+</ul>
+</li>
+<li><ul>
+<li><p>tomcat8</p></li>
+<li><p>Open source implementation of the Java Servlet 3.1 and JavaServer Pages 2.3 technologies</p></li>
+<li><ul>
+<li></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><ul>
+<li><p>sagemath</p></li>
+<li><p>Open Source Mathematics Software, free alternative to Magma, Maple, Mathematica, and Matlab</p></li>
+<li><p>Matlab</p></li>
+</ul>
+</li>
+<li><ul>
+<li><p>dkms</p></li>
+<li><p>Dynamic Kernel Modules System</p></li>
+<li><ul>
+<li></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>sudo pacman -S google-chrome visual-studio-code-bin netease-cloud-music flameshot proxychains-ng redshift vlc telegram-desktop gthumb libreoffice-fresh inkscape youtube-dl glances keepass hugo foliate anki informant dnsutils dnsmasq tldr virtualbox virtualbox-host-modules-arch virtualbox-ext-oracle virtualbox earlyoom gtk2 gtk3 gtk4 lsb-release exa qemu python-sphinx filezilla intellij-idea-community-edition mysql tomcat8 sagemath dkms</p>
+</div></blockquote>
+<div class="section" id="dkms">
+<h3>dkms<a class="headerlink" href="#dkms" title="永久链接至标题">¶</a></h3>
+<p>To solve <code class="docutils literal notranslate"><span class="pre">Realtek</span> <span class="pre">RTL8821CE</span> <span class="pre">Driver</span></code> problem</p>
+<p>ref: <a class="reference external" href="https://github.com/tomaspinho/rtl8821ce">https://github.com/tomaspinho/rtl8821ce</a></p>
+</div>
+<div class="section" id="sagemath">
+<h3>Sagemath<a class="headerlink" href="#sagemath" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>➜  ~ pacin sagemath
+resolving dependencies…
+looking for conflicting packages…
+warning: dependency cycle detected:
+warning: python-ipykernel will be installed before its python-jupyter_client dependency
+warning: dependency cycle detected:
+warning: jupyter will be installed before its python-ipywidgets dependency</p>
+</div></blockquote>
+</div>
+<div class="section" id="tomcat8">
+<h3>Tomcat8<a class="headerlink" href="#tomcat8" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>sudo pacman -S tomcat8
+extra/eclipse-ecj          4.6.3-2        1.65 MiB       1.53 MiB
+extra/java-commons-daemon  1.2.4-1        0.02 MiB       0.02 MiB
+extra/java-jsvc            1.2.4-1        0.06 MiB       0.02 MiB
+extra/tomcat8              8.5.70-1       9.83 MiB       5.54 MiB</p>
+<p>Optional dependencies for tomcat8
+tomcat-native: to allow optimal performance in production environments
+:: Running post-transaction hooks…
+(1/4) Creating system user accounts…
+Creating group tomcat8 with gid 57.
+Creating user tomcat8 (Tomcat 8 user) with uid 57 and gid 57.</p>
+</div></blockquote>
+</div>
+<div class="section" id="mysql">
+<h3>MySQL<a class="headerlink" href="#mysql" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>sudo pacman -S mysql
+archlinuxcn/libmysqlclient  8.0.24-1       6.89 MiB       1.31 MiB
+archlinuxcn/mysql-clients   8.0.24-1      52.30 MiB       2.12 MiB
+archlinuxcn/mysql           8.0.24-1     172.41 MiB      19.10 MiB</p>
+<p>:: You need to initialize the MySQL data directory prior to starting
+the service. This can be done with mysqld –initialize command, e.g.:
+mysqld –initialize –user=mysql –basedir=/usr –datadir=/var/lib/mysql
+:: Additionally you should secure your MySQL installation using
+mysql_secure_installation command after starting the mysqld service
+Optional dependencies for mysql
+perl-dbd-mysql: for mysqlhotcopy, mysql_convert_table_format, mysql_setpermission, mysqldumpslow
+:: Running post-transaction hooks…
+(1/4) Creating system user accounts…
+Creating group mysqlrouter with gid 88.
+Creating user mysqlrouter (MySQL) with uid 88 and gid 88.
+Creating group mysql with gid 89.
+Creating user mysql (MySQL) with uid 89 and gid 89.
+(2/4) Reloading system manager configuration…
+(3/4) Creating temporary files…
+(4/4) Arming ConditionNeedsUpdate…</p>
+</div></blockquote>
+</div>
+<div class="section" id="idea">
+<h3>IDEA<a class="headerlink" href="#idea" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>sudo pacman -S intellij-idea-community-edition
+# select jdk11-openjdk
+extra/java-environment-common              3-3              0.00 MiB       0.00 MiB
+extra/java-runtime-common                  3-3              0.01 MiB       0.00 MiB
+extra/jdk11-openjdk                        11.0.12.u7-1    87.48 MiB      76.32 MiB
+extra/jre11-openjdk                        11.0.12.u7-1     0.52 MiB       0.19 MiB
+extra/jre11-openjdk-headless               11.0.12.u7-1   157.54 MiB      35.20 MiB
+extra/libnet                               1:1.1.6-1        0.30 MiB       0.09 MiB
+community/intellij-idea-community-edition  4:2021.1.3-1  1245.40 MiB     436.08 MiB
+For the complete set of Java binaries to be available in your PATH,
+you need to re-login or source /etc/profile.d/jre.sh
+Please note that this package does not support forcing JAVA_HOME as former package java-common did</p>
+<p>when you use a non-reparenting window manager,
+set _JAVA_AWT_WM_NONREPARENTING=1 in /etc/profile.d/jre.sh</p>
+</div></blockquote>
+</div>
+<div class="section" id="sphinx">
+<h3>Sphinx<a class="headerlink" href="#sphinx" title="永久链接至标题">¶</a></h3>
+<p>Sphinx is a documentation generator or a tool that translates a set of plain text source files into various output formats, automatically producing cross-references, indices, etc.</p>
+<blockquote>
+<div><p>pip install sphinx-autobuild rstcheck # for VS Code extension: reStructuredText
+pip install sphinx-rtd-theme # sphinx-rtd-theme theme
+pip install m2r2 # converts a markdown file including reStructuredText (rst) markups to a valid rst format</p>
+</div></blockquote>
+</div>
+<div class="section" id="exa">
+<h3>exa<a class="headerlink" href="#exa" title="永久链接至标题">¶</a></h3>
+<p>A modern replacement for <code class="docutils literal notranslate"><span class="pre">ls</span></code> (List directory contents) <a class="reference external" href="https://the.exa.website">https://the.exa.website</a></p>
+<blockquote>
+<div><p>exa
+exa –oneline # List files one per line
+exa –all # List all files, including hidden files
+exa –long –all # Long format list (permissions, ownership, size and modification date) of all files
+exa –reverse –sort=size # List files with the largest at the top
+exa –long –tree –level=3 # Display a tree of files, three levels deep
+exa –long –sort=modified # List files sorted by modification date (oldest first)
+exa –long –header –icons –git # List files with their headers, icons, and Git statuses
+exa –git-ignore # Don’t list files mentioned in <cite>.gitignore</cite></p>
+</div></blockquote>
+</div>
+<div class="section" id="informant">
+<h3>informant<a class="headerlink" href="#informant" title="永久链接至标题">¶</a></h3>
+<p>An Arch Linux News reader and pacman hook. You could use a pacman hook like informantAUR which prevents you from updating if there is fresh Arch News that you have not read since the last update ran.</p>
+<p>ref: <a class="reference external" href="https://wiki.archlinux.org/title/System_maintenance#Read_before_upgrading_the_system">https://wiki.archlinux.org/title/System_maintenance#Read_before_upgrading_the_system</a></p>
+</div>
+<div class="section" id="virtualbox">
+<h3>Virtualbox<a class="headerlink" href="#virtualbox" title="永久链接至标题">¶</a></h3>
+<p><a class="reference external" href="https://wiki.archlinux.org/title/VirtualBox">https://wiki.archlinux.org/title/VirtualBox</a></p>
+<p>Error message:</p>
+<blockquote>
+<div><dl>
+<dt>WARNING: The vboxdrv kernel module is not loaded. Either there is no module</dt><dd><p>available for the current kernel (5.13.8-arch1-1) or it failed to
+load. Please recompile the kernel module and install it by</p>
+<blockquote>
+<div><p>sudo /sbin/vboxconfig</p>
+</div></blockquote>
+<p>You will not be able to start VMs until this problem is fixed.</p>
+</dd>
+</dl>
+<p>sudo modprobe vboxdrv</p>
+</div></blockquote>
+<p>No message now.</p>
+</div>
+<div class="section" id="earlyoom">
+<h3>earlyoom<a class="headerlink" href="#earlyoom" title="永久链接至标题">¶</a></h3>
+<p>如果是为了避免系统卡死，可以安装并使用 earlyoom。</p>
+<p>该软件默认将在空余内存、空余swap两者均低于10%时，结束 oom_score 值最高的进程，避免系统内存耗尽卡死。</p>
+<p>from <a class="reference external" href="https://bbs.archlinuxcn.org/viewtopic.php?pid=45774#p45774">https://bbs.archlinuxcn.org/viewtopic.php?pid=45774#p45774</a></p>
+<blockquote>
+<div><p># after install
+sudo systemctl enable –now earlyoom</p>
+</div></blockquote>
+</div>
+<div class="section" id="vagrant">
+<h3>Vagrant<a class="headerlink" href="#vagrant" title="永久链接至标题">¶</a></h3>
+<p><a class="reference external" href="https://wiki.archlinux.org/title/Vagrant">https://wiki.archlinux.org/title/Vagrant</a></p>
+<blockquote>
+<div><p>sudo pacman -S vagrant
+mkdir arch-vagrant &amp;&amp;  cd $_
+vim Vagrantfile
+vagrant up</p>
+</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">Vagrantfile</span></code>:
+Vagrant.configure(“2”) do |config|
+config.vm.box = “archlinux/archlinux”
+end</p>
+<p>After exec <code class="docutils literal notranslate"><span class="pre">vagrant</span> <span class="pre">up</span></code>, error message:</p>
+<blockquote>
+<div><p>No usable default provider could be found for your system.</p>
+<p>Vagrant relies on interactions with 3rd party systems, known as</p>
+<p>“providers”, to provide Vagrant with resources to run development</p>
+<p>environments. Examples are VirtualBox, VMware, Hyper-V.</p>
+<p>The easiest solution to this message is to install VirtualBox, which</p>
+<p>is available for free on all major platforms.</p>
+<p>If you believe you already have a provider available, make sure it</p>
+<p>is properly installed and configured. You can see more details about</p>
+<p>why a particular provider isn’t working by forcing usage with</p>
+<p><code class="docutils literal notranslate"><span class="pre">vagrant</span> <span class="pre">up</span> <span class="pre">--provider=PROVIDER</span></code>, which should give you a more specific</p>
+<p>error message for that particular provider.</p>
+</div></blockquote>
+<p>After exec <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">modprobe</span> <span class="pre">vboxdrv</span></code>, no message now.</p>
+<blockquote>
+<div><p>vagrant up</p>
+<p>Vagrant is currently configured to create VirtualBox synced folders with
+the <cite>SharedFoldersEnableSymlinksCreate</cite> option enabled. If the Vagrant
+guest is not trusted, you may want to disable this option. For more
+information on this option, please refer to the VirtualBox manual:</p>
+<blockquote>
+<div><p><a class="reference external" href="https://www.virtualbox.org/manual/ch04.html#sharedfolders">https://www.virtualbox.org/manual/ch04.html#sharedfolders</a></p>
+</div></blockquote>
+<p>This option can be disabled globally with an environment variable:</p>
+<blockquote>
+<div><p>VAGRANT_DISABLE_VBOXSYMLINKCREATE=1</p>
+</div></blockquote>
+<p>or on a per folder basis within the Vagrantfile:</p>
+<blockquote>
+<div><p>config.vm.synced_folder ‘/host/path’, ‘/guest/path’, SharedFoldersEnableSymlinksCreate: false</p>
+</div></blockquote>
+</div></blockquote>
+</div>
+<div class="section" id="mutt">
+<h3>Mutt<a class="headerlink" href="#mutt" title="永久链接至标题">¶</a></h3>
+<p>终端邮件 <a class="reference external" href="http://www.mutt.org/">http://www.mutt.org/</a></p>
+</div>
+<div class="section" id="flameshot">
+<h3>Flameshot<a class="headerlink" href="#flameshot" title="永久链接至标题">¶</a></h3>
+<p>可以配置下快捷键，使用起来更加快捷。去 Settings &gt; Keyboard，然后下拉页面到底部，点击 <code class="docutils literal notranslate"><span class="pre">+</span></code> 号，Name 填 <code class="docutils literal notranslate"><span class="pre">Flameshot</span></code>，Command 填 <code class="docutils literal notranslate"><span class="pre">flameshot</span> <span class="pre">gui</span></code>，然后点击下 Shortcut 的右方方块，按下 <code class="docutils literal notranslate"><span class="pre">Alt</span></code> + <code class="docutils literal notranslate"><span class="pre">Super/Win</span></code> + <code class="docutils literal notranslate"><span class="pre">P</span></code> 键</p>
+</div>
+<div class="section" id="anki">
+<h3>Anki<a class="headerlink" href="#anki" title="永久链接至标题">¶</a></h3>
+<p><a class="reference external" href="https://apps.ankiweb.net/#download">https://apps.ankiweb.net/#download</a></p>
+<blockquote>
+<div><p>tar xjf ~/Downloads/anki-2.1.46-linux.tar.bz2
+cd anki-2.1.46-linux
+sudo ./install.sh</p>
+</div></blockquote>
+</div>
+<div class="section" id="exercism">
+<h3>exercism<a class="headerlink" href="#exercism" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p># <a class="reference external" href="https://github.com/exercism/cli/releases/">https://github.com/exercism/cli/releases/</a> download exercism-linux-64bit.tgz
+tar -xf exercism-linux-64bit.tgz
+# Once you download and extract the archive, make it available in your $PATH
+cd ~/Downloads/exercism-linux-64bit
+mkdir -p ~/bin
+mv exercism ~/bin
+~/bin/exercism
+exercism configure –token=</p>
+</div></blockquote>
+</div>
+<div class="section" id="scheme-programming-language">
+<h3>Scheme Programming Language<a class="headerlink" href="#scheme-programming-language" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>guile hello-world.scm
+;;; note: source file /home/archie/exercism/scheme/hello-world/hello-world.scm
+;;;       newer than compiled /home/archie/.cache/guile/ccache/2.2-LE-8-3.A/home/archie/exercism/scheme/hello-world/hello-world.scm.go
+;;; note: auto-compilation is enabled, set GUILE_AUTO_COMPILE=0
+;;;       or pass the –no-auto-compile argument to disable.
+;;; compiling /home/archie/exercism/scheme/hello-world/hello-world.scm
+;;; compiled /home/archie/.cache/guile/ccache/2.2-LE-8-3.A/home/archie/exercism/scheme/hello-world/hello-world.scm.go
+Hello World!</p>
+<p>guile hello-world.scm –no-auto-compile</p>
+</div></blockquote>
+<p>How to close these info?</p>
+<blockquote>
+<div><p>alias guile=”guile –no-auto-compile”</p>
+</div></blockquote>
+<p><a class="reference external" href="https://www.linuxfromscratch.org/blfs/view/svn/general/guile.html">Install guile</a></p>
+</div>
+<div class="section" id="nscd">
+<h3><code class="docutils literal notranslate"><span class="pre">nscd</span></code> 自启动<a class="headerlink" href="#nscd" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>systemctl enable nscd</p>
+</div></blockquote>
+<p>nscd is a daemon that provides a cache for the most common name service requests. The default configuration file, /etc/nscd.conf, determines the behavior of the cache daemon.</p>
+</div>
+<div class="section" id="redshift">
+<h3>redshift<a class="headerlink" href="#redshift" title="永久链接至标题">¶</a></h3>
+<p>115.622324,33.165395</p>
+<blockquote>
+<div><p>mkdir ~/.config/redshift
+vim ~/.config/redshift/redshift.conf</p>
+</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">~/.config/redshift/redshift.conf</span></code>:</p>
+<blockquote>
+<div><p>[redshift]
+location-provider=manual
+temp-day=5500
+temp-night=3700</p>
+<p>[manual]
+lat=33.165395
+lon=115.622324</p>
+</div></blockquote>
+<p>ref:</p>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://wiki.archlinux.org/title/redshift">https://wiki.archlinux.org/title/redshift</a></p></li>
+<li><p><a class="reference external" href="https://io-oi.me/tech/hello-arch-linux/#redshift">https://io-oi.me/tech/hello-arch-linux/#redshift</a></p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="arch-linux">
+<h2>让 Arch Linux 系统和最新的镜像同步，从最快的镜像下载<a class="headerlink" href="#arch-linux" title="永久链接至标题">¶</a></h2>
+<p><a class="reference external" href="https://blog.lilydjwg.me/2020/10/29/pacsync.215578.html">https://blog.lilydjwg.me/2020/10/29/pacsync.215578.html</a></p>
+<blockquote>
+<div><p>#!/bin/bash -e</p>
+<p>unshare -m bash &lt;&lt;’EOF’
+mount –make-rprivate /
+for f in /etc/pacman.d/*.sync; do</p>
+<blockquote>
+<div><p>filename=”${f%.*}”
+mount –bind “$f” “$filename”</p>
+</div></blockquote>
+<p>done
+pacman -Sy
+EOF</p>
+</div></blockquote>
+</div>
+<div class="section" id="dns">
+<h2>使用国外 DNS 造成国内网站访问慢的解决方法<a class="headerlink" href="#dns" title="永久链接至标题">¶</a></h2>
+<p><a class="reference external" href="https://wzyboy.im/post/874.html">https://wzyboy.im/post/874.html</a></p>
+<blockquote>
+<div><dl>
+<dt>systemctl status dnsmasq</dt><dd><dl>
+<dt>dnsmasq.service - dnsmasq - A lightweight DHCP and caching DNS server</dt><dd><p>Loaded: loaded (/usr/lib/systemd/system/dnsmasq.service; enabled; vendor preset: disabled)
+Active: inactive (dead)</p>
+<blockquote>
+<div><p>Docs: man:dnsmasq(8)</p>
+</div></blockquote>
+</dd>
+</dl>
+</dd>
+</dl>
+</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">dnsmasq.service:</span> <span class="pre">Start</span> <span class="pre">request</span> <span class="pre">repeated</span> <span class="pre">too</span> <span class="pre">quickly.</span></code>:</p>
+<p>The default limit is to allow 5 restarts in a 10sec period. If a service goes over that threshold due to the <code class="docutils literal notranslate"><span class="pre">Restart=</span></code> config option in the service definition, it will not attempt to restart any further.</p>
+<p>ref:</p>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://github.com/felixonmars/dnsmasq-china-list">https://github.com/felixonmars/dnsmasq-china-list</a></p></li>
+<li><p><a class="reference external" href="https://serverfault.com/a/845473">https://serverfault.com/a/845473</a></p></li>
+<li><p><a class="reference external" href="https://web.archive.org/web/20191101231638/http://felixc.at:80/Dnsmasq">https://web.archive.org/web/20191101231638/http://felixc.at:80/Dnsmasq</a></p></li>
+</ol>
+</div>
+<div class="section" id="id6">
+<h2>备份<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h2>
+<ul>
+<li><p><a class="reference external" href="https://blog.lilydjwg.me/2013/12/29/rsync-btrfs-dm-crypt-full-backup.42219.html">https://blog.lilydjwg.me/2013/12/29/rsync-btrfs-dm-crypt-full-backup.42219.html</a></p></li>
+<li><p><a class="reference external" href="https://github.com/teejee2008/timeshift">https://github.com/teejee2008/timeshift</a></p>
+<blockquote>
+<div><p>sudo pacman -S timeshift</p>
+</div></blockquote>
+</li>
+</ul>
+<div class="section" id="timeshift">
+<h3>timeshift<a class="headerlink" href="#timeshift" title="永久链接至标题">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Snapshot type: rsync <span class="raw-html-m2r"><del>(btrfs cannot use because of BTRFS snapts are saved on system partition)</del></span></p></li>
+<li><p>User home directories: root-include all files, user-include only hidden files</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="hosts-github-ip">
+<h2>自动更新 hosts GitHub 相关 IP<a class="headerlink" href="#hosts-github-ip" title="永久链接至标题">¶</a></h2>
+<p>ref:</p>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://bbs.archlinuxcn.org/viewtopic.php?pid=43366#p43366">https://bbs.archlinuxcn.org/viewtopic.php?pid=43366#p43366</a></p></li>
+<li><p><a class="reference external" href="https://gist.github.com/lilydjwg/93d33ed04547e1b9f7a86b64ef2ed058">https://gist.github.com/lilydjwg/93d33ed04547e1b9f7a86b64ef2ed058</a></p></li>
+<li><p><a class="reference external" href="https://github.com/rbew/github-host">https://github.com/rbew/github-host</a></p></li>
+</ol>
+<p>前提：<code class="docutils literal notranslate"><span class="pre">/etc/hosts</span></code> 文件中要先存在 <code class="docutils literal notranslate"><span class="pre">github.com</span></code></p>
+<blockquote>
+<div><p>sudo pacman -S python-aiohttp</p>
+</div></blockquote>
+</div>
+<div class="section" id="problems">
+<h2>Problems<a class="headerlink" href="#problems" title="永久链接至标题">¶</a></h2>
+<div class="section" id="protocol-not-available-bluetooth">
+<h3>Protocol not available - Bluetooth<a class="headerlink" href="#protocol-not-available-bluetooth" title="永久链接至标题">¶</a></h3>
+<blockquote>
+<div><p>journalctl -n 20
+bluetoothd[445]: src/service.c:btd_service_connect() a2dp-sink profile connect failed for 00:02:5B:FF:10:D0: Protocol not available
+sudo pacman -S pulseaudio-bluetooth</p>
+</div></blockquote>
+<p>Still can’t connect with my wireless earphone.</p>
+</div>
+<div class="section" id="command-not-found-service">
+<h3><code class="docutils literal notranslate"><span class="pre">command</span> <span class="pre">not</span> <span class="pre">found:</span> <span class="pre">service</span></code><a class="headerlink" href="#command-not-found-service" title="永久链接至标题">¶</a></h3>
+<p>使用 <code class="docutils literal notranslate"><span class="pre">systemctl</span></code> 是可行的。</p>
+</div>
+<div class="section" id="fcitx">
+<h3>fcitx<a class="headerlink" href="#fcitx" title="永久链接至标题">¶</a></h3>
+<p>Follow above section works</p>
+</div>
+<div class="section" id="unknown-download-protocol-https">
+<h3><code class="docutils literal notranslate"><span class="pre">Unknown</span> <span class="pre">download</span> <span class="pre">protocol:</span> <span class="pre">https</span></code><a class="headerlink" href="#unknown-download-protocol-https" title="永久链接至标题">¶</a></h3>
+<p>安装软件时错误，Unknown download protocol: https</p>
+<p>更新 pacman 包，但是当用 yay 下载 netease-cloud-music 时，仍然出现这个错误。</p>
+</div>
+<div class="section" id="hanyu-pinyin-with-altgr-dead-keys">
+<h3>中文语言不能选择 Hanyu Pinyin (with AltGr dead keys)，当我通过鼠标点击切换到它时，电脑卡了<a class="headerlink" href="#hanyu-pinyin-with-altgr-dead-keys" title="永久链接至标题">¶</a></h3>
+</div>
+<div class="section" id="cannot-find-fcitx-input-method-module-for-qt4">
+<h3>Cannot find fcitx input method module for Qt4.<a class="headerlink" href="#cannot-find-fcitx-input-method-module-for-qt4" title="永久链接至标题">¶</a></h3>
+</div>
+<div class="section" id="id7">
+<h3>系统卡顿<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h3>
+<p>2次进入 tplogin.cn 均卡顿，似乎与进入网址无关</p>
+<p>本来使用有线接入网络，树莓派需要用到有线，限于网线只有一根。于是，电脑连接无线网络。</p>
+<p>进入路由器管理页面，点击〔设备管理〕/〔应用管理〕页面后，出现卡顿现象。具体表现：键盘鼠标失灵</p>
+<p>采取措施：按住电源键重启。</p>
+<p>依旧卡顿，仅仅打开一个网页。</p>
+<hr class="docutils" />
+<p>现在暂时不卡顿，解决办法：</p>
+<p>设置 BIOS U 盘启动，插入制作好的 USB 启动盘，进入 U 盘中的 arch 系统，然后执行命令：</p>
+<blockquote>
+<div><p>mount /dev/sdb2 /mnt
+arch-root /mnt /bin/bash
+cd /var/cache/pacman/pkg
+ls -a | grep linux
+pacman -U linux-5.13.9.arch1-1-x86_64.pkg.tar.zst
+# linux kernel: 5.13.10 –&gt; 5.13.9</p>
+</div></blockquote>
+<p>依然出现卡顿，推测是无线网的缘故，需要安装驱动。（驱动已安装）</p>
+<p>编辑了 /etc/default/grub:</p>
+<p>GRUB_CMDLINE_LINUX_DEFAULT=”elevator=noop loglevel=3 quiet”</p>
+<p>GRUB_CMDLINE_LINUX_DEFAULT=”loglevel=3 quiet mds=full,nosmt”</p>
+<p><a class="reference external" href="https://wiki.archlinux.org/title/Intel_graphics#:~:text=VGA-1%3A1280x800-,X%20freeze/crash%20with%20intel%20driver,-Some%20issues%20with">X freeze/crash with intel driver</a></p>
+<p>ref:</p>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://wiki.archlinux.org/title/downgrading_packages#Downgrading_the_kernel">https://wiki.archlinux.org/title/downgrading_packages#Downgrading_the_kernel</a></p></li>
+<li><p><a class="reference external" href="https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/mds.html">https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/mds.html</a></p></li>
+<li><p><a class="reference external" href="https://askubuntu.com/a/1250060">https://askubuntu.com/a/1250060</a></p></li>
+<li><p><a class="reference external" href="https://www.google.com/url?sa=t&amp;source=web&amp;rct=j&amp;url=https://www.linprofs.com/blog/how-to-patch-the-intel-mds-bug/&amp;ved=2ahUKEwjwq-W9jbjyAhWqQPUHHVznB0IQFnoECD4QAQ&amp;usg=AOvVaw1Ijihg0Il1razMVV1yrvM9">https://www.google.com/url?sa=t&amp;source=web&amp;rct=j&amp;url=https://www.linprofs.com/blog/how-to-patch-the-intel-mds-bug/&amp;ved=2ahUKEwjwq-W9jbjyAhWqQPUHHVznB0IQFnoECD4QAQ&amp;usg=AOvVaw1Ijihg0Il1razMVV1yrvM9</a></p></li>
+<li><p><a class="reference external" href="https://wiki.archlinux.org/title/Security_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87">https://wiki.archlinux.org/title/Security_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87</a>)</p></li>
+</ol>
+</div>
+<div class="section" id="rpi-imager-yay-s-rpi-imager-sudo-pacman-s-rpi-imager">
+<h3>rpi-imager 能够用 <code class="docutils literal notranslate"><span class="pre">yay</span> <span class="pre">-S</span> <span class="pre">rpi-imager</span></code> 下载，却不能用 <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">pacman</span> <span class="pre">-S</span> <span class="pre">rpi-imager</span></code> 下载<a class="headerlink" href="#rpi-imager-yay-s-rpi-imager-sudo-pacman-s-rpi-imager" title="永久链接至标题">¶</a></h3>
+</div>
+<div class="section" id="gparted-too-many-primary-partitions">
+<h3>gparted <code class="docutils literal notranslate"><span class="pre">Too</span> <span class="pre">many</span> <span class="pre">primary</span> <span class="pre">partitions</span></code><a class="headerlink" href="#gparted-too-many-primary-partitions" title="永久链接至标题">¶</a></h3>
+<p>Create new partition atble, then solved.</p>
+</div>
+<div class="section" id="amdgpu-topaz-not-supported-in-kfd">
+<h3>amdgpu: TOPAZ  not supported in kfd<a class="headerlink" href="#amdgpu-topaz-not-supported-in-kfd" title="永久链接至标题">¶</a></h3>
+<p>More error log:</p>
+<blockquote>
+<div><p>➜  ~ sudo dmesg | grep amdgpu
+[    3.647423] [drm] amdgpu kernel modesetting enabled.
+[    3.647749] amdgpu: CRAT table not found
+[    3.647751] amdgpu: Virtual CRAT table created for CPU
+[    3.647760] amdgpu: Topology: Add CPU node
+[    4.446589] amdgpu 0000:01:00.0: enabling device (0000 -&gt; 0003)
+[    4.446708] amdgpu 0000:01:00.0: amdgpu: Trusted Memory Zone (TMZ) feature not supported
+[    4.446906] kfd kfd: amdgpu: TOPAZ  not supported in kfd
+[    4.473165] amdgpu 0000:01:00.0: amdgpu: Fetched VBIOS from ATRM
+[    4.473170] amdgpu: ATOM BIOS: BR34366.001
+[    4.480027] amdgpu 0000:01:00.0: amdgpu: VRAM: 2048M 0x000000F400000000 - 0x000000F47FFFFFFF (2048M used)
+[    4.480031] amdgpu 0000:01:00.0: amdgpu: GART: 256M 0x000000FF00000000 - 0x000000FF0FFFFFFF
+[    4.480074] [drm] amdgpu: 2048M of VRAM memory ready
+[    4.480077] [drm] amdgpu: 3072M of GTT memory ready.
+[    4.487650] amdgpu: hwmgr_sw_init smu backed is iceland_smu
+[    4.504069] amdgpu: can’t get the mac of 5
+[    4.509005] amdgpu 0000:01:00.0: amdgpu: SE 1, SH per SE 1, CU per SH 6, active_cu_number 5
+[    4.512216] amdgpu 0000:01:00.0: amdgpu: Using BOCO for runtime pm
+[    4.512580] [drm] Initialized amdgpu 3.41.0 20150101 for 0000:01:00.0 on minor 1
+[   11.011196] amdgpu: VI should always have 2 performance levels
+[   63.292478] amdgpu: can’t get the mac of 5
+[   69.617338] amdgpu: VI should always have 2 performance levels
+[   91.291963] amdgpu: can’t get the mac of 5
+[   97.654465] amdgpu: VI should always have 2 performance levels
+[  231.210550] amdgpu: can’t get the mac of 5
+[  237.586419] amdgpu: VI should always have 2 performance levels
+[  442.652120] amdgpu: can’t get the mac of 5
+[  448.914182] amdgpu: VI should always have 2 performance levels
+[  537.714801] amdgpu: can’t get the mac of 5
+[  543.975875] amdgpu: VI should always have 2 performance levels
+[ 1423.430405] amdgpu: can’t get the mac of 5
+[ 1429.649499] amdgpu: VI should always have 2 performance levels
+[ 2080.668493] amdgpu: can’t get the mac of 5
+[ 2086.918590] amdgpu: VI should always have 2 performance levels
+[ 2115.280282] amdgpu: can’t get the mac of 5
+[ 2121.495346] amdgpu: VI should always have 2 performance levels
+[ 2226.608091] amdgpu: can’t get the mac of 5
+[ 2232.866186] amdgpu: VI should always have 2 performance levels
+[ 2248.077359] amdgpu: can’t get the mac of 5
+[ 2254.325451] amdgpu: VI should always have 2 performance levels</p>
+</div></blockquote>
+<p>a dual gpu system(双 GPU 系统)</p>
+<blockquote>
+<div><p>➜  Downloads xrandr –listproviders
+Providers: number : 2
+Provider 0: id: 0x44 cap: 0xf, Source Output, Sink Output, Source Offload, Sink Offload crtcs: 3 outputs: 2 associated providers: 1 name:modesetting
+Provider 1: id: 0xc7 cap: 0xd, Source Output, Source Offload, Sink Offload crtcs: 0 outputs: 0 associated providers: 1 name:Unknown AMD Radeon GPU &#64; pci:0000:01:00.0</p>
+</div></blockquote>
+<p>ref:</p>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://wiki.archlinux.org/title/Xorg#AMD">https://wiki.archlinux.org/title/Xorg#AMD</a></p></li>
+<li><p><a class="reference external" href="https://bbs.archlinux.org/viewtopic.php?id=236430#:~:text=Since%20this%20is-,a%20dual%20gpu%20system,-%2C%20you%20will%20want">https://bbs.archlinux.org/viewtopic.php?id=236430#:~:text=Since%20this%20is-,a%20dual%20gpu%20system,-%2C%20you%20will%20want</a></p></li>
+</ol>
+</div>
+<div class="section" id="kde-s-plasma-eating-cpu">
+<h3>KDE’s plasma eating CPU<a class="headerlink" href="#kde-s-plasma-eating-cpu" title="永久链接至标题">¶</a></h3>
+<p><a class="reference external" href="https://wiki.gentoo.org/wiki/Intel#:~:text=KDE%27s%20plasma%20eating%20CPU,-If%20/usr/bin">https://wiki.gentoo.org/wiki/Intel#:~:text=KDE%27s%20plasma%20eating%20CPU,-If%20/usr/bin</a></p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="arch-installation-guide.html" class="btn btn-neutral float-right" title="Arch Installation Guide" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="arch-package.html" class="btn btn-neutral float-left" title="Arch Package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; 版权所有 2021 - 2021, Jim Gao.
+
+    </p>
+  </div>
+    
+    
+    
+    利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用了 
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    
+    由 <a href="https://readthedocs.org">Read the Docs</a>开发.
+<p>除额外注明的地方外，本文档按 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议发布。</p>
+ 
+
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
