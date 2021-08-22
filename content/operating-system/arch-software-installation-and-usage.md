@@ -716,9 +716,95 @@ exa | | *
 qemu | A generic and open source machine emulator and virtualizer | virtualbox
 python-sphinx | a documentation generator | *
 filezilla | Fast and reliable FTP, FTPS and SFTP client | *
+intellij-idea-community-edition | IDE | VS Studio
+mysql | Database | a lot
+tomcat8 | Open source implementation of the Java Servlet 3.1 and JavaServer Pages 2.3 technologies | *
+sagemath | Open Source Mathematics Software, free alternative to Magma, Maple, Mathematica, and Matlab | Matlab
+dkms | Dynamic Kernel Modules System | *
 
 ```sh
-sudo pacman -S google-chrome visual-studio-code-bin netease-cloud-music flameshot proxychains-ng redshift vlc telegram-desktop gthumb libreoffice-fresh inkscape youtube-dl glances keepass hugo foliate anki informant dnsutils dnsmasq tldr virtualbox virtualbox-host-modules-arch virtualbox-ext-oracle virtualbox earlyoom gtk2 gtk3 gtk4 lsb-release exa qemu python-sphinx filezilla
+sudo pacman -S google-chrome visual-studio-code-bin netease-cloud-music flameshot proxychains-ng redshift vlc telegram-desktop gthumb libreoffice-fresh inkscape youtube-dl glances keepass hugo foliate anki informant dnsutils dnsmasq tldr virtualbox virtualbox-host-modules-arch virtualbox-ext-oracle virtualbox earlyoom gtk2 gtk3 gtk4 lsb-release exa qemu python-sphinx filezilla intellij-idea-community-edition mysql tomcat8 sagemath dkms
+```
+
+### dkms
+
+To solve `Realtek RTL8821CE Driver` problem
+
+ref: <https://github.com/tomaspinho/rtl8821ce>
+
+### Sagemath
+
+```sh
+➜  ~ pacin sagemath
+resolving dependencies...
+looking for conflicting packages...
+warning: dependency cycle detected:
+warning: python-ipykernel will be installed before its python-jupyter_client dependency
+warning: dependency cycle detected:
+warning: jupyter will be installed before its python-ipywidgets dependency
+```
+
+### Tomcat8
+
+```sh
+sudo pacman -S tomcat8
+extra/eclipse-ecj          4.6.3-2        1.65 MiB       1.53 MiB
+extra/java-commons-daemon  1.2.4-1        0.02 MiB       0.02 MiB
+extra/java-jsvc            1.2.4-1        0.06 MiB       0.02 MiB
+extra/tomcat8              8.5.70-1       9.83 MiB       5.54 MiB
+
+Optional dependencies for tomcat8
+    tomcat-native: to allow optimal performance in production environments
+:: Running post-transaction hooks...
+(1/4) Creating system user accounts...
+Creating group tomcat8 with gid 57.
+Creating user tomcat8 (Tomcat 8 user) with uid 57 and gid 57.
+```
+
+### MySQL
+
+```sh
+sudo pacman -S mysql
+archlinuxcn/libmysqlclient  8.0.24-1       6.89 MiB       1.31 MiB
+archlinuxcn/mysql-clients   8.0.24-1      52.30 MiB       2.12 MiB
+archlinuxcn/mysql           8.0.24-1     172.41 MiB      19.10 MiB
+
+:: You need to initialize the MySQL data directory prior to starting
+   the service. This can be done with mysqld --initialize command, e.g.:
+   mysqld --initialize --user=mysql --basedir=/usr --datadir=/var/lib/mysql
+:: Additionally you should secure your MySQL installation using
+   mysql_secure_installation command after starting the mysqld service
+Optional dependencies for mysql
+    perl-dbd-mysql: for mysqlhotcopy, mysql_convert_table_format, mysql_setpermission, mysqldumpslow
+:: Running post-transaction hooks...
+(1/4) Creating system user accounts...
+Creating group mysqlrouter with gid 88.
+Creating user mysqlrouter (MySQL) with uid 88 and gid 88.
+Creating group mysql with gid 89.
+Creating user mysql (MySQL) with uid 89 and gid 89.
+(2/4) Reloading system manager configuration...
+(3/4) Creating temporary files...
+(4/4) Arming ConditionNeedsUpdate...
+```
+
+### IDEA
+
+```sh
+sudo pacman -S intellij-idea-community-edition
+# select jdk11-openjdk
+extra/java-environment-common              3-3              0.00 MiB       0.00 MiB
+extra/java-runtime-common                  3-3              0.01 MiB       0.00 MiB
+extra/jdk11-openjdk                        11.0.12.u7-1    87.48 MiB      76.32 MiB
+extra/jre11-openjdk                        11.0.12.u7-1     0.52 MiB       0.19 MiB
+extra/jre11-openjdk-headless               11.0.12.u7-1   157.54 MiB      35.20 MiB
+extra/libnet                               1:1.1.6-1        0.30 MiB       0.09 MiB
+community/intellij-idea-community-edition  4:2021.1.3-1  1245.40 MiB     436.08 MiB
+For the complete set of Java binaries to be available in your PATH,
+you need to re-login or source /etc/profile.d/jre.sh
+Please note that this package does not support forcing JAVA_HOME as former package java-common did
+
+when you use a non-reparenting window manager,
+set _JAVA_AWT_WM_NONREPARENTING=1 in /etc/profile.d/jre.sh
 ```
 
 ### Sphinx
