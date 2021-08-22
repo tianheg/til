@@ -11,3 +11,5 @@
 Linux 内核讲解 <https://www.bilibili.com/video/BV1tQ4y1d7mo?p=2>
 
 a non-reparenting window manager [Re-parenting window manager](https://en.wikipedia.org/wiki/Re-parenting_window_manager)
+
+内核编译：<https://wiki.archlinux.org/title/Kernel#Compilation>
