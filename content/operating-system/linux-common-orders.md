@@ -42,3 +42,4 @@ ref: <https://stackoverflow.com/a/43460416/12539782>
 4. `chmod +x script` make script executable
 5. `wget -T 5 -t 10 -Q 500m -nH -r -E -l inf -k -p -np 'https://www.yidajiabei.xyz'` download a website [ref](https://bbs.archlinuxcn.org/viewtopic.php?pid=42852#p42852)
 6. `curl -V | curl -F "c=@-" "https://fars.ee/"` <https://fars.ee/> 粘贴代码
+7. `unrar x file.rar /path/to/file`
