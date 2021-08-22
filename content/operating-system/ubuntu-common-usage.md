@@ -6,6 +6,8 @@
 sudo vim /etc/apt/sources.list
 ```
 
+使用 HTTPS 可以有效避免国内运营商的缓存劫持，但需要事先安装 `apt-transport-https`。from <https://mirrors.ustc.edu.cn/help/ubuntu-ports.html>
+
 ## Local Network Share
 
 ![Local Network Share](https://raw.githubusercontent.com/tianheg/til/667631242418dc182e70e1c037b4362f640227c6/docs/industry-special/ubuntu/images/local-network-share.png)
