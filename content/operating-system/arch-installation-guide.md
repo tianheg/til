@@ -66,13 +66,17 @@ mount /dev/sdb1 /mnt/boot/efi
 ```sh
 pacman -Syyy reflector # reflector 能够方便地选择镜像源
 reflector -c China -a 6 --sort rate --save /etc/pacman.d/mirrorlist # 这里的 mirrorlist 是 U 盘中的，还是硬盘中的？U 盘中的
+# 该配置不仅会应用到安装环境，也会应用至新系统中 from https://bbs.archlinuxcn.org/viewtopic.php?id=1037#:~:text=%E8%AF%A5%E9%85%8D%E7%BD%AE%E4%B8%8D%E4%BB%85%E4%BC%9A%E5%BA%94%E7%94%A8%E5%88%B0%E5%AE%89%E8%A3%85%E7%8E%AF%E5%A2%83%EF%BC%8C%E4%B9%9F%E4%BC%9A%E5%BA%94%E7%94%A8%E8%87%B3%E6%96%B0%E7%B3%BB%E7%BB%9F%E4%B8%AD
 pacman -Syyy # y 刷新本地缓存 yyy 强制刷新
+
+# 另一种选择镜像源命令
+sed -i '/China/!{n;/Server/s/^/#/};t;n' /etc/pacman.d/mirrorlist
 ```
 
 ### 安装基本系统和安装时要用的应用到硬盘
 
 ```sh
-pacstrap -i /mnt base base-devel linux linux-firmware dhcpcd vim
+pacstrap -i /mnt base base-devel linux linux-headers linux-firmware dhcpcd vim
 ```
 
 ## 配置系统
