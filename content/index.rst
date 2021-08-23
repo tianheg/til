@@ -68,7 +68,7 @@ Contents
    tools/gpg
    tools/jekyll
    tools/hugo
-   tools/neovim
+   tools/vim
    tools/cloudflare
    tools/gatsby
    tools/sphinx
