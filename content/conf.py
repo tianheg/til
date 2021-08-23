@@ -21,7 +21,7 @@ import datetime
 # -- Project information -----------------------------------------------------
 
 project = 'Today I Learnt'
-copyright = '2021 - %s, Jim Gao' % datetime.datetime.now().year
+copyright = '%s, Jim Gao' % datetime.datetime.now().year  # 2021 -
 author = 'Jim Gao'
 
 # The short X.Y version
@@ -53,7 +53,7 @@ templates_path = ['_templates']
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
 #
-source_suffix = ['.rst', '.md']
+source_suffix = ['.rst']
 
 # The master toctree document.
 master_doc = 'index'
@@ -110,64 +110,6 @@ html_static_path = []
 # html_sidebars = {}
 
 html_search_language = 'zh'
-
-
-# -- Options for HTMLHelp output ---------------------------------------------
-
-# Output file base name for HTML help builder.
-htmlhelp_basename = 'til'
-
-
-# -- Options for LaTeX output ------------------------------------------------
-
-latex_elements = {
-    # The paper size ('letterpaper' or 'a4paper').
-    #
-    # 'papersize': 'letterpaper',
-
-    # The font size ('10pt', '11pt' or '12pt').
-    #
-    # 'pointsize': '10pt',
-
-    # Additional stuff for the LaTeX preamble.
-    #
-    # 'preamble': '',
-
-    # Latex figure (float) alignment
-    #
-    # 'figure_align': 'htbp',
-}
-
-# Grouping the document tree into LaTeX files. List of tuples
-# (source start file, target name, title,
-#  author, documentclass [howto, manual, or own class]).
-latex_documents = [
-    (master_doc, 'til.tex', 'Today I Learnt',
-     'Jim Gao', 'manual'),
-]
-
-
-# -- Options for manual page output ------------------------------------------
-
-# One entry per manual page. List of tuples
-# (source start file, name, description, authors, manual section).
-man_pages = [
-    (master_doc, 'til', 'Today I Learnt',
-     [author], 1)
-]
-
-
-# -- Options for Texinfo output ----------------------------------------------
-
-# Grouping the document tree into Texinfo files. List of tuples
-# (source start file, target name, title, author,
-#  dir menu entry, description, category)
-texinfo_documents = [
-    (master_doc, 'USTCMirrorHelp', 'USTC Mirror Help Documentation',
-     author, 'USTCMirrorHelp', 'One line description of project.',
-     'Miscellaneous'),
-]
-
 
 # -- Extension configuration -------------------------------------------------
 
