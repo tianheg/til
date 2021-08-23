@@ -1,7 +1,3 @@
-.. role:: raw-html-m2r(raw)
-   :format: html
-
-
 Arch Software Installation and Usage
 ====================================
 
@@ -475,7 +471,12 @@ Imager(rpi-imager)
 对于支持 UEFI 启动的设备，直接复制 iso 镜像中的所有文件到安装介质（如 U 盘）中即可启动。
 
 KDE
----
+----
+
+Dolphin 无法打开终端
+^^^^^^^^^^^^^^^^^^^^
+
+未安装 kinit
 
 konsole
 ^^^^^^^
@@ -744,152 +745,78 @@ Other Software
 
 ref: https://io-oi.me/tech/hello-arch-linux/
 
-   :header-rows: 1
+.. csv-table::
+   :header: "名字", "说明", "类似"
 
-   * - 名字
-     - 说明
-     - 类似
-   * - google-chrome
-     - Google Chrome 浏览器
-     - *
-   * - visual-studio-code-bin
-     - Visual Studio Code
-     - *
-   * - netease-cloud-music
-     - 网易云音乐
-     - *
-   * - flameshot
-     - 现代、快捷、轻便的截图工具
-     - *
-   * - proxychains-ng
-     - 终端内科学上网代理工具
-     - *
-   * - redshift
-     - 显示屏色温调节工具
-     - f.lux
-   * - vlc
-     - 强大的多媒体播放工具
-     - *
-   * - telegram-desktop
-     - 客户端开源的加密聊天工具
-     - *
-   * - gthumb
-     - 图片浏览工具，可简单编辑图片，可清除照片元数据
-     - *
-   * - libreoffice-fresh
-     - 必备的办公软件
-     - Microsoft Office
-   * - inkscape
-     - 强大的矢量图形编辑软件
-     - Adobe Illustrator、CorelDraw
-   * - youtube-dl
-     - YouTube 视频下载工具
-     - *
-   * - glances
-     - monitoring tool
-     - *
-   * - keepass
-     - password manage
-     - *
-   * - hugo
-     - static site generator
-     - *
-   * - foliate
-     - equb ... reader
-     - *
-   * - anki
-     - a spaced repetition system
-     - *
-   * - informant
-     - arch news reader and pacman hook
-     - *
-   * - dnsutils
-     - ``dig``
-     - *
-   * - dnsmasq
-     - 使用国外 DNS 造成国内网站访问慢的解决方法
-     - *
-   * - tldr
-     - https://github.com/tldr-pages/tldr
-     - *
-   * - virtualbox
-     - Virtual Machine
-     - *
-   * - earlyoom
-     - Early OOM Daemon for Linux
-     - *
-   * - gtk2,3,4
-     - gtk
-     - *
-   * - lsb-release
-     - LSB version query program
-     - *
-   * - exa
-     - 
-     - *
-   * - qemu
-     - A generic and open source machine emulator and virtualizer
-     - virtualbox
-   * - python-sphinx
-     - a documentation generator
-     - *
-   * - filezilla
-     - Fast and reliable FTP, FTPS and SFTP client
-     - *
-   * - intellij-idea-community-edition
-     - IDE
-     - VS Studio
-   * - mysql
-     - Database
-     - a lot
-   * - tomcat8
-     - Open source implementation of the Java Servlet 3.1 and JavaServer Pages 2.3 technologies
-     - *
-   * - sagemath
-     - Open Source Mathematics Software, free alternative to Magma, Maple, Mathematica, and Matlab
-     - Matlab
-   * - dkms
-     - Dynamic Kernel Modules System
-     - *
-   * - Maven
-     - Java project management and project comprehension tool
-     - *
+   google-chrome, Google Chrome 浏览器, FireFox
+   visual-studio-code-bin, Visual Studio Code, *
+   netease-cloud-music, 网易云音乐, *
+   flameshot, 现代、快捷、轻便的截图工具, *
+   proxychains-ng, 终端内科学上网代理工具, *
+   redshift, 显示屏色温调节工具, f.lux
+   vlc, 强大的多媒体播放工具, *
+   telegram-desktop, 客户端开源的加密聊天工具, *
+   gthumb, 图片浏览工具，可简单编辑图片，可清除照片元数据, *
+   libreoffice-fresh, 必备的办公软件, Microsoft Office
+   inkscape, 强大的矢量图形编辑软件, Adobe Illustrator、CorelDraw
+   youtube-dl, YouTube 视频下载工具, *
+   glances, PC monitoring tool, *
+   keepass, password manager, *
+   hugo, static site generator, *
+   foliate, equb ... reader, *
+   anki, a spaced repetition system, *
+   informant, arch news reader and pacman hook, *
+   dnsutils, ``dig``, *
+   dnsmasq, 使用国外 DNS 造成国内网站访问慢的解决方法, *
+   tldr, https://github.com/tldr-pages/tldr, *
+   virtualbox, Virtual Machine, QEMU/VMware
+   earlyoom, Early OOM Daemon for Linux, *
+   gtk2/3/4, GObject-based multi-platform GUI toolkit, *
+   lsb-release, LSB version query program, *
+   exa, A modern replacement for `ls` (List directory contents), ls
+   qemu, A generic and open source machine emulator and virtualizer, virtualbox
+   python-sphinx, a documentation generator, *
+   filezilla, Fast and reliable FTP, FTPS and SFTP client, *
+   intellij-idea-community-edition, IDE, VS Studio
+   mysql, Database, *
+   tomcat8, Open source implementation of the Java Servlet 3.1 and JavaServer Pages 2.3 technologies, *
+   sagemath, Open Source Mathematics Software, free alternative to Magma, Maple, Mathematica, and Matlab, Matlab
+   dkms, Dynamic Kernel Modules System, *
+   maven, Java project management and project comprehension tool, *
+   graphviz, Graph visualization software, *
 
+.. code:: sh
 
    sudo pacman -S google-chrome visual-studio-code-bin netease-cloud-music flameshot proxychains-ng redshift vlc telegram-desktop gthumb libreoffice-fresh inkscape youtube-dl glances keepass hugo foliate anki informant dnsutils dnsmasq tldr virtualbox virtualbox-host-modules-arch virtualbox-ext-oracle virtualbox earlyoom gtk2 gtk3 gtk4 lsb-release exa qemu python-sphinx filezilla intellij-idea-community-edition mysql tomcat8 sagemath dkms maven
 
 maven
 ^^^^^
 
-mvn
+Apache Maven. Tool for building and managing Java-based projects. More information: https://maven.apache.org.
 
-  Apache Maven.
-  Tool for building and managing Java-based projects.
-  More information: https://maven.apache.org.
+- Compile a project:
+   mvn compile
 
-  - Compile a project:
-    mvn compile
+- Compile and package the compiled code in its distributable format, such as a `jar`:
+   mvn package
 
-  - Compile and package the compiled code in its distributable format, such as a `jar`:
-    mvn package
+- Compile and package, skipping unit tests:
+   mvn package -Dmaven.test.skip=true
 
-  - Compile and package, skipping unit tests:
-    mvn package -Dmaven.test.skip=true
+- Install the built package in local maven repository. (This will invoke the compile and package commands too):
+   mvn install
 
-  - Install the built package in local maven repository. (This will invoke the compile and package commands too):
-    mvn install
+- Delete build artifacts from the target directory:
+   mvn clean
 
-  - Delete build artifacts from the target directory:
-    mvn clean
+- Do a clean and then invoke the package phase:
+   mvn clean package
 
-  - Do a clean and then invoke the package phase:
-    mvn clean package
+- Clean and then package the code with a given build profile:
+   mvn clean -Pprofile package
 
-  - Clean and then package the code with a given build profile:
-    mvn clean -Pprofile package
-
-  - Run a class with a main method:
-    mvn exec:java -Dexec.mainClass="com.example.Main" -Dexec.args="arg1 arg2"
+- Run a class with a main method:
+   mvn exec:java -Dexec.mainClass="com.example.Main" -Dexec.args="arg1 arg2"
 
 dkms
 ^^^^
@@ -901,9 +828,12 @@ ref: https://github.com/tomaspinho/rtl8821ce
 Sagemath
 ^^^^^^^^
 
+.. code:: sh
 
+   pacin sagemath
 
-   ➜  ~ pacin sagemath
+Output::
+
    resolving dependencies...
    looking for conflicting packages...
    warning: dependency cycle detected:
@@ -914,9 +844,12 @@ Sagemath
 Tomcat8
 ^^^^^^^
 
-
+.. code:: sh
 
    sudo pacman -S tomcat8
+
+Output::
+
    extra/eclipse-ecj          4.6.3-2        1.65 MiB       1.53 MiB
    extra/java-commons-daemon  1.2.4-1        0.02 MiB       0.02 MiB
    extra/java-jsvc            1.2.4-1        0.06 MiB       0.02 MiB
@@ -932,7 +865,12 @@ Tomcat8
 MySQL
 ^^^^^
 
+.. code:: sh
+
    sudo pacman -S mysql
+
+Output::
+
    archlinuxcn/libmysqlclient  8.0.24-1       6.89 MiB       1.31 MiB
    archlinuxcn/mysql-clients   8.0.24-1      52.30 MiB       2.12 MiB
    archlinuxcn/mysql           8.0.24-1     172.41 MiB      19.10 MiB
@@ -954,26 +892,15 @@ MySQL
    (3/4) Creating temporary files...
    (4/4) Arming ConditionNeedsUpdate...
 
-.. code-block:: bash
-   :linenos:
-
-   mysqld --initialize --user=mysql --basedir=/usr --datadir=/var/lib/mysql
-
-Output::
-
-   mysqld: Can't create directory '/var/lib/mysql/' (OS errno 17 - File exists)
-   2021-08-23T03:01:13.567666Z 0 [Warning] [MY-010915] [Server] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
-   2021-08-23T03:01:13.568521Z 0 [System] [MY-013169] [Server] /usr/bin/mysqld (mysqld 8.0.24) initializing of server in progress as process 64858
-   2021-08-23T03:01:13.579931Z 0 [ERROR] [MY-013236] [Server] The designated data directory /var/lib/mysql/ is unusable. You can remove all files that the server added to it.
-   2021-08-23T03:01:13.580098Z 0 [ERROR] [MY-010119] [Server] Aborting
-   2021-08-23T03:01:13.583005Z 0 [System] [MY-010910] [Server] /usr/bin/mysqld: Shutdown complete (mysqld 8.0.24)  Source distribution.
-
 IDEA
 ^^^^
 
-
+.. code:: sh
 
    sudo pacman -S intellij-idea-community-edition
+
+Output::
+
    # select jdk11-openjdk
    extra/java-environment-common              3-3              0.00 MiB       0.00 MiB
    extra/java-runtime-common                  3-3              0.01 MiB       0.00 MiB
@@ -994,18 +921,20 @@ Sphinx
 
 Sphinx is a documentation generator or a tool that translates a set of plain text source files into various output formats, automatically producing cross-references, indices, etc.
 
-
+.. code:: sh
 
    pip install sphinx-autobuild rstcheck # for VS Code extension: reStructuredText
    pip install sphinx-rtd-theme # sphinx-rtd-theme theme
+   pip install sphinx-copybutton
    pip install m2r2 # converts a markdown file including reStructuredText (rst) markups to a valid rst format
+   sudo pacman -S python-sphinx-issues python-sphinx-furo
 
 exa
 ^^^
 
 A modern replacement for ``ls`` (List directory contents) https://the.exa.website
 
-
+.. code:: sh
 
    exa
    exa --oneline # List files one per line
@@ -1031,7 +960,7 @@ https://wiki.archlinux.org/title/VirtualBox
 
 Error message:
 
-
+::
 
    WARNING: The vboxdrv kernel module is not loaded. Either there is no module
             available for the current kernel (5.13.8-arch1-1) or it failed to
@@ -1056,7 +985,7 @@ earlyoom
 
 from https://bbs.archlinuxcn.org/viewtopic.php?pid=45774#p45774
 
-
+.. code:: sh
 
    # after install
    sudo systemctl enable --now earlyoom
@@ -1066,21 +995,22 @@ Vagrant
 
 https://wiki.archlinux.org/title/Vagrant
 
-
+.. code:: sh
 
    sudo pacman -S vagrant
    mkdir arch-vagrant &&  cd $_
    vim Vagrantfile
    vagrant up
 
-``Vagrantfile``:
-Vagrant.configure("2") do \|config\|
-config.vm.box = "archlinux/archlinux"
-end
+``Vagrantfile``::
 
-After exec ``vagrant up``\ , error message:
+   Vagrant.configure("2") do \|config|
+   config.vm.box = "archlinux/archlinux"
+   end
 
-..
+After exec ``vagrant up``, error message:
+
+::
 
    No usable default provider could be found for your system.
 
@@ -1107,10 +1037,11 @@ After exec ``vagrant up``\ , error message:
 
 After exec ``sudo modprobe vboxdrv``\ , no message now.
 
-
+.. code:: sh
 
    vagrant up
 
+Output::
 
    Vagrant is currently configured to create VirtualBox synced folders with
    the `SharedFoldersEnableSymlinksCreate` option enabled. If the Vagrant
@@ -1142,7 +1073,7 @@ Anki
 
 https://apps.ankiweb.net/#download
 
-
+.. code:: sh
 
    tar xjf ~/Downloads/anki-2.1.46-linux.tar.bz2
    cd anki-2.1.46-linux
@@ -1151,7 +1082,7 @@ https://apps.ankiweb.net/#download
 exercism
 ^^^^^^^^
 
-
+.. code:: sh
 
    # https://github.com/exercism/cli/releases/ download exercism-linux-64bit.tgz
    tar -xf exercism-linux-64bit.tgz
@@ -1165,7 +1096,7 @@ exercism
 Scheme Programming Language
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+.. code:: sh
 
    guile hello-world.scm
    ;;; note: source file /home/archie/exercism/scheme/hello-world/hello-world.scm
@@ -1180,7 +1111,7 @@ Scheme Programming Language
 
 How to close these info?
 
-
+``.zshrc``::
 
    alias guile="guile --no-auto-compile"
 
@@ -1189,7 +1120,7 @@ How to close these info?
 ``nscd`` 自启动
 ^^^^^^^^^^^^^^^^^^^
 
-
+.. code:: sh
 
    systemctl enable nscd
 
@@ -1198,22 +1129,20 @@ nscd is a daemon that provides a cache for the most common name service requests
 redshift
 ^^^^^^^^
 
-115.622324,33.165395
+纬度，经度 115.622324,33.165395
 
-
+.. code:: sh
 
    mkdir ~/.config/redshift
    vim ~/.config/redshift/redshift.conf
 
-``~/.config/redshift/redshift.conf``\ :
-
-
+``~/.config/redshift/redshift.conf``::
 
    [redshift]
    location-provider=manual
    temp-day=5500
    temp-night=3700
-
+   
    [manual]
    lat=33.165395
    lon=115.622324
@@ -1229,7 +1158,7 @@ ref:
 
 https://blog.lilydjwg.me/2020/10/29/pacsync.215578.html
 
-
+.. code:: sh
 
    #!/bin/bash -e
 
@@ -1249,21 +1178,23 @@ https://blog.lilydjwg.me/2020/10/29/pacsync.215578.html
 
 https://wzyboy.im/post/874.html
 
-
+.. code:: sh
 
    systemctl status dnsmasq
-    dnsmasq.service - dnsmasq - A lightweight DHCP and caching DNS server
-        Loaded: loaded (/usr/lib/systemd/system/dnsmasq.service; enabled; vendor preset: disabled)
-        Active: inactive (dead)
 
-          Docs: man:dnsmasq(8)
+Output::
 
-``dnsmasq.service: Start request repeated too quickly.``\ :
+   dnsmasq.service - dnsmasq - A lightweight DHCP and caching DNS server
+      Loaded: loaded (/usr/lib/systemd/system/dnsmasq.service; enabled; vendor preset: disabled)
+         Active: inactive (dead)
+         
+         Docs: man:dnsmasq(8)
+
+``dnsmasq.service: Start request repeated too quickly.``:
 
 The default limit is to allow 5 restarts in a 10sec period. If a service goes over that threshold due to the ``Restart=`` config option in the service definition, it will not attempt to restart any further.
 
 ref:
-
 
 #. https://github.com/felixonmars/dnsmasq-china-list
 #. https://serverfault.com/a/845473
@@ -1272,17 +1203,15 @@ ref:
 备份
 ----
 
-
 * https://blog.lilydjwg.me/2013/12/29/rsync-btrfs-dm-crypt-full-backup.42219.html
 * https://github.com/teejee2008/timeshift
 
-
+.. code:: sh
 
    sudo pacman -S timeshift
 
 timeshift
 ^^^^^^^^^
-
 
 #. Snapshot type: rsync :raw-html-m2r:`<del>(btrfs cannot use because of BTRFS snapts are saved on system partition)</del>`
 #. User home directories: root-include all files, user-include only hidden files
@@ -1297,9 +1226,9 @@ ref:
 #. https://gist.github.com/lilydjwg/93d33ed04547e1b9f7a86b64ef2ed058
 #. https://github.com/rbew/github-host
 
-前提：\ ``/etc/hosts`` 文件中要先存在 ``github.com``
+前提：``/etc/hosts`` 文件中要先存在 ``github.com``
 
-
+.. code:: sh
 
    sudo pacman -S python-aiohttp
 
@@ -1309,10 +1238,16 @@ Problems
 Protocol not available - Bluetooth
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+.. code:: sh
 
    journalctl -n 20
+
+Output::
+
    bluetoothd[445]: src/service.c:btd_service_connect() a2dp-sink profile connect failed for 00:02:5B:FF:10:D0: Protocol not available
+
+.. code:: sh
+   
    sudo pacman -S pulseaudio-bluetooth
 
 Still can't connect with my wireless earphone.
@@ -1359,7 +1294,7 @@ Cannot find fcitx input method module for Qt4.
 
 设置 BIOS U 盘启动，插入制作好的 USB 启动盘，进入 U 盘中的 arch 系统，然后执行命令：
 
-
+.. code:: sh
 
    mount /dev/sdb2 /mnt
    arch-root /mnt /bin/bash
@@ -1370,16 +1305,15 @@ Cannot find fcitx input method module for Qt4.
 
 依然出现卡顿，推测是无线网的缘故，需要安装驱动。（驱动已安装）
 
-编辑了 /etc/default/grub:
+编辑了 /etc/default/grub::
 
-GRUB_CMDLINE_LINUX_DEFAULT="elevator=noop loglevel=3 quiet"
-
-GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet mds=full,nosmt"
+   GRUB_CMDLINE_LINUX_DEFAULT="elevator=noop loglevel=3 quiet"
+   
+   GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet mds=full,nosmt"
 
 `X freeze/crash with intel driver <https://wiki.archlinux.org/title/Intel_graphics#:~:text=VGA-1%3A1280x800-,X%20freeze/crash%20with%20intel%20driver,-Some%20issues%20with>`_
 
 ref:
-
 
 #. https://wiki.archlinux.org/title/downgrading_packages#Downgrading_the_kernel
 #. https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/mds.html
@@ -1451,6 +1385,9 @@ a dual gpu system(双 GPU 系统)
 .. code:: sh
 
    xrandr --listproviders
+
+Output::
+
    Providers: number : 2
    Provider 0: id: 0x44 cap: 0xf, Source Output, Sink Output, Source Offload, Sink Offload crtcs: 3 outputs: 2 associated providers: 1 name:modesetting
    Provider 1: id: 0xc7 cap: 0xd, Source Output, Source Offload, Sink Offload crtcs: 0 outputs: 0 associated providers: 1 name:Unknown AMD Radeon GPU @ pci:0000:01:00.0
