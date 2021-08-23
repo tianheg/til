@@ -9,6 +9,8 @@ reStructured Text Syntax
 
 .. code:: rst
 
+   ----
+
    h1
    ==
 
@@ -99,7 +101,10 @@ reStructured Text Syntax
       follow, except for the syntax of footnotes/citations,
       hyperlink targets, directives, or substitution definitions.
 
-ref: https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html
+ref:
+
+1. https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html
+2. https://docutils.sourceforge.io/docs/user/rst/quickref.html
 
 Error
 -----
@@ -108,4 +113,8 @@ Source parser for markdown not registered
 
 AttributeError: 'str' object has no attribute 'supported'
 
-Could not lex literal_block as "Bash". Highlighting skipped.
+Error::
+
+    Could not lex literal_block as "sh". Highlighting skipped
+
+之所以出现 ``Hightlighting skipped`` 错误，是因为被高亮的代码不符合对应语言规则。参考 `No syntax errors <https://docs.typo3.org/m/typo3/docs-how-to-document/master/en-us/WritingReST/Codeblocks.html#:~:text=Please%3A-,No%20syntax%20errors,-!>`_
