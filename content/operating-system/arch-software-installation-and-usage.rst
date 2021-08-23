@@ -851,9 +851,45 @@ ref: https://io-oi.me/tech/hello-arch-linux/
    * - dkms
      - Dynamic Kernel Modules System
      - *
+   * - Maven
+     - Java project management and project comprehension tool
+     - *
 
 
-   sudo pacman -S google-chrome visual-studio-code-bin netease-cloud-music flameshot proxychains-ng redshift vlc telegram-desktop gthumb libreoffice-fresh inkscape youtube-dl glances keepass hugo foliate anki informant dnsutils dnsmasq tldr virtualbox virtualbox-host-modules-arch virtualbox-ext-oracle virtualbox earlyoom gtk2 gtk3 gtk4 lsb-release exa qemu python-sphinx filezilla intellij-idea-community-edition mysql tomcat8 sagemath dkms
+   sudo pacman -S google-chrome visual-studio-code-bin netease-cloud-music flameshot proxychains-ng redshift vlc telegram-desktop gthumb libreoffice-fresh inkscape youtube-dl glances keepass hugo foliate anki informant dnsutils dnsmasq tldr virtualbox virtualbox-host-modules-arch virtualbox-ext-oracle virtualbox earlyoom gtk2 gtk3 gtk4 lsb-release exa qemu python-sphinx filezilla intellij-idea-community-edition mysql tomcat8 sagemath dkms maven
+
+maven
+^^^^^
+
+mvn
+
+  Apache Maven.
+  Tool for building and managing Java-based projects.
+  More information: https://maven.apache.org.
+
+  - Compile a project:
+    mvn compile
+
+  - Compile and package the compiled code in its distributable format, such as a `jar`:
+    mvn package
+
+  - Compile and package, skipping unit tests:
+    mvn package -Dmaven.test.skip=true
+
+  - Install the built package in local maven repository. (This will invoke the compile and package commands too):
+    mvn install
+
+  - Delete build artifacts from the target directory:
+    mvn clean
+
+  - Do a clean and then invoke the package phase:
+    mvn clean package
+
+  - Clean and then package the code with a given build profile:
+    mvn clean -Pprofile package
+
+  - Run a class with a main method:
+    mvn exec:java -Dexec.mainClass="com.example.Main" -Dexec.args="arg1 arg2"
 
 dkms
 ^^^^
@@ -896,8 +932,6 @@ Tomcat8
 MySQL
 ^^^^^
 
-
-
    sudo pacman -S mysql
    archlinuxcn/libmysqlclient  8.0.24-1       6.89 MiB       1.31 MiB
    archlinuxcn/mysql-clients   8.0.24-1      52.30 MiB       2.12 MiB
@@ -919,6 +953,17 @@ MySQL
    (2/4) Reloading system manager configuration...
    (3/4) Creating temporary files...
    (4/4) Arming ConditionNeedsUpdate...
+
+.. code-block:: sh
+   :linenos:
+
+   mysqld --initialize --user=mysql --basedir=/usr --datadir=/var/lib/mysql
+   mysqld: Can't create directory '/var/lib/mysql/' (OS errno 17 - File exists)
+   2021-08-23T03:01:13.567666Z 0 [Warning] [MY-010915] [Server] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
+   2021-08-23T03:01:13.568521Z 0 [System] [MY-013169] [Server] /usr/bin/mysqld (mysqld 8.0.24) initializing of server in progress as process 64858
+   2021-08-23T03:01:13.579931Z 0 [ERROR] [MY-013236] [Server] The designated data directory /var/lib/mysql/ is unusable. You can remove all files that the server added to it.
+   2021-08-23T03:01:13.580098Z 0 [ERROR] [MY-010119] [Server] Aborting
+   2021-08-23T03:01:13.583005Z 0 [System] [MY-010910] [Server] /usr/bin/mysqld: Shutdown complete (mysqld 8.0.24)  Source distribution.
 
 IDEA
 ^^^^
