@@ -274,7 +274,7 @@ No, it is not possible. Major kernel updates (e.g. linux 3.5.0-1 to linux 3.6.0-
 pacman 命令
 ^^^^^^^^^^^
 
-
+.. code:: sh
 
    ## Common
    pacman -Qe # List all explicitly installed packages
@@ -331,7 +331,7 @@ pacman 命令
 应该避免执行的 ``pacman`` 指令
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+.. code:: sh
 
    pacman -Syu # always run
    pacman -Sy # never run!!!
@@ -342,14 +342,14 @@ When installing packages in Arch, avoid refreshing the package list without upgr
 list all development/unstable packages
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+.. code:: sh
 
    pacman -Qq | grep -Ee '-(bzr|cvs|darcs|git|hg|svn)$'
 
 执行 pacman 命令过程中，遇到的信息/警告/错误
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
+.. code:: sh
 
    warning: dependency cycle detected # 循环依赖
 
@@ -370,7 +370,7 @@ ref:
 gpg: key 786C63F330D7CB92: no user ID for key signature packet of class 10
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-
+.. code:: sh
 
    gpg: key 786C63F330D7CB92: no user ID for key signature packet of class 10
    gpg: key 1EB2638FF56C0C53: no user ID for key signature packet of class 10
@@ -393,7 +393,6 @@ gpg: key 786C63F330D7CB92: no user ID for key signature packet of class 10
 
 ref:
 
-
 #. https://github.com/yuk7/ArchWSL/issues/91#issuecomment-506806989
 
 warning: /etc/pacman.d/mirrorlist installed as /etc/pacman.d/mirrorlist.pacnew
@@ -414,15 +413,15 @@ ref:
 #. https://wiki.archlinux.org/title/System_maintenance#Avoid_certain_pacman_commands
 #. https://wiki.archlinux.org/title/Pacman/Rosetta
 
-yay(\ :raw-html-m2r:`<del>donot use, only use pacman</del>`\ )
---------------------------------------------------------------
+yay
+---
 
 Yet Another Yogurt: A utility for Arch Linux to build and install packages from the Arch User Repository.
 
 安装 yay
 ^^^^^^^^
 
-
+.. code:: sh
 
    sudo pacman -S yay
    # pacman -S --needed git base-devel
@@ -433,7 +432,7 @@ Yet Another Yogurt: A utility for Arch Linux to build and install packages from 
 使用 yay
 ^^^^^^^^
 
-
+.. code:: sh
 
    # Interactively search and install packages from the repos and AUR:
    yay package_name|search_term
@@ -469,7 +468,7 @@ ref:
 Imager(rpi-imager)
 ------------------
 
-
+.. code:: sh
 
    yay -S rpi-imager
 
@@ -487,7 +486,7 @@ ref: https://forum.kde.org/viewtopic.php?f=21&t=78963#p380065
 
 profile configuration file ``~/.local/share/konsole/archie.profile``\ :
 
-
+::
 
    [Appearance]
    AntiAliasFonts=true
@@ -503,7 +502,7 @@ profile configuration file ``~/.local/share/konsole/archie.profile``\ :
 
 Highlight style: ``~/.local/share/konsole/custom.colorscheme``\ :
 
-.. code:: scheme
+::
 
    [Background]
    Color=0,0,0
@@ -616,7 +615,7 @@ Highlight style: ``~/.local/share/konsole/custom.colorscheme``\ :
 
 ``~/.config/konsolerc``\ :
 
-
+::
 
    MenuBar=Disabled
    State=AAAA/wAAAAD9AAAAAAAAB4AAAAO1AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAHABzAGUAcwBzAGkAbwBuAFQAbwBvAGwAYgBhAHIBAAAFlf////8AAAAAAAAAAA==
@@ -673,6 +672,7 @@ Uninstall it.
 kde Connect
 ^^^^^^^^^^^
 
+.. code:: sh
 
 
    sudo pacman -S kdeconnect
@@ -954,10 +954,13 @@ MySQL
    (3/4) Creating temporary files...
    (4/4) Arming ConditionNeedsUpdate...
 
-.. code-block:: sh
+.. code-block:: bash
    :linenos:
 
    mysqld --initialize --user=mysql --basedir=/usr --datadir=/var/lib/mysql
+
+Output::
+
    mysqld: Can't create directory '/var/lib/mysql/' (OS errno 17 - File exists)
    2021-08-23T03:01:13.567666Z 0 [Warning] [MY-010915] [Server] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
    2021-08-23T03:01:13.568521Z 0 [System] [MY-013169] [Server] /usr/bin/mysqld (mysqld 8.0.24) initializing of server in progress as process 64858
@@ -1397,9 +1400,9 @@ amdgpu: TOPAZ  not supported in kfd
 
 More error log:
 
+.. code:: sh
 
-
-   ➜  ~ sudo dmesg | grep amdgpu
+   sudo dmesg | grep amdgpu
    [    3.647423] [drm] amdgpu kernel modesetting enabled.
    [    3.647749] amdgpu: CRAT table not found
    [    3.647751] amdgpu: Virtual CRAT table created for CPU
@@ -1442,15 +1445,14 @@ More error log:
 
 a dual gpu system(双 GPU 系统)
 
+.. code:: sh
 
-
-   ➜  Downloads xrandr --listproviders
+   xrandr --listproviders
    Providers: number : 2
    Provider 0: id: 0x44 cap: 0xf, Source Output, Sink Output, Source Offload, Sink Offload crtcs: 3 outputs: 2 associated providers: 1 name:modesetting
    Provider 1: id: 0xc7 cap: 0xd, Source Output, Source Offload, Sink Offload crtcs: 0 outputs: 0 associated providers: 1 name:Unknown AMD Radeon GPU @ pci:0000:01:00.0
 
 ref:
-
 
 #. https://wiki.archlinux.org/title/Xorg#AMD
 #. https://bbs.archlinux.org/viewtopic.php?id=236430#:~:text=Since%20this%20is-,a%20dual%20gpu%20system,-%2C%20you%20will%20want
@@ -1459,3 +1461,15 @@ KDE's plasma eating CPU
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 https://wiki.gentoo.org/wiki/Intel#:~:text=KDE%27s%20plasma%20eating%20CPU,-If%20/usr/bin
+
+
+网易云音乐突然退出
+^^^^^^^^^^^^^^^^^^
+
+.. code:: log
+
+   Aug 23 18:33:15 arch kded5[671]: Service  "org.kde.StatusNotifierItem-97593-1" unregistered
+   Aug 23 18:33:15 arch kwin_x11[675]: qt.qpa.xcb: QXcbConnection: XCB error: 3 (BadWindow), sequence: 46186, resource id: 81789214, major code: 18 (ChangeProperty), minor code: 0
+   Aug 23 18:33:15 arch systemd[618]: app-netease\x2dcloud\x2dmusic-6ee92a5d044e40d1bf790eeb69ac4171.scope: Consumed 2min 58.763s CPU time.
+   Aug 23 18:33:19 arch kwin_x11[675]: qt.qpa.xcb: QXcbConnection: XCB error: 3 (BadWindow), sequence: 47904, resource id: 9625737, major code: 20 (GetProperty), minor code: 0
+   Aug 23 18:33:19 arch kwin_x11[675]: kwin_core: XCB error: 152 (BadDamage), sequence: 47905, resource id: 9628315, major code: 143 (DAMAGE), minor code: 2 (Destroy)
