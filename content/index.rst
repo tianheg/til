@@ -1,28 +1,41 @@
-Home
-====
-
-Record what I learnt.
-
-测试短链接：
+INDEX
+=====
 
 2021年第35周总结 :ghissue:`155`
 
-Contents
---------
+.. image:: images/life-structure.png
+
+认识自己和了解世界是同等重要的，认识自己可以通过阅读做到，了解世界需要学习技术知识并应用。
+
+认识自己
+^^^^^^^
+
+- 日常生活向-观察并记录日常行为
+- 学科向-社会学、心理学、生物类学科（脑科学、认知科学）
+
+技术应用
+^^^^^^^
+
+- 计算机基础
+  - 算法和数据结构
+  - 计算机网络
+  - 操作系统
+
+算法和数据结构
+------------
+
+.. image:: images/ads-way.jpeg
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
 
-   cs-and-web-concepts/cs-and-web-concepts
    cs-and-web-concepts/计算机网络
    cs-and-web-concepts/dns
    cs-and-web-concepts/科技英语
    cs-and-web-concepts/front-end-and-its-history
    cs-and-web-concepts/cors
    cs-and-web-concepts/how-the-web-works
-   algorithms-and-data-structure/algorithms-and-data-structure
    algorithms-and-data-structure/books
-   operating-system/operating-system
    operating-system/linux-details
    operating-system/linux-common-orders
    operating-system/arch-system-maintenance
@@ -35,17 +48,14 @@ Contents
    operating-system/ubuntu-install-software
    operating-system/ubuntu-problems
    operating-system/mxlinux-installation
-   html/html
    html/before-html
    html/html-basics
    html/images
    html/html-code-snippets
-   css/css
    css/css-basics
    css/css-box
    css/css-position
    css/css-code-snippets
-   javascript/javascript
    javascript/javascript-basics
    javascript/es6
    javascript/what-i-learnt-from-js
@@ -56,13 +66,10 @@ Contents
    javascript/js-code-snippets
    vue/vue
    front-end
-   programming-languages/programming-language
    programming-languages/shell
    programming-languages/python
    programming-languages/go
-   projects/projects
    projects/wordpress
-   tools/tools
    tools/docker
    tools/vagrant
    tools/gpg
@@ -72,7 +79,6 @@ Contents
    tools/cloudflare
    tools/gatsby
    tools/sphinx
-   version-control-git/version-control-git
    version-control-git/git-fundamentals
    version-control-git/git-commit
    version-control-git/commit-messages-guide
@@ -91,8 +97,10 @@ Contents
    version-control-git/git-clone-specify-branch
    version-control-git/github-action-only-generate-nojekyll
    useful-info
-   hardware/hardware
    hardware/bluetooth
    hardware/power-supply-unit
    hardware/raspberry-pi
    learning-how-to-learn
+
+
+`glossary 索引 <genindex.html>`_
