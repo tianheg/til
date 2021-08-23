@@ -164,7 +164,6 @@ Font
 
 Use default Gnome 40 font:
 
-
 * Cantarell Regular 11
 * Cantarell Regular 11
 * Source Code Pro Regular 10
@@ -784,10 +783,18 @@ ref: https://io-oi.me/tech/hello-arch-linux/
    dkms, Dynamic Kernel Modules System, *
    maven, Java project management and project comprehension tool, *
    graphviz, Graph visualization software, *
+   cmdpxl, a totally practical command-line image editor, *
 
 .. code:: sh
 
    sudo pacman -S google-chrome visual-studio-code-bin netease-cloud-music flameshot proxychains-ng redshift vlc telegram-desktop gthumb libreoffice-fresh inkscape youtube-dl glances keepass hugo foliate anki informant dnsutils dnsmasq tldr virtualbox virtualbox-host-modules-arch virtualbox-ext-oracle virtualbox earlyoom gtk2 gtk3 gtk4 lsb-release exa qemu python-sphinx filezilla intellij-idea-community-edition mysql tomcat8 sagemath dkms maven
+
+cmdpxl
+^^^^^^
+
+.. code:: sh
+
+   pip install cmdpxl
 
 maven
 ^^^^^
