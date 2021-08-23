@@ -3,4 +3,3 @@ sphinx-copybutton
 sphinx-issues
 furo
 jieba
-graphviz
