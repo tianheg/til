@@ -1,4 +1,3 @@
-
 OpenBSD
 =======
 
@@ -39,7 +38,7 @@ Install
 Common Usage
 ------------
 
-
+.. code:: sh
 
    su # access root 
    shutdown -p now # shutdown now
