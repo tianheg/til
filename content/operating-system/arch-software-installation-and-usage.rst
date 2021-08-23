@@ -1403,6 +1403,9 @@ More error log:
 .. code:: sh
 
    sudo dmesg | grep amdgpu
+
+Output::
+
    [    3.647423] [drm] amdgpu kernel modesetting enabled.
    [    3.647749] amdgpu: CRAT table not found
    [    3.647751] amdgpu: Virtual CRAT table created for CPU
@@ -1466,10 +1469,10 @@ https://wiki.gentoo.org/wiki/Intel#:~:text=KDE%27s%20plasma%20eating%20CPU,-If%2
 网易云音乐突然退出
 ^^^^^^^^^^^^^^^^^^
 
-.. code:: log
+Log Output::
 
-   Aug 23 18:33:15 arch kded5[671]: Service  "org.kde.StatusNotifierItem-97593-1" unregistered
-   Aug 23 18:33:15 arch kwin_x11[675]: qt.qpa.xcb: QXcbConnection: XCB error: 3 (BadWindow), sequence: 46186, resource id: 81789214, major code: 18 (ChangeProperty), minor code: 0
-   Aug 23 18:33:15 arch systemd[618]: app-netease\x2dcloud\x2dmusic-6ee92a5d044e40d1bf790eeb69ac4171.scope: Consumed 2min 58.763s CPU time.
-   Aug 23 18:33:19 arch kwin_x11[675]: qt.qpa.xcb: QXcbConnection: XCB error: 3 (BadWindow), sequence: 47904, resource id: 9625737, major code: 20 (GetProperty), minor code: 0
-   Aug 23 18:33:19 arch kwin_x11[675]: kwin_core: XCB error: 152 (BadDamage), sequence: 47905, resource id: 9628315, major code: 143 (DAMAGE), minor code: 2 (Destroy)
+    Aug 23 18:33:15 arch kded5[671]: Service  "org.kde.StatusNotifierItem-97593-1" unregistered
+    Aug 23 18:33:15 arch kwin_x11[675]: qt.qpa.xcb: QXcbConnection: XCB error: 3 (BadWindow), sequence: 46186, resource id: 81789214, major code: 18 (ChangeProperty), minor code: 0
+    Aug 23 18:33:15 arch systemd[618]: app-netease\x2dcloud\x2dmusic-6ee92a5d044e40d1bf790eeb69ac4171.scope: Consumed 2min 58.763s CPU time.
+    Aug 23 18:33:19 arch kwin_x11[675]: qt.qpa.xcb: QXcbConnection: XCB error: 3 (BadWindow), sequence: 47904, resource id: 9625737, major code: 20 (GetProperty), minor code: 0
+    Aug 23 18:33:19 arch kwin_x11[675]: kwin_core: XCB error: 152 (BadDamage), sequence: 47905, resource id: 9628315, major code: 143 (DAMAGE), minor code: 2 (Destroy)
