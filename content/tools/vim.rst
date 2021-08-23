@@ -63,7 +63,3 @@ rst
 ^^^
 
 `Riv.vim <https://github.com/gu-fan/riv.vim>`_ 用于在 Vim 中高亮 reStructuredText 语法。
-
-安装过程::
-
-
