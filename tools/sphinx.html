@@ -141,7 +141,7 @@
 <li class="toctree-l1"><a class="reference internal" href="gpg.html">GPG</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jekyll.html">Jekyll</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hugo.html">Hugo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="neovim.html">neovim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vim.html">vim</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cloudflare.html">Cloudflare</a></li>
 <li class="toctree-l1"><a class="reference internal" href="gatsby.html">Gatsby</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Sphinx</a><ul>
@@ -247,7 +247,9 @@
 <p><a class="reference external" href="https://www.sphinx-doc.org/">https://www.sphinx-doc.org/</a></p>
 <div class="section" id="restructured-text-syntax">
 <h2>reStructured Text Syntax<a class="headerlink" href="#restructured-text-syntax" title="永久链接至标题">¶</a></h2>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>h1
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>----
+
+h1
 ==
 
 h2
@@ -338,13 +340,21 @@ The &quot;_example&quot; target above points to this paragraph.
 <span class="cp">   hyperlink targets, directives, or substitution definitions.</span>
 </pre></div>
 </div>
-<p>ref: <a class="reference external" href="https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html">https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html</a></p>
+<p>ref:</p>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html">https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html</a></p></li>
+<li><p><a class="reference external" href="https://docutils.sourceforge.io/docs/user/rst/quickref.html">https://docutils.sourceforge.io/docs/user/rst/quickref.html</a></p></li>
+</ol>
 </div>
 <div class="section" id="error">
 <h2>Error<a class="headerlink" href="#error" title="永久链接至标题">¶</a></h2>
 <p>Source parser for markdown not registered</p>
 <p>AttributeError: ‘str’ object has no attribute ‘supported’</p>
-<p>Could not lex literal_block as “Bash”. Highlighting skipped.</p>
+<p>Error:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Could</span> <span class="ow">not</span> <span class="n">lex</span> <span class="n">literal_block</span> <span class="k">as</span> <span class="s2">&quot;sh&quot;</span><span class="o">.</span> <span class="n">Highlighting</span> <span class="n">skipped</span>
+</pre></div>
+</div>
+<p>之所以出现 <code class="docutils literal notranslate"><span class="pre">Hightlighting</span> <span class="pre">skipped</span></code> 错误，是因为被高亮的代码不符合对应语言规则。参考 <a class="reference external" href="https://docs.typo3.org/m/typo3/docs-how-to-document/master/en-us/WritingReST/Codeblocks.html#:~:text=Please%3A-,No%20syntax%20errors,-!">No syntax errors</a></p>
 </div>
 </div>
 

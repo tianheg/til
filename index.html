@@ -140,7 +140,7 @@
 <li class="toctree-l1"><a class="reference internal" href="tools/gpg.html">GPG</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tools/jekyll.html">Jekyll</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tools/hugo.html">Hugo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tools/neovim.html">neovim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tools/vim.html">vim</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tools/cloudflare.html">Cloudflare</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tools/gatsby.html">Gatsby</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tools/sphinx.html">Sphinx</a></li>
@@ -364,10 +364,10 @@
 <li class="toctree-l3"><a class="reference internal" href="operating-system/arch-software-installation-and-usage.html#id3">执行 pacman 命令过程中，遇到的信息/警告/错误</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="operating-system/arch-software-installation-and-usage.html#yay-del-donot-use-only-use-pacman-del">yay(<span class="raw-html-m2r"><del>donot use, only use pacman</del></span>)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="operating-system/arch-software-installation-and-usage.html#yay">安装 yay</a></li>
-<li class="toctree-l3"><a class="reference internal" href="operating-system/arch-software-installation-and-usage.html#id4">使用 yay</a></li>
-<li class="toctree-l3"><a class="reference internal" href="operating-system/arch-software-installation-and-usage.html#id5">yay 问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="operating-system/arch-software-installation-and-usage.html#yay">yay</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="operating-system/arch-software-installation-and-usage.html#id4">安装 yay</a></li>
+<li class="toctree-l3"><a class="reference internal" href="operating-system/arch-software-installation-and-usage.html#id5">使用 yay</a></li>
+<li class="toctree-l3"><a class="reference internal" href="operating-system/arch-software-installation-and-usage.html#id6">yay 问题</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="operating-system/arch-software-installation-and-usage.html#imager-rpi-imager">Imager(rpi-imager)</a></li>
@@ -385,6 +385,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="operating-system/arch-software-installation-and-usage.html#other-software">Other Software</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="operating-system/arch-software-installation-and-usage.html#maven">maven</a></li>
 <li class="toctree-l3"><a class="reference internal" href="operating-system/arch-software-installation-and-usage.html#dkms">dkms</a></li>
 <li class="toctree-l3"><a class="reference internal" href="operating-system/arch-software-installation-and-usage.html#sagemath">Sagemath</a></li>
 <li class="toctree-l3"><a class="reference internal" href="operating-system/arch-software-installation-and-usage.html#tomcat8">Tomcat8</a></li>
@@ -407,7 +408,7 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="operating-system/arch-software-installation-and-usage.html#arch-linux">让 Arch Linux 系统和最新的镜像同步，从最快的镜像下载</a></li>
 <li class="toctree-l2"><a class="reference internal" href="operating-system/arch-software-installation-and-usage.html#dns">使用国外 DNS 造成国内网站访问慢的解决方法</a></li>
-<li class="toctree-l2"><a class="reference internal" href="operating-system/arch-software-installation-and-usage.html#id6">备份</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="operating-system/arch-software-installation-and-usage.html#id7">备份</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="operating-system/arch-software-installation-and-usage.html#timeshift">timeshift</a></li>
 </ul>
 </li>
@@ -419,11 +420,12 @@
 <li class="toctree-l3"><a class="reference internal" href="operating-system/arch-software-installation-and-usage.html#unknown-download-protocol-https"><code class="docutils literal notranslate"><span class="pre">Unknown</span> <span class="pre">download</span> <span class="pre">protocol:</span> <span class="pre">https</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="operating-system/arch-software-installation-and-usage.html#hanyu-pinyin-with-altgr-dead-keys">中文语言不能选择 Hanyu Pinyin (with AltGr dead keys)，当我通过鼠标点击切换到它时，电脑卡了</a></li>
 <li class="toctree-l3"><a class="reference internal" href="operating-system/arch-software-installation-and-usage.html#cannot-find-fcitx-input-method-module-for-qt4">Cannot find fcitx input method module for Qt4.</a></li>
-<li class="toctree-l3"><a class="reference internal" href="operating-system/arch-software-installation-and-usage.html#id7">系统卡顿</a></li>
+<li class="toctree-l3"><a class="reference internal" href="operating-system/arch-software-installation-and-usage.html#id8">系统卡顿</a></li>
 <li class="toctree-l3"><a class="reference internal" href="operating-system/arch-software-installation-and-usage.html#rpi-imager-yay-s-rpi-imager-sudo-pacman-s-rpi-imager">rpi-imager 能够用 <code class="docutils literal notranslate"><span class="pre">yay</span> <span class="pre">-S</span> <span class="pre">rpi-imager</span></code> 下载，却不能用 <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">pacman</span> <span class="pre">-S</span> <span class="pre">rpi-imager</span></code> 下载</a></li>
 <li class="toctree-l3"><a class="reference internal" href="operating-system/arch-software-installation-and-usage.html#gparted-too-many-primary-partitions">gparted <code class="docutils literal notranslate"><span class="pre">Too</span> <span class="pre">many</span> <span class="pre">primary</span> <span class="pre">partitions</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="operating-system/arch-software-installation-and-usage.html#amdgpu-topaz-not-supported-in-kfd">amdgpu: TOPAZ  not supported in kfd</a></li>
 <li class="toctree-l3"><a class="reference internal" href="operating-system/arch-software-installation-and-usage.html#kde-s-plasma-eating-cpu">KDE’s plasma eating CPU</a></li>
+<li class="toctree-l3"><a class="reference internal" href="operating-system/arch-software-installation-and-usage.html#id9">网易云音乐突然退出</a></li>
 </ul>
 </li>
 </ul>
@@ -882,8 +884,16 @@
 <li class="toctree-l2"><a class="reference internal" href="tools/hugo.html#use-new-archetype-create-post-in-posts-folder">Use New Archetype Create Post In Posts Folder</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="tools/neovim.html">neovim</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="tools/neovim.html#id1">安装后我做了什么</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tools/vim.html">vim</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tools/vim.html#id1">学习 Vim</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tools/vim.html#id2">参考资料</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tools/vim.html#neovim">Neovim</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tools/vim.html#id3">安装后我做了什么</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tools/vim.html#rst">rst</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="tools/cloudflare.html">Cloudflare</a><ul>

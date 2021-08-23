@@ -131,10 +131,10 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#yay-del-donot-use-only-use-pacman-del">yay(<span class="raw-html-m2r"><del>donot use, only use pacman</del></span>)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#yay">安装 yay</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id4">使用 yay</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id5">yay 问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#yay">yay</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id4">安装 yay</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">使用 yay</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">yay 问题</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#imager-rpi-imager">Imager(rpi-imager)</a></li>
@@ -162,6 +162,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#other-software">Other Software</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#maven">maven</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#dkms">dkms</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#sagemath">Sagemath</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#tomcat8">Tomcat8</a></li>
@@ -184,7 +185,7 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#arch-linux">让 Arch Linux 系统和最新的镜像同步，从最快的镜像下载</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#dns">使用国外 DNS 造成国内网站访问慢的解决方法</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id6">备份</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id7">备份</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#timeshift">timeshift</a></li>
 </ul>
 </li>
@@ -196,11 +197,12 @@
 <li class="toctree-l3"><a class="reference internal" href="#unknown-download-protocol-https"><code class="docutils literal notranslate"><span class="pre">Unknown</span> <span class="pre">download</span> <span class="pre">protocol:</span> <span class="pre">https</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#hanyu-pinyin-with-altgr-dead-keys">中文语言不能选择 Hanyu Pinyin (with AltGr dead keys)，当我通过鼠标点击切换到它时，电脑卡了</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#cannot-find-fcitx-input-method-module-for-qt4">Cannot find fcitx input method module for Qt4.</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id7">系统卡顿</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id8">系统卡顿</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#rpi-imager-yay-s-rpi-imager-sudo-pacman-s-rpi-imager">rpi-imager 能够用 <code class="docutils literal notranslate"><span class="pre">yay</span> <span class="pre">-S</span> <span class="pre">rpi-imager</span></code> 下载，却不能用 <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">pacman</span> <span class="pre">-S</span> <span class="pre">rpi-imager</span></code> 下载</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#gparted-too-many-primary-partitions">gparted <code class="docutils literal notranslate"><span class="pre">Too</span> <span class="pre">many</span> <span class="pre">primary</span> <span class="pre">partitions</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#amdgpu-topaz-not-supported-in-kfd">amdgpu: TOPAZ  not supported in kfd</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#kde-s-plasma-eating-cpu">KDE’s plasma eating CPU</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id9">网易云音乐突然退出</a></li>
 </ul>
 </li>
 </ul>
@@ -245,7 +247,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../tools/gpg.html">GPG</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tools/jekyll.html">Jekyll</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tools/hugo.html">Hugo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tools/neovim.html">neovim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/vim.html">vim</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tools/cloudflare.html">Cloudflare</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tools/gatsby.html">Gatsby</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tools/sphinx.html">Sphinx</a></li>
@@ -554,66 +556,80 @@ Server = <a class="reference external" href="https://repo.archlinuxcn.org/$arch"
 <p>No, it is not possible. Major kernel updates (e.g. linux 3.5.0-1 to linux 3.6.0-1) are always accompanied by rebuilds of all supported kernel driver packages. On the other hand, if you have an unsupported driver package (e.g. from the AUR) installed on your system, then a kernel update might break things for you if you do not rebuild it for the new kernel. Users are responsible for updating any unsupported driver packages that they have installed.</p>
 <div class="section" id="id1">
 <h3>pacman 命令<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h3>
-<blockquote>
-<div><p>## Common
-pacman -Qe # List all explicitly installed packages
-pacman -Qet # list all packages explicitly installed and not required as dependencies
-pacman -Qent # List all explicitly installed native packages (i.e. present in the sync database) that are not direct or optional dependencies
-pacman -Qn # List all native packages (installed from the sync database(s))
-pacman -Qm # List all foreign packages (typically manually downloaded and installed or packages removed from the repositories)</p>
-<p>sudo pacman -Qtdq | sudo pacman -Rns - # recursively removing orphans and their configuration files</p>
-<p>sudo pacman -Qii | awk ‘/^MODIFIED/ {print $2}’ # print modified files under /etc</p>
-<p>pacman -Qs regex # List packages by regex</p>
-<p>pacman -Qg group_name # List installed packages under this group
-pacman -Sg group # List all packages in the package group named <cite>group</cite>, etc, base-devel, gnome</p>
-<p>pacman -Syu # Update package list and upgrade all packages afterwards
-pacman -Syu git # Update package list, upgrade all packages, and then install git if it wasn’t already installed</p>
-<p>pacman -S package_name1 package_name2 # Installing specific packages
-pacman -S $(pacman -Ssq package_regex) # Install a list of packages with regex
-pacman -S extra/package_name # Install specific repositories’ package
-pacman -S plasma-{desktop,mediacenter,nm}
-pacman -S plasma-{workspace{,-wallpapers},pa}</p>
-<p>pacman -S gnome # Install through group of packages
-Enter a selection (default=all): 1-10 15 # which will select packages 1 through 10 and 15 for installation
-Enter a selection (default=all): ^5-8 ^2 # which will select all packages except 5 through 8 and 2 for installation</p>
-<p>pacman -R package_name # remove a single package, leaving all of its dependencies installed
-pacman -Rs package_name # remove a single package and its dependencies which are not required by any other installed package</p>
-<p>pacman -Qtd # check for packages that were installed as a dependency but now, no other packages depend on them</p>
-<p>pacman -Ss string1 string2 … # search for packages in the database
-pacman -Qs string1 string2 … # search for already installed packages
-pacman -F string1 string2 … # search for package file names in remote packages
-pacman -Fy string1 string2 … # first flush local cache, then search for package file names in remote packages</p>
-<p>pacman -Si package_name # display extensive information about a given package
-pacman -Qi package_name # display extensive information about locally installed packages
-pacman -Qii package_name # also display the list of backup files and their modification states</p>
-<p>pacman -Ql package_name # retrieve a list of the files installed by a package
-pacman -Fl package_name # retrieve a list of the files installed by a remote package</p>
-<p>## Rarely use
-pacman -Qk package_name # verify the presence of the files installed by a package, Passing the k flag twice will perform a more thorough check
-pacman -Qo /path/to/file_name # query the database to know which package a file in the file system belongs to
-pacman -F /path/to/file_name # query the database to know which remote package a file belongs to</p>
-</div></blockquote>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="c1">## Common</span>
+pacman -Qe <span class="c1"># List all explicitly installed packages</span>
+pacman -Qet <span class="c1"># list all packages explicitly installed and not required as dependencies</span>
+pacman -Qent <span class="c1"># List all explicitly installed native packages (i.e. present in the sync database) that are not direct or optional dependencies</span>
+pacman -Qn <span class="c1"># List all native packages (installed from the sync database(s))</span>
+pacman -Qm <span class="c1"># List all foreign packages (typically manually downloaded and installed or packages removed from the repositories)</span>
+
+sudo pacman -Qtdq <span class="p">|</span> sudo pacman -Rns - <span class="c1"># recursively removing orphans and their configuration files</span>
+
+sudo pacman -Qii <span class="p">|</span> awk <span class="s1">&#39;/^MODIFIED/ {print $2}&#39;</span> <span class="c1"># print modified files under /etc</span>
+
+pacman -Qs regex <span class="c1"># List packages by regex</span>
+
+pacman -Qg group_name <span class="c1"># List installed packages under this group</span>
+pacman -Sg group <span class="c1"># List all packages in the package group named `group`, etc, base-devel, gnome</span>
+
+pacman -Syu <span class="c1"># Update package list and upgrade all packages afterwards</span>
+pacman -Syu git <span class="c1"># Update package list, upgrade all packages, and then install git if it wasn’t already installed</span>
+
+pacman -S package_name1 package_name2 <span class="c1"># Installing specific packages</span>
+pacman -S <span class="k">$(</span>pacman -Ssq package_regex<span class="k">)</span> <span class="c1"># Install a list of packages with regex</span>
+pacman -S extra/package_name <span class="c1"># Install specific repositories&#39; package</span>
+pacman -S plasma-<span class="o">{</span>desktop,mediacenter,nm<span class="o">}</span>
+pacman -S plasma-<span class="o">{</span>workspace<span class="o">{</span>,-wallpapers<span class="o">}</span>,pa<span class="o">}</span>
+
+pacman -S gnome <span class="c1"># Install through group of packages</span>
+Enter a selection <span class="o">(</span><span class="nv">default</span><span class="o">=</span>all<span class="o">)</span>: <span class="m">1</span>-10 <span class="m">15</span> <span class="c1"># which will select packages 1 through 10 and 15 for installation</span>
+Enter a selection <span class="o">(</span><span class="nv">default</span><span class="o">=</span>all<span class="o">)</span>: ^5-8 ^2 <span class="c1"># which will select all packages except 5 through 8 and 2 for installation</span>
+
+pacman -R package_name <span class="c1"># remove a single package, leaving all of its dependencies installed</span>
+pacman -Rs package_name <span class="c1"># remove a single package and its dependencies which are not required by any other installed package</span>
+
+pacman -Qtd <span class="c1"># check for packages that were installed as a dependency but now, no other packages depend on them</span>
+
+pacman -Ss string1 string2 ... <span class="c1"># search for packages in the database</span>
+pacman -Qs string1 string2 ... <span class="c1"># search for already installed packages</span>
+pacman -F string1 string2 ... <span class="c1"># search for package file names in remote packages</span>
+pacman -Fy string1 string2 ... <span class="c1"># first flush local cache, then search for package file names in remote packages</span>
+
+pacman -Si package_name <span class="c1"># display extensive information about a given package</span>
+pacman -Qi package_name <span class="c1"># display extensive information about locally installed packages</span>
+pacman -Qii package_name <span class="c1"># also display the list of backup files and their modification states</span>
+
+pacman -Ql package_name <span class="c1"># retrieve a list of the files installed by a package</span>
+pacman -Fl package_name <span class="c1"># retrieve a list of the files installed by a remote package</span>
+
+
+<span class="c1">## Rarely use</span>
+pacman -Qk package_name <span class="c1"># verify the presence of the files installed by a package, Passing the k flag twice will perform a more thorough check</span>
+pacman -Qo /path/to/file_name <span class="c1"># query the database to know which package a file in the file system belongs to</span>
+pacman -F /path/to/file_name <span class="c1"># query the database to know which remote package a file belongs to</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="id2">
 <h3>应该避免执行的 <code class="docutils literal notranslate"><span class="pre">pacman</span></code> 指令<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h3>
-<blockquote>
-<div><p>pacman -Syu # always run
-pacman -Sy # never run!!!
-pacman -Rdd package # never run!!!</p>
-</div></blockquote>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>pacman -Syu <span class="c1"># always run</span>
+pacman -Sy <span class="c1"># never run!!!</span>
+pacman -Rdd package <span class="c1"># never run!!!</span>
+</pre></div>
+</div>
 <p>When installing packages in Arch, avoid refreshing the package list without upgrading the system (for example, when a package is no longer found in the official repositories). In practice, do not run pacman -Sy package_name instead of pacman -Syu package_name, as this could lead to dependency issues.</p>
 </div>
 <div class="section" id="list-all-development-unstable-packages">
 <h3>list all development/unstable packages<a class="headerlink" href="#list-all-development-unstable-packages" title="永久链接至标题">¶</a></h3>
-<blockquote>
-<div><p>pacman -Qq | grep -Ee ‘-(bzr|cvs|darcs|git|hg|svn)$’</p>
-</div></blockquote>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>pacman -Qq <span class="p">|</span> grep -Ee <span class="s1">&#39;-(bzr|cvs|darcs|git|hg|svn)$&#39;</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="id3">
 <h3>执行 pacman 命令过程中，遇到的信息/警告/错误<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h3>
-<blockquote>
-<div><p>warning: dependency cycle detected # 循环依赖</p>
-</div></blockquote>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>warning: dependency cycle detected <span class="c1"># 循环依赖</span>
+</pre></div>
+</div>
 <div class="section" id="when-sudo-pacman-syu">
 <h4>When <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">pacman</span> <span class="pre">-Syu</span></code><a class="headerlink" href="#when-sudo-pacman-syu" title="永久链接至标题">¶</a></h4>
 <div class="section" id="warning-possibly-missing-firmware-for-module">
@@ -627,25 +643,26 @@ pacman -Rdd package # never run!!!</p>
 </div>
 <div class="section" id="gpg-key-786c63f330d7cb92-no-user-id-for-key-signature-packet-of-class-10">
 <h5>gpg: key 786C63F330D7CB92: no user ID for key signature packet of class 10<a class="headerlink" href="#gpg-key-786c63f330d7cb92-no-user-id-for-key-signature-packet-of-class-10" title="永久链接至标题">¶</a></h5>
-<blockquote>
-<div><p>gpg: key 786C63F330D7CB92: no user ID for key signature packet of class 10
-gpg: key 1EB2638FF56C0C53: no user ID for key signature packet of class 10
-gpg: next trustdb check due at 2021-10-09
--&gt; Disabled 3 keys.</p>
-<p>## try 1
-sudo pacman-key –refresh-keys
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>gpg: key 786C63F330D7CB92: no user ID <span class="k">for</span> key signature packet of class <span class="m">10</span>
+gpg: key 1EB2638FF56C0C53: no user ID <span class="k">for</span> key signature packet of class <span class="m">10</span>
+gpg: next trustdb check due at <span class="m">2021</span>-10-09
+-&gt; Disabled <span class="m">3</span> keys.
+
+<span class="c1">## try 1</span>
+sudo pacman-key --refresh-keys
 sudo pacman -S archlinux-keyring archlinuxcn-keyring
-## try 2
-sudo rm -R /etc/pacman.d/gnupg/ # No such file or directory
+<span class="c1">## try 2</span>
+sudo rm -R /etc/pacman.d/gnupg/ <span class="c1"># No such file or directory</span>
 sudo rm -rf /etc/pacman.d/gnupg/
 sudo rm -R /root/.gnupg/
 sudo rm -R /var/cache/pacman/pkg/
-sudo gpg –refresh-keys
-sudo pacman-key –init
-sudo pacman-key –populate archlinux # still display <cite>gpg: key xxx: no user ID for key signature packet of class 10</cite>
-sudo pacman-key –refresh-keys
-sudo pacman -Syyu</p>
-</div></blockquote>
+sudo gpg --refresh-keys
+sudo pacman-key --init
+sudo pacman-key --populate archlinux <span class="c1"># still display `gpg: key xxx: no user ID for key signature packet of class 10`</span>
+sudo pacman-key --refresh-keys
+sudo pacman -Syyu
+</pre></div>
+</div>
 <p>ref:</p>
 <ol class="arabic simple">
 <li><p><a class="reference external" href="https://github.com/yuk7/ArchWSL/issues/91#issuecomment-506806989">https://github.com/yuk7/ArchWSL/issues/91#issuecomment-506806989</a></p></li>
@@ -670,42 +687,42 @@ sudo pacman -Syyu</p>
 </div>
 </div>
 </div>
-<div class="section" id="yay-del-donot-use-only-use-pacman-del">
-<h2>yay(<span class="raw-html-m2r"><del>donot use, only use pacman</del></span>)<a class="headerlink" href="#yay-del-donot-use-only-use-pacman-del" title="永久链接至标题">¶</a></h2>
-<p>Yet Another Yogurt: A utility for Arch Linux to build and install packages from the Arch User Repository.</p>
 <div class="section" id="yay">
-<h3>安装 yay<a class="headerlink" href="#yay" title="永久链接至标题">¶</a></h3>
-<blockquote>
-<div><p>sudo pacman -S yay
-# pacman -S –needed git base-devel
-# git clone <a class="reference external" href="https://aur.archlinux.org/yay.git">https://aur.archlinux.org/yay.git</a>
-# cd yay
-# makepkg -si</p>
-</div></blockquote>
-</div>
+<h2>yay<a class="headerlink" href="#yay" title="永久链接至标题">¶</a></h2>
+<p>Yet Another Yogurt: A utility for Arch Linux to build and install packages from the Arch User Repository.</p>
 <div class="section" id="id4">
-<h3>使用 yay<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h3>
-<blockquote>
-<div><p># Interactively search and install packages from the repos and AUR:
-yay package_name|search_term
-# Synchronize and update all packages from the repos and AUR:
-yay
-#Synchronize and update only AUR packages:
-yay -Sua
-# Install a new package from the repos and AUR:
-yay -S package_name
-# Remove an installed package and both its dependencies and configuration files:
-yay -Rns package_name
-# Search the package database for a keyword from the repos and AUR:
-yay -Ss keyword
-# Remove orphaned packages (installed as dependencies but not required by any package):
-yay -Yc
-# Show statistics for installed packages and system health:
-yay -Ps</p>
-</div></blockquote>
+<h3>安装 yay<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h3>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo pacman -S yay
+<span class="c1"># pacman -S --needed git base-devel</span>
+<span class="c1"># git clone https://aur.archlinux.org/yay.git</span>
+<span class="c1"># cd yay</span>
+<span class="c1"># makepkg -si</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="id5">
-<h3>yay 问题<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h3>
+<h3>使用 yay<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h3>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="c1"># Interactively search and install packages from the repos and AUR:</span>
+yay package_name<span class="p">|</span>search_term
+<span class="c1"># Synchronize and update all packages from the repos and AUR:</span>
+yay
+<span class="c1">#Synchronize and update only AUR packages:</span>
+yay -Sua
+<span class="c1"># Install a new package from the repos and AUR:</span>
+yay -S package_name
+<span class="c1"># Remove an installed package and both its dependencies and configuration files:</span>
+yay -Rns package_name
+<span class="c1"># Search the package database for a keyword from the repos and AUR:</span>
+yay -Ss keyword
+<span class="c1"># Remove orphaned packages (installed as dependencies but not required by any package):</span>
+yay -Yc
+<span class="c1"># Show statistics for installed packages and system health:</span>
+yay -Ps
+</pre></div>
+</div>
+</div>
+<div class="section" id="id6">
+<h3>yay 问题<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h3>
 <ol class="arabic simple">
 <li><p>安装时总是出现 <code class="docutils literal notranslate"><span class="pre">==&gt;</span> <span class="pre">WARNING:</span> <span class="pre">Using</span> <span class="pre">existing</span> <span class="pre">$srcdir/</span> <span class="pre">tree</span></code>，这个可以忽视，只是说明安装过程。</p></li>
 <li><p>timeout 问题 <a class="reference external" href="https://github.com/Jguer/yay/issues/1278#issuecomment-635833427">https://github.com/Jguer/yay/issues/1278#issuecomment-635833427</a></p></li>
@@ -720,9 +737,9 @@ yay -Ps</p>
 </div>
 <div class="section" id="imager-rpi-imager">
 <h2>Imager(rpi-imager)<a class="headerlink" href="#imager-rpi-imager" title="永久链接至标题">¶</a></h2>
-<blockquote>
-<div><p>yay -S rpi-imager</p>
-</div></blockquote>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>yay -S rpi-imager
+</pre></div>
+</div>
 <p>对于支持 UEFI 启动的设备，直接复制 iso 镜像中的所有文件到安装介质（如 U 盘）中即可启动。</p>
 </div>
 <div class="section" id="kde">
@@ -732,144 +749,148 @@ yay -Ps</p>
 <p>文档读到 <a class="reference external" href="https://docs.kde.org/stable5/en/konsole/konsole/console-dialogs.html">https://docs.kde.org/stable5/en/konsole/konsole/console-dialogs.html</a></p>
 <p>ref: <a class="reference external" href="https://forum.kde.org/viewtopic.php?f=21&amp;t=78963#p380065">https://forum.kde.org/viewtopic.php?f=21&amp;t=78963#p380065</a></p>
 <p>profile configuration file <code class="docutils literal notranslate"><span class="pre">~/.local/share/konsole/archie.profile</span></code>:</p>
-<blockquote>
-<div><p>[Appearance]
-AntiAliasFonts=true
-BoldIntense=true
-ColorScheme=custom
-Font=Monaco,11,-1,5,50,0,0,0,0,0
-UseFontLineChararacters=false</p>
-<p>[General]
-Name=archie
-Parent=FALLBACK/
-TerminalColumns=210</p>
-</div></blockquote>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">Appearance</span><span class="p">]</span>
+<span class="n">AntiAliasFonts</span><span class="o">=</span><span class="n">true</span>
+<span class="n">BoldIntense</span><span class="o">=</span><span class="n">true</span>
+<span class="n">ColorScheme</span><span class="o">=</span><span class="n">custom</span>
+<span class="n">Font</span><span class="o">=</span><span class="n">Monaco</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span>
+<span class="n">UseFontLineChararacters</span><span class="o">=</span><span class="n">false</span>
+
+<span class="p">[</span><span class="n">General</span><span class="p">]</span>
+<span class="n">Name</span><span class="o">=</span><span class="n">archie</span>
+<span class="n">Parent</span><span class="o">=</span><span class="n">FALLBACK</span><span class="o">/</span>
+<span class="n">TerminalColumns</span><span class="o">=</span><span class="mi">210</span>
+</pre></div>
+</div>
 <p>Highlight style: <code class="docutils literal notranslate"><span class="pre">~/.local/share/konsole/custom.colorscheme</span></code>:</p>
-<div class="highlight-scheme notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="nv">Background</span><span class="p">]</span>
-<span class="nv">Color=0,0,0</span>
-<span class="nv">RandomHueRange=360</span>
-<span class="nv">RandomSaturationRange=100</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">Background</span><span class="p">]</span>
+<span class="n">Color</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span>
+<span class="n">RandomHueRange</span><span class="o">=</span><span class="mi">360</span>
+<span class="n">RandomSaturationRange</span><span class="o">=</span><span class="mi">100</span>
 
-<span class="p">[</span><span class="nv">BackgroundFaint</span><span class="p">]</span>
-<span class="nv">Color=0,0,0</span>
-<span class="nv">RandomHueRange=360</span>
-<span class="nv">RandomSaturationRange=100</span>
+<span class="p">[</span><span class="n">BackgroundFaint</span><span class="p">]</span>
+<span class="n">Color</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span>
+<span class="n">RandomHueRange</span><span class="o">=</span><span class="mi">360</span>
+<span class="n">RandomSaturationRange</span><span class="o">=</span><span class="mi">100</span>
 
-<span class="p">[</span><span class="nv">BackgroundIntense</span><span class="p">]</span>
-<span class="nv">Color=0,0,0</span>
-<span class="nv">RandomHueRange=360</span>
-<span class="nv">RandomSaturationRange=100</span>
+<span class="p">[</span><span class="n">BackgroundIntense</span><span class="p">]</span>
+<span class="n">Color</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span>
+<span class="n">RandomHueRange</span><span class="o">=</span><span class="mi">360</span>
+<span class="n">RandomSaturationRange</span><span class="o">=</span><span class="mi">100</span>
 
-<span class="p">[</span><span class="nv">Color0</span><span class="p">]</span>
-<span class="nv">Color=0,0,0</span>
+<span class="p">[</span><span class="n">Color0</span><span class="p">]</span>
+<span class="n">Color</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span>
 
-<span class="p">[</span><span class="nv">Color0Faint</span><span class="p">]</span>
-<span class="nv">Color=24,24,24</span>
+<span class="p">[</span><span class="n">Color0Faint</span><span class="p">]</span>
+<span class="n">Color</span><span class="o">=</span><span class="mi">24</span><span class="p">,</span><span class="mi">24</span><span class="p">,</span><span class="mi">24</span>
 
-<span class="p">[</span><span class="nv">Color0Intense</span><span class="p">]</span>
-<span class="nv">Color=104,104,104</span>
+<span class="p">[</span><span class="n">Color0Intense</span><span class="p">]</span>
+<span class="n">Color</span><span class="o">=</span><span class="mi">104</span><span class="p">,</span><span class="mi">104</span><span class="p">,</span><span class="mi">104</span>
 
-<span class="p">[</span><span class="nv">Color1</span><span class="p">]</span>
-<span class="nv">Color=250,75,75</span>
+<span class="p">[</span><span class="n">Color1</span><span class="p">]</span>
+<span class="n">Color</span><span class="o">=</span><span class="mi">250</span><span class="p">,</span><span class="mi">75</span><span class="p">,</span><span class="mi">75</span>
 
-<span class="p">[</span><span class="nv">Color1Faint</span><span class="p">]</span>
-<span class="nv">Color=101,25,25</span>
+<span class="p">[</span><span class="n">Color1Faint</span><span class="p">]</span>
+<span class="n">Color</span><span class="o">=</span><span class="mi">101</span><span class="p">,</span><span class="mi">25</span><span class="p">,</span><span class="mi">25</span>
 
-<span class="p">[</span><span class="nv">Color1Intense</span><span class="p">]</span>
-<span class="nv">Color=255,84,84</span>
+<span class="p">[</span><span class="n">Color1Intense</span><span class="p">]</span>
+<span class="n">Color</span><span class="o">=</span><span class="mi">255</span><span class="p">,</span><span class="mi">84</span><span class="p">,</span><span class="mi">84</span>
 
-<span class="p">[</span><span class="nv">Color2</span><span class="p">]</span>
-<span class="nv">Color=24,178,24</span>
+<span class="p">[</span><span class="n">Color2</span><span class="p">]</span>
+<span class="n">Color</span><span class="o">=</span><span class="mi">24</span><span class="p">,</span><span class="mi">178</span><span class="p">,</span><span class="mi">24</span>
 
-<span class="p">[</span><span class="nv">Color2Faint</span><span class="p">]</span>
-<span class="nv">Color=0,101,0</span>
+<span class="p">[</span><span class="n">Color2Faint</span><span class="p">]</span>
+<span class="n">Color</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="mi">101</span><span class="p">,</span><span class="mi">0</span>
 
-<span class="p">[</span><span class="nv">Color2Intense</span><span class="p">]</span>
-<span class="nv">Color=84,255,84</span>
+<span class="p">[</span><span class="n">Color2Intense</span><span class="p">]</span>
+<span class="n">Color</span><span class="o">=</span><span class="mi">84</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">84</span>
 
-<span class="p">[</span><span class="nv">Color3</span><span class="p">]</span>
-<span class="nv">Color=178,104,24</span>
+<span class="p">[</span><span class="n">Color3</span><span class="p">]</span>
+<span class="n">Color</span><span class="o">=</span><span class="mi">178</span><span class="p">,</span><span class="mi">104</span><span class="p">,</span><span class="mi">24</span>
 
-<span class="p">[</span><span class="nv">Color3Faint</span><span class="p">]</span>
-<span class="nv">Color=101,74,0</span>
+<span class="p">[</span><span class="n">Color3Faint</span><span class="p">]</span>
+<span class="n">Color</span><span class="o">=</span><span class="mi">101</span><span class="p">,</span><span class="mi">74</span><span class="p">,</span><span class="mi">0</span>
 
-<span class="p">[</span><span class="nv">Color3Intense</span><span class="p">]</span>
-<span class="nv">Color=255,255,84</span>
+<span class="p">[</span><span class="n">Color3Intense</span><span class="p">]</span>
+<span class="n">Color</span><span class="o">=</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">84</span>
 
-<span class="p">[</span><span class="nv">Color4</span><span class="p">]</span>
-<span class="nv">Color=24,24,178</span>
+<span class="p">[</span><span class="n">Color4</span><span class="p">]</span>
+<span class="n">Color</span><span class="o">=</span><span class="mi">24</span><span class="p">,</span><span class="mi">24</span><span class="p">,</span><span class="mi">178</span>
 
-<span class="p">[</span><span class="nv">Color4Faint</span><span class="p">]</span>
-<span class="nv">Color=0,0,101</span>
+<span class="p">[</span><span class="n">Color4Faint</span><span class="p">]</span>
+<span class="n">Color</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">101</span>
 
-<span class="p">[</span><span class="nv">Color4Intense</span><span class="p">]</span>
-<span class="nv">Color=84,84,255</span>
+<span class="p">[</span><span class="n">Color4Intense</span><span class="p">]</span>
+<span class="n">Color</span><span class="o">=</span><span class="mi">84</span><span class="p">,</span><span class="mi">84</span><span class="p">,</span><span class="mi">255</span>
 
-<span class="p">[</span><span class="nv">Color5</span><span class="p">]</span>
-<span class="nv">Color=225,30,225</span>
+<span class="p">[</span><span class="n">Color5</span><span class="p">]</span>
+<span class="n">Color</span><span class="o">=</span><span class="mi">225</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">225</span>
 
-<span class="p">[</span><span class="nv">Color5Faint</span><span class="p">]</span>
-<span class="nv">Color=95,5,95</span>
+<span class="p">[</span><span class="n">Color5Faint</span><span class="p">]</span>
+<span class="n">Color</span><span class="o">=</span><span class="mi">95</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">95</span>
 
-<span class="p">[</span><span class="nv">Color5Intense</span><span class="p">]</span>
-<span class="nv">Color=255,84,255</span>
+<span class="p">[</span><span class="n">Color5Intense</span><span class="p">]</span>
+<span class="n">Color</span><span class="o">=</span><span class="mi">255</span><span class="p">,</span><span class="mi">84</span><span class="p">,</span><span class="mi">255</span>
 
-<span class="p">[</span><span class="nv">Color6</span><span class="p">]</span>
-<span class="nv">Color=24,178,178</span>
+<span class="p">[</span><span class="n">Color6</span><span class="p">]</span>
+<span class="n">Color</span><span class="o">=</span><span class="mi">24</span><span class="p">,</span><span class="mi">178</span><span class="p">,</span><span class="mi">178</span>
 
-<span class="p">[</span><span class="nv">Color6Faint</span><span class="p">]</span>
-<span class="nv">Color=0,101,101</span>
+<span class="p">[</span><span class="n">Color6Faint</span><span class="p">]</span>
+<span class="n">Color</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="mi">101</span><span class="p">,</span><span class="mi">101</span>
 
-<span class="p">[</span><span class="nv">Color6Intense</span><span class="p">]</span>
-<span class="nv">Color=84,255,255</span>
+<span class="p">[</span><span class="n">Color6Intense</span><span class="p">]</span>
+<span class="n">Color</span><span class="o">=</span><span class="mi">84</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span>
 
-<span class="p">[</span><span class="nv">Color7</span><span class="p">]</span>
-<span class="nv">Color=178,178,178</span>
+<span class="p">[</span><span class="n">Color7</span><span class="p">]</span>
+<span class="n">Color</span><span class="o">=</span><span class="mi">178</span><span class="p">,</span><span class="mi">178</span><span class="p">,</span><span class="mi">178</span>
 
-<span class="p">[</span><span class="nv">Color7Faint</span><span class="p">]</span>
-<span class="nv">Color=101,101,101</span>
+<span class="p">[</span><span class="n">Color7Faint</span><span class="p">]</span>
+<span class="n">Color</span><span class="o">=</span><span class="mi">101</span><span class="p">,</span><span class="mi">101</span><span class="p">,</span><span class="mi">101</span>
 
-<span class="p">[</span><span class="nv">Color7Intense</span><span class="p">]</span>
-<span class="nv">Color=255,255,255</span>
+<span class="p">[</span><span class="n">Color7Intense</span><span class="p">]</span>
+<span class="n">Color</span><span class="o">=</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span>
 
-<span class="p">[</span><span class="nv">Foreground</span><span class="p">]</span>
-<span class="nv">Color=24,240,24</span>
-<span class="nv">RandomHueRange=360</span>
-<span class="nv">RandomSaturationRange=100</span>
+<span class="p">[</span><span class="n">Foreground</span><span class="p">]</span>
+<span class="n">Color</span><span class="o">=</span><span class="mi">24</span><span class="p">,</span><span class="mi">240</span><span class="p">,</span><span class="mi">24</span>
+<span class="n">RandomHueRange</span><span class="o">=</span><span class="mi">360</span>
+<span class="n">RandomSaturationRange</span><span class="o">=</span><span class="mi">100</span>
 
-<span class="p">[</span><span class="nv">ForegroundFaint</span><span class="p">]</span>
-<span class="nv">Color=18,200,18</span>
-<span class="nv">RandomHueRange=360</span>
-<span class="nv">RandomSaturationRange=100</span>
+<span class="p">[</span><span class="n">ForegroundFaint</span><span class="p">]</span>
+<span class="n">Color</span><span class="o">=</span><span class="mi">18</span><span class="p">,</span><span class="mi">200</span><span class="p">,</span><span class="mi">18</span>
+<span class="n">RandomHueRange</span><span class="o">=</span><span class="mi">360</span>
+<span class="n">RandomSaturationRange</span><span class="o">=</span><span class="mi">100</span>
 
-<span class="p">[</span><span class="nv">ForegroundIntense</span><span class="p">]</span>
-<span class="nv">Color=24,240,24</span>
-<span class="nv">RandomHueRange=360</span>
-<span class="nv">RandomSaturationRange=100</span>
+<span class="p">[</span><span class="n">ForegroundIntense</span><span class="p">]</span>
+<span class="n">Color</span><span class="o">=</span><span class="mi">24</span><span class="p">,</span><span class="mi">240</span><span class="p">,</span><span class="mi">24</span>
+<span class="n">RandomHueRange</span><span class="o">=</span><span class="mi">360</span>
+<span class="n">RandomSaturationRange</span><span class="o">=</span><span class="mi">100</span>
 
-<span class="p">[</span><span class="nv">General</span><span class="p">]</span>
-<span class="nv">Blur=true</span>
-<span class="nv">ColorRandomization=true</span>
-<span class="nv">Description=custom</span>
-<span class="nv">Opacity=1</span>
-<span class="nv">Wallpaper=/home/archie/Pictures/adrien-olichon-RCAhiGJsUUE-unsplash</span><span class="o">.</span><span class="nv">jpg</span>
+<span class="p">[</span><span class="n">General</span><span class="p">]</span>
+<span class="n">Blur</span><span class="o">=</span><span class="n">true</span>
+<span class="n">ColorRandomization</span><span class="o">=</span><span class="n">true</span>
+<span class="n">Description</span><span class="o">=</span><span class="n">custom</span>
+<span class="n">Opacity</span><span class="o">=</span><span class="mi">1</span>
+<span class="n">Wallpaper</span><span class="o">=/</span><span class="n">home</span><span class="o">/</span><span class="n">archie</span><span class="o">/</span><span class="n">Pictures</span><span class="o">/</span><span class="n">adrien</span><span class="o">-</span><span class="n">olichon</span><span class="o">-</span><span class="n">RCAhiGJsUUE</span><span class="o">-</span><span class="n">unsplash</span><span class="o">.</span><span class="n">jpg</span>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">~/.config/konsolerc</span></code>:</p>
-<blockquote>
-<div><p>MenuBar=Disabled
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>MenuBar=Disabled
 State=AAAA/wAAAAD9AAAAAAAAB4AAAAO1AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAHABzAGUAcwBzAGkAbwBuAFQAbwBvAGwAYgBhAHIBAAAFlf////8AAAAAAAAAAA==
 StatusBar=Disabled
-eDP1 Window-Maximized 1920x1080=true</p>
-<p>[Desktop Entry]
-DefaultProfile=archie.profile</p>
-<p>[KFileDialog Settings]
+eDP1 Window-Maximized 1920x1080=true
+
+[Desktop Entry]
+DefaultProfile=archie.profile
+
+[KFileDialog Settings]
 Recent Files[$e]=adrien-olichon-RCAhiGJsUUE-unsplash.jpg,file:$HOME/Pictures/adrien-olichon-RCAhiGJsUUE-unsplash.jpg
 Recent URLs[$e]=file:$HOME/Pictures/
-detailViewIconSize=16</p>
-<p>[KonsoleWindow]
-ShowMenuBarByDefault=false</p>
-<p>[MainWindow]
+detailViewIconSize=16
+
+[KonsoleWindow]
+ShowMenuBarByDefault=false
+
+[MainWindow]
 RestorePositionForNextInstance=false
 State=AAAA/wAAAAD9AAAAAAAAB4AAAAOWAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAHABzAGUAcwBzAGkAbwBuAFQAbwBvAGwAYgBhAHIBAAAFcf////8AAAAAAAAAAA==
 StatusBar=Disabled
@@ -878,12 +899,15 @@ eDP1 Height 1920x1080=1080
 eDP1 Width 1920x1080=1920
 eDP1 Window-Maximized 1920x1080=true
 eDP1 XPosition 1920x1080=0
-eDP1 YPosition 1920x1080=85</p>
-<p>[MainWindow][Toolbar mainToolBar]
-IconSize=16</p>
-<p>[Notification Messages]
-CloseAllEmptyTabs=true</p>
-</div></blockquote>
+eDP1 YPosition 1920x1080=85
+
+[MainWindow][Toolbar mainToolBar]
+IconSize=16
+
+[Notification Messages]
+CloseAllEmptyTabs=true
+</pre></div>
+</div>
 <div class="section" id="konsole-keyboard-shortcut">
 <h4>konsole keyboard shortcut<a class="headerlink" href="#konsole-keyboard-shortcut" title="永久链接至标题">¶</a></h4>
 <ul class="simple">
@@ -904,9 +928,9 @@ CloseAllEmptyTabs=true</p>
 </div>
 <div class="section" id="kde-connect">
 <h3>kde Connect<a class="headerlink" href="#kde-connect" title="永久链接至标题">¶</a></h3>
-<blockquote>
-<div><p>sudo pacman -S kdeconnect</p>
-</div></blockquote>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo pacman -S kdeconnect
+</pre></div>
+</div>
 </div>
 <div class="section" id="seahorse-kde-wallet">
 <h3>seahorse + kde wallet<a class="headerlink" href="#seahorse-kde-wallet" title="永久链接至标题">¶</a></h3>
@@ -1259,9 +1283,45 @@ make install</p>
 </li>
 </ul>
 </li>
+<li><ul>
+<li><p>Maven</p></li>
+<li><p>Java project management and project comprehension tool</p></li>
+<li><ul>
+<li></li>
 </ul>
-<p>sudo pacman -S google-chrome visual-studio-code-bin netease-cloud-music flameshot proxychains-ng redshift vlc telegram-desktop gthumb libreoffice-fresh inkscape youtube-dl glances keepass hugo foliate anki informant dnsutils dnsmasq tldr virtualbox virtualbox-host-modules-arch virtualbox-ext-oracle virtualbox earlyoom gtk2 gtk3 gtk4 lsb-release exa qemu python-sphinx filezilla intellij-idea-community-edition mysql tomcat8 sagemath dkms</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>sudo pacman -S google-chrome visual-studio-code-bin netease-cloud-music flameshot proxychains-ng redshift vlc telegram-desktop gthumb libreoffice-fresh inkscape youtube-dl glances keepass hugo foliate anki informant dnsutils dnsmasq tldr virtualbox virtualbox-host-modules-arch virtualbox-ext-oracle virtualbox earlyoom gtk2 gtk3 gtk4 lsb-release exa qemu python-sphinx filezilla intellij-idea-community-edition mysql tomcat8 sagemath dkms maven</p>
 </div></blockquote>
+<div class="section" id="maven">
+<h3>maven<a class="headerlink" href="#maven" title="永久链接至标题">¶</a></h3>
+<p>mvn</p>
+<blockquote>
+<div><p>Apache Maven.
+Tool for building and managing Java-based projects.
+More information: <a class="reference external" href="https://maven.apache.org">https://maven.apache.org</a>.</p>
+<ul class="simple">
+<li><p>Compile a project:
+mvn compile</p></li>
+<li><p>Compile and package the compiled code in its distributable format, such as a <cite>jar</cite>:
+mvn package</p></li>
+<li><p>Compile and package, skipping unit tests:
+mvn package -Dmaven.test.skip=true</p></li>
+<li><p>Install the built package in local maven repository. (This will invoke the compile and package commands too):
+mvn install</p></li>
+<li><p>Delete build artifacts from the target directory:
+mvn clean</p></li>
+<li><p>Do a clean and then invoke the package phase:
+mvn clean package</p></li>
+<li><p>Clean and then package the code with a given build profile:
+mvn clean -Pprofile package</p></li>
+<li><p>Run a class with a main method:
+mvn exec:java -Dexec.mainClass=”com.example.Main” -Dexec.args=”arg1 arg2”</p></li>
+</ul>
+</div></blockquote>
+</div>
 <div class="section" id="dkms">
 <h3>dkms<a class="headerlink" href="#dkms" title="永久链接至标题">¶</a></h3>
 <p>To solve <code class="docutils literal notranslate"><span class="pre">Realtek</span> <span class="pre">RTL8821CE</span> <span class="pre">Driver</span></code> problem</p>
@@ -1319,6 +1379,18 @@ Creating user mysql (MySQL) with uid 89 and gid 89.
 (3/4) Creating temporary files…
 (4/4) Arming ConditionNeedsUpdate…</p>
 </div></blockquote>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span>mysqld --initialize --user<span class="o">=</span>mysql --basedir<span class="o">=</span>/usr --datadir<span class="o">=</span>/var/lib/mysql
+</pre></div>
+</div>
+<p>Output:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mysqld</span><span class="p">:</span> <span class="n">Can</span><span class="s1">&#39;t create directory &#39;</span><span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">mysql</span><span class="o">/</span><span class="s1">&#39; (OS errno 17 - File exists)</span>
+<span class="mi">2021</span><span class="o">-</span><span class="mi">08</span><span class="o">-</span><span class="mi">23</span><span class="n">T03</span><span class="p">:</span><span class="mi">01</span><span class="p">:</span><span class="mf">13.567666</span><span class="n">Z</span> <span class="mi">0</span> <span class="p">[</span><span class="ne">Warning</span><span class="p">]</span> <span class="p">[</span><span class="n">MY</span><span class="o">-</span><span class="mi">010915</span><span class="p">]</span> <span class="p">[</span><span class="n">Server</span><span class="p">]</span> <span class="s1">&#39;NO_ZERO_DATE&#39;</span><span class="p">,</span> <span class="s1">&#39;NO_ZERO_IN_DATE&#39;</span> <span class="ow">and</span> <span class="s1">&#39;ERROR_FOR_DIVISION_BY_ZERO&#39;</span> <span class="n">sql</span> <span class="n">modes</span> <span class="n">should</span> <span class="n">be</span> <span class="n">used</span> <span class="k">with</span> <span class="n">strict</span> <span class="n">mode</span><span class="o">.</span> <span class="n">They</span> <span class="n">will</span> <span class="n">be</span> <span class="n">merged</span> <span class="k">with</span> <span class="n">strict</span> <span class="n">mode</span> <span class="ow">in</span> <span class="n">a</span> <span class="n">future</span> <span class="n">release</span><span class="o">.</span>
+<span class="mi">2021</span><span class="o">-</span><span class="mi">08</span><span class="o">-</span><span class="mi">23</span><span class="n">T03</span><span class="p">:</span><span class="mi">01</span><span class="p">:</span><span class="mf">13.568521</span><span class="n">Z</span> <span class="mi">0</span> <span class="p">[</span><span class="n">System</span><span class="p">]</span> <span class="p">[</span><span class="n">MY</span><span class="o">-</span><span class="mi">013169</span><span class="p">]</span> <span class="p">[</span><span class="n">Server</span><span class="p">]</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">mysqld</span> <span class="p">(</span><span class="n">mysqld</span> <span class="mf">8.0.24</span><span class="p">)</span> <span class="n">initializing</span> <span class="n">of</span> <span class="n">server</span> <span class="ow">in</span> <span class="n">progress</span> <span class="k">as</span> <span class="n">process</span> <span class="mi">64858</span>
+<span class="mi">2021</span><span class="o">-</span><span class="mi">08</span><span class="o">-</span><span class="mi">23</span><span class="n">T03</span><span class="p">:</span><span class="mi">01</span><span class="p">:</span><span class="mf">13.579931</span><span class="n">Z</span> <span class="mi">0</span> <span class="p">[</span><span class="n">ERROR</span><span class="p">]</span> <span class="p">[</span><span class="n">MY</span><span class="o">-</span><span class="mi">013236</span><span class="p">]</span> <span class="p">[</span><span class="n">Server</span><span class="p">]</span> <span class="n">The</span> <span class="n">designated</span> <span class="n">data</span> <span class="n">directory</span> <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">mysql</span><span class="o">/</span> <span class="ow">is</span> <span class="n">unusable</span><span class="o">.</span> <span class="n">You</span> <span class="n">can</span> <span class="n">remove</span> <span class="nb">all</span> <span class="n">files</span> <span class="n">that</span> <span class="n">the</span> <span class="n">server</span> <span class="n">added</span> <span class="n">to</span> <span class="n">it</span><span class="o">.</span>
+<span class="mi">2021</span><span class="o">-</span><span class="mi">08</span><span class="o">-</span><span class="mi">23</span><span class="n">T03</span><span class="p">:</span><span class="mi">01</span><span class="p">:</span><span class="mf">13.580098</span><span class="n">Z</span> <span class="mi">0</span> <span class="p">[</span><span class="n">ERROR</span><span class="p">]</span> <span class="p">[</span><span class="n">MY</span><span class="o">-</span><span class="mi">010119</span><span class="p">]</span> <span class="p">[</span><span class="n">Server</span><span class="p">]</span> <span class="n">Aborting</span>
+<span class="mi">2021</span><span class="o">-</span><span class="mi">08</span><span class="o">-</span><span class="mi">23</span><span class="n">T03</span><span class="p">:</span><span class="mi">01</span><span class="p">:</span><span class="mf">13.583005</span><span class="n">Z</span> <span class="mi">0</span> <span class="p">[</span><span class="n">System</span><span class="p">]</span> <span class="p">[</span><span class="n">MY</span><span class="o">-</span><span class="mi">010910</span><span class="p">]</span> <span class="p">[</span><span class="n">Server</span><span class="p">]</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">mysqld</span><span class="p">:</span> <span class="n">Shutdown</span> <span class="n">complete</span> <span class="p">(</span><span class="n">mysqld</span> <span class="mf">8.0.24</span><span class="p">)</span>  <span class="n">Source</span> <span class="n">distribution</span><span class="o">.</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="idea">
 <h3>IDEA<a class="headerlink" href="#idea" title="永久链接至标题">¶</a></h3>
@@ -1565,8 +1637,8 @@ Active: inactive (dead)</p>
 <li><p><a class="reference external" href="https://web.archive.org/web/20191101231638/http://felixc.at:80/Dnsmasq">https://web.archive.org/web/20191101231638/http://felixc.at:80/Dnsmasq</a></p></li>
 </ol>
 </div>
-<div class="section" id="id6">
-<h2>备份<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id7">
+<h2>备份<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h2>
 <ul>
 <li><p><a class="reference external" href="https://blog.lilydjwg.me/2013/12/29/rsync-btrfs-dm-crypt-full-backup.42219.html">https://blog.lilydjwg.me/2013/12/29/rsync-btrfs-dm-crypt-full-backup.42219.html</a></p></li>
 <li><p><a class="reference external" href="https://github.com/teejee2008/timeshift">https://github.com/teejee2008/timeshift</a></p>
@@ -1626,8 +1698,8 @@ sudo pacman -S pulseaudio-bluetooth</p>
 <div class="section" id="cannot-find-fcitx-input-method-module-for-qt4">
 <h3>Cannot find fcitx input method module for Qt4.<a class="headerlink" href="#cannot-find-fcitx-input-method-module-for-qt4" title="永久链接至标题">¶</a></h3>
 </div>
-<div class="section" id="id7">
-<h3>系统卡顿<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h3>
+<div class="section" id="id8">
+<h3>系统卡顿<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h3>
 <p>2次进入 tplogin.cn 均卡顿，似乎与进入网址无关</p>
 <p>本来使用有线接入网络，树莓派需要用到有线，限于网线只有一根。于是，电脑连接无线网络。</p>
 <p>进入路由器管理页面，点击〔设备管理〕/〔应用管理〕页面后，出现卡顿现象。具体表现：键盘鼠标失灵</p>
@@ -1668,55 +1740,58 @@ pacman -U linux-5.13.9.arch1-1-x86_64.pkg.tar.zst
 <div class="section" id="amdgpu-topaz-not-supported-in-kfd">
 <h3>amdgpu: TOPAZ  not supported in kfd<a class="headerlink" href="#amdgpu-topaz-not-supported-in-kfd" title="永久链接至标题">¶</a></h3>
 <p>More error log:</p>
-<blockquote>
-<div><p>➜  ~ sudo dmesg | grep amdgpu
-[    3.647423] [drm] amdgpu kernel modesetting enabled.
-[    3.647749] amdgpu: CRAT table not found
-[    3.647751] amdgpu: Virtual CRAT table created for CPU
-[    3.647760] amdgpu: Topology: Add CPU node
-[    4.446589] amdgpu 0000:01:00.0: enabling device (0000 -&gt; 0003)
-[    4.446708] amdgpu 0000:01:00.0: amdgpu: Trusted Memory Zone (TMZ) feature not supported
-[    4.446906] kfd kfd: amdgpu: TOPAZ  not supported in kfd
-[    4.473165] amdgpu 0000:01:00.0: amdgpu: Fetched VBIOS from ATRM
-[    4.473170] amdgpu: ATOM BIOS: BR34366.001
-[    4.480027] amdgpu 0000:01:00.0: amdgpu: VRAM: 2048M 0x000000F400000000 - 0x000000F47FFFFFFF (2048M used)
-[    4.480031] amdgpu 0000:01:00.0: amdgpu: GART: 256M 0x000000FF00000000 - 0x000000FF0FFFFFFF
-[    4.480074] [drm] amdgpu: 2048M of VRAM memory ready
-[    4.480077] [drm] amdgpu: 3072M of GTT memory ready.
-[    4.487650] amdgpu: hwmgr_sw_init smu backed is iceland_smu
-[    4.504069] amdgpu: can’t get the mac of 5
-[    4.509005] amdgpu 0000:01:00.0: amdgpu: SE 1, SH per SE 1, CU per SH 6, active_cu_number 5
-[    4.512216] amdgpu 0000:01:00.0: amdgpu: Using BOCO for runtime pm
-[    4.512580] [drm] Initialized amdgpu 3.41.0 20150101 for 0000:01:00.0 on minor 1
-[   11.011196] amdgpu: VI should always have 2 performance levels
-[   63.292478] amdgpu: can’t get the mac of 5
-[   69.617338] amdgpu: VI should always have 2 performance levels
-[   91.291963] amdgpu: can’t get the mac of 5
-[   97.654465] amdgpu: VI should always have 2 performance levels
-[  231.210550] amdgpu: can’t get the mac of 5
-[  237.586419] amdgpu: VI should always have 2 performance levels
-[  442.652120] amdgpu: can’t get the mac of 5
-[  448.914182] amdgpu: VI should always have 2 performance levels
-[  537.714801] amdgpu: can’t get the mac of 5
-[  543.975875] amdgpu: VI should always have 2 performance levels
-[ 1423.430405] amdgpu: can’t get the mac of 5
-[ 1429.649499] amdgpu: VI should always have 2 performance levels
-[ 2080.668493] amdgpu: can’t get the mac of 5
-[ 2086.918590] amdgpu: VI should always have 2 performance levels
-[ 2115.280282] amdgpu: can’t get the mac of 5
-[ 2121.495346] amdgpu: VI should always have 2 performance levels
-[ 2226.608091] amdgpu: can’t get the mac of 5
-[ 2232.866186] amdgpu: VI should always have 2 performance levels
-[ 2248.077359] amdgpu: can’t get the mac of 5
-[ 2254.325451] amdgpu: VI should always have 2 performance levels</p>
-</div></blockquote>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo dmesg <span class="p">|</span> grep amdgpu
+</pre></div>
+</div>
+<p>Output:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>    <span class="mf">3.647423</span><span class="p">]</span> <span class="p">[</span><span class="n">drm</span><span class="p">]</span> <span class="n">amdgpu</span> <span class="n">kernel</span> <span class="n">modesetting</span> <span class="n">enabled</span><span class="o">.</span>
+<span class="p">[</span>    <span class="mf">3.647749</span><span class="p">]</span> <span class="n">amdgpu</span><span class="p">:</span> <span class="n">CRAT</span> <span class="n">table</span> <span class="ow">not</span> <span class="n">found</span>
+<span class="p">[</span>    <span class="mf">3.647751</span><span class="p">]</span> <span class="n">amdgpu</span><span class="p">:</span> <span class="n">Virtual</span> <span class="n">CRAT</span> <span class="n">table</span> <span class="n">created</span> <span class="k">for</span> <span class="n">CPU</span>
+<span class="p">[</span>    <span class="mf">3.647760</span><span class="p">]</span> <span class="n">amdgpu</span><span class="p">:</span> <span class="n">Topology</span><span class="p">:</span> <span class="n">Add</span> <span class="n">CPU</span> <span class="n">node</span>
+<span class="p">[</span>    <span class="mf">4.446589</span><span class="p">]</span> <span class="n">amdgpu</span> <span class="mi">0000</span><span class="p">:</span><span class="mi">01</span><span class="p">:</span><span class="mf">00.0</span><span class="p">:</span> <span class="n">enabling</span> <span class="n">device</span> <span class="p">(</span><span class="mi">0000</span> <span class="o">-&gt;</span> <span class="mi">0003</span><span class="p">)</span>
+<span class="p">[</span>    <span class="mf">4.446708</span><span class="p">]</span> <span class="n">amdgpu</span> <span class="mi">0000</span><span class="p">:</span><span class="mi">01</span><span class="p">:</span><span class="mf">00.0</span><span class="p">:</span> <span class="n">amdgpu</span><span class="p">:</span> <span class="n">Trusted</span> <span class="n">Memory</span> <span class="n">Zone</span> <span class="p">(</span><span class="n">TMZ</span><span class="p">)</span> <span class="n">feature</span> <span class="ow">not</span> <span class="n">supported</span>
+<span class="p">[</span>    <span class="mf">4.446906</span><span class="p">]</span> <span class="n">kfd</span> <span class="n">kfd</span><span class="p">:</span> <span class="n">amdgpu</span><span class="p">:</span> <span class="n">TOPAZ</span>  <span class="ow">not</span> <span class="n">supported</span> <span class="ow">in</span> <span class="n">kfd</span>
+<span class="p">[</span>    <span class="mf">4.473165</span><span class="p">]</span> <span class="n">amdgpu</span> <span class="mi">0000</span><span class="p">:</span><span class="mi">01</span><span class="p">:</span><span class="mf">00.0</span><span class="p">:</span> <span class="n">amdgpu</span><span class="p">:</span> <span class="n">Fetched</span> <span class="n">VBIOS</span> <span class="kn">from</span> <span class="nn">ATRM</span>
+<span class="p">[</span>    <span class="mf">4.473170</span><span class="p">]</span> <span class="n">amdgpu</span><span class="p">:</span> <span class="n">ATOM</span> <span class="n">BIOS</span><span class="p">:</span> <span class="n">BR34366</span><span class="mf">.001</span>
+<span class="p">[</span>    <span class="mf">4.480027</span><span class="p">]</span> <span class="n">amdgpu</span> <span class="mi">0000</span><span class="p">:</span><span class="mi">01</span><span class="p">:</span><span class="mf">00.0</span><span class="p">:</span> <span class="n">amdgpu</span><span class="p">:</span> <span class="n">VRAM</span><span class="p">:</span> <span class="mi">2048</span><span class="n">M</span> <span class="mh">0x000000F400000000</span> <span class="o">-</span> <span class="mh">0x000000F47FFFFFFF</span> <span class="p">(</span><span class="mi">2048</span><span class="n">M</span> <span class="n">used</span><span class="p">)</span>
+<span class="p">[</span>    <span class="mf">4.480031</span><span class="p">]</span> <span class="n">amdgpu</span> <span class="mi">0000</span><span class="p">:</span><span class="mi">01</span><span class="p">:</span><span class="mf">00.0</span><span class="p">:</span> <span class="n">amdgpu</span><span class="p">:</span> <span class="n">GART</span><span class="p">:</span> <span class="mi">256</span><span class="n">M</span> <span class="mh">0x000000FF00000000</span> <span class="o">-</span> <span class="mh">0x000000FF0FFFFFFF</span>
+<span class="p">[</span>    <span class="mf">4.480074</span><span class="p">]</span> <span class="p">[</span><span class="n">drm</span><span class="p">]</span> <span class="n">amdgpu</span><span class="p">:</span> <span class="mi">2048</span><span class="n">M</span> <span class="n">of</span> <span class="n">VRAM</span> <span class="n">memory</span> <span class="n">ready</span>
+<span class="p">[</span>    <span class="mf">4.480077</span><span class="p">]</span> <span class="p">[</span><span class="n">drm</span><span class="p">]</span> <span class="n">amdgpu</span><span class="p">:</span> <span class="mi">3072</span><span class="n">M</span> <span class="n">of</span> <span class="n">GTT</span> <span class="n">memory</span> <span class="n">ready</span><span class="o">.</span>
+<span class="p">[</span>    <span class="mf">4.487650</span><span class="p">]</span> <span class="n">amdgpu</span><span class="p">:</span> <span class="n">hwmgr_sw_init</span> <span class="n">smu</span> <span class="n">backed</span> <span class="ow">is</span> <span class="n">iceland_smu</span>
+<span class="p">[</span>    <span class="mf">4.504069</span><span class="p">]</span> <span class="n">amdgpu</span><span class="p">:</span> <span class="n">can</span><span class="s1">&#39;t get the mac of 5</span>
+<span class="p">[</span>    <span class="mf">4.509005</span><span class="p">]</span> <span class="n">amdgpu</span> <span class="mi">0000</span><span class="p">:</span><span class="mi">01</span><span class="p">:</span><span class="mf">00.0</span><span class="p">:</span> <span class="n">amdgpu</span><span class="p">:</span> <span class="n">SE</span> <span class="mi">1</span><span class="p">,</span> <span class="n">SH</span> <span class="n">per</span> <span class="n">SE</span> <span class="mi">1</span><span class="p">,</span> <span class="n">CU</span> <span class="n">per</span> <span class="n">SH</span> <span class="mi">6</span><span class="p">,</span> <span class="n">active_cu_number</span> <span class="mi">5</span>
+<span class="p">[</span>    <span class="mf">4.512216</span><span class="p">]</span> <span class="n">amdgpu</span> <span class="mi">0000</span><span class="p">:</span><span class="mi">01</span><span class="p">:</span><span class="mf">00.0</span><span class="p">:</span> <span class="n">amdgpu</span><span class="p">:</span> <span class="n">Using</span> <span class="n">BOCO</span> <span class="k">for</span> <span class="n">runtime</span> <span class="n">pm</span>
+<span class="p">[</span>    <span class="mf">4.512580</span><span class="p">]</span> <span class="p">[</span><span class="n">drm</span><span class="p">]</span> <span class="n">Initialized</span> <span class="n">amdgpu</span> <span class="mf">3.41.0</span> <span class="mi">20150101</span> <span class="k">for</span> <span class="mi">0000</span><span class="p">:</span><span class="mi">01</span><span class="p">:</span><span class="mf">00.0</span> <span class="n">on</span> <span class="n">minor</span> <span class="mi">1</span>
+<span class="p">[</span>   <span class="mf">11.011196</span><span class="p">]</span> <span class="n">amdgpu</span><span class="p">:</span> <span class="n">VI</span> <span class="n">should</span> <span class="n">always</span> <span class="n">have</span> <span class="mi">2</span> <span class="n">performance</span> <span class="n">levels</span>
+<span class="p">[</span>   <span class="mf">63.292478</span><span class="p">]</span> <span class="n">amdgpu</span><span class="p">:</span> <span class="n">can</span><span class="s1">&#39;t get the mac of 5</span>
+<span class="p">[</span>   <span class="mf">69.617338</span><span class="p">]</span> <span class="n">amdgpu</span><span class="p">:</span> <span class="n">VI</span> <span class="n">should</span> <span class="n">always</span> <span class="n">have</span> <span class="mi">2</span> <span class="n">performance</span> <span class="n">levels</span>
+<span class="p">[</span>   <span class="mf">91.291963</span><span class="p">]</span> <span class="n">amdgpu</span><span class="p">:</span> <span class="n">can</span><span class="s1">&#39;t get the mac of 5</span>
+<span class="p">[</span>   <span class="mf">97.654465</span><span class="p">]</span> <span class="n">amdgpu</span><span class="p">:</span> <span class="n">VI</span> <span class="n">should</span> <span class="n">always</span> <span class="n">have</span> <span class="mi">2</span> <span class="n">performance</span> <span class="n">levels</span>
+<span class="p">[</span>  <span class="mf">231.210550</span><span class="p">]</span> <span class="n">amdgpu</span><span class="p">:</span> <span class="n">can</span><span class="s1">&#39;t get the mac of 5</span>
+<span class="p">[</span>  <span class="mf">237.586419</span><span class="p">]</span> <span class="n">amdgpu</span><span class="p">:</span> <span class="n">VI</span> <span class="n">should</span> <span class="n">always</span> <span class="n">have</span> <span class="mi">2</span> <span class="n">performance</span> <span class="n">levels</span>
+<span class="p">[</span>  <span class="mf">442.652120</span><span class="p">]</span> <span class="n">amdgpu</span><span class="p">:</span> <span class="n">can</span><span class="s1">&#39;t get the mac of 5</span>
+<span class="p">[</span>  <span class="mf">448.914182</span><span class="p">]</span> <span class="n">amdgpu</span><span class="p">:</span> <span class="n">VI</span> <span class="n">should</span> <span class="n">always</span> <span class="n">have</span> <span class="mi">2</span> <span class="n">performance</span> <span class="n">levels</span>
+<span class="p">[</span>  <span class="mf">537.714801</span><span class="p">]</span> <span class="n">amdgpu</span><span class="p">:</span> <span class="n">can</span><span class="s1">&#39;t get the mac of 5</span>
+<span class="p">[</span>  <span class="mf">543.975875</span><span class="p">]</span> <span class="n">amdgpu</span><span class="p">:</span> <span class="n">VI</span> <span class="n">should</span> <span class="n">always</span> <span class="n">have</span> <span class="mi">2</span> <span class="n">performance</span> <span class="n">levels</span>
+<span class="p">[</span> <span class="mf">1423.430405</span><span class="p">]</span> <span class="n">amdgpu</span><span class="p">:</span> <span class="n">can</span><span class="s1">&#39;t get the mac of 5</span>
+<span class="p">[</span> <span class="mf">1429.649499</span><span class="p">]</span> <span class="n">amdgpu</span><span class="p">:</span> <span class="n">VI</span> <span class="n">should</span> <span class="n">always</span> <span class="n">have</span> <span class="mi">2</span> <span class="n">performance</span> <span class="n">levels</span>
+<span class="p">[</span> <span class="mf">2080.668493</span><span class="p">]</span> <span class="n">amdgpu</span><span class="p">:</span> <span class="n">can</span><span class="s1">&#39;t get the mac of 5</span>
+<span class="p">[</span> <span class="mf">2086.918590</span><span class="p">]</span> <span class="n">amdgpu</span><span class="p">:</span> <span class="n">VI</span> <span class="n">should</span> <span class="n">always</span> <span class="n">have</span> <span class="mi">2</span> <span class="n">performance</span> <span class="n">levels</span>
+<span class="p">[</span> <span class="mf">2115.280282</span><span class="p">]</span> <span class="n">amdgpu</span><span class="p">:</span> <span class="n">can</span><span class="s1">&#39;t get the mac of 5</span>
+<span class="p">[</span> <span class="mf">2121.495346</span><span class="p">]</span> <span class="n">amdgpu</span><span class="p">:</span> <span class="n">VI</span> <span class="n">should</span> <span class="n">always</span> <span class="n">have</span> <span class="mi">2</span> <span class="n">performance</span> <span class="n">levels</span>
+<span class="p">[</span> <span class="mf">2226.608091</span><span class="p">]</span> <span class="n">amdgpu</span><span class="p">:</span> <span class="n">can</span><span class="s1">&#39;t get the mac of 5</span>
+<span class="p">[</span> <span class="mf">2232.866186</span><span class="p">]</span> <span class="n">amdgpu</span><span class="p">:</span> <span class="n">VI</span> <span class="n">should</span> <span class="n">always</span> <span class="n">have</span> <span class="mi">2</span> <span class="n">performance</span> <span class="n">levels</span>
+<span class="p">[</span> <span class="mf">2248.077359</span><span class="p">]</span> <span class="n">amdgpu</span><span class="p">:</span> <span class="n">can</span><span class="s1">&#39;t get the mac of 5</span>
+<span class="p">[</span> <span class="mf">2254.325451</span><span class="p">]</span> <span class="n">amdgpu</span><span class="p">:</span> <span class="n">VI</span> <span class="n">should</span> <span class="n">always</span> <span class="n">have</span> <span class="mi">2</span> <span class="n">performance</span> <span class="n">levels</span>
+</pre></div>
+</div>
 <p>a dual gpu system(双 GPU 系统)</p>
-<blockquote>
-<div><p>➜  Downloads xrandr –listproviders
-Providers: number : 2
-Provider 0: id: 0x44 cap: 0xf, Source Output, Sink Output, Source Offload, Sink Offload crtcs: 3 outputs: 2 associated providers: 1 name:modesetting
-Provider 1: id: 0xc7 cap: 0xd, Source Output, Source Offload, Sink Offload crtcs: 0 outputs: 0 associated providers: 1 name:Unknown AMD Radeon GPU &#64; pci:0000:01:00.0</p>
-</div></blockquote>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>xrandr --listproviders
+Providers: number : <span class="m">2</span>
+Provider <span class="m">0</span>: id: 0x44 cap: 0xf, Source Output, Sink Output, Source Offload, Sink Offload crtcs: <span class="m">3</span> outputs: <span class="m">2</span> associated providers: <span class="m">1</span> name:modesetting
+Provider <span class="m">1</span>: id: 0xc7 cap: 0xd, Source Output, Source Offload, Sink Offload crtcs: <span class="m">0</span> outputs: <span class="m">0</span> associated providers: <span class="m">1</span> name:Unknown AMD Radeon GPU @ pci:0000:01:00.0
+</pre></div>
+</div>
 <p>ref:</p>
 <ol class="arabic simple">
 <li><p><a class="reference external" href="https://wiki.archlinux.org/title/Xorg#AMD">https://wiki.archlinux.org/title/Xorg#AMD</a></p></li>
@@ -1726,6 +1801,17 @@ Provider 1: id: 0xc7 cap: 0xd, Source Output, Source Offload, Sink Offload crtcs
 <div class="section" id="kde-s-plasma-eating-cpu">
 <h3>KDE’s plasma eating CPU<a class="headerlink" href="#kde-s-plasma-eating-cpu" title="永久链接至标题">¶</a></h3>
 <p><a class="reference external" href="https://wiki.gentoo.org/wiki/Intel#:~:text=KDE%27s%20plasma%20eating%20CPU,-If%20/usr/bin">https://wiki.gentoo.org/wiki/Intel#:~:text=KDE%27s%20plasma%20eating%20CPU,-If%20/usr/bin</a></p>
+</div>
+<div class="section" id="id9">
+<h3>网易云音乐突然退出<a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h3>
+<p>Log Output:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Aug</span> <span class="mi">23</span> <span class="mi">18</span><span class="p">:</span><span class="mi">33</span><span class="p">:</span><span class="mi">15</span> <span class="n">arch</span> <span class="n">kded5</span><span class="p">[</span><span class="mi">671</span><span class="p">]:</span> <span class="n">Service</span>  <span class="s2">&quot;org.kde.StatusNotifierItem-97593-1&quot;</span> <span class="n">unregistered</span>
+<span class="n">Aug</span> <span class="mi">23</span> <span class="mi">18</span><span class="p">:</span><span class="mi">33</span><span class="p">:</span><span class="mi">15</span> <span class="n">arch</span> <span class="n">kwin_x11</span><span class="p">[</span><span class="mi">675</span><span class="p">]:</span> <span class="n">qt</span><span class="o">.</span><span class="n">qpa</span><span class="o">.</span><span class="n">xcb</span><span class="p">:</span> <span class="n">QXcbConnection</span><span class="p">:</span> <span class="n">XCB</span> <span class="n">error</span><span class="p">:</span> <span class="mi">3</span> <span class="p">(</span><span class="n">BadWindow</span><span class="p">),</span> <span class="n">sequence</span><span class="p">:</span> <span class="mi">46186</span><span class="p">,</span> <span class="n">resource</span> <span class="nb">id</span><span class="p">:</span> <span class="mi">81789214</span><span class="p">,</span> <span class="n">major</span> <span class="n">code</span><span class="p">:</span> <span class="mi">18</span> <span class="p">(</span><span class="n">ChangeProperty</span><span class="p">),</span> <span class="n">minor</span> <span class="n">code</span><span class="p">:</span> <span class="mi">0</span>
+<span class="n">Aug</span> <span class="mi">23</span> <span class="mi">18</span><span class="p">:</span><span class="mi">33</span><span class="p">:</span><span class="mi">15</span> <span class="n">arch</span> <span class="n">systemd</span><span class="p">[</span><span class="mi">618</span><span class="p">]:</span> <span class="n">app</span><span class="o">-</span><span class="n">netease</span>\<span class="n">x2dcloud</span>\<span class="n">x2dmusic</span><span class="o">-</span><span class="mi">6</span><span class="n">ee92a5d044e40d1bf790eeb69ac4171</span><span class="o">.</span><span class="n">scope</span><span class="p">:</span> <span class="n">Consumed</span> <span class="mi">2</span><span class="nb">min</span> <span class="mf">58.763</span><span class="n">s</span> <span class="n">CPU</span> <span class="n">time</span><span class="o">.</span>
+<span class="n">Aug</span> <span class="mi">23</span> <span class="mi">18</span><span class="p">:</span><span class="mi">33</span><span class="p">:</span><span class="mi">19</span> <span class="n">arch</span> <span class="n">kwin_x11</span><span class="p">[</span><span class="mi">675</span><span class="p">]:</span> <span class="n">qt</span><span class="o">.</span><span class="n">qpa</span><span class="o">.</span><span class="n">xcb</span><span class="p">:</span> <span class="n">QXcbConnection</span><span class="p">:</span> <span class="n">XCB</span> <span class="n">error</span><span class="p">:</span> <span class="mi">3</span> <span class="p">(</span><span class="n">BadWindow</span><span class="p">),</span> <span class="n">sequence</span><span class="p">:</span> <span class="mi">47904</span><span class="p">,</span> <span class="n">resource</span> <span class="nb">id</span><span class="p">:</span> <span class="mi">9625737</span><span class="p">,</span> <span class="n">major</span> <span class="n">code</span><span class="p">:</span> <span class="mi">20</span> <span class="p">(</span><span class="n">GetProperty</span><span class="p">),</span> <span class="n">minor</span> <span class="n">code</span><span class="p">:</span> <span class="mi">0</span>
+<span class="n">Aug</span> <span class="mi">23</span> <span class="mi">18</span><span class="p">:</span><span class="mi">33</span><span class="p">:</span><span class="mi">19</span> <span class="n">arch</span> <span class="n">kwin_x11</span><span class="p">[</span><span class="mi">675</span><span class="p">]:</span> <span class="n">kwin_core</span><span class="p">:</span> <span class="n">XCB</span> <span class="n">error</span><span class="p">:</span> <span class="mi">152</span> <span class="p">(</span><span class="n">BadDamage</span><span class="p">),</span> <span class="n">sequence</span><span class="p">:</span> <span class="mi">47905</span><span class="p">,</span> <span class="n">resource</span> <span class="nb">id</span><span class="p">:</span> <span class="mi">9628315</span><span class="p">,</span> <span class="n">major</span> <span class="n">code</span><span class="p">:</span> <span class="mi">143</span> <span class="p">(</span><span class="n">DAMAGE</span><span class="p">),</span> <span class="n">minor</span> <span class="n">code</span><span class="p">:</span> <span class="mi">2</span> <span class="p">(</span><span class="n">Destroy</span><span class="p">)</span>
+</pre></div>
+</div>
 </div>
 </div>
 </div>
