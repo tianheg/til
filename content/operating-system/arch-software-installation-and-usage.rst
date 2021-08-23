@@ -156,7 +156,7 @@ fcitx4 to fcitx5:
 fcitx5 使用问题
 ^^^^^^^^^^^^^^^
 
-``Enter`` 回车键异常：中文模式下，按 :raw-html-m2r:`<kbd>；</kbd>` 后再按 :raw-html-m2r:`<kbd>Enter</kbd>` 无法输入英文分号。可能不是问题，刚从 fcitx4 升级到 fcitx5。
+``Enter`` 回车键异常：中文模式下，按 :kbd:`；` 后再按 :kbd:`Enter` 无法输入英文分号。可能不是问题，刚从 fcitx4 升级到 fcitx5。
 
 ref:
 

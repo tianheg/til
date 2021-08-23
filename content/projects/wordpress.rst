@@ -1,7 +1,3 @@
-.. role:: raw-html-m2r(raw)
-   :format: html
-
-
 WordPress
 =========
 
@@ -10,7 +6,7 @@ LAMP
 
 Linux, Apache, MySQL, PHP
 
-
+.. code:: sh
 
    sudo apt update
    sudo apt-get install apache2 -y # apache2
@@ -115,7 +111,7 @@ Install WordPress Theme
 
 #. Access ``http://address/wp-admin/``
 #. Click Appearance/Themes
-#. Find :raw-html-m2r:`<kbd>Add New</kbd>`\ /\ :raw-html-m2r:`<kbd>Upload Theme</kbd>`\ , you can just upload the zh2 zip file. That's it!
+#. Find :kbd:`Add New`/:kbd:`Upload Theme`, you can just upload the zh2 zip file. That's it!
 #. Custom it as you want.
 
 Support HTTPS

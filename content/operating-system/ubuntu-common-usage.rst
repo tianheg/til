@@ -89,12 +89,12 @@ You can quickly preview files without opening them in a full-blown application. 
 
 The built-in preview supports most file formats for documents, images, video, and audio. In the preview, you can scroll through your documents or seek through your video and audio.
 
-To view a preview full-screen, press :raw-html-m2r:`<kbd>F</kbd>` or :raw-html-m2r:`<kbd>F11</kbd>`. Press :raw-html-m2r:`<kbd>F</kbd>` or :raw-html-m2r:`<kbd>F11</kbd>` again to leave full-screen, or press the space bar to exit the preview completely.
+To view a preview full-screen, press :kbd:`F` or :kbd:`F11`. Press :kbd:`F` or :kbd:`F11` again to leave full-screen, or press the space bar to exit the preview completely.
 
 Auto Mount disk ``/dev/sda1`` to /mnt/xx
 --------------------------------------------
 
-
+.. code:: sh
 
    sudo mount /dev/sda1 /mnt/vd
 

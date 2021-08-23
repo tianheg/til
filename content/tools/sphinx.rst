@@ -1,4 +1,3 @@
-
 Sphinx
 ======
 
@@ -7,7 +6,130 @@ https://www.sphinx-doc.org/
 reStructured Text Syntax
 ------------------------
 
+可使用的段落标记：
+
+.. todo::
+
+   This function is not suitable for sending spam e-mails.
+
+.. note::
+
+   This function is not suitable for sending spam e-mails.
+
+.. warning::
+
+   This function is not suitable for sending spam e-mails.
+
+.. versionadded:: 2.5
+
+   The *spam* parameter.
+
+.. versionchanged:: 2.6
+
+   The *spam* parameter.
+
+.. deprecated:: 2.7
+
+   The *spam* parameter.
+
+.. seealso::
+
+   Module :py:mod:`zipfile`
+      Documentation of the :py:mod:`zipfile` standard module.
+
+   `GNU tar manual, Basic Tar Format <http://link>`_
+      Documentation for tar archive files, including GNU tar extensions.
+
+.. seealso:: modules :py:mod:`zipfile`, :py:mod:`tarfile`
+
+.. rubric:: title
+
+This directive creates a paragraph heading that is not used to create a table of contents node.
+
+.. centered:: LICENSE AGREEMENT
+
+.. hlist::
+   :columns: 2
+
+   * A list of
+   * short items
+   * that should be
+   * displayed
+   * horizontally
+
+>>> 1 + 1
+2
+
++------------------------+------------+----------+
+| Header row, column 1   | Header 2   | Header 3 |
++========================+============+==========+
+| body row 1, column 1   | column 2   | column 3 |
++------------------------+------------+----------+
+| body row 2             | Cells may span        |
++------------------------+-----------------------+
+
+See :download:`this example script <https://github.com/tianheg/blog/archive/refs/heads/main.zip>`.
+
+Since Pythagoras, we know that :math:`a^2 + b^2 = c^2`.
+
+.. math::
+
+   (a + b)^2 = a^2 + 2ab + b^2
+
+   (a - b)^2 = a^2 - 2ab + b^2
+
+.. math::
+   :nowrap:
+
+   \begin{eqnarray}
+      y    & = & ax^2 + bx + c \\
+      f(x) & = & x^2 + 2xy + y^2
+   \end{eqnarray}
+
+.. productionlist::
+   try_stmt: try1_stmt | try2_stmt
+   try1_stmt: "try" ":" `suite`
+            : ("except" [`expression` ["," `target`]] ":" `suite`)+
+            : ["else" ":" `suite`]
+            : ["finally" ":" `suite`]
+   try2_stmt: "try" ":" `suite`
+            : "finally" ":" `suite`
+
+``计算机网络``
+
+:abbr:`LIFO (last-in, first-out)`
+
+:command:`rm`
+
+:manpage:`git`
+
+:menuselection:`Start --> Programs`
+
+|name|
+
+.. |name| replace:: replacement *text*
+
+.. code:: python
+
+   print('Hello World!')
+
+.. glossary::
+
+   environment
+      A structure where information about all documents under the root is
+      saved, and used for cross-referencing.  The environment is pickled
+      after the parsing stage, so that successive runs only need to read
+      and parse new and changed documents.
+
+   source directory
+      The directory which, including its subdirectories, contains all
+      source files for one Sphinx project.
+
+.. sectionauthor:: Guido van Rossum <guido@python.org>
+
 .. code:: rst
+
+   .. image:: images/life-structure.png
 
    ----
 
@@ -73,14 +195,6 @@ reStructured Text Syntax
    >>> print '(cut and pasted from interactive Python sessions)'
    (cut and pasted from interactive Python sessions)
 
-   +------------------------+------------+----------+
-   | Header row, column 1   | Header 2   | Header 3 |
-   +========================+============+==========+
-   | body row 1, column 1   | column 2   | column 3 |
-   +------------------------+------------+----------+
-   | body row 2             | Cells may span        |
-   +------------------------+-----------------------+
-
    .. [1] A footnote contains body elements, consistently
       indented by at least 3 spaces.
 
@@ -93,13 +207,7 @@ reStructured Text Syntax
 
    The "_example" target above points to this paragraph.
 
-   .. image:: mylogo.png
-
    .. |symbol here| image:: symbol.png
-
-   .. Comments begin with two dots and a space.  Anything may
-      follow, except for the syntax of footnotes/citations,
-      hyperlink targets, directives, or substitution definitions.
 
 ref:
 

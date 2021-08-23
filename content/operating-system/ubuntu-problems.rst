@@ -178,7 +178,7 @@ I found talks about it officially and unofficially:
 
 A way to recover it:
 
-:raw-html-m2r:`<kbd>Alt</kbd>` + :raw-html-m2r:`<kbd>F2</kbd>` -> Type ``r`` -> hit :raw-html-m2r:`<kbd>enter</kbd>`\ , so it works again until it breaks again.
+:kbd:`Alt` + :kbd:`F2` -> Type ``r`` -> hit :kbd:`enter`, so it works again until it breaks again.
 
 ----
 
