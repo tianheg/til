@@ -1,91 +1,159 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Branch Name Contain The ‘space’ Char" href="branch-name-contain-the-space-char.html" /><link rel="prev" title="Git Glossary" href="git-glossary.html" />
 
-
-<!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
-<head>
-  <meta charset="utf-8" />
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <title>Useful Tips about Git &mdash; Today I Learnt  文档</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
-
-  
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
+    <meta name="generator" content="sphinx-4.1.2, furo 2021.08.17.beta43"/>
+        <title>Useful Tips about Git - Hello World</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?digest=910ac4ccc9d7c023151c34010d7b500fb9777a51" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?digest=16fb25fabf47304eee183a5e9af80b1ba98259b1" />
     
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/translations.js"></script>
     
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
 
+
+<style>
+  body {
+    --color-code-background: #eeffcc;
+  --color-code-foreground: black;
+  
+  }
+  body[data-theme="dark"] {
+    --color-code-background: #272822;
+  --color-code-foreground: #f8f8f2;
+  
+  }
+  @media (prefers-color-scheme: dark) {
+    body:not([data-theme="light"]) {
+      --color-code-background: #272822;
+  --color-code-foreground: #f8f8f2;
+  
+    }
+  }
+</style>
+    <link media="(prefers-color-scheme: dark)" rel="stylesheet" href="../_static/pygments_dark.css"></head>
+  <body>
     
-    <link rel="index" title="索引" href="../genindex.html" />
-    <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="Branch Name Contain The ‘space’ Char" href="branch-name-contain-the-space-char.html" />
-    <link rel="prev" title="Git Glossary" href="git-glossary.html" /> 
-</head>
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" />
+      <line x1="4" y1="6" x2="20" y2="6" />
+      <line x1="10" y1="12" x2="20" y2="12" />
+      <line x1="6" y1="18" x2="20" y2="18" />
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
 
-<body class="wy-body-for-nav">
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
 
-   
-  <div class="wy-grid-for-nav">
-    
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
-          
 
-          
-            <a href="../index.html" class="icon icon-home"> Today I Learnt
-          
 
-          
-          </a>
-
-          
-
-          
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="在文档中搜索" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <ul class="current">
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">Hello World</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  
+  
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C.html">计算机网络</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/dns.html">DNS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/%E7%A7%91%E6%8A%80%E8%8B%B1%E8%AF%AD.html">科技英语</a></li>
@@ -105,6 +173,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../operating-system/ubuntu-install-software.html">Install Software on Ubuntu</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../operating-system/ubuntu-problems.html">Problems on Ubuntu</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../operating-system/mxlinux-installation.html">MX Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../database/mysql.html">MySQL</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../html/before-html.html">Before HTML</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../html/html-basics.html">HTML Basics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../html/images.html">Images</a></li>
@@ -142,35 +211,7 @@
 <li class="toctree-l1"><a class="reference internal" href="git-and-gitHub.html">Git and GitHub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="git-command-line-reference.html">Git Command Line Reference</a></li>
 <li class="toctree-l1"><a class="reference internal" href="git-glossary.html">Git Glossary</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Useful Tips about Git</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id1">多人合作开发</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#git-flow">使用 git-flow</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#rename-branch">Rename Branch</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#rename-the-origin-remote-to-upstream">Rename The <code class="docutils literal notranslate"><span class="pre">origin</span></code> Remote To <code class="docutils literal notranslate"><span class="pre">upstream</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#reset">Reset</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#see-a-file-at-a-specific-commit">See A File At A Specific Commit</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#show-helpful-guides-that-come-with-git">Show Helpful Guides That Come With Git</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#show-the-latest-commit">Show The Latest Commit</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#use-format-patch-to-suggest-code-changes">Use <code class="docutils literal notranslate"><span class="pre">format</span> <span class="pre">patch</span></code> To Suggest Code Changes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#what-will-be-done-after-rename-branch-on-github">What Will Be Done After Rename Branch On GitHub</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#commit-message">commit message 规范</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#git-rebase-commit">使用 git rebase 来合并你的 commit</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#git-pull-rebase"><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span> <span class="pre">--rebase</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id4">分支合并</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#main">场景：基于 main 分支代码，开发新特性</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id5">场景：合并分支时，存在分叉</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id6">场景：解决合并冲突</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#id7">其他</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id8">修改密码</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#push-commit">修改已经 push 的某次 commit 的作者/邮箱</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#branch1-commit1-branch2">将 <code class="docutils literal notranslate"><span class="pre">branch1</span></code> 的某个 <code class="docutils literal notranslate"><span class="pre">commit1</span></code> 合并到 <code class="docutils literal notranslate"><span class="pre">branch2</span></code> 当中</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id10">将 Git 项目迁移到另一个仓库</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Useful Tips about Git</a></li>
 <li class="toctree-l1"><a class="reference internal" href="branch-name-contain-the-space-char.html">Branch Name Contain The ‘space’ Char</a></li>
 <li class="toctree-l1"><a class="reference internal" href="create-empty-branch-locally-and-remotely.html">Create Empty Branch Locally And Remotely</a></li>
 <li class="toctree-l1"><a class="reference internal" href="delete-a-git-branch-both-locally-and-remotely.html">Delete A Git Branch Both Locally And Remotely</a></li>
@@ -188,158 +229,114 @@
 <li class="toctree-l1"><a class="reference internal" href="../learning-how-to-learn.html">Learning How to Learn</a></li>
 </ul>
 
-            
-          
-        </div>
-        
+</div>
+</div>
       </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
       
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">Today I Learnt</a>
-        
-      </nav>
-
-
-      <div class="wy-nav-content">
-        
-        <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
-  <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-        
-      <li>Useful Tips about Git</li>
-    
-    
-      <li class="wy-breadcrumbs-aside">
-        
-          
-            
-              <a href="https://github.com/tianheg/til/blob/main/content/version-control-git/useful-tips-about-git.rst" class="fa fa-github"> 在 GitHub 上修改</a>
-            
-          
-        
-      </li>
-    
-  </ul>
-
-  
-  <hr/>
-</div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-            
-  <div class="section" id="useful-tips-about-git">
-<h1>Useful Tips about Git<a class="headerlink" href="#useful-tips-about-git" title="永久链接至标题">¶</a></h1>
-<div class="section" id="id1">
-<h2>多人合作开发<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <article role="main">
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <section id="useful-tips-about-git">
+<h1>Useful Tips about Git<a class="headerlink" href="#useful-tips-about-git" title="Permalink to this headline">¶</a></h1>
+<section id="id1">
+<h2>多人合作开发<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <p>如果要开发多人合作项目，我们建议将 master 分支设置为 <a class="reference external" href="https://help.github.com/en/articles/configuring-protected-branches">protected</a> 分支，使得不允许直接在 master 上提交代码，只能通过 PR 的形式来合并。如何向项目提交 PR 请参考 <a class="reference external" href="https://www.zhihu.com/question/21682976/answer/79489643">GitHub 的 Pull Request 是指什么意思？</a></p>
-</div>
-<div class="section" id="git-flow">
-<h2>使用 git-flow<a class="headerlink" href="#git-flow" title="永久链接至标题">¶</a></h2>
+</section>
+<section id="git-flow">
+<h2>使用 git-flow<a class="headerlink" href="#git-flow" title="Permalink to this headline">¶</a></h2>
 <p>使用 <a class="reference external" href="https://www.git-tower.com/learn/git/ebook/cn/command-line/advanced-topics/git-flow">git-flow)</a> 这个工具可以帮助我们更好的控制我们的工作流程</p>
-</div>
-<div class="section" id="rename-branch">
-<h2>Rename Branch<a class="headerlink" href="#rename-branch" title="永久链接至标题">¶</a></h2>
+</section>
+<section id="rename-branch">
+<h2>Rename Branch<a class="headerlink" href="#rename-branch" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><p>git branch -m master main</p>
 </div></blockquote>
 <p>rename <code class="docutils literal notranslate"><span class="pre">master</span></code> to <code class="docutils literal notranslate"><span class="pre">main</span></code></p>
-</div>
-<div class="section" id="rename-the-origin-remote-to-upstream">
-<h2>Rename The <code class="docutils literal notranslate"><span class="pre">origin</span></code> Remote To <code class="docutils literal notranslate"><span class="pre">upstream</span></code><a class="headerlink" href="#rename-the-origin-remote-to-upstream" title="永久链接至标题">¶</a></h2>
+</section>
+<section id="rename-the-origin-remote-to-upstream">
+<h2>Rename The <code class="docutils literal notranslate"><span class="pre">origin</span></code> Remote To <code class="docutils literal notranslate"><span class="pre">upstream</span></code><a class="headerlink" href="#rename-the-origin-remote-to-upstream" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><p>$ git remote rename origin upstream</p>
 </div></blockquote>
 <p>You can also do this using <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">remote</span> <span class="pre">set-url</span></code>, but it takes longer and is more steps.</p>
 <p><a class="reference external" href="https://github.com/k88hudson/git-flight-rules#suggesting-code-via-pull-requests">source1</a></p>
-</div>
-<div class="section" id="reset">
-<h2>Reset<a class="headerlink" href="#reset" title="永久链接至标题">¶</a></h2>
+</section>
+<section id="reset">
+<h2>Reset<a class="headerlink" href="#reset" title="Permalink to this headline">¶</a></h2>
 <p>Come back last commit, don’t delete commit content</p>
 <blockquote>
 <div><p>git reset –soft HEAD^</p>
 </div></blockquote>
-</div>
-<div class="section" id="see-a-file-at-a-specific-commit">
-<h2>See A File At A Specific Commit<a class="headerlink" href="#see-a-file-at-a-specific-commit" title="永久链接至标题">¶</a></h2>
+</section>
+<section id="see-a-file-at-a-specific-commit">
+<h2>See A File At A Specific Commit<a class="headerlink" href="#see-a-file-at-a-specific-commit" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://github.com/k88hudson/git-flight-rules#what-did-i-just-commit">source2</a></p>
 <blockquote>
 <div><p>git show &lt;commitid&gt;:filename</p>
 </div></blockquote>
-</div>
-<div class="section" id="show-helpful-guides-that-come-with-git">
-<h2>Show Helpful Guides That Come With Git<a class="headerlink" href="#show-helpful-guides-that-come-with-git" title="永久链接至标题">¶</a></h2>
+</section>
+<section id="show-helpful-guides-that-come-with-git">
+<h2>Show Helpful Guides That Come With Git<a class="headerlink" href="#show-helpful-guides-that-come-with-git" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><p>git help -g</p>
 </div></blockquote>
 <p><a class="reference external" href="https://github.com/git-tips/tips#show-helpful-guides-that-come-with-git">source3</a></p>
-</div>
-<div class="section" id="show-the-latest-commit">
-<h2>Show The Latest Commit<a class="headerlink" href="#show-the-latest-commit" title="永久链接至标题">¶</a></h2>
+</section>
+<section id="show-the-latest-commit">
+<h2>Show The Latest Commit<a class="headerlink" href="#show-the-latest-commit" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://github.com/k88hudson/git-flight-rules#what-did-i-just-commit">source4</a></p>
 <blockquote>
 <div><p>git show
 # or
 git log -n1 -p</p>
 </div></blockquote>
-</div>
-<div class="section" id="use-format-patch-to-suggest-code-changes">
-<h2>Use <code class="docutils literal notranslate"><span class="pre">format</span> <span class="pre">patch</span></code> To Suggest Code Changes<a class="headerlink" href="#use-format-patch-to-suggest-code-changes" title="永久链接至标题">¶</a></h2>
+</section>
+<section id="use-format-patch-to-suggest-code-changes">
+<h2>Use <code class="docutils literal notranslate"><span class="pre">format</span> <span class="pre">patch</span></code> To Suggest Code Changes<a class="headerlink" href="#use-format-patch-to-suggest-code-changes" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><p>git format-patch HEAD^</p>
 </div></blockquote>
 <p><a class="reference external" href="https://github.com/k88hudson/git-flight-rules#suggesting-code-via-patches">source</a></p>
-</div>
-<div class="section" id="what-will-be-done-after-rename-branch-on-github">
-<h2>What Will Be Done After Rename Branch On GitHub<a class="headerlink" href="#what-will-be-done-after-rename-branch-on-github" title="永久链接至标题">¶</a></h2>
+</section>
+<section id="what-will-be-done-after-rename-branch-on-github">
+<h2>What Will Be Done After Rename Branch On GitHub<a class="headerlink" href="#what-will-be-done-after-rename-branch-on-github" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><p>git branch -m master main
 git fetch origin
 git branch -u origin/main main</p>
 </div></blockquote>
-</div>
-<div class="section" id="commit-message">
-<h2>commit message 规范<a class="headerlink" href="#commit-message" title="永久链接至标题">¶</a></h2>
+</section>
+<section id="commit-message">
+<h2>commit message 规范<a class="headerlink" href="#commit-message" title="Permalink to this headline">¶</a></h2>
 <p>commit message 是必须要遵循一定的规范的，随意的 commit message 只会让人感受到不专业。这里我们参考 <a class="reference external" href="https://gist.github.com/stephenparish/9941e89d80e2bc58a153">AngularJS commit message conventions</a></p>
 <blockquote>
-<div><p>This would add kinda “context” information. Look at these messages (taken from last few angular’s commits):<span class="raw-html-m2r"><br></span>
-Fix small typo in docs widget (tutorial instructions)<span class="raw-html-m2r"><br></span>
-Fix test for scenario. Application - should remove old iframe<span class="raw-html-m2r"><br></span>
-docs - various doc fixes<span class="raw-html-m2r"><br></span>
-docs - stripping extra new lines<span class="raw-html-m2r"><br></span>
-Replaced double line break with single when text is fetched from Google<span class="raw-html-m2r"><br></span>
+<div><p>This would add kinda “context” information. Look at these messages (taken from last few angular’s commits):<span class="raw-html-m2r"><br/></span>
+Fix small typo in docs widget (tutorial instructions)<span class="raw-html-m2r"><br/></span>
+Fix test for scenario. Application - should remove old iframe<span class="raw-html-m2r"><br/></span>
+docs - various doc fixes<span class="raw-html-m2r"><br/></span>
+docs - stripping extra new lines<span class="raw-html-m2r"><br/></span>
+Replaced double line break with single when text is fetched from Google<span class="raw-html-m2r"><br/></span>
 Added support for properties in documentation</p>
 </div></blockquote>
-</div>
-<div class="section" id="git-rebase-commit">
-<h2>使用 git rebase 来合并你的 commit<a class="headerlink" href="#git-rebase-commit" title="永久链接至标题">¶</a></h2>
+</section>
+<section id="git-rebase-commit">
+<h2>使用 git rebase 来合并你的 commit<a class="headerlink" href="#git-rebase-commit" title="Permalink to this headline">¶</a></h2>
 <p>大部分人在实际开发过程中，都会建立自己的分支开发，这是大部分团队都能做到的，但是我们在测试问题的时候总是会提交一些无用的 commit 去远程的 repo，自己的分支还好，但是最后把自己的分支合并到 master 上的时候如果还带上这些 commit 就十分不雅观了，当然 github 的 PR 功能已经给我们合并 PR 的时候提供了多种选项，其中就包括 rebase。但是这里还是要介绍一个很多人不常用的命令，git rebase，也就是变基，git rebase 功能很强大，也很容易一不小心弄不好就把你的整个 commit 或者 git 历史弄乱，所以这里我们不写如何用它来变基，只说如何用它来合并自己的 commit。<a class="reference external" href="http://gitbook.liuhui998.com/4_2.html">参考教程</a></p>
 <p>注意事项：只有个人操作的分支才可以用 git rebase，多人一起协作的分支切记不要轻易使用 git rebase, 否则很容易造成冲突。</p>
 <p>实战操作，首先建立一个 git 目录。</p>
@@ -349,23 +346,23 @@ $ git init
 $ vim 1. txt</p>
 </div></blockquote>
 <p>在 master 分支对 1.txt 做修改并且 commit</p>
-<a class="reference external image-reference" href="http://gw.alicdn.com/tfs/TB1luMFXBr0gK0jSZFnXXbRRXXa-1138-852.png"><img alt="" src="http://gw.alicdn.com/tfs/TB1luMFXBr0gK0jSZFnXXbRRXXa-1138-852.png" /></a>
+<a class="reference external image-reference" href="http://gw.alicdn.com/tfs/TB1luMFXBr0gK0jSZFnXXbRRXXa-1138-852.png"><img alt="" src="http://gw.alicdn.com/tfs/TB1luMFXBr0gK0jSZFnXXbRRXXa-1138-852.png"/></a>
 <p>切换到 rebase 分支，修改两次 1.txt，并进行两次 commit</p>
-<a class="reference external image-reference" href="http://gw.alicdn.com/tfs/TB1UWIFXBv0gK0jSZKbXXbK2FXa-1140-856.png"><img alt="" src="http://gw.alicdn.com/tfs/TB1UWIFXBv0gK0jSZKbXXbK2FXa-1140-856.png" /></a>
+<a class="reference external image-reference" href="http://gw.alicdn.com/tfs/TB1UWIFXBv0gK0jSZKbXXbK2FXa-1140-856.png"><img alt="" src="http://gw.alicdn.com/tfs/TB1UWIFXBv0gK0jSZKbXXbK2FXa-1140-856.png"/></a>
 <p>使用 git rebase 合并刚刚的两次 commit</p>
 <blockquote>
 <div><p>$ git rebase - i HEAD~x # x 代表你要合并前 x 次 commit 这里我们填 2, 这里你也可以直接填具体的 commit 对应的 hash 值
 $ git rebase - i HEAD~2</p>
 </div></blockquote>
-<a class="reference external image-reference" href="http://gw.alicdn.com/tfs/TB1Qs7DXAT2gK0jSZFkXXcIQFXa-1154-866.png"><img alt="" src="http://gw.alicdn.com/tfs/TB1Qs7DXAT2gK0jSZFkXXcIQFXa-1154-866.png" /></a>
+<a class="reference external image-reference" href="http://gw.alicdn.com/tfs/TB1Qs7DXAT2gK0jSZFkXXcIQFXa-1154-866.png"><img alt="" src="http://gw.alicdn.com/tfs/TB1Qs7DXAT2gK0jSZFkXXcIQFXa-1154-866.png"/></a>
 <p>这里的 pick 的意思是</p>
 <blockquote>
-<div><p>pick：保留该 commit（缩写：p）<span class="raw-html-m2r"><br></span>
-reword：保留该 commit，但我需要修改该 commit 的注释（缩写：r）<span class="raw-html-m2r"><br></span>
-edit：保留该 commit, 但我要停下来修改该提交（不仅仅修改注释）（缩写：e）<span class="raw-html-m2r"><br></span>
-squash：将该 commit 和前一个 commit 合并（缩写：s）<span class="raw-html-m2r"><br></span>
-fixup：将该 commit 和前一个 commit 合并，但我不要保留该提交的注释信息（缩写：f）<span class="raw-html-m2r"><br></span>
-exec：执行 shell 命令（缩写：x）<span class="raw-html-m2r"><br></span>
+<div><p>pick：保留该 commit（缩写：p）<span class="raw-html-m2r"><br/></span>
+reword：保留该 commit，但我需要修改该 commit 的注释（缩写：r）<span class="raw-html-m2r"><br/></span>
+edit：保留该 commit, 但我要停下来修改该提交（不仅仅修改注释）（缩写：e）<span class="raw-html-m2r"><br/></span>
+squash：将该 commit 和前一个 commit 合并（缩写：s）<span class="raw-html-m2r"><br/></span>
+fixup：将该 commit 和前一个 commit 合并，但我不要保留该提交的注释信息（缩写：f）<span class="raw-html-m2r"><br/></span>
+exec：执行 shell 命令（缩写：x）<span class="raw-html-m2r"><br/></span>
 drop：我要丢弃该 commit（缩写：d）</p>
 </div></blockquote>
 <p>我们使用的比较多的是 <code class="docutils literal notranslate"><span class="pre">s</span></code> 和 <code class="docutils literal notranslate"><span class="pre">f</span></code> 两个选项，在这里我们想要合并两次 commit 为一个，所以将我们的 rebase 信息改为</p>
@@ -380,15 +377,15 @@ drop：我要丢弃该 commit（缩写：d）</p>
 <blockquote>
 <div><p>$ git push origin dev -f # 使用–force 来强制 push，但你要清楚这可能会导致你的一些 commit 记录的丢失，所以请仅在个人分支进行该操作</p>
 </div></blockquote>
-</div>
-<div class="section" id="git-pull-rebase">
-<h2><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span> <span class="pre">--rebase</span></code><a class="headerlink" href="#git-pull-rebase" title="永久链接至标题">¶</a></h2>
+</section>
+<section id="git-pull-rebase">
+<h2><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span> <span class="pre">--rebase</span></code><a class="headerlink" href="#git-pull-rebase" title="Permalink to this headline">¶</a></h2>
 <p>使用该命令可以使用 commits 变得优美流畅，不会存在 merge commit。</p>
-</div>
-<div class="section" id="id4">
-<h2>分支合并<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
-<div class="section" id="main">
-<h3>场景：基于 main 分支代码，开发新特性<a class="headerlink" href="#main" title="永久链接至标题">¶</a></h3>
+</section>
+<section id="id4">
+<h2>分支合并<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<section id="main">
+<h3>场景：基于 main 分支代码，开发新特性<a class="headerlink" href="#main" title="Permalink to this headline">¶</a></h3>
 <p>如果直接在 main 分支开发，如果后续对 main 分支又有另外的开发任务，会导致 main 分支的 commits 很乱。所以，当我们开发新特性时，可以在一个新分支进行，待到新特性开发完毕，再整体合并到 main 分支中。</p>
 <p>具体做法如下：</p>
 <p>（1）基于 main 分支，新建一个分支，名为 <code class="docutils literal notranslate"><span class="pre">feature_item_recommend</span></code>：</p>
@@ -413,10 +410,10 @@ $ git merge feature_item_recommend # 合并</p>
 <div><p>$ git branch -d feature_item_recommend</p>
 </div></blockquote>
 <p>注意，当前仓库处于 <code class="docutils literal notranslate"><span class="pre">main</span></code> 分支，可以用以上命令删除目标分支。如果当前所处分支是 <code class="docutils literal notranslate"><span class="pre">feature_item_recommend</span></code>，则无法删除 <code class="docutils literal notranslate"><span class="pre">feature_item_recommend</span></code>。</p>
-</div>
-<div class="section" id="id5">
-<h3>场景：合并分支时，存在分叉<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h3>
-<a class="reference external image-reference" href="https://cdn.jsdelivr.net/gh/tianheg/static&#64;main/img/git-merge.png"><img alt="git-merge.png" src="https://cdn.jsdelivr.net/gh/tianheg/static&#64;main/img/git-merge.png" /></a>
+</section>
+<section id="id5">
+<h3>场景：合并分支时，存在分叉<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<a class="reference external image-reference" href="https://cdn.jsdelivr.net/gh/tianheg/static@main/img/git-merge.png"><img alt="git-merge.png" src="https://cdn.jsdelivr.net/gh/tianheg/static@main/img/git-merge.png"/></a>
 <p>最早 main 分支位于 <code class="docutils literal notranslate"><span class="pre">C2</span></code> 节点，基于 <code class="docutils literal notranslate"><span class="pre">C2</span></code> 节点新建分支 <code class="docutils literal notranslate"><span class="pre">iss53</span></code>，然后在 <code class="docutils literal notranslate"><span class="pre">iss53</span></code> commit。</p>
 <p>现在，准备合并 <code class="docutils literal notranslate"><span class="pre">iss53</span></code> 的两个 commits：<code class="docutils literal notranslate"><span class="pre">C3</span></code>、<code class="docutils literal notranslate"><span class="pre">C5</span></code>，到 main 分支。但是，main 分支已经前进到 <code class="docutils literal notranslate"><span class="pre">C4</span></code>。这是该如何把 <code class="docutils literal notranslate"><span class="pre">iss53</span></code> 合并到 main 分支呢？</p>
 <blockquote>
@@ -426,11 +423,11 @@ $ git merge iss53</p>
 <p><strong>解释</strong>：</p>
 <p>这次合并不同于上一小节的简单合并，这一次，开发历史是从更早的 commit 开始分叉的。由于当前 main 分支指向的 commit(C4) 不是想要并入分支 <code class="docutils literal notranslate"><span class="pre">iss53</span></code> 的直接祖先，Git 需要进行处理。对于这个例子，Git 会用两个分支的末端（C4，C5）和它们的共同祖先（C2）进行一次简单的三方合并计算：</p>
 <p>Git 没有简单的把分支指针右移，而是对三方合并的结果作一新的快照，并自动创建一个指向它的 commit（C6）（如下图所示）。我们把这个特殊的 commit 称作<strong>合并提交</strong>（merge commit），因为它的祖先不止一个。</p>
-<a class="reference external image-reference" href="https://cdn.jsdelivr.net/gh/tianheg/static&#64;main/img/git-merge-1.png"><img alt="git-merge-1.png" src="https://cdn.jsdelivr.net/gh/tianheg/static&#64;main/img/git-merge-1.png" /></a>
-</div>
-<div class="section" id="id6">
-<h3>场景：解决合并冲突<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h3>
-<a class="reference external image-reference" href="https://cdn.jsdelivr.net/gh/tianheg/static&#64;main/img/git-merge-2.png"><img alt="git-merge-2.png" src="https://cdn.jsdelivr.net/gh/tianheg/static&#64;main/img/git-merge-2.png" /></a>
+<a class="reference external image-reference" href="https://cdn.jsdelivr.net/gh/tianheg/static@main/img/git-merge-1.png"><img alt="git-merge-1.png" src="https://cdn.jsdelivr.net/gh/tianheg/static@main/img/git-merge-1.png"/></a>
+</section>
+<section id="id6">
+<h3>场景：解决合并冲突<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<a class="reference external image-reference" href="https://cdn.jsdelivr.net/gh/tianheg/static@main/img/git-merge-2.png"><img alt="git-merge-2.png" src="https://cdn.jsdelivr.net/gh/tianheg/static@main/img/git-merge-2.png"/></a>
 <p>如果 feature1 和 feature2 修改的是同一个文件中<strong>代码的同一个位置</strong>，那么当把 feature2 合并到 feature1 时，就会产生冲突。这个冲突需要手动解决：</p>
 <p>（1）对两个分支对相同区域的修改，进行检查，判断如何处理，并取消冲突。</p>
 <p>（2）<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span></code>：解决冲突后，通过 <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> 得到 <code class="docutils literal notranslate"><span class="pre">Unmerged</span> <span class="pre">paths</span></code>。然后，<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span></code>，<strong>冲突解决，加入存取区</strong>。</p>
@@ -438,12 +435,12 @@ $ git merge iss53</p>
 <p>然后，可以继续把 feature1 合并到 main（此时，feature1 和 feature2 指向同一个 commit），最后删除 feature1，feature2。</p>
 <p><strong>注意</strong>：两个分支的同一个文件的不同地方合并时，Git 会自动完成，不会产生冲突。</p>
 <p>不论是自动合并还是手动合并，提交之前，都要对代码进行测试。</p>
-</div>
-</div>
-<div class="section" id="id7">
-<h2>其他<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h2>
-<div class="section" id="id8">
-<h3>修改密码<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h3>
+</section>
+</section>
+<section id="id7">
+<h2>其他<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<section id="id8">
+<h3>修改密码<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><p>$ git config user.name “”</p>
 </div></blockquote>
@@ -451,17 +448,17 @@ $ git merge iss53</p>
 <blockquote>
 <div><p>$ git config user.name “username”</p>
 </div></blockquote>
-</div>
-<div class="section" id="push-commit">
-<h3>修改已经 push 的某次 commit 的作者/邮箱<a class="headerlink" href="#push-commit" title="永久链接至标题">¶</a></h3>
+</section>
+<section id="push-commit">
+<h3>修改已经 push 的某次 commit 的作者/邮箱<a class="headerlink" href="#push-commit" title="Permalink to this headline">¶</a></h3>
 <p>已经 push 的记录，如果要修改作者信息的话，只能通过 –force 命令。</p>
 <p>下面是来自 <a class="reference external" href="https://stackoverflow.com/a/750182/12539782">这里</a> 的脚本：</p>
 <blockquote>
 <div><p>#!/bin/sh</p>
 <p>git filter-branch –env-filter ‘
-OLD_EMAIL=”<a class="reference external" href="mailto:your-old-email&#37;&#52;&#48;example&#46;com">your-old-email<span>&#64;</span>example<span>&#46;</span>com</a>”
+OLD_EMAIL=”<a class="reference external" href="mailto:your-old-email%40example.com">your-old-email<span>@</span>example<span>.</span>com</a>”
 CORRECT_NAME=”Your Correct Name”
-CORRECT_EMAIL=”<a class="reference external" href="mailto:your-correct-email&#37;&#52;&#48;example&#46;com">your-correct-email<span>&#64;</span>example<span>&#46;</span>com</a>”
+CORRECT_EMAIL=”<a class="reference external" href="mailto:your-correct-email%40example.com">your-correct-email<span>@</span>example<span>.</span>com</a>”
 if [ “$GIT_COMMITTER_EMAIL” = “$OLD_EMAIL” ]
 then</p>
 <blockquote>
@@ -499,7 +496,7 @@ pick 16ee6eb add file4
 # r, reword = use commit, but edit the commit message
 # e, edit = use commit, but stop for amending
 # s, squash = use commit, but meld into previous commit
-# f, fixup = like &quot;squash&quot;, but discard this commit&#39;s log message
+# f, fixup = like "squash", but discard this commit's log message
 # x, exec = run command (the rest of the line) using shell
 </pre></div>
 </div>
@@ -516,7 +513,7 @@ pick 16ee6eb add file4
 </div></blockquote>
 </div></blockquote>
 <p>这里的意思是说，你可以使用 <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">--amend</span></code> 来修改此次提交，修改以后，觉得满意了，执行 <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">rebase</span> <span class="pre">--continue</span></code> 继续剩下的流程。</p>
-<p>由于我们的主要目的是修改提交者的信息，因此光用 <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">--amend</span></code> 是不够的，我们要使用 <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">--amend</span> <span class="pre">--author</span> <span class="pre">&quot;yourname</span> <span class="pre">&lt;your</span> <span class="pre">email&gt;&quot;</span></code> 这样的操作，这一点是修改提交者信息的关键所在。</p>
+<p>由于我们的主要目的是修改提交者的信息，因此光用 <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">--amend</span></code> 是不够的，我们要使用 <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">--amend</span> <span class="pre">--author</span> <span class="pre">"yourname</span> <span class="pre">&lt;your</span> <span class="pre">email&gt;"</span></code> 这样的操作，这一点是修改提交者信息的关键所在。</p>
 <p>使用上面的命令成功修改此次提交的提交者信息后，一定要记得执行 <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">rebase</span> <span class="pre">--continue</span></code> 继续。</p>
 <p>最终完成以后提示如下：</p>
 <blockquote>
@@ -529,16 +526,16 @@ Successfully rebased and updated refs/heads/master.</p>
 <li><p><a class="reference external" href="https://segmentfault.com/q/1010000006999861">git 修改已提交的某一次的邮箱和用户信息</a></p></li>
 <li><p><a class="reference external" href="http://baurine.github.io/2015/08/22/git_update_author.html">修改 git repo 历史提交的 author</a></p></li>
 </ol>
-</div>
-<div class="section" id="branch1-commit1-branch2">
-<h3>将 <code class="docutils literal notranslate"><span class="pre">branch1</span></code> 的某个 <code class="docutils literal notranslate"><span class="pre">commit1</span></code> 合并到 <code class="docutils literal notranslate"><span class="pre">branch2</span></code> 当中<a class="headerlink" href="#branch1-commit1-branch2" title="永久链接至标题">¶</a></h3>
+</section>
+<section id="branch1-commit1-branch2">
+<h3>将 <code class="docutils literal notranslate"><span class="pre">branch1</span></code> 的某个 <code class="docutils literal notranslate"><span class="pre">commit1</span></code> 合并到 <code class="docutils literal notranslate"><span class="pre">branch2</span></code> 当中<a class="headerlink" href="#branch1-commit1-branch2" title="Permalink to this headline">¶</a></h3>
 <p>切换到 branch2 中，然后执行如下命令：</p>
 <blockquote>
 <div><p>$ git cherry-pick commit1</p>
 </div></blockquote>
-</div>
-<div class="section" id="id10">
-<h3>将 Git 项目迁移到另一个仓库<a class="headerlink" href="#id10" title="永久链接至标题">¶</a></h3>
+</section>
+<section id="id10">
+<h3>将 Git 项目迁移到另一个仓库<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
 <p>我们假设旧仓库的项目名称叫 <code class="docutils literal notranslate"><span class="pre">old-repository</span></code>，新仓库的项目名称叫 <code class="docutils literal notranslate"><span class="pre">new-repository</span></code>。操作如下：</p>
 <p>（1）创建旧仓库的裸克隆：</p>
 <blockquote>
@@ -557,64 +554,108 @@ git push –mirror <a class="reference external" href="https://github.com/exampl
 <li><p><a class="reference external" href="https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/duplicating-a-repository">Duplicating a repository</a></p></li>
 <li><p><a class="reference external" href="https://moelove.info/2016/12/04/Git-%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93%E5%92%8C%E8%A3%B8%E4%BB%93%E5%BA%93/">Git 本地仓库和裸仓库</a></p></li>
 </ol>
-<hr class="docutils" />
+<hr class="docutils"/>
 <p><strong>参考资料</strong>：</p>
 <ol class="arabic simple">
 <li><p><a class="reference external" href="https://git-scm.com/">https://git-scm.com/</a></p></li>
 </ol>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
+      </article>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="branch-name-contain-the-space-char.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Branch Name Contain The ‘space’ Char</div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="git-glossary.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Git Glossary</div>
+                
+              </div>
+            </a>
+        </div>
 
-           </div>
-           
-          </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="branch-name-contain-the-space-char.html" class="btn btn-neutral float-right" title="Branch Name Contain The ‘space’ Char" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="git-glossary.html" class="btn btn-neutral float-left" title="Git Glossary" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <div class="related-information">
+              Copyright &#169; 2021, Jim Gao
+            |
+            Built with <a href="https://www.sphinx-doc.org/">Sphinx</a>
+              and
+              <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+              <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
+        </div>
+        
+      </footer>
     </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Useful Tips about Git</a><ul>
+<li><a class="reference internal" href="#id1">多人合作开发</a></li>
+<li><a class="reference internal" href="#git-flow">使用 git-flow</a></li>
+<li><a class="reference internal" href="#rename-branch">Rename Branch</a></li>
+<li><a class="reference internal" href="#rename-the-origin-remote-to-upstream">Rename The <code class="docutils literal notranslate"><span class="pre">origin</span></code> Remote To <code class="docutils literal notranslate"><span class="pre">upstream</span></code></a></li>
+<li><a class="reference internal" href="#reset">Reset</a></li>
+<li><a class="reference internal" href="#see-a-file-at-a-specific-commit">See A File At A Specific Commit</a></li>
+<li><a class="reference internal" href="#show-helpful-guides-that-come-with-git">Show Helpful Guides That Come With Git</a></li>
+<li><a class="reference internal" href="#show-the-latest-commit">Show The Latest Commit</a></li>
+<li><a class="reference internal" href="#use-format-patch-to-suggest-code-changes">Use <code class="docutils literal notranslate"><span class="pre">format</span> <span class="pre">patch</span></code> To Suggest Code Changes</a></li>
+<li><a class="reference internal" href="#what-will-be-done-after-rename-branch-on-github">What Will Be Done After Rename Branch On GitHub</a></li>
+<li><a class="reference internal" href="#commit-message">commit message 规范</a></li>
+<li><a class="reference internal" href="#git-rebase-commit">使用 git rebase 来合并你的 commit</a></li>
+<li><a class="reference internal" href="#git-pull-rebase"><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span> <span class="pre">--rebase</span></code></a></li>
+<li><a class="reference internal" href="#id4">分支合并</a><ul>
+<li><a class="reference internal" href="#main">场景：基于 main 分支代码，开发新特性</a></li>
+<li><a class="reference internal" href="#id5">场景：合并分支时，存在分叉</a></li>
+<li><a class="reference internal" href="#id6">场景：解决合并冲突</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id7">其他</a><ul>
+<li><a class="reference internal" href="#id8">修改密码</a></li>
+<li><a class="reference internal" href="#push-commit">修改已经 push 的某次 commit 的作者/邮箱</a></li>
+<li><a class="reference internal" href="#branch1-commit1-branch2">将 <code class="docutils literal notranslate"><span class="pre">branch1</span></code> 的某个 <code class="docutils literal notranslate"><span class="pre">commit1</span></code> 合并到 <code class="docutils literal notranslate"><span class="pre">branch2</span></code> 当中</a></li>
+<li><a class="reference internal" href="#id10">将 Git 项目迁移到另一个仓库</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 
-  <hr/>
-
-  <div role="contentinfo">
-    <p>
-        &#169; 版权所有 2021, Jim Gao.
-
-    </p>
-  </div>
-    
-    
-    
-    利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用了 
-    
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
-    
-    由 <a href="https://readthedocs.org">Read the Docs</a>开发.
-<p>除额外注明的地方外，本文档按 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议发布。</p>
- 
-
-
-</footer>
+          </div>
         </div>
       </div>
-
-    </section>
-
+      
+      
+    </aside>
   </div>
-  
-
-  <script type="text/javascript">
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script>
-
-  
-  
-    
-   
-
-</body>
+</div><script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/scripts/main.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    </body>
 </html>

@@ -1,91 +1,159 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Images" href="images.html" /><link rel="prev" title="Before HTML" href="before-html.html" />
 
-
-<!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
-<head>
-  <meta charset="utf-8" />
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <title>HTML Basics &mdash; Today I Learnt  文档</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
-
-  
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
+    <meta name="generator" content="sphinx-4.1.2, furo 2021.08.17.beta43"/>
+        <title>HTML Basics - Hello World</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?digest=910ac4ccc9d7c023151c34010d7b500fb9777a51" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?digest=16fb25fabf47304eee183a5e9af80b1ba98259b1" />
     
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/translations.js"></script>
     
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
 
+
+<style>
+  body {
+    --color-code-background: #eeffcc;
+  --color-code-foreground: black;
+  
+  }
+  body[data-theme="dark"] {
+    --color-code-background: #272822;
+  --color-code-foreground: #f8f8f2;
+  
+  }
+  @media (prefers-color-scheme: dark) {
+    body:not([data-theme="light"]) {
+      --color-code-background: #272822;
+  --color-code-foreground: #f8f8f2;
+  
+    }
+  }
+</style>
+    <link media="(prefers-color-scheme: dark)" rel="stylesheet" href="../_static/pygments_dark.css"></head>
+  <body>
     
-    <link rel="index" title="索引" href="../genindex.html" />
-    <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="Images" href="images.html" />
-    <link rel="prev" title="Before HTML" href="before-html.html" /> 
-</head>
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" />
+      <line x1="4" y1="6" x2="20" y2="6" />
+      <line x1="10" y1="12" x2="20" y2="12" />
+      <line x1="6" y1="18" x2="20" y2="18" />
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
 
-<body class="wy-body-for-nav">
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
 
-   
-  <div class="wy-grid-for-nav">
-    
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
-          
 
-          
-            <a href="../index.html" class="icon icon-home"> Today I Learnt
-          
 
-          
-          </a>
-
-          
-
-          
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="在文档中搜索" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <ul class="current">
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">Hello World</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  
+  
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C.html">计算机网络</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/dns.html">DNS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/%E7%A7%91%E6%8A%80%E8%8B%B1%E8%AF%AD.html">科技英语</a></li>
@@ -105,45 +173,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../operating-system/ubuntu-install-software.html">Install Software on Ubuntu</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../operating-system/ubuntu-problems.html">Problems on Ubuntu</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../operating-system/mxlinux-installation.html">MX Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../database/mysql.html">MySQL</a></li>
 <li class="toctree-l1"><a class="reference internal" href="before-html.html">Before HTML</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">HTML Basics</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#html">剖析一个 HTML 元素</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id1">嵌套元素</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id2">空元素</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id3">一个 HTML 文档结构</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id4">图像</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id5">标记文本</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id6">标题</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id7">段落</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id8">列表</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#id9">链接</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#basic-tags">Basic Tags</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#comments">Comments</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#style-and-colors">Style and Colors</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#formatting-a-page">Formatting a Page</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#images">Images</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#videos-and-youtube-iframes">Videos and YouTube iFrames</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#tables">Tables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#divs-and-spans">Divs and Spans</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#input-and-forms">Input and Forms</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#iframes">iFrames</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#meta-tags">Meta Tags</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#html5">HTML5 引入的新标签们</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#main"><code class="docutils literal notranslate"><span class="pre">main</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#header"><code class="docutils literal notranslate"><span class="pre">header</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#footer"><code class="docutils literal notranslate"><span class="pre">footer</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#nav"><code class="docutils literal notranslate"><span class="pre">nav</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#article"><code class="docutils literal notranslate"><span class="pre">article</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#section"><code class="docutils literal notranslate"><span class="pre">section</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#time"><code class="docutils literal notranslate"><span class="pre">time</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#id10">提高网站可访问性</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id11">名词解释</a></li>
-</ul>
-</li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">HTML Basics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="images.html">Images</a></li>
 <li class="toctree-l1"><a class="reference internal" href="html-code-snippets.html">HTML Code Snippets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../css/css-basics.html">CSS Basics</a></li>
@@ -197,79 +229,35 @@
 <li class="toctree-l1"><a class="reference internal" href="../learning-how-to-learn.html">Learning How to Learn</a></li>
 </ul>
 
-            
-          
-        </div>
-        
-      </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">Today I Learnt</a>
-        
-      </nav>
-
-
-      <div class="wy-nav-content">
-        
-        <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
-  <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-        
-      <li>HTML Basics</li>
-    
-    
-      <li class="wy-breadcrumbs-aside">
-        
-          
-            
-              <a href="https://github.com/tianheg/til/blob/main/content/html/html-basics.rst" class="fa fa-github"> 在 GitHub 上修改</a>
-            
-          
-        
-      </li>
-    
-  </ul>
-
-  
-  <hr/>
 </div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-            
-  <div class="section" id="html-basics">
-<h1>HTML Basics<a class="headerlink" href="#html-basics" title="永久链接至标题">¶</a></h1>
+</div>
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <article role="main">
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <section id="html-basics">
+<h1>HTML Basics<a class="headerlink" href="#html-basics" title="Permalink to this headline">¶</a></h1>
 <p>HTML(<strong>H</strong>yper<strong>t</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage，超文本标记语言)，它是一种定义你内容结构的一种标记语言。</p>
-<div class="section" id="html">
-<h2>剖析一个 HTML 元素<a class="headerlink" href="#html" title="永久链接至标题">¶</a></h2>
-<a class="reference external image-reference" href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics/grumpy-cat-small.png"><img alt="剖析一个 HTML 元素" src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics/grumpy-cat-small.png" /></a>
+<section id="html">
+<h2>剖析一个 HTML 元素<a class="headerlink" href="#html" title="Permalink to this headline">¶</a></h2>
+<a class="reference external image-reference" href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics/grumpy-cat-small.png"><img alt="剖析一个 HTML 元素" src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics/grumpy-cat-small.png"/></a>
 <p>一个元素主要由以上 3 部分组成：</p>
 <ol class="arabic simple">
 <li><p>开标签</p></li>
@@ -277,32 +265,32 @@
 <li><p>内容</p></li>
 <li><p>元素：The opening tag, the closing tag, and the content together comprise the element.</p></li>
 </ol>
-<a class="reference external image-reference" href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics/grumpy-cat-attribute-small.png"><img alt="元素属性" src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics/grumpy-cat-attribute-small.png" /></a>
+<a class="reference external image-reference" href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics/grumpy-cat-attribute-small.png"><img alt="元素属性" src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics/grumpy-cat-attribute-small.png"/></a>
 <p>元素还有属性。属性由属性名（<code class="docutils literal notranslate"><span class="pre">class</span></code>）和属性值（<code class="docutils literal notranslate"><span class="pre">editor-note</span></code>）构成。<code class="docutils literal notranslate"><span class="pre">class</span></code> 属性允许给元素加一个不唯一的标识符，用以指向这个元素，然后可以为这个元素添加样式/其他行为。</p>
 <p>一个属性应该包含以下几个部分：</p>
 <ol class="arabic simple">
 <li><p>属性与属性之间、属性和元素名之间，应该有 1 个空格</p></li>
 <li><p>属性名后有一个 <code class="docutils literal notranslate"><span class="pre">=</span></code></p></li>
-<li><p>属性值由引号包裹 <code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code>/<code class="docutils literal notranslate"><span class="pre">''</span></code></p></li>
+<li><p>属性值由引号包裹 <code class="docutils literal notranslate"><span class="pre">""</span></code>/<code class="docutils literal notranslate"><span class="pre">''</span></code></p></li>
 </ol>
-</div>
-<div class="section" id="id1">
-<h2>嵌套元素<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+</section>
+<section id="id1">
+<h2>嵌套元素<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <p>能够放进其他元素的，就是嵌套元素。</p>
-</div>
-<div class="section" id="id2">
-<h2>空元素<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+</section>
+<section id="id2">
+<h2>空元素<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>一些元素没有内容供它们包裹，它们的作用不是来改变内容，而是把元素表示的东西嵌入 HTML 页面里。</p>
-<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;images/firefox-icon.png&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;My test image&quot;</span><span class="p">&gt;</span>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"images/firefox-icon.png"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"My test image"</span><span class="p">&gt;</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="id3">
-<h2>一个 HTML 文档结构<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+</section>
+<section id="id3">
+<h2>一个 HTML 文档结构<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">"utf-8"</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Title<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
   <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
@@ -317,14 +305,14 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">&lt;!DOCTYPE</span> <span class="pre">html&gt;</span></code>：早些时候，它具备很多功能（自动错误检查等）；现在只有一个：确保 HTML 表现正常</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">&lt;html&gt;&lt;/html&gt;</span></code>：它包裹当前页面的所有内容，也被称为「根元素」</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">&lt;head&gt;&lt;/head&gt;</span></code>：包含在页面中却不被访问者看见的内容的聚集地，它可以包含：字符声明、SEO关键字、样式元素等</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">&lt;meta</span> <span class="pre">charset=&quot;utf-8&quot;&gt;</span></code>：它是最全的字符集，包括了几乎所有世界上使用的语言，最重要的是它可以识别你输入的任何内容，HTML 中它是必备的</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&lt;meta</span> <span class="pre">charset="utf-8"&gt;</span></code>：它是最全的字符集，包括了几乎所有世界上使用的语言，最重要的是它可以识别你输入的任何内容，HTML 中它是必备的</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">&lt;title&gt;&lt;/title&gt;</span></code>：用于浏览器标签显示标题，也用于添加标签/喜爱时的描述</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">&lt;body&gt;&lt;/body&gt;</span></code>：这里包含了你想向访客展示的一切内容</p></li>
 </ol>
-</div>
-<div class="section" id="id4">
-<h2>图像<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
-<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;images/firefox-icon.png&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;My test image&quot;</span><span class="p">&gt;</span>
+</section>
+<section id="id4">
+<h2>图像<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"images/firefox-icon.png"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"My test image"</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 <p>介绍：</p>
@@ -341,28 +329,28 @@
 <p><code class="docutils literal notranslate"><span class="pre">alt</span></code> 描述图片内容，并提供可选文本。它可以应对图片加载失败或者无法被用户看见的情况。它也能让搜索引擎知道一张图片里包含了什么。</p>
 <p>HTML5 引入了新的 <code class="docutils literal notranslate"><span class="pre">figure</span></code> 和与它相关的 <code class="docutils literal notranslate"><span class="pre">figcaption</span></code>，它们可以一起展示可视化的事物（像图像、图表），包裹这些元素能够能够提供双层可访问性加速，通过语义地对相关内容进行分组并提供一个可选文本解释 <code class="docutils literal notranslate"><span class="pre">figure</span></code>。对于数据可视化，像图表，说明可以被用来为有视觉障碍的用户简短地提示趋势或结论。使用它面临的另一个挑战：如何为读屏读者移动脱离屏幕的表格数据。</p>
 <p>在进行图片的显示大小设置时，可以只设置一个（width 或 height），之后 HTML 会自动把没有设置的那一个按图片比例调整到合适大小。adjust the aspect ratio for you（为你调整长宽比）。</p>
-</div>
-<div class="section" id="id5">
-<h2>标记文本<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
-<div class="section" id="id6">
-<h3>标题<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h3>
+</section>
+<section id="id5">
+<h2>标记文本<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<section id="id6">
+<h3>标题<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hello World!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Hello World!<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Hello World!<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="id7">
-<h3>段落<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h3>
+</section>
+<section id="id7">
+<h3>段落<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Hello World!<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="id8">
-<h3>列表<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h3>
+</section>
+<section id="id8">
+<h3>列表<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">&lt;ul&gt;</span></code>(unordered lists)/<code class="docutils literal notranslate"><span class="pre">&lt;ol&gt;</span></code>(ordered listed)：无序/有序列表。它们中都有 <code class="docutils literal notranslate"><span class="pre">&lt;li&gt;</span></code>(list item) 元素。</p>
 <div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>Apples<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span><span class="p">&gt;</span>Apples<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Oranges
     <span class="p">&lt;</span><span class="nt">ol</span><span class="p">&gt;</span>
       <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>tetx<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
@@ -371,13 +359,13 @@
   <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Bananas<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
 
-<span class="p">&lt;</span><span class="nt">ol</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;a/A/I/i&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">ol</span> <span class="na">type</span><span class="o">=</span><span class="s">"a/A/I/i"</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Apples<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Oranges<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Bananas<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span>
 
-<span class="p">&lt;</span><span class="nt">ol</span> <span class="na">start</span><span class="o">=</span><span class="s">&quot;11&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">ol</span> <span class="na">start</span><span class="o">=</span><span class="s">"11"</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>HTML<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>HTML<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>HTML<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
@@ -391,57 +379,57 @@
 <span class="p">&lt;/</span><span class="nt">dl</span><span class="p">&gt;</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="section" id="id9">
-<h2>链接<a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h2>
+</section>
+</section>
+<section id="id9">
+<h2>链接<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">&lt;a&gt;</span></code>(anchor)，<code class="docutils literal notranslate"><span class="pre">href</span></code>(hypertext reference)</p>
-<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://www.google.com&quot;</span> <span class="na">target</span><span class="o">=</span><span class="s">&quot;_blank&quot;</span><span class="p">&gt;</span>Google&#39;s Homepage<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"https://www.google.com"</span> <span class="na">target</span><span class="o">=</span><span class="s">"_blank"</span><span class="p">&gt;</span>Google's Homepage<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
 
-<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;pages2.html&quot;</span><span class="p">&gt;</span>Pages2Tss<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"pages2.html"</span><span class="p">&gt;</span>Pages2Tss<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
 
-<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#39;path/to/file&#39;</span> <span class="na">download</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">'path/to/file'</span> <span class="na">download</span><span class="p">&gt;</span>
 Download
 <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
 
-<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;mailto:{email}?subject={subject}&amp;body={content}&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"mailto:{email}?subject={subject}&amp;body={content}"</span><span class="p">&gt;</span>
 Send us an email
 <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
 
-<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;tel:{phone}&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"tel:{phone}"</span><span class="p">&gt;</span>
 Call us
 <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
 
-<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;sms:{phone}?body={content}&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"sms:{phone}?body={content}"</span><span class="p">&gt;</span>
 Send us a message
 <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">a</span></code> 所包含的文本要能表示即将跳转页面的含义。</p>
-</div>
-<div class="section" id="basic-tags">
-<h2>Basic Tags<a class="headerlink" href="#basic-tags" title="永久链接至标题">¶</a></h2>
+</section>
+<section id="basic-tags">
+<h2>Basic Tags<a class="headerlink" href="#basic-tags" title="Permalink to this headline">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">html</span></code>, <code class="docutils literal notranslate"><span class="pre">head</span></code>, <code class="docutils literal notranslate"><span class="pre">body</span></code>, <code class="docutils literal notranslate"><span class="pre">meta</span></code>, <code class="docutils literal notranslate"><span class="pre">title</span></code>, <code class="docutils literal notranslate"><span class="pre">hx</span></code>(x=1~6), <code class="docutils literal notranslate"><span class="pre">p</span></code>, <code class="docutils literal notranslate"><span class="pre">b</span></code>(bold), <code class="docutils literal notranslate"><span class="pre">i</span></code>(italic), <code class="docutils literal notranslate"><span class="pre">br/</span></code>, <code class="docutils literal notranslate"><span class="pre">hr/</span></code>, <code class="docutils literal notranslate"><span class="pre">big</span></code>, <code class="docutils literal notranslate"><span class="pre">small</span></code>, <code class="docutils literal notranslate"><span class="pre">sub</span></code>, <code class="docutils literal notranslate"><span class="pre">sup</span></code>, <code class="docutils literal notranslate"><span class="pre">aside</span></code>, <code class="docutils literal notranslate"><span class="pre">a</span></code>, <code class="docutils literal notranslate"><span class="pre">img</span></code>, <code class="docutils literal notranslate"><span class="pre">video</span></code>, <code class="docutils literal notranslate"><span class="pre">iframe</span></code>, <code class="docutils literal notranslate"><span class="pre">ul</span></code>, <code class="docutils literal notranslate"><span class="pre">ol</span></code>, <code class="docutils literal notranslate"><span class="pre">li</span></code>, <code class="docutils literal notranslate"><span class="pre">dl</span></code>, <code class="docutils literal notranslate"><span class="pre">dt</span></code>, <code class="docutils literal notranslate"><span class="pre">dd</span></code></p>
-</div>
-<div class="section" id="comments">
-<h2>Comments<a class="headerlink" href="#comments" title="永久链接至标题">¶</a></h2>
+</section>
+<section id="comments">
+<h2>Comments<a class="headerlink" href="#comments" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="c">&lt;!-- --&gt;</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="style-and-colors">
-<h2>Style and Colors<a class="headerlink" href="#style-and-colors" title="永久链接至标题">¶</a></h2>
-<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">p</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;color: green;&quot;</span><span class="p">&gt;</span>Hello World!<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</section>
+<section id="style-and-colors">
+<h2>Style and Colors<a class="headerlink" href="#style-and-colors" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">p</span> <span class="na">style</span><span class="o">=</span><span class="s">"color: green;"</span><span class="p">&gt;</span>Hello World!<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="formatting-a-page">
-<h2>Formatting a Page<a class="headerlink" href="#formatting-a-page" title="永久链接至标题">¶</a></h2>
+</section>
+<section id="formatting-a-page">
+<h2>Formatting a Page<a class="headerlink" href="#formatting-a-page" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;description&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;This is an example.&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">"UTF-8"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">"description"</span> <span class="na">content</span><span class="o">=</span><span class="s">"This is an example."</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Title<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
   <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
@@ -461,36 +449,36 @@ Send us a message
 <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="images">
-<h2>Images<a class="headerlink" href="#images" title="永久链接至标题">¶</a></h2>
-<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;100&quot;</span><span class="p">/&gt;</span> <span class="c">&lt;!-- 100px pixels--&gt;</span>
+</section>
+<section id="images">
+<h2>Images<a class="headerlink" href="#images" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">""</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">""</span> <span class="na">alt</span><span class="o">=</span><span class="s">""</span> <span class="na">width</span><span class="o">=</span><span class="s">""</span> <span class="na">height</span><span class="o">=</span><span class="s">"100"</span><span class="p">/&gt;</span> <span class="c">&lt;!-- 100px pixels--&gt;</span>
 <span class="p">&lt;</span><span class="nt">figure</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;roundhouseDestruction.jpeg&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Photo of Camper Cat executing a roundhouse kick&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"roundhouseDestruction.jpeg"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"Photo of Camper Cat executing a roundhouse kick"</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">figcaption</span><span class="p">&gt;</span>
     Master Camper Cat demonstrates proper form of a roundhouse kick.
   <span class="p">&lt;/</span><span class="nt">figcaption</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">figure</span><span class="p">&gt;</span>
 
-<span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#39;image.jpg&#39;</span> <span class="na">loading</span><span class="o">=</span><span class="s">&#39;lazy&#39;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#39;Alternative Text&#39;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">'image.jpg'</span> <span class="na">loading</span><span class="o">=</span><span class="s">'lazy'</span> <span class="na">alt</span><span class="o">=</span><span class="s">'Alternative Text'</span><span class="p">&gt;</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="videos-and-youtube-iframes">
-<h2>Videos and YouTube iFrames<a class="headerlink" href="#videos-and-youtube-iframes" title="永久链接至标题">¶</a></h2>
-<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">video</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;&quot;</span> <span class="na">poster</span><span class="o">=</span><span class="s">&quot;&quot;</span> <span class="na">loop</span> <span class="na">autoplay</span> <span class="na">controls</span><span class="p">&gt;&lt;/</span><span class="nt">video</span><span class="p">&gt;</span> <span class="c">&lt;!-- 添加封面 --&gt;</span>
+</section>
+<section id="videos-and-youtube-iframes">
+<h2>Videos and YouTube iFrames<a class="headerlink" href="#videos-and-youtube-iframes" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">video</span> <span class="na">src</span><span class="o">=</span><span class="s">""</span> <span class="na">width</span><span class="o">=</span><span class="s">""</span> <span class="na">height</span><span class="o">=</span><span class="s">""</span> <span class="na">poster</span><span class="o">=</span><span class="s">""</span> <span class="na">loop</span> <span class="na">autoplay</span> <span class="na">controls</span><span class="p">&gt;&lt;/</span><span class="nt">video</span><span class="p">&gt;</span> <span class="c">&lt;!-- 添加封面 --&gt;</span>
 
-<span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;560&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;315&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://www.youtube.com/embed/pQN-pnXPaVg&quot;</span> <span class="na">title</span><span class="o">=</span><span class="s">&quot;YouTube video player&quot;</span> <span class="na">frameborder</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="na">allow</span><span class="o">=</span><span class="s">&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot;</span> <span class="na">allowfullscreen</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">width</span><span class="o">=</span><span class="s">"560"</span> <span class="na">height</span><span class="o">=</span><span class="s">"315"</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://www.youtube.com/embed/pQN-pnXPaVg"</span> <span class="na">title</span><span class="o">=</span><span class="s">"YouTube video player"</span> <span class="na">frameborder</span><span class="o">=</span><span class="s">"0"</span> <span class="na">allow</span><span class="o">=</span><span class="s">"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"</span> <span class="na">allowfullscreen</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">controls</span></code> 显示基本的操作：播放、暂停等；</p></li>
 </ul>
-</div>
-<div class="section" id="tables">
-<h2>Tables<a class="headerlink" href="#tables" title="永久链接至标题">¶</a></h2>
+</section>
+<section id="tables">
+<h2>Tables<a class="headerlink" href="#tables" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">table</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">thead</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">caption</span><span class="p">&gt;&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>List of Numbers<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;&lt;/</span><span class="nt">caption</span><span class="p">&gt;</span>
@@ -502,7 +490,7 @@ Send us a message
   <span class="p">&lt;/</span><span class="nt">thead</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">tbody</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">td</span> <span class="na">colspan</span><span class="o">=</span><span class="s">&quot;2&quot;</span><span class="p">&gt;</span>Four<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">td</span> <span class="na">colspan</span><span class="o">=</span><span class="s">"2"</span><span class="p">&gt;</span>Four<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
       <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Five<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
       <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Six<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
     <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
@@ -510,12 +498,12 @@ Send us a message
 <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="divs-and-spans">
-<h2>Divs and Spans<a class="headerlink" href="#divs-and-spans" title="永久链接至标题">¶</a></h2>
+</section>
+<section id="divs-and-spans">
+<h2>Divs and Spans<a class="headerlink" href="#divs-and-spans" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="c">&lt;!-- Inline element --&gt;</span>
-<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>link1<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>linkk2<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span><span class="p">&gt;</span>link1<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span><span class="p">&gt;</span>linkk2<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>text<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
 
 <span class="c">&lt;!-- block element --&gt;</span>
@@ -526,83 +514,83 @@ Send us a message
   <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>div2<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="input-and-forms">
-<h2>Input and Forms<a class="headerlink" href="#input-and-forms" title="永久链接至标题">¶</a></h2>
+</section>
+<section id="input-and-forms">
+<h2>Input and Forms<a class="headerlink" href="#input-and-forms" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">form</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;username&quot;</span><span class="p">&gt;</span>Username:<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;Enter your username&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;username&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="p">/&gt;</span>
-  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;password&quot;</span> <span class="p">/&gt;</span>
-  <span class="p">&lt;</span><span class="nt">textarea</span> <span class="na">rows</span><span class="o">=</span><span class="s">&quot;10&quot;</span> <span class="na">cols</span><span class="o">=</span><span class="s">&quot;30&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">"username"</span><span class="p">&gt;</span>Username:<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">"text"</span> <span class="na">value</span><span class="o">=</span><span class="s">"Enter your username"</span> <span class="na">id</span><span class="o">=</span><span class="s">"username"</span> <span class="na">name</span><span class="o">=</span><span class="s">""</span><span class="p">/&gt;</span>
+  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">"password"</span> <span class="p">/&gt;</span>
+  <span class="p">&lt;</span><span class="nt">textarea</span> <span class="na">rows</span><span class="o">=</span><span class="s">"10"</span> <span class="na">cols</span><span class="o">=</span><span class="s">"30"</span><span class="p">&gt;</span>
   Enter a paragraph
   <span class="p">&lt;/</span><span class="nt">textarea</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;date&quot;</span> <span class="p">/&gt;</span>
-  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;email&quot;</span> <span class="p">/&gt;</span>
-  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;range&quot;</span> <span class="p">/&gt;</span>
-  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;file&quot;</span> <span class="p">/&gt;</span>
-  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;checkbox&quot;</span> <span class="p">/&gt;</span>
-  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;btn&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;radio&quot;</span> <span class="p">/&gt;</span>
-  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;btn&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;radio&quot;</span> <span class="p">/&gt;</span>
-  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span> <span class="p">/&gt;</span>
+  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">"date"</span> <span class="p">/&gt;</span>
+  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">"email"</span> <span class="p">/&gt;</span>
+  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">"range"</span> <span class="p">/&gt;</span>
+  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">"file"</span> <span class="p">/&gt;</span>
+  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">"checkbox"</span> <span class="p">/&gt;</span>
+  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">name</span><span class="o">=</span><span class="s">"btn"</span> <span class="na">type</span><span class="o">=</span><span class="s">"radio"</span> <span class="p">/&gt;</span>
+  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">name</span><span class="o">=</span><span class="s">"btn"</span> <span class="na">type</span><span class="o">=</span><span class="s">"radio"</span> <span class="p">/&gt;</span>
+  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">"submit"</span> <span class="p">/&gt;</span>
 <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 <p>使用 <code class="docutils literal notranslate"><span class="pre">label</span></code> 增加 <code class="docutils literal notranslate"><span class="pre">form</span></code> 的可访问性。</p>
-</div>
-<div class="section" id="iframes">
-<h2>iFrames<a class="headerlink" href="#iframes" title="永久链接至标题">¶</a></h2>
-<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/&quot;</span> <span class="na">frameborder</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="p">&gt;</span>
+</section>
+<section id="iframes">
+<h2>iFrames<a class="headerlink" href="#iframes" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/"</span> <span class="na">frameborder</span><span class="o">=</span><span class="s">"0"</span> <span class="na">width</span><span class="o">=</span><span class="s">""</span> <span class="na">height</span><span class="o">=</span><span class="s">""</span><span class="p">&gt;</span>
 fCC JavaScript
 <span class="p">&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 <p>有些网站不允许通过 <code class="docutils literal notranslate"><span class="pre">iframe</span></code> 嵌入到其他网站中，因为这会使得浏览网站的人误以为“其他网站”才是真网站，而把那个真正的官方网站视为假网站。</p>
-</div>
-<div class="section" id="meta-tags">
-<h2>Meta Tags<a class="headerlink" href="#meta-tags" title="永久链接至标题">¶</a></h2>
-<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;description&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;This is an example.&quot;</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;author&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;Jim Gao&quot;</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;keywords&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;Tags, HTML&quot;</span><span class="p">&gt;</span>
+</section>
+<section id="meta-tags">
+<h2>Meta Tags<a class="headerlink" href="#meta-tags" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">"UTF-8"</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">"description"</span> <span class="na">content</span><span class="o">=</span><span class="s">"This is an example."</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">"author"</span> <span class="na">content</span><span class="o">=</span><span class="s">"Jim Gao"</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">"keywords"</span> <span class="na">content</span><span class="o">=</span><span class="s">"Tags, HTML"</span><span class="p">&gt;</span>
 
-<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;width=device-width, initial-scale=1.0&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">"viewport"</span> <span class="na">content</span><span class="o">=</span><span class="s">"width=device-width, initial-scale=1.0"</span><span class="p">&gt;</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="html5">
-<h2>HTML5 引入的新标签们<a class="headerlink" href="#html5" title="永久链接至标题">¶</a></h2>
-<div class="section" id="main">
-<h3><code class="docutils literal notranslate"><span class="pre">main</span></code><a class="headerlink" href="#main" title="永久链接至标题">¶</a></h3>
-</div>
-<div class="section" id="header">
-<h3><code class="docutils literal notranslate"><span class="pre">header</span></code><a class="headerlink" href="#header" title="永久链接至标题">¶</a></h3>
+</section>
+<section id="html5">
+<h2>HTML5 引入的新标签们<a class="headerlink" href="#html5" title="Permalink to this headline">¶</a></h2>
+<section id="main">
+<h3><code class="docutils literal notranslate"><span class="pre">main</span></code><a class="headerlink" href="#main" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="header">
+<h3><code class="docutils literal notranslate"><span class="pre">header</span></code><a class="headerlink" href="#header" title="Permalink to this headline">¶</a></h3>
 <p>它被用来包装介绍信息或导航链接作为它的父标签，与在多页都是重复的目录协作得很好。它共享你从 <code class="docutils literal notranslate"><span class="pre">main</span></code> 那儿看到的嵌入式地标特征，允许辅助技术快速导航到那儿。<code class="docutils literal notranslate"><span class="pre">header</span></code> 是用于 <code class="docutils literal notranslate"><span class="pre">body</span></code> 内部的标签，和 <code class="docutils literal notranslate"><span class="pre">head</span></code> 元素不同，后者包含页面的标题、元信息等等内容。</p>
-</div>
-<div class="section" id="footer">
-<h3><code class="docutils literal notranslate"><span class="pre">footer</span></code><a class="headerlink" href="#footer" title="永久链接至标题">¶</a></h3>
+</section>
+<section id="footer">
+<h3><code class="docutils literal notranslate"><span class="pre">footer</span></code><a class="headerlink" href="#footer" title="Permalink to this headline">¶</a></h3>
 <p>它内置了一个强大功能：允许辅助设备快速地导航到那里。主要用于包含版权信息或者与文档相关的链接，通常被放置在页面的底部。</p>
-</div>
-<div class="section" id="nav">
-<h3><code class="docutils literal notranslate"><span class="pre">nav</span></code><a class="headerlink" href="#nav" title="永久链接至标题">¶</a></h3>
+</section>
+<section id="nav">
+<h3><code class="docutils literal notranslate"><span class="pre">nav</span></code><a class="headerlink" href="#nav" title="Permalink to this headline">¶</a></h3>
 <p>它包裹着主要导航链接。</p>
-</div>
-<div class="section" id="article">
-<h3><code class="docutils literal notranslate"><span class="pre">article</span></code><a class="headerlink" href="#article" title="永久链接至标题">¶</a></h3>
+</section>
+<section id="article">
+<h3><code class="docutils literal notranslate"><span class="pre">article</span></code><a class="headerlink" href="#article" title="Permalink to this headline">¶</a></h3>
 <p>它表示文档、页面、应用或站点中的一个自包围部分，这些应用的地方是可配置且可复用的。</p>
-</div>
-<div class="section" id="section">
-<h3><code class="docutils literal notranslate"><span class="pre">section</span></code><a class="headerlink" href="#section" title="永久链接至标题">¶</a></h3>
-</div>
-<div class="section" id="time">
-<h3><code class="docutils literal notranslate"><span class="pre">time</span></code><a class="headerlink" href="#time" title="永久链接至标题">¶</a></h3>
-<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">time</span> <span class="na">datetime</span><span class="o">=</span><span class="s">&quot;2013-02-13&quot;</span><span class="p">&gt;</span>last Wednesday<span class="p">&lt;/</span><span class="nt">time</span><span class="p">&gt;</span>
+</section>
+<section id="section">
+<h3><code class="docutils literal notranslate"><span class="pre">section</span></code><a class="headerlink" href="#section" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="time">
+<h3><code class="docutils literal notranslate"><span class="pre">time</span></code><a class="headerlink" href="#time" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">time</span> <span class="na">datetime</span><span class="o">=</span><span class="s">"2013-02-13"</span><span class="p">&gt;</span>last Wednesday<span class="p">&lt;/</span><span class="nt">time</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 <p>它的一个属性 <code class="docutils literal notranslate"><span class="pre">datetime</span></code> 可以设置时间格式。它能标准化显示时间。</p>
-</div>
-</div>
-<div class="section" id="id10">
-<h2>提高网站可访问性<a class="headerlink" href="#id10" title="永久链接至标题">¶</a></h2>
+</section>
+</section>
+<section id="id10">
+<h2>提高网站可访问性<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
 <ul>
 <li><p>小心选择传递信息的颜色；使用足够的对比度，为了避免色盲人群可能遇到的问题。</p></li>
 <li><p>使用高对比度的文本增加可读性（在前置颜色与背景颜色）。网页无障碍性指导原则（Web Content Accessibility Guidelines，WCAG）推荐对于正常文本至少需要 4.5 到 1 的对比度。</p></li>
@@ -620,36 +608,36 @@ fCC JavaScript
 </div>
 </li>
 <li><p>使用 HTML 访问键使链接可导航</p>
-<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">button</span> <span class="na">accesskey</span><span class="o">=</span><span class="s">&quot;b&quot;</span><span class="p">&gt;</span>Important Button<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">button</span> <span class="na">accesskey</span><span class="o">=</span><span class="s">"b"</span><span class="p">&gt;</span>Important Button<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 </li>
 <li><p>对于标题标签 <code class="docutils literal notranslate"><span class="pre">hx</span></code>，数字越小越往前，顺序不能颠倒；而且不能间隔使用：<code class="docutils literal notranslate"><span class="pre">h2</span></code> 后不能直接接 <code class="docutils literal notranslate"><span class="pre">h4</span></code>，要按顺序接 <code class="docutils literal notranslate"><span class="pre">h3</span></code>。如果担心大小，可通过 CSS 设置相对大小；<code class="docutils literal notranslate"><span class="pre">h1</span></code> 是必须存在的一个元素，它在一个页面只能有一个，它是你内容的主题。标题标签还被用于帮助搜索引擎理解页面的内容。</p></li>
 <li><p><em>Semantic meaning</em> 意味着你使用的标签能够暗示它包含的信息的种类</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">tabindex</span></code> 有 3 个独特的作用：当它在标签上时，表明该元素可以被关注。该值（正，负或零的整数）确定行为。它还可被用于 <code class="docutils literal notranslate"><span class="pre">div</span></code>，<code class="docutils literal notranslate"><span class="pre">span</span></code>，<code class="docutils literal notranslate"><span class="pre">p</span></code>，通过在上面放置 <code class="docutils literal notranslate"><span class="pre">tabindex=&quot;0&quot;</span></code>。注意：当 <code class="docutils literal notranslate"><span class="pre">tabindex</span></code> 被设为负值，这表示被设置元素是可关注的，但无法通过键盘访问。这种方法通常用于以编程方式将焦点移到内容上（像当用于弹窗的 <code class="docutils literal notranslate"><span class="pre">div</span></code> 被激活时）</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tabindex</span></code> 有 3 个独特的作用：当它在标签上时，表明该元素可以被关注。该值（正，负或零的整数）确定行为。它还可被用于 <code class="docutils literal notranslate"><span class="pre">div</span></code>，<code class="docutils literal notranslate"><span class="pre">span</span></code>，<code class="docutils literal notranslate"><span class="pre">p</span></code>，通过在上面放置 <code class="docutils literal notranslate"><span class="pre">tabindex="0"</span></code>。注意：当 <code class="docutils literal notranslate"><span class="pre">tabindex</span></code> 被设为负值，这表示被设置元素是可关注的，但无法通过键盘访问。这种方法通常用于以编程方式将焦点移到内容上（像当用于弹窗的 <code class="docutils literal notranslate"><span class="pre">div</span></code> 被激活时）</p></li>
 <li><p>把 <code class="docutils literal notranslate"><span class="pre">radio</span></code> 放在 <code class="docutils literal notranslate"><span class="pre">fieldset</span></code> 中可以改善无障碍访问</p>
 <div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">form</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">fieldset</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">legend</span><span class="p">&gt;</span>Choose one of these three items:<span class="p">&lt;/</span><span class="nt">legend</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;one&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;radio&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;items&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;one&quot;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;one&quot;</span><span class="p">&gt;</span>Choice One<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;two&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;radio&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;items&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;two&quot;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;two&quot;</span><span class="p">&gt;</span>Choice Two<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;three&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;radio&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;items&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;three&quot;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;three&quot;</span><span class="p">&gt;</span>Choice Three<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">id</span><span class="o">=</span><span class="s">"one"</span> <span class="na">type</span><span class="o">=</span><span class="s">"radio"</span> <span class="na">name</span><span class="o">=</span><span class="s">"items"</span> <span class="na">value</span><span class="o">=</span><span class="s">"one"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">"one"</span><span class="p">&gt;</span>Choice One<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">id</span><span class="o">=</span><span class="s">"two"</span> <span class="na">type</span><span class="o">=</span><span class="s">"radio"</span> <span class="na">name</span><span class="o">=</span><span class="s">"items"</span> <span class="na">value</span><span class="o">=</span><span class="s">"two"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">"two"</span><span class="p">&gt;</span>Choice Two<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">id</span><span class="o">=</span><span class="s">"three"</span> <span class="na">type</span><span class="o">=</span><span class="s">"radio"</span> <span class="na">name</span><span class="o">=</span><span class="s">"items"</span> <span class="na">value</span><span class="o">=</span><span class="s">"three"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">"three"</span><span class="p">&gt;</span>Choice Three<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
   <span class="p">&lt;/</span><span class="nt">fieldset</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 </li>
 </ul>
-</div>
-<div class="section" id="id11">
-<h2>名词解释<a class="headerlink" href="#id11" title="永久链接至标题">¶</a></h2>
+</section>
+<section id="id11">
+<h2>名词解释<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Accessibility 无障碍访问（In web development, accessibility refers to web content and a UI (user interface) that can be understood, navigated, and interacted with by a broad audience. This includes people with visual, auditory, mobility, or cognitive disabilities.）</p></li>
 </ul>
-<hr class="docutils" />
+<hr class="docutils"/>
 <p><strong>参考资料</strong>：</p>
 <ol class="arabic simple">
 <li><p><a class="reference external" href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics">https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics</a></p></li>
@@ -657,58 +645,111 @@ fCC JavaScript
 <li><p><a class="reference external" href="https://youtu.be/pQN-pnXPaVg">https://youtu.be/pQN-pnXPaVg</a></p></li>
 <li><p><a class="reference external" href="https://www.w3schools.com/html/default.asp">https://www.w3schools.com/html/default.asp</a></p></li>
 </ol>
-</div>
-</div>
+</section>
+</section>
 
+      </article>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="images.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Images</div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="before-html.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Before HTML</div>
+                
+              </div>
+            </a>
+        </div>
 
-           </div>
-           
-          </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="images.html" class="btn btn-neutral float-right" title="Images" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="before-html.html" class="btn btn-neutral float-left" title="Before HTML" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <div class="related-information">
+              Copyright &#169; 2021, Jim Gao
+            |
+            Built with <a href="https://www.sphinx-doc.org/">Sphinx</a>
+              and
+              <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+              <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
+        </div>
+        
+      </footer>
     </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">HTML Basics</a><ul>
+<li><a class="reference internal" href="#html">剖析一个 HTML 元素</a></li>
+<li><a class="reference internal" href="#id1">嵌套元素</a></li>
+<li><a class="reference internal" href="#id2">空元素</a></li>
+<li><a class="reference internal" href="#id3">一个 HTML 文档结构</a></li>
+<li><a class="reference internal" href="#id4">图像</a></li>
+<li><a class="reference internal" href="#id5">标记文本</a><ul>
+<li><a class="reference internal" href="#id6">标题</a></li>
+<li><a class="reference internal" href="#id7">段落</a></li>
+<li><a class="reference internal" href="#id8">列表</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id9">链接</a></li>
+<li><a class="reference internal" href="#basic-tags">Basic Tags</a></li>
+<li><a class="reference internal" href="#comments">Comments</a></li>
+<li><a class="reference internal" href="#style-and-colors">Style and Colors</a></li>
+<li><a class="reference internal" href="#formatting-a-page">Formatting a Page</a></li>
+<li><a class="reference internal" href="#images">Images</a></li>
+<li><a class="reference internal" href="#videos-and-youtube-iframes">Videos and YouTube iFrames</a></li>
+<li><a class="reference internal" href="#tables">Tables</a></li>
+<li><a class="reference internal" href="#divs-and-spans">Divs and Spans</a></li>
+<li><a class="reference internal" href="#input-and-forms">Input and Forms</a></li>
+<li><a class="reference internal" href="#iframes">iFrames</a></li>
+<li><a class="reference internal" href="#meta-tags">Meta Tags</a></li>
+<li><a class="reference internal" href="#html5">HTML5 引入的新标签们</a><ul>
+<li><a class="reference internal" href="#main"><code class="docutils literal notranslate"><span class="pre">main</span></code></a></li>
+<li><a class="reference internal" href="#header"><code class="docutils literal notranslate"><span class="pre">header</span></code></a></li>
+<li><a class="reference internal" href="#footer"><code class="docutils literal notranslate"><span class="pre">footer</span></code></a></li>
+<li><a class="reference internal" href="#nav"><code class="docutils literal notranslate"><span class="pre">nav</span></code></a></li>
+<li><a class="reference internal" href="#article"><code class="docutils literal notranslate"><span class="pre">article</span></code></a></li>
+<li><a class="reference internal" href="#section"><code class="docutils literal notranslate"><span class="pre">section</span></code></a></li>
+<li><a class="reference internal" href="#time"><code class="docutils literal notranslate"><span class="pre">time</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id10">提高网站可访问性</a></li>
+<li><a class="reference internal" href="#id11">名词解释</a></li>
+</ul>
+</li>
+</ul>
 
-  <hr/>
-
-  <div role="contentinfo">
-    <p>
-        &#169; 版权所有 2021, Jim Gao.
-
-    </p>
-  </div>
-    
-    
-    
-    利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用了 
-    
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
-    
-    由 <a href="https://readthedocs.org">Read the Docs</a>开发.
-<p>除额外注明的地方外，本文档按 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议发布。</p>
- 
-
-
-</footer>
+          </div>
         </div>
       </div>
-
-    </section>
-
+      
+      
+    </aside>
   </div>
-  
-
-  <script type="text/javascript">
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script>
-
-  
-  
-    
-   
-
-</body>
+</div><script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/scripts/main.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    </body>
 </html>

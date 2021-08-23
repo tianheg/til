@@ -1,91 +1,159 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="OpenBSD" href="openbsd-installation.html" /><link rel="prev" title="Arch Software Installation and Usage" href="arch-software-installation-and-usage.html" />
 
-
-<!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
-<head>
-  <meta charset="utf-8" />
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <title>Arch Installation Guide &mdash; Today I Learnt  文档</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
-
-  
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
+    <meta name="generator" content="sphinx-4.1.2, furo 2021.08.17.beta43"/>
+        <title>Arch Installation Guide - Hello World</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?digest=910ac4ccc9d7c023151c34010d7b500fb9777a51" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?digest=16fb25fabf47304eee183a5e9af80b1ba98259b1" />
     
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/translations.js"></script>
     
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
 
+
+<style>
+  body {
+    --color-code-background: #eeffcc;
+  --color-code-foreground: black;
+  
+  }
+  body[data-theme="dark"] {
+    --color-code-background: #272822;
+  --color-code-foreground: #f8f8f2;
+  
+  }
+  @media (prefers-color-scheme: dark) {
+    body:not([data-theme="light"]) {
+      --color-code-background: #272822;
+  --color-code-foreground: #f8f8f2;
+  
+    }
+  }
+</style>
+    <link media="(prefers-color-scheme: dark)" rel="stylesheet" href="../_static/pygments_dark.css"></head>
+  <body>
     
-    <link rel="index" title="索引" href="../genindex.html" />
-    <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="OpenBSD" href="openbsd-installation.html" />
-    <link rel="prev" title="Arch Software Installation and Usage" href="arch-software-installation-and-usage.html" /> 
-</head>
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" />
+      <line x1="4" y1="6" x2="20" y2="6" />
+      <line x1="10" y1="12" x2="20" y2="12" />
+      <line x1="6" y1="18" x2="20" y2="18" />
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
 
-<body class="wy-body-for-nav">
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
 
-   
-  <div class="wy-grid-for-nav">
-    
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
-          
 
-          
-            <a href="../index.html" class="icon icon-home"> Today I Learnt
-          
 
-          
-          </a>
-
-          
-
-          
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="在文档中搜索" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <ul class="current">
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">Hello World</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  
+  
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C.html">计算机网络</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/dns.html">DNS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/%E7%A7%91%E6%8A%80%E8%8B%B1%E8%AF%AD.html">科技英语</a></li>
@@ -98,57 +166,14 @@
 <li class="toctree-l1"><a class="reference internal" href="arch-system-maintenance.html">Arch System Maintenance</a></li>
 <li class="toctree-l1"><a class="reference internal" href="arch-package.html">Arch Package</a></li>
 <li class="toctree-l1"><a class="reference internal" href="arch-software-installation-and-usage.html">Arch Software Installation and Usage</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Arch Installation Guide</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id1">初始安装</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#bios-usb">更改 BIOS，使用 USB 系统启动盘优先启动</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#uefi">验证 UEFI</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id2">验证网络</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id3">更新系统时间</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id4">硬盘分区</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id5">硬盘格式化、新建文件系统</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id6">挂载分区</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id7">选择镜像源</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id8">安装基本系统和安装时要用的应用到硬盘</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#id9">配置系统</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#u">进入硬盘，而不在 U 盘</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id10">生成挂载表</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id11">时区和语言</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id12">安装引导程序</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id13">设置主机名</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id14">提前配置网络</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#root">设置 root 密码</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id15">新建普通用户</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id16">返回 U 盘</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#id17">重启系统</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id18">完善系统</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id19">启动微码更新</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id20">完善显卡驱动</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#va-api-or-vdpau">VA-API or VDPAU</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#id21">安装图形界面</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ssd">SSD 优化</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#trim">开启TRIM</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#i-o-scheduler">更换 I/O  scheduler</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#tmpfs">迁移高读写文件到 tmpfs</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#id22">检查硬盘状况</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id23">测试固态硬盘速度</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Arch Installation Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="openbsd-installation.html">OpenBSD</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ubuntu-backup.html">Ubuntu Backup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ubuntu-common-usage.html">Ubuntu Common Usage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ubuntu-install-software.html">Install Software on Ubuntu</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ubuntu-problems.html">Problems on Ubuntu</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mxlinux-installation.html">MX Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../database/mysql.html">MySQL</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../html/before-html.html">Before HTML</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../html/html-basics.html">HTML Basics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../html/images.html">Images</a></li>
@@ -204,75 +229,31 @@
 <li class="toctree-l1"><a class="reference internal" href="../learning-how-to-learn.html">Learning How to Learn</a></li>
 </ul>
 
-            
-          
-        </div>
-        
-      </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">Today I Learnt</a>
-        
-      </nav>
-
-
-      <div class="wy-nav-content">
-        
-        <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
-  <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-        
-      <li>Arch Installation Guide</li>
-    
-    
-      <li class="wy-breadcrumbs-aside">
-        
-          
-            
-              <a href="https://github.com/tianheg/til/blob/main/content/operating-system/arch-installation-guide.rst" class="fa fa-github"> 在 GitHub 上修改</a>
-            
-          
-        
-      </li>
-    
-  </ul>
-
-  
-  <hr/>
 </div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-            
-  <div class="section" id="arch-installation-guide">
-<h1>Arch Installation Guide<a class="headerlink" href="#arch-installation-guide" title="永久链接至标题">¶</a></h1>
+</div>
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <article role="main">
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <section id="arch-installation-guide">
+<h1>Arch Installation Guide<a class="headerlink" href="#arch-installation-guide" title="Permalink to this headline">¶</a></h1>
 <p>安装过程整体顺利，没有无法解决的问题，主要参考资料：</p>
 <ol class="arabic simple">
 <li><p><a class="reference external" href="https://io-oi.me/tech/hello-arch-linux/">https://io-oi.me/tech/hello-arch-linux/</a></p></li>
@@ -280,26 +261,26 @@
 <li><p>Google</p></li>
 </ol>
 <p>除此之外，还有 <a class="reference external" href="https://python-archinstall.readthedocs.io/en/latest/index.html">archinstall</a></p>
-<div class="section" id="id1">
-<h2>初始安装<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
-<div class="section" id="bios-usb">
-<h3>更改 BIOS，使用 USB 系统启动盘优先启动<a class="headerlink" href="#bios-usb" title="永久链接至标题">¶</a></h3>
+<section id="id1">
+<h2>初始安装<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<section id="bios-usb">
+<h3>更改 BIOS，使用 USB 系统启动盘优先启动<a class="headerlink" href="#bios-usb" title="Permalink to this headline">¶</a></h3>
 <p>插入制作好的 arch linux USB 启动盘，当前目录下并无 install.txt（详见参考资料 1）。</p>
-</div>
-<div class="section" id="uefi">
-<h3>验证 UEFI<a class="headerlink" href="#uefi" title="永久链接至标题">¶</a></h3>
+</section>
+<section id="uefi">
+<h3>验证 UEFI<a class="headerlink" href="#uefi" title="Permalink to this headline">¶</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">ls</span> <span class="pre">/sys/firmware/efi/efivars</span></code> 有输出，说明启动模式为 UEFI。</p>
-</div>
-<div class="section" id="id2">
-<h3>验证网络<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h3>
+</section>
+<section id="id2">
+<h3>验证网络<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">ping</span> <span class="pre">archlinux.org</span> <span class="pre">-c</span> <span class="pre">3</span></code> 验证网络，0% packet loss 说明网络正常。</p>
-</div>
-<div class="section" id="id3">
-<h3>更新系统时间<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h3>
+</section>
+<section id="id3">
+<h3>更新系统时间<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">timedatectl</span> <span class="pre">set-ntp</span> <span class="pre">true</span></code> 更新系统时间，<code class="docutils literal notranslate"><span class="pre">timedatectl</span> <span class="pre">status</span></code> 检查无误。</p>
-</div>
-<div class="section" id="id4">
-<h3>硬盘分区<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h3>
+</section>
+<section id="id4">
+<h3>硬盘分区<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">fdisk</span> <span class="pre">-l</span></code> 查看硬盘信息：sdb 119.24g 固态，sda 931.51g 机械</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">fdisk</span> <span class="pre">/dev/sdb</span></code> 固态硬盘分区</p></li>
@@ -313,25 +294,25 @@
 </div></blockquote>
 <p>关于是否分配 SWAP 分区的讨论：<a class="reference external" href="https://bbs.archlinuxcn.org/viewtopic.php?id=10472">https://bbs.archlinuxcn.org/viewtopic.php?id=10472</a></p>
 <p>机械硬盘 sda 作为挂载硬盘存储文件。</p>
-</div>
-<div class="section" id="id5">
-<h3>硬盘格式化、新建文件系统<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h3>
+</section>
+<section id="id5">
+<h3>硬盘格式化、新建文件系统<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><p>mkfs.fat -F32 /dev/sdb1
 mkfs.ext4 /dev/sdb2
 mkfs.ext4 /dev/sda</p>
 </div></blockquote>
-</div>
-<div class="section" id="id6">
-<h3>挂载分区<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h3>
+</section>
+<section id="id6">
+<h3>挂载分区<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><p>mount /dev/sdb2 /mnt
 mkdir -p /mnt/boot/efi
 mount /dev/sdb1 /mnt/boot/efi</p>
 </div></blockquote>
-</div>
-<div class="section" id="id7">
-<h3>选择镜像源<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h3>
+</section>
+<section id="id7">
+<h3>选择镜像源<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><p>pacman -Syyy reflector # reflector 能够方便地选择镜像源
 reflector -c China -a 6 –sort rate –save /etc/pacman.d/mirrorlist # 这里的 mirrorlist 是 U 盘中的，还是硬盘中的？U 盘中的
@@ -340,24 +321,24 @@ pacman -Syyy # y 刷新本地缓存 yyy 强制刷新</p>
 <p># 另一种选择镜像源命令
 sed -i ‘/China/!{n;/Server/s/^/#/};t;n’ /etc/pacman.d/mirrorlist</p>
 </div></blockquote>
-</div>
-<div class="section" id="id8">
-<h3>安装基本系统和安装时要用的应用到硬盘<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h3>
+</section>
+<section id="id8">
+<h3>安装基本系统和安装时要用的应用到硬盘<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><p>pacstrap -i /mnt base base-devel linux linux-headers linux-firmware dhcpcd vim</p>
 </div></blockquote>
-</div>
-</div>
-<div class="section" id="id9">
-<h2>配置系统<a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h2>
-<div class="section" id="u">
-<h3>进入硬盘，而不在 U 盘<a class="headerlink" href="#u" title="永久链接至标题">¶</a></h3>
+</section>
+</section>
+<section id="id9">
+<h2>配置系统<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<section id="u">
+<h3>进入硬盘，而不在 U 盘<a class="headerlink" href="#u" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><p>arch-chroot /mnt /bin/bash</p>
 </div></blockquote>
-</div>
-<div class="section" id="id10">
-<h3>生成挂载表<a class="headerlink" href="#id10" title="永久链接至标题">¶</a></h3>
+</section>
+<section id="id10">
+<h3>生成挂载表<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><p>genfstab -U -p /mnt &gt;&gt; /mnt/etc/fstab</p>
 </div></blockquote>
@@ -365,9 +346,9 @@ sed -i ‘/China/!{n;/Server/s/^/#/};t;n’ /etc/pacman.d/mirrorlist</p>
 <blockquote>
 <div><p>cat /mnt/etc/fstab</p>
 </div></blockquote>
-</div>
-<div class="section" id="id11">
-<h3>时区和语言<a class="headerlink" href="#id11" title="永久链接至标题">¶</a></h3>
+</section>
+<section id="id11">
+<h3>时区和语言<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
 <p>设置时区：</p>
 <blockquote>
 <div><p>ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
@@ -389,18 +370,18 @@ zh_CN.UTF-8 UTF-8</p>
 <blockquote>
 <div><p>LANG=en_US.UTF-8</p>
 </div></blockquote>
-</div>
-<div class="section" id="id12">
-<h3>安装引导程序<a class="headerlink" href="#id12" title="永久链接至标题">¶</a></h3>
+</section>
+<section id="id12">
+<h3>安装引导程序<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><p>pacman -S grub efibootmgr
 grub-install –target=x86_64-efi –bootloader-id=GRUB –efi-directory=/boot/efi
 grub-mkconfig -o /boot/grub/grub.cfg</p>
 </div></blockquote>
 <p>运行 grub 相关操作时，会出现警告：<code class="docutils literal notranslate"><span class="pre">Warning:</span> <span class="pre">os-prober</span> <span class="pre">will</span> <span class="pre">not</span> <span class="pre">be</span> <span class="pre">executed</span> <span class="pre">to</span> <span class="pre">detect</span> <span class="pre">other</span> <span class="pre">bootable</span> <span class="pre">partitions.</span></code>。查 arch wiki 后，可以在 /etc/default/grub 中设置 <code class="docutils literal notranslate"><span class="pre">GRUB_DISABLE_OS_PROBER=false</span></code>。</p>
-</div>
-<div class="section" id="id13">
-<h3>设置主机名<a class="headerlink" href="#id13" title="永久链接至标题">¶</a></h3>
+</section>
+<section id="id13">
+<h3>设置主机名<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><p>echo arch &gt; /etc/hostname</p>
 </div></blockquote>
@@ -410,24 +391,24 @@ grub-mkconfig -o /boot/grub/grub.cfg</p>
 ::1 localhost
 127.0.0.1 arch.localdomain arch</p>
 </div></blockquote>
-</div>
-<div class="section" id="id14">
-<h3>提前配置网络<a class="headerlink" href="#id14" title="永久链接至标题">¶</a></h3>
+</section>
+<section id="id14">
+<h3>提前配置网络<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><p>pacman -S networkmanager
 systemctl enable NetworkManager
 systemctl start NetworkManager
 systemctl status NetworkManager # 检查是否运行</p>
 </div></blockquote>
-</div>
-<div class="section" id="root">
-<h3>设置 root 密码<a class="headerlink" href="#root" title="永久链接至标题">¶</a></h3>
+</section>
+<section id="root">
+<h3>设置 root 密码<a class="headerlink" href="#root" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><p>passwd</p>
 </div></blockquote>
-</div>
-<div class="section" id="id15">
-<h3>新建普通用户<a class="headerlink" href="#id15" title="永久链接至标题">¶</a></h3>
+</section>
+<section id="id15">
+<h3>新建普通用户<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><p>useradd -m -g users -G wheel -s /bin/bash archie</p>
 </div></blockquote>
@@ -446,36 +427,36 @@ systemctl status NetworkManager # 检查是否运行</p>
 <p>## Same thing without a password</p>
 <p>%wheel ALL=(ALL) NOPASSWD: ALL</p>
 </div></blockquote>
-</div>
-<div class="section" id="id16">
-<h3>返回 U 盘<a class="headerlink" href="#id16" title="永久链接至标题">¶</a></h3>
+</section>
+<section id="id16">
+<h3>返回 U 盘<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><p>exit</p>
 </div></blockquote>
-</div>
-</div>
-<div class="section" id="id17">
-<h2>重启系统<a class="headerlink" href="#id17" title="永久链接至标题">¶</a></h2>
+</section>
+</section>
+<section id="id17">
+<h2>重启系统<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><p>umount -R /mnt
 reboot</p>
 </div></blockquote>
 <p>开机后改动 BIOS，配置「系统启动」后，拔掉 U 盘。普通用户 archie 登录。</p>
-</div>
-<div class="section" id="id18">
-<h2>完善系统<a class="headerlink" href="#id18" title="永久链接至标题">¶</a></h2>
-<div class="section" id="id19">
-<h3>启动微码更新<a class="headerlink" href="#id19" title="永久链接至标题">¶</a></h3>
+</section>
+<section id="id18">
+<h2>完善系统<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h2>
+<section id="id19">
+<h3>启动微码更新<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><p>sudo pacman -S intel-ucode
 sudo grub-mkconfig -o /boot/grub/grub.cfg</p>
 </div></blockquote>
-</div>
-<div class="section" id="id20">
-<h3>完善显卡驱动<a class="headerlink" href="#id20" title="永久链接至标题">¶</a></h3>
+</section>
+<section id="id20">
+<h3>完善显卡驱动<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h3>
 <p>这一步要在知道自己显卡配置的前提下执行。</p>
-<div class="section" id="va-api-or-vdpau">
-<h4>VA-API or VDPAU<a class="headerlink" href="#va-api-or-vdpau" title="永久链接至标题">¶</a></h4>
+<section id="va-api-or-vdpau">
+<h4>VA-API or VDPAU<a class="headerlink" href="#va-api-or-vdpau" title="Permalink to this headline">¶</a></h4>
 <blockquote>
 <div><p>sudo pacman -S libva-utils vdpauinfo</p>
 <p>vainfo
@@ -542,10 +523,10 @@ Error creating VDPAU device: 1</p>
 <li><p><a class="reference external" href="https://wiki.archlinux.org/title/Xorg#Driver_installation">https://wiki.archlinux.org/title/Xorg#Driver_installation</a></p></li>
 <li><p><a class="reference external" href="https://wiki.archlinux.org/title/Hardware_video_acceleration#:~:text=VDPAU%20on%20Radeon%20R300%20and%20newer%20GPUs">https://wiki.archlinux.org/title/Hardware_video_acceleration#:~:text=VDPAU%20on%20Radeon%20R300%20and%20newer%20GPUs</a></p></li>
 </ol>
-</div>
-</div>
-<div class="section" id="id21">
-<h3>安装图形界面<a class="headerlink" href="#id21" title="永久链接至标题">¶</a></h3>
+</section>
+</section>
+<section id="id21">
+<h3>安装图形界面<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><p>sudo pacman -S xorg xorg-server xorg-xinit plasma # gnome gnome-extra
 # systemctl enable gdm
@@ -570,11 +551,11 @@ Unable to init server: Could not connect: Connection refused
 # Failed to parse arguments: Cannot open display!</p>
 </div></blockquote>
 <p>解决：在配置系统语言环境时，选择了 es_US，而不是 en_US。</p>
-</div>
-<div class="section" id="ssd">
-<h3>SSD 优化<a class="headerlink" href="#ssd" title="永久链接至标题">¶</a></h3>
-<div class="section" id="trim">
-<h4>开启TRIM<a class="headerlink" href="#trim" title="永久链接至标题">¶</a></h4>
+</section>
+<section id="ssd">
+<h3>SSD 优化<a class="headerlink" href="#ssd" title="Permalink to this headline">¶</a></h3>
+<section id="trim">
+<h4>开启TRIM<a class="headerlink" href="#trim" title="Permalink to this headline">¶</a></h4>
 <p>一定要确认固态硬盘是否支持，否则别用。会导致数据丢失</p>
 <p>查看是否支持：<code class="docutils literal notranslate"><span class="pre">lsblk</span> <span class="pre">--discard</span></code> 如果输出的 DISC-GRAN 和 DISC-MAX 不为 0，则表明支持。</p>
 <blockquote>
@@ -588,9 +569,9 @@ UUID=b182ad17-2f74-4bf0-95b6-a42884a4ff79 /          ext4       rw,noatime,disca
 <p># /dev/sdb1
 UUID=EF6F-2E0C       /boot/efi  vfat       rw,noatime,discard,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro 0 2</p>
 </div></blockquote>
-</div>
-<div class="section" id="i-o-scheduler">
-<h4>更换 I/O  scheduler<a class="headerlink" href="#i-o-scheduler" title="永久链接至标题">¶</a></h4>
+</section>
+<section id="i-o-scheduler">
+<h4>更换 I/O  scheduler<a class="headerlink" href="#i-o-scheduler" title="Permalink to this headline">¶</a></h4>
 <blockquote>
 <div><p>sudo vim /etc/default/grub</p>
 </div></blockquote>
@@ -599,9 +580,9 @@ UUID=EF6F-2E0C       /boot/efi  vfat       rw,noatime,discard,fmask=0022,dmask=0
 <div><p>GRUB_CMDLINE_LINUX_DEFAULT=”elevator=noop loglevel=3 quiet”</p>
 <p>sudo grub-mkconfig -o /boot/grub/grub.cfg</p>
 </div></blockquote>
-</div>
-<div class="section" id="tmpfs">
-<h4>迁移高读写文件到 tmpfs<a class="headerlink" href="#tmpfs" title="永久链接至标题">¶</a></h4>
+</section>
+<section id="tmpfs">
+<h4>迁移高读写文件到 tmpfs<a class="headerlink" href="#tmpfs" title="Permalink to this headline">¶</a></h4>
 <blockquote>
 <div><p>sudo vim /etc/fstab</p>
 </div></blockquote>
@@ -616,75 +597,135 @@ tmpfs  /var/tmp    tmpfs   defaults,noatime,mode=1777 0 0</p>
 <div><p>cd ~/.cache/google-chrome/Default/ &amp;&amp; rm -rf Cache &amp;&amp; ln -sf /tmp Cache
 cd ~/.cache/google-chrome/Default/ &amp;&amp; unlink Cache # 取消 Symbolic Link</p>
 </div></blockquote>
-</div>
-</div>
-<div class="section" id="id22">
-<h3>检查硬盘状况<a class="headerlink" href="#id22" title="永久链接至标题">¶</a></h3>
+</section>
+</section>
+<section id="id22">
+<h3>检查硬盘状况<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><p>sudo pacman -S hdparm smartmontools
 sudo hdparm -I /dev/sdb
 sudo smartctl -t short /dev/sdb</p>
 </div></blockquote>
-</div>
-<div class="section" id="id23">
-<h3>测试固态硬盘速度<a class="headerlink" href="#id23" title="永久链接至标题">¶</a></h3>
+</section>
+<section id="id23">
+<h3>测试固态硬盘速度<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><p>sudo dd if=/dev/zero of=/tmp/test.img bs=1G count=1 oflag=dsync</p>
 </div></blockquote>
 <p>至此系统完善到此告一段落。</p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
+      </article>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="openbsd-installation.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">OpenBSD</div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="arch-software-installation-and-usage.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Arch Software Installation and Usage</div>
+                
+              </div>
+            </a>
+        </div>
 
-           </div>
-           
-          </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="openbsd-installation.html" class="btn btn-neutral float-right" title="OpenBSD" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="arch-software-installation-and-usage.html" class="btn btn-neutral float-left" title="Arch Software Installation and Usage" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <div class="related-information">
+              Copyright &#169; 2021, Jim Gao
+            |
+            Built with <a href="https://www.sphinx-doc.org/">Sphinx</a>
+              and
+              <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+              <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
+        </div>
+        
+      </footer>
     </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Arch Installation Guide</a><ul>
+<li><a class="reference internal" href="#id1">初始安装</a><ul>
+<li><a class="reference internal" href="#bios-usb">更改 BIOS，使用 USB 系统启动盘优先启动</a></li>
+<li><a class="reference internal" href="#uefi">验证 UEFI</a></li>
+<li><a class="reference internal" href="#id2">验证网络</a></li>
+<li><a class="reference internal" href="#id3">更新系统时间</a></li>
+<li><a class="reference internal" href="#id4">硬盘分区</a></li>
+<li><a class="reference internal" href="#id5">硬盘格式化、新建文件系统</a></li>
+<li><a class="reference internal" href="#id6">挂载分区</a></li>
+<li><a class="reference internal" href="#id7">选择镜像源</a></li>
+<li><a class="reference internal" href="#id8">安装基本系统和安装时要用的应用到硬盘</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id9">配置系统</a><ul>
+<li><a class="reference internal" href="#u">进入硬盘，而不在 U 盘</a></li>
+<li><a class="reference internal" href="#id10">生成挂载表</a></li>
+<li><a class="reference internal" href="#id11">时区和语言</a></li>
+<li><a class="reference internal" href="#id12">安装引导程序</a></li>
+<li><a class="reference internal" href="#id13">设置主机名</a></li>
+<li><a class="reference internal" href="#id14">提前配置网络</a></li>
+<li><a class="reference internal" href="#root">设置 root 密码</a></li>
+<li><a class="reference internal" href="#id15">新建普通用户</a></li>
+<li><a class="reference internal" href="#id16">返回 U 盘</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id17">重启系统</a></li>
+<li><a class="reference internal" href="#id18">完善系统</a><ul>
+<li><a class="reference internal" href="#id19">启动微码更新</a></li>
+<li><a class="reference internal" href="#id20">完善显卡驱动</a><ul>
+<li><a class="reference internal" href="#va-api-or-vdpau">VA-API or VDPAU</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id21">安装图形界面</a></li>
+<li><a class="reference internal" href="#ssd">SSD 优化</a><ul>
+<li><a class="reference internal" href="#trim">开启TRIM</a></li>
+<li><a class="reference internal" href="#i-o-scheduler">更换 I/O  scheduler</a></li>
+<li><a class="reference internal" href="#tmpfs">迁移高读写文件到 tmpfs</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id22">检查硬盘状况</a></li>
+<li><a class="reference internal" href="#id23">测试固态硬盘速度</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 
-  <hr/>
-
-  <div role="contentinfo">
-    <p>
-        &#169; 版权所有 2021, Jim Gao.
-
-    </p>
-  </div>
-    
-    
-    
-    利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用了 
-    
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
-    
-    由 <a href="https://readthedocs.org">Read the Docs</a>开发.
-<p>除额外注明的地方外，本文档按 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议发布。</p>
- 
-
-
-</footer>
+          </div>
         </div>
       </div>
-
-    </section>
-
+      
+      
+    </aside>
   </div>
-  
-
-  <script type="text/javascript">
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script>
-
-  
-  
-    
-   
-
-</body>
+</div><script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/scripts/main.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    </body>
 </html>

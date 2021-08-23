@@ -1,91 +1,159 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="MX Linux" href="mxlinux-installation.html" /><link rel="prev" title="Install Software on Ubuntu" href="ubuntu-install-software.html" />
 
-
-<!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
-<head>
-  <meta charset="utf-8" />
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <title>Problems on Ubuntu &mdash; Today I Learnt  文档</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
-
-  
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
+    <meta name="generator" content="sphinx-4.1.2, furo 2021.08.17.beta43"/>
+        <title>Problems on Ubuntu - Hello World</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?digest=910ac4ccc9d7c023151c34010d7b500fb9777a51" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?digest=16fb25fabf47304eee183a5e9af80b1ba98259b1" />
     
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/translations.js"></script>
     
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
 
+
+<style>
+  body {
+    --color-code-background: #eeffcc;
+  --color-code-foreground: black;
+  
+  }
+  body[data-theme="dark"] {
+    --color-code-background: #272822;
+  --color-code-foreground: #f8f8f2;
+  
+  }
+  @media (prefers-color-scheme: dark) {
+    body:not([data-theme="light"]) {
+      --color-code-background: #272822;
+  --color-code-foreground: #f8f8f2;
+  
+    }
+  }
+</style>
+    <link media="(prefers-color-scheme: dark)" rel="stylesheet" href="../_static/pygments_dark.css"></head>
+  <body>
     
-    <link rel="index" title="索引" href="../genindex.html" />
-    <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="MX Linux" href="mxlinux-installation.html" />
-    <link rel="prev" title="Install Software on Ubuntu" href="ubuntu-install-software.html" /> 
-</head>
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" />
+      <line x1="4" y1="6" x2="20" y2="6" />
+      <line x1="10" y1="12" x2="20" y2="12" />
+      <line x1="6" y1="18" x2="20" y2="18" />
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
 
-<body class="wy-body-for-nav">
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
 
-   
-  <div class="wy-grid-for-nav">
-    
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
-          
 
-          
-            <a href="../index.html" class="icon icon-home"> Today I Learnt
-          
 
-          
-          </a>
-
-          
-
-          
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="在文档中搜索" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <ul class="current">
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">Hello World</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  
+  
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C.html">计算机网络</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/dns.html">DNS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/%E7%A7%91%E6%8A%80%E8%8B%B1%E8%AF%AD.html">科技英语</a></li>
@@ -103,18 +171,9 @@
 <li class="toctree-l1"><a class="reference internal" href="ubuntu-backup.html">Ubuntu Backup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ubuntu-common-usage.html">Ubuntu Common Usage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ubuntu-install-software.html">Install Software on Ubuntu</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Problems on Ubuntu</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#bluetooth-cannot-connect-airpods">Bluetooth Cannot Connect Airpods</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#boot-slowly">Boot Slowly</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#no-pip-on-ubuntu20-04">No Pip On Ubuntu20.04</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#cannot-connect-wi-fi-ubuntu20-04">Cannot Connect Wi-Fi Ubuntu20.04</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#connect-wifi">Connect Wifi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#h-264-not-found">H.264 Not Found</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#remap-key-bug">Remap Key Bug</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#install-kubuntu-desktop-error">Install <code class="docutils literal notranslate"><span class="pre">kubuntu-desktop</span></code> error</a></li>
-</ul>
-</li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Problems on Ubuntu</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mxlinux-installation.html">MX Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../database/mysql.html">MySQL</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../html/before-html.html">Before HTML</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../html/html-basics.html">HTML Basics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../html/images.html">Images</a></li>
@@ -170,77 +229,33 @@
 <li class="toctree-l1"><a class="reference internal" href="../learning-how-to-learn.html">Learning How to Learn</a></li>
 </ul>
 
-            
-          
-        </div>
-        
-      </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">Today I Learnt</a>
-        
-      </nav>
-
-
-      <div class="wy-nav-content">
-        
-        <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
-  <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-        
-      <li>Problems on Ubuntu</li>
-    
-    
-      <li class="wy-breadcrumbs-aside">
-        
-          
-            
-              <a href="https://github.com/tianheg/til/blob/main/content/operating-system/ubuntu-problems.rst" class="fa fa-github"> 在 GitHub 上修改</a>
-            
-          
-        
-      </li>
-    
-  </ul>
-
-  
-  <hr/>
 </div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-            
-  <div class="section" id="problems-on-ubuntu">
-<h1>Problems on Ubuntu<a class="headerlink" href="#problems-on-ubuntu" title="永久链接至标题">¶</a></h1>
-<div class="section" id="bluetooth-cannot-connect-airpods">
-<h2>Bluetooth Cannot Connect Airpods<a class="headerlink" href="#bluetooth-cannot-connect-airpods" title="永久链接至标题">¶</a></h2>
+</div>
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <article role="main">
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <section id="problems-on-ubuntu">
+<h1>Problems on Ubuntu<a class="headerlink" href="#problems-on-ubuntu" title="Permalink to this headline">¶</a></h1>
+<section id="bluetooth-cannot-connect-airpods">
+<h2>Bluetooth Cannot Connect Airpods<a class="headerlink" href="#bluetooth-cannot-connect-airpods" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><p>sudo vim /etc/bluetooth/main.conf
 # add <cite>ControllerMode = dual</cite>
@@ -251,9 +266,9 @@ sudo /etc/init.d/bluetooth restart</p>
 <ol class="arabic simple">
 <li><p><a class="reference external" href="https://techwiser.com/fix-airpods-not-working-on-ubuntu/">https://techwiser.com/fix-airpods-not-working-on-ubuntu/</a></p></li>
 </ol>
-</div>
-<div class="section" id="boot-slowly">
-<h2>Boot Slowly<a class="headerlink" href="#boot-slowly" title="永久链接至标题">¶</a></h2>
+</section>
+<section id="boot-slowly">
+<h2>Boot Slowly<a class="headerlink" href="#boot-slowly" title="Permalink to this headline">¶</a></h2>
 <p>If you have Intel CPU and are using regular Ubuntu (Gnome) and want a user-friendly way to check CPU speed and adjust it, and even set it to auto-scale based on being plugged vs battery, try <a class="reference external" href="https://extensions.gnome.org/extension/945/cpu-power-manager/">CPU Power Manager</a>.</p>
 <blockquote>
 <div><p>$ systemd-analyze
@@ -304,7 +319,7 @@ graphical.target reached after 1min 28.245s in userspace</p>
 <li><p>Use a lightweight desktop environment</p></li>
 <li><p>Use lighter alternatives for different applications</p></li>
 </ol>
-<hr class="docutils" />
+<hr class="docutils"/>
 <p><strong>References</strong>:</p>
 <ol class="arabic simple">
 <li><p><a class="reference external" href="https://askubuntu.com/questions/1230620/ubuntu-20-04-gnome-very-slow">https://askubuntu.com/questions/1230620/ubuntu-20-04-gnome-very-slow</a></p></li>
@@ -316,17 +331,17 @@ graphical.target reached after 1min 28.245s in userspace</p>
 <li><p><a class="reference external" href="https://superuser.com/questions/1599715/getting-a-very-slow-startup-on-ubuntu-20-seems-to-be-stuck-around-the-stage-whe">https://superuser.com/questions/1599715/getting-a-very-slow-startup-on-ubuntu-20-seems-to-be-stuck-around-the-stage-whe</a></p></li>
 <li><p><a class="reference external" href="https://itsfoss.com/speed-up-ubuntu-1310/">10 Killer Tips To Speed Up Ubuntu Linux</a></p></li>
 </ol>
-</div>
-<div class="section" id="no-pip-on-ubuntu20-04">
-<h2>No Pip On Ubuntu20.04<a class="headerlink" href="#no-pip-on-ubuntu20-04" title="永久链接至标题">¶</a></h2>
+</section>
+<section id="no-pip-on-ubuntu20-04">
+<h2>No Pip On Ubuntu20.04<a class="headerlink" href="#no-pip-on-ubuntu20-04" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><p>sudo apt update
 sudo apt install python3-pip</p>
 </div></blockquote>
 <p><a class="reference external" href="https://askubuntu.com/a/1254329">source</a></p>
-</div>
-<div class="section" id="cannot-connect-wi-fi-ubuntu20-04">
-<h2>Cannot Connect Wi-Fi Ubuntu20.04<a class="headerlink" href="#cannot-connect-wi-fi-ubuntu20-04" title="永久链接至标题">¶</a></h2>
+</section>
+<section id="cannot-connect-wi-fi-ubuntu20-04">
+<h2>Cannot Connect Wi-Fi Ubuntu20.04<a class="headerlink" href="#cannot-connect-wi-fi-ubuntu20-04" title="Permalink to this headline">¶</a></h2>
 <p>Tried:</p>
 <p><a class="reference external" href="https://askubuntu.com/a/1231027">Way 1</a>:</p>
 <blockquote>
@@ -349,20 +364,20 @@ $ sudo netplan apply # or sudo netplan –debug apply
 $ ip a</p>
 </div></blockquote>
 <p>Finally I found I add my PC to blacklist with the Wi-Fi I want to connect.</p>
-</div>
-<div class="section" id="connect-wifi">
-<h2>Connect Wifi<a class="headerlink" href="#connect-wifi" title="永久链接至标题">¶</a></h2>
+</section>
+<section id="connect-wifi">
+<h2>Connect Wifi<a class="headerlink" href="#connect-wifi" title="Permalink to this headline">¶</a></h2>
 <p>I just seclect the Using instead of Do not.</p>
 <p><a class="reference external" href="https://www.maketecheasier.com/fix-wi-fi-not-working-ubuntu/">More info</a></p>
-</div>
-<div class="section" id="h-264-not-found">
-<h2>H.264 Not Found<a class="headerlink" href="#h-264-not-found" title="永久链接至标题">¶</a></h2>
+</section>
+<section id="h-264-not-found">
+<h2>H.264 Not Found<a class="headerlink" href="#h-264-not-found" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><p>sudo apt install ubuntu-restricted-extras</p>
 </div></blockquote>
-</div>
-<div class="section" id="remap-key-bug">
-<h2>Remap Key Bug<a class="headerlink" href="#remap-key-bug" title="永久链接至标题">¶</a></h2>
+</section>
+<section id="remap-key-bug">
+<h2>Remap Key Bug<a class="headerlink" href="#remap-key-bug" title="Permalink to this headline">¶</a></h2>
 <p>I check <code class="docutils literal notranslate"><span class="pre">Swap</span> <span class="pre">Ctrl</span> <span class="pre">and</span> <span class="pre">Caps</span> <span class="pre">Lock</span></code>, which is under <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">position</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Additional</span> <span class="pre">Layout</span> <span class="pre">Options</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Keyboard</span> <span class="pre">&amp;</span> <span class="pre">Mouse</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">GNOME</span> <span class="pre">Tweaks</span></code>.</p>
 <p>But it’s lost when I reboot the PC recently.</p>
 <p>I found talks about it officially and unofficially:</p>
@@ -372,15 +387,15 @@ $ ip a</p>
 </ul>
 <p>A way to recover it:</p>
 <p><kbd class="kbd docutils literal notranslate">Alt</kbd> + <kbd class="kbd docutils literal notranslate">F2</kbd> -&gt; Type <code class="docutils literal notranslate"><span class="pre">r</span></code> -&gt; hit <kbd class="kbd docutils literal notranslate">enter</kbd>, so it works again until it breaks again.</p>
-<hr class="docutils" />
+<hr class="docutils"/>
 <p><strong>References</strong>:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://askubuntu.com/questions/1286997/caps-lock-remapping-stops-working">https://askubuntu.com/questions/1286997/caps-lock-remapping-stops-working</a></p></li>
 <li><p><a class="reference external" href="https://bugs.launchpad.net/ubuntu/+source/mutter/+bug/1899206">https://bugs.launchpad.net/ubuntu/+source/mutter/+bug/1899206</a></p></li>
 </ul>
-</div>
-<div class="section" id="install-kubuntu-desktop-error">
-<h2>Install <code class="docutils literal notranslate"><span class="pre">kubuntu-desktop</span></code> error<a class="headerlink" href="#install-kubuntu-desktop-error" title="永久链接至标题">¶</a></h2>
+</section>
+<section id="install-kubuntu-desktop-error">
+<h2>Install <code class="docutils literal notranslate"><span class="pre">kubuntu-desktop</span></code> error<a class="headerlink" href="#install-kubuntu-desktop-error" title="Permalink to this headline">¶</a></h2>
 <p>When I install <code class="docutils literal notranslate"><span class="pre">kubuntu-desktop</span></code> use <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">-y</span> <span class="pre">kubuntu-desktop</span></code>, get error:</p>
 <blockquote>
 <div><p>Setting up samba-common-bin (2:4.11.6+dfsg-0ubuntu1.6) …
@@ -404,58 +419,84 @@ ERROR: lock directory /run/samba does not exist</p>
 <ol class="arabic simple">
 <li><p><a class="reference external" href="https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=953530">https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=953530</a></p></li>
 </ol>
-</div>
-</div>
+</section>
+</section>
 
+      </article>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="mxlinux-installation.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">MX Linux</div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="ubuntu-install-software.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Install Software on Ubuntu</div>
+                
+              </div>
+            </a>
+        </div>
 
-           </div>
-           
-          </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="mxlinux-installation.html" class="btn btn-neutral float-right" title="MX Linux" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="ubuntu-install-software.html" class="btn btn-neutral float-left" title="Install Software on Ubuntu" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <div class="related-information">
+              Copyright &#169; 2021, Jim Gao
+            |
+            Built with <a href="https://www.sphinx-doc.org/">Sphinx</a>
+              and
+              <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+              <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
+        </div>
+        
+      </footer>
     </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Problems on Ubuntu</a><ul>
+<li><a class="reference internal" href="#bluetooth-cannot-connect-airpods">Bluetooth Cannot Connect Airpods</a></li>
+<li><a class="reference internal" href="#boot-slowly">Boot Slowly</a></li>
+<li><a class="reference internal" href="#no-pip-on-ubuntu20-04">No Pip On Ubuntu20.04</a></li>
+<li><a class="reference internal" href="#cannot-connect-wi-fi-ubuntu20-04">Cannot Connect Wi-Fi Ubuntu20.04</a></li>
+<li><a class="reference internal" href="#connect-wifi">Connect Wifi</a></li>
+<li><a class="reference internal" href="#h-264-not-found">H.264 Not Found</a></li>
+<li><a class="reference internal" href="#remap-key-bug">Remap Key Bug</a></li>
+<li><a class="reference internal" href="#install-kubuntu-desktop-error">Install <code class="docutils literal notranslate"><span class="pre">kubuntu-desktop</span></code> error</a></li>
+</ul>
+</li>
+</ul>
 
-  <hr/>
-
-  <div role="contentinfo">
-    <p>
-        &#169; 版权所有 2021, Jim Gao.
-
-    </p>
-  </div>
-    
-    
-    
-    利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用了 
-    
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
-    
-    由 <a href="https://readthedocs.org">Read the Docs</a>开发.
-<p>除额外注明的地方外，本文档按 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议发布。</p>
- 
-
-
-</footer>
+          </div>
         </div>
       </div>
-
-    </section>
-
+      
+      
+    </aside>
   </div>
-  
-
-  <script type="text/javascript">
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script>
-
-  
-  
-    
-   
-
-</body>
+</div><script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/scripts/main.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    </body>
 </html>

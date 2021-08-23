@@ -1,91 +1,159 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Vagrant" href="vagrant.html" /><link rel="prev" title="WordPress" href="../projects/wordpress.html" />
 
-
-<!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" >
-<head>
-  <meta charset="utf-8" />
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <title>Docker &mdash; Today I Learnt  文档</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
-
-  
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
+    <meta name="generator" content="sphinx-4.1.2, furo 2021.08.17.beta43"/>
+        <title>Docker - Hello World</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?digest=910ac4ccc9d7c023151c34010d7b500fb9777a51" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?digest=16fb25fabf47304eee183a5e9af80b1ba98259b1" />
     
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/translations.js"></script>
     
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
 
+
+<style>
+  body {
+    --color-code-background: #eeffcc;
+  --color-code-foreground: black;
+  
+  }
+  body[data-theme="dark"] {
+    --color-code-background: #272822;
+  --color-code-foreground: #f8f8f2;
+  
+  }
+  @media (prefers-color-scheme: dark) {
+    body:not([data-theme="light"]) {
+      --color-code-background: #272822;
+  --color-code-foreground: #f8f8f2;
+  
+    }
+  }
+</style>
+    <link media="(prefers-color-scheme: dark)" rel="stylesheet" href="../_static/pygments_dark.css"></head>
+  <body>
     
-    <link rel="index" title="索引" href="../genindex.html" />
-    <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="Vagrant" href="vagrant.html" />
-    <link rel="prev" title="WordPress" href="../projects/wordpress.html" /> 
-</head>
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" />
+      <line x1="4" y1="6" x2="20" y2="6" />
+      <line x1="10" y1="12" x2="20" y2="12" />
+      <line x1="6" y1="18" x2="20" y2="18" />
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
 
-<body class="wy-body-for-nav">
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
 
-   
-  <div class="wy-grid-for-nav">
-    
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
-          
 
-          
-            <a href="../index.html" class="icon icon-home"> Today I Learnt
-          
 
-          
-          </a>
-
-          
-
-          
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="在文档中搜索" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <ul class="current">
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">Hello World</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  
+  
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C.html">计算机网络</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/dns.html">DNS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../cs-and-web-concepts/%E7%A7%91%E6%8A%80%E8%8B%B1%E8%AF%AD.html">科技英语</a></li>
@@ -105,6 +173,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../operating-system/ubuntu-install-software.html">Install Software on Ubuntu</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../operating-system/ubuntu-problems.html">Problems on Ubuntu</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../operating-system/mxlinux-installation.html">MX Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../database/mysql.html">MySQL</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../html/before-html.html">Before HTML</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../html/html-basics.html">HTML Basics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../html/images.html">Images</a></li>
@@ -127,23 +196,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../programming-languages/python.html">Python</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../programming-languages/go.html">Go</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../projects/wordpress.html">WordPress</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Docker</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#dockerfile"><code class="docutils literal notranslate"><span class="pre">Dockerfile</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#add-registry-mirrors-for-ubuntu">Add Registry Mirrors For Ubuntu</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#add-registry-mirrors-for-win10">Add Registry Mirrors For Win10</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#configure-docker-to-start-on-boot">Configure Docker To Start On Boot</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#docker-pull-eof">Docker Pull EOF</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#install-docker-compose-on-ubuntu">Install Docker Compose On Ubuntu</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#install-docker-on-ubuntu">Install Docker On Ubuntu</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#install-portainer-io">Install Portainer.io</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#mx">MX</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#ubuntu">Ubuntu</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#manage-docker-as-a-non-root-user">Manage Docker As A Non-root User</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#use-sysvinit-manage-docker">Use Sysvinit manage docker</a></li>
-</ul>
-</li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Docker</a></li>
 <li class="toctree-l1"><a class="reference internal" href="vagrant.html">Vagrant</a></li>
 <li class="toctree-l1"><a class="reference internal" href="gpg.html">GPG</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jekyll.html">Jekyll</a></li>
@@ -176,86 +229,42 @@
 <li class="toctree-l1"><a class="reference internal" href="../learning-how-to-learn.html">Learning How to Learn</a></li>
 </ul>
 
-            
-          
-        </div>
-        
-      </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">Today I Learnt</a>
-        
-      </nav>
-
-
-      <div class="wy-nav-content">
-        
-        <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
-  <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-        
-      <li>Docker</li>
-    
-    
-      <li class="wy-breadcrumbs-aside">
-        
-          
-            
-              <a href="https://github.com/tianheg/til/blob/main/content/tools/docker.rst" class="fa fa-github"> 在 GitHub 上修改</a>
-            
-          
-        
-      </li>
-    
-  </ul>
-
-  
-  <hr/>
 </div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-            
-  <div class="section" id="docker">
-<h1>Docker<a class="headerlink" href="#docker" title="永久链接至标题">¶</a></h1>
-<div class="section" id="dockerfile">
-<h2><code class="docutils literal notranslate"><span class="pre">Dockerfile</span></code><a class="headerlink" href="#dockerfile" title="永久链接至标题">¶</a></h2>
+</div>
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <article role="main">
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <section id="docker">
+<h1>Docker<a class="headerlink" href="#docker" title="Permalink to this headline">¶</a></h1>
+<section id="dockerfile">
+<h2><code class="docutils literal notranslate"><span class="pre">Dockerfile</span></code><a class="headerlink" href="#dockerfile" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-dockerfile notranslate"><div class="highlight"><pre><span></span><span class="k">FROM</span> <span class="s">ubuntu:20.04</span>
 <span class="k">WORKDIR</span><span class="s"> /home/</span>
 <span class="k">COPY</span> . .
 <span class="k">RUN</span> bash ./setup.sh
 </pre></div>
 </div>
-</div>
-<div class="section" id="add-registry-mirrors-for-ubuntu">
-<h2>Add Registry Mirrors For Ubuntu<a class="headerlink" href="#add-registry-mirrors-for-ubuntu" title="永久链接至标题">¶</a></h2>
+</section>
+<section id="add-registry-mirrors-for-ubuntu">
+<h2>Add Registry Mirrors For Ubuntu<a class="headerlink" href="#add-registry-mirrors-for-ubuntu" title="Permalink to this headline">¶</a></h2>
 <p>Docker &gt; 1.10.0</p>
 <blockquote>
 <div><p>sudo mkdir -p /etc/docker
@@ -270,9 +279,9 @@ sudo systemctl daemon-reload
 sudo systemctl restart docker</p>
 </div></blockquote>
 <p>source: from Aliyun</p>
-</div>
-<div class="section" id="add-registry-mirrors-for-win10">
-<h2>Add Registry Mirrors For Win10<a class="headerlink" href="#add-registry-mirrors-for-win10" title="永久链接至标题">¶</a></h2>
+</section>
+<section id="add-registry-mirrors-for-win10">
+<h2>Add Registry Mirrors For Win10<a class="headerlink" href="#add-registry-mirrors-for-win10" title="Permalink to this headline">¶</a></h2>
 <p><strong>1. Install Docker for Windows</strong></p>
 <p>from <a class="reference external" href="https://hub.docker.com/editions/community/docker-ce-desktop-windows/">https://hub.docker.com/editions/community/docker-ce-desktop-windows/</a>, installation manuals <a class="reference external" href="https://docs.docker.com/docker-for-windows/install/">here1</a>.</p>
 <p><strong>2. Add Aliyun Mirror Accelerator</strong></p>
@@ -280,15 +289,15 @@ sudo systemctl restart docker</p>
 <li><p>Open Docker Desktop</p></li>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">Settings</span></code></p></li>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">Docker</span> <span class="pre">Engine</span></code></p></li>
-<li><p>Add url to <code class="docutils literal notranslate"><span class="pre">registry-mirrors</span></code>, like this: <code class="docutils literal notranslate"><span class="pre">&quot;registry-mirrors&quot;:</span> <span class="pre">[&quot;url&quot;],</span></code></p></li>
+<li><p>Add url to <code class="docutils literal notranslate"><span class="pre">registry-mirrors</span></code>, like this: <code class="docutils literal notranslate"><span class="pre">"registry-mirrors":</span> <span class="pre">["url"],</span></code></p></li>
 </ol>
 <p><a class="reference external" href="https://www.aliyun.com/product/acr?source=5176.11533457&amp;userCode=8lx5zmtu">阿里云加速器 (点击管理控制台 -&gt; 登录账号 -&gt; 右侧镜像中心 -&gt; 镜像加速器 -&gt; 复制地址)</a></p>
 <p><a class="reference external" href="https://www.163yun.com/help/documents/56918246390157312">网易云加速器</a>：<code class="docutils literal notranslate"><span class="pre">https://hub-mirror.c.163.com</span></code></p>
 <p><a class="reference external" href="https://cloud.baidu.com/doc/CCE/s/Yjxppt74z#%E4%BD%BF%E7%94%A8dockerhub%E5%8A%A0%E9%80%9F%E5%99%A8">百度云加速器</a>：<code class="docutils literal notranslate"><span class="pre">https://mirror.baidubce.com</span></code></p>
 <p>由于镜像服务可能出现宕机，建议同时配置多个镜像。各个镜像站测试结果请到 docker-practice/docker-registry-cn-mirror-test 查看。</p>
-</div>
-<div class="section" id="configure-docker-to-start-on-boot">
-<h2>Configure Docker To Start On Boot<a class="headerlink" href="#configure-docker-to-start-on-boot" title="永久链接至标题">¶</a></h2>
+</section>
+<section id="configure-docker-to-start-on-boot">
+<h2>Configure Docker To Start On Boot<a class="headerlink" href="#configure-docker-to-start-on-boot" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://docs.docker.com/engine/install/linux-postinstall/#configure-docker-to-start-on-boot">source</a></p>
 <p>Most current Linux distributions (RHEL, CentOS, Fedora, Debian, Ubuntu 16.04 and higher) use <code class="docutils literal notranslate"><span class="pre">systemd</span></code> to manage which services start when the system boots. <strong>On Debian and Ubuntu, the Docker service is configured to start on boot by default</strong>. To automatically start Docker and Containerd on boot for other distros, use the commands below:</p>
 <blockquote>
@@ -300,9 +309,9 @@ $ sudo systemctl enable containerd.service</p>
 <div><p>$ sudo systemctl dsiable docker.service
 $ sudo systemctl disable containerd.service</p>
 </div></blockquote>
-</div>
-<div class="section" id="docker-pull-eof">
-<h2>Docker Pull EOF<a class="headerlink" href="#docker-pull-eof" title="永久链接至标题">¶</a></h2>
+</section>
+<section id="docker-pull-eof">
+<h2>Docker Pull EOF<a class="headerlink" href="#docker-pull-eof" title="Permalink to this headline">¶</a></h2>
 <p>error log:</p>
 <blockquote>
 <div><p>Unable to find image ‘algolia/docsearch-scraper:latest’ locally
@@ -323,9 +332,9 @@ See ‘docker run –help’.</p>
 <p>here suggests the number of docker pull layers you want to download concurrently(default is 3)</p>
 <p><strong>For me</strong>:</p>
 <p>I run the order again, it didn’t display this error.</p>
-</div>
-<div class="section" id="install-docker-compose-on-ubuntu">
-<h2>Install Docker Compose On Ubuntu<a class="headerlink" href="#install-docker-compose-on-ubuntu" title="永久链接至标题">¶</a></h2>
+</section>
+<section id="install-docker-compose-on-ubuntu">
+<h2>Install Docker Compose On Ubuntu<a class="headerlink" href="#install-docker-compose-on-ubuntu" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><p>sudo curl -L “<a class="reference external" href="https://github.com/docker/compose/releases/download/1.28.6/docker-compose-$(uname">https://github.com/docker/compose/releases/download/1.28.6/docker-compose-$(uname</a> -s)-$(uname -m)” -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
@@ -333,9 +342,9 @@ docker-compose –version
 # docker-compose version 1.28.6, build 5db8d86f</p>
 </div></blockquote>
 <p><a class="reference external" href="https://docs.docker.com/compose/install/">source1</a></p>
-</div>
-<div class="section" id="install-docker-on-ubuntu">
-<h2>Install Docker On Ubuntu<a class="headerlink" href="#install-docker-on-ubuntu" title="永久链接至标题">¶</a></h2>
+</section>
+<section id="install-docker-on-ubuntu">
+<h2>Install Docker On Ubuntu<a class="headerlink" href="#install-docker-on-ubuntu" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><p>sudo apt-get remove docker docker-engine docker.io containerd runc
 sudo apt-get update
@@ -354,27 +363,27 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io
 sudo docker run hello-world</p>
 </div></blockquote>
 <p><a class="reference external" href="https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository">source2</a></p>
-</div>
-<div class="section" id="install-portainer-io">
-<h2>Install Portainer.io<a class="headerlink" href="#install-portainer-io" title="永久链接至标题">¶</a></h2>
-</div>
-<div class="section" id="mx">
-<h2>MX<a class="headerlink" href="#mx" title="永久链接至标题">¶</a></h2>
+</section>
+<section id="install-portainer-io">
+<h2>Install Portainer.io<a class="headerlink" href="#install-portainer-io" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="mx">
+<h2>MX<a class="headerlink" href="#mx" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><p>docker volume create portainer_data
 docker run -d -p 8000:8000 -p 9000:9000 –name=portainer –restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce</p>
 </div></blockquote>
-<div class="section" id="ubuntu">
-<h3>Ubuntu<a class="headerlink" href="#ubuntu" title="永久链接至标题">¶</a></h3>
+<section id="ubuntu">
+<h3>Ubuntu<a class="headerlink" href="#ubuntu" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><p>docker volume create portainer_data
 docker run -d -p 8000:8000 -p 9000:9000 –name=portainer –restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce</p>
 </div></blockquote>
 <p><a class="reference external" href="https://documentation.portainer.io/v2.0/deploy/ceinstalldocker/">source3</a></p>
-</div>
-</div>
-<div class="section" id="manage-docker-as-a-non-root-user">
-<h2>Manage Docker As A Non-root User<a class="headerlink" href="#manage-docker-as-a-non-root-user" title="永久链接至标题">¶</a></h2>
+</section>
+</section>
+<section id="manage-docker-as-a-non-root-user">
+<h2>Manage Docker As A Non-root User<a class="headerlink" href="#manage-docker-as-a-non-root-user" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><p>sudo groupadd docker
 sudo usermod -aG docker $USER # sudo usermod -aG docker tianheg
@@ -382,65 +391,97 @@ newgrp docker
 docker run hello-world</p>
 </div></blockquote>
 <p><a class="reference external" href="https://docs.docker.com/engine/install/linux-postinstall/">source4</a></p>
-</div>
-<div class="section" id="use-sysvinit-manage-docker">
-<h2>Use Sysvinit manage docker<a class="headerlink" href="#use-sysvinit-manage-docker" title="永久链接至标题">¶</a></h2>
+</section>
+<section id="use-sysvinit-manage-docker">
+<h2>Use Sysvinit manage docker<a class="headerlink" href="#use-sysvinit-manage-docker" title="Permalink to this headline">¶</a></h2>
 <p>ref:</p>
 <ol class="arabic simple">
 <li><p><a class="reference external" href="https://github.com/kata-containers/documentation/blob/master/install/docker/debian-docker-install.md">https://github.com/kata-containers/documentation/blob/master/install/docker/debian-docker-install.md</a></p></li>
 </ol>
-</div>
-</div>
+</section>
+</section>
 
+      </article>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="vagrant.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Vagrant</div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="../projects/wordpress.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">WordPress</div>
+                
+              </div>
+            </a>
+        </div>
 
-           </div>
-           
-          </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="vagrant.html" class="btn btn-neutral float-right" title="Vagrant" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="../projects/wordpress.html" class="btn btn-neutral float-left" title="WordPress" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <div class="related-information">
+              Copyright &#169; 2021, Jim Gao
+            |
+            Built with <a href="https://www.sphinx-doc.org/">Sphinx</a>
+              and
+              <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+              <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
+        </div>
+        
+      </footer>
     </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Docker</a><ul>
+<li><a class="reference internal" href="#dockerfile"><code class="docutils literal notranslate"><span class="pre">Dockerfile</span></code></a></li>
+<li><a class="reference internal" href="#add-registry-mirrors-for-ubuntu">Add Registry Mirrors For Ubuntu</a></li>
+<li><a class="reference internal" href="#add-registry-mirrors-for-win10">Add Registry Mirrors For Win10</a></li>
+<li><a class="reference internal" href="#configure-docker-to-start-on-boot">Configure Docker To Start On Boot</a></li>
+<li><a class="reference internal" href="#docker-pull-eof">Docker Pull EOF</a></li>
+<li><a class="reference internal" href="#install-docker-compose-on-ubuntu">Install Docker Compose On Ubuntu</a></li>
+<li><a class="reference internal" href="#install-docker-on-ubuntu">Install Docker On Ubuntu</a></li>
+<li><a class="reference internal" href="#install-portainer-io">Install Portainer.io</a></li>
+<li><a class="reference internal" href="#mx">MX</a><ul>
+<li><a class="reference internal" href="#ubuntu">Ubuntu</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#manage-docker-as-a-non-root-user">Manage Docker As A Non-root User</a></li>
+<li><a class="reference internal" href="#use-sysvinit-manage-docker">Use Sysvinit manage docker</a></li>
+</ul>
+</li>
+</ul>
 
-  <hr/>
-
-  <div role="contentinfo">
-    <p>
-        &#169; 版权所有 2021, Jim Gao.
-
-    </p>
-  </div>
-    
-    
-    
-    利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用了 
-    
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
-    
-    由 <a href="https://readthedocs.org">Read the Docs</a>开发.
-<p>除额外注明的地方外，本文档按 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议发布。</p>
- 
-
-
-</footer>
+          </div>
         </div>
       </div>
-
-    </section>
-
+      
+      
+    </aside>
   </div>
-  
-
-  <script type="text/javascript">
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script>
-
-  
-  
-    
-   
-
-</body>
+</div><script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/scripts/main.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    </body>
 </html>
