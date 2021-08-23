@@ -1,7 +1,7 @@
 INDEX
 =====
 
-2021年第35周总结 :ghissue:`155`
+2021年第35周总结 :issue:`155`
 
 .. image:: images/life-structure.png
 
@@ -275,6 +275,7 @@ ref:
    operating-system/ubuntu-install-software
    operating-system/ubuntu-problems
    operating-system/mxlinux-installation
+   database/mysql
    html/before-html
    html/html-basics
    html/images

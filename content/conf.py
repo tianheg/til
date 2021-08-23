@@ -40,12 +40,21 @@ release = ''
 # ones.
 extensions = [
     # Stdlib extensions:
-    'sphinx.ext.autodoc',
     'sphinx.ext.extlinks',
+    'sphinx.ext.githubpages',
+    'sphinx.ext.graphviz',
     'sphinx.ext.mathjax',
     'sphinx.ext.todo',
     'sphinx.ext.viewcode',
+
+    # Third party
+    'sphinx_issues',
+    'sphinx_copybutton'
 ]
+# Github repo
+issues_github_path = "tianheg/blog"
+
+html_baseurl="https://til.yidajiabei.xyz" # generate CNAME
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -63,7 +72,7 @@ master_doc = 'index'
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = 'zh_CN'
+language = 'en'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -71,7 +80,8 @@ language = 'zh_CN'
 exclude_patterns = []
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = 'sphinx'
+pygments_style = "sphinx"
+pygments_dark_style = "monokai"
 
 # -- Options for HTML output -------------------------------------------------
 
@@ -86,13 +96,24 @@ html_context = {
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'sphinx_rtd_theme' # furo
-
+html_theme = 'furo' # furo
+html_title = "Hello World"
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
-html_theme_options = {"display_version": False}
+html_theme_options = {
+    "sidebar_hide_name": True,
+    "navigation_with_keys": True,
+    # "light_css_variables": {
+    #     "color-brand-primary": "#E7E0C9",
+    #     "color-brand-content": "#C1CFC0",
+    # },
+    # "dark_css_variables": {
+    #     "color-brand-primary": "#6B7AA1",
+    #     "color-brand-content": "#FFB830",
+    # },
+}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -109,7 +130,7 @@ html_static_path = []
 #
 # html_sidebars = {}
 
-html_search_language = 'zh'
+# html_search_language = 'zh'
 
 # -- Extension configuration -------------------------------------------------
 
@@ -120,5 +141,5 @@ todo_include_todos = True
 todo_link_only = True
 
 extlinks = {
-    "ghissue": ("https://github.com/tianheg/blog/issues/%s", "#"),
+    #"ghissue": ("https://github.com/tianheg/blog/issues/%s", "#"),
 }

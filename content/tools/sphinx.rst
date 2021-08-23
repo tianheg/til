@@ -1,6 +1,23 @@
 Sphinx
 ======
 
+
+:issue:`sloria/konch#45`.
+
+:user:`bitprophet`
+
+.. graph:: foo
+
+   "bar" -- "baz";
+
+.. graphviz::
+
+     digraph example {
+         a [label="sphinx", href="https://sphinx-doc.org", target="_top"];
+         b [label="other"];
+         a -> b;
+     }
+
 https://www.sphinx-doc.org/
 
 reStructured Text Syntax

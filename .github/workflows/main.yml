@@ -35,8 +35,6 @@ jobs:
           exit 0
         fi
 
-        echo til.yidajiabei.xyz > CNAME
-        : > .nojekyll
         git add --all
         git -c user.name="${GITHUB_ACTOR}" -c user.email="${GITHUB_ACTOR}@users.noreply.github.com" \
           commit --quiet \
