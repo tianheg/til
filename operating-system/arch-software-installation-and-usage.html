@@ -1300,9 +1300,20 @@ make install</p>
 </tr>
 </tbody>
 </table></div>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo pacman -S google-chrome visual-studio-code-bin netease-cloud-music flameshot proxychains-ng redshift vlc telegram-desktop gthumb libreoffice-fresh inkscape youtube-dl glances keepass hugo foliate anki informant dnsutils dnsmasq tldr virtualbox virtualbox-host-modules-arch virtualbox-ext-oracle virtualbox earlyoom gtk2 gtk3 gtk4 lsb-release exa qemu python-sphinx filezilla intellij-idea-community-edition mysql tomcat8 sagemath dkms maven
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo pacman -S google-chrome visual-studio-code-bin netease-cloud-music flameshot proxychains-ng redshift vlc telegram-desktop gthumb libreoffice-fresh inkscape youtube-dl glances keepass hugo foliate anki informant dnsutils dnsmasq tldr virtualbox virtualbox-host-modules-arch virtualbox-ext-oracle virtualbox earlyoom gtk2 gtk3 gtk4 lsb-release exa qemu python-sphinx filezilla intellij-idea-community-edition mysql tomcat8 sagemath dkms maven ventoy
 </pre></div>
 </div>
+<section id="ventoy">
+<h3>ventoy<a class="headerlink" href="#ventoy" title="Permalink to this headline">¶</a></h3>
+<p>Output:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-&gt;</span> <span class="n">NOTE</span><span class="p">:</span> <span class="n">You</span> <span class="n">can</span> <span class="n">create</span> <span class="n">persistence</span> <span class="n">images</span> <span class="k">for</span> <span class="n">ventoy</span> <span class="k">with</span> <span class="n">the</span> <span class="s2">"ventoy-persistent"</span> <span class="n">command</span><span class="p">,</span>
+<span class="o">-&gt;</span>       <span class="ow">and</span> <span class="n">losslessly</span> <span class="n">expand</span> <span class="n">persistence</span> <span class="s2">".dat"</span> <span class="n">files</span> <span class="n">using</span> <span class="s2">"ventoy-extend-persistent"</span><span class="p">,</span>
+<span class="o">-&gt;</span>       <span class="n">which</span> <span class="n">are</span> <span class="n">shortcuts</span> <span class="n">to</span> <span class="s2">"/opt/ventoy/CreatePersistentImg.sh"</span> <span class="ow">and</span>
+<span class="o">-&gt;</span>       <span class="s2">"/opt/ventoy/ExtendPersistentImg.sh"</span><span class="p">,</span> <span class="n">respectively</span><span class="o">.</span>
+<span class="o">-&gt;</span>       <span class="p">(</span><span class="n">See</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">ventoy</span><span class="o">.</span><span class="n">net</span><span class="o">/</span><span class="n">en</span><span class="o">/</span><span class="n">plugin_persistence</span><span class="o">.</span><span class="n">html</span> <span class="k">for</span> <span class="n">documentation</span><span class="o">.</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
 <section id="cmdpxl">
 <h3>cmdpxl<a class="headerlink" href="#cmdpxl" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>pip install cmdpxl
@@ -1423,10 +1434,39 @@ make install</p>
 <span class="p">(</span><span class="mi">4</span><span class="o">/</span><span class="mi">4</span><span class="p">)</span> <span class="n">Arming</span> <span class="n">ConditionNeedsUpdate</span><span class="o">...</span>
 </pre></div>
 </div>
+<p>删除 mysql，使用 percona-server 管理。</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo pacman -S percona-server
+</pre></div>
+</div>
+<p>Output:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">extra</span><span class="o">/</span><span class="n">numactl</span>             <span class="mf">2.0.14</span><span class="o">-</span><span class="mi">1</span>       <span class="mf">0.22</span> <span class="n">MiB</span>       <span class="mf">0.08</span> <span class="n">MiB</span>
+<span class="n">community</span><span class="o">/</span><span class="n">percona</span><span class="o">-</span><span class="n">server</span>  <span class="mf">8.0.25_15</span><span class="o">-</span><span class="mi">2</span>  <span class="mf">167.91</span> <span class="n">MiB</span>      <span class="mf">25.30</span> <span class="n">MiB</span>
+</pre></div>
+</div>
+<section id="mysql-installation-error">
+<h4>MySQL Installation error<a class="headerlink" href="#mysql-installation-error" title="Permalink to this headline">¶</a></h4>
+<p>Error: Can’t connect to local MySQL server through socket ‘/run/mysqld/mysqld.sock’ (2)</p>
+<p>Solve:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">code</span><span class="p">::</span> <span class="n">sh</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p>systemctl start mysqld</p>
+</div></blockquote>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Aug</span> <span class="mi">24</span> <span class="mi">09</span><span class="p">:</span><span class="mi">50</span><span class="p">:</span><span class="mi">00</span> <span class="n">arch</span> <span class="n">mysqld</span><span class="p">[</span><span class="mi">204475</span><span class="p">]:</span> <span class="mi">2021</span><span class="o">-</span><span class="mi">08</span><span class="o">-</span><span class="mi">24</span><span class="n">T01</span><span class="p">:</span><span class="mi">50</span><span class="p">:</span><span class="mf">00.359744</span><span class="n">Z</span> <span class="mi">0</span> <span class="p">[</span><span class="ne">Warning</span><span class="p">]</span> <span class="p">[</span><span class="n">MY</span><span class="o">-</span><span class="mi">010101</span><span class="p">]</span> <span class="p">[</span><span class="n">Server</span><span class="p">]</span> <span class="n">Insecure</span> <span class="n">configuration</span> <span class="k">for</span> <span class="o">--</span><span class="n">secure</span><span class="o">-</span><span class="n">file</span><span class="o">-</span><span class="n">priv</span><span class="p">:</span> <span class="n">Location</span> <span class="ow">is</span> <span class="n">accessible</span> <span class="n">to</span> <span class="nb">all</span> <span class="n">OS</span> <span class="n">users</span><span class="o">.</span> <span class="n">Consider</span> <span class="n">choosing</span> <span class="n">a</span> <span class="n">different</span> <span class="n">directory</span><span class="o">.</span>
+<span class="n">Aug</span> <span class="mi">24</span> <span class="mi">09</span><span class="p">:</span><span class="mi">50</span><span class="p">:</span><span class="mi">00</span> <span class="n">arch</span> <span class="n">mysqld</span><span class="p">[</span><span class="mi">204475</span><span class="p">]:</span> <span class="mi">2021</span><span class="o">-</span><span class="mi">08</span><span class="o">-</span><span class="mi">24</span><span class="n">T01</span><span class="p">:</span><span class="mi">50</span><span class="p">:</span><span class="mf">00.359900</span><span class="n">Z</span> <span class="mi">0</span> <span class="p">[</span><span class="n">System</span><span class="p">]</span> <span class="p">[</span><span class="n">MY</span><span class="o">-</span><span class="mi">010116</span><span class="p">]</span> <span class="p">[</span><span class="n">Server</span><span class="p">]</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">mysqld</span> <span class="p">(</span><span class="n">mysqld</span> <span class="mf">8.0.25</span><span class="o">-</span><span class="mi">15</span><span class="p">)</span> <span class="n">starting</span> <span class="k">as</span> <span class="n">process</span> <span class="mi">204475</span>
+<span class="n">Aug</span> <span class="mi">24</span> <span class="mi">09</span><span class="p">:</span><span class="mi">50</span><span class="p">:</span><span class="mi">00</span> <span class="n">arch</span> <span class="n">mysqld</span><span class="p">[</span><span class="mi">204475</span><span class="p">]:</span> <span class="mi">2021</span><span class="o">-</span><span class="mi">08</span><span class="o">-</span><span class="mi">24</span><span class="n">T01</span><span class="p">:</span><span class="mi">50</span><span class="p">:</span><span class="mf">00.363740</span><span class="n">Z</span> <span class="mi">0</span> <span class="p">[</span><span class="n">ERROR</span><span class="p">]</span> <span class="p">[</span><span class="n">MY</span><span class="o">-</span><span class="mi">010187</span><span class="p">]</span> <span class="p">[</span><span class="n">Server</span><span class="p">]</span> <span class="n">Could</span> <span class="ow">not</span> <span class="nb">open</span> <span class="n">file</span> <span class="s1">'/var/log/mysqld.log'</span> <span class="k">for</span> <span class="n">error</span> <span class="n">logging</span><span class="p">:</span> <span class="n">Permission</span> <span class="n">denied</span>
+<span class="n">Aug</span> <span class="mi">24</span> <span class="mi">09</span><span class="p">:</span><span class="mi">50</span><span class="p">:</span><span class="mi">00</span> <span class="n">arch</span> <span class="n">mysqld</span><span class="p">[</span><span class="mi">204475</span><span class="p">]:</span> <span class="mi">2021</span><span class="o">-</span><span class="mi">08</span><span class="o">-</span><span class="mi">24</span><span class="n">T01</span><span class="p">:</span><span class="mi">50</span><span class="p">:</span><span class="mf">00.363828</span><span class="n">Z</span> <span class="mi">0</span> <span class="p">[</span><span class="n">ERROR</span><span class="p">]</span> <span class="p">[</span><span class="n">MY</span><span class="o">-</span><span class="mi">010119</span><span class="p">]</span> <span class="p">[</span><span class="n">Server</span><span class="p">]</span> <span class="n">Aborting</span>
+<span class="n">Aug</span> <span class="mi">24</span> <span class="mi">09</span><span class="p">:</span><span class="mi">50</span><span class="p">:</span><span class="mi">00</span> <span class="n">arch</span> <span class="n">mysqld</span><span class="p">[</span><span class="mi">204475</span><span class="p">]:</span> <span class="mi">2021</span><span class="o">-</span><span class="mi">08</span><span class="o">-</span><span class="mi">24</span><span class="n">T01</span><span class="p">:</span><span class="mi">50</span><span class="p">:</span><span class="mf">00.364026</span><span class="n">Z</span> <span class="mi">0</span> <span class="p">[</span><span class="n">System</span><span class="p">]</span> <span class="p">[</span><span class="n">MY</span><span class="o">-</span><span class="mi">010910</span><span class="p">]</span> <span class="p">[</span><span class="n">Server</span><span class="p">]</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">mysqld</span><span class="p">:</span> <span class="n">Shutdown</span> <span class="n">complete</span> <span class="p">(</span><span class="n">mysqld</span> <span class="mf">8.0.25</span><span class="o">-</span><span class="mi">15</span><span class="p">)</span>  <span class="n">Source</span> <span class="n">distribution</span><span class="o">.</span>
+<span class="n">Aug</span> <span class="mi">24</span> <span class="mi">09</span><span class="p">:</span><span class="mi">50</span><span class="p">:</span><span class="mi">00</span> <span class="n">arch</span> <span class="n">systemd</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="n">mysqld</span><span class="o">.</span><span class="n">service</span><span class="p">:</span> <span class="n">Main</span> <span class="n">process</span> <span class="n">exited</span><span class="p">,</span> <span class="n">code</span><span class="o">=</span><span class="n">exited</span><span class="p">,</span> <span class="n">status</span><span class="o">=</span><span class="mi">1</span><span class="o">/</span><span class="n">FAILURE</span>
+</pre></div>
+</div>
+<p>用户权限未分配</p>
+</section>
 </section>
 <section id="idea">
 <h3>IDEA<a class="headerlink" href="#idea" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo pacman -S intellij-idea-community-edition
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo pacman -S intellij-idea-community-edition/intellij-idea-ultimate-edition
 </pre></div>
 </div>
 <p>Output:</p>
@@ -1999,12 +2039,16 @@ pacman -U linux-5.13.9.arch1-1-x86_64.pkg.tar.zst
 </ul>
 </li>
 <li><a class="reference internal" href="#other-software">Other Software</a><ul>
+<li><a class="reference internal" href="#ventoy">ventoy</a></li>
 <li><a class="reference internal" href="#cmdpxl">cmdpxl</a></li>
 <li><a class="reference internal" href="#maven">maven</a></li>
 <li><a class="reference internal" href="#dkms">dkms</a></li>
 <li><a class="reference internal" href="#sagemath">Sagemath</a></li>
 <li><a class="reference internal" href="#tomcat8">Tomcat8</a></li>
-<li><a class="reference internal" href="#mysql">MySQL</a></li>
+<li><a class="reference internal" href="#mysql">MySQL</a><ul>
+<li><a class="reference internal" href="#mysql-installation-error">MySQL Installation error</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#idea">IDEA</a></li>
 <li><a class="reference internal" href="#sphinx">Sphinx</a></li>
 <li><a class="reference internal" href="#exa">exa</a></li>
