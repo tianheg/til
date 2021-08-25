@@ -787,7 +787,18 @@ ref: https://io-oi.me/tech/hello-arch-linux/
 
 .. code:: sh
 
-   sudo pacman -S google-chrome visual-studio-code-bin netease-cloud-music flameshot proxychains-ng redshift vlc telegram-desktop gthumb libreoffice-fresh inkscape youtube-dl glances keepass hugo foliate anki informant dnsutils dnsmasq tldr virtualbox virtualbox-host-modules-arch virtualbox-ext-oracle virtualbox earlyoom gtk2 gtk3 gtk4 lsb-release exa qemu python-sphinx filezilla intellij-idea-community-edition mysql tomcat8 sagemath dkms maven
+   sudo pacman -S google-chrome visual-studio-code-bin netease-cloud-music flameshot proxychains-ng redshift vlc telegram-desktop gthumb libreoffice-fresh inkscape youtube-dl glances keepass hugo foliate anki informant dnsutils dnsmasq tldr virtualbox virtualbox-host-modules-arch virtualbox-ext-oracle virtualbox earlyoom gtk2 gtk3 gtk4 lsb-release exa qemu python-sphinx filezilla intellij-idea-community-edition mysql tomcat8 sagemath dkms maven ventoy
+
+ventoy
+^^^^^^
+
+Output::
+
+   -> NOTE: You can create persistence images for ventoy with the "ventoy-persistent" command,
+   ->       and losslessly expand persistence ".dat" files using "ventoy-extend-persistent",
+   ->       which are shortcuts to "/opt/ventoy/CreatePersistentImg.sh" and
+   ->       "/opt/ventoy/ExtendPersistentImg.sh", respectively.
+   ->       (See https://www.ventoy.net/en/plugin_persistence.html for documentation.)
 
 cmdpxl
 ^^^^^^
@@ -899,12 +910,46 @@ Output::
    (3/4) Creating temporary files...
    (4/4) Arming ConditionNeedsUpdate...
 
+删除 mysql，使用 percona-server 管理。
+
+.. code:: sh
+
+   sudo pacman -S percona-server
+
+Output::
+
+   extra/numactl             2.0.14-1       0.22 MiB       0.08 MiB
+   community/percona-server  8.0.25_15-2  167.91 MiB      25.30 MiB
+
+MySQL Installation error
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Error: Can't connect to local MySQL server through socket '/run/mysqld/mysqld.sock' (2)
+
+Solve::
+
+
+.. code:: sh
+
+   systemctl start mysqld
+
+::
+
+   Aug 24 09:50:00 arch mysqld[204475]: 2021-08-24T01:50:00.359744Z 0 [Warning] [MY-010101] [Server] Insecure configuration for --secure-file-priv: Location is accessible to all OS users. Consider choosing a different directory.
+   Aug 24 09:50:00 arch mysqld[204475]: 2021-08-24T01:50:00.359900Z 0 [System] [MY-010116] [Server] /usr/bin/mysqld (mysqld 8.0.25-15) starting as process 204475
+   Aug 24 09:50:00 arch mysqld[204475]: 2021-08-24T01:50:00.363740Z 0 [ERROR] [MY-010187] [Server] Could not open file '/var/log/mysqld.log' for error logging: Permission denied
+   Aug 24 09:50:00 arch mysqld[204475]: 2021-08-24T01:50:00.363828Z 0 [ERROR] [MY-010119] [Server] Aborting
+   Aug 24 09:50:00 arch mysqld[204475]: 2021-08-24T01:50:00.364026Z 0 [System] [MY-010910] [Server] /usr/bin/mysqld: Shutdown complete (mysqld 8.0.25-15)  Source distribution.
+   Aug 24 09:50:00 arch systemd[1]: mysqld.service: Main process exited, code=exited, status=1/FAILURE
+
+用户权限未分配
+
 IDEA
 ^^^^
 
 .. code:: sh
 
-   sudo pacman -S intellij-idea-community-edition
+   sudo pacman -S intellij-idea-community-edition/intellij-idea-ultimate-edition
 
 Output::
 
