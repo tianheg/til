@@ -10,6 +10,8 @@ Arch 系统维护
 #. https://wiki.archlinux.org/title/System_maintenance
 #. `Arch Linux 安装使用教程 <https://archlinuxstudio.github.io/ArchLinuxTutorial/#/>`_
 
+- 定期更新 Arch USB 启动盘
+
 Identify files not owned by any package
 ---------------------------------------
 
