@@ -40,7 +40,9 @@ release = ''
 # ones.
 extensions = [
     # Stdlib extensions:
+    'sphinx.ext.autodoc',
     'sphinx.ext.extlinks',
+    'sphinx.ext.intersphinx',
     'sphinx.ext.githubpages',
     'sphinx.ext.graphviz',
     'sphinx.ext.mathjax',
@@ -130,7 +132,7 @@ html_static_path = []
 #
 # html_sidebars = {}
 
-# html_search_language = 'zh'
+html_search_language = 'zh'
 
 # -- Extension configuration -------------------------------------------------
 
