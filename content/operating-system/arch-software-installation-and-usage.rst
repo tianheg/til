@@ -1267,7 +1267,7 @@ ref:
 timeshift
 ^^^^^^^^^
 
-#. Snapshot type: rsync :raw-html-m2r:`<del>(btrfs cannot use because of BTRFS snapts are saved on system partition)</del>`
+#. Snapshot type: rsync (btrfs cannot use because of BTRFS snapts are saved on system partition)
 #. User home directories: root-include all files, user-include only hidden files
 
 自动更新 hosts GitHub 相关 IP
