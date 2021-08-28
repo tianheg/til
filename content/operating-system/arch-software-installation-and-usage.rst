@@ -684,6 +684,16 @@ seahorse + kde wallet
 
    sudo pacman -S kwalletmanager seahorse
 
+Awesome
+-------
+
+.. code:: sh
+
+   sudo pacman -S awesome nitrogen
+   sudo pacman -Rs awesome nitrogen
+
+使用一个环境（桌面/窗口）一直使用，知道适合自己，这才是开源的真谛。
+
 GNOME
 -----
 
